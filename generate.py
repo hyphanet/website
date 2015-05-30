@@ -18,7 +18,12 @@ except:
     pass
 
 for language in settings.languages:
-    gettext.install("freenet_site", "locale", unicode=True)
+    print language
+    if language != "en":
+        lang = gettext.translation('freenet_site', localedir='locale', languages=[language])
+        lang.install()
+    else:
+        gettext.install('freenet_site')
     import settings # FIXME: hack 
     # copy assets
     os.makedirs(langpath(language))
