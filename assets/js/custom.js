@@ -43,11 +43,8 @@ VAGAS SLIDESHOW SCRIPTS
 ======================================*/
 $.vegas('slideshow', {
 backgrounds: [
-// http://levantium.com/wp-content/uploads/2011/02/mideast-egyptjpg-ffe042636fae6b0e.jpg
-//{ src: 'assets/img/mideast-egyptjpg-ffe042636fae6b0e.jpg', fade: 1000, delay: 9000 },
-// http://www.susannagirolamo.com/wp-content/uploads/2012/10/Susanna_Girolamo_Photo_17727_2012-2.jpg
-//{ src: 'assets/img/Susanna_Girolamo_Photo_17727_2012-2.jpg', fade: 1000, delay: 9000 },
 { src: 'assets/img/network.jpg', fade: 0, delay: 9000 },
+//{ src: 'assets/img/nightsky.jpg', fade: 0, delay: 9000 },
 ]
 })('overlay', {
 /** SLIDESHOW OVERLAY IMAGE **/

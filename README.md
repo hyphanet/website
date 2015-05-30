@@ -24,4 +24,21 @@ Todo:
 - Figure out something for news updates
 - Add a license
 - Add submenu support?
-- Replace background image placeholder with something we can actually use (or figure out what the license is).
+- Get background image licensed (I'm in contact with the person who made it).
+- Have the background image as background image, or add images to the slideshow
+
+## FAQ ##
+
+*What static site generator does this use?* None, it uses it's own 30 line Python script.
+The entire template is also just Python code. If you know Python you don't have to
+learn another templating language or theming framework to modify it.
+
+*Why doesn't this use an existing static site generator like Pelican?*
+Pelican was tried and it seemed like a lot of work to make a nice template for it.
+Also, the support for translations was annoying. Overall it didn't feel like a good fit.
+
+*Doesn't the dark background make Freenet look "dark" and "hacker" like?*
+It might, but it also makes it look exciting and high-tech. Light websites
+are more like "fun", "outside" and "old fashioned paper". If we want to
+attract (technical) users and contributors the exiting and high-tech
+look will probably suit them better.
