@@ -24,13 +24,13 @@ for language in settings.languages:
         lang.install()
     else:
         gettext.install('freenet_site')
-    import settings # FIXME: hack 
     # copy assets
     os.makedirs(langpath(language))
     shutil.copytree('assets', langpath(language)+'/assets')
     # generate pages
-    for page in settings.menu:
+    menu = settings.create_menu()
+    for page in menu:
         if page.section_link: continue # no need to generate these, just a link
         f = open(html_filename(language, page.slug),'wt')
-        f.write(page.generate(language, settings.menu))
+        f.write(page.generate(language, menu))
         f.close

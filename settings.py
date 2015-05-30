@@ -5,9 +5,10 @@ from pages.download import *
 
 languages = ["en", "nl"]
 title = "Freenet"
-menu = [
-    IndexPage(),
-    SectionLink("index", "services", "What is Freenet?"),
-    DownloadPage(),
-    HelpPage(),
-    ]
+def create_menu():
+    return [
+        IndexPage(),
+        SectionLink("index", "services", _("What is Freenet?")),
+        DownloadPage(),
+        HelpPage(),
+        ]
