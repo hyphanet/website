@@ -1,6 +1,8 @@
-﻿import os
+#!/usr/bin/env python
+import os
 import shutil
 import settings
+import gettext
 
 output_path = 'output'
 
@@ -16,6 +18,8 @@ except:
     pass
 
 for language in settings.languages:
+    gettext.install("freenet_site", "locale", unicode=True)
+    import settings # FIXME: hack 
     # copy assets
     os.makedirs(langpath(language))
     shutil.copytree('assets', langpath(language)+'/assets')
