@@ -8,8 +8,11 @@ def langpath(language):
     return output_path+"/"+language
 def html_filename(language, slug):
     return langpath(language)+'/'+slug+'.html'
-    
-shutil.rmtree('output')
+
+try:
+    shutil.rmtree('output')
+except:
+    pass
 
 for language in settings.languages:
     os.makedirs(langpath(language))
