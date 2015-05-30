@@ -27,6 +27,7 @@ Todo:
 - Get background image licensed (I'm in contact with the person who made it).
 - Have the background image as background image, or add images to the slideshow
 - Add a favicon
+- Investigate license of the animations css lib (created issue on github)
 
 ## FAQ ##
 
@@ -43,3 +44,35 @@ It might, but it also makes it look exciting and high-tech. Light websites
 are more like "fun", "outside" and "old fashioned paper". If we want to
 attract (technical) users and contributors the exiting and high-tech
 look will probably suit them better.
+
+## License ##
+
+This website consists of a lot of parts. Files in the assets directory
+have their own licenses. If not mentioned these are MIT or BSD licensed.
+
+The situation in pages is that everything except commons.py is GDFL licensed
+due to including content from freenetproject.org.
+common.py contains parts of the theme light-wave provided by designbootstrap
+(licensed MIT) and is fully MIT licensed itself.
+
+Finally there is the generate.py script which is MIT licensed (just so it is as compatible as possible).
+Anything other written by gerard- and committed to this repository can also be considered MIT licensed.
+
+The current background image assets/img/network.jpg is unlicensed (see the TODO section).
+The assets/img/nightsky.jpg image (unused) is CC-BY 2.0 licensed: https://www.flickr.com/photos/newdimensionfilms/7108632527
+
+assets/js/source contains fancybox, which is CC BY-NC 3.0. The noncommercial part is always confusing.
+As far as I know it it isn't used and could be removed if the license is an issue.
+
+assets/css/animations.min.css is copyright 2014, Joe Mottershaw but does not contain a license. See TODO
+
+Some of the icons from ionicons may be licensed CC BY 4.0.
+
+assets/js/jquery.isotope.js : commercial use requires a license fee
+
+So what would the license on the generated files be? Those are a mix of the content and the assets.
+The license of the files used to generate the output is of no concern. I think that the terms of the
+GFDL license + some attribution would be enough.
+
+So to summarize: the licensing situation seems to be OK, the background image is the main point.
+Otherwise we seem to be complying with (the intent of) all licenses.

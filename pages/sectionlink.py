@@ -1,4 +1,4 @@
-
+# License: MIT
 class SectionLink(object):
     section_link = True
     def __init__(self, slug, section, title):

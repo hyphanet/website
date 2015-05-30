@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+# Generates static pages from python scripts
+# License: MIT
 import os
 import shutil
 import settings

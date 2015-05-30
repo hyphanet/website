@@ -1,3 +1,4 @@
+# License: GFDL
 import string
 import markdown
 from common import *

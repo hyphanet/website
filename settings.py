@@ -1,3 +1,4 @@
+#License: GFDL
 from pages.index import *
 from pages.help import *
 from pages.sectionlink import *

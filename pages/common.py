@@ -1,3 +1,5 @@
+# Contains parts of the Designbootstrap theme light-wave
+# License: MIT
 import string
 
 def html(head, body):
