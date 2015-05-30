@@ -24,3 +24,4 @@ Todo:
 - Figure out something for news updates
 - Add a license
 - Add submenu support?
+- Replace background image placeholder with something we can actually use (or figure out what the license is).
