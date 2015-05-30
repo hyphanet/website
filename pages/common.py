@@ -71,7 +71,14 @@ $content
 """
     return string.Template(template).substitute(content=content)
 
-def menu():
+def menu(site_menu, current_page):
+    menu_content = "";
+    for page in site_menu:
+        filename = page.slug + ".html"
+        if page.slug == current_page.slug:
+            filename = ""
+        menu_content += string.Template("""<li><a href="$filename#$section">$title</a></li>""").substitute(filename=filename,section=page.section,title=page.title.upper())
+    
     template = """
 <!--MENU SECTION START-->
 <div class="navbar navbar-inverse navbar-fixed-top scroll-me" id="menu-section" >
@@ -90,12 +97,9 @@ $brand
 </div>
 <div class="navbar-collapse collapse">
 <ul class="nav navbar-nav navbar-right">
-<li><a href="#home">HOME</a></li>
-<li><a href="#services">WHAT IS FREENET?</a></li>
-<li><a href="#pricing">DOWNLOAD</a></li>
-<li><a href="#work">HELP</a></li>
-<li><a href="#team">DONATE</a></li>
-<li><a href="#team">GET INVOLVED</a></li>
+
+$menu_content
+
 </ul>
 </div>
 
@@ -103,7 +107,7 @@ $brand
 </div>
 <!--MENU SECTION END-->
 """
-    return string.Template(template).substitute(brand="FREENET")
+    return string.Template(template).substitute(brand="FREENET", menu_content=menu_content)
 
 def contact():
     return """
@@ -152,7 +156,7 @@ This website is licensed under the GNU Free Documentation License
 
 def section(name, title, content):
     template = """
-<!--section start-->
+<!--section $name start-->
 <section id="$name" >
 <div class="container">
 <div class="row text-center header animate-in" data-anim-type="fade-in-up">
@@ -166,6 +170,6 @@ def section(name, title, content):
 $content
 
 </section>
-<!-- section end -->
+<!-- section $name end -->
 """
     return string.Template(template).substitute(name=name, title=title,content=content)

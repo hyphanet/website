@@ -227,5 +227,8 @@ def service():
 
 class IndexPage(object):
     slug = "index"
-    def generate(language):
-        return html(head("Freenet"), body(menu()+home()+service()+contact()))
+    section = "home"
+    title = "Freenet"
+    section_link = False
+    def generate(self, language, site_menu):
+        return html(head(self.title), body(menu(site_menu, self)+home()+service()+contact()))
