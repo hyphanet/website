@@ -173,3 +173,13 @@ $content
 <!-- section $name end -->
 """
     return string.Template(template).substitute(name=name, title=title,content=content)
+
+def paragraph(content):
+    template = """
+<div class="row animate-in" data-anim-type="fade-in-up">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+$content
+</div>
+</div>    
+"""
+    return string.Template(template).substitute(content=content)
