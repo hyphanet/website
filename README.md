@@ -21,3 +21,6 @@ Status:
 Todo:
 - Make the list of possibilities of Freenet translatable
 - Move over all existing content
+- Figure out something for news updates
+- Add a license
+- Add submenu support?
