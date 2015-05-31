@@ -98,11 +98,11 @@ The following pages have been migrated:
 * link to uservoice
 * irc.html -> help.html#irc
 * link to "The newcomer's guide to anonymous communication on Freenet"
-
-The content of these pages still needs to be moved:
 * donate.html (including live balance?)
 * sponsors.html
 * link to store http://www.zazzle.com/freenetproject
+
+The content of these pages still needs to be moved:
 * developer.html
 * link to https://wiki.freenetproject.org/Translation
 * link to bugtracker https://bugs.freenetproject.org/my_view_page.php
