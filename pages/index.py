@@ -209,7 +209,7 @@ An important recent development, which very few other networks have, is the "dar
 
 Sounds good? [Get Freenet](download.html)
 """)
-    return section("introduction",_("Introduction"), paragraph(markdown.markdown(content)))
+    return section("introduction",_("Introduction"), text(markdown.markdown(content)))
 
 class IndexPage(object):
     slug = "index"

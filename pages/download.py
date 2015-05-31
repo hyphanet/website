@@ -348,5 +348,5 @@ class DownloadPage(object):
     section = "download"
     section_link = False
     def generate(self, language, site_menu):
-        h = paragraph(content())
+        h = text(content())
         return html(head("Freenet - Download"), body(menu(site_menu, self)+section("download","Download", h)))

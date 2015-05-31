@@ -1,7 +1,12 @@
 # Contains parts of the Designbootstrap theme light-wave
 # License: MIT
 import string
+import markdown
+import re
 
+def md(text):
+    return markdown.markdown(text.strip())
+    
 def html(head, body):
     template = """
 <!DOCTYPE html>
@@ -176,12 +181,14 @@ $content
 """
     return string.Template(template).substitute(name=name, title=title,content=content)
 
-def paragraph(content):
+def text(content):
     template = """
+<!-- text start -->
 <div class="row animate-in" data-anim-type="fade-in-up">
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 $content
 </div>
-</div>    
+</div>
+<!-- text end -->
 """
     return string.Template(template).substitute(content=content)

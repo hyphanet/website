@@ -87,9 +87,9 @@ The following pages have been migrated:
 * download.html -> download.py
 * whatis.html -> index.html#introduction
 * index.html (no unique content)
+* news.html -> news.py
 
 The content of these pages still needs to be moved:
-* news.html
 * philosophy.html
 * people.html
 * papers.html
