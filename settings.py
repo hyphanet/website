@@ -12,5 +12,4 @@ def create_menu():
         IndexPage(),
         NewsPage(),
         DownloadPage(),
-        HelpPage(),
         ]

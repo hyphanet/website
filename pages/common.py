@@ -99,7 +99,7 @@ def menu(site_menu, current_page):
         filename = page.slug + ".html"
         if page.slug == current_page.slug:
             filename = ""
-        menu_content += string.Template("""<li><a href="$filename#$section">$title</a></li>""").substitute(filename=filename,section=page.section,title=page.title.upper())
+        menu_content += string.Template("""<li><a href="$filename#$section">$title</a></li>""").substitute(filename=filename,section=page.sections[0].slug,title=page.title.upper())
     submenu_content = ""
     for section in current_page.sections[1:]: # skip the first one
         submenu_content += string.Template("""<li><a href="#$section">$title</a></li>""").substitute(section=section.slug,title=section.title.upper())

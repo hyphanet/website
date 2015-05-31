@@ -204,6 +204,5 @@ class NewsSection(Section):
 class IndexPage(Page):
     def __init__(self):
         self.slug = "index"
-        self.section = "home"
         self.title = _("Overview")
         self.sections = [Home(), Service(), NewsSection(), Introduction(), ContactSection()]

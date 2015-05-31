@@ -350,5 +350,4 @@ class DownloadPage(Page):
     def __init__(self):
         self.slug = "download"
         self.title = _("Download")
-        self.section = "download"
         self.sections = [DownloadSection()]
