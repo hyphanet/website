@@ -88,11 +88,11 @@ The following pages have been migrated:
 * whatis.html -> index.html#introduction
 * index.html (no unique content)
 * news.html -> news.py
+* philosophy.html -> about.html#philosophy
+* people.html -> about.html#people
+* papers.html -> about.html#papers
 
 The content of these pages still needs to be moved:
-* philosophy.html
-* people.html
-* papers.html
 * documentation.html
 * link to wiki
 * faq.html
