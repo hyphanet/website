@@ -1,5 +1,7 @@
 # New Freenet Website #
 
+See it in action on http://realitysink.com/freenet/en/
+
 This is a new version of the Freenet website. Its main goal is to improve the popularity of Freenet and
 to attract new contributors. The theme is Light Wave, by DesignBootstrap - http://www.designbootstrap.com/light-wave-template-bootstrap-transparent-theme/
 This repository contains a python application that will generate the website for all supported languages.
@@ -25,8 +27,8 @@ Status:
 
 Todo:
 - Get background image licensed (I'm in contact with the person who made it).
-- Have the background image as background image, or add images to the slideshow
 - Investigate license of the animations css lib (created issue on github)
+- Add translations (currently there are only a few sentences translated into Dutch, for testing)
 
 ## FAQ ##
 
