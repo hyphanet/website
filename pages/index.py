@@ -125,7 +125,7 @@ $tagline
 class Service(Section):
     def __init__(self):
         self.slug = "services"
-        self.title = _("What is Freent?")
+        self.title = _("What is Freenet?")
     def get_content(self):
         def service(icon, title, text):
             content = """

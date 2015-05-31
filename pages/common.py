@@ -15,6 +15,7 @@ class Section(object):
 class Page(object):
     # slug, title
     hidden = False
+    sections = []
     def generate(self, language, site_menu):
         section_content = "".join([x.generate() for x in self.sections])
         return html(head("Freenet - " + self.title), body(
@@ -99,7 +100,10 @@ def menu(site_menu, current_page):
         if page.slug == current_page.slug:
             filename = ""
         menu_content += string.Template("""<li><a href="$filename#$section">$title</a></li>""").substitute(filename=filename,section=page.section,title=page.title.upper())
-    
+    submenu_content = ""
+    for section in current_page.sections[1:]: # skip the first one
+        submenu_content += string.Template("""<li><a href="#$section">$title</a></li>""").substitute(section=section.slug,title=section.title.upper())
+        
     template = """
 <!--MENU SECTION START-->
 <div class="navbar navbar-inverse navbar-fixed-top scroll-me" id="menu-section" >
@@ -127,9 +131,7 @@ $brand
 <div class="navbar-collapse collapse">
 <ul class="nav navbar-nav navbar-right">
 
-<li><a href="#services">WHAT IS FREENET?</a>
-<li><a href="#news">NEWS</a>
-<li><a href="#contact">CONTACT</a>
+$submenu_content
 
 </ul>
 </div>
@@ -139,7 +141,7 @@ $brand
 </div>
 <!--MENU SECTION END-->
 """
-    return string.Template(template).substitute(brand="FREENET", menu_content=menu_content)
+    return string.Template(template).substitute(brand="FREENET", menu_content=menu_content, submenu_content=submenu_content)
 
 class ContactSection(Section):
     def __init__(self):
