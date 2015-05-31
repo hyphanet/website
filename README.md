@@ -20,15 +20,10 @@ The basic design is:
 - Translation is done using gettext; update_messages.sh will extract all the translatable strings into messages.po
 
 Status:
-- General layout and design are done
-- A single page (Download) has been moved over
+- All content has been migrated
+- Everything is translatable using gettext
 
 Todo:
-- Make the list of possibilities of Freenet translatable
-- Move over all existing content (see the Migration section of this document)
-- Figure out something for news updates
-- Add a license
-- Add submenu support?
 - Get background image licensed (I'm in contact with the person who made it).
 - Have the background image as background image, or add images to the slideshow
 - Add a favicon
@@ -83,7 +78,7 @@ So to summarize: the licensing situation seems to be OK, the background image is
 Otherwise we seem to be complying with (the intent of) all licenses.
 
 ## Migration ##
-The following pages have been migrated:
+Migration is complete:
 * download.html -> download.py
 * whatis.html -> index.html#introduction
 * index.html (no unique content)
@@ -98,11 +93,9 @@ The following pages have been migrated:
 * link to uservoice
 * irc.html -> help.html#irc
 * link to "The newcomer's guide to anonymous communication on Freenet"
-* donate.html (including live balance?)
-* sponsors.html
+* donate.html -> donate.html
+* sponsors.html -> donate.html#sponsors
 * link to store http://www.zazzle.com/freenetproject
-
-The content of these pages still needs to be moved:
-* developer.html
+* developer.html -> contribute.html#developer
 * link to https://wiki.freenetproject.org/Translation
 * link to bugtracker https://bugs.freenetproject.org/my_view_page.php

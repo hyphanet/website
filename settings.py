@@ -7,6 +7,7 @@ from pages.news import *
 from pages.about import *
 from pages.documentation import *
 from pages.donate import *
+from pages.contribute import *
 
 languages = ["en", "nl"]
 title = "Freenet"
@@ -19,4 +20,5 @@ def create_menu():
         DocumentationPage(),
         HelpPage(),
         DonatePage(),
+        ContributePage(),
         ]
