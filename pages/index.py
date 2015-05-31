@@ -1,6 +1,7 @@
 # License: GFDL
 import string
 import markdown
+import news
 from common import *
 
 site_brand = "Freenet"
@@ -176,6 +177,13 @@ An important recent development, which very few other networks have, is the "dar
 Sounds good? [Get Freenet](download.html)
 """)
     return section("introduction",_("Introduction"), text(markdown.markdown(content)))
+    
+def news_section():
+    # we show the most recent news items
+    md_content = ""
+    for item in news.news_items()[:5]:
+        md_content += "* " + item.markdown_link() + "\n"
+    return section("news", _("News"), text(md(md_content)))
 
 class IndexPage(object):
     slug = "index"
@@ -187,5 +195,6 @@ class IndexPage(object):
             menu(site_menu, self)+
             home()+
             service()+
+            news_section()+
             introduction()+
             contact()))
