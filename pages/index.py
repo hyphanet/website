@@ -118,79 +118,45 @@ $tagline
 
 
 def service():
+    def service(icon, title, text):
+        content = """
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+    <div class="services-wrapper">
+        <i class="$icon"></i>
+        <h3>$title</h3>
+        $text
+    </div>
+</div>
+"""
+        return string.Template(content).substitute(icon=icon,title=title,text=text)
+    services = [
+        service("ion-person", _("Secret Identity"),
+            _("Create a secret identity so nobody knows who you are.")),
+        service("ion-earth", _("Browse Webpages"),
+            _("There are a lot of webpages hosted on Freenet.")),
+        service("ion-chatboxes", _("Forums"),
+            _("Ask questions and exchange ideas.")),
+        service("ion-edit", _("Publish"),
+            _("Publish information while remaining anonymous.")),
+        service("ion-android-cloud-done", _("Share Files"),
+            _("Easy upload & download.")),
+        service("ion-cube", _("Resistant"),
+            _("Freenet has been designed to be resistant to attacks.")),
+        service("ion-shuffle", _("Distributed"),
+            _("No central points of fallure.")),
+        service("ion-wifi", _("Meshable"),
+            _("You can theoretically use Freenet as a meshnet.")),
+        service("ion-hammer", _("Platform"),
+            _("Write your own applications on the Freenet platform.")),
+    ]
     content = """
 <!-- service start -->
 <div class="row animate-in" data-anim-type="fade-in-up">
-
-<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-    <div class="services-wrapper">
-        <i class="ion-person"></i>
-        <h3>Secret Identity</h3>
-        Create a secret identity so nobody knows who you are.
-    </div>
-</div>
-<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-    <div class="services-wrapper">
-        <i class="ion-earth"></i>
-        <h3>Browse Webpages</h3>
-        There are a lot of webpages hosted on Freenet.
-    </div>
-</div>
-<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-    <div class="services-wrapper">
-        <i class="ion-chatboxes"></i>
-        <h3>Forums</h3>
-        Ask questions and exchange ideas.
-    </div>
-</div>
-<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-    <div class="services-wrapper">
-        <i class="ion-edit"></i>
-        <h3>Publish</h3>
-        Publish information while remaining anonymous.
-    </div>
-</div>
-<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-    <div class="services-wrapper">
-        <i class="ion-android-cloud-done"></i>
-        <h3>Share Files</h3>
-        Easy upload & download.
-    </div>
-</div>
-<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-    <div class="services-wrapper">
-        <i class="ion-cube"></i>
-        <h3>Resistant</h3>
-        Freenet has been designed to be resistant to attacks.
-    </div>
-</div>
-<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-    <div class="services-wrapper">
-        <i class="ion-shuffle"></i>
-        <h3>Distributed</h3>
-        No central points of fallure.
-    </div>
-</div>
-<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-    <div class="services-wrapper">
-        <i class="ion-wifi"></i>
-        <h3>Meshable</h3>
-        You can use Freenet as a meshnet.
-    </div>
-</div>
-<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-    <div class="services-wrapper">
-        <i class="ion-hammer"></i>
-        <h3>Platform</h3>
-        Write your own applications on the Freenet platform.
-    </div>
-</div>
-
-
+$services
 </div>
 <!-- service end -->
 """
-    return section("services", _("What is Freenet?"), content)
+    return section("services", _("What is Freenet?"), string.Template(content).substitute(services="".join(services)))
     
 def introduction():
     content = _("""
