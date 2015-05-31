@@ -7,16 +7,18 @@ import re
 def md(text):
     return markdown.markdown(text.strip())
     
+class Section(object):
+    # slug, title, content
+    def generate(self):
+        return section(self.slug, self.title, self.get_content())
+
 class Page(object):
-    section_link = False
+    # slug, title
     hidden = False
-    
-class SectionLink(Page):
-    section_link = True
-    def __init__(self, slug, section, title):
-        self.slug = slug
-        self.title = title
-        self.section = section
+    def generate(self, language, site_menu):
+        section_content = "".join([x.generate() for x in self.sections])
+        return html(head("Freenet - " + self.title), body(
+            menu(site_menu, self)+section_content))    
     
 def html(head, body):
     template = """
@@ -139,20 +141,12 @@ $brand
 """
     return string.Template(template).substitute(brand="FREENET", menu_content=menu_content)
 
-def contact():
-    return """
-<!--CONTACT SECTION START-->
-<section id="contact" >
-<div class="container">
-<div class="row text-center header animate-in" data-anim-type="fade-in-up">
-<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-
-<h3>Contact Details </h3>
-<hr />
-
-</div>
-</div>
-
+class ContactSection(Section):
+    def __init__(self):
+        self.slug = "contact"
+        self.title = _("Contact Details")
+    def get_content(self):
+        return """
 <div class="row animate-in" data-anim-type="fade-in-up">
 
 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
@@ -175,13 +169,6 @@ This website is licensed under the GNU Free Documentation License
 </div>
 
 </div>
-
-</div>
-
-
-</div>
-</section>
-<!--CONTACT SECTION END-->
 """
 
 def section(name, title, content):

@@ -6,70 +6,74 @@ from common import *
 
 site_brand = "Freenet"
 
-def home():
-    def slider_item(title, text, active=""):
-        template = """
-<div class="item $active">
-    <h3>
-        $title
-    </h3>
-    <p>
-        $text
-    </p>
-</div>
-"""
-        return string.Template(template).substitute(title=title, text=text.strip().replace("\n","<br/>"), active=active) # FIXME: user markdown
-    sliders = [
-        slider_item(_("Avoid Censorship"), _("""
-                Freenet allows you to freely share information
-                without any person, organization or country able
-                to block it. Freenet helps you to remain anonymous.
-                This allows you to communicate without fear.
-            """), "active"),
-        slider_item(_("Improve the World"), _("""
-                By using Freenet from the "free world" you
-                help people in oppressive regimes share information.
-                The more people use Freenet the easier it will
-                be to obtain. Using it will also be less suspicious.
-            """)),
-        slider_item(_("Save your (Childrens) Future"), _("""
-                Even if you live in a democratic country a dictator
-                needs only a few years to grab power.
-                Are you prepared?
-                Having experience with using Freenet might save lives!
-            """)),
-        slider_item(_("Explore the Dark Web"), _("""
-                What happens when people get total anonymity?
-                Does evil surface? Or are most people inherently good?
-                Freenet contains a varied amount of content,
-                be careful what links you click though!
-            """)),
-        slider_item(_("Meet New People"), _("""
-                People from all over the world use Freenet to
-                communicate. Granted, most of this could be done
-                fine over the open internet.
-                These pioneers however help us test the system.
-            """)),
-        slider_item(_("Experiment with Exciting New Technology"), _("""
-                Freenet is on the cutting edge of distributed
-                routing research. The data storage provided
-                by Freenet is a proving ground for a number
-                of new distributed systems.
-            """)),
-        slider_item(_("Host a Website"), _("""
-                Need a website nobody can take over?
-                That is hosted for free? That is
-                very resistant to attacks?
-                Just publish it on Freenet!
-            """)),
-        slider_item(_("Share Files"), _("""
-                Dropbox? No need, just upload
-                the file to Freenet and a few
-                minutes later anyone with the
-                secret URL can access it!
-            """)),
-    ]
-    content = """
+class Home(Section):
+    def __init__(self):
+        self.slug = "home"
+        self.title = ""
+    def generate(self): # override the generate function as this is not a normal section
+        def slider_item(title, text, active=""):
+            template = """
+    <div class="item $active">
+        <h3>
+            $title
+        </h3>
+        <p>
+            $text
+        </p>
+    </div>
+    """
+            return string.Template(template).substitute(title=title, text=text.strip().replace("\n","<br/>"), active=active) # FIXME: user markdown
+        sliders = [
+            slider_item(_("Avoid Censorship"), _("""
+                    Freenet allows you to freely share information
+                    without any person, organization or country able
+                    to block it. Freenet helps you to remain anonymous.
+                    This allows you to communicate without fear.
+                """), "active"),
+            slider_item(_("Improve the World"), _("""
+                    By using Freenet from the "free world" you
+                    help people in oppressive regimes share information.
+                    The more people use Freenet the easier it will
+                    be to obtain. Using it will also be less suspicious.
+                """)),
+            slider_item(_("Save your (Childrens) Future"), _("""
+                    Even if you live in a democratic country a dictator
+                    needs only a few years to grab power.
+                    Are you prepared?
+                    Having experience with using Freenet might save lives!
+                """)),
+            slider_item(_("Explore the Dark Web"), _("""
+                    What happens when people get total anonymity?
+                    Does evil surface? Or are most people inherently good?
+                    Freenet contains a varied amount of content,
+                    be careful what links you click though!
+                """)),
+            slider_item(_("Meet New People"), _("""
+                    People from all over the world use Freenet to
+                    communicate. Granted, most of this could be done
+                    fine over the open internet.
+                    These pioneers however help us test the system.
+                """)),
+            slider_item(_("Experiment with Exciting New Technology"), _("""
+                    Freenet is on the cutting edge of distributed
+                    routing research. The data storage provided
+                    by Freenet is a proving ground for a number
+                    of new distributed systems.
+                """)),
+            slider_item(_("Host a Website"), _("""
+                    Need a website nobody can take over?
+                    That is hosted for free? That is
+                    very resistant to attacks?
+                    Just publish it on Freenet!
+                """)),
+            slider_item(_("Share Files"), _("""
+                    Dropbox? No need, just upload
+                    the file to Freenet and a few
+                    minutes later anyone with the
+                    secret URL can access it!
+                """)),
+        ]
+        content = """
 <!--HOME SECTION START-->
 <div id="home" >
 <div class="container">
@@ -113,14 +117,18 @@ $tagline
 
 <!--HOME SECTION END-->
 """
-    tagline = _("Share, Chat, Browse. Anonymously. On the Free Network.")
-    download_text = _("Get Freenet")
-    return string.Template(content).substitute(sliders="".join(sliders),tagline=tagline,download_text=download_text)
+        tagline = _("Share, Chat, Browse. Anonymously. On the Free Network.")
+        download_text = _("Get Freenet")
+        return string.Template(content).substitute(sliders="".join(sliders),tagline=tagline,download_text=download_text)
 
 
-def service():
-    def service(icon, title, text):
-        content = """
+class Service(Section):
+    def __init__(self):
+        self.slug = "services"
+        self.title = _("What is Freent?")
+    def get_content(self):
+        def service(icon, title, text):
+            content = """
 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
     <div class="services-wrapper">
         <i class="$icon"></i>
@@ -129,38 +137,42 @@ def service():
     </div>
 </div>
 """
-        return string.Template(content).substitute(icon=icon,title=title,text=text)
-    services = [
-        service("ion-person", _("Secret Identity"),
-            _("Create a secret identity so nobody knows who you are.")),
-        service("ion-earth", _("Browse Webpages"),
-            _("There are a lot of webpages hosted on Freenet.")),
-        service("ion-chatboxes", _("Forums"),
-            _("Ask questions and exchange ideas.")),
-        service("ion-edit", _("Publish"),
-            _("Publish information while remaining anonymous.")),
-        service("ion-android-cloud-done", _("Share Files"),
-            _("Easy upload & download.")),
-        service("ion-cube", _("Resistant"),
-            _("Freenet has been designed to be resistant to attacks.")),
-        service("ion-shuffle", _("Distributed"),
-            _("No central points of fallure.")),
-        service("ion-wifi", _("Meshable"),
-            _("You can theoretically use Freenet as a meshnet.")),
-        service("ion-hammer", _("Platform"),
-            _("Write your own applications on the Freenet platform.")),
-    ]
-    content = """
+            return string.Template(content).substitute(icon=icon,title=title,text=text)
+        services = [
+            service("ion-person", _("Secret Identity"),
+                _("Create a secret identity so nobody knows who you are.")),
+            service("ion-earth", _("Browse Webpages"),
+                _("There are a lot of webpages hosted on Freenet.")),
+            service("ion-chatboxes", _("Forums"),
+                _("Ask questions and exchange ideas.")),
+            service("ion-edit", _("Publish"),
+                _("Publish information while remaining anonymous.")),
+            service("ion-android-cloud-done", _("Share Files"),
+                _("Easy upload & download.")),
+            service("ion-cube", _("Resistant"),
+                _("Freenet has been designed to be resistant to attacks.")),
+            service("ion-shuffle", _("Distributed"),
+                _("No central points of fallure.")),
+            service("ion-wifi", _("Meshable"),
+                _("You can theoretically use Freenet as a meshnet.")),
+            service("ion-hammer", _("Platform"),
+                _("Write your own applications on the Freenet platform.")),
+        ]
+        content = """
 <!-- service start -->
 <div class="row animate-in" data-anim-type="fade-in-up">
 $services
 </div>
 <!-- service end -->
 """
-    return section("services", _("What is Freenet?"), string.Template(content).substitute(services="".join(services)))
+        return string.Template(content).substitute(services="".join(services))
     
-def introduction():
-    content = _("""
+class Introduction(Section):
+    def __init__(self):
+        self.slug = "introduction"
+        self.title = _("Introduction")
+    def get_content(self):
+        content = _("""
 > _"I worry about my child and the Internet all the time, even though she's too young to have logged on yet. Here's what I worry about. I worry that 10 or 15 years from now, she will come to me and say 'Daddy, where were you when they took freedom of the press away from the Internet?'"_   
 > --Mike Godwin, [Electronic Frontier Foundation](https://www.eff.org/)
 
@@ -176,25 +188,22 @@ An important recent development, which very few other networks have, is the "dar
 
 Sounds good? [Get Freenet](download.html)
 """)
-    return section("introduction",_("Introduction"), text(markdown.markdown(content)))
+        return text(markdown.markdown(content))
     
-def news_section():
-    # we show the most recent news items
-    md_content = ""
-    for item in news.news_items()[:5]:
-        md_content += "* " + item.markdown_link() + "\n"
-    return section("news", _("News"), text(md(md_content)))
+class NewsSection(Section):
+    def __init__(self):
+        self.slug = "news"
+        self.title = _("News")
+    def get_content(self):
+        # we show the most recent news items
+        md_content = ""
+        for item in news.news_items()[:5]:
+            md_content += "* " + item.markdown_link() + "\n"
+        return text(md(md_content))
 
 class IndexPage(Page):
     def __init__(self):
         self.slug = "index"
         self.section = "home"
         self.title = _("Overview")
-    def generate(self, language, site_menu):
-        return html(head(self.title), body(
-            menu(site_menu, self)+
-            home()+
-            service()+
-            news_section()+
-            introduction()+
-            contact()))
+        self.sections = [Home(), Service(), NewsSection(), Introduction(), ContactSection()]
