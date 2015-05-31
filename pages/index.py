@@ -6,7 +6,7 @@ from common import *
 
 site_brand = "Freenet"
 
-class Home(Section):
+class HomeSection(Section):
     def __init__(self):
         self.slug = "home"
         self.title = ""
@@ -122,7 +122,7 @@ $tagline
         return string.Template(content).substitute(sliders="".join(sliders),tagline=tagline,download_text=download_text)
 
 
-class Service(Section):
+class ServiceSection(Section):
     def __init__(self):
         self.slug = "services"
         self.title = _("What is Freenet?")
@@ -167,7 +167,7 @@ $services
 """
         return string.Template(content).substitute(services="".join(services))
     
-class Introduction(Section):
+class IntroductionSection(Section):
     def __init__(self):
         self.slug = "introduction"
         self.title = _("Introduction")
@@ -197,7 +197,7 @@ class NewsSection(Section):
     def get_content(self):
         # we show the most recent news items
         md_content = ""
-        for item in news.news_items()[:5]:
+        for item in news.news_items():
             md_content += "* " + item.markdown_link() + "\n"
         return text(md(md_content))
 
@@ -205,4 +205,9 @@ class IndexPage(Page):
     def __init__(self):
         self.slug = "index"
         self.title = _("Overview")
-        self.sections = [Home(), Service(), NewsSection(), Introduction(), ContactSection()]
+        self.sections = [
+            HomeSection(),
+            ServiceSection(),
+            IntroductionSection(),
+            NewsSection(),
+            ContactSection()]
