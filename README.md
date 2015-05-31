@@ -86,9 +86,9 @@ Otherwise we seem to be complying with (the intent of) all licenses.
 The following pages have been migrated:
 * download.html -> download.py
 * whatis.html -> index.html#introduction
+* index.html (no unique content)
 
 The content of these pages still needs to be moved:
-* index.html
 * news.html
 * philosophy.html
 * people.html
