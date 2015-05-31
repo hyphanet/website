@@ -3,8 +3,12 @@ import string
 import markdown
 from common import *
 
-def content():
-    return _("""
+class DownloadSection(Section):
+    def __init__(self):
+        self.title = _("Download")
+        self.slug = "download"
+    def get_content(self):
+        return text(_("""
 <div id="content">
 	<script type="text/javascript">
 		function getStyleByElementByID(whichDivId)
@@ -340,12 +344,11 @@ you are a developer and would like to join us and help it would be much apprecia
 	  tarball <a href="https://github.com/freenet/fred/releases/download/build01467/freenet-build01467-source.tar.bz2">here</a> (<a href="https://downloads.freenetproject.org/alpha/freenet-build01467-source.tar.bz2.sig">signature</a>).
 	</small>
       </p>
-</div>""")
+</div>"""))
 
 class DownloadPage(Page):
-    slug = "download"
-    title = "Download"
-    section = "download"
-    def generate(self, language, site_menu):
-        h = text(content())
-        return html(head("Freenet - Download"), body(menu(site_menu, self)+section("download","Download", h)))
+    def __init__(self):
+        self.slug = "download"
+        self.title = _("Download")
+        self.section = "download"
+        self.sections = [DownloadSection()]
