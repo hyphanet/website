@@ -156,7 +156,7 @@ class ServiceSection(Section):
             service("ion-shuffle", _("Distributed"),
                 _("No central points of fallure, efficient caching of popular content.")),
             service("ion-erlenmeyer-flask", _("Proven"),
-                _("Freenet is based on solid research.")),
+                _("Based on solid research and in practical use for 15 years.")),
         ]
         content = """
 <!-- service start -->
