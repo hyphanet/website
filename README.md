@@ -25,7 +25,7 @@ Status:
 
 Todo:
 - Make the list of possibilities of Freenet translatable
-- Move over all existing content
+- Move over all existing content (see the Migration section of this document)
 - Figure out something for news updates
 - Add a license
 - Add submenu support?
@@ -81,3 +81,28 @@ GFDL license + some attribution would be enough.
 
 So to summarize: the licensing situation seems to be OK, the background image is the main point.
 Otherwise we seem to be complying with (the intent of) all licenses.
+
+## Migration ##
+The following pages have been migrated:
+* download.html -> download.py
+* whatis.html -> index.html#introduction
+
+The content of these pages still needs to be moved:
+* index.html
+* news.html
+* philosophy.html
+* people.html
+* papers.html
+* documentation.html
+* link to wiki
+* faq.html
+* lists.html
+* link to uservoice
+* irc.html
+* link to "The newcomer's guide to anonymous communication on Freenet"
+* donate.html (including live balance?)
+* sponsors.html
+* link to store http://www.zazzle.com/freenetproject
+* developer.html
+* link to https://wiki.freenetproject.org/Translation
+* link to bugtracker https://bugs.freenetproject.org/my_view_page.php
