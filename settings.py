@@ -1,7 +1,6 @@
 #License: GFDL
 from pages.index import *
 from pages.help import *
-from pages.sectionlink import *
 from pages.download import *
 from pages.news import *
 from pages.about import *
