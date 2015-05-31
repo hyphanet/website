@@ -5,7 +5,7 @@ import markdown
 import re
 
 def md(text):
-    return markdown.markdown(text.strip())
+    return markdown.markdown(unicode(text.strip(),"utf-8"))
     
 class Section(object):
     # slug, title, content
@@ -16,6 +16,7 @@ class Page(object):
     # slug, title
     hidden = False
     sections = []
+    first_section_in_menu = False
     def generate(self, language, site_menu):
         section_content = "".join([x.generate() for x in self.sections])
         return html(head("Freenet - " + self.title), body(
@@ -99,9 +100,16 @@ def menu(site_menu, current_page):
         filename = page.slug + ".html"
         if page.slug == current_page.slug:
             filename = ""
-        menu_content += string.Template("""<li><a href="$filename#$section">$title</a></li>""").substitute(filename=filename,section=page.sections[0].slug,title=page.title.upper())
+        section = ""
+        if not page.first_section_in_menu:
+            section = page.sections[0].slug
+        menu_content += string.Template("""<li><a href="$filename#$section">$title</a></li>""").substitute(filename=filename,section=section,title=page.title.upper())
     submenu_content = ""
-    for section in current_page.sections[1:]: # skip the first one
+    if current_page.first_section_in_menu:
+        skip = 0
+    else:
+        skip = 1
+    for section in current_page.sections[skip:]:
         submenu_content += string.Template("""<li><a href="#$section">$title</a></li>""").substitute(section=section.slug,title=section.title.upper())
         
     template = """
