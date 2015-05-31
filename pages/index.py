@@ -186,9 +186,10 @@ def news_section():
     return section("news", _("News"), text(md(md_content)))
 
 class IndexPage(Page):
-    slug = "index"
-    section = "home"
-    title = "Freenet"
+    def __init__(self):
+        self.slug = "index"
+        self.section = "home"
+        self.title = _("Overview")
     def generate(self, language, site_menu):
         return html(head(self.title), body(
             menu(site_menu, self)+

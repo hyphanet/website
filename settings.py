@@ -10,8 +10,6 @@ title = "Freenet"
 def create_menu():
     return [
         IndexPage(),
-        SectionLink("index", "services", _("What is Freenet?")),
-        SectionLink("index", "news", _("News")),
         NewsPage(),
         DownloadPage(),
         HelpPage(),

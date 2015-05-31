@@ -112,15 +112,26 @@ def menu(site_menu, current_page):
 
 $brand
 
+
 </a>
 </div>
+
+<div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav navbar-nav-page navbar-right">
+        $menu_content
+    </ul>
+</div>
+
 <div class="navbar-collapse collapse">
 <ul class="nav navbar-nav navbar-right">
 
-$menu_content
+<li><a href="#services">WHAT IS FREENET?</a>
+<li><a href="#news">NEWS</a>
+<li><a href="#contact">CONTACT</a>
 
 </ul>
 </div>
+
 
 </div>
 </div>

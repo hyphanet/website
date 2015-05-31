@@ -1,4 +1,4 @@
-﻿
+
 /*=============================================================
     Authour URL: www.designbootstrap.com
     
@@ -104,18 +104,28 @@ background-color: rgba(0, 0, 0, 0.4);
 border-color: transparent;
 }
 
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav-page > .active > a, .navbar-inverse .navbar-nav-page > .active > a:hover, .navbar-inverse .navbar-nav-page > .active > a:focus {
 background-color: transparent;
 border-bottom: 1px solid rgb(40, 141, 203);
 }
 
-.navbar-inverse .navbar-nav > li > a {
-font-size: 12px;
+.navbar-inverse .navbar-nav > li > a,  .navbar-inverse .navbar-nav-page > li > a{
 font-weight: 800;
 padding: 5px 0px;
 letter-spacing: 2px;
-margin: 10px 20px 10px 20px;
 color: #FFF;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+font-size: 10px;
+margin: 10px 20px 10px 20px;
+margin-top: 0px;
+padding-bottom: 1px; /* to make space for the blue activation line */
+}
+
+.navbar-inverse .navbar-nav-page > li > a {
+font-size: 13px;
+margin: 10px 20px 10px 20px;
 }
 
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-brand:hover {
