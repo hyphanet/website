@@ -239,6 +239,6 @@ The most up to date reference is of course [the source code](/developer.html), b
 class AboutPage(Page):
     def __init__(self):
         self.slug = "about"
-        self.title = _("About")
+        self.title = _("Background")
         self.sections = [PhilosophySection(), PeopleSection(), PapersSection()]
         self.first_section_in_menu = True
