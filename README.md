@@ -91,10 +91,10 @@ The following pages have been migrated:
 * philosophy.html -> about.html#philosophy
 * people.html -> about.html#people
 * papers.html -> about.html#papers
+* documentation.html and subpages -> documentation.py
+* link to wiki
 
 The content of these pages still needs to be moved:
-* documentation.html
-* link to wiki
 * faq.html
 * lists.html
 * link to uservoice

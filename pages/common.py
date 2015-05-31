@@ -9,6 +9,7 @@ def md(text):
     
 class Section(object):
     # slug, title, content
+    direct_link = None # put a link in this variable to link directly to an external page
     def generate(self):
         return section(self.slug, self.title, self.get_content())
 
@@ -18,7 +19,7 @@ class Page(object):
     sections = []
     first_section_in_menu = False
     def generate(self, language, site_menu):
-        section_content = "".join([x.generate() for x in self.sections])
+        section_content = "".join([x.generate() for x in self.sections if not x.direct_link])
         return html(head("Freenet - " + self.title), body(
             menu(site_menu, self)+section_content))    
     
@@ -110,7 +111,8 @@ def menu(site_menu, current_page):
     else:
         skip = 1
     for section in current_page.sections[skip:]:
-        submenu_content += string.Template("""<li><a href="#$section">$title</a></li>""").substitute(section=section.slug,title=section.title.upper())
+        link = section.direct_link or "#" + section.slug
+        submenu_content += string.Template("""<li><a href="$link">$title</a></li>""").substitute(link=link,title=section.title.upper())
         
     template = """
 <!--MENU SECTION START-->
