@@ -130,12 +130,12 @@ def menu(site_menu, current_page):
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
 </button>
-<a class="navbar-brand" href="index.html">
-
-$brand
-
-
-</a>
+<div class="navbar-brand">
+    <a href="index.html">
+        <img src="assets/img/logo-net-small.png" style="height: 2em;"/>
+        $brand
+    </a>
+</div>
 </div>
 
 <div class="navbar-collapse collapse">
