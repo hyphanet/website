@@ -42,12 +42,12 @@ class HomeSection(Section):
                     Are you prepared?
                     Having experience with using Freenet might save lives!
                 """)),
-            slider_item(_("Explore the Dark Web"), _("""
-                    What happens when people get total anonymity?
-                    Does evil surface? Or are most people inherently good?
-                    Freenet contains a varied amount of content,
-                    be careful what links you click though!
-                """)),
+#            slider_item(_("Explore the Dark Web"), _("""
+#                    What happens when people get total anonymity?
+#                    Does evil surface? Or are most people inherently good?
+#                    Freenet contains a varied amount of content,
+#                    be careful what links you click though!
+#                """)),
             slider_item(_("Meet New People"), _("""
                     People from all over the world use Freenet to
                     communicate. Granted, most of this could be done
