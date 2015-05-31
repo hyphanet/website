@@ -1,6 +1,11 @@
 # New Freenet Website #
 
+This is a new version of the Freenet website. Its main goal is to improve the popularity of Freenet and
+to attract new contributors. The theme is Light Wave, by DesignBootstrap - http://www.designbootstrap.com/light-wave-template-bootstrap-transparent-theme/
+This repository contains a python application that will generate the website for all supported languages.
+
 Goals:
+- Improve the popularity of Freenet
 - Should look nice
 - Static (so it does not need a webserver and can also be hosted on Freenet)
 - Should work without Javascript and through FProxy
