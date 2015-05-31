@@ -342,11 +342,10 @@ you are a developer and would like to join us and help it would be much apprecia
       </p>
 </div>""")
 
-class DownloadPage(object):
+class DownloadPage(Page):
     slug = "download"
     title = "Download"
     section = "download"
-    section_link = False
     def generate(self, language, site_menu):
         h = text(content())
         return html(head("Freenet - Download"), body(menu(site_menu, self)+section("download","Download", h)))

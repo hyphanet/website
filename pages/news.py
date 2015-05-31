@@ -226,12 +226,12 @@ A [report](http://www.freedomhouse.org/sites/default/files/inline_images/Censors
 """)),
     ]
     
-class NewsPage(object):
+class NewsPage(Page):
+    hidden = True
     def __init__(self):
         self.slug = "news"
         self.title = _("News")
         self.section = "news"
-        self.section_link = False
         
     def generate(self, language, site_menu):
         return html(head("Freenet - News"), body(menu(site_menu, self)+self.news_content()))

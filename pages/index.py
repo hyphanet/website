@@ -185,11 +185,10 @@ def news_section():
         md_content += "* " + item.markdown_link() + "\n"
     return section("news", _("News"), text(md(md_content)))
 
-class IndexPage(object):
+class IndexPage(Page):
     slug = "index"
     section = "home"
     title = "Freenet"
-    section_link = False
     def generate(self, language, site_menu):
         return html(head(self.title), body(
             menu(site_menu, self)+

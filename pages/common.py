@@ -7,6 +7,17 @@ import re
 def md(text):
     return markdown.markdown(text.strip())
     
+class Page(object):
+    section_link = False
+    hidden = False
+    
+class SectionLink(Page):
+    section_link = True
+    def __init__(self, slug, section, title):
+        self.slug = slug
+        self.title = title
+        self.section = section
+    
 def html(head, body):
     template = """
 <!DOCTYPE html>
@@ -81,6 +92,7 @@ $content
 def menu(site_menu, current_page):
     menu_content = "";
     for page in site_menu:
+        if page.hidden: continue
         filename = page.slug + ".html"
         if page.slug == current_page.slug:
             filename = ""
