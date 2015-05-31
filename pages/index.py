@@ -149,14 +149,14 @@ class Service(Section):
                 _("Publish information while remaining anonymous.")),
             service("ion-android-cloud-done", _("Share Files"),
                 _("Easy upload & download.")),
-            service("ion-cube", _("Resistant"),
-                _("Freenet has been designed to be resistant to attacks.")),
-            service("ion-shuffle", _("Distributed"),
-                _("No central points of fallure.")),
-            service("ion-wifi", _("Meshable"),
-                _("You can theoretically use Freenet as a meshnet.")),
             service("ion-hammer", _("Platform"),
                 _("Write your own applications on the Freenet platform.")),
+            service("ion-cube", _("Resistant"),
+                _("Freenet has been designed to be resistant to attacks and censorship.")),
+            service("ion-shuffle", _("Distributed"),
+                _("No central points of fallure, efficient caching of popular content.")),
+            service("ion-erlenmeyer-flask", _("Proven"),
+                _("Freenet is based on solid research.")),
         ]
         content = """
 <!-- service start -->
