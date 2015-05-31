@@ -3,8 +3,11 @@
 See it in action on http://realitysink.com/freenet/en/
 
 This is a new version of the Freenet website. Its main goal is to improve the popularity of Freenet and
-to attract new contributors. The theme is Light Wave, by DesignBootstrap - http://www.designbootstrap.com/light-wave-template-bootstrap-transparent-theme/
+to attract new contributors. The theme is [Light Wave]( http://www.designbootstrap.com/light-wave-template-bootstrap-transparent-theme/), by DesignBootstrap
 This repository contains a python application that will generate the website for all supported languages.
+
+Pull requests are very welcome, if you haven't got time to fix things yourself
+please create an issue on Github.
 
 Goals:
 - Improve the popularity of Freenet
