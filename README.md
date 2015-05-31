@@ -93,13 +93,13 @@ The following pages have been migrated:
 * papers.html -> about.html#papers
 * documentation.html and subpages -> documentation.py
 * link to wiki
+* faq.html -> help.html#faq
+* lists.html -> help.html#mailing-lists
+* link to uservoice
+* irc.html -> help.html#irc
+* link to "The newcomer's guide to anonymous communication on Freenet"
 
 The content of these pages still needs to be moved:
-* faq.html
-* lists.html
-* link to uservoice
-* irc.html
-* link to "The newcomer's guide to anonymous communication on Freenet"
 * donate.html (including live balance?)
 * sponsors.html
 * link to store http://www.zazzle.com/freenetproject

@@ -16,4 +16,5 @@ def create_menu():
         DownloadPage(),
         AboutPage(),
         DocumentationPage(),
+        HelpPage(),
         ]
