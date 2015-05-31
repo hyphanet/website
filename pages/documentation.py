@@ -12,19 +12,19 @@ class DocumentationIntroSection(Section):
         return text(md(_("""
 The documentation on Freenet is forever changing, since this is a project in development. However, here under the Documentation menu, you may find usage documents on how to setup Freenet and use the most popular Freenet tools as well as a user driven Wiki and an extensive Frequently Asked Questions department.
 
-*   [**Install**](install.html)  
+*   [**Install**](#install)  
      Contains detailed instructions on how to install Freenet using the new installer.
-*   [**Connect**](connect.html)  
+*   [**Connect**](#connect)  
      How to connect to Freenet.
-*   [**Content**](content.html)  
+*   [**Content**](#content)  
      Freenet as a Content Distribution System.
-*   [**Understand**](understand.html)  
+*   [**Understand**](#understand)  
      Explains the workings of Freenet, and a glossary with the most frequently used terms.
-*   [**Freemail**](freemail.html)  
+*   [**Freemail**](#freemail)  
      How to setup Freenets own anonymous email service.
-*   [**Frost**](frost.html)  
+*   [**Frost**](#frost)  
      Frost is the oldest and most used messaging and file sharing tool in the Freenet suite. This describes how to set it up and use it for the first time.
-*   [**jSite**](jsite.html)  
+*   [**jSite**](#jsite)  
      jSite is a Freenet website (a.k.a. Freesite) insertion tool.
 *   [**Wiki**](https://wiki.freenetproject.org/)  
      The Freenet Wiki is a user driven space where new features may be described before finding its way into the website. It is a good source of information about all sorts of Freenet related issues.
