@@ -26,7 +26,6 @@ Status:
 Todo:
 - Get background image licensed (I'm in contact with the person who made it).
 - Have the background image as background image, or add images to the slideshow
-- Add a favicon
 - Investigate license of the animations css lib (created issue on github)
 
 ## FAQ ##
