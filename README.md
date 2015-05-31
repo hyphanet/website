@@ -96,6 +96,6 @@ Migration is complete:
 * donate.html -> donate.html
 * sponsors.html -> donate.html#sponsors
 * link to store http://www.zazzle.com/freenetproject
-* developer.html -> contribute.html#developer
+* developer.html -> contribute.html#developers
 * link to https://wiki.freenetproject.org/Translation
 * link to bugtracker https://bugs.freenetproject.org/my_view_page.php

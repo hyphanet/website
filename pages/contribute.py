@@ -2,10 +2,10 @@
 # License: GFDL
 from common import *
 
-class DeveloperSection(Section):
+class DevelopersSection(Section):
     def __init__(self):
-        self.slug = "developer"
-        self.title = _("Developer")
+        self.slug = "developers"
+        self.title = _("Developers")
     def get_content(self):
         return text(md(_("""
 We are using [git](http://git-scm.com/) as our source code management system, hosted on [github](https://github.com/). We have many different git repositories for the website, freenet itself (fred), official plugins, the two installers, libraries and so on; for the list, see [our page on github](https://github.com/freenet/).
@@ -144,7 +144,7 @@ class ContributePage(Page):
         self.title = _("Contribute")
         self.first_section_in_menu = True
         self.sections = [
-            DeveloperSection(),
+            DevelopersSection(),
             TranslationSection(),
             BugTrackerSection(),
             ]
