@@ -1,13 +1,12 @@
 # New Freenet Website #
 
-See it in action on http://realitysink.com/freenet/en/
-
 This is a new version of the Freenet website. Its main goal is to improve the popularity of Freenet and
 to attract new contributors. The theme is [Light Wave]( http://www.designbootstrap.com/light-wave-template-bootstrap-transparent-theme/), by DesignBootstrap
 This repository contains a python application that will generate the website for all supported languages.
 
-Pull requests are very welcome, if you haven't got time to fix things yourself
-please create an issue on Github.
+See it in action on http://realitysink.com/freenet/en/
+We're working towards the 1.0 release (when it will replace the official Freenet website). Take a look
+at the issues on github to see what still needs to be done. Pull requests are very welcome!
 
 Goals:
 - Improve the popularity of Freenet
@@ -28,11 +27,6 @@ Status:
 - All content has been migrated
 - Everything is translatable using gettext
 
-Todo:
-- Get background image licensed (I'm in contact with the person who made it).
-- Investigate license of the animations css lib (created issue on github)
-- Add translations (currently there are only a few sentences translated into Dutch, for testing)
-
 ## FAQ ##
 
 *What static site generator does this use?* None, it uses it's own 30 line Python script.
@@ -48,6 +42,8 @@ It might, but it also makes it look exciting and high-tech. Light websites
 are more like "fun", "outside" and "old fashioned paper". If we want to
 attract (technical) users and contributors the exiting and high-tech
 look will probably suit them better.
+
+*How can I help?* Take a look at the issues on github.
 
 ## License ##
 
