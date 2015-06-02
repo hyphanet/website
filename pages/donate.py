@@ -8,7 +8,7 @@ class DonateSection(Section):
         self.slug = "donate"
         self.title = _("Donate")
     def get_content(self):
-        return text(_("""
+        return text("""
       <h4>Why does The Freenet Project need donations?</h4>
       <p>
 	Although countless people have given their time and skill to the project since its
@@ -165,7 +165,7 @@ class DonateSection(Section):
 	    administered at the direction of the 
 	    Freenet Project Board.
 	  <p></p>
-"""))
+""")
 
 class SponsorsSection(Section):
     def __init__(self):

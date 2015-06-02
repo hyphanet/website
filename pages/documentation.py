@@ -118,7 +118,7 @@ You should have at least three nodes that are connected to you at all times, ide
 
 ![](assets/img/Freenet-architecture-small.png)
 
-<span style="font-size:75%;font-style:italic;">Figure 1: Visible Freenet connections</span>
+*Figure 1: Visible Freenet connections*
 
 <span style="font-weight:bold;">Node A</span> in the figure also has a number of nodes connected to it, but they are all (except from your own node) invisible to you. The traffic routing algorithm is therefore only able to direct traffic to one of the few nodes that you know of that it thinks is most able to find what you are looking for.
 
@@ -221,7 +221,7 @@ Unlike other peer-to-peer networks, you as a user have little or no control over
 
 It is hard, but not impossible, to determine which files that are stored in your local Freenet Datastore. This is to enable plausible deniability as to what kind of material that lies on your harddrive in the datastore.
 
-The initial diskspace allocated for the datastore is 5% of available disk space if it is over 20GB, 10% if it is over 10GB, 512MB if under 10GB, and 256MB if under 5GB. You can change the store size at any time, the more the better, both for your personal browsing and for Freenet as a whole.
+The initial diskspace allocated for the datastore is 5%% of available disk space if it is over 20GB, 10%% if it is over 10GB, 512MB if under 10GB, and 256MB if under 5GB. You can change the store size at any time, the more the better, both for your personal browsing and for Freenet as a whole.
 
 ### Freenet Routing
 
