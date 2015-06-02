@@ -4,8 +4,15 @@ import string
 import markdown
 import re
 
+# This function will pass unicode text right through, other text will be decoded as utf-8
+def force_unicode(text):
+    if repr(text)[0] == 'u': #FIXME...
+        return text
+    return unicode(text.strip(),"utf-8")
+
+# Shorter way to encode markdown, also strips leading and trailing whitespace
 def md(text):
-    return markdown.markdown(unicode(text.strip(),"utf-8"))
+    return markdown.markdown(force_unicode(text.strip()))
     
 class Section(object):
     # slug, title, content
@@ -19,9 +26,9 @@ class Page(object):
     sections = []
     first_section_in_menu = False
     def generate(self, language, site_menu):
-        section_content = "".join([x.generate() for x in self.sections if not x.direct_link])
+        section_content = "".join([force_unicode(x.generate()) for x in self.sections if not x.direct_link])
         return html(head("Freenet - " + self.title), body(
-            menu(site_menu, self)+section_content))    
+            force_unicode(menu(site_menu, self))+section_content))
     
 def html(head, body):
     template = """
