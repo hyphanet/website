@@ -6,6 +6,7 @@ import shutil
 import settings
 import gettext
 import codecs
+import subprocess
 
 output_path = 'output'
 
@@ -23,6 +24,9 @@ except:
 for language in settings.languages:
     print language
     if language != "en":
+        # generate .mo files (so we don't have to check them into source control)
+        base = "locale/"+language+"/LC_MESSAGES/freenet_site"
+        subprocess.call(["msgfmt", "-o", base+".mo", base+".po"])
         lang = gettext.translation('freenet_site', localedir='locale', languages=[language], codeset="utf-8")
         lang.install()
     else:
