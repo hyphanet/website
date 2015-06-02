@@ -3,6 +3,7 @@
 import string
 import markdown
 import re
+import settings
 
 # This function will pass unicode text right through, other text will be decoded as utf-8
 def force_unicode(text):
@@ -145,17 +146,22 @@ def menu(site_menu, current_page):
     for section in current_page.sections[skip:]:
         link = section.direct_link or "#" + section.slug
         submenu_content += string.Template("""<li><a href="$link">$title</a></li>""").substitute(link=link,title=section.title.upper())
-        
+    languages = ""
+    for language in settings.languages:
+        languages += string.Template("""<li><a href="../$language/$slug.html">$title</a></li>""").substitute(language=language,slug=current_page.slug,title=language.upper())
     template = """
 <!--MENU SECTION START-->
 <div class="navbar navbar-inverse navbar-fixed-top scroll-me" id="menu-section" >
 <div class="container">
+
+
 <div class="navbar-header">
 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
 </button>
+
 <div class="navbar-brand">
     <a href="index.html">
         <img src="assets/img/logo-net-small.png" style="height: 2em;"/>
@@ -163,6 +169,16 @@ def menu(site_menu, current_page):
     </a>
 </div>
 </div>
+
+<!-- languages -->
+<div class="navbar-collapse collapse navbar-language">
+<ul class="nav navbar-nav navbar-nav-language navbar-right">
+
+$languages
+
+</ul>
+</div>
+
 
 <div class="navbar-collapse collapse">
     <ul class="nav navbar-nav navbar-nav-page navbar-right">
@@ -178,12 +194,11 @@ $submenu_content
 </ul>
 </div>
 
-
 </div>
 </div>
 <!--MENU SECTION END-->
 """
-    return string.Template(template).substitute(brand="FREENET", menu_content=menu_content, submenu_content=submenu_content)
+    return string.Template(template).substitute(brand="FREENET", menu_content=menu_content, submenu_content=submenu_content, languages=languages)
 
 class ContactSection(Section):
     def __init__(self):

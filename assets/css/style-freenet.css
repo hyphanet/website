@@ -142,6 +142,27 @@ font-size: 13px;
 margin: 10px 20px 10px 20px;
 }
 
+.navbar-inverse .navbar-nav-language > li > a {
+font-size: 8px;
+margin-left: 10px;
+color: rgb(95, 159, 208);
+z-index: 999; /* so you can actually click them */
+}
+
+#menu-section > div > div.navbar-collapse.collapse.navbar-language {
+height: 0px !important;
+}
+
+.navbar-inverse .navbar-nav-language {
+height: 0px;
+margin-top: -3px; /* fixme: negative margins are ugly */
+}
+
+.navbar-inverse .navbar-nav-page {
+margin-top: 5px; /* to create room for the language bar */
+}
+
+
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-brand:hover {
 color: #fff;
 font-weight: 900;
