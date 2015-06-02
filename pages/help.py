@@ -8,7 +8,7 @@ class FaqSection(Section):
         self.slug = "faq"
         self.title = _("FAQ")
     def get_content(self):
-        return text(_("""
+        return text("""
   <h3> Additional information sources</h3>
   <ul><li><a href="/whatis.html">Read this first: What is Freenet?</a>
   </li><li><a href="https://wiki.freenetproject.org/FAQ">An other FAQ on our wiki server</a>
@@ -945,7 +945,7 @@ is sometimes incorrect in classifying a file as dangerous. We believe
 our installer is not infected with malicious software, and if you are a developer
 you can check the installer source code <a href="https://github.com/freenet/wininstaller-innosetup">here</a>.
 </p>
-"""))
+""")
 
 class MailingListSection(Section):
     def __init__(self):
