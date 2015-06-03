@@ -22,7 +22,7 @@ except:
     pass
 
 for language in settings.languages:
-    print language
+    print(language)
     if language != "en":
         # generate .mo files (so we don't have to check them into source control)
         base = "locale/"+language+"/LC_MESSAGES/freenet_site"
