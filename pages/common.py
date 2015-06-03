@@ -83,8 +83,6 @@ def head(title):
 <link href="assets/css/ionicons.css" rel="stylesheet" />
 <!-- FONT AWESOME ICONS STYLES -->
 <link href="assets/css/font-awesome.css" rel="stylesheet" />
-<!-- FANCYBOX POPUP STYLES -->
-<link href="assets/js/source/jquery.fancybox.css" rel="stylesheet" />
 <!-- STYLES FOR VIEWPORT ANIMATION -->
 <link href="assets/css/animations.min.css" rel="stylesheet" />
 <!-- CUSTOM CSS -->
@@ -113,8 +111,6 @@ $content
 <script src="assets/js/vegas/jquery.vegas.min.js"></script>
 <!-- VEGAS SLIDESHOW SCRIPTS -->
 <script src="assets/js/jquery.easing.min.js"></script>
-<!-- FANCYBOX PLUGIN -->
-<script src="assets/js/source/jquery.fancybox.js"></script>
 <!-- ISOTOPE SCRIPTS -->
 <script src="assets/js/jquery.isotope.js"></script>
 <!-- VIEWPORT ANIMATION SCRIPTS   -->
