@@ -108,8 +108,6 @@ $content
 <!-- BOOTSTRAP SCRIPTS -->
 <script src="assets/js/bootstrap.js"></script>
 <!-- EASING SCROLL SCRIPTS PLUGIN -->
-<script src="assets/js/vegas/jquery.vegas.min.js"></script>
-<!-- VEGAS SLIDESHOW SCRIPTS -->
 <script src="assets/js/jquery.easing.min.js"></script>
 <!-- ISOTOPE SCRIPTS -->
 <script src="assets/js/jquery.isotope.js"></script>
