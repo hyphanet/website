@@ -23,9 +23,18 @@ The basic design is:
 - generate.py is the script that will turn this into a static site in output
 - Translation is done using gettext; update_messages.sh will extract all the translatable strings into messages.po
 
-Status:
-- All content has been migrated.
-- See github issues on what still needs to be done.
+## For Translators ##
+
+We might switch to Transifex soon, for now these are the steps:
+* Fork this repository and create a checkout
+* Run update_po.sh from the root directory
+* A messages.po file is generated in the root directory, you can import this in the existing translation or use it as a basis for a new translation.
+* Happy translating! Note that if the old freenetproject.org website already has a translation you can just copy that one.
+* If you encounter weird (HTML) stuff in one of the source texts (like HTML etc.) please open an issue on github. Everything is supposed to be markdown. If you want you can fix the english text in the pages/*.py file and re-run the ./update_messages.sh script.
+* When you done you can save your translation as locale/<language>/LC_MESSAGES/freenet_site.po
+* If you want to test your translation make sure your language is in /settings.py and then run ./generate.py. The translated website is at /output/<language>/index.html
+* You don't need to commit the .mo file, it will be generated automatically. It is also .gitignored for convenience.
+* Please send a pull request on github.
 
 ## FAQ ##
 
