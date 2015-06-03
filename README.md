@@ -58,8 +58,7 @@ common.py contains parts of the theme light-wave provided by designbootstrap
 Finally there is the generate.py script which is MIT licensed (just so it is as compatible as possible).
 Anything other written by gerard- and committed to this repository can also be considered MIT licensed.
 
-The current background image assets/img/network.jpg is unlicensed (see the TODO section).
-The assets/img/nightsky.jpg image (unused) is CC-BY 2.0 licensed: https://www.flickr.com/photos/newdimensionfilms/7108632527
+assets/img/freenetwork.png is copyright Gerard Krol, licensed CC-BY.
 
 assets/js/source contains fancybox, which is CC BY-NC 3.0. The noncommercial part is always confusing.
 As far as I know it it isn't used and could be removed if the license is an issue.
