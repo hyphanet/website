@@ -44,13 +44,8 @@ Tips:
 
 ## FAQ ##
 
-*What static site generator does this use?* None, it uses it's own 30 line Python script.
-The entire template is also just Python code. If you know Python you don't have to
-learn another templating language or theming framework to modify it.
-
-*Why doesn't this use an existing static site generator like Pelican?*
-Pelican was tried and it seemed like a lot of work to make a nice template for it.
-Also, the support for translations was annoying. Overall it didn't feel like a good fit.
+*The site absolutely needs to do X! When will this be added?* I (gerard-) will finish the stuff which *I* think needs to be done first. Then we can see how your feature X
+fits in the picture.
 
 *Doesn't the dark background make Freenet look "dark" and "hacker" like?*
 It might, but it also makes it look exciting and high-tech. Light websites
@@ -59,6 +54,16 @@ attract (technical) users and contributors the exiting and high-tech
 look will probably suit them better.
 
 *How can I help?* Take a look at the issues on github.
+
+*What static site generator does this use?* None, it uses it's own 30 line Python script.
+The entire template is also just Python code. If you know Python you don't have to
+learn another templating language or theming framework to modify it.
+
+*Why doesn't this use an existing static site generator like Pelican?*
+Pelican was tried and it seemed like a lot of work to make a nice template for it.
+Also, the support for translations was annoying. Overall it didn't feel like a good fit.
+
+
 
 ## License ##
 
