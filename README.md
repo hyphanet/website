@@ -24,8 +24,8 @@ The basic design is:
 - Translation is done using gettext; update_messages.sh will extract all the translatable strings into messages.po
 
 Status:
-- All content has been migrated
-- Everything is translatable using gettext
+- All content has been migrated.
+- See github issues on what still needs to be done.
 
 ## FAQ ##
 
@@ -60,21 +60,14 @@ Anything other written by gerard- and committed to this repository can also be c
 
 assets/img/freenetwork.png is copyright Gerard Krol, licensed CC-BY.
 
-assets/js/source contains fancybox, which is CC BY-NC 3.0. The noncommercial part is always confusing.
-As far as I know it it isn't used and could be removed if the license is an issue.
-
 assets/css/animations.min.css is copyright 2014, Joe Mottershaw but does not contain a license. See TODO
 
 Some of the icons from ionicons may be licensed CC BY 4.0.
 
-assets/js/jquery.isotope.js : commercial use requires a license fee
+assets/js/jquery.isotope.js : GPLv3
 
-So what would the license on the generated files be? Those are a mix of the content and the assets.
-The license of the files used to generate the output is of no concern. I think that the terms of the
-GFDL license + some attribution would be enough.
-
-So to summarize: the licensing situation seems to be OK, the background image is the main point.
-Otherwise we seem to be complying with (the intent of) all licenses.
+So what would the license on the generated files be? It looks like GPLv3 (from isotope) is the "strongest" license
+and it is also compatible with the rest. The entire website itself is thus GPLv3.
 
 ## Migration ##
 Migration is complete:
