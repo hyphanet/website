@@ -87,12 +87,12 @@ assets/css/animations.min.css is copyright 2014, Joe Mottershaw but does not con
 
 Some of the icons from ionicons may be licensed CC BY 4.0.
 
-assets/js/jquery.isotope.js : GPLv3
+assets/js/jquery.isotope.js: GPLv3
 
 This README.md is copyright Gerard Krol, licensed GFDL/CC-BY-SA 4.0/GPLv2+
 
-So what would the license on the generated files be? The HTML pages are GDFL (stronger than MIT). All other files retain their own licenses.
-It would however not be possible to create a unified whole of the software as the GPLv3 and the GDFL are not compatible.
+So what would the license on the generated files be? The HTML pages are GFDL (stronger than MIT). All other files retain their own licenses.
+It would however not be possible to create a unified whole of the software as the GPLv3 and the GFDL are not compatible.
 
 ## FAQ ##
 
