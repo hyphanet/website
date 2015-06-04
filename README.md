@@ -4,11 +4,13 @@ This is a new version of the Freenet website. Its main goal is to improve the po
 to attract new contributors. The theme is [Light Wave]( http://www.designbootstrap.com/light-wave-template-bootstrap-transparent-theme/), by DesignBootstrap
 This repository contains a python application that will generate the website for all supported languages.
 
-See it in action on http://realitysink.com/freenet/en/
+[See it in action!](http://realitysink.com/freenet/en/)
+
 We're working towards the 1.0 release (when it will replace the official Freenet website). Take a look
 at the issues on github to see what still needs to be done. Pull requests are very welcome!
 
 Goals:
+
 - Improve the popularity of Freenet
 - Should look nice
 - Static (so it does not need a webserver and can also be hosted on Freenet)
@@ -16,6 +18,7 @@ Goals:
 - The website should be easy to translate & maintain
 
 The basic design is:
+
 - settings.py contains the supported languages and the menu definition
 - pages/*.py contain the separate pages of the site
 - assets contains css, javascript and images
@@ -25,7 +28,10 @@ The basic design is:
 
 ## For Translators ##
 
+*Note that by contributing a translation you agree to license it under the GFDL, CC-BY 4.0 and GPLv2+ licenses.*
+
 We might switch to Transifex soon, for now these are the steps:
+
 * Fork this repository and create a checkout
 * Run update_po.sh from the root directory
 * A messages.po file is generated in the root directory, you can import this in the existing translation or use it as a basis for a new translation.
@@ -35,12 +41,56 @@ We might switch to Transifex soon, for now these are the steps:
 * Please send a pull request on github.
 
 Tips:
+
 * All text is supposed to be [markdown](http://daringfireball.net/projects/markdown/syntax) formatted.
 * If the old freenetproject.org website already has a translation you can just copy that one!
 * If you encounter weird (HTML) stuff in one of the source texts (like HTML etc.) please open an issue on github.
 * If you want you can fix the english text in the pages/*.py file and re-run the ./update_messages.sh script.
 * Some of the source text may have weird whitespace at the start and the end, please ignore this.
 * Note that newlines are important if they are inside a piece of text. They will end up on the site as line breaks.
+
+## License ##
+
+### Content ###
+*By contributing content you agree to license it under the GFDL, CC-BY 4.0 and GPLv2+ licenses.*
+
+Currently most of the content on the Freenet website seems to be licensed under the GNU Free Documentation License. It doesn't contain any copyright statements
+so it is hard to verify this. There is a lot of commit history available though. I believe the site has always had a clear GFDL license banner at the bottom, so
+contributors can be assumed to have licensed their contributions GFDL. I am not aware of any copyright assignment to the Freenet Project Inc.
+
+There is a problem though. The GFDL is not compatible with the GPLv2 which Freenet itself is licensed under. We actually cannot take text of the website and include
+it into Freenet itself. There is another problem. The GFDL states: *You may not use technical measures to obstruct or control the reading or further copying of the copies you make or distribute.*
+Inserting the website into Freenet itself may actually violate this term as the inserted data is only readable when you have the decryption key!
+
+So, is there a way out of this mess? What would be a better license? Just using GPLv2+ would be easiest. CC-BY-SA 4.0 is also compatible with GPLv2. I would vote for GPLv2+ just because
+it's already used in Freenet itself and it will cause the least confusion.
+
+Further reading:
+
+* [General Resolution: Why the GNU Free Documentation License is not suitable for Debian main](https://www.debian.org/vote/2006/vote_001)
+
+### Components ###
+*By contributing code you agree to license it under the terms of the MIT license unless you specify otherwise.*
+
+This website consists of a lot of parts. Files in the assets directory have their own licenses. If not mentioned these are MIT or BSD licensed.
+
+The situation in pages is that everything except commons.py is GDFL licensed due to including content from freenetproject.org.
+common.py contains parts of the theme light-wave provided by designbootstrap
+(licensed MIT) and is fully MIT licensed itself.
+
+the rabbit network image is copyright Gerard Krol, dual licensed CC-BY 4.0/GPLv2+
+the freenetwork background image is copyright Gerard Krol, dual licensed CC-BY 4.0/GPLv2+
+
+Finally there is the generate.py script which is MIT licensed (just so it is as compatible as possible).
+
+assets/css/animations.min.css is copyright 2014, Joe Mottershaw but does not contain a license. See TODO
+
+Some of the icons from ionicons may be licensed CC BY 4.0.
+
+assets/js/jquery.isotope.js : GPLv3
+
+So what would the license on the generated files be? The HTML pages are GDFL (stronger than MIT). All other files retain their own licenses.
+It would however not be possible to create a unified whole of the software as the GPLv3 and the GDFL are not compatible.
 
 ## FAQ ##
 
@@ -63,34 +113,15 @@ learn another templating language or theming framework to modify it.
 Pelican was tried and it seemed like a lot of work to make a nice template for it.
 Also, the support for translations was annoying. Overall it didn't feel like a good fit.
 
+*Why require triple licensing content added to the website?* That's just to be sure.
+Probably we'd want to us a single license later, and it is nice to already have permission.
+There is a lot of overlap between those licenses so you are not giving much extra away.
 
-
-## License ##
-
-This website consists of a lot of parts. Files in the assets directory
-have their own licenses. If not mentioned these are MIT or BSD licensed.
-
-The situation in pages is that everything except commons.py is GDFL licensed
-due to including content from freenetproject.org.
-common.py contains parts of the theme light-wave provided by designbootstrap
-(licensed MIT) and is fully MIT licensed itself.
-
-Finally there is the generate.py script which is MIT licensed (just so it is as compatible as possible).
-Anything other written by gerard- and committed to this repository can also be considered MIT licensed.
-
-assets/img/freenetwork.png is copyright Gerard Krol, licensed CC-BY.
-
-assets/css/animations.min.css is copyright 2014, Joe Mottershaw but does not contain a license. See TODO
-
-Some of the icons from ionicons may be licensed CC BY 4.0.
-
-assets/js/jquery.isotope.js : GPLv3
-
-So what would the license on the generated files be? It looks like GPLv3 (from isotope) is the "strongest" license
-and it is also compatible with the rest. The entire website itself is thus GPLv3.
+*What is the effect of licensing content under multiple licenses?* When someone want to use the content they can choose which of the licenses to use. This gives them a lot more freedom.
 
 ## Migration ##
 Migration is complete:
+
 * download.html -> download.py
 * whatis.html -> index.html#introduction
 * index.html (no unique content)
