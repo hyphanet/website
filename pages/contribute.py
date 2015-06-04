@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# License: GFDL
+# Python code copyright Gerard Krol, license: MIT
 from common import *
 
 class DevelopersSection(Section):
@@ -7,6 +7,7 @@ class DevelopersSection(Section):
         self.slug = "developers"
         self.title = _("Developers")
     def get_content(self):
+        # License: GFDL (from old freenetproject.org website)
         return text(md(_("""
 We are using [git](http://git-scm.com/) as our source code management system, hosted on [github](https://github.com/). We have many different git repositories for the website, freenet itself (fred), official plugins, the two installers, libraries and so on; for the list, see [our page on github](https://github.com/freenet/).
 

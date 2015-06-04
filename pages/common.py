@@ -1,4 +1,5 @@
-# Contains parts of the Designbootstrap theme light-wave
+# Copyright Designbootstrap (theme light-wave)
+# Copyright Gerard Krol
 # License: MIT
 import string
 import markdown

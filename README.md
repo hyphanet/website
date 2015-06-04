@@ -28,7 +28,7 @@ The basic design is:
 
 ## For Translators ##
 
-*Note that by contributing a translation you agree to license it under the GFDL, CC-BY 4.0 and GPLv2+ licenses.*
+*Note that by contributing a translation you agree to triple license it under the GFDL, CC-BY 4.0 and GPLv2+ licenses.*
 
 We might switch to Transifex soon, for now these are the steps:
 
@@ -52,7 +52,7 @@ Tips:
 ## License ##
 
 ### Content ###
-*By contributing content you agree to license it under the GFDL, CC-BY-SA 4.0 and GPLv2+ licenses.*
+*By contributing content you agree to triple license it under the GFDL, CC-BY-SA 4.0 and GPLv2+ licenses.*
 
 Currently most of the content on the Freenet website seems to be licensed under the GNU Free Documentation License. It doesn't contain any copyright statements
 so it is hard to verify this. There is a lot of commit history available though. I believe the site has always had a clear GFDL license banner at the bottom, so
@@ -81,13 +81,15 @@ common.py contains parts of the theme light-wave provided by designbootstrap
 the rabbit network image is copyright Gerard Krol, dual licensed CC-BY 4.0/GPLv2+
 the freenetwork background image is copyright Gerard Krol, dual licensed CC-BY 4.0/GPLv2+
 
-Finally there is the generate.py script which is MIT licensed (just so it is as compatible as possible).
+Finally there is the generate.py script which is MIT licensed (just so it is as compatible as possible). The MIT license can be found at http://opensource.org/licenses/MIT
 
 assets/css/animations.min.css is copyright 2014, Joe Mottershaw but does not contain a license. See TODO
 
 Some of the icons from ionicons may be licensed CC BY 4.0.
 
 assets/js/jquery.isotope.js : GPLv3
+
+This README.md is copyright Gerard Krol, licensed GFDL/CC-BY-SA 4.0/GPLv2+
 
 So what would the license on the generated files be? The HTML pages are GDFL (stronger than MIT). All other files retain their own licenses.
 It would however not be possible to create a unified whole of the software as the GPLv3 and the GDFL are not compatible.

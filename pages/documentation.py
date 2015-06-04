@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# License: GFDL
+# Python code copyright Gerard Krol, license: MIT
 import string
 import markdown
 from common import *
@@ -9,6 +9,7 @@ class DocumentationIntroSection(Section):
         self.slug = "documentation-intro"
         self.title = _("Documentation")
     def get_content(self):
+        # License: GFDL (from old freenetproject.org website)
         return text(md(_("""
 The documentation on Freenet is forever changing, since this is a project in development. However, here under the Documentation menu, you may find usage documents on how to setup Freenet and use the most popular Freenet tools as well as a user driven Wiki and an extensive Frequently Asked Questions department.
 
@@ -35,6 +36,7 @@ class InstallSection(Section):
         self.slug = "install"
         self.title = _("Install")
     def get_content(self):
+        # License: GFDL (from old freenetproject.org website)
         return text(md(_("""
 To install Freenet might not be as difficult as you might have heard. There are two ways to install Freenet:
 
@@ -102,6 +104,7 @@ class ConnectSection(Section):
         self.slug = "connect"
         self.title = _("Connect")
     def get_content(self):
+        # License: GFDL (from old freenetproject.org website)
         return text(md(_("""
 There are two ways to connect to Freenet:
 
@@ -183,6 +186,7 @@ class ContentSection(Section):
         self.slug = "content"
         self.title = _("Content")
     def get_content(self):
+        # License: GFDL (from old freenetproject.org website)
         return text(md(_("""
 In addition to its anonymity features, Freenet is also an effective way to distribute large files - often achieving download speeds faster than other content distribution systems. As a content distribution network Freenet has the following advantages:
 
@@ -203,6 +207,7 @@ class UnderstandSection(Section):
         self.slug = "understand"
         self.title = _("Understand")
     def get_content(self):
+        # License: GFDL (from old freenetproject.org website)
         return text(md(_("""
 Freenet can be thought of as a large storage device. When you store a file in it, you receive a key which can be used to retrieve the file. When you supply Freenet with a key, it returns the appropriate file (if it is located). The storage space is distributed among all connected nodes on Freenet.
 
@@ -365,6 +370,7 @@ class FreemailSection(Section):
         self.slug = "freemail"
         self.title = _("Freemail")
     def get_content(self):
+        # License: GFDL (from old freenetproject.org website)
         return text(md(_("""
 Freemail is an email system for Freenet. It allows you to send anonymous emails to other Freenet users using your standard email client. It is currently not bundled in the Freenet installer, and has to be downloaded separately. You can also try the Freemail plugin by selecting it from the list on the plugins page of your Freenet node. Beware, though, that the plugin is still in an early stage of development, and users should be active about looking in log files and reporting problems if they find them.
 
@@ -525,6 +531,7 @@ class FrostSection(Section):
         self.slug = "frost"
         self.title = _("Frost")
     def get_content(self):
+        # License: GFDL (from old freenetproject.org website)
         return text(md(_("""
 Frost is an application for Freenet that provides usenet-like message boards and file uploading/downloading/sharing functionalities. It should get installed with Freenet 0.7 automatically if you used the standard Freenet installers.
 
@@ -565,6 +572,7 @@ class JSiteSection(Section):
         self.slug = "jsite"
         self.title = _("jSite")
     def get_content(self):
+        # License: GFDL (from old freenetproject.org website)
         return text(md(_("""
 jSite is a graphical application that you can use to create, insert and manage your own Freenet sites. It was written in Java by Bombe.
 

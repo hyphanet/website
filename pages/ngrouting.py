@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# License: GFDL
+# Python code copyright Gerard Krol, license: MIT
 from common import *
 
 class NGRoutingSection(Section):
@@ -7,6 +7,7 @@ class NGRoutingSection(Section):
         self.slug = "ngrouting"
         self.title = _("Freenet's Next Generation Routing Protocol")
     def get_content(self):
+        # License: GFDL (from old freenetproject.org website)
         return text(md(_("""
 **by [Ian Clarke](mailto:ian@locut.us), Freenet Project Coordinator, 20th July 2003**
 

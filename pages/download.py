@@ -1,4 +1,4 @@
-# License: GFDL
+# Python code copyright Gerard Krol, license: MIT
 import string
 import markdown
 from common import *
@@ -8,6 +8,7 @@ class DownloadSection(Section):
         self.title = _("Download")
         self.slug = "download"
     def get_content(self):
+        # License: GFDL (from old freenetproject.org website)
         return text("""
 <div id="content">
 	<script type="text/javascript">

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # Copy this file to quickly add a new page
-# License: GFDL
+# Python code copyright Gerard Krol, license: MIT
 from common import *
 
 class SomeSection(Section):

@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # Generates static pages from python scripts
+# Copyright Gerard Krol
 # License: MIT
 import os
 import shutil

@@ -1,4 +1,5 @@
-#License: GFDL
+# Copyright Gerard Krol
+# License: MIT
 from pages.index import *
 from pages.help import *
 from pages.download import *

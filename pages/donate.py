@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-# Copy this file to quickly add a new page
-# License: GFDL
+# Python code copyright Gerard Krol, license: MIT
 from common import *
 
 class DonateSection(Section):
@@ -8,6 +7,7 @@ class DonateSection(Section):
         self.slug = "donate"
         self.title = _("Donate")
     def get_content(self):
+        # License: GFDL (from old freenetproject.org website)
         return text("""
       <h4>Why does The Freenet Project need donations?</h4>
       <p>
@@ -172,6 +172,7 @@ class SponsorsSection(Section):
         self.slug = "Sponsors"
         self.title = _("Sponsors")
     def get_content(self):
+        # License: GFDL (from old freenetproject.org website)
         return text(md(_("""
 The following persons, organisations and companies have generously sponsored this project through donations or discounts on hardware and services:
 

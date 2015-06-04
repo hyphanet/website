@@ -1,4 +1,4 @@
-# License: GFDL
+# Python code copyright Gerard Krol, license: MIT
 import string
 import markdown
 from common import *
@@ -15,6 +15,8 @@ class NewsItem(object):
 
 def news_items():
     # write these in markdown
+    
+    # Below news items are licensed GFDL (from old freenetproject.org website)
     return [
         NewsItem("20150522", _("22th May 2015 - UN Report: Encryption and Anonymity Deserve Strong Protection"),
 _("""

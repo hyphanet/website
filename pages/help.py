@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# License: GFDL
+# Python code copyright Gerard Krol, license: MIT
 from common import *
 
 class FaqSection(Section):
@@ -8,6 +8,7 @@ class FaqSection(Section):
         self.slug = "faq"
         self.title = _("FAQ")
     def get_content(self):
+        # License: GFDL (from old freenetproject.org website)
         return text("""
   <h3> Additional information sources</h3>
   <ul><li><a href="/whatis.html">Read this first: What is Freenet?</a>
@@ -952,6 +953,7 @@ class MailingListSection(Section):
         self.slug = "mailing-lists"
         self.title = _("Mailing lists")
     def get_content(self):
+        # License: GFDL (from old freenetproject.org website)
         return text(md(_("""
 These are the mailing lists that can be used for support or general information about Freenet.
 
@@ -993,6 +995,7 @@ class ChatSection(Section):
         self.slug = "chat"
         self.title = _("Chat with us")
     def get_content(self):
+        # License: GFDL (from old freenetproject.org website)
         return text(md(_("""
 Many of the developers and users of Freenet can often be found on an [IRC](https://en.wikipedia.org/wiki/IRC) channel, #freenet on chat.freenode.net. Almost everyone on the channel is a volunteer, and may be busy with other things, so you may not get an instant answer: **Ask your question/say what the problem is, then wait for a few minutes, and somebody may help you**.
 

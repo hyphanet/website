@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# License: GFDL
+# Python code copyright Gerard Krol, license: MIT
 import string
 import markdown
 from common import *
@@ -9,6 +9,7 @@ class PhilosophySection(Section):
         self.slug = "philosopy"
         self.title = _("The Philosophy behind Freenet")
     def get_content(self):
+        # License: GFDL (from old freenetproject.org website)
         return text(md(_("""
 *Written by Ian Clarke*
 
@@ -133,6 +134,7 @@ class PeopleSection(Section):
         self.slug = "people"
         self.title = _("People")
     def get_content(self):
+        # License: GFDL (from old freenetproject.org website)
         return text(md(_("""
 **Note:** This is an incomplete list, a large number of people have contributed to the project.
 
@@ -184,6 +186,7 @@ class PapersSection(Section):
         self.slug = "papers"
         self.title = _("Papers")
     def get_content(self):
+        # License: GFDL (from old freenetproject.org website)
         return text(md(_("""
 ![](assets/img/pdf.icon.jpg)[Measuring Freenet in the Wild: Censorship-resilience under Observation](assets/papers/roos-pets2014.pdf) (PDF)  
  Observations and measurements on the live Freenet network. Includes suggestions for improvement. This was submitted to PETS 2014.

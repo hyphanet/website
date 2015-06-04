@@ -1,4 +1,5 @@
-# License: GFDL
+# Python code copyright Gerard Krol, license: MIT
+# HTML copyright DesignBootstrap, Gerard Krol, license: MIT
 import string
 import markdown
 import news
@@ -24,6 +25,7 @@ class HomeSection(Section):
     """
             return string.Template(template).substitute(title=title, text=text.strip().replace("\n","<br/>"), active=active) # FIXME: user markdown
         sliders = [
+            # Slider items copyright Gerard Krol, licensed GFDL/CC-BY-SA 4.0/GPLv2+
             slider_item(_("Avoid Censorship"), _("""
                     Freenet allows you to freely share information
                     without any person, organization or country able
@@ -139,6 +141,7 @@ class ServiceSection(Section):
 """
             return string.Template(content).substitute(icon=icon,title=title,text=text)
         services = [
+             # Services items copyright Gerard Krol, licensed GFDL/CC-BY-SA 4.0/GPLv2+
             service("ion-person", _("Secret Identity"),
                 _("Create a secret identity so nobody knows who you are.")),
             service("ion-earth", _("Browse Webpages"),
@@ -172,6 +175,7 @@ class IntroductionSection(Section):
         self.slug = "introduction"
         self.title = _("Introduction")
     def get_content(self):
+        # License: GFDL (from old freenetproject.org website)
         content = _("""
 > _"I worry about my child and the Internet all the time, even though she's too young to have logged on yet. Here's what I worry about. I worry that 10 or 15 years from now, she will come to me and say 'Daddy, where were you when they took freedom of the press away from the Internet?'"_   
 > --Mike Godwin, [Electronic Frontier Foundation](https://www.eff.org/)
