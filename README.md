@@ -52,7 +52,7 @@ Tips:
 ## License ##
 
 ### Content ###
-*By contributing content you agree to license it under the GFDL, CC-BY 4.0 and GPLv2+ licenses.*
+*By contributing content you agree to license it under the GFDL, CC-BY-SA 4.0 and GPLv2+ licenses.*
 
 Currently most of the content on the Freenet website seems to be licensed under the GNU Free Documentation License. It doesn't contain any copyright statements
 so it is hard to verify this. There is a lot of commit history available though. I believe the site has always had a clear GFDL license banner at the bottom, so
