@@ -28,7 +28,7 @@ The basic design is:
 
 ## For Translators ##
 
-*Note that by contributing a translation you agree to triple license it under the GFDL, CC-BY 4.0 and GPLv2+ licenses.*
+*Note that by contributing a translation you agree to triple license it under the GFDL, CC-BY-SA 4.0 and GPLv2+ licenses.*
 
 We might switch to Transifex soon, for now these are the steps:
 
