@@ -489,3 +489,10 @@ font-size:10px;
 color:#fff;
 text-decoration:none;
 }
+
+/* Shift the anchors so links to them won't cause the title to end up under the menu at the top of the page */
+a.anchor {
+display: block;
+position: relative;
+top: -250px;visibility: hidden;
+}
