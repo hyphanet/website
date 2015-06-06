@@ -99,7 +99,7 @@ More documentation for git can be found [here](http://git-scm.com/documentation)
 
 ### Review
 
-If you don't like a commit, or think it could be improved, generally you should post to the devl [mailing list](lists.html). You should CC the author of the commit, but unless it is a trivial matter you should always mail devl.
+If you don't like a commit, or think it could be improved, generally you should post to the devl [mailing list](help.html#mailing-lists). You should CC the author of the commit, but unless it is a trivial matter you should always mail devl.
 
 ### Development guidelines
 

@@ -176,7 +176,7 @@ Because we can't find a way to do this without compromising Freenet's other goal
 
 Content which is popular should persist indefinitely, for example most freesites linked from the main indexes are still retrievable years later (at least their front pages are). If the content isn't very popular the best way to keep it available is to regularly re-insert (re-upload) it. An interesting option is the "Keepalive" plugin, which will do this for you - even if you didn't upload the file/site in the first place. Improvements are planned, such as a special kind of request that allows us to probe whether a file is available from a random point on the network.""")),
                     FaqItem("why-java", _("Why is Freenet implemented in Java?"), _("""
-Opinions differ about the choice of java for the reference implementation of freenet (even among the core developers). [Ian Clarke](/people.html) and several other developers are java proponents and the choice for java was made. Even if everybody could be convinced to switch to a different language reimplementing the current freenet protocol would be quite a big task, and take up a significant amount of time, while there is only a limited amount of developer-time available. Flame wars on the development list about the language choice aren't welcome, people willing to implement freenet in other languages however are very much encouraged to try. Don't underestimate the amount of work however.""")),
+Opinions differ about the choice of java for the reference implementation of freenet (even among the core developers). [Ian Clarke](about.html#people) and several other developers are java proponents and the choice for java was made. Even if everybody could be convinced to switch to a different language reimplementing the current freenet protocol would be quite a big task, and take up a significant amount of time, while there is only a limited amount of developer-time available. Flame wars on the development list about the language choice aren't welcome, people willing to implement freenet in other languages however are very much encouraged to try. Don't underestimate the amount of work however.""")),
                     FaqItem("fproxy-lan", _("How do I allow connections to FProxy from other computers?"), _("""
 If you want everyone to be able to use your node you have the following options:  
 
@@ -253,18 +253,18 @@ Absolutely. Even if you don't have the time or skills to become a co-developer o
 
 If you are a developer, you can help by working on Freenet itself, or by creating other applications to run on Freenet. External applications (such as FMS, the main forums system used on Freenet) use [the Freenet Client Protocol](https://wiki.freenetproject.org/FCPv2) to talk to Fred. Another possibility is writing plugins - these are written in Java and run in Freenet's JVM, and can be bundled with Freenet when they are ready. A popular plugin is Sone, which is a microblogging/social app over Freenet. You can see how to install FMS and Sone on e.g. the Freenet Social Networking Guide freesite.
 
-If you want to work on Freenet itself, see [here](https://freenetproject.org/developer.html) to get the source code.
+If you want to work on Freenet itself, see [here](contribute.html#developers) to get the source code.
 
 Links to us are welcome, for example this [web hosting guide](http://www.webhostingsearch.com/). Improvements to this website, fixes for spelling/grammar mistakes, new ideas (see [the previous answer](#idea)), are all welcome. You may find [the wiki](https://wiki.freenetproject.org/Main_Page) helpful.
 
-If you want to contribute to Freenet in any way, please contact us, via [the developers mailing list](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/devl/), [the chat channel](/irc.html), anonymously via the freenet board on FMS, or email [Ian](mailto:ian@locut.us).
+If you want to contribute to Freenet in any way, please contact us, via [the developers mailing list](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/devl/), [the chat channel](help.html#irc), anonymously via the freenet board on FMS, or email [Ian](mailto:ian@locut.us).
 
-Last but not least you can [donate](/donate.html) to support our paid developer(s) and cover server costs.
+Last but not least you can [donate](donate.html) to support our paid developer(s) and cover server costs.
 """)),
                     FaqItem("access", _("How can I access the code and website?"), _("""
-See the [developer page](/developer.html) for details of our git repositories etc.""")),
+See the [developer page](contribute.html#developers) for details of our git repositories etc.""")),
                     FaqItem("devtools", _("What tools do I need to help develop?"), _("""
-To build and deploy the Freenet server, you will need Java tools compatible with Sun's JDK 1.6 or later. You can download the source tarballs on the download page for a specific build, or use git to get an up to date copy of the source, see [here](/developer.html) for details. Further instructions for building and deploying the server are included with the code itself. Generally speaking, joining our IRC channel is a good idea: [#freenet on irc.freenode.net](irc://irc.freenode.net/freenet)""")),
+To build and deploy the Freenet server, you will need Java tools compatible with Sun's JDK 1.6 or later. You can download the source tarballs on the download page for a specific build, or use git to get an up to date copy of the source, see [here](contribute.html#developers) for details. Further instructions for building and deploying the server are included with the code itself. Generally speaking, joining our IRC channel is a good idea: [#freenet on irc.freenode.net](irc://irc.freenode.net/freenet)""")),
                     FaqItem("freenethelp", _("Is there a Help Site that goes deeper into the questions newbies may have about Freenet, and where people can contribute too?"), _("""
 Have a look at [our wiki](https://wiki.freenetproject.org/). An older wiki, which is now read-only, but has a fair amount of content so is sometimes helpful is [here](https://old-wiki.freenetproject.org/). There are also several implementations of wiki's over Freenet. The most recent one is called Jfniki. There is a link in the default bookmarks on the Browse Freenet page after you install Freenet.""")),
                     FaqItem("bugs", _("Where can I report bugs?"), _("""
@@ -340,7 +340,7 @@ The main datastore does not store data you request or insert (or that is request
 *   [Read this first: What is Freenet?](index.html#introduction)
 *   [An other FAQ on our wiki server](https://wiki.freenetproject.org/FAQ)
 *   [A page dedicated to the security of freenet 0.7 on our wiki server](https://wiki.freenetproject.org/Security_summary)
-*   [High quality copy of the rabbit icon](/image/rabbit/freenet-bunny.svg)
+*   [High quality copy of the rabbit icon](assets/img/rabbit/freenet-bunny.svg)
 """)+force_unicode(table_of_contents)+force_unicode(content))
 
 class MailingListSection(Section):
@@ -387,7 +387,7 @@ class SuggestionsSection(Section):
 
 class ChatSection(Section):
     def __init__(self):
-        self.slug = "chat"
+        self.slug = "irc"
         self.title = _("Chat with us")
     def get_content(self):
         # License: GFDL (from old freenetproject.org website)

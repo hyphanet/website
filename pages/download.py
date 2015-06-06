@@ -86,7 +86,7 @@ _("Show instructions for:")+"""
 """+div("windows",md(_("""
 ### Windows
 
-Download and run [the installer](https://freenetproject.org/jnlp/FreenetInstaller.exe) ([try this if the first link is blocked](https://downloads.freenetproject.org/latest/FreenetInstaller.exe))  
+Download and run [the installer](assets/jnlp/FreenetInstaller.exe) ([try this if the first link is blocked](https://downloads.freenetproject.org/latest/FreenetInstaller.exe))  
 
 It will automatically install Freenet and other required components for you. When done, your default browser will automatically open up to Freenet's web-based user interface.   
 (Freenet contains **NO spyware or adware** , it's Free Software! The source code is publicly available for review)   
@@ -95,14 +95,14 @@ Freenet requires Windows XP or later.
 """)))+div("macos",md(_("""
 ### Mac OSX
 
-[Install Freenet 0.7](/jnlp/freenet.jnlp) using Java Web Start.  
- This requires that Java is installed and that Java Web Start is enabled. If it doesn't work, try [installing Java](http://www.java.com/), then downloading [the installer](https://freenetproject.org/jnlp/freenet_installer.jar) and opening it. It might take a moment to launch.
+[Install Freenet 0.7](assets/jnlp/freenet.jnlp) using Java Web Start.  
+ This requires that Java is installed and that Java Web Start is enabled. If it doesn't work, try [installing Java](http://www.java.com/), then downloading [the installer](assets/jnlp/freenet_installer.jar) and opening it. It might take a moment to launch.
 
 **Note:** Mavericks does not ship with Java Web Start enabled. We would like to make a _.dmg_ for easier OS X installation but don't know how yet. If you are a developer and would like to join us and help it would be much appreciated!
 """)))+div("unix",md(_("""
 ### Linux and other Unix-like systems
 
-Try the [Java Web Start installer](/jnlp/freenet.jnlp).  
+Try the [Java Web Start installer](assets/jnlp/freenet.jnlp).  
  If it doesn't work:
 
 You need to have a recent **Java Runtime Environment** (JRE). We have experienced best results with Oracle's Java Runtime Environment which can be obtained via your [package manager](https://en.wikipedia.org/wiki/Package_manager) or from [http://www.java.com/](http://www.java.com/).  
@@ -111,10 +111,10 @@ Java version 1.6 or higher is required, and 1.7 or higher is strongly recommende
 
 Open a terminal and run:
 
-    wget '[https://freenetproject.org/jnlp/freenet_installer.jar](https://freenetproject.org/jnlp/freenet_installer.jar)' -O new_installer_offline.jar
+    wget '[https://freenetproject.org/assets/jnlp/freenet_installer.jar](https://freenetproject.org/assets/jnlp/freenet_installer.jar)' -O new_installer_offline.jar
     java -jar new_installer_offline.jar
 
-Alternatively, downloading [the installer](https://freenetproject.org/jnlp/freenet_installer.jar) ([gpg signature](https://downloads.freenetproject.org/alpha/installer/new_installer_offline_1467.jar.sig)) and then clicking on the file may work on some systems, but if there are problems we recommend the above command lines. If wget is not installed, it can be installed with a package manager, such as sudo apt-get install wget on Debian or Ubuntu.
+Alternatively, downloading [the installer](assets/jnlp/freenet_installer.jar) ([gpg signature](https://downloads.freenetproject.org/alpha/installer/new_installer_offline_1467.jar.sig)) and then clicking on the file may work on some systems, but if there are problems we recommend the above command lines. If wget is not installed, it can be installed with a package manager, such as sudo apt-get install wget on Debian or Ubuntu.
 
 If the link above is blocked, you could download it from our server [here](https://downloads.freenetproject.org/latest/new_installer_offline.jar). But please use the other link if you can.
 
@@ -122,6 +122,7 @@ If the link above is blocked, you could download it from our server [here](https
 
 If this doesn't work on a headless server, try "java -jar new_installer_offline.jar -console", and follow the prompts to tell it where to install Freenet etc.
 
+<a class="anchor" name="mirrored"></a>
 ### Mirrored installation
 
 If you have a working Freenet installation directory that you have mirrored from one Unix machine to another (e.g. via rsync or unison), enabling the mirrored installation is not difficult. Nothing in a Freenet installation cares about its host's IP address; it can't, or Freenet would fail on machines that get IP addressss from a DHCP pool
@@ -136,7 +137,7 @@ You might find the [Freenet Social Networking Guide](http://freesocial.draketo.d
 """)))+run_show_hide_script()+md(_("""
 ### Firewalls and routers
 
-Freenet should work fine with most routers, but if you are having problems and you have a firewall or router, click [**here**](faq.html#firewall) for some info.
+Freenet should work fine with most routers, but if you are having problems and you have a firewall or router, click [**here**](help.html#firewall) for some info.
 
 ### So it's running, what do I do?
 
@@ -154,7 +155,7 @@ The [Freenet Social Networking Guide](http://freesocial.draketo.de/) explains ho
 
 ### It doesn't work, now what?
 
-If you have problems installing or running Freenet, please contact us on [the support list](mailto:support@freenetproject.org) ([subscribe here](lists.html)), or join us on IRC on the #freenet channel on irc.freenode.net (try [here](https://webchat.freenode.net/?randomnick=1&channels=freenet)).
+If you have problems installing or running Freenet, please contact us on [the support list](mailto:support@freenetproject.org) ([subscribe here](help.html#mailing-lists)), or join us on IRC on the #freenet channel on irc.freenode.net (try [here](https://webchat.freenode.net/?randomnick=1&channels=freenet)).
 
 ### Hardware requirements
 
@@ -171,7 +172,7 @@ Freenet provides an update-over-freenet mechanism: It will keep itself up to dat
 *   Windows users can upgrade to the latest-stable Freenet release from the system tray menu, or by running "update.cmd" in the Freenet directory.
 *   Mac and Linux users may upgrade by running the update.sh shell script in the Freenet directory.
 
-**Source Code:** See [the developer page](developer.html) for git access, or download the lastest stable tarball [here](https://github.com/freenet/fred/releases/download/build01467/freenet-build01467-source.tar.bz2) ([signature](https://downloads.freenetproject.org/alpha/freenet-build01467-source.tar.bz2.sig)).
+**Source Code:** See [the developer page](contributing.html#developers) for git access, or download the lastest stable tarball [here](https://github.com/freenet/fred/releases/download/build01467/freenet-build01467-source.tar.bz2) ([signature](https://downloads.freenetproject.org/alpha/freenet-build01467-source.tar.bz2.sig)).
 """)))
 
 class NoteSection(Section):

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- JNLP File for Freenet -->
+<jnlp spec="1.0+" href="https://freenetproject.org/jnlp/freenet.jnlp" codebase="https://freenetproject.org/jnlp/">
+	<information>
+		<title>Freenet 0.7.5 installer</title>
+		<vendor>Freenet Project Inc.</vendor>
+		<homepage href="https://freenetproject.org/"/>
+		<description>Freenet Java Reference Implementation</description>
+		<description kind="short">
+		Freenet is free software which lets you publish and obtain information on the Internet without fear of censorship. To achieve this freedom, the network is entirely decentralized and publishers and consumers of information are anonymous. Without anonymity there can never be true freedom of speech, and without decentralization the network will be vulnerable to attack.
+		</description>
+		<icon href="freenet-icon.gif"/>
+		<icon kind="splash" href="splash.gif"/>
+	</information>
+	<security>
+		<all-permissions/>
+	</security>
+	<resources>
+		<jar href="freenet_installer.jar" />
+		<j2se version="1.7.0+" />
+	</resources>
+	<application-desc/>
+</jnlp>

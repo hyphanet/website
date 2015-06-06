@@ -32,7 +32,7 @@ There are many reasons why people get involved in the Freenet Project. Some shar
 <a class="anchor" name="prior_reading"></a>
 ### 2\. Suggested prior reading
 
-For this document to make sense, you should probably know what Freenet is. You can get a good overview on the [What is Freenet?](/whatis.html) page.
+For this document to make sense, you should probably know what Freenet is. You can get a good overview on the [What is Freenet?](index.html#introduction) page.
 
 <a class="anchor" name="free_flow_info"></a>
 ### 3\. The importance of the Free flow of information
@@ -138,7 +138,7 @@ Michael has mostly contributed detailed simulations as part of the Google Summer
 
 ### Dave Baker
 
-Dave's main contribution has been [Freemail](freemail.html), his Summer of Code project to build a working email-over-freenet system, as well as some debugging and core work in various places.
+Dave's main contribution has been [Freemail](documentation.html#freemail), his Summer of Code project to build a working email-over-freenet system, as well as some debugging and core work in various places.
 
 ### Robert Hailey
 
@@ -148,7 +148,7 @@ Robert has helped improve the speed and security of Freenet by finding two **maj
 
 David (Zothar) has helped the Freenet project as time permits and interest directs, including configuration, statistics and peer management via FCP, the FProxy stats page and Node 2 Node Messages (N2NM/N2NTMs).
 
-And **hundreds of others**, who either haven't asked to be added here, who prefer to remain nameless, or who we just haven't got around to thanking. Not to mention thousands of users, testers, and [donors](sponsors.html)!
+And **hundreds of others**, who either haven't asked to be added here, who prefer to remain nameless, or who we just haven't got around to thanking. Not to mention thousands of users, testers, and [donors](donate.html#sponsors)!
 """)))
 
 class PapersSection(Section):
@@ -164,7 +164,7 @@ class PapersSection(Section):
 ![](assets/img/pdf.icon.jpg)[The Dark Freenet](assets/papers/freenet-0.7.5-paper.pdf) (PDF)  
  Detailed paper about the Freenet 0.7.5 network, as opposed to its routing algorithm, which is detailed in the below papers. Includes some new simulations. This has been submitted to PET 2010.
 
-![](assets/img/video.icon.png)[Video of Small World talk, Berlin, December 2005](/22c3vid.html)  
+![](assets/img/video.icon.png)[Video of Small World talk, Berlin, December 2005](http://player.vimeo.com/video/22488244?title=0&byline=0&portrait=0)  
  This is a video of a talk given by Ian Clarke and Oskar Sandberg at the Chaos Computer Congress in Berlin, December 2005, describing the (then) new architecture for Freenet 0.7\. You can also download the [slideshow](assets/papers/ccc/ccc-slideshow.pdf.bz2), and the source for the Java [demo](assets/papers/ccc/ccc-freenet-demo.tar.bz2) (requires Java 1.5).
 
 ![](assets/img/pdf.icon.jpg)[Searching in a Small World](assets/papers/lic.pdf) (PDF)  
@@ -173,8 +173,8 @@ class PapersSection(Section):
 ![](assets/img/pdf.icon.jpg)[Distributed routing in Small World Networks](assets/papers/swroute.pdf) (PDF)  
  A paper by Oskar Sandberg describing the theoretical basis for the new "Darknet" routing mechanism employed by Freenet 0.7.
 
-![](assets/img/pdf.icon.jpg)[Chaos Computer Congress Talk](http://events.ccc.de/congress/2005/fahrplan/events/492.en.html) (slideshow)  
- This is a [slideshow](assets/papers/ccc/ccc-slideshow.pdf.bz2) for a talk given at the Chaos Computer Congress on 30th Dec 2005 in Berlin, Germany by Ian Clarke and Oskar Sandberg. It described the new "darknet" approach to be employed in Freenet 0.7\. A Java demonstration to accompany the talk is [also](assets/papers/ccc/ccc-freenet-demo.tar.bz2) available.
+![](assets/img/pdf.icon.jpg)Chaos Computer Congress Talk (slideshow)  
+ This is a [slideshow](assets/papers/ccc-slideshow.pdf.bz2) for a talk given at the Chaos Computer Congress on 30th Dec 2005 in Berlin, Germany by Ian Clarke and Oskar Sandberg. It described the new "darknet" approach to be employed in Freenet 0.7\. A Java demonstration to accompany the talk is [also](assets/papers/ccc-freenet-demo.tar.bz2) available.
 
 ![](assets/img/pdf.icon.jpg)[Switching for a small world](assets/papers/vilhelm_thesis.pdf) (PDF)  
  A thesis by Vilhelm Verendel exploring ways to optimise the swapping algorithm.
@@ -207,7 +207,7 @@ class PapersSection(Section):
 
 * * *
 
-The most up to date reference is of course [the source code](/developer.html), but there is also some useful documentation on [the wiki](https://wiki.freenetproject.org/) (you may have to search a bit), and most implemented ideas have been discussed in detail on [the mailing lists](/lists.html) at some point, more recently ofen in-Freenet forums such as FMS, or [the bug tracker](https://bugs.freenetproject.org/).
+The most up to date reference is of course [the source code](contribute.html#developers), but there is also some useful documentation on [the wiki](https://wiki.freenetproject.org/) (you may have to search a bit), and most implemented ideas have been discussed in detail on [the mailing lists](help.html#mailing-lists) at some point, more recently ofen in-Freenet forums such as FMS, or [the bug tracker](https://bugs.freenetproject.org/).
 """)))
 class AboutPage(Page):
     def __init__(self):

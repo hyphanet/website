@@ -48,12 +48,12 @@ If you want to install the Freenet software on a computer which lacks a GUI, see
 
 #### Graphical install
 
-**The below is outdated for Windows systems**, for Windows you should use [the Windows installer](https://freenetproject.org/jnlp/FreenetInstaller.exe) as described on [the download page](/download.html). You can also get the Windows installer from [here](https://downloads.freenetproject.org/latest/FreenetInstaller.exe).
+**The below is outdated for Windows systems**, for Windows you should use [the Windows installer](assets/jnlp/FreenetInstaller.exe) as described on [the download page](download.html). You can also get the Windows installer from [here](https://downloads.freenetproject.org/latest/FreenetInstaller.exe).
 
 For a graphical installation you have to have:
 
 *   A working Java Runtime Environment,
-*   a downloaded copy of [new_installer_offline.jar](https://freenetproject.org/jnlp/freenet_installer.jar) (if this does not work try [here](https://downloads.freenetproject.org/latest/new_installer_offline.jar))
+*   a downloaded copy of [new_installer_offline.jar](assets/jnlp/freenet_installer.jar) (if this does not work try [here](https://downloads.freenetproject.org/latest/new_installer_offline.jar))
 *   a working graphical user interface (GUI)
 
 You should save the new_installer.jar file somewhere were you can find it again. Your home-directory should be a good place. The next step requires you to know where you stored the file (the path to it), so it is quite important that you do that step thouroghly.

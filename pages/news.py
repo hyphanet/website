@@ -46,7 +46,7 @@ Freenet and its communication tools to provide a point of contact for users at r
 """)),
         NewsItem("20150414", _("14th April 2015 - SUMA Award Acceptance Speech (video)"),
 _("""
-The video from the talk given when Freenet [received the SUMA Award 2015](#20150211-suma-award)
+The video from the talk given when Freenet [received the SUMA Award 2015](#20150211)
 for being the best project against surveillance and espionage on the Internet
 is available on [the Award page](http://www.searchstudies.org/de/suma2015.html)
 and [on YouTube](https://youtu.be/dZpsBSPsHDI?t=5m56s):
@@ -193,7 +193,7 @@ We have planned further improvements, which should greatly improve security (cen
 
 Please help us secure freedom of access to information by contributing to the Freenet-project with code, donations, translations, or just by running a node or creating content (anonymously)!
 
-Volunteers - especially developers - are always very welcome. Feel free to contact us, through [IRC online chat](/irc.html), [the mailing lists](/lists.html), or on Freenet itself in the "freenet" board on FMS.
+Volunteers - especially developers - are always very welcome. Feel free to contact us, through [IRC online chat](help.html#irc), [the mailing lists](help.html#mailing-lists), or on Freenet itself in the "freenet" board on FMS.
 
 For press enquiries please contact [Ian Clarke](mailto:ian@freenetproject.org).
 """)),

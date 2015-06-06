@@ -99,7 +99,7 @@ Next Generation routing was deployed in Freenet from 2003-2005, however in Freen
 
 ### Interested in helping?
 
-In addition to joining our development effort, you can really help us to make this all a reality by donating whatever you can spare to the project on our [Donations](/donate.html) page.
+In addition to joining our development effort, you can really help us to make this all a reality by donating whatever you can spare to the project on our [Donations](donate.html) page.
 """)))
 
 class NGRoutingPage(Page):
