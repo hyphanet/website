@@ -2,3 +2,4 @@
 /output
 /messages.po
 *.mo
+*.pot
