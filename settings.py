@@ -21,6 +21,7 @@ def create_menu():
         DocumentationPage(),
         HelpPage(),
         DonatePage(),
+        DonateThanksPage(),
         ContributePage(),
         NGRoutingPage(),
         ]
