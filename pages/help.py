@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # Python code copyright Gerard Krol, license: MIT
-from common import *
+from .common import *
 
 class FaqSubSection(object):
     def __init__(self, title, items):

@@ -2,8 +2,8 @@
 # HTML copyright DesignBootstrap, Gerard Krol, license: MIT
 import string
 import markdown
-import news
-from common import *
+import pages.news as news
+from pages.common import *
 
 site_brand = "Freenet"
 

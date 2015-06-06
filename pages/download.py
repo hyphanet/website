@@ -1,7 +1,7 @@
 # Python code copyright Gerard Krol, license: MIT
 import string
 import markdown
-from common import *
+from .common import *
 
 def div(name, content):
     return """<div id="{}">{}</div>""".format(name, content)

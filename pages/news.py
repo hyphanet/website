@@ -1,7 +1,7 @@
 # Python code copyright Gerard Krol, license: MIT
 import string
 import markdown
-from common import *
+from .common import *
 
 class NewsItem(object):
     def __init__(self, section, title, content):

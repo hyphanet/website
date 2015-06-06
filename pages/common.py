@@ -6,6 +6,14 @@ import markdown
 import re
 import settings
 
+# Python 2 compatibility
+def nop2(x,y):
+    return x
+try:
+    unicode = unicode
+except:
+    unicode = nop2
+
 # This function will pass unicode text right through, other text will be decoded as utf-8
 def force_unicode(text):
     if repr(text)[0] == 'u': #FIXME...

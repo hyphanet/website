@@ -8,7 +8,10 @@ import settings
 import gettext
 import codecs
 import subprocess
-import __builtin__
+try:
+    import __builtin__ as builtins
+except:
+    import builtins
 import re
 
 output_path = 'output'
@@ -32,7 +35,7 @@ def nop(x):
 def install_clean_gettext(gt):
     def c(text):
         return gt(re.sub(r"^[ \t]+", "", text.strip(), flags=re.MULTILINE))
-    __builtin__._ = c
+    builtins._ = c
 
 for language in settings.languages:
     print(language)
@@ -50,6 +53,6 @@ for language in settings.languages:
     # generate pages
     menu = settings.create_menu()
     for page in menu:
-        f = codecs.open(html_filename(language, page.slug),"wt","utf-8")
+        f = codecs.open(html_filename(language, page.slug),"w","utf-8")
         f.write(page.generate(language, menu))
         f.close

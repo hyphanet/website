@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # Python code copyright Gerard Krol, license: MIT
-from common import *
+from .common import *
 
 class DonateSection(Section):
     def __init__(self):

@@ -2,7 +2,7 @@
 # Python code copyright Gerard Krol, license: MIT
 import string
 import markdown
-from common import *
+from .common import *
 
 class DocumentationIntroSection(Section):
     def __init__(self):
