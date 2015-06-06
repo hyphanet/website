@@ -172,7 +172,7 @@ Freenet provides an update-over-freenet mechanism: It will keep itself up to dat
 *   Windows users can upgrade to the latest-stable Freenet release from the system tray menu, or by running "update.cmd" in the Freenet directory.
 *   Mac and Linux users may upgrade by running the update.sh shell script in the Freenet directory.
 
-**Source Code:** See [the developer page](contributing.html#developers) for git access, or download the lastest stable tarball [here](https://github.com/freenet/fred/releases/download/build01467/freenet-build01467-source.tar.bz2) ([signature](https://downloads.freenetproject.org/alpha/freenet-build01467-source.tar.bz2.sig)).
+**Source Code:** See [the developer page](contribute.html#developers) for git access, or download the lastest stable tarball [here](https://github.com/freenet/fred/releases/download/build01467/freenet-build01467-source.tar.bz2) ([signature](https://downloads.freenetproject.org/alpha/freenet-build01467-source.tar.bz2.sig)).
 """)))
 
 class NoteSection(Section):

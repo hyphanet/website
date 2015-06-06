@@ -165,7 +165,7 @@ class PapersSection(Section):
  Detailed paper about the Freenet 0.7.5 network, as opposed to its routing algorithm, which is detailed in the below papers. Includes some new simulations. This has been submitted to PET 2010.
 
 ![](assets/img/video.icon.png)[Video of Small World talk, Berlin, December 2005](http://player.vimeo.com/video/22488244?title=0&byline=0&portrait=0)  
- This is a video of a talk given by Ian Clarke and Oskar Sandberg at the Chaos Computer Congress in Berlin, December 2005, describing the (then) new architecture for Freenet 0.7\. You can also download the [slideshow](assets/papers/ccc/ccc-slideshow.pdf.bz2), and the source for the Java [demo](assets/papers/ccc/ccc-freenet-demo.tar.bz2) (requires Java 1.5).
+ This is a video of a talk given by Ian Clarke and Oskar Sandberg at the Chaos Computer Congress in Berlin, December 2005, describing the (then) new architecture for Freenet 0.7\. You can also download the [slideshow](assets/papers/ccc-slideshow.pdf.bz2), and the source for the Java [demo](assets/papers/ccc-freenet-demo.tar.bz2) (requires Java 1.5).
 
 ![](assets/img/pdf.icon.jpg)[Searching in a Small World](assets/papers/lic.pdf) (PDF)  
  Oskar Sandberg's licentiate thesis describing a simple decentralized mechanism for constructing small world networks that is inspired by Freenet's original design. Part II of the thesis describes the basis for the new Darknet architecture.
