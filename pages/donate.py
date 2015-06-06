@@ -209,6 +209,7 @@ class DonateThanksPage(Page):
     def __init__(self):
         self.slug = "donatethanks"
         self.title = _("Thanks")
+        self.hidden = True
         self.sections = [
             DonateThanksSection(),
             ]
