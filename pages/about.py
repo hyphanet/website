@@ -24,27 +24,18 @@ class PhilosophySection(Section):
 9.  [But how will artists be rewarded for their work without copyright?](#reward)
 10.  [Alternatives to Copyright](#alternative)
 
-<a name="disclaimer">
-
+<a class="anchor" name="disclaimer"></a>
 ### 1\. A Disclaimer
-
-</a>
 
 There are many reasons why people get involved in the Freenet Project. Some share the views outlined in this document; some share variations of these views, which are also served by what we are trying to achieve; and some just enjoy the technical challenge. These are the ideas which motivated me to architect the system in the first place, but not necessarily the views that everyone involved in the Freenet project holds.
 
-<a name="prior_reading">
-
+<a class="anchor" name="prior_reading"></a>
 ### 2\. Suggested prior reading
-
-</a>
 
 For this document to make sense, you should probably know what Freenet is. You can get a good overview on the [What is Freenet?](/whatis.html) page.
 
-<a name="free_flow_info">
-
+<a class="anchor" name="free_flow_info"></a>
 ### 3\. The importance of the Free flow of information
-
-</a>
 
 Freedom of speech, in most western cultures, is generally considered to be one of the most important rights any individual might have. Why is the freedom to share ideas and opinions so important? There are several ways to answer this question.
 
@@ -60,27 +51,18 @@ Most people, given the option of knowing something and not knowing something, wi
 
 Many people today live under democratic governments, and those who don't, probably want to. Democracy is an answer to the question of how to create leaders, while preventing them from abusing that power. It achieves this by giving the population the power to regulate their government through voting, yet the ability to vote does not necessarily mean that you live in a democratic country. For a population to regulate their government effectively it must know what their government is doing, they must be well informed. It is a feedback loop, but this loop can be broken if the government has the power to control the information the population has access to.
 
-<a name="censor_freedom">
-
+<a class="anchor" name="censor_freedom"></a>
 ### 4\. Censorship and freedom
-
-</a>
 
 Everyone values their freedom, in fact, many consider it so important that they will die for it. People like to think that they are free to form and hold whatever opinions they like, particularly in western countries. Consider now that someone had the ability to control the information you have access to. This would give them the ability to manipulate your opinions by hiding some facts from you, by presenting you with lies and censoring anything that contradicted those lies. This is not some Orwellian fiction, it is standard practice for most western governments to lie to their populations, so much so, that people now take it for granted, despite the fact that this undermines the very democratic principles which justify the government's existence in the first place.
 
-<a name="solution">
-
+<a class="anchor" name="solution"></a>
 ### 5\. The solution
-
-</a>
 
 The only way to ensure that a democracy will remain effective is to ensure that the government cannot control its population's ability to share information, to communicate. So long as everything we see and hear is filtered, we are not truly free. Freenet's aim is to allow two or more people who wish to share information, to do so.
 
-<a name="is_censorship_necessary">
-
+<a class="anchor" name="is_censorship_necessary"></a>
 ### 6\. Isn't censorship sometimes necessary?
-
-</a>
 
 Of course no issue is black and white, and there are many who feel that censorship is a good thing in some circumstances. For example, in some European countries propagating information deemed to be racist is illegal. Governments seek to prevent people from advocating ideas which are deemed damaging to society. There are two answers to this however. The first is that you can't allow those in power to impose "good" censorship, without also enabling them to impose "bad" censorship. To impose any form of censorship a government must have the ability to monitor and thus restrict communication. There are already criticisms that the anti-racism censorship in many European countries is hampering legitimate historical analysis of events such as the second world war.
 
@@ -88,19 +70,13 @@ The second argument is that this "good" censorship is counter-productive even wh
 
 Of course the first argument is the stronger one, and would still hold-true even if you didn't accept the second. Basically, you either have censorship, or you don't. There is no middle-ground.
 
-<a name="why_anonymity">
-
+<a class="anchor" name="why_anonymity"></a>
 ### 7\. But why is anonymity necessary?
-
-</a>
 
 You cannot have freedom of speech without the option to remain anonymous. Most censorship is retrospective, it is generally much easier to curtail free speech by punishing those who exercise it afterward, rather than preventing them from doing it in the first place. The only way to prevent this is to remain anonymous. It is a common misconception that you cannot trust anonymous information. This is not necessarily true, using digital signatures people can create a secure anonymous pseudonym which, in time, people can learn to trust. Freenet incorporates a mechanism called "subspaces" to facilitate this.
 
-<a name="copyright">
-
+<a class="anchor" name="copyright"></a>
 ### 8\. And what of copyright?
-
-</a>
 
 Of course much of Freenet's publicity has centered around the issue of copyright, and thus I will speak to it briefly. The core problem with copyright is that enforcement of it requires monitoring of communications, and you cannot be guaranteed free speech if someone is monitoring everything you say. This is important, most people fail to see or address this point when debating the issue of copyright, so let me make it clear:
 
@@ -108,21 +84,15 @@ Of course much of Freenet's publicity has centered around the issue of copyright
 
 It is for this reason that Freenet, a system designed to protect Freedom of Speech, must prevent enforcement of copyright.
 
-<a name="reward">
-
+<a class="anchor" name="reward"></a>
 ### 9\. But how will artists be rewarded for their work without copyright?
-
-</a>
 
 Firstly, even if copyright were the only way that artists could be rewarded for their work, then I would contend that freedom is more important than having professional artists (those who claim that we would have no art do not understand creativity: people will always create, it is a compulsion, the only question is whether they can do it for a living).
 
 Secondly, it could be questioned whether copyright is effective even now. The music industry is one of the most vocally opposed to enhancements in communication technology, yet according to many of the artists who should be rewarded by copyright, it is failing to do so. Rather it has allowed middle-men to gain control over the mechanisms of distribution, to the detriment of both artists and the public.
 
-<a name="alternative">
-
+<a class="anchor" name="alternative"></a>
 ### 10\. Alternatives to Copyright
-
-</a>
 
 Fortunately it won't come to this. There are many alternative ways to reward artists. The simplest is voluntary payment. This is an extension of the patronage system which was frequently used to reward artists prior to copyright, where a wealthy person would fund an artist to allow them to create full-time. The Internet permits an interesting extension of this idea, where rather than having just one wealthy patron, you could have hundreds of thousands, contributing small amounts of money over the Internet.
 

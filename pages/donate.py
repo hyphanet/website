@@ -202,7 +202,7 @@ class DonateThanksSection(Section):
     def get_content(self):
         # License: GFDL (from old freenetproject.org website)
         return text(md(_("""
-We have received your generous donation. It will be used at the direction of the Freenet Board to advance the interests of the Freenet Project. If you have any questions about how your donation will be used please contact Ian Clarke: <donate@freenetproject.org> </span>.
+We have received your generous donation. It will be used at the direction of the Freenet Board to advance the interests of the Freenet Project. If you have any questions about how your donation will be used please contact Ian Clarke: <donate@freenetproject.org>.
 """)))
             
 class DonateThanksPage(Page):

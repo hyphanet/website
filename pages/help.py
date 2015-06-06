@@ -354,13 +354,13 @@ These are the mailing lists that can be used for support or general information 
 
 ### Subscribing
 
-To subscribe to one of the lists, click the list name and give your email address in the field below the <span style="font-weight: bold;">Subscribing to <mailinglist></span> header. To enter a password is optional, and if you do not enter one, one will be automatically generated for you. Then press the <span style="font-weight: bold;">Subscribe</span> button. You will recieve a confirmation email, and when that is answered, you will recieve mails from the list.
+To subscribe to one of the lists, click the list name and give your email address in the field below the **Subscribing to < mailinglist >** header. To enter a password is optional, and if you do not enter one, one will be automatically generated for you. Then press the **Subscribe** button. You will recieve a confirmation email, and when that is answered, you will recieve mails from the list.
 
 ### Unsubscribing
 
-To unsubscribe to one of the lists you are subscribed to, click the list name and give your subscription email address under the heading <span style="font-weight: bold;"><mailinglist> Subscribers</span> and press the button <span style="font-weight: bold;">Unsubscribe or edit options</span>.
+To unsubscribe to one of the lists you are subscribed to, click the list name and give your subscription email address under the heading **< mailinglist > Subscribers** and press the button **Unsubscribe or edit options**.
 
-_**Note**: We constantly get requests of people who want to become unsubscribed._ <span style="text-decoration:underline;">YOU</span> _have to do that yourself! Just click on the www link provided at the bottom of every mail, enter your e-mail address in the text field in section "Subscribers" and provide your password under the unsubscribe option. (You can get your password there as well, in case you forgot it.)_
+_**Note**: We constantly get requests of people who want to become unsubscribed._ **YOU** _have to do that yourself! Just click on the www link provided at the bottom of every mail, enter your e-mail address in the text field in section "Subscribers" and provide your password under the unsubscribe option. (You can get your password there as well, in case you forgot it.)_
 
 ### The lists
 

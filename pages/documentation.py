@@ -58,7 +58,7 @@ For a graphical installation you have to have:
 
 You should save the new_installer.jar file somewhere were you can find it again. Your home-directory should be a good place. The next step requires you to know where you stored the file (the path to it), so it is quite important that you do that step thouroghly.
 
-To start the installation, open a command line interface/terminal/shell window. Exchange the <span style="font-weight:bold;">/path/to</span> to the real path (for example: /home/username/download/new_installer.jar) to the new_installer.jar-file and type:
+To start the installation, open a command line interface/terminal/shell window. Exchange the **/path/to** to the real path (for example: /home/username/download/new_installer.jar) to the new_installer.jar-file and type:
 
 <pre>	$ java -jar /path/to/new_installer_offline.jar</pre>
 
@@ -66,31 +66,31 @@ The first window you should see is the one below, which allows you to select you
 
 ![](assets/img/install/1-langselect.png)
 
-Next is shown an about-box, some information about the version of Freenet and authors. Just click <span style="font-weight:bold;">Next</span> to proceed.
+Next is shown an about-box, some information about the version of Freenet and authors. Just click **Next** to proceed.
 
 ![](assets/img/install/2-about.png)
 
-The next step is to choose the directory in which to install Freenet. The default location on Linux operating systems is <span style="font-weight:bold;">/home/username/Freenet</span> as shown below. Change it to something appropriate or leave "as is". Click <span style="font-weight:bold;">Next</span> when you are finished.
+The next step is to choose the directory in which to install Freenet. The default location on Linux operating systems is **/home/username/Freenet** as shown below. Change it to something appropriate or leave "as is". Click **Next** when you are finished.
 
 ![](assets/img/install/4-Install_directory.png)
 
-Select the packages that you want to install with your Freenet software. Since it takes up virtually no extra disk-space, it is recommended that you leave all packages selected and press <span style="font-weight:bold;">Next</span>.
+Select the packages that you want to install with your Freenet software. Since it takes up virtually no extra disk-space, it is recommended that you leave all packages selected and press **Next**.
 
 ![](assets/img/install/5-select_packages.png)
 
-In the next stage, the packages are installed, and a progress meter runs across the window. When it is finished, press <span style="font-weight:bold;">Next</span> to continue to the next step.
+In the next stage, the packages are installed, and a progress meter runs across the window. When it is finished, press **Next** to continue to the next step.
 
 ![](assets/img/install/6-Install_packages.png)
 
-After that, the Freenet software is installed and/or upgraded, plugins are enabled and the environment is started. When completed, press <span style="font-weight:bold;">Next</span> to proceed.
+After that, the Freenet software is installed and/or upgraded, plugins are enabled and the environment is started. When completed, press **Next** to proceed.
 
 ![](assets/img/install/7-install_progress.png)
 
-For some graphical environments, shortcuts in the menu-structure can be created. This is not the case for all of the platforms that Freenet run on. However, there should be created shortcuts on the desktop in all supported environments. Change the application group according to your needs and press <span style="font-weight:bold;">Next</span> when finished.
+For some graphical environments, shortcuts in the menu-structure can be created. This is not the case for all of the platforms that Freenet run on. However, there should be created shortcuts on the desktop in all supported environments. Change the application group according to your needs and press **Next** when finished.
 
 ![](assets/img/install/8-create_shortcuts.png)
 
-After that, the installation is finished. Click <span style="font-weight:bold;">Done</span> to close the window.
+After that, the installation is finished. Click **Done** to close the window.
 
 ![](assets/img/install/9-Install_finished.png)
 
@@ -113,9 +113,9 @@ There are two ways to connect to Freenet:
 
 In practice, you should probably use both of these options, unless you are really paranoid, in which case you should of course only connect to people you trust. Insecure mode should work automatically once enabled, so the rest of this page is about connecting to Friends.
 
-To connect to your friends' nodes, you have to exchange Node references with them. The references must be added on <span style="font-weight:bold;">both sides</span> to be established. That is, you need to add his/hers, and he/she needs to add yours.
+To connect to your friends' nodes, you have to exchange Node references with them. The references must be added on **both sides** to be established. That is, you need to add his/hers, and he/she needs to add yours.
 
-<span style="font-style:italic;">When you have a freshly connected node, you have no data cached in your datastore, and very few connections even if insecure mode is enabled. Requests are sent out in a random fashion. <span style="font-weight:bold;">This makes some (or all) requests time out before retrieving anything.</span> It takes a couple of days for your Freenet-node to get up to speed, so please don't get discouraged by this.</span>
+*When you have a freshly connected node, you have no data cached in your datastore, and very few connections even if insecure mode is enabled. Requests are sent out in a random fashion. **This makes some (or all) requests time out before retrieving anything.** It takes a couple of days for your Freenet-node to get up to speed, so please don't get discouraged by this.*
 
 You should have at least three nodes that are connected to you at all times, ideally at least five to seven. Since some nodes may be unreachable at times, you need to connect to some more nodes to get the expected number. The nodes that are connected directly to you are the only nodes on freenet that might see what kind of traffic that passes through to your Freenet node. But if insecure mode is enabled, any node can find yours; this is the big advantage of **not** enabling insecure mode: you are effectively invisible except to your Friends. In practice most people start off with insecure mode and gradually add Friends, and hopefully turn off insecure mode once they have at least 10 Friends.
 
@@ -123,7 +123,7 @@ You should have at least three nodes that are connected to you at all times, ide
 
 *Figure 1: Visible Freenet connections*
 
-<span style="font-weight:bold;">Node A</span> in the figure also has a number of nodes connected to it, but they are all (except from your own node) invisible to you. The traffic routing algorithm is therefore only able to direct traffic to one of the few nodes that you know of that it thinks is most able to find what you are looking for.
+**Node A** in the figure also has a number of nodes connected to it, but they are all (except from your own node) invisible to you. The traffic routing algorithm is therefore only able to direct traffic to one of the few nodes that you know of that it thinks is most able to find what you are looking for.
 
 The traffic is encrypted, so it is quite difficult for the nodes that you connect to to see what your Freenet-traffic consists of, but it is far from impossible. It is therefore important that you connect only to people you know. If that is not possible, then at least people you've talked to.
 
@@ -131,7 +131,7 @@ There are a number of ways to add peer node references.
 
 ### Fproxy
 
-Connecting peer nodes with FProxy can be done in several ways. Common for all these are that they are all done under the <span style="font-weight:bold;">Darknet</span> menu item or using the [http://127.0.0.1:8888/friends/](http://127.0.0.1:8888/friends/) link. Below is the thing that makes it all happen:
+Connecting peer nodes with FProxy can be done in several ways. Common for all these are that they are all done under the **Darknet** menu item or using the [http://127.0.0.1:8888/friends/](http://127.0.0.1:8888/friends/) link. Below is the thing that makes it all happen:
 
 ![](assets/img/add_peers.png)
 
@@ -141,11 +141,11 @@ As you can see, there are three ways of getting a node reference from someone el
 *   a URL pointing at the reference, or
 *   a file, containing the reference.
 
-[http://dark-code.bulix.org/](http://dark-code.bulix.org/) is a so called <span style="font-weight:bold;">paste-bin</span>, where you can add your node reference, make sure that the <span style="font-weight:bold;">private</span> box is checked, and press <span style="font-weight:bold;">Paste</span>.
+[http://dark-code.bulix.org/](http://dark-code.bulix.org/) is a so called **paste-bin**, where you can add your node reference, make sure that the **private** box is checked, and press **Paste**.
 
-The paste-bin then returns an URL (e.g. http://dark-code.bulix.org/yuf01h-34676?raw), which can be shared with others. Make sure that you add <span style="font-weight:bold;">?raw</span> to the link. This makes the link point only to the actual pasted data, with no extra design elements.
+The paste-bin then returns an URL (e.g. http://dark-code.bulix.org/yuf01h-34676?raw), which can be shared with others. Make sure that you add **?raw** to the link. This makes the link point only to the actual pasted data, with no extra design elements.
 
-Your own Freenet reference can be found on the [http://127.0.0.1:8888/friends/](http://127.0.0.1:8888/friends/) page, under the caption <span style="font-weight:bold;">My reference</span>. It might look something like this (cut for screen purposes):
+Your own Freenet reference can be found on the [http://127.0.0.1:8888/friends/](http://127.0.0.1:8888/friends/) page, under the caption **My reference**. It might look something like this (cut for screen purposes):
 
 <pre>	lastGoodVersion=Fred,0.7,1.0,1010
 	sig=7c7edc8c5250e42ac4cb161b216b70de7019221f1b331f0f92bd67439[...]609660f0d4
@@ -163,7 +163,7 @@ Your own Freenet reference can be found on the [http://127.0.0.1:8888/friends/](
 	dsaGroup.q=ALFDNoq81R9Y1kQNVBc5kzmk0VvvCWosXY5t9E9S1tN5
 	End</pre>
 
-Remember that both you and the node you are connecting to must add references to make the connection work. This means that if you add a persons node reference on your side, but that person does not add your reference on his/her side, the connection <span style="font-weight:bold;">does not work</span>.
+Remember that both you and the node you are connecting to must add references to make the connection work. This means that if you add a persons node reference on your side, but that person does not add your reference on his/her side, the connection **does not work**.
 
 ### Darknet peers
 
@@ -219,8 +219,7 @@ Freenet is built on the principle of small world networks. By connecting to node
 
 ### The datastore
 
-All Freenet nodes contribute with a part of their harddrive space to store files. The files are stored encrypted in the <span style="font-weight:
-				      bold;">store</span>-directory in the Freenet installation directory.
+All Freenet nodes contribute with a part of their harddrive space to store files. The files are stored encrypted in the **store**-directory in the Freenet installation directory.
 
 Unlike other peer-to-peer networks, you as a user have little or no control over what is stored in your datastore. Instead, files are kept or deleted depending on how popular they are. This is to ensure that Freenet is censorship resistant. The only possible way to remove something from Freenet is to not search for it, and hope that everybody else does the same.
 
@@ -250,12 +249,12 @@ To access a particular piece of data on Freenet, you can use FProxy. You need to
 
 There are four types of keys in Freenet:
 
-*   <span style="font-weight: bold;">CHK</span> - Content Hash Keys
-*   <span style="font-weight: bold;">SSK</span> - Signed Subspace Keys
-*   <span style="font-weight: bold;">USK</span> - Updateable Subspace Keys
-*   <span style="font-weight: bold;">KSK</span> - Keyword Signed Keys
+*   **CHK** - Content Hash Keys
+*   **SSK** - Signed Subspace Keys
+*   **USK** - Updateable Subspace Keys
+*   **KSK** - Keyword Signed Keys
 
-CHKs are the most fundamental. All files over 1kB are ultimately divided into one or more 32kB CHKs. CHKs' filenames are determined only by their contents. SSKs are the other basic type. These combine a public key with a human-readable filename and therefore allow for freesites. KSKs are a variant of SSKs where everything is determined by a simple human readable filename (e.g. =KSK@sample.txt). These are spammable but convenient in some cases. And USKs are a form of updatable keys especially useful for freesites and <span style="font-weight: bold;">Address Resolution Keys</span>.
+CHKs are the most fundamental. All files over 1kB are ultimately divided into one or more 32kB CHKs. CHKs' filenames are determined only by their contents. SSKs are the other basic type. These combine a public key with a human-readable filename and therefore allow for freesites. KSKs are a variant of SSKs where everything is determined by a simple human readable filename (e.g. =KSK@sample.txt). These are spammable but convenient in some cases. And USKs are a form of updatable keys especially useful for freesites and **Address Resolution Keys**.
 
 An Address Resolution Key (ARK) is an Updateable Subspace Key (USK) inserted by the node whenever its IP address changes. It contains the reference for the node - its cryptographic details, and in particular its IP address(es). ARKs are a way to help people connect to Freenet if they have problems caused by firewalls, routers or changing IP addresses. If someone cannot accept incoming traffic it can make it difficult to connect.
 
@@ -263,7 +262,7 @@ ARKs are an implementation detail and you don't need to know anything about them
 
 ### Content Hash Keys
 
-Content Hash Keys are for files with static content, like an .mp3 or a PDF-document. These keys are hashes of the content of the file. A hash is a reproducible method of turning a specific piece of data into a relatively small number that serve as a sort of <span style="font-style:italic;">fingerprint</span> for the data. If the file content changes, even ever so little, the hash of the file changes radically. This makes the data hard to tamper with without anyone noticing. A CHK uniquely identifies a file, it should not be possible for two files with different content to have the same CHK. The CHK consists of three parts:
+Content Hash Keys are for files with static content, like an .mp3 or a PDF-document. These keys are hashes of the content of the file. A hash is a reproducible method of turning a specific piece of data into a relatively small number that serve as a sort of *fingerprint* for the data. If the file content changes, even ever so little, the hash of the file changes radically. This makes the data hard to tamper with without anyone noticing. A CHK uniquely identifies a file, it should not be possible for two files with different content to have the same CHK. The CHK consists of three parts:
 
 1.  the hash for the file
 2.  the decryption key that unlocks the file, and
@@ -291,11 +290,11 @@ It works by using public-key cryptography so you can sign your site. Only the pe
 
 Also the SSK consists of five parts:
 
-*   <span style="font-weight: bold;">public key hash</span> - This part is all that is required to uniquely identify the file (but not decrypt it), so nodes need only store this bit. The actual public key is stored (unencrypted) with the (encrypted) data.
-*   <span style="font-weight: bold;">document decryption key</span> - This is only known to clients and not to the nodes storing the data, so nodes cannot decrypt the data they store without the full address.
-*   <span style="font-weight: bold;">crypto settings</span> - Cryptographic algorithm used, etc.
-*   <span style="font-weight: bold;">user selected name</span> - a word or sentence chosen by the site author.
-*   <span style="font-weight: bold;">version</span> - the current version of the site.
+*   **public key hash** - This part is all that is required to uniquely identify the file (but not decrypt it), so nodes need only store this bit. The actual public key is stored (unencrypted) with the (encrypted) data.
+*   **document decryption key** - This is only known to clients and not to the nodes storing the data, so nodes cannot decrypt the data they store without the full address.
+*   **crypto settings** - Cryptographic algorithm used, etc.
+*   **user selected name** - a word or sentence chosen by the site author.
+*   **version** - the current version of the site.
 
 The version number is increased each time a new version of the site is created and inserted into Freenet. This approach is used since it is not currently possible to update already inserted data in Freenet. Updateable Subspace Keys makes this more transparent to the user, see below.
 
@@ -309,9 +308,9 @@ For example (cut for screen purposes):
 
 ### How Signed Subspace Keys work
 
-*   The author generates a cryptographic keypair: a <span style="font-weight: bold;">private key</span> for signing files and a <span style="font-weight: bold;">public key</span> for verifying the signature.
-*   The author also generates a single <span style="font-weight: bold;">symmetric key</span> (one that is used for both encrypting and decrypting).
-*   When a file is inserted into Freenet, it is encrypted with the <span style="font-weight: bold;">symmetric key</span> and signed with the <span style="font-weight: bold;">private key</span>. The signature is stored with the file. Nodes don't store the <span style="font-weight: bold;">symmetric key</span>, only the <span style="font-weight: bold;">public key</span> part of the SSK, as an index to the data. This is so they can plausibly deny knowledge of the data on their node.
+*   The author generates a cryptographic keypair: a **private key** for signing files and a **public key** for verifying the signature.
+*   The author also generates a single **symmetric key** (one that is used for both encrypting and decrypting).
+*   When a file is inserted into Freenet, it is encrypted with the **symmetric key** and signed with the **private key**. The signature is stored with the file. Nodes don't store the **symmetric key**, only the **public key** part of the SSK, as an index to the data. This is so they can plausibly deny knowledge of the data on their node.
 
 The SSK is made up of a hash of the public key, and the symmetric key. The hash of the public key acts as the index to the data for searching purposes. Also, the actual public key is stored with the data. This is so that Freenet nodes can verify the signature when the SSK file comes into their node, and also so that clients can verify the signature when retrieving the file. The symmetric key is so that clients can decrypt the file.
 
@@ -330,13 +329,13 @@ It is almost identical to the Signed Subspace Key, with the exception of the ver
 *   an USK with a positive number at the end, or
 *   an USK with a negative number at the end.
 
-The USK with a <span style="font-weight: bold;">positive</span> number at the end works like this: the Freenet node on your computer keeps a list of versions of USKs that it knows about, without necessarily storing the data as well. This list is built up from previous visits, and also background requests from previous visits to these kind of links. When you visit an USK like the one below, it consults this list for versions of the mysite site of number 5 or greater. If it finds any, it return the latest one. Then, in the background, it searches for <span style="font-weight: bold;">newer</span> versions that it doesn't yet know about to add to your USK registry for the next time you visit the address.
+The USK with a **positive** number at the end works like this: the Freenet node on your computer keeps a list of versions of USKs that it knows about, without necessarily storing the data as well. This list is built up from previous visits, and also background requests from previous visits to these kind of links. When you visit an USK like the one below, it consults this list for versions of the mysite site of number 5 or greater. If it finds any, it return the latest one. Then, in the background, it searches for **newer** versions that it doesn't yet know about to add to your USK registry for the next time you visit the address.
 
 Example (cut for screen purposes):
 
     USK@GB3wuHmt[..]o-eHK35w,c63EzO7u[..]3YDduXDs,AQABAAE/mysite/5/
 
-When you visit a link with a <span style="font-weight: bold;">negative</span> number at the end, Freenet searches for the version you requested (e.g. <span style="font-weight: bold;">-7</span>) plus four more (i.e. 7,8,9,10,11) at the node on your computer and on other nodes. If it finds only version 7, it will return that. If it finds one of the others, it searches for another batch of five versions: 12,13,14,15,16\. It repeats this until there are four consecutive versions it can't find. Then it will return the latest version it has found so far.
+When you visit a link with a **negative** number at the end, Freenet searches for the version you requested (e.g. **-7**) plus four more (i.e. 7,8,9,10,11) at the node on your computer and on other nodes. If it finds only version 7, it will return that. If it finds one of the others, it searches for another batch of five versions: 12,13,14,15,16\. It repeats this until there are four consecutive versions it can't find. Then it will return the latest version it has found so far.
 
 Example (cut for screen purposes):
 
@@ -394,8 +393,8 @@ If for some reason you cannot make the web interface work, we have included hand
 
 Now you have the Freemail proxy running, which means that you can send and receive emails through Freenet. For this we recommend that you set up your favorite email client to use the special Freenet private ports:
 
-*   <span style="font-weight:bold;">Incoming emails</span> - Protocol: <span style="font-weight:bold;">IMAP</span>, Server: <span style="font-weight:bold;">localhost</span>, Port: <span style="font-weight:bold;">3143</span>
-*   <span style="font-weight:bold;">Outgoing emails</span> - Protocol: <span style="font-weight:bold;">SMTP</span>, Server: <span style="font-weight:bold;">localhost</span>, Port: <span style="font-weight:bold;">3025</span>
+*   **Incoming emails** - Protocol: **IMAP**, Server: **localhost**, Port: **3143**
+*   **Outgoing emails** - Protocol: **SMTP**, Server: **localhost**, Port: **3025**
 
 Your Freemail plugin must be running while you are reading and sending freemails. Leaving your node running, with the Freemail pugin enabled, will ensure this. For debugging purposes, it is also possible to send and receive Freemail mail with only the Freenet jar running.
 
@@ -463,7 +462,7 @@ So do what it says. The username you create here is used to authenticate to the 
 
 <pre>	java -jar Freemail.jar --newaccount john</pre>
 
-It now generates your Freemail address which is a long random string like <span style="font-weight:bold;">anything@DS3FG3R...SF6FHJ8YUK.freemail</span>. Generating the cryptographic keypair is a computation-intensive process and may take a few minutes on a slow machine.
+It now generates your Freemail address which is a long random string like **anything@DS3FG3R...SF6FHJ8YUK.freemail**. Generating the cryptographic keypair is a computation-intensive process and may take a few minutes on a slow machine.
 
 <pre>	Generating mailsite keys...
 	Mailsite keys generated.
@@ -476,7 +475,7 @@ The next step is to create a password for your account. The syntax to create a p
 
 <pre>	java -jar Freemail.jar --passwd <username> <password></pre>
 
-To create the password <span style="font-weight:bold;">secretpass</span> for the user <span style="font-weight:bold;">john</span>, type:
+To create the password **secretpass** for the user **john**, type:
 
 <pre>	java -jar Freemail.jar --passwd john secretpass</pre>
 
@@ -499,7 +498,7 @@ The syntax to create a short freemail address is:
 
 <pre>	java -jar Freemail.jar --shortaddress <username> <short address></pre>
 
-To create an alias known as <span style="font-weight:bold;">jsmith</span> for user <span style="font-weight:bold;">john</span>, write:
+To create an alias known as **jsmith** for user **john**, write:
 
 <pre>	java -jar Freemail.jar --shortaddress john jsmith</pre>
 
@@ -542,11 +541,11 @@ To run Frost on Linux from the command line, change to your Freenet install dire
 	chmod +x ./frost.sh
 	./frost.sh</pre>
 
-The first time you start Frost, you will get a number of dialogs. The first ask you if you would like to import old Frost data. If this is the first time you use Freenet at all, you can safely answer <span style="font-weight: bold;">Clean startup</span> here.
+The first time you start Frost, you will get a number of dialogs. The first ask you if you would like to import old Frost data. If this is the first time you use Freenet at all, you can safely answer **Clean startup** here.
 
 ![](assets/img/frost/clean-start.png)
 
-Since Freenet is able to run on both Freenet 0.5 and the current Freenet 0.7, you will need to specify which version you want to run with. If you have followed the previous install instructions, you will probably want <span style="font-weight: bold;">Freenet 0.7 (Darknet)</span>.
+Since Freenet is able to run on both Freenet 0.5 and the current Freenet 0.7, you will need to specify which version you want to run with. If you have followed the previous install instructions, you will probably want **Freenet 0.7 (Darknet)**.
 
 ![](assets/img/frost/select-version.png)
 
@@ -560,7 +559,7 @@ You will then get the main Frost window, where one can participate in the messag
 
 ### Sharing files
 
-Sharing files can be done by clicking the <span style="font-weight: bold;">Shared files</span> -tab and then clicking on the Folder-icon top left in the appearing tab.
+Sharing files can be done by clicking the **Shared files** -tab and then clicking on the Folder-icon top left in the appearing tab.
 
 ### Further information
 
@@ -592,39 +591,39 @@ In the pane to the left, already created projects can be selected for updating, 
 
 ### Creating a Freesite
 
-To create a new Freesite, you click the <span style="font-weight: bold;">Add project</span>-button. You then need to fill in the details of the project. Under the Project information-section:
+To create a new Freesite, you click the **Add project**-button. You then need to fill in the details of the project. Under the Project information-section:
 
-*   <span style="font-weight: bold;">Name</span> - this is just a name for you to know the project, so anything will do. It may contain spaces.
-*   <span style="font-weight: bold;">Description</span> - again, just a slightly longer description of the project for you own convenience.
-*   <span style="font-weight: bold;">Local Path</span> - This is a directory where you will store all the pages of the freesite you are creating. Put in the full path. You can click the Browse button to select a directory graphically or just type it in.
+*   **Name** - this is just a name for you to know the project, so anything will do. It may contain spaces.
+*   **Description** - again, just a slightly longer description of the project for you own convenience.
+*   **Local Path** - This is a directory where you will store all the pages of the freesite you are creating. Put in the full path. You can click the Browse button to select a directory graphically or just type it in.
 
 Under the Address-section, there are some automatically generated entries, and the human readable name for the site, as seen in the address-field of the browser:
 
-*   <span style="font-weight: bold;">Request URI</span> - this is filled in automatically and should be a long string of seemingly random characters
-*   <span style="font-weight: bold;">Insert URI</span> - this is also filled in automatically and will look similar to the Request URI..
-*   <span style="font-weight: bold;">Path</span> - You need to enter a single word here without spaces. This will appear at the end of the address of your site. You can't leave this blank.
+*   **Request URI** - this is filled in automatically and should be a long string of seemingly random characters
+*   **Insert URI** - this is also filled in automatically and will look similar to the Request URI..
+*   **Path** - You need to enter a single word here without spaces. This will appear at the end of the address of your site. You can't leave this blank.
 
 Below is an example of how it might look:
 
 ![](assets/img/jsite/project-details.png)
 
-When everything is filled in correctly, you may press <span style="font-weight: bold;">Next</span>.
+When everything is filled in correctly, you may press **Next**.
 
-The next step is to add files to your Freenet site (or Freesite). This is done in the dialog called <span style="font-weight: bold;">Project Files</span>. Since we have no files in the current directory, yet, the dialog is pretty much empty.
+The next step is to add files to your Freenet site (or Freesite). This is done in the dialog called **Project Files**. Since we have no files in the current directory, yet, the dialog is pretty much empty.
 
 ![](assets/img/jsite/project-files.png)
 
-To add files, we put some files in the local directory we specified earlier, <span style="font-weight: bold;">/home/test</span>, and press <span style="font-weight: bold;">Re-scan</span>. Then, presto, the files appear.
+To add files, we put some files in the local directory we specified earlier, **/home/test**, and press **Re-scan**. Then, presto, the files appear.
 
 ![](assets/img/jsite/default-file.png)
 
-We then highlight one of these files that will be the default page (e.g. index.html might be a good choice) and check the <span style="font-weight: bold;">Default file</span> checkbox. It should recognise the MIME type as text/html, so leave everything else as they are and click the <span style="font-weight: bold;">Insert now</span> button.
+We then highlight one of these files that will be the default page (e.g. index.html might be a good choice) and check the **Default file** checkbox. It should recognise the MIME type as text/html, so leave everything else as they are and click the **Insert now** button.
 
 If all goes well, a window like the one below should appear. It may take quite a while to insert the Freesite, several minutes in fact.
 
 ![](assets/img/jsite/project-insert.png)
 
-When all is finished, you will get a message pop-up that tells you that the site has been inserted successfully. You can copy the URI to the clip-board by clicking the <span style="font-weight: bold;">Copy URI to Clipboard</span> -button.
+When all is finished, you will get a message pop-up that tells you that the site has been inserted successfully. You can copy the URI to the clip-board by clicking the **Copy URI to Clipboard** -button.
 
 Then you can use FProxy to surf to your newly created Freesite. Just paste the URI after the
 
