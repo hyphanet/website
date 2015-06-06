@@ -34,7 +34,7 @@ We might switch to Transifex soon, for now these are the steps:
 
 * Fork this repository and create a checkout
 * Run update_po.sh from the root directory
-* A messages.po file is generated in the root directory, you can import this in the existing translation or use it as a basis for a new translation.
+* A freenet_site.pot file is generated in the root directory, you can import this in the existing translation or use it as a basis for a new translation. If you've started your translation before 6-6-2015 you may need to run your own .po file through clean_po.py to get a clean merge (and not lose any translations).
 * When you done you can save your translation as locale/*language*/LC_MESSAGES/freenet_site.po
 * If you want to test your translation make sure your language is in /settings.py and then run ./generate.py. The translated website is at /output/*language*/index.html
 * You don't need to commit the .mo file, it will be generated automatically. It is also .gitignored for convenience.

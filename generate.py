@@ -8,6 +8,8 @@ import settings
 import gettext
 import codecs
 import subprocess
+import __builtin__
+import re
 
 output_path = 'output'
 
@@ -21,6 +23,16 @@ try:
     shutil.rmtree('output')
 except:
     pass
+    
+def nop(x):
+    return x;
+
+# We strip all text that is to be translated and also remove all newlines at the start
+# of a line. That way the text looks much cleaner for the translators.
+def install_clean_gettext(gt):
+    def c(text):
+        return gt(re.sub(r"^[ \t]+", "", text.strip(), flags=re.MULTILINE))
+    __builtin__._ = c
 
 for language in settings.languages:
     print(language)
@@ -29,9 +41,9 @@ for language in settings.languages:
         base = "locale/"+language+"/LC_MESSAGES/freenet_site"
         subprocess.call(["msgfmt", "-o", base+".mo", base+".po"])
         lang = gettext.translation('freenet_site', localedir='locale', languages=[language], codeset="utf-8")
-        lang.install()
+        install_clean_gettext(lang.gettext)
     else:
-        gettext.install('freenet_site', codeset="utf-8")
+        install_clean_gettext(nop)
     # copy assets
     os.makedirs(langpath(language))
     shutil.copytree('assets', langpath(language)+'/assets')
