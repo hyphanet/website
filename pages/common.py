@@ -208,30 +208,38 @@ class ContactSection(Section):
         self.slug = "contact"
         self.title = _("Contact Details")
     def get_content(self):
-        return """
+        template = """
 <div class="row animate-in" data-anim-type="fade-in-up">
 
 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 <div class="contact-wrapper">
 <h3>Quick Contact</h3>
-<h4><strong>Press : </strong> press%freenetproject.org </h4>
-<h4><strong>Site : </strong> support%freenetproject.org </h4>
-<h4><strong>IRC : </strong> #freenet at freenode.org </h4>
+<h4><strong>$press : </strong> press%freenetproject.org </h4>
+<h4><strong>$site : </strong> support%freenetproject.org </h4>
+<h4><strong>$irc : </strong> #freenet at freenode.org </h4>
 </div>
 
 </div>
 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 <div class="contact-wrapper">
 <h3>Website</h3>
-This website is licensed under the GNU Free Documentation License
+$license
 <div class="footer-div" >
 &copy; 2015 Freenet <br/>
-<a href="http://www.designbootstrap.com/" target="_blank" >Design by DesignBootstrap</a>
+<a href="http://www.designbootstrap.com/" target="_blank" >$design</a>
 </div>
 </div>
 
 </div>
 """
+        return string.Template(template).substitute(
+            press=_("Press"),
+            site=_("Site"),
+            irc=_("IRC"),
+            license=_("Content on this website is licensed under the GNU Free Documentation License and may be available under other licenses."),
+            design=_("Design by DesignBootstrap")
+            )
+
 
 def section(name, title, content):
     template = """

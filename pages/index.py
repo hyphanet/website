@@ -192,7 +192,7 @@ An important recent development, which very few other networks have, is the "dar
 
 Sounds good? [Get Freenet](download.html)
 """)
-        return text(markdown.markdown(content))
+        return text(md(content))
     
 class NewsSection(Section):
     def __init__(self):
