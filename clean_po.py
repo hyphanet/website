@@ -7,9 +7,10 @@ import sys
 import re
 
 contents = sys.stdin.read()
+# remove first empty line
 contents = contents.replace("""msgid ""\n"\\n"\n""","""msgid ""\n""")
 # remove whitespace at start of line
-contents = re.sub(r"\"[ \t]+", "\"", contents)
+contents = re.sub(r"^\"[ \t]+", "\"", contents, flags=re.MULTILINE)
 # remove empty strings at end
 contents = re.sub(r"""^""\nmsgstr""","""msgstr""", contents, flags=re.MULTILINE)
 # strip trailing newlines

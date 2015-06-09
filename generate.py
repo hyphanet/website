@@ -34,7 +34,9 @@ def nop(x):
 # of a line. That way the text looks much cleaner for the translators.
 def install_clean_gettext(gt):
     def c(text):
-        return gt(re.sub(r"^[ \t]+", "", text.strip(), flags=re.MULTILINE))
+        search = re.sub(r"^[ \t]+", "", text.strip(), flags=re.MULTILINE)
+        result = gt(search)
+        return result
     builtins._ = c
 
 for language in settings.languages:
