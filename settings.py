@@ -10,7 +10,7 @@ from pages.donate import *
 from pages.contribute import *
 from pages.ngrouting import *
 
-languages = ["en", "nl", "es"]
+languages = ["en", "nl", "es", "ru", "debug"]
 title = "Freenet"
 def create_menu():
     return [
