@@ -24,7 +24,9 @@ The basic design is:
 - assets contains css, javascript and images
 - locale contains translations
 - generate.py is the script that will turn this into a static site in output
-- Translation is done using gettext; update_messages.sh will extract all the translatable strings into messages.po
+- Translation is done using gettext; update_pot.sh will extract all the translatable strings into freenet_site.pot
+- If you change English text in the site run update_translations.py so that all translations will get the new text. This may be a slightly
+dangerous operation as it may cause a lot of fuzzy matches.
 
 ## For Translators ##
 
