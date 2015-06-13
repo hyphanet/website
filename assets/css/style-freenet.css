@@ -62,14 +62,13 @@ width: 50px;
 border-top: 2px solid rgb(40, 141, 203);
 }
 
-a {
+a, a:hover, a:active {
     color: #1A8EFF;
 }
 
-a:hover {
-    color: #1A8EFF;
+a:focus {
+    color: white;
 }
-
 
 /* =============================================================
 CUSTOM BUTTON STYLES
