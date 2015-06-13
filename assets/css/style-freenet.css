@@ -39,6 +39,7 @@ background: url('../img/freenetwork.jpg') no-repeat center center fixed;
 -o-background-size: cover;
 background-size: cover;
 background-color: black;
+font-size: 160%;
 }
 
 section {
