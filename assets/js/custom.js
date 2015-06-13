@@ -55,7 +55,7 @@ src: 'assets/js/vegas/overlays/06.png' // THERE ARE TOTAL 01 TO 15 .png IMAGES A
 
 /*====================================
 POPUP IMAGE SCRIPTS
-======================================*/
+======================================
 $('.fancybox-media').fancybox({
 openEffect: 'elastic',
 closeEffect: 'elastic',
@@ -64,7 +64,7 @@ title: {
 type: 'inside'
 }
 }
-});
+});*/
 
 
 /*====================================
