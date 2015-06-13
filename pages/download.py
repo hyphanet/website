@@ -87,12 +87,10 @@ unofficial third party apps it recommends (including FMS), but many Freenet user
 them.
 """))+
 _("Show instructions for:")+"""
-    <p>
       <a href="javascript:showDiv('windows');hideDiv('macos');hideDiv('unix');">Windows
         </a>, <a href="javascript:hideDiv('windows');showDiv('macos');hideDiv('unix');">Mac
         OSX</a>, <a href="javascript:hideDiv('windows');hideDiv('macos');showDiv('unix');">Linux
         etc</a><br>
-    </p>
 """+div("windows",md(_("""
 ### Windows
 
