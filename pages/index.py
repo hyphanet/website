@@ -110,7 +110,7 @@ $tagline
 <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-github "></i></a>
 </div>
 -->
-<a href="download.html" class=" btn button-custom btn-custom-two">$download_text</a>
+<a href="download.html#autostart" class=" btn button-custom btn-custom-two">$download_text</a>
 </div>
 </div>
 </div>

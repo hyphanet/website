@@ -9,58 +9,68 @@ def div(name, content):
 def show_hide_script():
     # License: GFDL (from old freenetproject.org website)
     return """
-	<script type="text/javascript">
-		function getStyleByElementByID(whichDivId)
-		{
-			var elem;
-			if( document.getElementById ) // this is the way the standards work
-				elem = document.getElementById( whichDivId );
-			else if( document.all ) // this is the way old msie versions work
-				elem = document.all[whichDivId];
-			else if( document.layers ) // this is the way nn4 works
-				elem = document.layers[whichDivId];
-			return elem.style;
-		}
+    <script type="text/javascript">
+        function getStyleByElementByID(whichDivId)
+        {
+            var elem;
+            if( document.getElementById ) // this is the way the standards work
+                elem = document.getElementById( whichDivId );
+            else if( document.all ) // this is the way old msie versions work
+                elem = document.all[whichDivId];
+            else if( document.layers ) // this is the way nn4 works
+                elem = document.layers[whichDivId];
+            return elem.style;
+        }
 
-		function hideDiv( whichDivId )
-		{
-			getStyleByElementByID(whichDivId).display = 'none';
-		}
-		function showDiv( whichDivId )
-		{
-			getStyleByElementByID(whichDivId).display = 'inline';
-		}
-	</script>
+        function hideDiv( whichDivId )
+        {
+            getStyleByElementByID(whichDivId).display = 'none';
+        }
+        function showDiv( whichDivId )
+        {
+            getStyleByElementByID(whichDivId).display = 'inline';
+        }
+    </script>
 """
 
 def run_show_hide_script():
     # License: GFDL (from old freenetproject.org website)
     return """
       <script type="text/javascript">
-					 // Try to detect if Sun Java 1.6.0 or higher is installed
-					 //var Java = PluginDetect.isMinVersion('Java', '1,6,0');
-					 
-					 // Os detection
-					 var OSName="";
-					 if (navigator.appVersion.indexOf("Win")!=-1)
-					 OSName="windows";
-					 else if (navigator.appVersion.indexOf("Mac")!=-1)
-					 OSName="macos";
-					 else if (navigator.appVersion.indexOf("X11")!=-1)
-					 OSName="unix";
-					 else if (navigator.appVersion.indexOf("Linux")!=-1)
-					 OSName="unix";
-					 
-					 hideDiv("windows");
-					 hideDiv("macos");
-					 hideDiv("unix");
-					 if (OSName != "") {
-					   showDiv(OSName);
-					 } else {
-					   showDiv("windows");
-					   showDiv("macos");
-					   showDiv("unix");
-					 }
+         // Try to detect if Sun Java 1.6.0 or higher is installed
+         //var Java = PluginDetect.isMinVersion('Java', '1,6,0');
+         
+         // Os detection
+         var OSName="";
+         if (navigator.appVersion.indexOf("Win")!=-1)
+         OSName="windows";
+         else if (navigator.appVersion.indexOf("Mac")!=-1)
+         OSName="macos";
+         else if (navigator.appVersion.indexOf("X11")!=-1)
+         OSName="unix";
+         else if (navigator.appVersion.indexOf("Linux")!=-1)
+         OSName="unix";
+         
+         hideDiv("windows");
+         hideDiv("macos");
+         hideDiv("unix");
+         if (OSName != "") {
+           showDiv(OSName);
+         } else {
+           showDiv("windows");
+           showDiv("macos");
+           showDiv("unix");
+         }
+         
+         // Below part Copyright Gerard Krol, licensed MIT
+         function download(url) {
+            document.write('<iframe width="1" height="1" frameborder="0" src="'+url+'"></iframe>');
+         }
+         
+         var hash = window.location.hash.substring(1);
+         if (hash == "autostart" && OSName == "windows") {
+            download('assets/jnlp/FreenetInstaller.exe');
+         }
       </script>
 """
 
@@ -70,7 +80,7 @@ class DownloadSection(Section):
         self.slug = "download"
     def get_content(self):
         # License for all content in this section: GFDL (from old freenetproject.org website)
-        return show_hide_script()+text(md(_("""
+        return show_hide_script()+text("<a name=\"autostart\" class=\"anchor\"></a>"+md(_("""
 [Step by step guide](http://freesocial.draketo.de/) to setting up Freenet and 
 various Freenet apps. Please try this, especially if installing on Mac. We are not responsible for
 unofficial third party apps it recommends (including FMS), but many Freenet users and developers use
@@ -78,11 +88,11 @@ them.
 """))+
 _("Show instructions for:")+"""
     <p>
-	  <a href="javascript:showDiv('windows');hideDiv('macos');hideDiv('unix');">Windows
-	    </a>, <a href="javascript:hideDiv('windows');showDiv('macos');hideDiv('unix');">Mac
-	    OSX</a>, <a href="javascript:hideDiv('windows');hideDiv('macos');showDiv('unix');">Linux
-	    etc</a><br>
-	</p>
+      <a href="javascript:showDiv('windows');hideDiv('macos');hideDiv('unix');">Windows
+        </a>, <a href="javascript:hideDiv('windows');showDiv('macos');hideDiv('unix');">Mac
+        OSX</a>, <a href="javascript:hideDiv('windows');hideDiv('macos');showDiv('unix');">Linux
+        etc</a><br>
+    </p>
 """+div("windows",md(_("""
 ### Windows
 
