@@ -119,7 +119,7 @@ $tagline
 
 <!--HOME SECTION END-->
 """
-        tagline = _("Share, Chat, Browse. Anonymously. On the Free Network.")
+        tagline = _("Share, Chat, Browse. Anonymously. On Freenet.")
         download_text = _("Get Freenet")
         return string.Template(content).substitute(sliders="".join(sliders),tagline=tagline,download_text=download_text)
 

@@ -43,13 +43,13 @@ def run_show_hide_script():
          // Os detection
          var OSName="";
          if (navigator.appVersion.indexOf("Win")!=-1)
-         OSName="windows";
+            OSName="windows";
          else if (navigator.appVersion.indexOf("Mac")!=-1)
-         OSName="macos";
+            OSName="macos";
          else if (navigator.appVersion.indexOf("X11")!=-1)
-         OSName="unix";
+            OSName="unix";
          else if (navigator.appVersion.indexOf("Linux")!=-1)
-         OSName="unix";
+            OSName="unix";
          
          hideDiv("windows");
          hideDiv("macos");
