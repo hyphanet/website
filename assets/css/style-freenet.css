@@ -501,3 +501,10 @@ display: block;
 position: relative;
 top: -250px;visibility: hidden;
 }
+
+/* Fix fadein so browser search for text works on long pages */
+.animate-in,
+.animate-out {
+	visibility: visible !important;
+	opacity: 0.1 !important;
+}
