@@ -51,10 +51,10 @@ class HomeSection(Section):
 #                    be careful what links you click though!
 #                """)),
             slider_item(_("Meet New People"), _("""
-                    People from all over the world use Freenet to
-                    communicate. Granted, most of this could be done
-                    fine over the open internet.
-                    These pioneers however help us test the system.
+                    People from all over the world
+                    use Freenet to communicate.
+                    Some of these do so anonymously.
+                    You would never hear their voices in the open.
                 """)),
             slider_item(_("Experiment with Exciting New Technology"), _("""
                     Freenet is on the cutting edge of distributed
@@ -69,7 +69,7 @@ class HomeSection(Section):
                     Just publish it on Freenet!
                 """)),
             slider_item(_("Share Files"), _("""
-                    Dropbox? No need, just upload
+                    Dropbox? No need. Just upload
                     the file to Freenet and a few
                     minutes later anyone with the
                     secret URL can access it!
@@ -119,7 +119,7 @@ $tagline
 
 <!--HOME SECTION END-->
 """
-        tagline = _("Share, Chat, Browse. Anonymously. On Freenet.")
+        tagline = _("Share, Chat, Browse. Anonymously.")
         download_text = _("Get Freenet")
         return string.Template(content).substitute(sliders="".join(sliders),tagline=tagline,download_text=download_text)
 
