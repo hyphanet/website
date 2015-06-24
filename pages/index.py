@@ -69,7 +69,7 @@ class HomeSection(Section):
                     Just publish it on Freenet!
                 """)),
             slider_item(_("Share Files"), _("""
-                    Dropbox? No need, just upload
+                    Dropbox? No need. Just upload
                     the file to Freenet and a few
                     minutes later anyone with the
                     secret URL can access it!
