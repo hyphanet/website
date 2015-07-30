@@ -102,6 +102,10 @@ def head(title):
 <script src="assets/js/html5shiv.js"></script>
 <script src="assets/js/respond.min.js"></script>
 <![endif]-->
+
+<!-- tiny script to make the text invisible. This leaves the text visible for noscript and Freenet -->
+<script type="text/javascript" src="assets/js/textopacity.js"></script>
+
 </head>
 """
     return string.Template(template).substitute(title=title)
@@ -109,6 +113,7 @@ def head(title):
 def body(content):
     template = """    
 <body data-spy="scroll" data-target="#menu-section">
+
 $content
 
 <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME -->

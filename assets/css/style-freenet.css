@@ -503,8 +503,9 @@ top: -250px;visibility: hidden;
 }
 
 /* Fix fadein so browser search for text works on long pages */
+/* opacity is changed to 0.1 from Javascript for in-freenet compat */
 .animate-in,
 .animate-out {
 	visibility: visible !important;
-	opacity: 0.1 !important;
+	opacity: 1.0 !important;
 }
