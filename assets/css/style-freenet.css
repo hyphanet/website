@@ -506,5 +506,5 @@ top: -250px;visibility: hidden;
 .animate-in,
 .animate-out {
 	visibility: visible !important;
-	opacity: 0.1 !important;
+	/* opacity: 0.1 !important; */ /* This is set from Javascript for in-freenet compat */
 }
