@@ -102,13 +102,7 @@ def head(title):
 <script src="assets/js/html5shiv.js"></script>
 <script src="assets/js/respond.min.js"></script>
 <![endif]-->
-</head>
-"""
-    return string.Template(template).substitute(title=title)
-    
-def body(content):
-    template = """    
-<body data-spy="scroll" data-target="#menu-section">
+
 <!-- tiny script to make the text invisible. This leaves the text visible for noscript and Freenet -->
 <script type="text/javascript">
 // Thanks to Leonard Pauli: http://stackoverflow.com/questions/566203/changing-css-values-with-javascript
@@ -124,6 +118,14 @@ css('.animate-in', 'opacity', '0.1 !important');
 css('.animate-out', 'opacity', '0.1 !important');
 </script>
 <!-- inline script ends here -->
+
+</head>
+"""
+    return string.Template(template).substitute(title=title)
+    
+def body(content):
+    template = """    
+<body data-spy="scroll" data-target="#menu-section">
 
 $content
 
