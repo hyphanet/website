@@ -64,7 +64,7 @@ There is a problem though. The GFDL is not compatible with the GPLv2 which Freen
 it into Freenet itself. There is another problem. The GFDL states: *You may not use technical measures to obstruct or control the reading or further copying of the copies you make or distribute.*
 Inserting the website into Freenet itself may actually violate this term as the inserted data is only readable when you have the decryption key!
 
-So, is there a way out of this mess? What would be a better license? Just using GPLv2+ would be easiest. CC-BY-SA 4.0 is also compatible with GPLv2. For now we require all new content to be triple licensed.
+So, is there a way out of this mess? What would be a better license? Just using GPLv2+ would be easiest. CC-BY-SA 4.0 should become compatible with GPLv3 soon. For now we require all new content to be triple licensed.
 
 Further reading:
 
