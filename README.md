@@ -51,6 +51,11 @@ Tips:
 * Some of the source text may have weird whitespace at the start and the end, please ignore this.
 * Note that newlines are important if they are inside a piece of text. They will end up on the site as line breaks.
 
+## Requirements ##
+
+* Markdown: https://pypi.python.org/pypi/Markdown
+* Python 3: http://python.org
+
 ## License ##
 
 ### Content ###
