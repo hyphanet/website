@@ -123,7 +123,7 @@ function css(selector, property, value) {
 css('.animate-in', 'opacity', '0.1 !important');
 css('.animate-out', 'opacity', '0.1 !important');
 </script>
-<!-- inline script-end -->
+<!-- inline script ends here -->
 
 $content
 
