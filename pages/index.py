@@ -123,7 +123,7 @@ $tagline
              <h4>$donate_title</h4>
              <p>$donate_text</p>
              <div class="meter blue">
-                 <span style="width: calc(MONEYMONTHS*9%)">MONEYMONTHS / 12 months</span>
+                 <span style="width: calc(MONEYMONTHS / 12 *100%)">MONEYMONTHS / 12 months</span>
              </div>
              <p><a class="btn button-custom btn-custom-two donate-button" href="donate.html">$donate_button_text</a></p>
         </div>
