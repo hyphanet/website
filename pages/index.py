@@ -72,7 +72,7 @@ class HomeSection(Section):
                     Dropbox? No need. Just upload
                     the file to Freenet and a few
                     minutes later anyone with the
-                    secret URL can access it!
+                    secret URL can access it.
                 """)),
         ]
         content = """
