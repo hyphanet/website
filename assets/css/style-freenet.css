@@ -364,7 +364,7 @@ Any kind of usage allowed: https://css-tricks.com/license/ */
 .blue > span {
 	background-color: rgb(40, 141, 203);
 	background-image: -moz-linear-gradient(top, rgb(40, 141, 203), rgb(80, 181, 223));
-	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, rgb(40, 141, 203),color-stop(1, rgb(0, 51, 207));
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, rgb(40, 141, 203)),color-stop(1, rgb(0, 51, 207)));
 	background-image: -webkit-linear-gradient(rgb(40, 141, 203), rgb(0, 51, 207));
 }
 
