@@ -113,6 +113,15 @@ $tagline
 <a href="download.html#autostart" class=" btn button-custom btn-custom-two">$download_text</a>
 </div>
 </div>
+<!--DONATE SUBSECTION -->
+        <div id="donate_button">
+             <h4>Make a donation</h4>
+             <p>We don't charge anyone to download and use Freenet, we're a non-profit organization who rely on your donations to survive.</p>
+             <p>Our <a href="donate.html">current funds</a> will pay for this server and our one paid developer for roughly another <b>MONEYMONTHS months</b>.</p>
+             <p><a class="btn button-custom btn-custom-two donate-button" href="donate.html">$donate_text</a></p>
+        </div>
+<!-- DONATE SUBSECTION END -->
+
 </div>
 
 </div>
@@ -121,7 +130,11 @@ $tagline
 """
         tagline = _("Share, Chat, Browse. Anonymously.")
         download_text = _("Get Freenet")
-        return string.Template(content).substitute(sliders="".join(sliders),tagline=tagline,download_text=download_text)
+        donate_text = _("Donate!")
+        return string.Template(content).substitute(sliders="".join(sliders),
+                                                   tagline=tagline,
+                                                   download_text=download_text,
+                                                   donate_text=donate_text)
 
 
 class ServiceSection(Section):
