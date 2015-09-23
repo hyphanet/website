@@ -197,6 +197,15 @@ padding-top: 120px;
 padding-bottom: 60px;
 }
 
+#home .donate {
+padding-top: 40px;
+}
+
+#home .download {
+padding-left: 50px;
+padding-right: 20px;
+}
+
 #home .social {
 display: block;
 margin: 50px 20px;

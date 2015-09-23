@@ -81,6 +81,8 @@ class HomeSection(Section):
 <div class="container">
 <div class="row">
 <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 ">
+<div class="row">
+<div class="col-sm-12 col-md-12 col-lg-12">
 <div id="carousel-slider" data-ride="carousel" class="carousel slide  animate-in" data-anim-type="fade-in-up" data-interval="8000">
 
 <div class="carousel-inner">
@@ -94,8 +96,8 @@ $sliders
 </div>
 </div>
 <div class="row animate-in" data-anim-type="fade-in-up">
-<div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-8 col-lg-offset-2 scroll-me">
-
+<div class="col-sm-12 col-md-12 col-lg-12 scroll-me">
+<div class="download">
 
 <p >
 $tagline
@@ -113,15 +115,19 @@ $tagline
 <a href="download.html#autostart" class=" btn button-custom btn-custom-two">$download_text</a>
 </div>
 </div>
+</div>
+</div>
 <!--DONATE SUBSECTION -->
-        <div id="donate_button">
-             <h4>Make a donation</h4>
-             <p>We don't charge anyone to download and use Freenet, we're a non-profit organization who rely on your donations to survive.</p>
-             <p>Our <a href="donate.html">current funds</a> will pay for this server and our one paid developer for roughly another <b>MONEYMONTHS months</b>.</p>
-             <p><a class="btn button-custom btn-custom-two donate-button" href="donate.html">$donate_text</a></p>
+<div class="col-sm-2 col-md-2 col-lg-2">
+        <div style="padding-top: 4.5em;" class="item active donate" id="donate_button">
+             <h4>$donate_title</h4>
+             <p>$donate_text</p>
+             <p><a class="btn button-custom btn-custom-two donate-button" href="donate.html">$donate_button_text</a></p>
         </div>
+</div>
 <!-- DONATE SUBSECTION END -->
-
+</div>
+</div>
 </div>
 
 </div>
@@ -130,11 +136,15 @@ $tagline
 """
         tagline = _("Share, Chat, Browse. Anonymously.")
         download_text = _("Get Freenet")
-        donate_text = _("Donate!")
+        donate_title = _("Please Donate")
+        donate_text = _("""Your donations pay our servers and our developer. The <a href="donate.html">current funds</a> will last <b>MONEYMONTHS months</b>.""")
+        donate_button_text = _("Donate!")
         return string.Template(content).substitute(sliders="".join(sliders),
                                                    tagline=tagline,
                                                    download_text=download_text,
-                                                   donate_text=donate_text)
+                                                   donate_text=donate_text,
+                                                   donate_title=donate_title,
+                                                   donate_button_text=donate_button_text)
 
 
 class ServiceSection(Section):
