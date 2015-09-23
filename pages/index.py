@@ -145,7 +145,7 @@ class ServiceSection(Section):
             service("ion-person", _("Secret Identity"),
                 _("Create a secret identity so nobody knows who you are.")),
             service("ion-earth", _("Browse Webpages"),
-                _("There are a lot of webpages hosted on Freenet.")),
+                _("Freenet is home to webpages with topics ranging from programming to sustainable living.")),
             service("ion-chatboxes", _("Forums"),
                 _("Ask questions and exchange ideas.")),
             service("ion-edit", _("Publish"),
