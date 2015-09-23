@@ -18,8 +18,230 @@ def news_items():
     
     # Below news items are licensed GFDL (from old freenetproject.org website)
     return [
-        NewsItem("20150522", _("22th May 2015 - UN Report: Encryption and Anonymity Deserve Strong Protection"),
+              NewsItem("20150917-ecdsa-vulnerability", _("17th September 2015 - elliptic curves: using safe Bouncy Castle since november 2014"),
 _("""
+<p>
+A recent article outlines
+<a href="http://web-in-security.blogspot.ca/2015/09/practical-invalid-curve-attacks.html">
+practical attacks against elliptic curves</a> to recover private keys
+which worked against the Bouncy Castle crypto provider used by Freenet
+until <a href="#build01466">Build 1466</a> (released 2014-11-09) and
+against Java JCE
+<a href="http://www.oracle.com/technetwork/topics/security/cpujul2015-2367936.html">
+until July 2015</a>. If you use the current stable
+<a href="#20150816-1470-release">build 1470</a> on an updated Java, your
+node is not vulnerable to these attacks.
+</p>
+
+<p>
+On darknet the attacks required knowing both node references, so in
+darknet mode Freenet was only vulnerable to them if two friends
+connected to the same malicious third party or shared their node
+references in public. On opennet the target of these attacks would have
+been the seednodes because other opennet connections are neither
+persistent nor trusted.
+</p>
+
+
+""")),
+        NewsItem("20150816-1470-release", _("16th August 2015 - Freenet 0.7.5 build 1470 released"),
+                 _("""
+
+<p>
+This release fixes Freemail problems that prevented sending mail, and removes a
+compromised opennet seed node. Freemail also gains a new message link on the
+inbox page, links to senders' WoT profiles, and new translations:
+</p>
+
+<ul>
+<li>Czech</li>
+<li>Greek</li>
+<li>Spanish</li>
+<li>Finnish</li>
+<li>Hungarian</li>
+<li>Dutch</li>
+<li>Polish</li>
+<li>Portuguese (Portugal)</li>
+<li>Serbian</li>
+<li>Turkish</li>
+</ul>
+
+<p>
+To clarify, the CHK metadata bug fixes in 1468 are added as a new compatibility
+mode that is not yet the default. Compatibility with 1416 keys is available.
+</p>
+
+<p>
+The Fred Spanish translation has comprehensive updates as well.
+</p>
+
+""")),
+        NewsItem("20150807-1469-wininstaller", _("7th August 2015 - Windows translation update"),
+                 _("""
+
+<p>
+The Windows installer and tray app have updated translations. The installer is
+newly translated into Portuguese (Portugal) and Serbian. The tray app is newly
+translated into Spanish, Persian, Portuguese (Portugal), and Serbian.
+This also fixes a tray app problem where translations for Brazilian Portuguese
+and Simplified Chinese were not used.
+</p>
+
+""")),
+        NewsItem("20150719-1469-release", _("19th July 2015 - Freenet 0.7.5 build 1469 released"),
+                 _("""
+
+<p>
+This release fixes two bugs introduced in build 1468. One caused very
+slow operation and high CPU usage with large files and physical
+security levels above None (i.e. Freenet-level disk encryption). The
+other prevented interactive usage (e.g. freesite browsing) while
+finishing large downloads or starting large uploads.
+</p>
+
+""")),
+        NewsItem("20150713-1468-known-issues", _("13th July 2015 - Build 1468 known issues"),
+                 _("""
+
+<p>
+Despite being in some form of prerelease for over 6 months, and two weeks of
+being available as a release candidate, we didn't catch some bugs in time. There
+are two main issues:
+</p>
+
+<ol>
+<li>
+Because the reimplementation of the client layer without db4o did not include
+prioritization of FEC decoding / encoding, large bulk download or upload queues
+can starve the realtime queues, making them unresponsive.
+(See <a href="https://github.com/freenet/fred/pull/381">PR #381</a>.)
+</li>
+<li>
+Due to our misunderstanding of when the cryptography library we use - Bouncy
+Castle - included which fixes, we did not realize that version 1.51, used by
+build 1468, has severe performance problems with the way we use it to implement
+disk encryption. Build 1469 will upgrade to Bouncy Castle 1.52, which fixes this
+problem. It is only an issue when the physical security level is set to "Low" or
+higher. It does not happen when physical security is set to "None."
+(See <a href="https://github.com/freenet/fred/pull/382">PR #382</a>.)
+</li>
+</ol>
+
+<p>
+Sadly, these problems can combine to make a node use 100% CPU to slowly process
+bulk queues while the realtime queue does not respond. Matthew (toad_) has
+already released a snapshot to fix these problems, which you can find
+<a href="https://emu.freenetproject.org/pipermail/devl/2015-July/038123.html">on the mailing list</a>
+or <a href="http://localhost:8080/forumviewthread.htm?messageuuid=E544C7BB-5E5E-4159-83F8-AFC46C089329@h2RzPS4fEzP0zU43GAfEgxqK2Y55kEUNR01cWvYApI#E544C7BB-5E5E-4159-83F8-AFC46C089329@h2RzPS4fEzP0zU43GAfEgxqK2Y55kEUNR01cWvYApI">on FMS</a>.
+</p>
+
+""")),
+        NewsItem("20150711-1468-release", _("11th July 2015 - Freenet 0.7.5 build 1468 released"),
+                 _("""
+
+<p>
+The Freenet team is very happy to announce the stable release of Freenet 0.7.5 build 1468.
+</p>
+
+<p>
+<b>Important notes</b>: downgrading from build 1468 is not supported; if you want to go back to build 1467 without losing the upload and download queues, <b>before</b> upgrading, back-up the following files and directories: master.keys, persistent-temp-*/, and node.db4o (see https://wiki.freenetproject.org/Program_files ). Please note that running transfers will be restarted from scratch too. A reminder to those testing auto-update to 1468-pre4: please restore your auto-update key to the default. One way to do this is to stop Freenet, remove the "node.updater.URI" line from freenet.ini, and start Freenet again.
+</p>
+
+<p>
+In this release, the way Freenet stores data locally has changed drastically by no longer using the now-deprecated db4o object storage. It is replaced with the product of toad's summer of work - a custom on-disk format that is much more robust against corruption and more efficient.
+</p>
+
+<ul>
+<li>Existing unfinished downloads and uploads will be imported to a new format, which requires restarting them from the beginning.</li>
+<li>Space for downloads is now all allocated at the start, so machines very low on disk space may run out, which causes downloads to temporarily fail until more space is available.</li>
+<li>CHKs will change due to metadata bugfixes.</li>
+<li>Some unofficial plugins will need to be updated because of API changes. Sone already works, as do all official plugins.</li>
+<li>The queue format changes should make it extremely rare to lose the entire queue: the impact of corruption will almost always be localized.</li>
+<li>Multi-container / site uploads can now be persistent, making it more practical to upload large sites.</li>
+<li>Passworded physical security is now much stronger. (Full-disk encryption is still preferable.)</li>
+</ul>
+
+<ul>
+<li>The Windows installer now defaults to starting Freenet on login.</li>
+<li>There is a <a href="https://github.com/freenet/wintray">new Windows tray app</a> with some useful features that is included with new installations. If you are using the existing Windows tray app you can download the new one <a href="https://downloads.freenetproject.org/alpha/installer/FreenetTray.exe.build01468">here</a>. No need to put it in a specific directory - it will try the default installation location and prompt if it can't find it.</li>
+</ul>
+
+<ul>
+<li>The list of download keys moved from downloads/listFetchKeys.txt to downloads/listKeys.txt.</li>
+<li>A list of upload keys is now available at uploads/listKeys.txt</li>
+</ul>
+
+<ul>
+<li>Gantros' index is now in the default bookmarks. It uses the same software as Enzo's index, which is no longer updated.</li>
+</ul>
+
+<ul>
+<li>The obsolete and deprecated XMLLibrary and XMLSpider plugins are no longer officially supported. They will still load for those who have them added, but are no longer shown on the plugin page.</li>
+<li>In the interests of releasing this build more quickly, the new version of FlogHelper does not support exporting and importing backups from the web UI. The old backup code did not work with the new Freenet version after removing db4o. People can instead back up "plugins.floghelper.FlogHelper" files in the plugin-data directory. These can be dropped into the directory after unloading FlogHelper to restore a backup.</li>
+<li>ThawIndexBrowser works again. Thanks saces!</li>
+</ul>
+
+<ul>
+<li>Fred translations are updated.</li>
+</ul>
+
+<ul>
+<li>Add two seed nodes, one sponsored by meshnet.pl - the Polish radio/meshnet darknet users group, and another run by ArneBab. Thanks!</li>
+<li>Update existing seed node references.</li>
+</ul>
+
+<p>
+Thank you for using Freenet!
+</p>
+
+""")),
+        NewsItem("20150627-1467-wininstaller", _("27th June 2015 - New Windows installer and tray app"),
+                 _("""
+
+<p>
+The Windows installer is updated with Java 8u45, a <a href="https://github.com/freenet/wintray#freenet-tray-application">new tray application</a>, and is newly translated into:
+</p>
+
+<ul>
+<li>Czech</li>
+<li>German</li>
+<li>Greek</li>
+<li>Indonesian</li>
+<li>Italian</li>
+<li>Polish</li>
+<li>Brazilian Portuguese</li>
+<li>Simplified Chinese</li>
+</ul>
+
+""")),
+        NewsItem("20150624-upcoming-1468-update", _("24th June 2015 - Upcoming installer and testing releases"),
+                 _("""
+
+<p>
+This weekend we will release an updated Windows installer for build 1467 along
+with a <a href="https://github.com/freenet/wintray/blob/master/README.md">new Windows tray application</a>.
+We will also release 1468-pre4, which if all goes according to plan will be the
+last prerelease before a stable release two weeks later.
+</p>
+
+<p>
+If you'd like to help with translations before then please do so! The
+Windows-related resources are:
+</p>
+<ul>
+<li><a href="https://www.transifex.com/projects/p/freenet/resource/windows-installer/">Windows installer</a></li>
+<li><a href="https://www.transifex.com/projects/p/freenet/resource/windows-tray-commands/">Windows tray commands</a></li>
+<li><a href="https://www.transifex.com/projects/p/freenet/resource/windows-tray-common/">Windows tray common</a></li>
+<li><a href="https://www.transifex.com/projects/p/freenet/resource/windows-tray-crash/">Windows tray crash</a></li>
+<li><a href="https://www.transifex.com/projects/p/freenet/resource/windows-tray-preferences/">Windows tray preferences</a></li>
+</ul>
+<p>
+Some of the Windows tray resources contain many strings tagged notranslate; to
+hide these search for Tags: translate.
+</p>
+""")),
+        NewsItem("20150522", _("22th May 2015 - UN Report: Encryption and Anonymity Deserve Strong Protection"),
+                 _("""
 The UN Special Rapporteur published [a report on encryption, anonymity,
 and the human rights framework](http://www.ohchr.org/EN/Issues/FreedomOpinion/Pages/CallForSubmission.aspx)
 ([doc](http://www.ohchr.org/EN/HRBodies/HRC/RegularSessions/Session29/Documents/A.HRC.29.32_AEV.doc),
@@ -45,7 +267,7 @@ everyone - especially reporters and civil society organizations - to install
 Freenet and its communication tools to provide a point of contact for users at risk.
 """)),
         NewsItem("20150414", _("14th April 2015 - SUMA Award Acceptance Speech (video)"),
-_("""
+                 _("""
 The video from the talk given when Freenet [received the SUMA Award 2015](#20150211)
 for being the best project against surveillance and espionage on the Internet
 is available on [the Award page](http://www.searchstudies.org/de/suma2015.html)
@@ -61,11 +283,11 @@ on the Internet, along with a vision of how whistleblowers could use Freenet
 to contact journalists without spilling their identity.
 """)),
         NewsItem("20150329", _("29th March 2015 - New Linux/Unix/OS X installer"),
-_("""
+                 _("""
 The installer for Linux, Unix, and Mac OS X is updated to better detect Java.
 """)),
         NewsItem("20150315", _("15th March 2015 - Progress toward build 1468"),
-_("""
+                 _("""
 Build 1468 continues to make progress toward release.
 
 What is done:
@@ -87,13 +309,13 @@ What remains to be done:
 Because this is such a large release new installers for build 1467 will be released shortly to test those changes. Once everything on this list is complete, there will be a release candidate, then finally the stable release.
 """)),
         NewsItem("20150314", _("14th March 2015 - Freenet translation joins Localization Lab"),
-_("""
+                 _("""
 The Freenet project has joined the [Localization Lab](http://www.localizationlab.org) organization on Transifex. This allows a larger team of translators, translating into more languages, and access to paid support.
 
 If this transition has caused any problems please let us know!
 """)),
         NewsItem("20150215", _("15th February 2015 - New Windows tray app for testing"),
-_("""
+                 _("""
 The Windows tray application distributed as of build 1467 is written in the automation scripting language AutoHotKey. It has not been well-maintained and is also often falsely detected by antivirus by virtue of the language it uses. We are pleased to announce a new Windows tray application written in C# which has some additional features:
 
 *   Allow choosing which browser to launch.
@@ -106,7 +328,7 @@ The Windows tray application distributed as of build 1467 is written in the auto
 If all goes well we plan for this tray app to be distributed with build 1468. Testing is appreciated! If you'd like to try it for yourself you can find it [here](https://downloads.freenetproject.org/FreenetTray-testing-eaf31ea.exe). Please let us know how it goes and if you'd like to see any changes.
 """)),
         NewsItem("20150211", _("11th February 2015 - Freenet received the SUMA Award 2014/15"),
-_("""
+                 _("""
 ![](assets/img/news/suma2015_badge.png)
 
 At this year's [congress](http://searchstudies.org/de/suma2015.html)
@@ -123,7 +345,7 @@ to fund our one paid developer.
 > Wolfgang Sander-Beuermann with Arne Babenhauserheide, long-term Freenet contributor, as representative of the award winner. Photo: Michael Christen in Hamburg, Lizenz: CC0.
 """)),
         NewsItem("20150105", _("1st January 2015 - apt-get over Freenet"),
-_("""
+                 _("""
 Developers of the privacy-focused Debian derivative Mempo report that it can download updates over Freenet! For details, see their page on [Apt over Freenet](http://deb.mempo.org/#install_apt_freenet).
 
 Key Points:
@@ -136,7 +358,7 @@ That means it is now possible to get reproducibly built kernels checked by anony
 > The practical cool result now, is that Mempo repository can not be censored, DDoSed or taken offline, despite having just 1 tiny server (or no server at all) - rfreeman (one of the mempo developers)
 """)),
         NewsItem("build01467", _("23rd November 2014 - Freenet 0.7.5 build 1467 released"),
-_("""
+                 _("""
 This release fixes a bug introduced in build 1466 which can erase the list of plugins to load when Freenet starts if it crashes. If you are affected by this bug and can no longer connect, try adding the UPnP or JSTUN plugins again.
 
 </a>
@@ -153,7 +375,7 @@ Thank you for using Freenet!
 - Steve Dougherty
 """)),
         NewsItem("build01466", _("9th November 2014 - Freenet 0.7.5 build 1466 released"),
-_("""
+                 _("""
 This release is planned to be the second-to-last version of Freenet to support Java 6\. The version after this one will refuse to upgrade unless running on Java 7 or later. Support for this behavior is part of a larger effort to allow separate official update channels - stable, testing, and unstable - as well as make it easier to publish unofficial update channels and further improve deployment security.
 
 Highlights for this build:
@@ -174,9 +396,10 @@ Thank you for using Freenet!
 
 The link to http://127.0.0.1:8888 works for default Freenet nodes, but will not work for some setups. If you have a nonstandard setup, you should know the correct URL to use.
 """)),
-# from here news items were selectively migrated as old release notes aren't that useful to keep around
+        # from here news items were selectively migrated as old release notes aren't that useful to keep around
+        # TODO: Include all items again and select them in index.py instead.
         NewsItem("2013-tor-bust", _("5th August 2013 - Statement on the recent Freedom Hosting (Tor) bust"),
-_("""
+                 _("""
 According to [the press](http://arstechnica.com/tech-policy/2013/08/alleged-tor-hidden-service-operator-busted-for-child-porn-distribution/), half of the hidden sites on Tor are now down, apparently connected to the arrest of a man allegedly behind Freedom Hosting, a hosting service for Tor hidden services. Some of these sites were said to offer illegal content and were apparently run by the FBI for two weeks, using a Javascript-based browser exploit to try to find their users.
 
 This has had no effect on Freenet and could not happen on Freenet. Tor hidden services are centralised: A hidden service on Tor is run by a single server somewhere, and if this server is found, the whole site can be shut down, or compromised. In this case half the hidden sites on Tor were run on the same group of servers! See the [Tor blog](https://blog.torproject.org/blog/hidden-services-current-events-and-freedom-hosting) and [mailing list](https://lists.torproject.org/pipermail/tor-announce/2013-August/000089.html).
@@ -198,7 +421,7 @@ Volunteers - especially developers - are always very welcome. Feel free to conta
 For press enquiries please contact [Ian Clarke](mailto:ian@freenetproject.org).
 """)),
         NewsItem("2013-second-developer-xor", _("26th June 2013 - Freenet gets a second paid developer to fix the Web of Trust!"),
-_("""
+                 _("""
 Long time coder xor (also known as p0s) has agreed to work, in a paid role, for us on fixing the Web of Trust plugin. This is a crucial component of many Freenet plugins:
 
 *   **Sone**, an anonymous social network / microblogging tool.
@@ -215,7 +438,7 @@ Freenet relies on unpaid volunteer developers as well as a few key paid develope
 Improving the Web of Trust should substantially improve the performance of the key tools mentioned above and may be used by more in the future. Thanks to all our developers and donors!
 """)),
         NewsItem("2012-traceback-attack", _("11th September 2012 - Response to the University of Hawaii's \"Experimental Study of Accountability in Existing Anonymous Networks\""),
-_("""
+                 _("""
 Some academics [have published](http://www.ee.hawaii.edu/~dong/traceback/index.htm) a couple of attacks against Freenet, and they appear to be working on more as part of a project to unmask anonymous Freenet users. Build 1411, which was released on the 3rd of September, makes their main attack largely impractical. Nonetheless, we are working on improvements to both make this attack harder and to solve some of the [other known attacks](https://freenetproject.org/faq.html#attack). You can learn more about the attacks and our solution to them on our chief developer's [personal blog](http://amphibian.dyndns.org/flogmirror/#20120911-security).
 
 We welcome all work to understand Freenet's security and expose any problems with it, although we would suggest that next time they might let us know before they make the paper public, as is common practice in the security community.
@@ -223,11 +446,11 @@ We welcome all work to understand Freenet's security and expose any problems wit
 Finally, the long term solution is to build a darknet, a Freenet network where people only connect directly to people they trust. That means, get your friends using Freenet, and then add them as Friends on your node. When enough people use Freenet and form darknet connections, we won't need opennet, and this makes all attacks dramatically harder. We will work on making this easier and faster in the near future, as well as fixing the Pitch Black attack.
 """)),
         NewsItem("freedom-house-april-2011", _("13th April 2011 - Freenet top anti-censorship tool in survey of Chinese users!"),
-_("""
+                 _("""
 A [report](http://www.freedomhouse.org/sites/default/files/inline_images/Censorship.pdf) by [Freedom House](http://freedomhouse.org/) surveyed users in Azerbaijan, Burma, [China](http://www.freedomhouse.org/sites/default/files/LOtF_China.pdf) and Iran for their perceptions of and preferred tools for bypassing local government censorship. In China, Freenet was the only anti-censorship tool to achieve 5 stars, and the third most widely used overall.
 """)),
     ]
-    
+
 class NewsPage(Page):
     hidden = True
     def __init__(self):
