@@ -68,8 +68,13 @@ def run_show_hide_script():
          }
          
          var hash = window.location.hash.substring(1);
-         if (hash == "autostart" && OSName == "windows") {
-            download('assets/jnlp/FreenetInstaller.exe');
+         if (hash == "autostart") {
+            if (OSName == "windows") {
+                download('assets/jnlp/FreenetInstaller.exe');
+            }
+            if (OSName == "unix") {
+                download('assets/jnlp/freenet.jnlp');
+            }
          }
       </script>
 """
