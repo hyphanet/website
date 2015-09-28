@@ -72,7 +72,7 @@ class HomeSection(Section):
                     Dropbox? No need. Just upload
                     the file to Freenet and a few
                     minutes later anyone with the
-                    secret URL can access it!
+                    secret URL can access it.
                 """)),
         ]
         content = """
@@ -81,6 +81,8 @@ class HomeSection(Section):
 <div class="container">
 <div class="row">
 <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 ">
+<div class="row">
+<div class="col-sm-12 col-md-12 col-lg-12">
 <div id="carousel-slider" data-ride="carousel" class="carousel slide  animate-in" data-anim-type="fade-in-up" data-interval="8000">
 
 <div class="carousel-inner">
@@ -94,8 +96,8 @@ $sliders
 </div>
 </div>
 <div class="row animate-in" data-anim-type="fade-in-up">
-<div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-8 col-lg-offset-2 scroll-me">
-
+<div class="col-sm-12 col-md-12 col-lg-12 scroll-me">
+<div class="download">
 
 <p >
 $tagline
@@ -114,6 +116,22 @@ $tagline
 </div>
 </div>
 </div>
+</div>
+<!--DONATE SUBSECTION -->
+<div class="col-sm-2 col-md-2 col-lg-2">
+        <div style="padding-top: 4.5em;" class="item active donate" id="donate_button">
+             <h4>$donate_title</h4>
+             <p>$donate_text</p>
+             <div class="meter blue">
+                 <span style="width: calc(MONEYMONTHS / 12 *100%)">MONEYMONTHS / 12 months</span>
+             </div>
+             <p><a class="btn button-custom btn-custom-two donate-button" href="donate.html">$donate_button_text</a></p>
+        </div>
+</div>
+<!-- DONATE SUBSECTION END -->
+</div>
+</div>
+</div>
 
 </div>
 
@@ -121,7 +139,15 @@ $tagline
 """
         tagline = _("Share, Chat, Browse. Anonymously.")
         download_text = _("Get Freenet")
-        return string.Template(content).substitute(sliders="".join(sliders),tagline=tagline,download_text=download_text)
+        donate_title = _("Please Donate")
+        donate_text = _("""Your donations pay our servers and developer. Our <a href="donate.html">current funds</a> will last""")
+        donate_button_text = _("Donate!")
+        return string.Template(content).substitute(sliders="".join(sliders),
+                                                   tagline=tagline,
+                                                   download_text=download_text,
+                                                   donate_text=donate_text,
+                                                   donate_title=donate_title,
+                                                   donate_button_text=donate_button_text)
 
 
 class ServiceSection(Section):
@@ -145,7 +171,7 @@ class ServiceSection(Section):
             service("ion-person", _("Secret Identity"),
                 _("Create a secret identity so nobody knows who you are.")),
             service("ion-earth", _("Browse Webpages"),
-                _("There are a lot of webpages hosted on Freenet.")),
+                _("Freenet is home to webpages with topics ranging from programming to sustainable living.")),
             service("ion-chatboxes", _("Forums"),
                 _("Ask questions and exchange ideas.")),
             service("ion-edit", _("Publish"),
