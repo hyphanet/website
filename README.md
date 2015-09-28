@@ -102,16 +102,13 @@ It would however not be possible to create a unified whole of the software as th
 
 ## FAQ ##
 
-*The site absolutely needs to do X! When will this be added?* I (gerard-) will finish the stuff which *I* think needs to be done first. Then we can see how your feature X
-fits in the picture.
-
 *Doesn't the dark background make Freenet look "dark" and "hacker" like?*
 It might, but it also makes it look exciting and high-tech. Light websites
 are more like "fun", "outside" and "old fashioned paper". If we want to
 attract (technical) users and contributors the exiting and high-tech
 look will probably suit them better.
 
-*How can I help?* Take a look at the issues on github.
+*Can I help?* Sure! Please take a look at the issues on Github to see what needs to be done.
 
 *What static site generator does this use?* None, it uses it's own 30 line Python script.
 The entire template is also just Python code. If you know Python you don't have to
