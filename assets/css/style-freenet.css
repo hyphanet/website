@@ -70,6 +70,10 @@ a:focus {
     color: white;
 }
 
+h4 {
+    font-weight: bold;
+}
+
 /* =============================================================
 CUSTOM BUTTON STYLES
 ============================================================ */
@@ -198,7 +202,12 @@ padding-bottom: 60px;
 }
 
 #home .donate {
-padding-top: 40px;
+padding-top: 7em;
+}
+
+#home .donate p {
+font-style: italic;
+color: rgb(40, 141, 203);
 }
 
 #home .download {
@@ -240,7 +249,7 @@ Any kind of usage allowed: https://css-tricks.com/license/ */
 	height: 25px;  /* Can be anything */
     margin-bottom: 0.5em;
 	position: relative;
-	background: #555;
+	background: #00375E;
 	-moz-border-radius: 25px;
 	-webkit-border-radius: 25px;
 	border-radius: 25px;
@@ -338,6 +347,7 @@ Any kind of usage allowed: https://css-tricks.com/license/ */
 	display: none;
 }
 
+/* Animation disabled
 @-webkit-keyframes move {
     0% {
        background-position: 0 0;
@@ -346,6 +356,7 @@ Any kind of usage allowed: https://css-tricks.com/license/ */
        background-position: 50px 50px;
     }
 }
+*/
 
 .orange > span {
 	background-color: #f1a165;

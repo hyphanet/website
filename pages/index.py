@@ -119,13 +119,13 @@ $tagline
 </div>
 <!--DONATE SUBSECTION -->
 <div class="col-sm-2 col-md-2 col-lg-2">
-        <div style="padding-top: 4.5em;" class="item active donate" id="donate_button">
+        <div class="item active donate" id="donate_button">
              <h4>$donate_title</h4>
              <p>$donate_text</p>
              <div class="meter blue">
                  <span style="width: calc(MONEYMONTHS / 12 *100%)">MONEYMONTHS / 12 months</span>
              </div>
-             <p><a class="btn button-custom btn-custom-two donate-button" href="donate.html">$donate_button_text</a></p>
+             <a class="btn button-custom btn-custom-two donate-button" href="donate.html">$donate_button_text</a>
         </div>
 </div>
 <!-- DONATE SUBSECTION END -->
@@ -140,7 +140,7 @@ $tagline
         tagline = _("Share, Chat, Browse. Anonymously.")
         download_text = _("Get Freenet")
         donate_title = _("Please Donate")
-        donate_text = _("""Your donations pay our servers and developer. Our <a href="donate.html">current funds</a> will last""")
+        donate_text = _("""Your donations pay our servers and developer. Our current funds will&nbsp;last""")
         donate_button_text = _("Donate!")
         return string.Template(content).substitute(sliders="".join(sliders),
                                                    tagline=tagline,
