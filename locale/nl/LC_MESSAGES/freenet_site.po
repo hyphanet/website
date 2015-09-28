@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-11 21:52+0200\n"
+"POT-Creation-Date: 2015-09-28 21:37+0200\n"
 "PO-Revision-Date: 2015-06-06 17:27+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -26,7 +26,7 @@ msgstr ""
 msgid "Philosophical"
 msgstr ""
 
-#: pages/help.py:53 pages/index.py:130
+#: pages/help.py:53 pages/index.py:156
 msgid "What is Freenet?"
 msgstr "Wat is Freenet?"
 
@@ -1433,11 +1433,11 @@ msgstr ""
 msgid "Help"
 msgstr ""
 
-#: pages/download.py:69 pages/download.py:206
+#: pages/download.py:84 pages/download.py:219
 msgid "Download"
 msgstr ""
 
-#: pages/download.py:73
+#: pages/download.py:88
 msgid ""
 "[Step by step guide](http://freesocial.draketo.de/) to setting up Freenet "
 "and \n"
@@ -1448,11 +1448,11 @@ msgid ""
 "them."
 msgstr ""
 
-#: pages/download.py:79
+#: pages/download.py:94
 msgid "Show instructions for:"
 msgstr ""
 
-#: pages/download.py:86
+#: pages/download.py:99
 msgid ""
 "### Windows\n"
 "\n"
@@ -1469,7 +1469,7 @@ msgid ""
 "Freenet requires Windows XP or later."
 msgstr ""
 
-#: pages/download.py:95
+#: pages/download.py:108
 msgid ""
 "### Mac OSX\n"
 "\n"
@@ -1485,7 +1485,7 @@ msgid ""
 "appreciated!"
 msgstr ""
 
-#: pages/download.py:102
+#: pages/download.py:115
 msgid ""
 "### Linux and other Unix-like systems\n"
 "\n"
@@ -1555,7 +1555,7 @@ msgid ""
 "draketo.de/index.html) useful."
 msgstr ""
 
-#: pages/download.py:137
+#: pages/download.py:150
 msgid ""
 "### Firewalls and routers\n"
 "\n"
@@ -1644,11 +1644,11 @@ msgid ""
 "source.tar.bz2.sig))."
 msgstr ""
 
-#: pages/download.py:181
+#: pages/download.py:194
 msgid "Important note for first time users"
 msgstr ""
 
-#: pages/download.py:184
+#: pages/download.py:197
 #, python-format
 msgid ""
 "For best performance, Freenet will run continually. It should\n"
@@ -1809,29 +1809,29 @@ msgstr ""
 msgid "Thanks"
 msgstr ""
 
-#: pages/common.py:209
+#: pages/common.py:214
 msgid "Contact Details"
 msgstr ""
 
-#: pages/common.py:236
+#: pages/common.py:241
 msgid "Press"
 msgstr ""
 
-#: pages/common.py:237
+#: pages/common.py:242
 msgid "Site"
 msgstr ""
 
-#: pages/common.py:238
+#: pages/common.py:243
 msgid "IRC"
 msgstr ""
 
-#: pages/common.py:239
+#: pages/common.py:244
 msgid ""
 "Content on this website is licensed under the GNU Free Documentation License "
 "and may be available under other licenses."
 msgstr ""
 
-#: pages/common.py:240
+#: pages/common.py:245
 msgid "Design by DesignBootstrap"
 msgstr ""
 
@@ -2212,10 +2212,337 @@ msgstr ""
 
 #: pages/news.py:21
 msgid ""
-"22th May 2015 - UN Report: Encryption and Anonymity Deserve Strong Protection"
+"17th September 2015 - elliptic curves: using safe Bouncy Castle since "
+"november 2014"
 msgstr ""
 
 #: pages/news.py:22
+msgid ""
+"<p>\n"
+"A recent article outlines\n"
+"<a href=\"http://web-in-security.blogspot.ca/2015/09/practical-invalid-curve-"
+"attacks.html\">\n"
+"practical attacks against elliptic curves</a> to recover private keys\n"
+"which worked against the Bouncy Castle crypto provider used by Freenet\n"
+"until <a href=\"#build01466\">Build 1466</a> (released 2014-11-09) and\n"
+"against Java JCE\n"
+"<a href=\"http://www.oracle.com/technetwork/topics/security/"
+"cpujul2015-2367936.html\">\n"
+"until July 2015</a>. If you use the current stable\n"
+"<a href=\"#20150816-1470-release\">build 1470</a> on an updated Java, your\n"
+"node is not vulnerable to these attacks.\n"
+"</p>\n"
+"\n"
+"<p>\n"
+"On darknet the attacks required knowing both node references, so in\n"
+"darknet mode Freenet was only vulnerable to them if two friends\n"
+"connected to the same malicious third party or shared their node\n"
+"references in public. On opennet the target of these attacks would have\n"
+"been the seednodes because other opennet connections are neither\n"
+"persistent nor trusted.\n"
+"</p>\n"
+"\n"
+msgstr ""
+
+#: pages/news.py:47
+msgid "16th August 2015 - Freenet 0.7.5 build 1470 released"
+msgstr ""
+
+#: pages/news.py:48
+msgid ""
+"\n"
+"<p>\n"
+"This release fixes Freemail problems that prevented sending mail, and "
+"removes a\n"
+"compromised opennet seed node. Freemail also gains a new message link on "
+"the\n"
+"inbox page, links to senders' WoT profiles, and new translations:\n"
+"</p>\n"
+"\n"
+"<ul>\n"
+"<li>Czech</li>\n"
+"<li>Greek</li>\n"
+"<li>Spanish</li>\n"
+"<li>Finnish</li>\n"
+"<li>Hungarian</li>\n"
+"<li>Dutch</li>\n"
+"<li>Polish</li>\n"
+"<li>Portuguese (Portugal)</li>\n"
+"<li>Serbian</li>\n"
+"<li>Turkish</li>\n"
+"</ul>\n"
+"\n"
+"<p>\n"
+"To clarify, the CHK metadata bug fixes in 1468 are added as a new "
+"compatibility\n"
+"mode that is not yet the default. Compatibility with 1416 keys is "
+"available.\n"
+"</p>\n"
+"\n"
+"<p>\n"
+"The Fred Spanish translation has comprehensive updates as well.\n"
+"</p>\n"
+msgstr ""
+
+#: pages/news.py:79
+msgid "7th August 2015 - Windows translation update"
+msgstr ""
+
+#: pages/news.py:80
+msgid ""
+"\n"
+"<p>\n"
+"The Windows installer and tray app have updated translations. The installer "
+"is\n"
+"newly translated into Portuguese (Portugal) and Serbian. The tray app is "
+"newly\n"
+"translated into Spanish, Persian, Portuguese (Portugal), and Serbian.\n"
+"This also fixes a tray app problem where translations for Brazilian "
+"Portuguese\n"
+"and Simplified Chinese were not used.\n"
+"</p>\n"
+msgstr ""
+
+#: pages/news.py:91
+msgid "19th July 2015 - Freenet 0.7.5 build 1469 released"
+msgstr ""
+
+#: pages/news.py:92
+msgid ""
+"\n"
+"<p>\n"
+"This release fixes two bugs introduced in build 1468. One caused very\n"
+"slow operation and high CPU usage with large files and physical\n"
+"security levels above None (i.e. Freenet-level disk encryption). The\n"
+"other prevented interactive usage (e.g. freesite browsing) while\n"
+"finishing large downloads or starting large uploads.\n"
+"</p>\n"
+msgstr ""
+
+#: pages/news.py:103
+msgid "13th July 2015 - Build 1468 known issues"
+msgstr ""
+
+#: pages/news.py:104
+msgid ""
+"\n"
+"<p>\n"
+"Despite being in some form of prerelease for over 6 months, and two weeks "
+"of\n"
+"being available as a release candidate, we didn't catch some bugs in time. "
+"There\n"
+"are two main issues:\n"
+"</p>\n"
+"\n"
+"<ol>\n"
+"<li>\n"
+"Because the reimplementation of the client layer without db4o did not "
+"include\n"
+"prioritization of FEC decoding / encoding, large bulk download or upload "
+"queues\n"
+"can starve the realtime queues, making them unresponsive.\n"
+"(See <a href=\"https://github.com/freenet/fred/pull/381\">PR #381</a>.)\n"
+"</li>\n"
+"<li>\n"
+"Due to our misunderstanding of when the cryptography library we use - "
+"Bouncy\n"
+"Castle - included which fixes, we did not realize that version 1.51, used "
+"by\n"
+"build 1468, has severe performance problems with the way we use it to "
+"implement\n"
+"disk encryption. Build 1469 will upgrade to Bouncy Castle 1.52, which fixes "
+"this\n"
+"problem. It is only an issue when the physical security level is set to \"Low"
+"\" or\n"
+"higher. It does not happen when physical security is set to \"None.\"\n"
+"(See <a href=\"https://github.com/freenet/fred/pull/382\">PR #382</a>.)\n"
+"</li>\n"
+"</ol>\n"
+"\n"
+"<p>\n"
+"Sadly, these problems can combine to make a node use 100% CPU to slowly "
+"process\n"
+"bulk queues while the realtime queue does not respond. Matthew (toad_) has\n"
+"already released a snapshot to fix these problems, which you can find\n"
+"<a href=\"https://emu.freenetproject.org/pipermail/devl/2015-July/038123.html"
+"\">on the mailing list</a>\n"
+"or <a href=\"http://localhost:8080/forumviewthread.htm?"
+"messageuuid=E544C7BB-5E5E-4159-83F8-"
+"AFC46C089329@h2RzPS4fEzP0zU43GAfEgxqK2Y55kEUNR01cWvYApI#E544C7BB-5E5E-4159-83F8-"
+"AFC46C089329@h2RzPS4fEzP0zU43GAfEgxqK2Y55kEUNR01cWvYApI\">on FMS</a>.\n"
+"</p>\n"
+msgstr ""
+
+#: pages/news.py:139
+msgid "11th July 2015 - Freenet 0.7.5 build 1468 released"
+msgstr ""
+
+#: pages/news.py:140
+msgid ""
+"\n"
+"<p>\n"
+"The Freenet team is very happy to announce the stable release of Freenet "
+"0.7.5 build 1468.\n"
+"</p>\n"
+"\n"
+"<p>\n"
+"<b>Important notes</b>: downgrading from build 1468 is not supported; if you "
+"want to go back to build 1467 without losing the upload and download queues, "
+"<b>before</b> upgrading, back-up the following files and directories: master."
+"keys, persistent-temp-*/, and node.db4o (see https://wiki.freenetproject.org/"
+"Program_files ). Please note that running transfers will be restarted from "
+"scratch too. A reminder to those testing auto-update to 1468-pre4: please "
+"restore your auto-update key to the default. One way to do this is to stop "
+"Freenet, remove the \"node.updater.URI\" line from freenet.ini, and start "
+"Freenet again.\n"
+"</p>\n"
+"\n"
+"<p>\n"
+"In this release, the way Freenet stores data locally has changed drastically "
+"by no longer using the now-deprecated db4o object storage. It is replaced "
+"with the product of toad's summer of work - a custom on-disk format that is "
+"much more robust against corruption and more efficient.\n"
+"</p>\n"
+"\n"
+"<ul>\n"
+"<li>Existing unfinished downloads and uploads will be imported to a new "
+"format, which requires restarting them from the beginning.</li>\n"
+"<li>Space for downloads is now all allocated at the start, so machines very "
+"low on disk space may run out, which causes downloads to temporarily fail "
+"until more space is available.</li>\n"
+"<li>CHKs will change due to metadata bugfixes.</li>\n"
+"<li>Some unofficial plugins will need to be updated because of API changes. "
+"Sone already works, as do all official plugins.</li>\n"
+"<li>The queue format changes should make it extremely rare to lose the "
+"entire queue: the impact of corruption will almost always be localized.</"
+"li>\n"
+"<li>Multi-container / site uploads can now be persistent, making it more "
+"practical to upload large sites.</li>\n"
+"<li>Passworded physical security is now much stronger. (Full-disk encryption "
+"is still preferable.)</li>\n"
+"</ul>\n"
+"\n"
+"<ul>\n"
+"<li>The Windows installer now defaults to starting Freenet on login.</li>\n"
+"<li>There is a <a href=\"https://github.com/freenet/wintray\">new Windows "
+"tray app</a> with some useful features that is included with new "
+"installations. If you are using the existing Windows tray app you can "
+"download the new one <a href=\"https://downloads.freenetproject.org/alpha/"
+"installer/FreenetTray.exe.build01468\">here</a>. No need to put it in a "
+"specific directory - it will try the default installation location and "
+"prompt if it can't find it.</li>\n"
+"</ul>\n"
+"\n"
+"<ul>\n"
+"<li>The list of download keys moved from downloads/listFetchKeys.txt to "
+"downloads/listKeys.txt.</li>\n"
+"<li>A list of upload keys is now available at uploads/listKeys.txt</li>\n"
+"</ul>\n"
+"\n"
+"<ul>\n"
+"<li>Gantros' index is now in the default bookmarks. It uses the same "
+"software as Enzo's index, which is no longer updated.</li>\n"
+"</ul>\n"
+"\n"
+"<ul>\n"
+"<li>The obsolete and deprecated XMLLibrary and XMLSpider plugins are no "
+"longer officially supported. They will still load for those who have them "
+"added, but are no longer shown on the plugin page.</li>\n"
+"<li>In the interests of releasing this build more quickly, the new version "
+"of FlogHelper does not support exporting and importing backups from the web "
+"UI. The old backup code did not work with the new Freenet version after "
+"removing db4o. People can instead back up \"plugins.floghelper.FlogHelper\" "
+"files in the plugin-data directory. These can be dropped into the directory "
+"after unloading FlogHelper to restore a backup.</li>\n"
+"<li>ThawIndexBrowser works again. Thanks saces!</li>\n"
+"</ul>\n"
+"\n"
+"<ul>\n"
+"<li>Fred translations are updated.</li>\n"
+"</ul>\n"
+"\n"
+"<ul>\n"
+"<li>Add two seed nodes, one sponsored by meshnet.pl - the Polish radio/"
+"meshnet darknet users group, and another run by ArneBab. Thanks!</li>\n"
+"<li>Update existing seed node references.</li>\n"
+"</ul>\n"
+"\n"
+"<p>\n"
+"Thank you for using Freenet!\n"
+"</p>\n"
+msgstr ""
+
+#: pages/news.py:198
+msgid "27th June 2015 - New Windows installer and tray app"
+msgstr ""
+
+#: pages/news.py:199
+msgid ""
+"\n"
+"<p>\n"
+"The Windows installer is updated with Java 8u45, a <a href=\"https://github."
+"com/freenet/wintray#freenet-tray-application\">new tray application</a>, and "
+"is newly translated into:\n"
+"</p>\n"
+"\n"
+"<ul>\n"
+"<li>Czech</li>\n"
+"<li>German</li>\n"
+"<li>Greek</li>\n"
+"<li>Indonesian</li>\n"
+"<li>Italian</li>\n"
+"<li>Polish</li>\n"
+"<li>Brazilian Portuguese</li>\n"
+"<li>Simplified Chinese</li>\n"
+"</ul>\n"
+msgstr ""
+
+#: pages/news.py:217
+msgid "24th June 2015 - Upcoming installer and testing releases"
+msgstr ""
+
+#: pages/news.py:218
+msgid ""
+"\n"
+"<p>\n"
+"This weekend we will release an updated Windows installer for build 1467 "
+"along\n"
+"with a <a href=\"https://github.com/freenet/wintray/blob/master/README.md"
+"\">new Windows tray application</a>.\n"
+"We will also release 1468-pre4, which if all goes according to plan will be "
+"the\n"
+"last prerelease before a stable release two weeks later.\n"
+"</p>\n"
+"\n"
+"<p>\n"
+"If you'd like to help with translations before then please do so! The\n"
+"Windows-related resources are:\n"
+"</p>\n"
+"<ul>\n"
+"<li><a href=\"https://www.transifex.com/projects/p/freenet/resource/windows-"
+"installer/\">Windows installer</a></li>\n"
+"<li><a href=\"https://www.transifex.com/projects/p/freenet/resource/windows-"
+"tray-commands/\">Windows tray commands</a></li>\n"
+"<li><a href=\"https://www.transifex.com/projects/p/freenet/resource/windows-"
+"tray-common/\">Windows tray common</a></li>\n"
+"<li><a href=\"https://www.transifex.com/projects/p/freenet/resource/windows-"
+"tray-crash/\">Windows tray crash</a></li>\n"
+"<li><a href=\"https://www.transifex.com/projects/p/freenet/resource/windows-"
+"tray-preferences/\">Windows tray preferences</a></li>\n"
+"</ul>\n"
+"<p>\n"
+"Some of the Windows tray resources contain many strings tagged notranslate; "
+"to\n"
+"hide these search for Tags: translate.\n"
+"</p>"
+msgstr ""
+
+#: pages/news.py:243
+msgid ""
+"22th May 2015 - UN Report: Encryption and Anonymity Deserve Strong Protection"
+msgstr ""
+
+#: pages/news.py:244
 msgid ""
 "The UN Special Rapporteur published [a report on encryption, anonymity,\n"
 "and the human rights framework](http://www.ohchr.org/EN/Issues/"
@@ -2249,11 +2576,11 @@ msgid ""
 "at risk."
 msgstr ""
 
-#: pages/news.py:47
+#: pages/news.py:269
 msgid "14th April 2015 - SUMA Award Acceptance Speech (video)"
 msgstr ""
 
-#: pages/news.py:48
+#: pages/news.py:270
 msgid ""
 "The video from the talk given when Freenet [received the SUMA Award 2015]"
 "(#20150211)\n"
@@ -2276,20 +2603,20 @@ msgid ""
 "to contact journalists without spilling their identity."
 msgstr ""
 
-#: pages/news.py:63
+#: pages/news.py:285
 msgid "29th March 2015 - New Linux/Unix/OS X installer"
 msgstr ""
 
-#: pages/news.py:64
+#: pages/news.py:286
 msgid ""
 "The installer for Linux, Unix, and Mac OS X is updated to better detect Java."
 msgstr ""
 
-#: pages/news.py:67
+#: pages/news.py:289
 msgid "15th March 2015 - Progress toward build 1468"
 msgstr ""
 
-#: pages/news.py:68
+#: pages/news.py:290
 msgid ""
 "Build 1468 continues to make progress toward release.\n"
 "\n"
@@ -2322,11 +2649,11 @@ msgid ""
 "complete, there will be a release candidate, then finally the stable release."
 msgstr ""
 
-#: pages/news.py:89
+#: pages/news.py:311
 msgid "14th March 2015 - Freenet translation joins Localization Lab"
 msgstr ""
 
-#: pages/news.py:90
+#: pages/news.py:312
 msgid ""
 "The Freenet project has joined the [Localization Lab](http://www."
 "localizationlab.org) organization on Transifex. This allows a larger team of "
@@ -2335,11 +2662,11 @@ msgid ""
 "If this transition has caused any problems please let us know!"
 msgstr ""
 
-#: pages/news.py:95
+#: pages/news.py:317
 msgid "15th February 2015 - New Windows tray app for testing"
 msgstr ""
 
-#: pages/news.py:96
+#: pages/news.py:318
 msgid ""
 "The Windows tray application distributed as of build 1467 is written in the "
 "automation scripting language AutoHotKey. It has not been well-maintained "
@@ -2361,11 +2688,11 @@ msgid ""
 "changes."
 msgstr ""
 
-#: pages/news.py:108
+#: pages/news.py:330
 msgid "11th February 2015 - Freenet received the SUMA Award 2014/15"
 msgstr ""
 
-#: pages/news.py:109
+#: pages/news.py:331
 msgid ""
 "![](assets/img/news/suma2015_badge.png)\n"
 "\n"
@@ -2391,11 +2718,11 @@ msgid ""
 "in Hamburg, Lizenz: CC0."
 msgstr ""
 
-#: pages/news.py:125
+#: pages/news.py:347
 msgid "1st January 2015 - apt-get over Freenet"
 msgstr ""
 
-#: pages/news.py:126
+#: pages/news.py:348
 msgid ""
 "Developers of the privacy-focused Debian derivative Mempo report that it can "
 "download updates over Freenet! For details, see their page on [Apt over "
@@ -2420,11 +2747,11 @@ msgid ""
 "server at all) - rfreeman (one of the mempo developers)"
 msgstr ""
 
-#: pages/news.py:138
+#: pages/news.py:360
 msgid "23rd November 2014 - Freenet 0.7.5 build 1467 released"
 msgstr ""
 
-#: pages/news.py:139
+#: pages/news.py:361
 msgid ""
 "This release fixes a bug introduced in build 1466 which can erase the list "
 "of plugins to load when Freenet starts if it crashes. If you are affected by "
@@ -2447,11 +2774,11 @@ msgid ""
 "- Steve Dougherty"
 msgstr ""
 
-#: pages/news.py:155
+#: pages/news.py:377
 msgid "9th November 2014 - Freenet 0.7.5 build 1466 released"
 msgstr ""
 
-#: pages/news.py:156
+#: pages/news.py:378
 msgid ""
 "This release is planned to be the second-to-last version of Freenet to "
 "support Java 6\\. The version after this one will refuse to upgrade unless "
@@ -2498,11 +2825,11 @@ msgid ""
 "the correct URL to use."
 msgstr ""
 
-#: pages/news.py:178
+#: pages/news.py:401
 msgid "5th August 2013 - Statement on the recent Freedom Hosting (Tor) bust"
 msgstr ""
 
-#: pages/news.py:179
+#: pages/news.py:402
 msgid ""
 "According to [the press](http://arstechnica.com/tech-policy/2013/08/alleged-"
 "tor-hidden-service-operator-busted-for-child-porn-distribution/), half of "
@@ -2569,13 +2896,13 @@ msgid ""
 "org)."
 msgstr ""
 
-#: pages/news.py:200
+#: pages/news.py:423
 msgid ""
 "26th June 2013 - Freenet gets a second paid developer to fix the Web of "
 "Trust!"
 msgstr ""
 
-#: pages/news.py:201
+#: pages/news.py:424
 msgid ""
 "Long time coder xor (also known as p0s) has agreed to work, in a paid role, "
 "for us on fixing the Web of Trust plugin. This is a crucial component of "
@@ -2606,13 +2933,13 @@ msgid ""
 "to all our developers and donors!"
 msgstr ""
 
-#: pages/news.py:217
+#: pages/news.py:440
 msgid ""
 "11th September 2012 - Response to the University of Hawaii's \"Experimental "
 "Study of Accountability in Existing Anonymous Networks\""
 msgstr ""
 
-#: pages/news.py:218
+#: pages/news.py:441
 msgid ""
 "Some academics [have published](http://www.ee.hawaii.edu/~dong/traceback/"
 "index.htm) a couple of attacks against Freenet, and they appear to be "
@@ -2638,13 +2965,13 @@ msgid ""
 "Pitch Black attack."
 msgstr ""
 
-#: pages/news.py:225
+#: pages/news.py:448
 msgid ""
 "13th April 2011 - Freenet top anti-censorship tool in survey of Chinese "
 "users!"
 msgstr ""
 
-#: pages/news.py:226
+#: pages/news.py:449
 msgid ""
 "A [report](http://www.freedomhouse.org/sites/default/files/inline_images/"
 "Censorship.pdf) by [Freedom House](http://freedomhouse.org/) surveyed users "
@@ -2655,7 +2982,7 @@ msgid ""
 "overall."
 msgstr ""
 
-#: pages/news.py:235 pages/index.py:200
+#: pages/news.py:458 pages/index.py:226
 msgid "News"
 msgstr ""
 
@@ -2981,10 +3308,10 @@ msgstr "Zet je in voor de Toekomst"
 
 #: pages/index.py:41
 msgid ""
-"Even if you live in a democratic country a dictator\n"
-"needs only a few years to grab power.\n"
+"Even if you live in a democratic country a\n"
+"dictator only needs a few years to grab power.\n"
 "Are you prepared?\n"
-"Having experience with using Freenet might save lives!"
+"Freenet might save lives!"
 msgstr ""
 
 #: pages/index.py:53
@@ -2993,10 +3320,10 @@ msgstr "Ontmoet Nieuwe Mensen"
 
 #: pages/index.py:53
 msgid ""
-"People from all over the world use Freenet to\n"
-"communicate. Granted, most of this could be done\n"
-"fine over the open internet.\n"
-"These pioneers however help us test the system."
+"People from all over the world\n"
+"use Freenet to communicate.\n"
+"Some of these do so anonymously.\n"
+"You would never hear their voices in the open."
 msgstr ""
 
 #: pages/index.py:59
@@ -3023,99 +3350,116 @@ msgid ""
 "Just publish it on Freenet!"
 msgstr ""
 
-#: pages/index.py:71 pages/index.py:153
+#: pages/index.py:71 pages/index.py:179
 msgid "Share Files"
 msgstr "Deel Bestanden"
 
 #: pages/index.py:71
 msgid ""
-"Dropbox? No need, just upload\n"
+"Dropbox? No need. Just upload\n"
 "the file to Freenet and a few\n"
 "minutes later anyone with the\n"
-"secret URL can access it!"
+"secret URL can access it."
 msgstr ""
 
-#: pages/index.py:122
-msgid "Share, Chat, Browse. Anonymously. On the Free Network."
+#: pages/index.py:140
+#, fuzzy
+msgid "Share, Chat, Browse. Anonymously."
 msgstr "Deel, Praat, Surf. Anoniem. Op het Vrije Netwerk."
 
-#: pages/index.py:123
+#: pages/index.py:141
 msgid "Get Freenet"
 msgstr "Download Freenet"
 
-#: pages/index.py:145
+#: pages/index.py:142
+msgid "Please Donate"
+msgstr ""
+
+#: pages/index.py:143
+msgid ""
+"Your donations pay our servers and developer. Our current funds will&nbsp;"
+"last"
+msgstr ""
+
+#: pages/index.py:144
+msgid "Donate!"
+msgstr ""
+
+#: pages/index.py:171
 msgid "Secret Identity"
 msgstr ""
 
-#: pages/index.py:146
+#: pages/index.py:172
 msgid "Create a secret identity so nobody knows who you are."
 msgstr ""
 
-#: pages/index.py:147
+#: pages/index.py:173
 msgid "Browse Webpages"
 msgstr ""
 
-#: pages/index.py:148
-msgid "There are a lot of webpages hosted on Freenet."
+#: pages/index.py:174
+msgid ""
+"Freenet is home to webpages with topics ranging from programming to "
+"sustainable living."
 msgstr ""
 
-#: pages/index.py:149
+#: pages/index.py:175
 msgid "Forums"
 msgstr ""
 
-#: pages/index.py:150
+#: pages/index.py:176
 msgid "Ask questions and exchange ideas."
 msgstr ""
 
-#: pages/index.py:151
+#: pages/index.py:177
 msgid "Publish"
 msgstr ""
 
-#: pages/index.py:152
+#: pages/index.py:178
 msgid "Publish information while remaining anonymous."
 msgstr ""
 
-#: pages/index.py:154
+#: pages/index.py:180
 msgid "Easy upload & download."
 msgstr ""
 
-#: pages/index.py:155
+#: pages/index.py:181
 msgid "Platform"
 msgstr ""
 
-#: pages/index.py:156
+#: pages/index.py:182
 msgid "Write your own applications on the Freenet platform."
 msgstr ""
 
-#: pages/index.py:157
+#: pages/index.py:183
 msgid "Resistant"
 msgstr ""
 
-#: pages/index.py:158
+#: pages/index.py:184
 msgid "Freenet has been designed to be resistant to attacks and censorship."
 msgstr ""
 
-#: pages/index.py:159
+#: pages/index.py:185
 msgid "Distributed"
 msgstr ""
 
-#: pages/index.py:160
+#: pages/index.py:186
 msgid "No central points of fallure, efficient caching of popular content."
 msgstr ""
 
-#: pages/index.py:161
+#: pages/index.py:187
 msgid "Proven"
 msgstr ""
 
-#: pages/index.py:162
+#: pages/index.py:188
 msgid "Based on solid research and in practical use for 15 years."
 msgstr ""
 
-#: pages/index.py:176
+#: pages/index.py:202
 msgid "Introduction"
 msgstr ""
 
-#: pages/index.py:179
+#: pages/index.py:205
 msgid ""
 "> _\"I worry about my child and the Internet all the time, even though she's "
 "too young to have logged on yet. Here's what I worry about. I worry that 10 "
@@ -3164,7 +3508,7 @@ msgid ""
 "Sounds good? [Get Freenet](download.html)"
 msgstr ""
 
-#: pages/index.py:211
+#: pages/index.py:237
 msgid "Overview"
 msgstr ""
 
