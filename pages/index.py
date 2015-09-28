@@ -39,10 +39,10 @@ class HomeSection(Section):
                     be to obtain. Using it will also be less suspicious.
                 """)),
             slider_item(_("Save your (Childrens) Future"), _("""
-                    Even if you live in a democratic country a dictator
-                    needs only a few years to grab power.
+                    Even if you live in a democratic country a
+                    dictator only needs a few years to grab power.
                     Are you prepared?
-                    Having experience with using Freenet might save lives!
+                    Freenet might save lives!
                 """)),
 #            slider_item(_("Explore the Dark Web"), _("""
 #                    What happens when people get total anonymity?
