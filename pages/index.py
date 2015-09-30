@@ -200,10 +200,33 @@ class ServiceSection(Section):
 <!-- service start -->
 <div class="row animate-in" data-anim-type="fade-in-up">
 $services
+<div class="col-sm-12 col-md-12 col-lg-12 scroll-me" style="text-align: center">
+<div class="download">
+
+<p >
+$tagline
+</p>
+<!-- FIXME: become social
+<div class="social">
+<a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-facebook "></i></a>
+<a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-twitter"></i></a>
+<a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-google-plus "></i></a>
+<a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-linkedin "></i></a>
+<a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-pinterest "></i></a>
+<a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-github "></i></a>
+</div>
+-->
+<a href="download.html#autostart" class=" btn button-custom btn-custom-two">$download_text</a>
+</div>
+</div>
 </div>
 <!-- service end -->
 """
-        return string.Template(content).substitute(services="".join(services))
+        tagline = _("Share, Chat, Browse. Anonymously.")
+        download_text = _("Get Freenet")
+        return string.Template(content).substitute(services="".join(services),
+                                                   tagline=tagline,
+                                                   download_text=download_text)
     
 class IntroductionSection(Section):
     def __init__(self):
