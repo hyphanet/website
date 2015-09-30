@@ -80,7 +80,16 @@ class HomeSection(Section):
 <div id="home" >
 <div class="container">
 <div class="row">
-<div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 ">
+<div class="col-sm-2 col-md-2 col-lg-2">
+        <div class="item active">
+             <h4>&nbsp; &nbsp;</h4>
+             <p>&nbsp; &nbsp;</p>
+             <p>&nbsp; &nbsp;</p>
+             <p>&nbsp; &nbsp;</p>
+             <p><a href="news.html#20150211"><img src="assets/img/suma2015_badge_transparent.png" alt="SUMA Award 2014/15" /></a></p>
+        </div>
+</div>
+<div class="col-sm-8 col-md-8 col-lg-8">
 <div class="row">
 <div class="col-sm-12 col-md-12 col-lg-12">
 <div id="carousel-slider" data-ride="carousel" class="carousel slide  animate-in" data-anim-type="fade-in-up" data-interval="8000">
