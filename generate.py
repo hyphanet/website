@@ -57,4 +57,4 @@ for language in settings.languages:
     for page in menu:
         f = codecs.open(html_filename(language, page.slug),"w","utf-8")
         f.write(page.generate(language, menu))
-        f.close
+        f.close()
