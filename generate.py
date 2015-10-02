@@ -16,19 +16,18 @@ import re
 
 output_path = 'output'
 
-def langpath(language):
-    return output_path+"/"+language
+
 def html_filename(language, slug):
-    return langpath(language)+'/'+slug+'.html'
+    return output_path + '/' + slug + '.html.' + language
+
+
+def nop(x):
+    return x
 
 # cleanup
-try:
-    shutil.rmtree('output')
-except:
-    pass
-    
-def nop(x):
-    return x;
+shutil.rmtree(output_path, ignore_errors=True)
+os.makedirs(output_path)
+shutil.copytree('assets', output_path + '/assets')
 
 # We strip all text that is to be translated and also remove all newlines at the start
 # of a line. That way the text looks much cleaner for the translators.
@@ -49,9 +48,7 @@ for language in settings.languages:
         install_clean_gettext(lang.gettext)
     else:
         install_clean_gettext(nop)
-    # copy assets
-    os.makedirs(langpath(language))
-    shutil.copytree('assets', langpath(language)+'/assets')
+
     # generate pages
     menu = settings.create_menu()
     for page in menu:
