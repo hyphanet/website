@@ -156,7 +156,9 @@ def menu(site_menu, current_page):
         submenu_content += string.Template("""<li><a href="$link">$title</a></li>""").substitute(link=link,title=section.title.upper())
     languages = ""
     for language in settings.languages:
-        languages += string.Template("""<li><a href="../$language/$slug.html">$title</a></li>""").substitute(language=language,slug=current_page.slug,title=language.upper())
+        languages += string.Template(
+            """<li><a href="?language=$language">$title</a></li>"""
+        ).substitute(language=language, title=language.upper())
     template = """
 <!--MENU SECTION START-->
 <div class="navbar navbar-inverse navbar-fixed-top scroll-me" id="menu-section" >
