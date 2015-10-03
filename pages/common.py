@@ -96,6 +96,10 @@ def head(title):
 <link href="assets/css/animations.min.css" rel="stylesheet" />
 <!-- CUSTOM CSS -->
 <link href="assets/css/style-freenet.css" rel="stylesheet" />
+<!-- SLICK CAROUSEL -->
+<!-- Kept in one directory instead of split to stay with upstream. -->
+<link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
 <!-- HTML5 Shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -130,6 +134,8 @@ $content
 <script src="assets/js/animations.min.js"></script>
 <!-- CUSTOM SCRIPTS -->
 <script src="assets/js/custom.js"></script>
+<!-- SLICK CAROUSEL -->
+<script type="text/javascript" src="assets/slick/slick.min.js"></script>
 
 </body>
 """
