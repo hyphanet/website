@@ -174,7 +174,7 @@ def menu(site_menu, current_page):
 
 <div class="navbar-brand">
     <a href="index.html">
-        <img src="assets/img/logo-net-small.png" style="height: 2em;"/>
+        <img src="assets/img/logo_65_49.png" style="height: 2em;"/>
         $brand
     </a>
 </div>
