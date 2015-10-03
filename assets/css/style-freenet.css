@@ -42,6 +42,7 @@ background-color: black;
 font-size: 160%;
 }
 
+/* Allow the previous and next buttons to appear outside the div. */
 .carousel-inner {
 overflow: visible;
 }
