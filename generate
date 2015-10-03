@@ -10,38 +10,64 @@ import codecs
 import subprocess
 import builtins
 import re
+import argparse
 
 output_path = 'output'
 
 
 def main():
+    parser = argparse.ArgumentParser(
+        description="Generate localized website pages"
+    )
+    parser.add_argument("-l", "--single-language", choices=settings.languages,
+                        help="Generate non-multi-view output of only this "
+                             "language. Intended for use without a server.")
+
+    args = parser.parse_args()
+
     # cleanup
     shutil.rmtree(output_path, ignore_errors=True)
     os.makedirs(output_path)
     shutil.copytree('assets', output_path + '/assets')
 
-    for language in settings.languages:
-        print(language)
-        if language != "en":
-            # generate .mo files
-            base = "locale/"+language+"/LC_MESSAGES/freenet_site"
-            subprocess.call(["msgfmt", "-o", base+".mo", base+".po"])
-            lang = gettext.translation('freenet_site', localedir='locale',
-                                       languages=[language], codeset="utf-8")
-            install_clean_gettext(lang.gettext)
+    if not args.single_language:
+        for language in settings.languages:
+            print(language)
+            generate_language(language)
+    else:
+        generate_language(args.single_language, multiview=False)
+
+
+def generate_language(language, multiview=True):
+    if language != "en":
+        # generate .mo files
+        base = "locale/"+language+"/LC_MESSAGES/freenet_site"
+        subprocess.call(["msgfmt", "-o", base+".mo", base+".po"])
+        lang = gettext.translation('freenet_site', localedir='locale',
+                                   languages=[language], codeset="utf-8")
+        install_clean_gettext(lang.gettext)
+    else:
+        install_clean_gettext(nop)
+
+    # generate pages
+    menu = settings.create_menu()
+    for page in menu:
+        if multiview:
+            filename = multiview_filename(page.slug, language)
         else:
-            install_clean_gettext(nop)
+            filename = single_filename(page.slug)
 
-        # generate pages
-        menu = settings.create_menu()
-        for page in menu:
-            f = codecs.open(html_filename(language, page.slug),"w","utf-8")
-            f.write(page.generate(language, menu))
-            f.close()
+        f = codecs.open(filename, "w", "utf-8")
+        f.write(page.generate(language, menu))
+        f.close()
 
 
-def html_filename(language, slug):
+def multiview_filename(slug, language):
     return output_path + '/' + slug + '.html.' + language
+
+
+def single_filename(slug):
+    return output_path + '/' + slug + '.html'
 
 
 def nop(x):
