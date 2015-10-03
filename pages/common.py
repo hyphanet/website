@@ -213,14 +213,14 @@ $submenu_content
 class ContactSection(Section):
     def __init__(self):
         self.slug = "contact"
-        self.title = _("Contact Details")
+        self.title = _("Details")
     def get_content(self):
         template = """
 <div class="row animate-in" data-anim-type="fade-in-up">
 
 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 <div class="contact-wrapper">
-<h3>Quick Contact</h3>
+<h3>Contact</h3>
 <h4><strong>$press : </strong> press%freenetproject.org </h4>
 <h4><strong>$site : </strong> support%freenetproject.org </h4>
 <h4><strong>$irc : </strong> #freenet at freenode.org </h4>
@@ -229,7 +229,7 @@ class ContactSection(Section):
 </div>
 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 <div class="contact-wrapper">
-<h3>Website</h3>
+<h3>License</h3>
 $license
 <div class="footer-div" >
 &copy; 2015 Freenet <br/>
