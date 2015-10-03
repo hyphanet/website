@@ -90,7 +90,7 @@ class HomeSection(Section):
 <div class="col-sm-8 col-md-8 col-lg-8">
 <div class="row">
 <div class="col-sm-12 col-md-12 col-lg-12">
-<div id="carousel-slider" data-ride="carousel" class="carousel slide  animate-in" data-anim-type="fade-in-up" data-interval="8000">
+<div id="carousel-slider">
 
 <div class="carousel-inner">
 $sliders
@@ -102,7 +102,7 @@ $sliders
 
 </div>
 </div>
-<div class="row animate-in" data-anim-type="fade-in-up">
+<div class="row">
 <div class="col-sm-12 col-md-12 col-lg-12 scroll-me">
 <div class="download">
 
