@@ -8,10 +8,7 @@ import settings
 import gettext
 import codecs
 import subprocess
-try:
-    import __builtin__ as builtins
-except:
-    import builtins
+import builtins
 import re
 
 output_path = 'output'
