@@ -77,9 +77,9 @@ class HomeSection(Section):
         ]
         content = """
 <!--HOME SECTION START-->
-<div id="home" >
+<section id="home">
 <div class="container">
-<div class="row">
+<div class="row text-center">
 <div class="col-sm-2 col-md-2 col-lg-2">
         <div class="item active">
              <h4>&nbsp; &nbsp;</h4>
@@ -145,7 +145,7 @@ $tagline
 </div>
 </div>
 
-</div>
+</section>
 
 <!--HOME SECTION END-->
 """
