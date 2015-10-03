@@ -338,8 +338,8 @@ The main datastore does not store data you request or insert (or that is request
         return text(force_unicode(table_of_contents) + md("""
 ### Additional information sources
 
-*   [An other FAQ on our wiki server](https://wiki.freenetproject.org/FAQ)
-*   [A page dedicated to the security of freenet 0.7 on our wiki server](https://wiki.freenetproject.org/Security_summary)
+*   [Wiki FAQ page](https://wiki.freenetproject.org/FAQ)
+*   [Security summary](https://wiki.freenetproject.org/Security_summary)
 *   [High quality copy of the rabbit icon](assets/img/rabbit/freenet-bunny.svg)
 """)+force_unicode(content))
 
