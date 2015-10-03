@@ -335,13 +335,13 @@ The main datastore does not store data you request or insert (or that is request
         table_of_contents = "".join([x.generate_index() for x in subsections])
         content = "".join([x.generate() for x in subsections])
         
-        return text(md("""
+        return text(force_unicode(table_of_contents) + md("""
 ### Additional information sources
 
 *   [An other FAQ on our wiki server](https://wiki.freenetproject.org/FAQ)
 *   [A page dedicated to the security of freenet 0.7 on our wiki server](https://wiki.freenetproject.org/Security_summary)
 *   [High quality copy of the rabbit icon](assets/img/rabbit/freenet-bunny.svg)
-""")+force_unicode(table_of_contents)+force_unicode(content))
+""")+force_unicode(content))
 
 class MailingListSection(Section):
     def __init__(self):
