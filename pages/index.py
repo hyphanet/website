@@ -259,7 +259,8 @@ class NewsSection(Section):
     def get_content(self):
         # we show the most recent news items
         md_content = ""
-        for item in news.news_items():
+        news_items = news.news_items()
+        for item in news_items[:min(5, len(news_items))]:
             md_content += item.markdown_link() + "\n\n"
         return text(md(md_content))
 
