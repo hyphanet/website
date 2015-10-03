@@ -192,7 +192,7 @@ class ServiceSection(Section):
             service("ion-cube", _("Resistant"),
                 _("Freenet has been designed to be resistant to attacks and censorship.")),
             service("ion-shuffle", _("Distributed"),
-                _("No central points of fallure, efficient caching of popular content.")),
+                _("No central points of failure, efficient caching of popular content.")),
             service("ion-erlenmeyer-flask", _("Proven"),
                 _("Based on solid research and in practical use for 15 years.")),
         ]
