@@ -213,7 +213,7 @@ $submenu_content
 class ContactSection(Section):
     def __init__(self):
         self.slug = "contact"
-        self.title = _("Details")
+        self.title = _("Contact")
     def get_content(self):
         template = """
 <div class="row animate-in" data-anim-type="fade-in-up">
