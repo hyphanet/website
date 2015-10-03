@@ -1,7 +1,5 @@
 # Python code copyright Gerard Krol, license: MIT
 # HTML copyright DesignBootstrap, Gerard Krol, license: MIT
-import string
-import markdown
 import pages.news as news
 from pages.common import *
 
