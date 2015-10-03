@@ -223,7 +223,7 @@ class ContactSection(Section):
 <h3>Contact</h3>
 <h4><strong>$press : </strong> press%freenetproject.org </h4>
 <h4><strong>$site : </strong> support%freenetproject.org </h4>
-<h4><strong>$irc : </strong> #freenet at freenode.org </h4>
+<h4><strong>$irc : </strong> #freenet on chat.freenode.net</h4>
 </div>
 
 </div>
