@@ -17,6 +17,31 @@ import re
 output_path = 'output'
 
 
+def main():
+    # cleanup
+    shutil.rmtree(output_path, ignore_errors=True)
+    os.makedirs(output_path)
+    shutil.copytree('assets', output_path + '/assets')
+
+    for language in settings.languages:
+        print(language)
+        if language != "en":
+            # generate .mo files (so we don't have to check them into source control)
+            base = "locale/"+language+"/LC_MESSAGES/freenet_site"
+            subprocess.call(["msgfmt", "-o", base+".mo", base+".po"])
+            lang = gettext.translation('freenet_site', localedir='locale', languages=[language], codeset="utf-8")
+            install_clean_gettext(lang.gettext)
+        else:
+            install_clean_gettext(nop)
+
+        # generate pages
+        menu = settings.create_menu()
+        for page in menu:
+            f = codecs.open(html_filename(language, page.slug),"w","utf-8")
+            f.write(page.generate(language, menu))
+            f.close()
+
+
 def html_filename(language, slug):
     return output_path + '/' + slug + '.html.' + language
 
@@ -24,10 +49,6 @@ def html_filename(language, slug):
 def nop(x):
     return x
 
-# cleanup
-shutil.rmtree(output_path, ignore_errors=True)
-os.makedirs(output_path)
-shutil.copytree('assets', output_path + '/assets')
 
 # We strip all text that is to be translated and also remove all newlines at the start
 # of a line. That way the text looks much cleaner for the translators.
@@ -38,20 +59,5 @@ def install_clean_gettext(gt):
         return result
     builtins._ = c
 
-for language in settings.languages:
-    print(language)
-    if language != "en":
-        # generate .mo files (so we don't have to check them into source control)
-        base = "locale/"+language+"/LC_MESSAGES/freenet_site"
-        subprocess.call(["msgfmt", "-o", base+".mo", base+".po"])
-        lang = gettext.translation('freenet_site', localedir='locale', languages=[language], codeset="utf-8")
-        install_clean_gettext(lang.gettext)
-    else:
-        install_clean_gettext(nop)
-
-    # generate pages
-    menu = settings.create_menu()
-    for page in menu:
-        f = codecs.open(html_filename(language, page.slug),"w","utf-8")
-        f.write(page.generate(language, menu))
-        f.close()
+if __name__ == "__main__":
+    main()
