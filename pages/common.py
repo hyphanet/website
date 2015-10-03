@@ -221,8 +221,8 @@ class ContactSection(Section):
 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 <div class="contact-wrapper">
 <h3>Contact</h3>
-<h4><strong>$press : </strong> press%freenetproject.org </h4>
-<h4><strong>$site : </strong> support%freenetproject.org </h4>
+<h4><strong>$press : </strong> press@freenetproject.org </h4>
+<h4><strong>$support : </strong> support@freenetproject.org </h4>
 <h4><strong>$irc : </strong> #freenet on chat.freenode.net</h4>
 </div>
 
@@ -241,7 +241,7 @@ $license
 """
         return string.Template(template).substitute(
             press=_("Press"),
-            site=_("Site"),
+            support=_("Support"),
             irc=_("IRC"),
             license=_("Content on this website is licensed under the GNU Free Documentation License and may be available under other licenses."),
             design=_("Design by DesignBootstrap")
