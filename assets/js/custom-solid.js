@@ -29,16 +29,6 @@ event.preventDefault();
 
 
 /*====================================
-SLIDER SCRIPTS
-======================================*/
-
-
-$('#carousel-slider').carousel({
-interval: 2000 //TIME IN MILLI SECONDS
-});
-
-
-/*====================================
 POPUP IMAGE SCRIPTS
 ======================================*/
 $('.fancybox-media').fancybox({
