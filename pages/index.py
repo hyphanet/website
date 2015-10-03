@@ -9,7 +9,8 @@ class HomeSection(Section):
     def __init__(self):
         self.slug = "home"
         self.title = ""
-    def generate(self): # override the generate function as this is not a normal section
+
+    def generate(self):
         def slider_item(title, text, active=""):
             template = """
     <div class="item $active">
@@ -21,7 +22,11 @@ class HomeSection(Section):
         </p>
     </div>
     """
-            return string.Template(template).substitute(title=title, text=text.strip().replace("\n","<br/>"), active=active) # FIXME: user markdown
+            return string.Template(template).substitute(
+                title=title,
+                text=text.strip().replace("\n","<br/>"),
+                active=active)  # FIXME: use markdown
+
         sliders = [
             # Slider items copyright Gerard Krol, licensed GFDL/CC-BY-SA 4.0/GPLv2+
             slider_item(_("Avoid Censorship"), _("""
