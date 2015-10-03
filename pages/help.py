@@ -51,13 +51,14 @@ class FaqSection(Section):
         subsections = [
             FaqSubSection(_("Philosophical"), [
                     FaqItem("what", _("What is Freenet?"), _("""
-Freenet is free software designed to ensure true freedom of communication over
+Freenet is a platform for censorship-resistant communication and
+publishing. It is designed to ensure true freedom of communication over
 the Internet. It allows anybody to publish and read information with
-complete anonymity. Nobody controls Freenet, not even its creators, meaning that the system is not vulnerable to manipulation or shutdown. Freenet
-
+complete anonymity. Nobody controls Freenet, not even its creators, meaning
+that the system is not vulnerable to manipulation or shutdown. Freenet
 is also very efficient in how it deals with information, adaptively
 replicating content in response to demand.  For more information,
-please read [What Is Freenet](index.html#introduction)""")),
+see [What is Freenet?](about.html#introduction)""")),
                     FaqItem("tor", _("How is Freenet different to Tor? Can I access Google/Facebook/etc through Freenet?"), _("""
 Freenet is a self-contained network, while Tor allows accessing the web anonymously, as well as using "hidden services" (anonymous web servers). Freenet is not a proxy: You cannot connect to services like Google or Facebook using Freenet. However, Freenet has websites, filesharing, forums, chat, microblogging, email etc, all anonymous and hosted within Freenet.
 
@@ -337,7 +338,6 @@ The main datastore does not store data you request or insert (or that is request
         return text(md("""
 ### Additional information sources
 
-*   [Read this first: What is Freenet?](index.html#introduction)
 *   [An other FAQ on our wiki server](https://wiki.freenetproject.org/FAQ)
 *   [A page dedicated to the security of freenet 0.7 on our wiki server](https://wiki.freenetproject.org/Security_summary)
 *   [High quality copy of the rabbit icon](assets/img/rabbit/freenet-bunny.svg)
