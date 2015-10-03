@@ -222,14 +222,17 @@ $tagline
 <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-github "></i></a>
 </div>
 -->
-<a href="download.html#autostart" class=" btn button-custom btn-custom-two">$download_text</a>
+<a href="download.html#autostart" class=" btn button-custom btn-custom-two">
+    <i class="icon ion-arrow-down-a"></i>
+    $download_text
+</a>
 </div>
 </div>
 </div>
 <!-- service end -->
 """
         tagline = _("Share, Chat, Browse. Anonymously.")
-        download_text = _("Get Freenet")
+        download_text = _("Download Freenet")
         return string.Template(content).substitute(services="".join(services),
                                                    tagline=tagline,
                                                    download_text=download_text)
