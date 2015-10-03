@@ -121,7 +121,10 @@ $tagline
 <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-github "></i></a>
 </div>
 -->
-<a href="download.html#autostart" class=" btn button-custom btn-custom-two">$download_text</a>
+<a href="download.html#autostart" class=" btn button-custom btn-custom-two">
+    <i class="icon ion-arrow-down-a"></i>
+    $download_text
+</a>
 </div>
 </div>
 </div>
@@ -147,7 +150,7 @@ $tagline
 <!--HOME SECTION END-->
 """
         tagline = _("Share, Chat, Browse. Anonymously.")
-        download_text = _("Get Freenet")
+        download_text = _("Download Freenet")
         donate_title = _("Please Donate")
         donate_text = _("""Your donations pay our servers and developer. Our current funds will&nbsp;last""")
         donate_button_text = _("Donate!")
