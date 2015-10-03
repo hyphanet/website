@@ -260,7 +260,7 @@ class NewsSection(Section):
         # we show the most recent news items
         md_content = ""
         for item in news.news_items():
-            md_content += "* " + item.markdown_link() + "\n"
+            md_content += item.markdown_link() + "\n\n"
         return text(md(md_content))
 
 class IndexPage(Page):
