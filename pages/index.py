@@ -26,41 +26,36 @@ class HomeSection(Section):
     """
             return string.Template(template).substitute(
                 title=title,
-                text=text.strip().replace("\n","<br/>"),
-                active=active)  # FIXME: use markdown
+                text=md(text),
+                active=active)
 
         sliders = [
             # Slider items copyright Gerard Krol, licensed GFDL/CC-BY-SA 4.0/GPLv2+
-            slider_item(_("Avoid Censorship"), _("""
-                    Freenet is a platform for censorship-resistant
-                    communication and publishing. It helps you to remain
-                    anonymous, and communicate without fear.
-                """), "active"),
+            slider_item(_("Avoid Censorship"), md(_("""
+Freenet is a platform for censorship-resistant communication and publishing.
+It helps you to remain anonymous, and communicate without fear.
+""")), "active"),
             slider_item(_("Host a Website"), _("""
-                    Need a website nobody can take over?
-                    That is hosted for free? That is very resistant to attacks?
-                    Publish it on Freenet!
-                """)),
+Need a website nobody can take over? That is hosted for free? That is very
+resistant to attacks? Publish it on Freenet!
+""")),
             slider_item(_("Share Files"), _("""
-                    Upload a file to Freenet and anyone with the secret URL
-                    can access it.
-                """)),
+Upload a file to Freenet and anyone with the secret URL can access it.
+""")),
             slider_item(_("Meet New People"), _("""
-                    People from all over the world use Freenet to communicate.
-                    Some of them do so anonymously. You might never hear
-                    their voices in the open.
-                """)),
+People from all over the world use Freenet to communicate. Some of them do so
+anonymously. You might never hear their voices in the open.
+""")),
             slider_item(_("Experiment with Exciting New Technology"), _("""
-                    Freenet is on the cutting edge of distributed routing
-                    research. The data storage provided by Freenet is a
-                    proving ground for a number of new distributed systems.
-                """)),
+Freenet is on the cutting edge of distributed routing research. The data
+storage provided by Freenet is a proving ground for a number of new
+distributed systems.
+""")),
             slider_item(_("Improve the World"), _("""
-                    By using Freenet from the "free world" you help people in
-                    oppressive regimes share information. The more people use
-                    Freenet the easier it will be to obtain. Using it will
-                    also be less suspicious.
-                """)),
+By using Freenet from the "free world" you help people in oppressive regimes
+share information. The more people use Freenet the easier it will be to
+obtain. Using it will also be less suspicious.
+""")),
         ]
         content = """
 <!--HOME SECTION START-->
