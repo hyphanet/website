@@ -71,23 +71,16 @@ obtain. Using it will also be less suspicious.
              <p><a href="news.html#20150211"><img src="assets/img/suma2015_badge_transparent.png" alt="SUMA Award 2014/15" /></a></p>
         </div>
 </div>
+
 <div class="col-sm-8 col-md-8 col-lg-8">
 <div class="row">
-<div class="col-sm-12 col-md-12 col-lg-12">
 <div id="carousel-slider">
-
 <div class="carousel-inner">
 $sliders
 </div>
-
-
-</div>
-
-
 </div>
 </div>
 <div class="row">
-<div class="col-sm-12 col-md-12 col-lg-12 scroll-me">
 <div class="download">
 
 <p >
@@ -110,7 +103,7 @@ $tagline
 </div>
 </div>
 </div>
-</div>
+
 <!--DONATE SUBSECTION -->
 <div class="col-sm-2 col-md-2 col-lg-2">
         <div class="item active donate" id="donate_button">
