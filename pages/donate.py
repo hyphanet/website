@@ -17,16 +17,28 @@ the server for roughly another **MONEYMONTHS months** (MONEYDAYS days).
 
 #### Why does The Freenet Project need donations?
 
-Although countless people have given their time and skill to the project since its inception, The Freenet Project relies on your donations both to support those developers working full-time on this increasingly complex project, and to cover hardware (this server) and administrative costs (i.e. domain registrations). We would also like to start a legal defense fund should the need arise.
+Although countless people have given their time and skill to the project since
+its inception, The Freenet Project relies on your donations both to support
+those developers working full-time on this increasingly complex project, and to
+cover hardware (this server) and administrative costs (i.e. domain
+registrations and certificates). We would also like to start a legal defense
+fund should the need arise.
 
-Everyone involved is keenly interested in the future of The Freenet Project and you can be assured donations have been and will continue to be used wisely. All support is very much appreciated.
+Everyone involved is keenly interested in the future of The Freenet Project and
+you can be assured donations have been and will continue to be used wisely. All
+support is very much appreciated.
 
 #### How can I donate?
 
 You have several options:
 
-* You can become a Freenet project "member" for a **recurring payment** of $5 or more per month. The advantage of this is that it gives the project a more stable and dependable income which makes it easier to make long term committments to potential developers - right now it is often difficult to say whether we will be able to pay a developer the following month although so-far we have been fortunate. You can become a member by clicking on this button (you will need a [PayPal](https://www.paypal.com/) account):
-""")+
+* You can become a Freenet project "member" for a **recurring payment** of $5 or
+more per month. The advantage of this is that it gives the project a more stable
+and dependable income which makes it easier to make long term commitments to
+potential developers - right now it is often difficult to say whether we will be
+able to pay a developer the following month although so-far we have been
+fortunate. You can become a member by clicking on this button (you will need a
+[PayPal](https://www.paypal.com/) account):
 """
 	  <center>
 	    <table>
@@ -129,19 +141,32 @@ You have several options:
 ![](assets/img/BC_nBG_48px.png) You can now donate to the Freenet Project using [bitcoin](http://www.bitcoin.org/).  
 
 Send your donations to the account: """))+"1966U1pjj15tLxPXZ19U48c99EJDkdXeqb"+md("* * *")+
-md(_(
-"""
-Alternatively, please contact us: <donate@freenetproject.org> if you cannot use any of these payment methods.
+md(_("""
+Alternatively, please contact us: <donate@freenetproject.org> if you cannot use
+any of these payment methods.
 
-You can also donate to the project by purchasing items from the Freenet [store](http://www.zazzle.com/freenetproject).
+You can also donate to the project by purchasing items from the Freenet
+[store](http://www.zazzle.com/freenetproject).
 
 ## How can I be sure that my donation will be used appropriately?
 
-All donations go to The Freenet Project Inc, a non-profit 501c3 corporation with the following mission statement:
+All donations go to The Freenet Project Inc, a non-profit 501c3 corporation with
+the following mission statement:
 
-> The specific purpose of this corporation is to assist in developing and disseminating technological solutions to further the open and democratic distribution of information over the Internet or its successor electronic communication networks or organizations. It is also the purpose of this organization to guarantee consenting individuals the free, unmediated, and unimpeded reception and impartation of all intellectual, scientific, literary, social, artistic, creative, human rights, and cultural expressions, opinions and ideas without interference or limitation by or service to state, private, or special interests. It is also the purpose of this organization to educate the world community and be an advocate of these purposes.
+> The specific purpose of this corporation is to assist in developing and
+> disseminating technological solutions to further the open and democratic
+> distribution of information over the Internet or its successor electronic
+> communication networks or organizations. It is also the purpose of this
+> organization to guarantee consenting individuals the free, unmediated,
+> and unimpeded reception and impartation of all intellectual, scientific,
+> literary, social, artistic, creative, human rights, and cultural
+> expressions, opinions and ideas without interference or limitation by or
+> service to state, private, or special interests. It is also the purpose of
+> this organization to educate the world community and be an advocate of
+> these purposes.
 
-All funds received will only be utilized to advance our Mission Statement, and are administered at the direction of the Freenet Project Board.
+All funds received will only be utilized to advance our Mission Statement, and
+are administered at the direction of the Freenet Project Board.
 """)))
 
 class SponsorsSection(Section):
