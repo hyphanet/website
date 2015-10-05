@@ -180,7 +180,7 @@ def menu(site_menu, current_page):
 
 <div class="navbar-brand">
     <a href="index.html">
-        <img src="assets/img/logo_65_49.png" style="height: 2em;"/>
+        <img src="assets/img/logo_65_49.png" style="height: 2em;" alt="$rabbit"/>
         $brand
     </a>
 </div>
@@ -214,7 +214,11 @@ $submenu_content
 </div>
 <!--MENU SECTION END-->
 """
-    return string.Template(template).substitute(brand="FREENET", menu_content=menu_content, submenu_content=submenu_content, languages=languages)
+    return string.Template(template).substitute(
+        brand="FREENET", rabbit=_("Freenet rabbit logo"),
+        menu_content=menu_content, submenu_content=submenu_content,
+        languages=languages
+    )
 
 class ContactSection(Section):
     def __init__(self):
