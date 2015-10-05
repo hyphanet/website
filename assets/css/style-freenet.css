@@ -302,7 +302,8 @@ Any kind of usage allowed: https://css-tricks.com/license/ */
 	  inset 0 2px 9px  rgba(255,255,255,0.3),
 	  inset 0 -2px 6px rgba(0,0,0,0.4);
 	position: relative;
-	overflow: hidden;
+	overflow: visible;
+	white-space: nowrap;
 }
 .meter > span:after, .animate > span > span {
 	content: "";
