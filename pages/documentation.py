@@ -313,9 +313,10 @@ the following advantages:
      file components.
 
 This page contains links to freely available content on Freenet. If you would
-like to add a new link please email it to [us](mailto:ian@locut.us) -
-remember that we will only link to content that can be legally distributed in
-the United States of America.
+like to add a new link please email it to [us](
+https://emu.freenetproject.org/cgi-bin/mailman/listinfo/support) - remember
+that we will only link to content that can be legally distributed in the
+United States of America.
 """)))
 
 class UnderstandSection(Section):

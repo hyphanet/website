@@ -462,9 +462,14 @@ If you want to work on Freenet itself, see [here](contribute.html#developers) to
 
 Links to us are welcome, for example this [web hosting guide](http://www.webhostingsearch.com/). Improvements to this website, fixes for spelling/grammar mistakes, new ideas (see [the previous answer](#idea)), are all welcome. You may find [the wiki](https://wiki.freenetproject.org/Main_Page) helpful.
 
-If you want to contribute to Freenet in any way, please contact us, via [the developers mailing list](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/devl/), [the chat channel](help.html#irc), anonymously via the freenet board on FMS, or email [Ian](mailto:ian@locut.us).
+If you want to contribute to Freenet in any way, please contact us, via [the
+developers mailing list](https://emu.freenetproject.org/cgi-bin/mailman
+/listinfo/devl/), [the chat channel](help.html#irc), [the support
+mailing list](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/support)
+or anonymously via the freenet board on FMS.
 
-Last but not least you can [donate](donate.html) to support our paid developer(s) and cover server costs.
+Last but not least you can [donate](donate.html) to support our paid
+developer(s) and cover server costs.
 """)),
                     FaqItem("access", _("How can I access the code and website?"), _("""
 See the [developer page](contribute.html#developers) for details of our git repositories etc.""")),
