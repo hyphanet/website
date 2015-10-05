@@ -9,7 +9,7 @@ class DonateSection(Section):
     def get_content(self):
         # License: GFDL (from old freenetproject.org website)
         return text(md(_("""
-Financial Status
+#### Financial Status
 
 The project's current balance is **$MONEYBALANCE**. (updated twice a day)
 This will pay for the project's one paid developer (we have many volunteers) and
