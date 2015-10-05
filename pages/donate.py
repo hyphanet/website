@@ -9,6 +9,12 @@ class DonateSection(Section):
     def get_content(self):
         # License: GFDL (from old freenetproject.org website)
         return text(md("""
+Financial Status
+
+The project's current balance is **$MONEYBALANCE**. (updated twice a day)
+This will pay for the project's one paid developer (we have many volunteers) and
+the server for roughly another **MONEYMONTHS months** (MONEYDAYS days).
+
 #### Why does The Freenet Project need donations?
 
 Although countless people have given their time and skill to the project since its inception, The Freenet Project relies on your donations both to support those developers working full-time on this increasingly complex project, and to cover hardware (this server) and administrative costs (i.e. domain registrations). We would also like to start a legal defense fund should the need arise.
