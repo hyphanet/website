@@ -5,7 +5,9 @@ from pages.common import *
 
 site_brand = "Freenet"
 
+
 class HomeSection(Section):
+
     def __init__(self):
         self.slug = "home"
         self.title = ""
@@ -30,52 +32,34 @@ class HomeSection(Section):
         sliders = [
             # Slider items copyright Gerard Krol, licensed GFDL/CC-BY-SA 4.0/GPLv2+
             slider_item(_("Avoid Censorship"), _("""
-                    Freenet allows you to freely share information
-                    without any person, organization or country able
-                    to block it. Freenet helps you to remain anonymous.
-                    This allows you to communicate without fear.
+                    Freenet is a platform for censorship-resistant
+                    communication and publishing. It helps you to remain
+                    anonymous, and communicate without fear.
                 """), "active"),
-            slider_item(_("Improve the World"), _("""
-                    By using Freenet from the "free world" you
-                    help people in oppressive regimes share information.
-                    The more people use Freenet the easier it will
-                    be to obtain. Using it will also be less suspicious.
-                """)),
-            slider_item(_("Save your (Childrens) Future"), _("""
-                    Even if you live in a democratic country a
-                    dictator only needs a few years to grab power.
-                    Are you prepared?
-                    Freenet might save lives!
-                """)),
-#            slider_item(_("Explore the Dark Web"), _("""
-#                    What happens when people get total anonymity?
-#                    Does evil surface? Or are most people inherently good?
-#                    Freenet contains a varied amount of content,
-#                    be careful what links you click though!
-#                """)),
-            slider_item(_("Meet New People"), _("""
-                    People from all over the world
-                    use Freenet to communicate.
-                    Some of these do so anonymously.
-                    You would never hear their voices in the open.
-                """)),
-            slider_item(_("Experiment with Exciting New Technology"), _("""
-                    Freenet is on the cutting edge of distributed
-                    routing research. The data storage provided
-                    by Freenet is a proving ground for a number
-                    of new distributed systems.
-                """)),
             slider_item(_("Host a Website"), _("""
                     Need a website nobody can take over?
-                    That is hosted for free? That is
-                    very resistant to attacks?
-                    Just publish it on Freenet!
+                    That is hosted for free? That is very resistant to attacks?
+                    Publish it on Freenet!
                 """)),
             slider_item(_("Share Files"), _("""
-                    Dropbox? No need. Just upload
-                    the file to Freenet and a few
-                    minutes later anyone with the
-                    secret URL can access it.
+                    Upload a file to Freenet and anyone with the secret URL
+                    can access it.
+                """)),
+            slider_item(_("Meet New People"), _("""
+                    People from all over the world use Freenet to communicate.
+                    Some of them do so anonymously. You might never hear
+                    their voices in the open.
+                """)),
+            slider_item(_("Experiment with Exciting New Technology"), _("""
+                    Freenet is on the cutting edge of distributed routing
+                    research. The data storage provided by Freenet is a
+                    proving ground for a number of new distributed systems.
+                """)),
+            slider_item(_("Improve the World"), _("""
+                    By using Freenet from the "free world" you help people in
+                    oppressive regimes share information. The more people use
+                    Freenet the easier it will be to obtain. Using it will
+                    also be less suspicious.
                 """)),
         ]
         content = """
