@@ -60,101 +60,305 @@ is also very efficient in how it deals with information, adaptively
 replicating content in response to demand.  For more information,
 see [What is Freenet?](about.html#introduction)""")),
                     FaqItem("tor", _("How is Freenet different to Tor? Can I access Google/Facebook/etc through Freenet?"), _("""
-Freenet is a self-contained network, while Tor allows accessing the web anonymously, as well as using "hidden services" (anonymous web servers). Freenet is not a proxy: You cannot connect to services like Google or Facebook using Freenet. However, Freenet has websites, filesharing, forums, chat, microblogging, email etc, all anonymous and hosted within Freenet.
 
-Freenet is a distributed datastore, so once content is uploaded to Freenet, it will remain on Freenet forever, as long as it remains popular, without fear of censorship or denial of service attacks, and without needing to run your own web server and keep it online constantly.
+Freenet is a self-contained network, while Tor allows accessing the web
+anonymously, as well as using "hidden services" (anonymous web servers).
+Freenet is not a proxy: You cannot connect to services like Google or
+Facebook using Freenet. However, Freenet has websites, filesharing, forums,
+chat, microblogging, email etc, all anonymous and hosted within Freenet.
 
-The other big difference is that Freenet has the "darknet" or Friend to Friend mode, where your Freenet node (software on your computer) only connects to the Freenet nodes run by your friends, i.e. people you know (and maybe to their friends, to speed things up). This makes blocking Freenet, e.g. on a national firewall, extremely difficult.
+Freenet is a distributed datastore, so once content is uploaded to Freenet,
+it will remain on Freenet forever, as long as it remains popular, without
+fear of censorship or denial of service attacks, and without needing to run
+your own web server and keep it online constantly.
 
-However, most people currently use Freenet in "opennet" mode (that is, connecting automatically to whoever the network assigns, rather than connecting only to their friends). This is much less secure than using Freenet in "darknet" mode, and is relatively easy to block, as it does have some central servers ("seed nodes").
+The other big difference is that Freenet has the "darknet" or Friend to
+Friend mode, where your Freenet node (software on your computer) only
+connects to the Freenet nodes run by your friends, i.e. people you know (and
+maybe to their friends, to speed things up). This makes blocking Freenet,
+e.g. on a national firewall, extremely difficult.
 
-Freenet has many unsolved problems, and is still experimental. Our objective for Freenet is to build a global friend-to-friend darknet, which would be extremely difficult to block, and would provide very strong anonymity and censorship resistance. This will require further work on Freenet, on usability, speed and security, but above all it is a techno-social experiment: Will people know enough friends who are willing to use Freenet to make such an anonymous friend-to-friend network possible? This is why Freenet supports "opennet" mode: to let people try it out before they ask their friends to connect.
+However, most people currently use Freenet in "opennet" mode (that is,
+connecting automatically to whoever the network assigns, rather than
+connecting only to their friends). This is much less secure than using
+Freenet in "darknet" mode, and is relatively easy to block, as it does have
+some central servers ("seed nodes").
 
-Tor is a little less experimental, and arguably is an easier problem; it may provide better anonymity today, provided that it isn't blocked, and of course, Tor lets you access the internet as a whole, whereas on Freenet you can only access Freenet content. However if you can use a large enough darknet, Freenet already provides an interesting level of censorship resistance, DoS resistance and anonymity.
+Freenet has many unsolved problems, and is still experimental. Our objective
+for Freenet is to build a global friend-to-friend darknet, which would be
+extremely difficult to block, and would provide very strong anonymity and
+censorship resistance. This will require further work on Freenet,
+on usability, speed and security, but above all it is a techno-social
+experiment: Will people know enough friends who are willing to use Freenet to
+make such an anonymous friend-to-friend network possible? This is why Freenet
+supports "opennet" mode: to let people try it out before they ask their
+friends to connect.
 
-Using the internet "anonymously" is not necessarily easy: Connecting to Facebook through Tor doesn't prevent Facebook from knowing pretty much everything about you, and connecting to your (non-HTTPS) webmail account through Tor may mean the person running the proxy ("exit node") can steal your webmail account password.
+Tor is a little less experimental, and arguably is an easier problem; it may
+provide better anonymity today, provided that it isn't blocked, and of
+course, Tor lets you access the internet as a whole, whereas on Freenet you
+can only access Freenet content. However if you can use a large enough
+darknet, Freenet already provides an interesting level of censorship
+resistance, DoS resistance and anonymity.
 
-Freenet is a separate network, which does things differently, because there are no central servers. This is why we don't support Javascript, server-side scripting etc on freesites: Everything must be rewritten to work on a distributed network. But the advantage is there is no single server which can be compelled to hand over your private communications or which can be shut down.
+Using the internet "anonymously" is not necessarily easy: Connecting to
+Facebook through Tor doesn't prevent Facebook from knowing pretty much
+everything about you, and connecting to your (non-HTTPS) webmail account
+through Tor may mean the person running the proxy ("exit node") can steal
+your webmail account password.
 
-There are still risks, for example, talking about your home town or internet provider on an anonymous forum, or downloading files which Freenet can't make safe such as PDFs or word processor documents (Freenet will warn you about this). Also, for web content in particular, it may be easier to upload it to Freenet than set up a hidden server on Tor; you don't need to keep your node online for your content to be available, you don't need to figure out how to configure it safely, and most important, if you go away your site will still be available.
+Freenet is a separate network, which does things differently, because there
+are no central servers. This is why we don't support Javascript, server-side
+scripting etc on freesites: Everything must be rewritten to work on a
+distributed network. But the advantage is there is no single server which can
+be compelled to hand over your private communications or which can be shut
+down.
+
+There are still risks, for example, talking about your home town or internet
+provider on an anonymous forum, or downloading files which Freenet can't make
+safe such as PDFs or word processor documents (Freenet will warn you about
+this). Also, for web content in particular, it may be easier to upload it to
+Freenet than set up a hidden server on Tor; you don't need to keep your node
+online for your content to be available, you don't need to figure out how to
+configure it safely, and most important, if you go away your site will still
+be available.
 
 ### Summary:
 
 Tor (or I2P):
 
-*   Lets you access the Internet (but be careful!).
-*   Lets you access anonymous web servers and other services.
-*   Lets you host anonymous web servers, which need to be kept online, and can be DoS'ed, but can run any dynamic or server-side content you want.
-*   Provides reasonable anonymity
-*   Has been blocked by several countries, with varying success. Even its hidden bridges can be harvested and blocked with moderate effort.
-*   Is somewhat centralised
-*   Is more mature and has more users and developers
+* Lets you access the Internet (but be careful!).
+* Lets you access anonymous web servers and other services.
+* Lets you host anonymous web servers, which need to be kept online, and can be
+  DoS'ed, but can run any dynamic or server-side content you want.
+* Provides reasonable anonymity
+* Has been blocked by several countries, with varying success. Even its hidden
+  bridges can be harvested and blocked with moderate effort.
+* Is somewhat centralised
+* Is more mature and has more users and developers
 
 Freenet in general:
 
-*   Only lets you access content uploaded to Freenet, including (static) websites, email, filesharing, forums, microblogging, etc. All of which are anonymous (or pseudonymous i.e. you create an untraceable identity).
-*   Hosts content in a distributed way: You don't know what your node is storing, any given content is distributed across many nodes.
-*   Ensures that popular content will be available forever.
-*   Is older than Tor, but more experimental (arguably it's a harder task).
+* Only lets you access content uploaded to Freenet, including (static) websites,
+  email, filesharing, forums, microblogging, etc. All of which are anonymous
+  (or pseudonymous i.e. you create an untraceable identity).
+* Hosts content in a distributed way: You don't know what your node is storing,
+  any given content is distributed across many nodes.
+* Ensures that popular content will be available forever.
+* Is older than Tor, but more experimental (arguably it's a harder task).
 
 Freenet in darknet mode: (friend to friend: connects only to your friends' nodes)
 
-*   Is very hard to block, and this can be improved further with transport plugins.
-*   Provides good anonymity, and with a bit more work it could provide very strong anonymity (PISCES tunnels).
-*   Is fully decentralised: No central servers at all.
+* Is very hard to block, and this can be improved further with transport plugins.
+* Provides good anonymity, and with a bit more work it could provide very strong
+  anonymity (PISCES tunnels).
+* Is fully decentralised: No central servers at all.
 
-Freenet in opennet mode: (connect automatically even if you don't know anyone on Freenet)
+Freenet in opennet mode: (connect automatically even if you don't know anyone
+on Freenet)
 
-*   Is relatively easy to block.
-*   Provides limited anonymity
-*   Is somewhat centralised
+* Is relatively easy to block.
+* Provides limited anonymity
+* Is somewhat centralised
 
-Unfortunately most people use Freenet in opennet mode currently. The big question is can we build a global friend-to-friend darknet? Join us and find out!
+Unfortunately most people use Freenet in opennet mode currently. The big
+question is can we build a global friend-to-friend darknet? Join us and find
+out!
 
-PS for an example of how dependant Tor is on centralised hidden services, see [this](http://www.twitlonger.com/show/n_1rlo0uu) [bust](http://arstechnica.com/tech-policy/2013/08/alleged-tor-hidden-service-operator-busted-for-child-porn-distribution/). Half the hidden services on Tor were using a single hosting service, whose owner has now been arrested. While we don't approve of these sites, it does illustrate the point: A centralised network is a vulnerable network. Unfortunately, decentralised networks are hard, but in the long run they are more secure.
+PS for an example of how dependant Tor is on centralised hidden services,
+see [this](http://www.twitlonger.com/show/n_1rlo0uu)
+[bust](http://arstechnica.com/tech-policy/2013/08/alleged-tor-hidden-service-operator-busted-for-child-porn-distribution/).
+Half the hidden services on Tor were using a single hosting service,
+whose owner has now been arrested. While we don't approve of these sites,
+it does illustrate the point: A centralised network is a vulnerable network.
+Unfortunately, decentralised networks are hard, but in the long run they are
+more secure.
 """)),
                     FaqItem("who", _("Who is behind Freenet?"), _("""
-Freenet grew out of a design for an anonymous publication system created by Ian Clarke while a student at the University of Edinburgh, Scotland. Since then many other people have contributed towards making Ian's proposal a reality.""")),
+Freenet grew out of a design for an anonymous publication system created by
+Ian Clarke while a student at the University of Edinburgh, Scotland. Since
+then many other people have contributed towards making Ian's proposal a
+reality.
+""")),
                     FaqItem("trust", _("If authors are anonymous how can you trust information?"), _("""
-Cryptographic signing of information allows people to prove authorship, this technique is frequently used to authenticate authorship of emails. Moreover, you can actually sign information while remaining anonymous, thus having an anonymous persona. You can prove that you wrote different pieces of information on Freenet, without revealing your identity. In this way you can build up an anonymous reputation for reliability.""")),
+Cryptographic signing of information allows people to prove authorship,
+this technique is frequently used to authenticate authorship of emails.
+Moreover, you can actually sign information while remaining anonymous,
+thus having an anonymous persona. You can prove that you wrote different
+pieces of information on Freenet, without revealing your identity. In this
+way you can build up an anonymous reputation for reliability.
+""")),
                     FaqItem("donate-bw", _("Do I have to donate disk space and bandwidth?"), _("""
-You aren't really donating in the sense that you lose the disk space and the bandwidth; but you aren't really sharing either (at least not the same way as with filesharing programs). It is more like pitching in to the common Freenet resource pool.""")),
+You aren't really donating in the sense that you lose the disk space and the
+bandwidth; but you aren't really sharing either (at least not the same way as
+with filesharing programs). It is more like pitching in to the common Freenet
+resource pool.
+""")),
                     FaqItem("leech", _("I don't have to donate anything when using filesharing application X and I get to leech more."), _("""
-Do you get to do that anonymously? Freenet is designed with anonymity in mind, performance comes second.""")),
+Do you get to do that anonymously? Freenet is designed with anonymity in
+mind, performance comes second.
+""")),
                     FaqItem("donate-more-bw", _("All my friends donate very little space and bandwidth. Why should I donate more?"), _("""
-If you are happy with what you are getting then no. But if you want more you should consider donating more and running your node as close to 24x7 as possible, and you should ask your friends to do the same.""")),
+If you are happy with what you are getting then no. But if you want more you
+should consider donating more and running your node as close to 24x7 as
+possible, and you should ask your friends to do the same.
+""")),
                     FaqItem("donate-lot", _("If I donate a lot will my experience improve significantly?"), _("""
-Your experience will definitely get better, but for a really great improvement we need more people to start thinking like you. Bandwidth counts more than diskspace.""")),
+Your experience will definitely get better, but for a really great
+improvement we need more people to start thinking like you. Bandwidth counts
+more than diskspace.
+""")),
                     FaqItem("legal", _("Is Freenet legal?"), _("""
-We don't currently know of any prosecutions for using merely using Freenet. Some people claim that the [DADVSI](https://en.wikipedia.org/wiki/DADVSI) makes Freenet illegal in France; the German data retention law might have required logging, but [was struck down](http://en.wikipedia.org/wiki/Telecommunications_data_retention#Germany). Also, the German supreme court has found that [not securing your wifi properly](http://merlin.obs.coe.int/iris/2010/7/article13.en.html) makes you responsible for other people's downloads over it; this might or might not be extended to prohibiting anonymous peer to peer filesharing such as Freenet. [ACTA](http://en.wikipedia.org/wiki/ACTA) might have wide-ranging effects, including on Freenet, should it pass, and similar laws such as IPRED2 have been tried in the past. There have also been attempts to force peer to peer systems to provide wiretapping capabilities in the USA, and there are [worrying developments](http://www.bbc.co.uk/news/uk-politics-19968068) in the UK that might result in it being blocked, but not being made illegal per se. As far as we know none of these things - apart from the first two - have passed. Many of these are arguable either way (depending on how broadly the legislation is applied) and will have to be decided in caselaw. The law can be an ass sometimes. You can read the EFF's (US-centric) advice to peer to peer developers [here](https://www.eff.org/wp/iaal-what-peer-peer-developers-need-know-about-copyright-law). If you need legal advice, talk to a lawyer. Also read the next section especially if you are in China; blocking the protocol may suggest the authorities don't like us!""")),
+We don't currently know of any prosecutions for using merely using Freenet.
+Some people claim that the [DADVSI](https://en.wikipedia.org/wiki/DADVSI)
+makes Freenet illegal in France; the German data retention law might have
+required logging, but [was struck down](http://en.wikipedia.org/wiki/Telecommunications_data_retention#Germany).
+Also, the German supreme court has found that [not securing your wifi properly](http://merlin.obs.coe.int/iris/2010/7/article13.en.html)
+
+makes you responsible for other people's downloads over it; this might or
+might not be extended to prohibiting anonymous peer to peer filesharing such
+as Freenet. [ACTA](http://en.wikipedia.org/wiki/ACTA) might have
+wide-ranging effects, including on Freenet, should it pass, and similar laws
+such as IPRED2 have been tried in the past. There have also been attempts to
+force peer to peer systems to provide wiretapping capabilities in the USA,
+and there are [worrying developments](http://www.bbc.co.uk/news/uk-politics-19968068)
+in the UK that might result in it being blocked, but not being made illegal
+per se. As far as we know none of these things - apart from the first two -
+have passed. Many of these are arguable either way (depending on how broadly
+the legislation is applied) and will have to be decided in caselaw. The law
+can be an ass sometimes. You can read the EFF's (US-centric) advice to peer
+to peer developers [here]( https://www.eff.org/wp/iaal-what-peer-peer-developers-need-know-about-copyright-law).
+If you need legal advice, talk to a lawyer. Also read the next section
+especially if you are in China; blocking the protocol may suggest the
+authorities don't like us!
+""")),
                     FaqItem("blocked", _("Is Freenet blocked by national firewalls?"), _("""
-The Chinese national firewall (Golden Shield) has blocked our website for many years, and was observed in 2005 to block the 0.5 protocol as well. This suggests China doesn't like us, so be careful if you run Freenet in China. Some other countries (e.g. France) are known to be hostile to peer to peer, and may eventually force ISPs to block peer to peer networks (but right now Freenet works fine in France and we have many French users!).
+The Chinese national firewall (Golden Shield) has blocked our website for
+many years, and was observed in 2005 to block the 0.5 protocol as well. This
+suggests China doesn't like us, so be careful if you run Freenet in China.
+Some other countries (e.g. France) are known to be hostile to peer to peer,
+and may eventually force ISPs to block peer to peer networks (but right now
+Freenet works fine in France and we have many French users!).
 
-Technically, Freenet 0.7 has some minimal defences against blocking; the protocol is relatively hard to identify (we are working on ["transport plugins"](https://wiki.freenetproject.org/Transport_plugins), which would [make it much harder to detect Freenet](http://en.wikipedia.org/wiki/Steganography). Freenet supports a [darknet](https://wiki.freenetproject.org/Darknet) mode (i.e. only connecting to your friends) which makes automated harvesting and blocking of nodes very difficult. Note that many mobile internet providers block all peer to peer networks along with other content, and many corporate or academic networks may block Freenet (but even if they don't, see [you shouldn't run Freenet at work](#trouble) for non-work purposes!).
+Technically, Freenet 0.7 has some minimal defences against blocking; the
+protocol is relatively hard to identify (we are working on ["transport
+plugins"](https://wiki.freenetproject.org/Transport_plugins), which would
+[make it much harder to detect Freenet](http://en.wikipedia.org/wiki/Steganography).
+Freenet supports a [darknet](https://wiki.freenetproject.org/Darknet) mode (i.e.
 
-There has been discussion in the US and UK of legislation to require backdoors and presumably blocking of anything that can't be backdoored. This is unlikely to pass, especially in the US, where similar laws have been proposed periodically and are probably unconstitutional. However, even if the government came to us and demanded a back door, we would be legally unable to secretly distribute a trojan'ed build, because Freenet is open source, numerous people have contributed code to it, so legally we have to give you the source code, including that for any government mandated back doors - which wouldn't be secret for long! If this happened it is likely that [Freenet Project Incorporated](donate.html), the non-profit organisation that runs this website and handles donations, would shut down, but the Freenet network itself would live on just fine, the only difference being not being able to pay full time developers as easily.
+only connecting to your friends) which makes automated harvesting and
+blocking of nodes very difficult. Note that many mobile internet providers
+block all peer to peer networks along with other content, and many corporate
+or academic networks may block Freenet (but even if they don't, see
+[you shouldn't run Freenet at work](#trouble) for non-work purposes!).
 
-See [net neutrality](http://en.wikipedia.org/wiki/Network_neutrality) and [the EFF](https://www.eff.org/) or equivalent organisations in your country for the politics of all this and how you can stop such laws.""")),
+There has been discussion in the US and UK of legislation to require
+backdoors and presumably blocking of anything that can't be backdoored. This
+is unlikely to pass, especially in the US, where similar laws have been
+proposed periodically and are probably unconstitutional. However, even if the
+government came to us and demanded a back door, we would be legally unable to
+secretly distribute a trojan'ed build, because Freenet is open source,
+numerous people have contributed code to it, so legally we have to give you
+the source code, including that for any government mandated back doors -
+which wouldn't be secret for long! If this happened it is likely that [
+Freenet Project Incorporated](donate.html), the non-profit organisation that
+runs this website and handles donations, would shut down, but the Freenet
+network itself would live on just fine, the only difference being not being
+able to pay full time developers as easily.
+
+See [net neutrality](http://en.wikipedia.org/wiki/Network_neutrality) and
+[the EFF](https://www.eff.org/) or equivalent organisations in your country for
+the politics of all this and how you can stop such laws.
+""")),
                     FaqItem("trouble", _("Can I get trouble if I run a node?"), _("""
-This is related to ["Is Freenet legal?"](#legal). We have done everything we can to make it extremely difficult for any sane legal system to justify punishing someone for running a Freenet node, and there is little precedent for such action in today's developed countries. Many legal systems recognize the importance of freedom of speech, which is Freenet's core goal. Having said that, there is risk in doing anything that your government might not agree with; you should make an informed decision as to whether to take that risk. Furthermore, your ISP or hosting provider may have a problem with Freenet. At least one French hosting provider has been known to ban Freenet (along with Tor and others) from their servers; please read your terms and conditions to make sure you are allowed to run Freenet. Note also that Freenet can use rather a lot of bandwidth, at least 20GB/month, and this may be a problem on a cheap or shared connection. And of course running it at work could get you into trouble too, unless it's for work purposes!""")),
+This is related to ["Is Freenet legal?"](#legal). We have done everything we
+can to make it extremely difficult for any sane legal system to justify
+punishing someone for running a Freenet node, and there is little precedent
+for such action in today's developed countries. Many legal systems recognize
+the importance of freedom of speech, which is Freenet's core goal. Having
+said that, there is risk in doing anything that your government might not
+agree with; you should make an informed decision as to whether to take that
+risk. Furthermore, your ISP or hosting provider may have a problem with
+Freenet. At least one French hosting provider has been known to ban Freenet (
+along with Tor and others) from their servers; please read your terms and
+conditions to make sure you are allowed to run Freenet. Note also that
+Freenet can use rather a lot of bandwidth, at least 20GB/month, and this may
+be a problem on a cheap or shared connection. And of course running it at
+work could get you into trouble too, unless it's for work purposes!
+""")),
                     FaqItem("copyright", _("What about copyright?"), _("""
-There are some excellent thoughts on this subject on the [Philosophy](about.html#philosophy) page. Specific copyright-related laws may be a problem, please read [Is Freenet legal?](#legal) and [Is Freenet blocked by national firewalls?](#blocked).""")),
+There are some excellent thoughts on this subject on the [Philosophy](
+about.html#philosophy) page. Specific copyright-related laws may be a
+problem, please read [Is Freenet legal?](#legal) and [Is Freenet blocked by
+national firewalls?](#blocked).
+""")),
                     FaqItem("childporn", _("What about child porn, offensive content or terrorism?"), _("""
-While most people wish that child pornography and terrorism did not exist, humanity should not be deprived of their freedom to communicate just because of how a very small number of people might use that freedom.""")),
+While most people wish that child pornography and terrorism did not exist,
+humanity should not be deprived of their freedom to communicate just because
+of how a very small number of people might use that freedom.
+""")),
                     FaqItem("offensive", _("I don't want my node to be used to harbor child porn, offensive content or terrorism. What can I do?"), _("""
-The true test of someone who claims to believe in Freedom of Speech is whether they tolerate speech which they disagree with, or even find disgusting. If this is not acceptable to you, you should not run a Freenet node. Also, content in Freenet is available only as long as it is popular, so it will go away if people lose interest. However, it should persist for some time, and if enough people are interested, it will persist forever. Note that other people's file are encrypted and split into pieces. They are not stored on your machine in their entirety. Your instance of Freenet will likely have a very small number of encrypted pieces from a given file. A file can only be assembled when all its pieces are combined with the decryption key.""")),
+The true test of someone who claims to believe in Freedom of Speech is
+whether they tolerate speech which they disagree with, or even find
+disgusting. If this is not acceptable to you, you should not run a Freenet
+node. Also, content in Freenet is available only as long as it is popular,
+so it will go away if people lose interest. However, it should persist for
+some time, and if enough people are interested, it will persist forever. Note
+that other people's file are encrypted and split into pieces. They are not
+stored on your machine in their entirety. Your instance of Freenet will
+likely have a very small number of encrypted pieces from a given file. A file
+can only be assembled when all its pieces are combined with the decryption key.
+""")),
                     FaqItem("export", _("How about encryption export restrictions?"), _("""
-The Freenet Project has notified the US authorities (since the files are hosted on SourceForge, which is on US soil) that it will be exporting crypto. As long as your country doesn't prohibit the use of encryption you are fine. Further, there is now an exception in the export laws for software doing exactly what Freenet does! However, Sun limits the encryption strength available on the JVM that runs Freenet; you should install the Unlimited Strength Policy Files for Java if possible to improve performance. Freenet will however work even without this, by using its built-in encryption code.""")),
+The Freenet Project has notified the US authorities that it will be exporting
+crypto. As long as your country doesn't prohibit the use of encryption you
+are fine. Further, there is now an exception in the export laws for software
+doing exactly what Freenet does! However, Sun limits the encryption strength
+available on the JVM that runs Freenet; you should install the Unlimited
+Strength Policy Files for Java if possible to improve performance. Freenet
+will however work even without this, by using its built-in encryption code.
+""")),
                     FaqItem("whatelse", _("I have nothing to hide and don't need anonymity. Is there anything else Freenet can offer?"), _("""
-Yes, in fact even without the anonymity feature Freenet is very useful because of its unique way it handles content distribution and information load. In simple terms that means you can publish a website without worrying about how big the site will be and without having to put someone elses ad banners on it. While it is unlikely that freenet sites will ever load faster than regular websites, it does adapt to sudden surges of visitors better (which often happen when relatively unknown sites get linked to from a big site), and reasonable download speeds for big files are feasible too. Just don't expect very low latency.""")),
+Yes, in fact even without the anonymity feature Freenet is very useful
+because of its unique way it handles content distribution and information
+load. In simple terms that means you can publish a website without worrying
+about how big the site will be and without having to put someone elses ad
+banners on it. While it is unlikely that freenet sites will ever load faster
+than regular websites, it does adapt to sudden surges of visitors better (
+which often happen when relatively unknown sites get linked to from a big
+site), and reasonable download speeds for big files are feasible too. Just
+don't expect very low latency.
+""")),
                 ]),
             FaqSubSection(_("Technical"), [
                     FaqItem("how", _("How do I use this software? I downloaded it, but when I run it there's no GUI."), _("""
-Fred (the Freenet REference Daemon) runs as a daemon, or service, in the background. You normally talk to it through a Freenet client. One built-in client is fproxy, which lets you talk to Freenet with a web browser. Freenet should have installed a Browse Freenet shortcut on the desktop and/or the start menu, or a system tray icon (rabbit) with a Launch Freenet menu item. Failing that, point your web browser to [http://127.0.0.1:8888/](http://127.0.0.1:8888/) for the gateway page. Try clicking the various links in the "Freesite subscriptions" panel to reach some of the popular Freenet index sites.""")),
+Fred (the Freenet REference Daemon) runs as a daemon, or service, in the
+background. You normally talk to it through a Freenet client. One built-in
+client is fproxy, which lets you talk to Freenet with a web browser. Freenet
+should have installed a Browse Freenet shortcut on the desktop and/or the
+start menu, or a system tray icon (rabbit) with a Launch Freenet menu item.
+Failing that, point your web browser to [http://127.0.0.1:8888/](
+http://127.0.0.1:8888/) for the gateway page. Try clicking the various links
+in the "Freesite subscriptions" panel to reach some of the popular Freenet
+index sites.
+""")),
                     FaqItem("slow", _("Why is Freenet so slow?"), _("""
-When you first install Freenet, it will be slow, and you may see Data Not Found or Route Not Found errors for freesites. This is normal, and Freenet will speed up significantly over time. For best performance you should try to run Freenet as close to 24 hours a day as possible. This is why we install Freenet as a service.
+When you first install Freenet, it will be slow, and you may see Data Not
+Found or Route Not Found errors for freesites. This is normal, and Freenet
+will speed up significantly over time. For best performance you should try to
+run Freenet as close to 24 hours a day as possible. This is why we install
+Freenet as a service.
 
-Please bear in mind that Freenet is inherently high latency: it can take a while to (for example) load a page for the first time, even if it is capable of reasonable speeds (as anonymous systems go!) for large popular files. You can also improve performance for freesite browsing by using a separate browser and [increasing its connection limit](#connections). You should also set the datastore size and bandwidth limit as high as possible. But protecting your anonymity does cost a certain amount of performance. You can configure how much to a degree by changing the security levels on the page under Configuration.""")),
+Please bear in mind that Freenet is inherently high latency: it can take a
+while to (for example) load a page for the first time, even if it is capable
+of reasonable speeds (as anonymous systems go!) for large popular files. You
+can also improve performance for freesite browsing by using a separate
+browser and [increasing its connection limit](#connections). You should also
+set the datastore size and bandwidth limit as high as possible. But
+protecting your anonymity does cost a certain amount of performance. You can
+configure how much to a degree by changing the security levels on the page
+under Configuration.
+""")),
                     FaqItem("search", _("Is Freenet searchable?"), _("""
 Yes, there are a few different search mechanisms. To search the freenet web (freesites), you should be able to just use the search box on the homepage, or go to Search Freenet on the Browse submenu. If it's not there, go to the Plugins page under Configuration, and load the Library plugin. Alternatively, Frost and Thaw also provide searching for messages and files. Note that searching on Freenet is a good deal more difficult than on other networks because of Freenet's different architecture and design goals.""")),
                     FaqItem("firewall", _("How do I get freenet working with a Firewall/NAT?"), _("""
@@ -392,11 +596,18 @@ class ChatSection(Section):
     def get_content(self):
         # License: GFDL (from old freenetproject.org website)
         return text(md(_("""
-Many of the developers and users of Freenet can often be found on an [IRC](https://en.wikipedia.org/wiki/IRC) channel, #freenet on chat.freenode.net. Almost everyone on the channel is a volunteer, and may be busy with other things, so you may not get an instant answer: **Ask your question/say what the problem is, then wait for a few minutes, and somebody may help you**.
+Many of the developers and users of Freenet can often be found on an [IRC](
+https://en.wikipedia.org/wiki/IRC) channel, #freenet on chat.freenode.net.
+Almost everyone on the channel is a volunteer, and may be busy with other
+things, so you may not get an instant answer: **Ask your question/say what
+the problem is, then wait for a few minutes, and somebody may help you**.
 
 [Chat with us](https://webchat.freenode.net/?randomnick=1&channels=freenet)
 
-If you do not get an answer within the first few minutes, please keep the chat window open. We read our backlog, and if you stay, you will normally get an answer **within at most 4 hours** (when people with the relevant knowledge wake up).
+If you do not get an answer within the first few minutes, please keep the
+chat window open. We read our backlog, and if you stay, you will normally get
+an answer **within at most 4 hours** (when people with the relevant knowledge
+wake up).
 """)))
 
 class SetupSection(Section):

@@ -177,7 +177,8 @@ class SponsorsSection(Section):
     def get_content(self):
         # License: GFDL (from old freenetproject.org website)
         return text(md(_("""
-The following persons, organisations and companies have generously sponsored this project through donations or discounts on hardware and services:
+The following persons, organisations and companies have generously sponsored
+this project through donations or discounts on hardware and services:
 
 *   [John Pozadzides](http://onemansblog.com/)  
      John is the founder of HTMLHelp.com and former Vice President of Sales for SAVVIS Communications. John has donated $10,000 to the Freenet Project to fund ongoing development of the Freenet software.
@@ -234,7 +235,10 @@ class DonateThanksSection(Section):
     def get_content(self):
         # License: GFDL (from old freenetproject.org website)
         return text(md(_("""
-We have received your generous donation. It will be used at the direction of the Freenet Board to advance the interests of the Freenet Project. If you have any questions about how your donation will be used please contact Ian Clarke: <donate@freenetproject.org>.
+We have received your generous donation. It will be used at the direction of
+the Freenet Board to advance the interests of the Freenet Project. If you
+have any questions about how your donation will be used please contact Ian
+Clarke: <donate@freenetproject.org>.
 """)))
             
 class DonateThanksPage(Page):
