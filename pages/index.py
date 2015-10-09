@@ -127,7 +127,9 @@ $tagline
         tagline = _("Share, Chat, Browse. Anonymously.")
         download_text = _("Download Freenet")
         donate_title = _("Please Donate")
-        donate_text = _("""Your donations pay our servers and developer. Our current funds will&nbsp;last""")
+        donate_text = md(_("""
+Your donations pay for our server and developer. Our current funds will last
+        """))
         donate_button_text = _("Donate!")
         return string.Template(content).substitute(sliders="".join(sliders),
                                                    tagline=tagline,
