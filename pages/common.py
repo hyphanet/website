@@ -242,7 +242,7 @@ class ContactSection(Section):
 <h3>License</h3>
 $license
 <div class="footer-div" >
-&copy; 2015 Freenet <br/>
+&copy; 2015 The Freenet Project Inc<br/>
 <a href="http://www.designbootstrap.com/" target="_blank" >$design</a>
 </div>
 </div>
