@@ -3,5 +3,9 @@ host = https://www.transifex.com
 
 [freenet.website]
 file_filter = locale/<lang>/LC_MESSAGES/freenet_site.po
+trans.nb_NO = locale/nb-no/LC_MESSAGES/freenet_site.po
+trans.pt_BR = locale/pt-br/LC_MESSAGES/freenet_site.po
+trans.zh_CN = locale/zh-cn/LC_MESSAGES/freenet_site.po
+trans.zh_TW = locale/zh-tw/LC_MESSAGES/freenet_site.po
 source_lang = en
 source_file = freenet_site.pot
