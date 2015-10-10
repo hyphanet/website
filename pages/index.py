@@ -214,7 +214,7 @@ $tagline
 class NewsSection(Section):
     def __init__(self):
         self.slug = "news"
-        self.title = _("News")
+        self.title = _("Latest News")
     def get_content(self):
         # we show the most recent news items
         md_content = ""
