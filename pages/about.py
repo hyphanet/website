@@ -92,7 +92,7 @@ in the Freenet project holds.
 ### 2\. Suggested prior reading
 
 For this document to make sense, you should probably know what Freenet is. You
-an get a good overview on the [What is Freenet?](index.html#introduction) page.
+can get a good overview from [What is Freenet?](about.html#introduction).
 
 <a class="anchor" name="free_flow_info"></a>
 ### 3\. The importance of the Free flow of information
