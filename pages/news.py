@@ -18,7 +18,7 @@ def news_items():
     
     # Below news items are licensed GFDL (from old freenetproject.org website)
     return [
-              NewsItem("20150917-ecdsa-vulnerability", _("17th September 2015 - elliptic curves: using safe Bouncy Castle since November 2014"),
+              NewsItem("20150917-ecdsa-vulnerability", _("2015-09-17 - elliptic curves: using safe Bouncy Castle since November 2014"),
 _("""
 <p>
 A recent article outlines
@@ -44,7 +44,7 @@ persistent nor trusted.
 
 
 """)),
-        NewsItem("20150816-1470-release", _("16th August 2015 - Freenet 0.7.5 build 1470 released"),
+        NewsItem("20150816-1470-release", _("2015-08-16 - Freenet 0.7.5 build 1470 released"),
                  _("""
 
 <p>
@@ -76,7 +76,7 @@ The Fred Spanish translation has comprehensive updates as well.
 </p>
 
 """)),
-        NewsItem("20150807-1469-wininstaller", _("7th August 2015 - Windows translation update"),
+        NewsItem("20150807-1469-wininstaller", _("2015-08-07 - Windows translation update"),
                  _("""
 
 <p>
@@ -88,7 +88,7 @@ and Simplified Chinese were not used.
 </p>
 
 """)),
-        NewsItem("20150719-1469-release", _("19th July 2015 - Freenet 0.7.5 build 1469 released"),
+        NewsItem("20150719-1469-release", _("2015-07-19 - Freenet 0.7.5 build 1469 released"),
                  _("""
 
 <p>
@@ -100,7 +100,7 @@ finishing large downloads or starting large uploads.
 </p>
 
 """)),
-        NewsItem("20150713-1468-known-issues", _("13th July 2015 - Build 1468 known issues"),
+        NewsItem("20150713-1468-known-issues", _("2015-07-13 - Build 1468 known issues"),
                  _("""
 
 <p>
@@ -136,7 +136,7 @@ or <a href="http://localhost:8080/forumviewthread.htm?messageuuid=E544C7BB-5E5E-
 </p>
 
 """)),
-        NewsItem("20150711-1468-release", _("11th July 2015 - Freenet 0.7.5 build 1468 released"),
+        NewsItem("20150711-1468-release", _("2015-07-11 - Freenet 0.7.5 build 1468 released"),
                  _("""
 
 <p>
@@ -195,7 +195,7 @@ Thank you for using Freenet!
 </p>
 
 """)),
-        NewsItem("20150627-1467-wininstaller", _("27th June 2015 - New Windows installer and tray app"),
+        NewsItem("20150627-1467-wininstaller", _("2015-06-27 - New Windows installer and tray app"),
                  _("""
 
 <p>
@@ -214,7 +214,7 @@ The Windows installer is updated with Java 8u45, a <a href="https://github.com/f
 </ul>
 
 """)),
-        NewsItem("20150624-upcoming-1468-update", _("24th June 2015 - Upcoming installer and testing releases"),
+        NewsItem("20150624-upcoming-1468-update", _("2015-06-24 - Upcoming installer and testing releases"),
                  _("""
 
 <p>
@@ -240,7 +240,7 @@ Some of the Windows tray resources contain many strings tagged notranslate; to
 hide these search for Tags: translate.
 </p>
 """)),
-        NewsItem("20150522", _("22th May 2015 - UN Report: Encryption and Anonymity Deserve Strong Protection"),
+        NewsItem("20150522", _("2015-05-22 - UN Report: Encryption and Anonymity Deserve Strong Protection"),
                  _("""
 The UN Special Rapporteur published [a report on encryption, anonymity,
 and the human rights framework](http://www.ohchr.org/EN/Issues/FreedomOpinion/Pages/CallForSubmission.aspx)
@@ -266,7 +266,7 @@ as important part of securing human rights in the digital age and we invite
 everyone - especially reporters and civil society organizations - to install
 Freenet and its communication tools to provide a point of contact for users at risk.
 """)),
-        NewsItem("20150414", _("14th April 2015 - SUMA Award Acceptance Speech (video)"),
+        NewsItem("20150414", _("2015-04-14 - SUMA Award Acceptance Speech (video)"),
                  _("""
 The video from the talk given when Freenet [received the SUMA Award 2015](#20150211)
 for being the best project against surveillance and espionage on the Internet
@@ -282,11 +282,11 @@ capabilities of Freenet to regain confidential and pseudonymous speech
 on the Internet, along with a vision of how whistleblowers could use Freenet
 to contact journalists without spilling their identity.
 """)),
-        NewsItem("20150329", _("29th March 2015 - New Linux/Unix/OS X installer"),
+        NewsItem("20150329", _("2015-03-29 - New Linux/Unix/OS X installer"),
                  _("""
 The installer for Linux, Unix, and Mac OS X is updated to better detect Java.
 """)),
-        NewsItem("20150315", _("15th March 2015 - Progress toward build 1468"),
+        NewsItem("20150315", _("2015-03-15 - Progress toward build 1468"),
                  _("""
 Build 1468 continues to make progress toward release.
 
@@ -308,13 +308,13 @@ What remains to be done:
 
 Because this is such a large release new installers for build 1467 will be released shortly to test those changes. Once everything on this list is complete, there will be a release candidate, then finally the stable release.
 """)),
-        NewsItem("20150314", _("14th March 2015 - Freenet translation joins Localization Lab"),
+        NewsItem("20150314", _("2015-03-14 - Freenet translation joins Localization Lab"),
                  _("""
 The Freenet project has joined the [Localization Lab](http://www.localizationlab.org) organization on Transifex. This allows a larger team of translators, translating into more languages, and access to paid support.
 
 If this transition has caused any problems please let us know!
 """)),
-        NewsItem("20150215", _("15th February 2015 - New Windows tray app for testing"),
+        NewsItem("20150215", _("2015-02-15 - New Windows tray app for testing"),
                  _("""
 The Windows tray application distributed as of build 1467 is written in the automation scripting language AutoHotKey. It has not been well-maintained and is also often falsely detected by antivirus by virtue of the language it uses. We are pleased to announce a new Windows tray application written in C# which has some additional features:
 
@@ -327,7 +327,7 @@ The Windows tray application distributed as of build 1467 is written in the auto
 
 If all goes well we plan for this tray app to be distributed with build 1468. Testing is appreciated! If you'd like to try it for yourself you can find it [here](https://downloads.freenetproject.org/FreenetTray-testing-eaf31ea.exe). Please let us know how it goes and if you'd like to see any changes.
 """)),
-        NewsItem("20150211", _("11th February 2015 - Freenet received the SUMA Award 2014/15"),
+        NewsItem("20150211", _("2015-02-11 - Freenet received the SUMA Award 2014/15"),
                  _("""
 <div style="float: right"><img src="assets/img/suma2015_badge_transparent.png" alt="SUMA Award 2014/15"/></div>
 
@@ -357,7 +357,7 @@ That means it is now possible to get reproducibly built kernels checked by anony
 
 > The practical cool result now, is that Mempo repository can not be censored, DDoSed or taken offline, despite having just 1 tiny server (or no server at all) - rfreeman (one of the mempo developers)
 """)),
-        NewsItem("build01467", _("23rd November 2014 - Freenet 0.7.5 build 1467 released"),
+        NewsItem("build01467", _("2014-11-23 - Freenet 0.7.5 build 1467 released"),
                  _("""
 This release fixes a bug introduced in build 1466 which can erase the list of plugins to load when Freenet starts if it crashes. If you are affected by this bug and can no longer connect, try adding the UPnP or JSTUN plugins again.
 
@@ -374,7 +374,7 @@ Thank you for using Freenet!
 
 - Steve Dougherty
 """)),
-        NewsItem("build01466", _("9th November 2014 - Freenet 0.7.5 build 1466 released"),
+        NewsItem("build01466", _("2014-11-09 - Freenet 0.7.5 build 1466 released"),
                  _("""
 This release is planned to be the second-to-last version of Freenet to support Java 6\. The version after this one will refuse to upgrade unless running on Java 7 or later. Support for this behavior is part of a larger effort to allow separate official update channels - stable, testing, and unstable - as well as make it easier to publish unofficial update channels and further improve deployment security.
 
@@ -398,7 +398,7 @@ The link to http://127.0.0.1:8888 works for default Freenet nodes, but will not 
 """)),
         # from here news items were selectively migrated as old release notes aren't that useful to keep around
         # TODO: Include all items again and select them in index.py instead.
-        NewsItem("2013-tor-bust", _("5th August 2013 - Statement on the recent Freedom Hosting (Tor) bust"),
+        NewsItem("2013-tor-bust", _("2013-08-05 - Statement on the recent Freedom Hosting (Tor) bust"),
                  _("""
 According to [the press](http://arstechnica.com/tech-policy/2013/08/alleged-tor-hidden-service-operator-busted-for-child-porn-distribution/), half of the hidden sites on Tor are now down, apparently connected to the arrest of a man allegedly behind Freedom Hosting, a hosting service for Tor hidden services. Some of these sites were said to offer illegal content and were apparently run by the FBI for two weeks, using a Javascript-based browser exploit to try to find their users.
 
@@ -420,7 +420,7 @@ Volunteers - especially developers - are always very welcome. Feel free to conta
 
 For press enquiries please contact [Ian Clarke](mailto:ian@freenetproject.org).
 """)),
-        NewsItem("2013-second-developer-xor", _("26th June 2013 - Freenet gets a second paid developer to fix the Web of Trust!"),
+        NewsItem("2013-second-developer-xor", _("2013-06-26 - Freenet gets a second paid developer to fix the Web of Trust!"),
                  _("""
 Long time coder xor (also known as p0s) has agreed to work, in a paid role, for us on fixing the Web of Trust plugin. This is a crucial component of many Freenet plugins:
 
@@ -437,7 +437,7 @@ Freenet relies on unpaid volunteer developers as well as a few key paid develope
 
 Improving the Web of Trust should substantially improve the performance of the key tools mentioned above and may be used by more in the future. Thanks to all our developers and donors!
 """)),
-        NewsItem("2012-traceback-attack", _("11th September 2012 - Response to the University of Hawaii's \"Experimental Study of Accountability in Existing Anonymous Networks\""),
+        NewsItem("2012-traceback-attack", _("2012-09-11 - Response to the University of Hawaii's \"Experimental Study of Accountability in Existing Anonymous Networks\""),
                  _("""
 Some academics [have published](http://www.ee.hawaii.edu/~dong/traceback/index.htm) a couple of attacks against Freenet, and they appear to be working on more as part of a project to unmask anonymous Freenet users. Build 1411, which was released on the 3rd of September, makes their main attack largely impractical. Nonetheless, we are working on improvements to both make this attack harder and to solve some of the [other known attacks](https://freenetproject.org/faq.html#attack). You can learn more about the attacks and our solution to them on our chief developer's [personal blog](http://amphibian.dyndns.org/flogmirror/#20120911-security).
 
@@ -445,7 +445,7 @@ We welcome all work to understand Freenet's security and expose any problems wit
 
 Finally, the long term solution is to build a darknet, a Freenet network where people only connect directly to people they trust. That means, get your friends using Freenet, and then add them as Friends on your node. When enough people use Freenet and form darknet connections, we won't need opennet, and this makes all attacks dramatically harder. We will work on making this easier and faster in the near future, as well as fixing the Pitch Black attack.
 """)),
-        NewsItem("freedom-house-april-2011", _("13th April 2011 - Freenet top anti-censorship tool in survey of Chinese users!"),
+        NewsItem("freedom-house-april-2011", _("2011-04-13 - Freenet top anti-censorship tool in survey of Chinese users!"),
                  _("""
 A [report](http://www.freedomhouse.org/sites/default/files/inline_images/Censorship.pdf) by [Freedom House](http://freedomhouse.org/) surveyed users in Azerbaijan, Burma, [China](http://www.freedomhouse.org/sites/default/files/LOtF_China.pdf) and Iran for their perceptions of and preferred tools for bypassing local government censorship. In China, Freenet was the only anti-censorship tool to achieve 5 stars, and the third most widely used overall.
 """)),
