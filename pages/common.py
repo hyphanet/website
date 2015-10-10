@@ -92,8 +92,6 @@ def head(title):
 <link href="assets/css/ionicons.css" rel="stylesheet" />
 <!-- FONT AWESOME ICONS STYLES -->
 <link href="assets/css/font-awesome.css" rel="stylesheet" />
-<!-- STYLES FOR VIEWPORT ANIMATION -->
-<link href="assets/css/animations.min.css" rel="stylesheet" />
 <!-- CUSTOM CSS -->
 <link href="assets/css/style-freenet.css" rel="stylesheet" />
 <!-- SLICK CAROUSEL -->
@@ -106,9 +104,6 @@ def head(title):
 <script src="assets/js/html5shiv.js"></script>
 <script src="assets/js/respond.min.js"></script>
 <![endif]-->
-
-<!-- tiny script to make the text invisible. This leaves the text visible for noscript and Freenet -->
-<script type="text/javascript" src="assets/js/textopacity.js"></script>
 
 </head>
 """
@@ -131,7 +126,6 @@ $content
 <script src="assets/js/jquery.isotope.js"></script>
 <!-- VIEWPORT ANIMATION SCRIPTS   -->
 <script src="assets/js/appear.min.js"></script>
-<script src="assets/js/animations.min.js"></script>
 <!-- CUSTOM SCRIPTS -->
 <script src="assets/js/custom.js"></script>
 <!-- SLICK CAROUSEL -->
@@ -226,7 +220,7 @@ class ContactSection(Section):
         self.title = _("Contact")
     def get_content(self):
         template = """
-<div class="row animate-in" data-anim-type="fade-in-up">
+<div class="row">
 
 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 <div class="contact-wrapper">
@@ -263,7 +257,7 @@ def section(name, title, content):
 <!--section $name start-->
 <section id="$name" >
 <div class="container">
-<div class="row text-center header animate-in" data-anim-type="fade-in-up">
+<div class="row text-center header">
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
 <h3>$title</h3>
@@ -281,7 +275,7 @@ $content
 def text(content):
     template = """
 <!-- text start -->
-<div class="row animate-in" data-anim-type="fade-in-up">
+<div class="row">
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 $content
 </div>
