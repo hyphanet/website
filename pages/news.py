@@ -18,7 +18,7 @@ def news_items():
     
     # Below news items are licensed GFDL (from old freenetproject.org website)
     return [
-              NewsItem("20150917-ecdsa-vulnerability", _("17th September 2015 - elliptic curves: using safe Bouncy Castle since november 2014"),
+              NewsItem("20150917-ecdsa-vulnerability", _("17th September 2015 - elliptic curves: using safe Bouncy Castle since November 2014"),
 _("""
 <p>
 A recent article outlines
