@@ -15,9 +15,9 @@ title = "Freenet"
 def create_menu():
     return [
         IndexPage(),
-        NewsPage(),
         DownloadPage(),
         AboutPage(),
+        NewsPage(),
         DocumentationPage(),
         HelpPage(),
         DonatePage(),
