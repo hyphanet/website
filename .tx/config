@@ -1,0 +1,7 @@
+[main]
+host = https://www.transifex.com
+
+[freenet.website]
+file_filter = locale/<lang>/LC_MESSAGES/freenet_site.po
+source_lang = en
+source_file = freenet_site.pot
