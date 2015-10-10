@@ -283,10 +283,8 @@ class ContentSection(Section):
     def get_content(self):
         # License: GFDL (from old freenetproject.org website)
         return text(md(_("""
-In addition to its anonymity features, Freenet is also an effective way to
-distribute large files - often achieving download speeds faster than other
-content distribution systems. As a content distribution network Freenet has
-the following advantages:
+In addition to its anonymity features, as a content distribution network
+Freenet has the following strengths:
 
 *   **Totally decentralized**  
      Information can be inserted into Freenet for download without any reliance
