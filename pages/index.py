@@ -191,7 +191,7 @@ class ServiceSection(Section):
         ]
         content = """
 <!-- service start -->
-<div class="row animate-in" data-anim-type="fade-in-up">
+<div class="row">
 $services
 <div class="col-sm-12 col-md-12 col-lg-12 scroll-me" style="text-align: center">
 <div class="download">
