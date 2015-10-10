@@ -193,7 +193,7 @@ class ServiceSection(Section):
 <!-- service start -->
 <div class="row">
 $services
-<div class="col-sm-12 col-md-12 col-lg-12 scroll-me" style="text-align: center">
+<div class="col-sm-12 col-md-12 col-lg-12" style="text-align: center">
 <div class="download">
 
 <p >

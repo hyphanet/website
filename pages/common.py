@@ -161,7 +161,7 @@ def menu(site_menu, current_page):
         ).substitute(language=language, title=language.upper())
     template = """
 <!--MENU SECTION START-->
-<div class="navbar navbar-inverse navbar-fixed-top scroll-me" id="menu-section" >
+<div class="navbar navbar-inverse navbar-fixed-top" id="menu-section" >
 <div class="container">
 
 
