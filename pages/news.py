@@ -452,14 +452,21 @@ A [report](http://www.freedomhouse.org/sites/default/files/inline_images/Censors
     ]
 
 class NewsPage(Page):
-    hidden = True
     def __init__(self):
         self.slug = "news"
         self.title = _("News")
-        self.section = "news"
-        
-    def generate(self, language, site_menu):
-        return html(head("Freenet - News"), body(menu(site_menu, self)+self.news_content()))
-    def news_content(self):
-        return "".join([x.render() for x in news_items()])
+        self.first_section_in_menu = False
+        self.sections = [
+            NewsSection(),
+        ]
 
+class NewsSection(Section):
+    def __init__(self):
+        self.slug = "news"
+        self.title = ""
+
+    def generate(self):
+        return self.get_content()
+
+    def get_content(self):
+        return "".join([x.render() for x in news_items()])
