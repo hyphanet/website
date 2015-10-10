@@ -144,8 +144,9 @@ class ServiceSection(Section):
         self.slug = "services"
         self.title = _("What is Freenet?")
     def get_content(self):
-        def service(icon, title, text):
+        def service(icon, title, text, link):
             content = """
+<a href="$link">
 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
     <div class="services-wrapper">
         <i class="$icon"></i>
@@ -153,28 +154,40 @@ class ServiceSection(Section):
         $text
     </div>
 </div>
+</a>
 """
-            return string.Template(content).substitute(icon=icon,title=title,text=text)
+            return string.Template(content).substitute(
+                icon=icon, title=title, text=text, link=link,
+            )
         services = [
              # Services items copyright Gerard Krol, licensed GFDL/CC-BY-SA 4.0/GPLv2+
             service("ion-person", _("Secret Identity"),
-                _("Create a secret identity so nobody knows who you are.")),
+                    _("Create a secret identity so nobody knows who you are."),
+                    "https://wiki.freenetproject.org/Web_of_Trust"),
             service("ion-earth", _("Browse Webpages"),
-                _("Freenet is home to webpages with topics ranging from programming to sustainable living.")),
+                    _("Freenet is home to webpages with topics ranging from programming to sustainable living."),
+                    "https://wiki.freenetproject.org/Using_Freenet#Browsing_.26_Communicating_on_Freenet"),
             service("ion-chatboxes", _("Forums"),
-                _("Ask questions and exchange ideas.")),
+                    _("Ask questions and exchange ideas."),
+                    "https://wiki.freenetproject.org/Using_Freenet#Browsing_.26_Communicating_on_Freenet"),
             service("ion-edit", _("Publish"),
-                _("Publish information while remaining anonymous.")),
+                    _("Publish information while remaining anonymous."),
+                    "documentation.html#jsite"),
             service("ion-android-cloud-done", _("Share Files"),
-                _("Easy upload & download.")),
+                    _("Easy upload & download."),
+                    "help.html#find"),
             service("ion-hammer", _("Platform"),
-                _("Write your own applications on the Freenet platform.")),
+                    _("Write your own applications on the Freenet platform."),
+                    "https://wiki.freenetproject.org/FCPv2"),
             service("ion-cube", _("Resistant"),
-                _("Freenet has been designed to be resistant to attacks and censorship.")),
+                    _("Freenet has been designed to be resistant to attacks and censorship."),
+                    "documentation.html#content"),
             service("ion-shuffle", _("Distributed"),
-                _("No central points of failure, efficient caching of popular content.")),
+                    _("No central points of failure, efficient caching of popular content."),
+                    "documentation.html#understand"),
             service("ion-erlenmeyer-flask", _("Proven"),
-                _("Based on solid research and in practical use for 15 years.")),
+                    _("Based on solid research and in practical use for 15 years."),
+                    "about.html#papers"),
         ]
         content = """
 <!-- service start -->
