@@ -78,7 +78,7 @@ class PhilosophySection(Section):
 9.  [But how will artists be rewarded for their work without copyright?](#reward)
 10.  [Alternatives to Copyright](#alternative)
 """) + """
-<a class="anchor" name="disclaimer"></a>""" + "\n\n" + _("""
+<a class="anchor" name="disclaimer"></a>\n\n""" + _("""
 ### 1\. A Disclaimer
 
 There are many reasons why people get involved in the Freenet Project. Some
@@ -88,13 +88,13 @@ technical challenge. These are the ideas which motivated me to architect the
 system in the first place, but not necessarily the views that everyone involved
 in the Freenet project holds.
 """) + """
-<a class="anchor" name="prior_reading"></a>""" + "\n\n" + _("""
+<a class="anchor" name="prior_reading"></a>\n\n""" + _("""
 ### 2\. Suggested prior reading
 
 For this document to make sense, you should probably know what Freenet is. You
 can get a good overview from [What is Freenet?](about.html#introduction).
 """) + """
-<a class="anchor" name="free_flow_info"></a>""" + "\n\n" + _("""
+<a class="anchor" name="free_flow_info"></a>\n\n""" + _("""
 ### 3\. The importance of the Free flow of information
 
 Freedom of speech, in most western cultures, is generally considered to be one
@@ -130,7 +130,7 @@ it must know what their government is doing, they must be well informed. It
 is a feedback loop, but this loop can be broken if the government has the
 power to control the information the population has access to.
 """) + """
-<a class="anchor" name="censor_freedom"></a>""" + "\n\n" + _("""
+<a class="anchor" name="censor_freedom"></a>\n\n""" + _("""
 ### 4\. Censorship and freedom
 
 Everyone values their freedom, in fact, many consider it so important that
@@ -145,7 +145,7 @@ so, that people now take it for granted, despite the fact that this
 undermines the very democratic principles which justify the government's
 existence in the first place.
 """) + """
-<a class="anchor" name="solution"></a>""" + "\n\n" + _("""
+<a class="anchor" name="solution"></a>\n\n""" + _("""
 ### 5\. The solution
 
 The only way to ensure that a democracy will remain effective is to ensure
@@ -154,7 +154,7 @@ information, to communicate. So long as everything we see and hear is
 filtered, we are not truly free. Freenet's aim is to allow two or more people
 who wish to share information, to do so.
 """) + """
-<a class="anchor" name="is_censorship_necessary"></a>""" + "\n\n" + _("""
+<a class="anchor" name="is_censorship_necessary"></a>\n\n""" + _("""
 ### 6\. Isn't censorship sometimes necessary?
 
 Of course no issue is black and white, and there are many who feel that
@@ -181,7 +181,7 @@ Of course the first argument is the stronger one, and would still hold-true
 even if you didn't accept the second. Basically, you either have censorship,
 or you don't. There is no middle-ground.
 """) + """
-<a class="anchor" name="why_anonymity"></a>""" + "\n\n" + _("""
+<a class="anchor" name="why_anonymity"></a>\n\n""" + _("""
 ### 7\. But why is anonymity necessary?
 
 You cannot have freedom of speech without the option to remain anonymous.
@@ -194,7 +194,7 @@ people can create a secure anonymous pseudonym which, in time, people can
 learn to trust. Freenet incorporates a mechanism called "subspaces" to
 facilitate this.
 """) + """
-<a class="anchor" name="copyright"></a>""" + "\n\n" + _("""
+<a class="anchor" name="copyright"></a>\n\n""" + _("""
 ### 8\. And what of copyright?
 
 Of course much of Freenet's publicity has centered around the issue of
@@ -209,7 +209,7 @@ You cannot guarantee freedom of speech and enforce copyright law""") +
 It is for this reason that Freenet, a system designed to protect Freedom of
 Speech, must prevent enforcement of copyright.
 """) + """
-<a class="anchor" name="reward"></a>""" + "\n\n" + _("""
+<a class="anchor" name="reward"></a>\n\n""" + _("""
 ### 9\. But how will artists be rewarded for their work without copyright?
 
 Firstly, even if copyright were the only way that artists could be rewarded
@@ -225,7 +225,7 @@ rewarded by copyright, it is failing to do so. Rather it has allowed
 middle-men to gain control over the mechanisms of distribution, to the
 detriment of both artists and the public.
 """) + """
-<a class="anchor" name="alternative"></a>""" + "\n\n" + _("""
+<a class="anchor" name="alternative"></a>\n\n""" + _("""
 ### 10\. Alternatives to Copyright
 
 Fortunately it won't come to this. There are many alternative ways to reward
