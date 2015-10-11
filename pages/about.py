@@ -77,8 +77,8 @@ class PhilosophySection(Section):
 8.  [And what of copyright?](#copyright)
 9.  [But how will artists be rewarded for their work without copyright?](#reward)
 10.  [Alternatives to Copyright](#alternative)
-
-<a class="anchor" name="disclaimer"></a>
+""") + """
+<a class="anchor" name="disclaimer"></a>""" + "\n\n" + _("""
 ### 1\. A Disclaimer
 
 There are many reasons why people get involved in the Freenet Project. Some
@@ -87,21 +87,21 @@ which are also served by what we are trying to achieve; and some just enjoy the
 technical challenge. These are the ideas which motivated me to architect the
 system in the first place, but not necessarily the views that everyone involved
 in the Freenet project holds.
-
-<a class="anchor" name="prior_reading"></a>
+""") + """
+<a class="anchor" name="prior_reading"></a>""" + "\n\n" + _("""
 ### 2\. Suggested prior reading
 
 For this document to make sense, you should probably know what Freenet is. You
 can get a good overview from [What is Freenet?](about.html#introduction).
-
-<a class="anchor" name="free_flow_info"></a>
+""") + """
+<a class="anchor" name="free_flow_info"></a>""" + "\n\n" + _("""
 ### 3\. The importance of the Free flow of information
 
 Freedom of speech, in most western cultures, is generally considered to be one
 of the most important rights any individual might have. Why is the freedom to
 share ideas and opinions so important? There are several ways to answer this
 question.
-
+""") + "\n\n" + _("""
 #### 3.1 Communication is what makes us human
 
 One of the most obvious differences between mankind and the rest of the animal
@@ -109,7 +109,7 @@ kingdom is our ability to communicate sophisticated and abstract concepts. While
 we constantly discover that animal's communication ability is more sophisticated
 than previously assumed, it is unlikely that any other animal approaches our own
 level of ability in this area.
-
+""") + "\n\n" + _("""
 #### 3.2 Knowledge is good
 
 Most people, given the option of knowing something and not knowing something,
@@ -117,7 +117,7 @@ will choose to have more information rather than less. Wars have been won and
 lost over who was better-informed. This is because being better-informed allows
 us to make better decisions, and generally improve our ability to survive and be
 successful.
-
+""") + "\n\n" + _("""
 #### 3.3 Democracy assumes a well informed population
 
 Many people today live under democratic governments, and those who don't,
@@ -129,8 +129,8 @@ democratic country. For a population to regulate their government effectively
 it must know what their government is doing, they must be well informed. It
 is a feedback loop, but this loop can be broken if the government has the
 power to control the information the population has access to.
-
-<a class="anchor" name="censor_freedom"></a>
+""") + """
+<a class="anchor" name="censor_freedom"></a>""" + "\n\n" + _("""
 ### 4\. Censorship and freedom
 
 Everyone values their freedom, in fact, many consider it so important that
@@ -144,8 +144,8 @@ practice for most western governments to lie to their populations, so much
 so, that people now take it for granted, despite the fact that this
 undermines the very democratic principles which justify the government's
 existence in the first place.
-
-<a class="anchor" name="solution"></a>
+""") + """
+<a class="anchor" name="solution"></a>""" + "\n\n" + _("""
 ### 5\. The solution
 
 The only way to ensure that a democracy will remain effective is to ensure
@@ -153,8 +153,8 @@ that the government cannot control its population's ability to share
 information, to communicate. So long as everything we see and hear is
 filtered, we are not truly free. Freenet's aim is to allow two or more people
 who wish to share information, to do so.
-
-<a class="anchor" name="is_censorship_necessary"></a>
+""") + """
+<a class="anchor" name="is_censorship_necessary"></a>""" + "\n\n" + _("""
 ### 6\. Isn't censorship sometimes necessary?
 
 Of course no issue is black and white, and there are many who feel that
@@ -180,8 +180,8 @@ encounter them.
 Of course the first argument is the stronger one, and would still hold-true
 even if you didn't accept the second. Basically, you either have censorship,
 or you don't. There is no middle-ground.
-
-<a class="anchor" name="why_anonymity"></a>
+""") + """
+<a class="anchor" name="why_anonymity"></a>""" + "\n\n" + _("""
 ### 7\. But why is anonymity necessary?
 
 You cannot have freedom of speech without the option to remain anonymous.
@@ -193,8 +193,8 @@ anonymous information. This is not necessarily true, using digital signatures
 people can create a secure anonymous pseudonym which, in time, people can
 learn to trust. Freenet incorporates a mechanism called "subspaces" to
 facilitate this.
-
-<a class="anchor" name="copyright"></a>
+""") + """
+<a class="anchor" name="copyright"></a>""" + "\n\n" + _("""
 ### 8\. And what of copyright?
 
 Of course much of Freenet's publicity has centered around the issue of
@@ -203,13 +203,13 @@ copyright is that enforcement of it requires monitoring of communications,
 and you cannot be guaranteed free speech if someone is monitoring everything
 you say. This is important, most people fail to see or address this point
 when debating the issue of copyright, so let me make it clear:
-
-<center>You cannot guarantee freedom of speech and enforce copyright law</center>
-
+""" + """<center>""" + _("""
+You cannot guarantee freedom of speech and enforce copyright law""") +
+"""</center>""" + _("""
 It is for this reason that Freenet, a system designed to protect Freedom of
 Speech, must prevent enforcement of copyright.
-
-<a class="anchor" name="reward"></a>
+""") + """
+<a class="anchor" name="reward"></a>""" + "\n\n" + _("""
 ### 9\. But how will artists be rewarded for their work without copyright?
 
 Firstly, even if copyright were the only way that artists could be rewarded
@@ -224,8 +224,8 @@ communication technology, yet according to many of the artists who should be
 rewarded by copyright, it is failing to do so. Rather it has allowed
 middle-men to gain control over the mechanisms of distribution, to the
 detriment of both artists and the public.
-
-<a class="anchor" name="alternative"></a>
+""") + """
+<a class="anchor" name="alternative"></a>""" + "\n\n" + _("""
 ### 10\. Alternatives to Copyright
 
 Fortunately it won't come to this. There are many alternative ways to reward
@@ -239,7 +239,7 @@ thousands, contributing small amounts of money over the Internet.
 We actually practice what we preach in this regard too, on the 15th of March
 2001 the Freenet Project started taking donations, and within a week we had
 collected over $1000\.
-""")))
+"""))))
 
 class PeopleSection(Section):
     def __init__(self):
