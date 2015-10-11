@@ -138,10 +138,10 @@ recommended. You should keep Java up to date to avoid problems and for better
 performance.
 
 Open a terminal and run:
-
+""") + "\n\n" + """
     wget '[https://freenetproject.org/assets/jnlp/freenet_installer.jar](https://freenetproject.org/assets/jnlp/freenet_installer.jar)' -O new_installer_offline.jar
     java -jar new_installer_offline.jar
-
+""" + "\n\n" + _("""
 Alternatively, downloading [the installer](assets/jnlp/freenet_installer.jar)
 ([gpg signature](https://downloads.freenetproject.org/alpha/installer/new_installer_offline_1467.jar.sig))
 and then clicking on the file may work on some systems, but if there are
@@ -163,8 +163,8 @@ to join us and help it would be much appreciated!
 If this doesn't work on a headless server, try
 "java -jar new_installer_offline.jar -console", and follow the prompts to
 tell it where to install Freenet etc.
-
-<a class="anchor" name="mirrored"></a>
+""") + "\n\n" + """
+<a class="anchor" name="mirrored"></a>""" + "\n\n" + _("""
 ### Mirrored installation
 
 If you have a working Freenet installation directory that you have mirrored
@@ -194,7 +194,7 @@ useful.
 Freenet should work fine with most routers, but if you are having problems
 and you have a firewall or router, click [**here**](help.html#firewall) for
 some info.
-
+""") + "\n\n" + _("""
 ### So it's running, what do I do?
 
 When the installer closes, it should open a browser window pointing to the
@@ -220,7 +220,7 @@ config page to make it easier to see who it is. Only add nodes run by people
 **you actually know**, whether online or offline, as adding total strangers
 harms performance and does not improve security much (they could be the bad
 guys!).
-
+""") + "\n\n" + _("""
 ### So I'm connected, what do I do?
 
 Freenet itself includes anonymous websites ("freesites"), filesharing,
@@ -230,7 +230,7 @@ filesharing, to help you upload freesites, etc.
 The [Freenet Social Networking Guide](http://freesocial.draketo.de/) explains
 how to set up the main third party tools, including email, forums and
 micro-blogging (Sone, a bit like twitter).
-
+""") + "\n\n" + _("""
 ### It doesn't work, now what?
 
 If you have problems installing or running Freenet, please contact us on [the
@@ -238,7 +238,7 @@ support list](mailto:support@freenetproject.org) ([subscribe here](
 help.html#mailing-lists)), or join us on IRC on the #freenet channel on
 irc.freenode.net (try [here](
 https://webchat.freenode.net/?randomnick=1&channels=freenet)).
-
+""") + "\n\n" + _("""
 ### Hardware requirements
 
 Generally a 1GHz processor and 1GB of RAM should be fine. Freenet will run on
@@ -255,7 +255,7 @@ approximately 256MB plus 400kB for every 2GB of datastore.
 On 64-bit Windows, we will install a 32-bit Java Virtual Machine because of
 limitations of the [Java Service Wrapper](
 http://wrapper.tanukisoftware.org/doc/english/download.jsp).
-
+""") + "\n\n" + _("""
 ### Upgrading
 
 Freenet provides an update-over-freenet mechanism: It will keep itself up to
@@ -285,7 +285,7 @@ not interfere with your computer usage, as it requires around
 strongly recommend you shut down Freenet while playing computer 
 games etc. On Windows you can do this from the system tray icon, 
 on other systems use the links on the system menu or the desktop.
-
+""") + "\n\n" + _("""
 Normally Freenet will connect automatically and should "just work",
 automatically connecting to other nodes (Strangers). However,
 if you know several people who are already using Freenet, you can
