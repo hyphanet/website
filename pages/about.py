@@ -379,7 +379,7 @@ A proposal for changing the routing algorithm which we are still considering
 (the worst case performance i.e. when a block has been lost may be
 unacceptable).
 """) + "\n\n" + _("""
-![](assets/img/pdf.icon.jpg)[Presentation: Towards "Dark" Social Networking Services (Strufe et al)](https://www.icsi.berkeley.edu/icsi/sites/default/files/events/events_1303_strufe.pdf) (PDF)  
+![](assets/img/pdf.icon.jpg)[Presentation: Towards "Dark" Social Networking Services (Strufe et al.)](https://www.icsi.berkeley.edu/icsi/sites/default/files/events/events_1303_strufe.pdf) (PDF)
 An interesting presentation by the group responsible for the two above papers.
 """) + "\n\n" + _("""
 ![](assets/img/pdf.icon.jpg)[Pisces: Anonymous Communication Using Social Networks](http://arxiv.org/abs/1208.6326)  
