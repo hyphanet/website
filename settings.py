@@ -8,7 +8,6 @@ from pages.about import *
 from pages.documentation import *
 from pages.donate import *
 from pages.contribute import *
-from pages.ngrouting import *
 
 languages = ["en", "es", "ja", "nl", "ru", "zh-cn"]
 title = "Freenet"
@@ -23,5 +22,4 @@ def create_menu():
         DonatePage(),
         DonateThanksPage(),
         ContributePage(),
-        NGRoutingPage(),
         ]
