@@ -758,18 +758,6 @@ here are the major classes of attack on Freenet we are presently aware of:
   and run inserts are possible, and can be relatively safe in terms of many of
   the other attacks, but you are taking the risk that the opennet seednode you
   connect to may be malicious.
-* **Datastore attacks**: This is largely solved as of build 1224, we don't cache
-  our local requests or inserts, and neither do the nodes immediately
-  connected to us, to a depth of at least 2 hops (3 on inserts). However,
-  if your node is older than that, seizing the store might give a bad guy some
-  interesting information. Also note that the client-cache caches local requests
-  (but not inserts), so it should be encrypted and passworded by setting the
-  physical security level to HIGH, or turned off. You should also encrypt the
-  swapfile in particular and the whole system if possible to prevent information
-  leaks from the web browser, media players etc. Note that some incriminating
-  data (e.g. the list of bookmarks) is still stored in plaintext; we're working
-  on it, but did I mention you should
-  [encrypt your whole system](http://www.truecrypt.org)?
 * **Correlation attacks**: If you are connected to a node, and can recognise the
   keys being requested (probably because it was posted publicly), you can show
   statistically that the node in question probably requested it, based on the
