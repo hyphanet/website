@@ -602,8 +602,7 @@ Last but not least you can [donate](donate.html) to support our paid
 developer(s) and cover server costs.
 """)),
                     FaqItem("access", _("How can I access the code and website?"), _("""
-See the [developer page](contribute.html#developers) for details of our git
-repositories etc.
+See our [GitHub repository](https://github.com/freenet/).
 """)),
                     FaqItem("devtools", _("What tools do I need to help develop?"), _("""
 To build and deploy the Freenet server, you will need Java tools compatible
