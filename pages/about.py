@@ -325,78 +325,82 @@ class PapersSection(Section):
 ![](assets/img/pdf.icon.jpg)[Measuring Freenet in the Wild: Censorship-resilience under Observation](assets/papers/roos-pets2014.pdf) (PDF)
 Observations and measurements on the live Freenet network. Includes suggestions
 for improvement. This was submitted to PETS 2014.
-
+""") + "\n\n" + _("""
 ![](assets/img/pdf.icon.jpg)[The Dark Freenet](assets/papers/freenet-0.7.5-paper.pdf) (PDF)
 Detailed paper about the Freenet 0.7.5 network, as opposed to its routing
 algorithm, which is detailed in the below papers. Includes some new
 simulations. This has been submitted to PET 2010.
-
+""") + "\n\n" + _("""
 ![](assets/img/video.icon.png)[Video of Small World talk, Berlin, December 2005](http://player.vimeo.com/video/22488244?title=0&byline=0&portrait=0)  
 This is a video of a talk given by Ian Clarke and Oskar Sandberg at the Chaos
 Computer Congress in Berlin, December 2005, describing the (then) new
 architecture for Freenet 0.7\. You can also download the [slideshow](
 assets/papers/ccc-slideshow.pdf.bz2), and the source for the Java [demo](
 assets/papers/ccc-freenet-demo.tar.bz2) (requires Java 1.5).
-
+""") + "\n\n" + _("""
 ![](assets/img/pdf.icon.jpg)[Searching in a Small World](assets/papers/lic.pdf) (PDF)  
 Oskar Sandberg's licentiate thesis describing a simple decentralized
 mechanism for constructing small world networks that is inspired by Freenet's
 original design. Part II of the thesis describes the basis for the new
 Darknet architecture.
-
+""") + "\n\n" + _("""
 ![](assets/img/pdf.icon.jpg)[Distributed routing in Small World Networks](assets/papers/swroute.pdf) (PDF)  
 A paper by Oskar Sandberg describing the theoretical basis for the new
 "Darknet" routing mechanism employed by Freenet 0.7.
-
+""") + "\n\n" + _("""
 ![](assets/img/pdf.icon.jpg)Chaos Computer Congress Talk (slideshow)  
 This is a [slideshow](assets/papers/ccc-slideshow.pdf.bz2) for a talk given
 at the Chaos Computer Congress on 30th Dec 2005 in Berlin, Germany by Ian
 Clarke and Oskar Sandberg. It described the new "darknet" approach to be
 employed in Freenet 0.7\. A Java demonstration to accompany the talk is [
 also](assets/papers/ccc-freenet-demo.tar.bz2) available.
-
+""") + "\n\n" + _("""
 ![](assets/img/pdf.icon.jpg)[Switching for a small world](assets/papers/vilhelm_thesis.pdf) (PDF)  
 A thesis by Vilhelm Verendel exploring ways to optimise the swapping algorithm.
-
+""") + "\n\n" + _("""
 [Next Generation Routing Algorithm](ngrouting.html)  
 This article describes Freenet's "Next Generation" routing algorithm. This
 was a novel approach which had nodes making routing decisions based on
 sophisticated analysis of the time required to route previous requests. This
 algorithm was promising, but was eventually dropped in favour of a much
 simpler approach in Freenet 0.7.
-
+""") + "\n\n" + _("""
 ![](assets/img/pdf.icon.jpg)[Protecting Freedom of Information Online with Freenet](assets/papers/freenet-ieee.pdf) (PDF)  
 An IEEE Internet Computing article describing the Freenet architecture circa
 2002 - probably the best introduction to the theory behind Freenet.
-
+""") + "\n\n" + _("""
 ![](assets/img/pdf.icon.jpg)[FreeNet White Paper](assets/papers/ddisrs.pdf) (PDF)  
 Original white paper by Ian Clarke, Division of Informatics, University of
 Edinburgh 1999.
+""") + """
 
 * * *
 
+""" +  _("""
 ![](assets/img/pdf.icon.jpg)[Attack Resistant Network Embeddings for Darknets](http://www.ukp.tu-darmstadt.de/fileadmin/user_upload/Group_P2P/share/publications/Attack_Resistant_Network_Embeddings_for_Darknets.pdf) (PDF)  
 A proposal for changing the darknet swapping algorithm which we are still
 considering (we have some doubts about long-term performance).
-
+""") + "\n\n" + _("""
 ![](assets/img/pdf.icon.jpg)[A Contribution to Analyzing and Enhancing Darknet Routing](http://www.p2p.tu-darmstadt.de/publications/details/?no_cache=1&tx_bibtex_pi1%5Bpub_id%5D=TUD-CS-2013-0036) ([PDF](http://www.p2p.tu-darmstadt.de/fileadmin/user_upload/Group_P2P/share/INFOCOM.pdf))  
 A proposal for changing the routing algorithm which we are still considering
 (the worst case performance i.e. when a block has been lost may be
 unacceptable).
-
+""") + "\n\n" + _("""
 ![](assets/img/pdf.icon.jpg)[Presentation: Towards "Dark" Social Networking Services (Strufe et al)](https://www.icsi.berkeley.edu/icsi/sites/default/files/events/events_1303_strufe.pdf) (PDF)  
 An interesting presentation by the group responsible for the two above papers.
-
+""") + "\n\n" + _("""
 ![](assets/img/pdf.icon.jpg)[Pisces: Anonymous Communication Using Social Networks](http://arxiv.org/abs/1208.6326)  
 An algorithm for setting up onion-like tunnels on darknets. We may implement
 this for Freenet 0.8/0.9.
-
+""") + "\n\n" + _("""
 ![](assets/img/pdf.icon.jpg)[Routing in the Dark: Pitch Black](http://grothoff.org/christian/pitchblack.pdf) ([citeseer](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.117.1543)) (PDF)  
 A paper describing some attacks on Freenet 0.7's location swapping algorithm.
 We have solutions for this but they are still being tested.
+""") + """
 
 * * *
 
+""" +  _("""
 The most up to date reference is of course [the source code](
 https://github.com/freenet/fred), but there is also some useful documentation on
 [the wiki](https://wiki.freenetproject.org/) (you may have to search a bit),
