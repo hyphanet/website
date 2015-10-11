@@ -87,14 +87,14 @@ class DownloadSection(Section):
         # License for all content in this section: GFDL (from old freenetproject.org website)
         return show_hide_script()+text("<a name=\"autostart\" class=\"anchor\"></a>"+md(_("""
 [Step by step guide](http://freesocial.draketo.de/) to setting up Freenet and
-various Freenet apps. Please try this, especially if installing on Mac. We
+various Freenet apps. Please try this, especially if installing on OS X. We
 are not responsible for unofficial third party apps it recommends (including
 FMS), but many Freenet users and developers use them.
 """))+
 _("Show instructions for:")+"""
       <a href="javascript:showDiv('windows');hideDiv('macos');hideDiv('unix');">Windows
-        </a>, <a href="javascript:hideDiv('windows');showDiv('macos');hideDiv('unix');">Mac
-        OSX</a>, <a href="javascript:hideDiv('windows');hideDiv('macos');showDiv('unix');">Linux
+        </a>, <a href="javascript:hideDiv('windows');showDiv('macos');hideDiv('unix');">OS X
+        </a>, <a href="javascript:hideDiv('windows');hideDiv('macos');showDiv('unix');">Linux
         etc</a><br>
 """+div("windows",md(_("""
 ### Windows
@@ -109,7 +109,7 @@ it's Free Software! The source code is publicly available for review)
 
 Freenet requires Windows XP or later.
 """)))+div("macos",md(_("""
-### Mac OSX
+### OS X
 
 [Install Freenet 0.7](assets/jnlp/freenet.jnlp) using Java Web Start.  
 This requires that Java is installed and that Java Web Start is enabled. If
@@ -266,7 +266,7 @@ broken, you can update your node manually from our servers:
 
 * Windows users can upgrade to the latest-stable Freenet release from the
   system tray menu, or by running "update.cmd" in the Freenet directory.
-* Mac and Linux users may upgrade by running the update.sh shell script in the
+* OS X and Linux users may upgrade by running the update.sh shell script in the
   Freenet directory.
 
 **Source Code:** See [the GitHub repository](https://github.com/freenet/fred).
