@@ -572,8 +572,7 @@ co-developer of the project, you can contribute in other ways:
 * Work on the Freenet web site (including the FAQ).
 * Contribute your ideas to the discussion lists.
 * [Translate the user interface](https://wiki.freenetproject.org/Translation)
-  into your local language (the website and the installers also need
-  translation, you can ask us about this).
+  into another language.
 """) + "\n\n" + _("""
 If you are a developer, you can help by working on Freenet itself,
 or by creating other applications to run on Freenet. External applications
