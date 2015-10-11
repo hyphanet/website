@@ -483,8 +483,8 @@ they are often not regularly updated and frequently go off on rants on
 unrelated topics!
 """)),
                     FaqItem("backtrace", _("Why are there so many messages in my logfile with a backtrace attached?"), _("""
-Fred (and freenet in general) are still very much in development, and if
-something goes wrong it's worthwhile to know exactly what went wrong.
+Freenet logs messages excessively during normal operation. It's something we're
+aware of and are working on.
 """)),
                     FaqItem("kaspersky", _("I have Kaspersky anti-virus, and Freenet doesn't install, or shows \"Download/upload queue database corrupted!\""), _("""
                     Kaspersky can be a problem with Freenet. See [here](
