@@ -398,12 +398,14 @@ higher latency than web pages). This can usually be reconfigured. For
 example, for Mozilla Firefox, type **about:config** in the address field of
 the browser and replace the value of the following settings to the one
 stated. Filter on **"connections"** to get only the relevant settings:
+""") + """
 
     network.http.max-connections 200  
     network.http.max-connections-per-server 200  
     network.http.max-persistent-connections-per-proxy 200  
     network.http.max-persistent-connections-per-server 200  
 
+""" + _("""
 Note that these settings will cause mozilla to use more connections for all
 your browsing, which may not be desirable from a network congestion point of
 view. But you should ideally be using a separate browser for Freenet anyway,
