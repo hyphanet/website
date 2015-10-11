@@ -77,7 +77,7 @@ Friend mode, where your Freenet node (software on your computer) only
 connects to the Freenet nodes run by your friends, i.e. people you know (and
 maybe to their friends, to speed things up). This makes blocking Freenet,
 e.g. on a national firewall, extremely difficult.
-
+""") + "\n\n" + _("""
 However, most people currently use Freenet in "opennet" mode (that is,
 connecting automatically to whoever the network assigns, rather than
 connecting only to their friends). This is much less secure than using
@@ -100,7 +100,7 @@ course, Tor lets you access the internet as a whole, whereas on Freenet you
 can only access Freenet content. However if you can use a large enough
 darknet, Freenet already provides an interesting level of censorship
 resistance, DoS resistance and anonymity.
-
+""") + "\n\n" + _("""
 Using the internet "anonymously" is not necessarily easy: Connecting to
 Facebook through Tor doesn't prevent Facebook from knowing pretty much
 everything about you, and connecting to your (non-HTTPS) webmail account
@@ -122,7 +122,7 @@ Freenet than set up a hidden server on Tor; you don't need to keep your node
 online for your content to be available, you don't need to figure out how to
 configure it safely, and most important, if you go away your site will still
 be available.
-
+""") + "\n\n" + _("""
 ### Summary:
 
 Tor (or I2P):
@@ -136,7 +136,7 @@ Tor (or I2P):
   bridges can be harvested and blocked with moderate effort.
 * Is somewhat centralised
 * Is more mature and has more users and developers
-
+""") + "\n\n" + _("""
 Freenet in general:
 
 * Only lets you access content uploaded to Freenet, including (static) websites,
@@ -146,25 +146,25 @@ Freenet in general:
   any given content is distributed across many nodes.
 * Ensures that popular content will be available forever.
 * Is older than Tor, but more experimental (arguably it's a harder task).
-
+""") + "\n\n" + _("""
 Freenet in darknet mode: (friend to friend: connects only to your friends' nodes)
 
 * Is very hard to block, and this can be improved further with transport plugins.
 * Provides good anonymity, and with a bit more work it could provide very strong
   anonymity (PISCES tunnels).
 * Is fully decentralised: No central servers at all.
-
+""") + "\n\n" + _("""
 Freenet in opennet mode: (connect automatically even if you don't know anyone
 on Freenet)
 
 * Is relatively easy to block.
 * Provides limited anonymity
 * Is somewhat centralised
-
+""") + "\n\n" + _("""
 Unfortunately most people use Freenet in opennet mode currently. The big
 question is can we build a global friend-to-friend darknet? Join us and find
 out!
-
+""") + "\n\n" + _("""
 PS for an example of how dependant Tor is on centralised hidden services,
 see [this](http://www.twitlonger.com/show/n_1rlo0uu)
 [bust](http://arstechnica.com/tech-policy/2013/08/alleged-tor-hidden-service-operator-busted-for-child-porn-distribution/).
@@ -249,7 +249,7 @@ blocking of nodes very difficult. Note that many mobile internet providers
 block all peer to peer networks along with other content, and many corporate
 or academic networks may block Freenet (but even if they don't, see
 [you shouldn't run Freenet at work](#trouble) for non-work purposes!).
-
+""") + "\n\n" + _("""
 There has been discussion in the US and UK of legislation to require
 backdoors and presumably blocking of anything that can't be backdoored. This
 is unlikely to pass, especially in the US, where similar laws have been
@@ -453,13 +453,13 @@ Absolutely. Even if you don't have the time or skills to become a co-developer o
 *   Work on the Freenet web site (including the FAQ).
 *   Contribute your ideas to the discussion lists.
 *   [Translate the user interface](https://wiki.freenetproject.org/Translation) into your local language (the website and the installers also need translation, you can ask us about this).
-
+""") + "\n\n" + _("""
 If you are a developer, you can help by working on Freenet itself, or by creating other applications to run on Freenet. External applications (such as FMS, the main forums system used on Freenet) use [the Freenet Client Protocol](https://wiki.freenetproject.org/FCPv2) to talk to Fred. Another possibility is writing plugins - these are written in Java and run in Freenet's JVM, and can be bundled with Freenet when they are ready. A popular plugin is Sone, which is a microblogging/social app over Freenet. You can see how to install FMS and Sone on e.g. the Freenet Social Networking Guide freesite.
 
 If you want to work on Freenet itself, see [here](contribute.html#developers) to get the source code.
 
 Links to us are welcome, for example this [web hosting guide](http://www.webhostingsearch.com/). Improvements to this website, fixes for spelling/grammar mistakes, new ideas (see [the previous answer](#idea)), are all welcome. You may find [the wiki](https://wiki.freenetproject.org/Main_Page) helpful.
-
+""") + "\n\n" + _("""
 If you want to contribute to Freenet in any way, please contact us, via [the
 developers mailing list](https://emu.freenetproject.org/cgi-bin/mailman
 /listinfo/devl/), [the chat channel](help.html#irc), [the support
@@ -497,7 +497,7 @@ Tor on the other hand is designed to anonymise real-time data streams, on the as
 If you can use the darknet, trust your friends, don't reinsert files, always use the "Insert a random, safe key" option, and change your anonymous identity after some volume of inserts, you should be relatively safe using Freenet. However this has not yet been quantified. If you can connect, build up some trust in your anonymous persona, insert your controversial content, and then disappear, again, you are better off with Freenet, especially if the content is a website (but if you are connecting on opennet, beware of seednode compromises). In some other cases, Tor is better.
 
 We are still working on Freenet's security and there are major security enhancements which have not yet been implemented, most of which will go in before 1.0\. Cryptographic tunnels similar to Tor's onion routing are one possibility, which would greatly reduce the impact of many of the below attacks, but there are several other enhancements planned, both to anonymity and to network robustness/undetectability.
-
+""") + "\n\n" + _("""
 **Major known attacks:**  
  In the interests of giving would-be users as much information as possible, and on the assumption that any serious attacker would do their homework, here are the major classes of attack on Freenet we are presently aware of:
 
@@ -568,7 +568,7 @@ To subscribe to one of the lists, click the list name and give your email addres
 To unsubscribe to one of the lists you are subscribed to, click the list name and give your subscription email address under the heading **< mailinglist > Subscribers** and press the button **Unsubscribe or edit options**.
 
 _**Note**: We constantly get requests of people who want to become unsubscribed._ **YOU** _have to do that yourself! Just click on the www link provided at the bottom of every mail, enter your e-mail address in the text field in section "Subscribers" and provide your password under the unsubscribe option. (You can get your password there as well, in case you forgot it.)_
-
+""") + "\n\n" + _("""
 ### The lists
 
 *   [Announcements](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/announce/) ([archive](https://emu.freenetproject.org/pipermail/announce/))  
