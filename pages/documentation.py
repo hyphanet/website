@@ -60,7 +60,7 @@ see the [Headless install](download.html#unix) instructions. If you have
 mirrored a working Freenet installation to a machine without explicitly
 installing it, see [Mirrored install](download.html#mirrored). Otherwise,
 continue reading.
-
+""") + "\n\n" + _("""
 #### Graphical install
 
 **The below is outdated for Windows systems**, for Windows you should use
@@ -79,7 +79,7 @@ You should save the new_installer.jar file somewhere were you can find it
 again. Your home-directory should be a good place. The next step requires you
 to know where you stored the file (the path to it), so it is quite important
 that you do that step thouroghly.
-
+""") + "\n\n" + _("""
 To start the installation, open a command line interface/terminal/shell
 window. Exchange the **/path/to** to the real path (for example:
 /home/username/download/new_installer.jar) to the new_installer.jar-file and
@@ -137,7 +137,7 @@ After that, the installation is finished. Click **Done** to close the window.
 If all has gone well, a browser window should have opened in the background.
 This will ask you a bunch of questions to configure Freenet, and then you
 should be able to use it.
-
+""") + "\n\n" + _("""
 It will ask about network security level - "protection from strangers
 attacking you over the internet". If you choose LOW or NORMAL, Freenet should
 "just work", connecting in a few minutes. If you choose HIGH or MAXIMUM,
@@ -169,7 +169,7 @@ of this page is about connecting to Friends.
 To connect to your friends' nodes, you have to exchange Node references with
 them. The references must be added on **both sides** to be established. That
 is, you need to add his/hers, and he/she needs to add yours.
-
+""") + "\n\n" + _("""
 *When you have a freshly connected node, you have no data cached in your
 datastore, and very few connections even if insecure mode is enabled.
 Requests are sent out in a random fashion. **This makes some (or all)
@@ -186,7 +186,7 @@ of **not** enabling insecure mode: you are effectively invisible except to
 your Friends. In practice most people start off with insecure mode and
 gradually add Friends, and hopefully turn off insecure mode once they have at
 least 10 Friends.
-
+""") + "\n\n" + _("""
 ![](assets/img/Freenet-architecture-small.png)
 
 *Figure 1: Visible Freenet connections*
@@ -202,7 +202,7 @@ impossible. It is therefore important that you connect only to people you
 know. If that is not possible, then at least people you've talked to.
 
 There are a number of ways to add peer node references.
-
+""") + "\n\n" + _("""
 ### Fproxy
 
 Connecting peer nodes with FProxy can be done in several ways. Common for all
@@ -232,6 +232,7 @@ Your own Freenet reference can be found on the [
 http://127.0.0.1:8888/friends/](http://127.0.0.1:8888/friends/) page,
 under the caption **My reference**. It might look something like this (cut
 for screen purposes):
+""") + """
 
 <pre>	lastGoodVersion=Fred,0.7,1.0,1010
 	sig=7c7edc8c5250e42ac4cb161b216b70de7019221f1b331f0f92bd67439[...]609660f0d4
@@ -249,11 +250,12 @@ for screen purposes):
 	dsaGroup.q=ALFDNoq81R9Y1kQNVBc5kzmk0VvvCWosXY5t9E9S1tN5
 	End</pre>
 
+""" + _("""
 Remember that both you and the node you are connecting to must add references
 to make the connection work. This means that if you add a persons node
 reference on your side, but that person does not add your reference on
 his/her side, the connection **does not work**.
-
+""") + "\n\n" + _("""
 ### Darknet peers
 
 When you have a number of connections, you can visit the Darknet-page. It
@@ -332,34 +334,34 @@ storage space is distributed among all connected nodes on Freenet.
 Freenet is a Peer-to-peer network, which is both decentralized and
 anonymized. The nodes that you connect to only knows its nearest neighbours
 and has no idea about how the network as a whole is structured.
-
+""") + "\n\n" + _("""
 ### Small world network
 
 Freenet is built on the principle of small world networks. By connecting to
 nodes of people you already know, and the people you know in turn connect to
 people they know, one should be able to reach all nodes in a Freenet network.
-
+""") + "\n\n" + _("""
 ### The datastore
 
 All Freenet nodes contribute with a part of their harddrive space to store
 files. The files are stored encrypted in the **store**-directory in the
 Freenet installation directory.
-
+""") + "\n\n" + _("""
 Unlike other peer-to-peer networks, you as a user have little or no control
 over what is stored in your datastore. Instead, files are kept or deleted
 depending on how popular they are. This is to ensure that Freenet is
 censorship resistant. The only possible way to remove something from Freenet
 is to not search for it, and hope that everybody else does the same.
-
+""") + "\n\n" + _("""
 It is hard, but not impossible, to determine which files that are stored in
 your local Freenet Datastore. This is to enable plausible deniability as to
 what kind of material that lies on your harddrive in the datastore.
-
+""") + "\n\n" + _("""
 The initial diskspace allocated for the datastore is 5%% of available disk
 space if it is over 20GB, 10%% if it is over 10GB, 512MB if under 10GB,
 and 256MB if under 5GB. You can change the store size at any time, the more
 the better, both for your personal browsing and for Freenet as a whole.
-
+""") + "\n\n" + _("""
 ### Freenet Routing
 
 Initially, each node has no information about the performance of the other
@@ -367,32 +369,32 @@ nodes it knows about. This means that routing of requests is essentially
 random. But since different nodes have different randomness, they will
 disagree about where to send a request, given a key. So the data in a
 newly-started Freenet will be distributed somewhat randomly.
-
+""") + "\n\n" + _("""
 As more documents are inserted by the same node, they will begin to cluster
 with data items whose keys (see below) are similar, because the same routing
 rules are used for all of them. More importantly, as data items and requests
 from different nodes "cross paths", they will begin to share clustering
 information as well.
-
+""") + "\n\n" + _("""
 The result is that the network will self-organize into a distributed,
 clustered structure where nodes tend to hold data items that are close
 together in key space. There will probably be multiple such clusters
 throughout the network, any given document being replicated numerous times,
 depending on how much it is used.
-
+""") + "\n\n" + _("""
 ### Freenet keys
 
 Each file that exists on Freenet has a key associated with it. Freenet 0.7
 has various types of keys. Keys are used for everything on freenet, and are a
 kind of [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) (
 e.g. freenet:=KSK@sample.txt).
-
+""") + "\n\n" + _("""
 Most keys are hashes: there is no notion of semantic closeness when speaking
 of key closeness. Therefore there will be no correlation between key
 closeness and similar popularity of data as there might be if keys did
 exhibit some semantic meaning, thus avoiding bottlenecks caused by popular
 subjects.
-
+""") + "\n\n" + _("""
 ### Accessing data
 
 To access a particular piece of data on Freenet, you can use FProxy. You need
@@ -407,7 +409,7 @@ There are four types of keys in Freenet:
 *   **SSK** - Signed Subspace Keys
 *   **USK** - Updateable Subspace Keys
 *   **KSK** - Keyword Signed Keys
-
+""") + "\n\n" + _("""
 CHKs are the most fundamental. All files over 1kB are ultimately divided into
 one or more 32kB CHKs. CHKs' filenames are determined only by their contents.
 SSKs are the other basic type. These combine a public key with a
@@ -416,7 +418,7 @@ of SSKs where everything is determined by a simple human readable filename (
 e.g. =KSK@sample.txt). These are spammable but convenient in some cases. And
 USKs are a form of updatable keys especially useful for freesites and
 **Address Resolution Keys**.
-
+""") + "\n\n" + _("""
 An Address Resolution Key (ARK) is an Updateable Subspace Key (USK) inserted
 by the node whenever its IP address changes. It contains the reference for
 the node - its cryptographic details, and in particular its IP address(es).
@@ -426,7 +428,7 @@ incoming traffic it can make it difficult to connect.
 
 ARKs are an implementation detail and you don't need to know anything about
 them to use Freenet.
-
+""") + "\n\n" + _("""
 ### Content Hash Keys
 
 Content Hash Keys are for files with static content, like an .mp3 or a
@@ -441,7 +443,7 @@ different content to have the same CHK. The CHK consists of three parts:
 1.  the hash for the file
 2.  the decryption key that unlocks the file, and
 3.  the cryptographic settings used
-
+""") + "\n\n" + _("""
 A typical CHK key looks like this:
 
     CHK@file hash,decryption key,crypto settings
@@ -457,7 +459,7 @@ To access the file, the whole key must be pasted behind the FProxy address
 (cut to fit screen):
 
     http://localhost:8888/CHK@SVbD9~[..]X5Brs,bA7qLN[..]Si6bbNQ,AAEA--8
-
+""") + "\n\n" + _("""
 ### Signed Subspace Keys
 
 Signed Subspace Keys are usually for sites that are going to change over
@@ -467,7 +469,7 @@ can't put up a newer version of your site and pretend it was you who did it.
 
 It works by using public-key cryptography so you can sign your site. Only the
 person with the secret key can add updated versions of your site to Freenet.
-
+""") + "\n\n" + _("""
 Also the SSK consists of five parts:
 
 * **public key hash** - This part is all that is required to uniquely identify
@@ -492,7 +494,7 @@ A typical SSK key looks like this:
 For example (cut for screen purposes):
 
     SSK@GB3wuHmt[..]o-eHK35w,c63EzO7u[..]3YDduXDs,AQABAAE/mysite-4
-
+""") + "\n\n" + _("""
 ### How Signed Subspace Keys work
 
 * The author generates a cryptographic keypair: a **private key** for signing
@@ -515,7 +517,7 @@ The symmetric key is so that clients can decrypt the file.
 Signed Subspace Key sites have largely been superseded by Updatable Subspace
 Key (USK) sites, which are based on SSKs but allow for links that try to
 always retrieve the most up-to-date version of the site.
-
+""") + "\n\n" + _("""
 ### Updateable Subspace Keys
 
 Updateable Subspace Keys are useful for linking to the latest version of a
@@ -532,7 +534,7 @@ version-number. There are two types of USK addresses:
 
 *   an USK with a positive number at the end, or
 *   an USK with a negative number at the end.
-
+""") + "\n\n" + _("""
 The USK with a **positive** number at the end works like this: the Freenet
 node on your computer keeps a list of versions of USKs that it knows about,
 without necessarily storing the data as well. This list is built up from
@@ -546,7 +548,7 @@ next time you visit the address.
 Example (cut for screen purposes):
 
     USK@GB3wuHmt[..]o-eHK35w,c63EzO7u[..]3YDduXDs,AQABAAE/mysite/5/
-
+""") + "\n\n" + _("""
 When you visit a link with a **negative** number at the end, Freenet searches
 for the version you requested (e.g. **-7**) plus four more (i.e. 7,8,9,10,
 11) at the node on your computer and on other nodes. If it finds only version
@@ -561,7 +563,7 @@ Example (cut for screen purposes):
 
 The real treat with USKs comes when data is to be inserted into Freenet. But
 more on that elsewhere.
-
+""") + "\n\n" + _("""
 ### Keyword Signed Keys
 
 Keyword-Signed Keys (KSKs) allow you to save named pages in Freenet. They are
@@ -581,7 +583,7 @@ slashes are used to denote Manifests or Containers).
 
 A KSK address can contain a redirection to a CHK address, or it can contain
 the file itself.
-
+""") + "\n\n" + _("""
 ### Containers
 
 A container, in general Freenet terms, is a file that contains several other
@@ -592,7 +594,7 @@ freesite, so either it loads in its entirety or it doesn't load at all,
 and greatly reduce the number of keys required to insert a given freesite.
 Containers are currently created transparently when inserting a freesite
 using e.g. jSite.
-
+""") + "\n\n" + _("""
 ### Manifests
 
 A manifest contains metadata over the list of blocks a CHK is divided into
@@ -620,7 +622,7 @@ about looking in log files and reporting problems if they find them.
 
 You can download the latest pre-compiled version from
 [https://downloads.freenetproject.org/alpha/plugins/Freemail/](https://downloads.freenetproject.org/alpha/plugins/Freemail/)
-
+""") + "\n\n" + _("""
 ### Easy account setup
 
 The easy way to set up a Freemail account is to visit the Freemail plugin,
@@ -644,7 +646,7 @@ automatically.
 
 If for some reason you cannot make the web interface work, we have included
 hand-configuration instructions down this page.
-
+""") + "\n\n" + _("""
 ### Mail client setup
 
 Now you have the Freemail proxy running, which means that you can send and
@@ -658,7 +660,7 @@ Your Freemail plugin must be running while you are reading and sending
 freemails. Leaving your node running, with the Freemail pugin enabled,
 will ensure this. For debugging purposes, it is also possible to send and
 receive Freemail mail with only the Freenet jar running.
-
+""") + "\n\n" + _("""
 ### Fetching Freemail mail with fetchmail
 
 You can easily make [fetchmail](http://fetchmail.berlios.de/) poll your
@@ -676,7 +678,7 @@ and LOCALNAME to the local login you want to receive the mail.
 A variant of this recipe will still work if you have your freenet node.
 running on another machine. Just change "localhost" to the DNS address of the
 node host.
-
+""") + "\n\n" + _("""
 ### Thunderbird
 
 If you use Thunderbird as your email client:
@@ -719,7 +721,7 @@ Now you should be able to read incoming freemails. To send out emails:
    just added: something like Freemail - localhost. And click OK.
 
 Congratulations - you're now set up to send and receive email over Freenet!
-
+""") + "\n\n" + _("""
 ### Hand configuration
 
 To set up an account for Freemail by hand, execute the following commands:
@@ -735,7 +737,7 @@ After running the last command you now have a running Freemail proxy,
 listening on localhost at IMAP port 3143 for incoming mails, and SMTP port
 3025 for outgoing mails. Connect to it using your favourite email client
 software.
-
+""") + "\n\n" + _("""
 If you didn't follow, here's a longer and more detailed recipe:
 
 ### Account Setup
@@ -744,7 +746,7 @@ Change to the directory containing the Freemail.jar file. At the command
 line, type:
 
 <pre>	java -jar Freemail.jar</pre>
-
+""") + "\n\n" + _("""
 If you are running Freemail for the first time, it will prompt you to create
 an account:
 
@@ -768,7 +770,7 @@ slow machine.
 	Generating cryptographic keypair (this could take a few minutes)...
 	Account creation completed.
 	Account created for john. You may now set a password with --passwd <password></pre>
-
+""") + "\n\n" + _("""
 The next step is to create a password for your account. The syntax to create
 a password is shown below:
 
@@ -795,7 +797,7 @@ and the software will prompt you to create a short Freemail address:
 	you'd like. For example, 'java -jar freemail.jar --shortaddress bob bob' will give
 	you the address 'anything@bob.freemail'. Try to pick something unique!
 	trying slotinsert to freenet:SSK@sdfgsdfg...ertretert/mailsite-1/mailpage</pre>
-
+""") + "\n\n" + _("""
 The syntax to create a short freemail address is:
 
 <pre>	java -jar Freemail.jar --shortaddress <username> <short address></pre>
@@ -816,7 +818,7 @@ Freemail proxy must run while you use Freemail, or else no mails you send
 will get delivered. To start the server, run the command:
 
 <pre>	java -jar Freemail.jar</pre>
-
+""") + "\n\n" + _("""
 ### Troubleshooting tips
 
 If you try to run the Freemail jar and get messages that look like the following:
@@ -860,7 +862,7 @@ executable, and run it:
 	cd frost/
 	chmod +x ./frost.sh
 	./frost.sh</pre>
-
+""") + "\n\n" + _("""
 The first time you start Frost, you will get a number of dialogs. The first
 ask you if you would like to import old Frost data. If this is the first time
 you use Freenet at all, you can safely answer **Clean startup** here.
@@ -884,12 +886,12 @@ message boards and up/download files. The windows will probably take a while
 to populate on the first startup.
 
 ![](assets/img/frost/main-window.png)
-
+""") + "\n\n" + _("""
 ### Sharing files
 
 Sharing files can be done by clicking the **Shared files** -tab and then
 clicking on the Folder-icon top left in the appearing tab.
-
+""") + "\n\n" + _("""
 ### Further information
 
 Additional information about Frost can be found in the mailing-list or on the
@@ -907,7 +909,7 @@ jSite is a graphical application that you can use to create, insert and
 manage your own Freenet sites. It was written in Java by Bombe.
 
 You can [download jSite here](https://downloads.freenetproject.org/alpha/jSite/jSite.jar)
-
+""") + "\n\n" + _("""
 ### Starting jSite
 
 To start jSite, type the following in a terminal:
@@ -921,7 +923,7 @@ The first window you see is this:
 In the pane to the left, already created projects can be selected for
 updating, deleting or cloning. Since this is the first start, no such
 projects exist.
-
+""") + "\n\n" + _("""
 ### Creating a Freesite
 
 To create a new Freesite, you click the **Add project**-button. You then need
@@ -934,7 +936,7 @@ to fill in the details of the project. Under the Project information-section:
 * **Local Path** - This is a directory where you will store all the pages of the
   freesite you are creating. Put in the full path. You can click the Browse
   button to select a directory graphically or just type it in.
-
+""") + "\n\n" + _("""
 Under the Address-section, there are some automatically generated entries,
 and the human readable name for the site, as seen in the address-field of the
 browser:
@@ -951,7 +953,7 @@ Below is an example of how it might look:
 ![](assets/img/jsite/project-details.png)
 
 When everything is filled in correctly, you may press **Next**.
-
+""") + "\n\n" + _("""
 The next step is to add files to your Freenet site (or Freesite). This is
 done in the dialog called **Project Files**. Since we have no files in the
 current directory, yet, the dialog is pretty much empty.
@@ -967,7 +969,7 @@ We then highlight one of these files that will be the default page (e.g.
 index.html might be a good choice) and check the **Default file** checkbox.
 It should recognise the MIME type as text/html, so leave everything else as
 they are and click the **Insert now** button.
-
+""") + "\n\n" + _("""
 If all goes well, a window like the one below should appear. It may take
 quite a while to insert the Freesite, several minutes in fact.
 
@@ -976,7 +978,7 @@ quite a while to insert the Freesite, several minutes in fact.
 When all is finished, you will get a message pop-up that tells you that the
 site has been inserted successfully. You can copy the URI to the clip-board
 by clicking the **Copy URI to Clipboard** -button.
-
+""") + "\n\n" + _("""
 Then you can use FProxy to surf to your newly created Freesite. Just paste
 the URI after the
 
