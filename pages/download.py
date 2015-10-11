@@ -94,8 +94,8 @@ FMS), but many Freenet users and developers use them.
 _("Show instructions for:")+"""
       <a href="javascript:showDiv('windows');hideDiv('macos');hideDiv('unix');">Windows
         </a>, <a href="javascript:hideDiv('windows');showDiv('macos');hideDiv('unix');">OS X
-        </a>, <a href="javascript:hideDiv('windows');hideDiv('macos');showDiv('unix');">Linux
-        etc</a><br>
+        </a>, <a href="javascript:hideDiv('windows');hideDiv('macos');showDiv('unix');">GNU/Linux & POSIX
+        </a><br>
 """+div("windows",md(_("""
 ### Windows
 
@@ -122,7 +122,7 @@ to make a _.dmg_ for easier OS X installation but don't know how yet. If you
 are a developer and would like to join us and help it would be much
 appreciated!
 """)))+div("unix",md(_("""
-### Linux and other Unix-like systems
+### GNU/Linux & POSIX
 
 Try the [Java Web Start installer](assets/jnlp/freenet.jnlp). If it doesn't
 work:
@@ -153,7 +153,7 @@ If the link above is blocked, you could download it from our server
 [here](https://downloads.freenetproject.org/latest/new_installer_offline.jar).
 But please use the other link if you can.
 
-**Note:** Many Linux distributions no longer ship with Java Web Start
+**Note:** Many GNU/Linux distributions no longer ship with Java Web Start
 enabled. We would like to make distribution packages for easier installation,
 and have an in-development (and not maintained) [Debian package](
 https://github.com/freenet/debian), but haven't gotten it stable or made
@@ -266,8 +266,8 @@ broken, you can update your node manually from our servers:
 
 * Windows users can upgrade to the latest-stable Freenet release from the
   system tray menu, or by running "update.cmd" in the Freenet directory.
-* OS X and Linux users may upgrade by running the update.sh shell script in the
-  Freenet directory.
+* OS X, GNU/Linux, or other POSIX users may upgrade by running the update.sh
+  shell script in the Freenet directory.
 
 **Source Code:** See [the GitHub repository](https://github.com/freenet/fred).
 """)))
