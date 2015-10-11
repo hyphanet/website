@@ -525,7 +525,7 @@ Freenet sites. Most of the "portal" sites which are linked from the Freenet
 web interface (fproxy) read the Freetalk or FMS forums, and there are boards
 specifically for announcing sites (usually the boards are called "sites"!).
 You could also send your key to people by using the Freenet [mailing lists](
-help.html#mailing-lists), in the IRC channel (irc.freenode.net #freenet),
+help.html#mailing-lists), in the IRC channel (chat.freenode.net #freenet),
 by private e-mail, or by advertising your Freenet site on your World Wide Web
 site. If you're feeling extravagant, you could even try skywriting it.
 (Graffiti is not recommended, for legal reasons.)
@@ -610,7 +610,7 @@ download page for a specific build, or use git to get an up to date copy of
 the source, see [here](contribute.html#developers) for details. Further
 instructions for building and deploying the server are included with the code
 itself. Generally speaking, joining our IRC channel is a good idea: [#freenet
-on irc.freenode.net](irc://irc.freenode.net/freenet)
+on chat.freenode.net](irc://chat.freenode.net/freenet)
 """)),
                     FaqItem("freenethelp", _("Is there a Help Site that goes deeper into the questions newbies may have about Freenet, and where people can contribute too?"), _("""
 Have a look at [our wiki](https://wiki.freenetproject.org/). An older wiki,
