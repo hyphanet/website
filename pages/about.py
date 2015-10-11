@@ -64,7 +64,9 @@ class PhilosophySection(Section):
         self.title = _("The Philosophy behind Freenet")
     def get_content(self):
         # License: GFDL (from old freenetproject.org website)
-        return text(md(_("""
+        return text(md(
+            # Translators: do not translate the anchors such as "#prior_reading"
+            _("""
 *Written by Ian Clarke*
 
 1.  [A Disclaimer](#disclaimer)
