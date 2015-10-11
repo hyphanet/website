@@ -593,7 +593,7 @@ spelling/grammar mistakes, new ideas (see [the previous answer](#idea)),
 are all welcome. You may find [the wiki](
 https://wiki.freenetproject.org/Main_Page) helpful.
 """) + "\n\n" + _("""
-If you want to contribute to Freenet in any way, please contact us, via [the
+If you have any questions about contributing, please contact us, via [the
 developers mailing list](https://emu.freenetproject.org/cgi-bin/mailman
 /listinfo/devl/), [the chat channel](help.html#irc), [the support
 mailing list](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/support)
