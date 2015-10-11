@@ -14,7 +14,7 @@ class DonateSection(Section):
 The project's current balance is **$MONEYBALANCE**. (updated twice a day)
 This will pay for the project's one paid developer (we have many volunteers) and
 the server for roughly another **MONEYMONTHS months** (MONEYDAYS days).
-
+""") + "\n\n" + _("""
 #### Why does The Freenet Project need donations?
 
 Although countless people have given their time and skill to the project since
@@ -27,7 +27,7 @@ fund should the need arise.
 Everyone involved is keenly interested in the future of The Freenet Project and
 you can be assured donations have been and will continue to be used wisely. All
 support is very much appreciated.
-
+""") + "\n\n" + _("""
 #### How can I donate?
 
 You have several options:
@@ -148,7 +148,7 @@ any of these payment methods.
 
 You can also donate to the project by purchasing items from the Freenet
 [store](http://www.zazzle.com/freenetproject).
-
+""") + "\n\n" + _("""
 ## How can I be sure that my donation will be used appropriately?
 
 All donations go to The Freenet Project Inc, a non-profit 501c3 corporation with
