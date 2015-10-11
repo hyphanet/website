@@ -472,11 +472,6 @@ to!):
 
 `fproxy.allowedHostsFullAccess=127.0.0.1,192.168.1.0/24  
 `""")),
-                    FaqItem("openjdk", _("Problems installing with OpenJDK"), _("""
-Some versions of OpenJDK, particularly the one included with Ubuntu 8.04, have some problems with SSL which cause the installer to fail. Please install the Sun JRE, at least version 6\. On Ubuntu or Debian, open a root terminal and type:
-
-    apt-get install sun-java6-bin
-    update-java-alternatives -s java-6-sun""")),
                     FaqItem("whatsnew", _("What's new? Is there a changelog?"), _("""
 On every new build, a brief summary of all the main changes is posted to the
 support and devl lists and the eng.freenet board on Freetalk. This is usually
