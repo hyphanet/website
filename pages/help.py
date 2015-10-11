@@ -638,10 +638,8 @@ threat if you share a browser between Freenet and the WWW at large: malicious
 web pages will be able to probe which freesites you have visited, and report
 this information to their owners.
 
-With recent browsers, privacy/incognito mode may be sufficient, and the
-rabbit applet on the system tray on Windows will try to start a browser
-running in this mode. However, this is not 100% reliable in our experience,
-so be careful.
+Privacy/incognito mode may be sufficient, and Windows tray app will start a
+browser running in this mode.
 """)),
                     FaqItem("attack", _("Won't attack X break Freenet's anonymity?"), _("""
 **Short answer:** Probably, on opennet. Maybe, on darknet.
