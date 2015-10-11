@@ -214,7 +214,6 @@ Some people claim that the [DADVSI](https://en.wikipedia.org/wiki/DADVSI)
 makes Freenet illegal in France; the German data retention law might have
 required logging, but [was struck down](http://en.wikipedia.org/wiki/Telecommunications_data_retention#Germany).
 Also, the German supreme court has found that [not securing your wifi properly](http://merlin.obs.coe.int/iris/2010/7/article13.en.html)
-
 makes you responsible for other people's downloads over it; this might or
 might not be extended to prohibiting anonymous peer to peer filesharing such
 as Freenet. [ACTA](http://en.wikipedia.org/wiki/ACTA) might have
@@ -245,7 +244,6 @@ protocol is relatively hard to identify (we are working on ["transport
 plugins"](https://wiki.freenetproject.org/Transport_plugins), which would
 [make it much harder to detect Freenet](http://en.wikipedia.org/wiki/Steganography).
 Freenet supports a [darknet](https://wiki.freenetproject.org/Darknet) mode (i.e.
-
 only connecting to your friends) which makes automated harvesting and
 blocking of nodes very difficult. Note that many mobile internet providers
 block all peer to peer networks along with other content, and many corporate
