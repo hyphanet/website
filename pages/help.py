@@ -486,19 +486,6 @@ unrelated topics!
 Fred (and freenet in general) are still very much in development, and if
 something goes wrong it's worthwhile to know exactly what went wrong.
 """)),
-                    FaqItem("stabchange", _("How can I change from the main network to the test network?"), _("""
-The test network is a separate network which allows the developers to see
-exactly what is going on. There is no anonymity on the test network. There is
-a separate installer ([for Linux, OS/X](
-https://downloads.freenetproject.org/latest/testnet_installer_offline.jar),
-[for Windows](https://downloads.freenetproject.org/latest/TestnetInstaller
-.exe)). This can break quite often, so you should probably have some idea
-what you are doing or at least be prepared to reinstall regularly!
-""")),
-                    FaqItem("freenetinigone", _("Freenet won't start and the launcher says it can't find freenet.ini"), _("""
-This is due to an unfortunate bug, fixed in 1249\. You can fix it by renaming freenet.ini.tmp to freenet.ini.""")),
-                    FaqItem("servicenotrespond", _("Freenet won't start, it says \"Service did not respond to signal\""), _("""
-This should be fixed now, let us know if you see it. If you have a very old install, you might be interested in the steps [here](https://wiki.freenetproject.org/Installing/Windows#Service_did_not_respond_to_signal).""")),
                     FaqItem("kaspersky", _("I have Kaspersky anti-virus, and Freenet doesn't install, or shows \"Download/upload queue database corrupted!\""), _("""
                     Kaspersky can be a problem with Freenet. See [here](
 https://wiki.freenetproject.org/Installing/Windows#.27Download
