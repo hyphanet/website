@@ -606,8 +606,7 @@ freesite.
 If you want to work on Freenet itself, see [here](contribute.html#developers)
 to get the source code.
 
-Links to us are welcome, for example this [web hosting guide](
-http://www.webhostingsearch.com/). Improvements to this website, fixes for
+Improvements to this website, fixes for
 spelling/grammar mistakes, new ideas (see [the previous answer](#idea)),
 are all welcome. You may find [the wiki](
 https://wiki.freenetproject.org/Main_Page) helpful.
