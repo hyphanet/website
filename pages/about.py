@@ -358,13 +358,6 @@ also](assets/papers/ccc-freenet-demo.tar.bz2) available.
 ![](assets/img/pdf.icon.jpg)[Switching for a small world](assets/papers/vilhelm_thesis.pdf) (PDF)  
 A thesis by Vilhelm Verendel exploring ways to optimise the swapping algorithm.
 """) + "\n\n" + _("""
-[Next Generation Routing Algorithm](ngrouting.html)  
-This article describes Freenet's "Next Generation" routing algorithm. This
-was a novel approach which had nodes making routing decisions based on
-sophisticated analysis of the time required to route previous requests. This
-algorithm was promising, but was eventually dropped in favour of a much
-simpler approach in Freenet 0.7.
-""") + "\n\n" + _("""
 ![](assets/img/pdf.icon.jpg)[Protecting Freedom of Information Online with Freenet](assets/papers/freenet-ieee.pdf) (PDF)  
 An IEEE Internet Computing article describing the Freenet architecture circa
 2002 - probably the best introduction to the theory behind Freenet.
