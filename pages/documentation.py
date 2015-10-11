@@ -98,9 +98,9 @@ authors. Just click **Next** to proceed.
 ![](assets/img/install/2-about.png)
 
 The next step is to choose the directory in which to install Freenet. The
-default location on Linux operating systems is **/home/username/Freenet** as
-shown below. Change it to something appropriate or leave "as is". Click
-**Next** when you are finished.
+default location on GNU/Linux & POSIX operating systems is
+**/home/username/Freenet** as shown below. Change it to something appropriate or
+leave "as is". Click **Next** when you are finished.
 
 ![](assets/img/install/4-Install_directory.png)
 
@@ -827,7 +827,7 @@ If you try to run the Freemail jar and get messages that look like the following
 	24/12/2008 11:20:52 ERROR(freemail.imap.IMAPListener): Error in IMAP server - Address already in use</pre>
 
 ...it probably means you downloaded the Freemail plugin through the Web
-interface and your node is already running it. On a Linux machine you can
+interface and your node is already running it. On a GNU/Linux machine you can
 check to see if the private SMTP and IMAP ports are actually in use with
 `netstat -tln`; the port numbers you're looking for in the listing are 3143 (
 Freenet IMAP) and 3025 (Freenet SMTP).
@@ -854,9 +854,9 @@ and file uploading/downloading/sharing functionalities. It should get
 installed with Freenet 0.7 automatically if you used the standard Freenet
 installers.
 
-To run Frost on Linux from the command line, change to your Freenet install
-directory, then change to the frost subdirectory. Then make the frost.sh file
-executable, and run it:
+To run Frost on GNU/Linux or POSIX from the command line, change to your
+Freenet install directory, then change to the frost subdirectory. Then make
+the frost.sh file executable, and run it:
 
 <pre>	cd /home/username/
 	cd frost/
