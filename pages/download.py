@@ -171,7 +171,7 @@ If you have a working Freenet installation directory that you have mirrored
 from one Unix machine to another (e.g. via rsync or unison), enabling the
 mirrored installation is not difficult. Nothing in a Freenet installation
 cares about its host's IP address; it can't, or Freenet would fail on
-machines that get IP addressss from a DHCP pool
+machines that get IP addresses from a DHCP pool.
 
 All you actually need to do is tell the system you've mirrored to that it
 should start the Freenet proxy daemon for you on boot. Do <tt>crontab -l</tt>

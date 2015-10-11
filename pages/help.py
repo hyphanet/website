@@ -891,7 +891,7 @@ Freenet is still in testing and there are bound to be attacks found that we
 have not dealt with yet. So if you do manage to figure out a truly new kind
 of attack, we are interested in hearing about it. Please keep in mind what
 Freenet is and what it is not, however. No single network can offer everybody
-everything, and there are security issues that Freenet, by it's nature,
+everything, and there are security issues that Freenet, by its nature,
 may not deal with to extent you might wish. If this upsets you, all of our
 code is freely available, so you are free to take as much of it as you like
 and write your own distributed network that suits your desires.
@@ -993,8 +993,8 @@ To subscribe to one of the lists, click the list name and give your email
 address in the field below the **Subscribing to < mailinglist >** header. To
 enter a password is optional, and if you do not enter one, one will be
 automatically generated for you. Then press the **Subscribe** button. You
-will recieve a confirmation email, and when that is answered, you will
-recieve mails from the list.
+will receive a confirmation email, and when that is answered, you will
+receive mails from the list.
 """) + "\n\n" + _("""
 ### Unsubscribing
 
