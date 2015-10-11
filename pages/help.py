@@ -700,7 +700,7 @@ without providing any value to it; on Freenet, every node relays data for its
 neighbours. Hence the attacks on Freenet are completely different to the
 attacks on Tor. Both compromise to some degree to enable more or less
 real-time performance.
-
+""") + "\n\n" + _("""
 If you can use the darknet, trust your friends, don't reinsert files, always
 use the "Insert a random, safe key" option, and change your anonymous
 identity after some volume of inserts, you should be relatively safe using
@@ -722,7 +722,7 @@ and to network robustness/undetectability.
 In the interests of giving would-be users as much information as possible,
 and on the assumption that any serious attacker would do their homework,
 here are the major classes of attack on Freenet we are presently aware of:
-
+""") + "\n\n" + _("""
 * **Harvesting**: Simply by running some powerful Freenet nodes, an attacker can
   identify most of the opennet (Strangers network) relatively easily. These
   nodes can then be attacked one by one (subject to resources), their traffic
@@ -735,6 +735,7 @@ here are the major classes of attack on Freenet we are presently aware of:
   addresses marked as "consumer" rather than "business"), both of which would
   hit a lot of things other than Freenet, would likely be effective for quite
   some time.
+""") + "\n" + _("""
 * **Bootstrapping attacks**: Unless a node only connects to friends, it will
   have to connect to the opennet "seednodes" to announce itself and get
   initial peers to connect to. At the moment there are relatively few
@@ -758,6 +759,7 @@ here are the major classes of attack on Freenet we are presently aware of:
   and run inserts are possible, and can be relatively safe in terms of many of
   the other attacks, but you are taking the risk that the opennet seednode you
   connect to may be malicious.
+""") + "\n" + _("""
 * **Correlation attacks**: If you are connected to a node, and can recognise the
   keys being requested (probably because it was posted publicly), you can show
   statistically that the node in question probably requested it, based on the
@@ -771,6 +773,7 @@ here are the major classes of attack on Freenet we are presently aware of:
   connecting to the entire network this way is rather expensive: If they already
   suspect you personally they'll probably bug your keyboard rather than trying
   to connect to your Freenet node!
+""") + "\n" + _("""
 * **Adaptive search**: If you want to find the author of some content, and you
   can predict the exact keys which will be inserted, and you are able to
   connect to new nodes at will, you may be able to listen out for the keys,
@@ -807,6 +810,7 @@ here are the major classes of attack on Freenet we are presently aware of:
   single insert (of any size) with the safe random key option, and announcing
   it, should be relatively safe from this attack, even on opennet - but see the
   section above on bootstrapping attacks.
+""") + "\n" + _("""
 * **Traffic analysis**: Freenet provides minimal protection against global
   traffic analysis (basic message padding etc); if the attacker also has
   nodes on the network, the extra data will likely be helpful. We certainly do
@@ -816,11 +820,12 @@ here are the major classes of attack on Freenet we are presently aware of:
   and/or constant bitrate links as an option for more paranoid users. Note that
   on Tor-style networks, global traffic analysis will defeat the network
   completely: all that is needed is to observe both the entry and exit points.
+""") + "\n" + _("""
 * **Swapping attacks**: It is possible to attack the location swapping
   algorithm, and thereby disrupt routing on friend-to-friend networks. This has
   been demonstrated by the authors of the Pitch Black paper. We are working on a
   solution, but sadly at the moment most users use opennet.
-
+""") + "\n\n" + _("""
 More information on the current practical state of Freenet security is available
 [here](https://wiki.freenetproject.org/Security_summary).
 """)),
@@ -930,7 +935,7 @@ they first install Freenet, Freenet itself attempts to encrypt all the
 potentially incriminating data that it stores on disk. Details are below but
 as explained, leaks are inevitable: you really should [encrypt your disks!](
 http://www.truecrypt.org/)
-
+""") + "\n\n" + _("""
 The main datastore does not store data you request or insert (or that is
 requested or inserted by nearby nodes), because it can be probed by other
 nodes: This was introduced to fix [this attack](
@@ -987,7 +992,7 @@ class MailingListSection(Section):
         return text(md(_("""
 These are the mailing lists that can be used for support or general
 information about Freenet.
-
+""") + "\n\n" + _("""
 ### Subscribing
 
 To subscribe to one of the lists, click the list name and give your email
@@ -996,7 +1001,7 @@ enter a password is optional, and if you do not enter one, one will be
 automatically generated for you. Then press the **Subscribe** button. You
 will recieve a confirmation email, and when that is answered, you will
 recieve mails from the list.
-
+""") + "\n\n" + _("""
 ### Unsubscribing
 
 To unsubscribe to one of the lists you are subscribed to, click the list name
