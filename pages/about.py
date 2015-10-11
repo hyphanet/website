@@ -250,60 +250,60 @@ class PeopleSection(Section):
         return text(md(_("""
 **Note:** This is an incomplete list, a large number of people have contributed
 to the project.
-
+""") + "\n\n" + _("""
 ### Ian Clarke
 
 Freenet is based on Ian's paper "A Distributed Decentralised Information
 Storage and Retrieval System". Ian started the Freenet Project around July of
 1999, and continues to coordinate the project. In his day job, Ian is the
 founder and CEO of [SenseArray](http://sensearray.com/).
-
+""") + "\n\n" + _("""
 ### Matthew Toseland
 
 Matthew has been working on Freenet since before the 0.5 release. His work
 and that of others has resulted in dramatic improvements to the performance
 and stability of the network.
-
+""") + "\n\n" + _("""
 ### Oskar Sandberg
 
 Oskar was also one of the earliest contributors to the Freenet project,
 and has made some important theoretical breakthroughs that lead to the
 beginning of Freenet 0.7, see the papers page.
-
+""") + "\n\n" + _("""
 ### Florent Daignière
 
 Since 2003, Florent has improved various aspects of the software and
 performed the project's system administration. In his day job, he is the
 Technical Director of [Matta Consulting](https://www.trustmatta.com),
 a boutique security consultancy firm.
-
+""") + "\n\n" + _("""
 ### Scott Miller
 
 Scott is responsible for the implementation of much of the cryptography
 elements within Freenet.
-
+""") + "\n\n" + _("""
 ### Steven Starr
 
 Steven helps with administration of Freenet Project Inc, and is an advisor to
 the project on business and publicity matters.
-
+""") + "\n\n" + _("""
 ### Michael Rogers
 
 Michael has mostly contributed detailed simulations as part of the Google
 Summer of Code. He has been helpful in designing the [new transport layer](
 https://old-wiki.freenetproject.org/NewTransportLayer).
-
+""") + "\n\n" + _("""
 ### Dave Baker
 
 Dave's main contribution has been [Freemail](documentation.html#freemail),
 his Summer of Code project to build a working email-over-freenet system,
 as well as some debugging and core work in various places.
-
+""") + "\n\n" + _("""
 ### Robert Hailey
 
 Robert has helped improve the speed and security of Freenet by finding two
 **major** bugs, and has recently contributed some code.
-
+""") + "\n\n" + _("""
 ### David Sowder
 
 David (Zothar) has helped the Freenet project as time permits and interest
