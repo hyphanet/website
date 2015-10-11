@@ -311,7 +311,7 @@ can only be assembled when all its pieces are combined with the decryption key.
 The Freenet Project has notified the US authorities that it will be exporting
 crypto. As long as your country doesn't prohibit the use of encryption you
 are fine. Further, there is now an exception in the export laws for software
-doing exactly what Freenet does! However, Sun limits the encryption strength
+doing exactly what Freenet does! However, Oracle limits the encryption strength
 available on the JVM that runs Freenet; you should install the Unlimited
 Strength Policy Files for Java if possible to improve performance. Freenet
 will however work even without this, by using its built-in encryption code.
@@ -605,8 +605,7 @@ developer(s) and cover server costs.
 See our [GitHub repository](https://github.com/freenet/).
 """)),
                     FaqItem("devtools", _("What tools do I need to help develop?"), _("""
-To build and deploy the Freenet server, you will need Java tools compatible
-with Sun's JDK 1.6 or later. You can download the source tarballs on the
+Building Freenet requires JDK 1.6 or later.  You can download the source tarballs on the
 download page for a specific build, or use git to get an up to date copy of
 the source, see [here](contribute.html#developers) for details. Further
 instructions for building and deploying the server are included with the code

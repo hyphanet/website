@@ -37,7 +37,7 @@ def run_show_hide_script():
     # License: GFDL (from old freenetproject.org website)
     return """
       <script type="text/javascript">
-         // Try to detect if Sun Java 1.6.0 or higher is installed
+         // Try to detect if Java 1.6.0 or higher is installed
          //var Java = PluginDetect.isMinVersion('Java', '1,6,0');
          
          // Os detection
