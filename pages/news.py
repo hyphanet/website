@@ -18,6 +18,22 @@ def news_items():
     
     # Below news items are licensed GFDL (from old freenetproject.org website)
     return [
+              NewsItem("20151011-redesign", _("2015-10-11 - Upcoming website redesign"),
+_("""
+In the next few weeks we will transition to a redesigned website. This will be
+the first major change since 2009. In addition to looking more modern, this new
+version is also more practical to modify, test, and translate.
+
+If you'd like to get a look at the site in testing you can find it [here](
+https://testing.freenetproject.org/) - as given in the prompt the
+username and password are "guest". If you'd like to help with translation,
+please join us on the ["website" resource on Transifex](
+https://www.transifex.com/otf/freenet/website/).
+
+If you have any feedback on the new website design please let us know on [
+chat](irc.html) or the [support list](https://emu.freenetproject.org/cgi-bin
+/mailman/listinfo/support)!
+""")),
               NewsItem("20150917-ecdsa-vulnerability", _("2015-09-17 - elliptic curves: using safe Bouncy Castle since November 2014"),
 _("""
 <p>
