@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Freenet\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-11 19:21-0400\n"
-"PO-Revision-Date: 2015-10-14 14:32+0000\n"
+"PO-Revision-Date: 2015-10-15 02:59+0000\n"
 "Last-Translator: Danton Medrado\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/otf/freenet/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
@@ -59,7 +59,7 @@ msgstr "Tradução"
 
 #: pages/contribute.py:29
 msgid "Bug tracker"
-msgstr ""
+msgstr "Rastreador de bugs"
 
 #: pages/contribute.py:35
 msgid "Contribute"
@@ -623,7 +623,7 @@ msgstr "Evite Censura"
 msgid ""
 "Freenet is a platform for censorship-resistant communication and publishing.\n"
 "It helps you to remain anonymous, and communicate without fear."
-msgstr ""
+msgstr "Freenet é uma plataforma de comunicação e publicação resistente à censura.\nEle ajuda você a manter o anonimato, e comunicar-se sem medo."
 
 #: pages/index.py:38
 msgid "Host a Website"
@@ -633,7 +633,7 @@ msgstr "Hospede um Site"
 msgid ""
 "Need a website nobody can take over? That is hosted for free? That is very\n"
 "resistant to attacks? Publish it on Freenet!"
-msgstr ""
+msgstr "Precisa de um site que ninguém pode assumir? Que está hospedado de graça? Que é muito\nresistente a ataques? Publique-o na Freenet!"
 
 #: pages/index.py:42 pages/index.py:176
 msgid "Share Files"
@@ -641,7 +641,7 @@ msgstr "Compartilhe Arquivos"
 
 #: pages/index.py:42
 msgid "Upload a file to Freenet and anyone with the secret URL can access it."
-msgstr ""
+msgstr "Faça o upload de um arquivo para Freenet e qualquer pessoa com o URL secreto pode acessá-lo."
 
 #: pages/index.py:45
 msgid "Meet New People"
@@ -651,18 +651,18 @@ msgstr "Conheça Novas Pessoas"
 msgid ""
 "People from all over the world use Freenet to communicate. Some of them do so\n"
 "anonymously. You might never hear their voices in the open."
-msgstr ""
+msgstr "Pessoas de todo o mundo usam Freenet para se comunicar. Alguns deles faze-no\nanonimamente. Você nunca pode ouvir as suas vozes no aberto."
 
 #: pages/index.py:49
 msgid "Experiment with Exciting New Technology"
-msgstr ""
+msgstr "Experimente com uma Nova e Excitante Tecnologia  "
 
 #: pages/index.py:49
 msgid ""
 "Freenet is on the cutting edge of distributed routing research. The data\n"
 "storage provided by Freenet is a proving ground for a number of new\n"
 "distributed systems."
-msgstr ""
+msgstr "Freenet está na vanguarda da pesquisa de roteamento distribuído. O armazenamento\nde dados fornecidos pela Freenet é um campo de provas para uma série de novos\nsistemas distribuídos."
 
 #: pages/index.py:54
 msgid "Improve the World"
@@ -673,7 +673,7 @@ msgid ""
 "By using Freenet from the \"free world\" you help people in oppressive regimes\n"
 "share information. The more people use Freenet the easier it will be to\n"
 "obtain. Using it will also be less suspicious."
-msgstr ""
+msgstr "Usando Freenet do \"mundo livre\" você ajuda pessoas em regimes opressores\na compartilhar informação. Quanto mais as pessoas usam Freenet mais fácil será\nobter. Usando-a será também menos suspeito."
 
 #: pages/index.py:127 pages/index.py:221
 msgid "Share, Chat, Browse. Anonymously."
@@ -690,7 +690,7 @@ msgstr "Por favor, doe"
 #: pages/index.py:130
 msgid ""
 "Your donations pay for our server and developer. Our current funds will last"
-msgstr "Suas doações pagam o nosso servidor e desenvolvedor. Os nossos fundos atuais durará"
+msgstr "Suas doações pagam o nosso servidor e desenvolvedor. Os nossos fundos atuais durarão"
 
 #: pages/index.py:133
 msgid "Donate!"
@@ -710,7 +710,7 @@ msgstr "Crie uma identidade secreta para que ninguém saiba quem é você."
 
 #: pages/index.py:167
 msgid "Browse Webpages"
-msgstr "Navegue por páginas da web"
+msgstr "Navegue por Páginas da Web"
 
 #: pages/index.py:168
 msgid ""
@@ -732,7 +732,7 @@ msgstr "Publicação"
 
 #: pages/index.py:174
 msgid "Publish information while remaining anonymous."
-msgstr "Publicar informações permanecendo anônimo."
+msgstr "Publique informações permanecendo anônimo."
 
 #: pages/index.py:177
 msgid "Easy upload & download."
@@ -752,7 +752,7 @@ msgstr "Resistente"
 
 #: pages/index.py:183
 msgid "Freenet has been designed to be resistant to attacks and censorship."
-msgstr "Freenet foi projetado resistir a ataques e censura."
+msgstr "Freenet foi projetado para resistir a ataques e censura."
 
 #: pages/index.py:185
 msgid "Distributed"
@@ -760,7 +760,7 @@ msgstr "Distribuído"
 
 #: pages/index.py:186
 msgid "No central points of failure, efficient caching of popular content."
-msgstr ""
+msgstr "Não há pontos centrais de falha, eficiente cache de conteúdo popular."
 
 #: pages/index.py:188
 msgid "Proven"
@@ -780,7 +780,7 @@ msgstr "Visão geral"
 
 #: pages/common.py:212
 msgid "Freenet rabbit logo"
-msgstr "Logomarca coelho do Freenet"
+msgstr "Logo coelho Freenet"
 
 #: pages/common.py:220
 msgid "Contact"
@@ -819,7 +819,7 @@ msgid ""
 "The project's current balance is **$MONEYBALANCE**. (updated twice a day)\n"
 "This will pay for the project's one paid developer (we have many volunteers) and\n"
 "the server for roughly another **MONEYMONTHS months** (MONEYDAYS days)."
-msgstr ""
+msgstr "#### Status Financeiro\n\nO saldo atual do projeto é **$MONEYBALANCE**. (atualizado duas vezes por dia)\nIsso irá pagar a um programador que recebe do projeto (temos muitos voluntários) e\no servidor por cerca de outros **MONEYMONTHS meses** (MONEYDAYS dias)."
 
 #: pages/donate.py:17
 msgid ""
@@ -835,7 +835,7 @@ msgid ""
 "Everyone involved is keenly interested in the future of The Freenet Project and\n"
 "you can be assured donations have been and will continue to be used wisely. All\n"
 "support is very much appreciated."
-msgstr ""
+msgstr "#### Por que o Projeto Freenet precisa de doações?\n\nApesar de inúmeras pessoas doarem o seu tempo e habilidade para o projeto desde\na sua criação, o Projeto Freenet depende de suas doações para apoiar\nos desenvolvedores que trabalham em tempo integral neste projeto cada vez mais complexo, e para\ndespesa de hardware (este servidor) e custos administrativos (ou seja, domínio\nregistros e certificados). Nós também gostaríamos de começar um fundo de defesa legal\npara casos de necessidade.\n\nTodos os envolvidos são muito interessados no futuro do projeto Freenet e\nvocê pode ter certeza de que as doações têm sido e continuarão a ser usadas com sabedoria. Todo\napoio é muito apreciado."
 
 #: pages/donate.py:30
 msgid ""
@@ -850,7 +850,7 @@ msgid ""
 "able to pay a developer the following month although so-far we have been\n"
 "fortunate. You can become a member by clicking on this button (you will need a\n"
 "[PayPal](https://www.paypal.com/) account):"
-msgstr ""
+msgstr "#### Como eu posso doar?\n\nVocê tem várias opções:\n\n* Você pode se tornar um \"membro\" do projeto Freenet por um **pagamento recorrente** de US $5 ou\nmais por mês. A vantagem desta opção é que dá ao projeto mais estabilidade\ne renda confiável que torna mais fácil para fechar compromissos a longo prazo com\npotenciais desenvolvedores - como estamos, é cada vez mais difícil dizer se seremos\ncapazes de pagar um desenvolvedor no mês seguinte, mas até agora, temos sido\nafortunados. Você pode se tornar um membro clicando neste botão (você vai precisar de uma\nconta (https //www.paypal.com/)[PayPal]:"
 
 #: pages/donate.py:92
 msgid "* You can *donate once* via Paypal by clicking on this button:"
@@ -876,7 +876,7 @@ msgid ""
 "\n"
 "You can also donate to the project by purchasing items from the Freenet\n"
 "[store](http://www.zazzle.com/freenetproject)."
-msgstr ""
+msgstr "Alternativamente, por favor, contate-nos: <donate@freenetproject.org> Se você não puder usar\nqualquer um desses métodos de pagamento.\n\nVocê também pode doar para o projeto através da compra de itens da Freenet\n[loja](http://www.zazzle.com/freenetproject)."
 
 #: pages/donate.py:151
 msgid ""
@@ -2145,7 +2145,7 @@ msgstr ""
 
 #: pages/about.py:64
 msgid "The Philosophy behind Freenet"
-msgstr "A Filosofia por trás do Freenet"
+msgstr "A Filosofia por trás da Freenet"
 
 #. Translators: do not translate the anchors such as "#prior_reading"
 #: pages/about.py:69
@@ -3004,7 +3004,7 @@ msgstr ""
 
 #: pages/help.py:177
 msgid "Who is behind Freenet?"
-msgstr "Quem está por trás do Freenet?"
+msgstr "Quem está por trás da Freenet?"
 
 #: pages/help.py:177
 msgid ""
@@ -3050,7 +3050,7 @@ msgstr ""
 msgid ""
 "Do you get to do that anonymously? Freenet is designed with anonymity in\n"
 "mind, performance comes second."
-msgstr ""
+msgstr "Você consegue fazer isso anonimamente? Freenet é projetado com o anonimato em\nmente, o desempenho vem em segundo lugar."
 
 #: pages/help.py:201
 msgid ""

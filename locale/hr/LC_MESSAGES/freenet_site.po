@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Freenet\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-11 19:21-0400\n"
-"PO-Revision-Date: 2015-10-13 08:03+0000\n"
+"PO-Revision-Date: 2015-10-15 12:02+0000\n"
 "Last-Translator: skiddiep <lyricaltumor@gmail.com>\n"
 "Language-Team: Croatian (http://www.transifex.com/otf/freenet/language/hr/)\n"
 "MIME-Version: 1.0\n"
@@ -147,7 +147,7 @@ msgstr "\n<p>\nAžurirani su prijevodi za Windows instaltor i aplikaciju. Instal
 
 #: pages/news.py:91
 msgid "2015-07-19 - Freenet 0.7.5 build 1469 released"
-msgstr ""
+msgstr "2015-07-19 - Freenet 0.7.5 verzija 1469 objavljena"
 
 #: pages/news.py:92
 msgid ""
@@ -159,11 +159,11 @@ msgid ""
 "other prevented interactive usage (e.g. freesite browsing) while\n"
 "finishing large downloads or starting large uploads.\n"
 "</p>\n"
-msgstr ""
+msgstr "\n<p>\nOva verzija popravlja dvije greške nastale u verziji 1468. Jedna je uzrokovala veoma\nsporo djelovanje i veliko korištenje procesora pri radu s velikim datotekama i fizičkim\nsigurnosnim razinama iznad Ništa (npr. enkripcija diska na Freenet razini).\nDruga je sprječavala interaktivno korištenje (npr. pregledavanje stranica) dok se\ndovršavalo veliko preuzimanje ili pokretalo veliko postavljanje.\n</p>\n"
 
 #: pages/news.py:103
 msgid "2015-07-13 - Build 1468 known issues"
-msgstr ""
+msgstr "2015-07-13 - Poznati problemi verzije 1468"
 
 #: pages/news.py:104
 msgid ""
@@ -199,11 +199,11 @@ msgid ""
 "<a href=\"https://emu.freenetproject.org/pipermail/devl/2015-July/038123.html\">on the mailing list</a>\n"
 "or <a href=\"http://localhost:8080/forumviewthread.htm?messageuuid=E544C7BB-5E5E-4159-83F8-AFC46C089329@h2RzPS4fEzP0zU43GAfEgxqK2Y55kEUNR01cWvYApI#E544C7BB-5E5E-4159-83F8-AFC46C089329@h2RzPS4fEzP0zU43GAfEgxqK2Y55kEUNR01cWvYApI\">on FMS</a>.\n"
 "</p>\n"
-msgstr ""
+msgstr "\n<p>\nNažalost, ovi problemi se mogu iskombinirati tako da čvor koristi 100% procesora da polako obradi\nvelike redove čekanja dok se u stvarnom vremenu ništa ne događa. Matthew (toad_) je\nveć objavio kako riješiti te probleme, možete ih naći\n<a href=\"https://emu.freenetproject.org/pipermail/devl/2015-July/038123.html\">na mailing listi</a>\nili <a href=\"http://localhost:8080/forumviewthread.htm?messageuuid=E544C7BB-5E5E-4159-83F8-AFC46C089329@h2RzPS4fEzP0zU43GAfEgxqK2Y55kEUNR01cWvYApI#E544C7BB-5E5E-4159-83F8-AFC46C089329@h2RzPS4fEzP0zU43GAfEgxqK2Y55kEUNR01cWvYApI\">na FMS-u</a>.\n</p>\n"
 
 #: pages/news.py:139
 msgid "2015-07-11 - Freenet 0.7.5 build 1468 released"
-msgstr ""
+msgstr "2015-07-11 - Freenet 0.7.5 verzija 1468 objavljena"
 
 #: pages/news.py:140
 msgid ""
@@ -262,11 +262,11 @@ msgid ""
 "<p>\n"
 "Thank you for using Freenet!\n"
 "</p>\n"
-msgstr ""
+msgstr "\n<p>\nFreenet tim je veoma sretan što objavljuje stabilan Freenet 0.7.5 verziju 1468.\n</p>\n\n<p>\n<b>Važne obavijesti</b>:\nvraćanje na ovu verziju sa verzije 1468 nije podržano; ako se želite vratiti na verziju 1467 bez gubitka redova za  postavljanje i preuzimanje, <b>prije</b> nadogradnje, pohranite sljedeće datoteke i direktorije: master.keys, persistent-temp-*/ i node.db4o (vidjeti https://wiki.freenetproject.org/Program_files). Imajte na umu da će pokrenuti transferi biti resetirani. Podsjetnik onima koji testiraju auto-update na 1468-pre4: molimo Vas da vratite svoj auto-update ključ na zadane vrijednosti. Jedan od načina kako to napraviti je da zaustavite Freenet, uklonite \"node.updater.URI\" liniju iz freenet.ini, i ponovno pokrenete Freenet.\n</p>\n\n<p>\nU ovoj objavi, drastično je promijenjen način na koji Freenet pohranjuje podatke lokalno. Više se ne koristi sad zastarjela db4o objektna pohrana. Zamjenjena je sa proizvodom toad-ovog ljeetnog rada - prilagođeni on-disk format, koji je znatno učinkovitiji i otporniji na korupciju. \n</p>\n\n<ul>\n<li>Prostor za preuzimanja je sad dodijeljn na početku, tako da strojevi s vrlo malo diskovnog prostora bi mogli ostati bez istog, što rezultira neuspješnim preuzimanjem dok se prostor ne oslobodi.</li>\n<li>CHKS će se promijeniti zbog popravljenih grešaka na metapodacima.</li>\n<li>Neki neslužbeni priključci će morati biti ažurirani zbog promjena u API-u. Sone već radi, kao i svi službeni priključci.</li>\n<li>Promjene u formatu reda bi trebale osigurati da jako rijetko izgubite cijeli red: učinak korupcije će gotovo uvijek biti lokalan.</li>\n<li>Postavljanja više kontejnera/stranica sad mogu biti trajna, čime je olakšano postavljanje velikih stranica.</li>\n<li>Fizička sigurnost lozinke je sad puno veća. (Enkripcija cijelog diska je i dalje preferirana.)</li>\n</ul>\n\n<ul>\n<li>Windows instalater je postavljen tako da se Freenet pokreće zajedno s Windowsima.</li>\n<li>Imamo i novu <a href=\"https://github.com/freenet/wintray\">Windows aplikaciju</a> s neki korisnim značajkama uključenim u instalaciju. Ako koristet postojeću aplikaciju, novu možete preuzeti <a href=\"https://downloads.freenetproject.org/alpha/installer/FreenetTray.exe.build01468\">ovdje</a>. Ne trebate ju pohraniti u određeni direktorij - probat će zadanu instalacijsku lokaciju, pa će Vas pitati ako ju ne nađe.</li>\n</ul>\n\n<ul>\n<li>Popis ključeva za preuzimanje je maknut sadownloads/listFetchKeys.txt u downloads/listKeys.txt.</li>\n<li>Popis ključeva za postavljanje je sad dostupan na uploads/listKeys.txt</li>\n</ul>\n\n<ul>\n<li>Gantrosov indeks je sad u početnim oznakama. Koristi isti software kao i Enzov indeks, koji se više ne ažurira.</li>\n</ul>\n\n<ul>\n<li>Zastarjeli i nekorišteni XMLLibrary i XMLSpider priključci više nisu službeno podržani. Još uvjek se učitavaju onima koji ih imaju dodane, ali se više ne prikazuju na stranici priključaka.</li>\n<li>U interesu što skorijeg izbacivanja ove verzije, nova verzija flog pomoćnika ne podržava izvoz i uvoz sa web sučelja. Kod starih sigurnosnih kopija nije radio s novom verzijom Freenet-a nakon micanja db4o. Ljudi umjesto toga mogu napraviti sigurnosnu kopiju \"plugins.floghelper.FlogHelper\" datoteka u direktoriju plugin-data. Zatim ih mogu kopirati u direktorij nakon postavljanja flog pomoćnika kako bi uvezli postavke.</li>\n<li>ThawIndexBrowser opet radi. Hvala saces!</li>\n</ul>\n\n<ul>\n<li>Fred prijevodi su ažurirani.</li>\n</ul>\n\n<ul>\n<li>Dodana dva seed čvora, jedan sponzoriran od meshnet.pl - poljska radio/meshnet darknet korisnička grupa, i drugi kojeg pokreće ArneBab. Hvala!</li>\n<li>Ažurirane postojeće seed čvor reference.</li>\n</ul>\n\n<p>\nHvala Vam što koristite Freenet!\n</p>\n"
 
 #: pages/news.py:198
 msgid "2015-06-27 - New Windows installer and tray app"
-msgstr ""
+msgstr "2015-06-27 - Novi Windows instalater i aplikacija"
 
 #: pages/news.py:199
 msgid ""
@@ -285,11 +285,11 @@ msgid ""
 "<li>Brazilian Portuguese</li>\n"
 "<li>Simplified Chinese</li>\n"
 "</ul>\n"
-msgstr ""
+msgstr "\n<p>\nWindows instalater je ažuriran s Java-om 8u45, <a href=\"https://github.com/freenet/wintray#freenet-tray-application\">novom aplikacijom</a> i prijevodima na:\n</p>\n\n<ul>\n\n<li>Češki</li>\n<li>Njemački</li>\n<li>Grčki</li>\n<li>Indonezijski</li>\n<li>Talijanski</li>\n<li>Poljski</li>\n<li>Brazilski portugalski</li>\n<li>Pojednostavljeni kineski</li>\n</ul>\n"
 
 #: pages/news.py:217
 msgid "2015-06-24 - Upcoming installer and testing releases"
-msgstr ""
+msgstr "2015-06-24 - Nadolazeže objave instalatera i testiranja"
 
 #: pages/news.py:218
 msgid ""
