@@ -187,7 +187,7 @@ your Friends. In practice most people start off with insecure mode and
 gradually add Friends, and hopefully turn off insecure mode once they have at
 least 10 Friends.
 """) + "\n\n" + _("""
-![](assets/img/Freenet-architecture-small.png)
+<img height="587" src="assets/img/Freenet-architecture-small.png" />
 
 *Figure 1: Visible Freenet connections*
 
@@ -210,7 +210,7 @@ these are that they are all done under the **Darknet** menu item or using the
 [http://127.0.0.1:8888/friends/](http://127.0.0.1:8888/friends/) link. Below
 is the thing that makes it all happen:
 
-![](assets/img/add_peers.png)
+<img height="295" src="assets/img/add_peers.png" />
 
 As you can see, there are three ways of getting a node reference from someone
 else:
@@ -261,7 +261,7 @@ his/her side, the connection **does not work**.
 When you have a number of connections, you can visit the Darknet-page. It
 should look something like this:
 
-![](assets/img/Freenet-darknet_peers.png)
+<img height="520" src="assets/img/Freenet-darknet_peers.png" />
 
 There are a number of status messages that can be seen here:
 
