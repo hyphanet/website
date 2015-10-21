@@ -256,6 +256,7 @@ margin: 25px 20px;
 @media screen and (max-width: 767px) {
   #suma_award_notice {
           visibility: hidden;
+          height: 0px;
   }
 }
 /*Donate button*/
@@ -263,6 +264,8 @@ margin: 25px 20px;
 @media screen and (max-width: 767px) {
   #donate_button {
           max-width: 50%;
+          margin-right: auto;
+          margin-left: auto;
   }
 }
 
