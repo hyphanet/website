@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# David <patheticcockroach@patheticcockroach.com>, 2015
 # Seth Esparo, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Freenet\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-11 19:21-0400\n"
-"PO-Revision-Date: 2015-10-12 18:22+0000\n"
-"Last-Translator: Seth Esparo\n"
+"PO-Revision-Date: 2015-10-17 19:06+0000\n"
+"Last-Translator: David <patheticcockroach@patheticcockroach.com>\n"
 "Language-Team: French (http://www.transifex.com/otf/freenet/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -781,19 +782,19 @@ msgstr ""
 
 #: pages/common.py:220
 msgid "Contact"
-msgstr ""
+msgstr "Contact"
 
 #: pages/common.py:247
 msgid "Press"
-msgstr ""
+msgstr "Presse"
 
 #: pages/common.py:248
 msgid "Support"
-msgstr ""
+msgstr "Support"
 
 #: pages/common.py:249
 msgid "IRC"
-msgstr ""
+msgstr "IRC"
 
 #: pages/common.py:250
 msgid ""
@@ -855,7 +856,7 @@ msgstr ""
 
 #: pages/donate.py:120
 msgid "Other amount:"
-msgstr ""
+msgstr "Autre montant :"
 
 #: pages/donate.py:139
 msgid ""
@@ -4196,7 +4197,7 @@ msgstr ""
 
 #: pages/help.py:1037
 msgid "Suggestions"
-msgstr ""
+msgstr "Suggestions"
 
 #: pages/help.py:1043
 msgid "Chat with us"
@@ -4224,4 +4225,4 @@ msgstr ""
 
 #: pages/help.py:1069
 msgid "Help"
-msgstr ""
+msgstr "Aide"
