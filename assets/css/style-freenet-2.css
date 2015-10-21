@@ -275,6 +275,7 @@ Any kind of usage allowed: https://css-tricks.com/license/ */
 	display: block;
 	height: 100%;
     padding: 1px;
+    padding-left: 2px;
     text-align: center;
     font-size: x-small;
 	   -webkit-border-top-right-radius: 8px;
