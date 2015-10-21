@@ -11,9 +11,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Freenet\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-11 19:21-0400\n"
-"PO-Revision-Date: 2015-10-15 02:59+0000\n"
-"Last-Translator: Danton Medrado\n"
+"POT-Creation-Date: 2015-10-21 11:58-0400\n"
+"PO-Revision-Date: 2015-10-21 15:58+0000\n"
+"Last-Translator: Steve Dougherty\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/otf/freenet/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,7 +27,7 @@ msgstr "Título da seção"
 
 #: pages/template.py:11
 msgid "Markdown text"
-msgstr "Rastreador de bugs"
+msgstr "Reduzir texto"
 
 #: pages/template.py:17
 msgid "Title"
@@ -36,6 +36,516 @@ msgstr "Título"
 #: pages/template.py:23
 msgid "Page Title"
 msgstr "Título da página"
+
+#: pages/about.py:11 pages/help.py:53 pages/index.py:145
+msgid "What is Freenet?"
+msgstr "O que é Freenet?"
+
+#: pages/about.py:14
+msgid ""
+"> _\"I worry about my child and the Internet all the time, even though she's too\n"
+">  young to have logged on yet. Here's what I worry about. I worry that 10 or\n"
+">  15 years from now, she will come to me and say 'Daddy, where were you when\n"
+">  they took freedom of the press away from the Internet?'\"_\n"
+"> --Mike Godwin, [Electronic Frontier Foundation](https://www.eff.org/)"
+msgstr "> _\"Eu me preocupo com minha filha e a Internet o tempo inteiro, mesmo sendo ela\n> ainda muito jovem para estar conectada. Eis o que me preocupa. Preocupa-me que\n> daqui a 10 ou 15 anos, ela virá até a mim e dirá 'Papai, onde você estava quando\n> eles tiraram a liberdade de imprensa da Internet?'\" _\n> --Mike Godwin, [Electronic Frontier Foundation](https://www.eff.org/)"
+
+#: pages/about.py:20
+msgid ""
+"Freenet is free software which lets you anonymously share files, browse and\n"
+"publish \"freesites\" (web sites accessible only through Freenet) and chat on\n"
+"forums, without fear of censorship. Freenet is decentralised to make it less\n"
+"vulnerable to attack, and if used in \"darknet\" mode, where users only connect to\n"
+"their friends, is very difficult to detect."
+msgstr "Freenet é um software livre que permite que você anonimamente compartilhe arquivos, navegue e\npublique \"freesites\" (websites acessíveis apenas através da Freenet) e converse em fóruns, sem\nmedo de censura. Freenet é descentralizado para torná-lo menos vulnerável a ataques, e se usado\nno modo \"darknet\", onde usuários conectam-se apenas a seus amigos, torna-se muito difícil de ser\ndetectado."
+
+#: pages/about.py:26
+msgid ""
+"Communications by Freenet nodes are encrypted and are routed through other\n"
+"nodes to make it extremely difficult to determine who is requesting the\n"
+"information and what its content is."
+msgstr "Comunicações através de nós Freenet são criptografadas e são roteadas através de outros\nnós para tornar extremamente difícil determinar quem está requisitando a informação\ne qual é o seu conteúdo."
+
+#: pages/about.py:30
+msgid ""
+"Users contribute to the network by giving bandwidth and a portion of their\n"
+"hard drive (called the \"data store\") for storing files. Files are\n"
+"automatically kept or deleted depending on how popular they are, with the\n"
+"least popular being discarded to make way for newer or more popular content.\n"
+"Files are encrypted, so generally the user cannot easily discover what is in\n"
+"his datastore, and hopefully can't be held accountable for it. Chat forums,\n"
+"websites, and search functionality, are all built on top of this distributed\n"
+"data store."
+msgstr "Usuários contribuem com a rede dando largura de banda e uma parte de seus\ndiscos rígidos (chamado de \"armazenamento de dados\") para armazenar arquivos.\nOs arquivos são automaticamente mantidos ou excluídos dependendo de quão\npopulares eles são, com o menos popular sendo descartado para dar lugar a um\nconteúdo mais recente ou mais popular. Os arquivos são criptografados, e de\nmodo geral, o usuário não pode facilmente descobrir o que está armazenado,\ne esperamos que não possa ser responsabilizado por conta disso. Fóruns de\ndiscussão, sites e funcionalidade de pesquisa, são todos construídos sobre\neste distribuído armazenamento de dados."
+
+#: pages/about.py:39
+msgid ""
+"Freenet has been downloaded over 2 million times since the project started,\n"
+"and used for the distribution of censored information all over the world\n"
+"including countries such as China and the Middle East. Ideas and concepts\n"
+"pioneered in Freenet have had a significant impact in the academic world. Our\n"
+"2000 paper \"Freenet: A Distributed Anonymous Information Storage and\n"
+"Retrieval System\" was the most cited computer science paper of 2000 according\n"
+"to Citeseer, and Freenet has also inspired papers in the worlds of law and\n"
+"philosophy. Ian Clarke, Freenet's creator and project coordinator,\n"
+"was selected as one of the top 100 innovators of 2003 by MIT's Technology\n"
+"Review magazine."
+msgstr "Freenet já foi baixado mais de 2 milhões de vezes desde que o projeto começou,\ne é utilizado para a distribuição de informações censuradas em todo o mundo\nincluindo países como a <a href=\"http://freenet-china.org\">China</a> e o Oriente Médio.  Ideias e conceitos pioneiros na Freenet têm tido um impacto significativo\nno mundo acadêmico. Nosso artigo 2000 \"Freenet: Um Sistema Anônimo de\nDistribuição, Armazenamento e Recuperação), foi o artigo mais citado do 2000,\nde acordo com o Citeseer, e Freenet também inspirou artigos no mundo do direito\ne da filosofia. Ian Clarke, o criador do Freenet e coordenador do projeto, foi \nselecionado como um dos 100 mais inovadores de 2003 pela revista MIT's\nTechnology Review."
+
+#: pages/about.py:50
+msgid ""
+"An important recent development, which very few other networks have, is the\n"
+"\"darknet\": By only connecting to people they trust, users can greatly reduce\n"
+"their vulnerability, and yet still connect to a global network through their\n"
+"friends' friends' friends and so on. This enables people to use Freenet even\n"
+"in places where Freenet may be illegal, makes it very difficult for\n"
+"governments to block it, and does not rely on tunneling to the \"free world\"."
+msgstr "Um importante desenvolvimento recente, que poucas outras redes possuem, é a\n\"darknet\": Por conectar-se apenas a pessoas nas quais confiam, os usuários podem\nreduzir significativamente sua vulnerabilidade, e ainda se conectar a uma rede global\natravés de amigos de seus amigos e assim por diante. Isso permite que as pessoas\nfaçam uso do Freenet mesmo em lugares onde Freenet seja ilegal, tornando muito\nmais difícil para os governos bloqueá-lo, e não depende de encapsulamento\npara o \"mundo livre\"."
+
+#: pages/about.py:64
+msgid "The Philosophy behind Freenet"
+msgstr "A Filosofia por trás da Freenet"
+
+#. Translators: do not translate the anchors such as "#prior_reading"
+#: pages/about.py:69
+msgid ""
+"*Written by Ian Clarke*\n"
+"\n"
+"1.  [A Disclaimer](#disclaimer)\n"
+"2.  [Suggested prior reading](#prior_reading)\n"
+"3.  [The importance of the Free flow of information](#free_flow_info)\n"
+"4.  [Censorship and freedom](#censor_freedom)\n"
+"5.  [The solution](#solution)\n"
+"6.  [Isn't censorship sometimes necessary?](#is_censorship_necessary)\n"
+"7.  [But why is anonymity necessary?](#why_anonymity)\n"
+"8.  [And what of copyright?](#copyright)\n"
+"9.  [But how will artists be rewarded for their work without copyright?](#reward)\n"
+"10.  [Alternatives to Copyright](#alternative)"
+msgstr "*Escrito por Ian Clarke*\n\n1.  [Comunicado de isenção](#disclaimer)\n2.  [Leitura prévia sugerida](#prior_reading)\n3.  [A importância do livre fluxo de informação](#free_flow_info)\n4.  [Censura e liberdade](#censor_freedom)\n5.  [A solução](#solution)\n6.  [Censura não é necessária as vezes?](#is_censorship_necessary)\n7.  [Mas, por que o anonimato é necessário?](#why_anonymity)\n8.  [E o direito autoral?](#copyright)\n9.  [Mas, como os artistas serão recompensados pelos seus trabalhos, sem o direito autoral?](#reward)\n10.  [Alternativas ao direito autoral](#alternative)"
+
+#: pages/about.py:83
+msgid ""
+"### 1\\. A Disclaimer\n"
+"\n"
+"There are many reasons why people get involved in the Freenet Project. Some\n"
+"share the views outlined in this document; some share variations of these views,\n"
+"which are also served by what we are trying to achieve; and some just enjoy the\n"
+"technical challenge. These are the ideas which motivated me to architect the\n"
+"system in the first place, but not necessarily the views that everyone involved\n"
+"in the Freenet project holds."
+msgstr "### 1\\. Comunicado de isenção\n\nHá muitas razões para que as pessoas se envolvam no Projeto Freenet. Algumas\ncompartilham as opiniões descritas neste documento; algumas compartilham variações\ndesses pontos de vista, os quais também se servem do que tentamos alcançar; e\nalgumas pessoas apenas desfrutam do desafio técnico. Estas são as ideias que me\nmotivaram a arquitetar o sistema em primeiro lugar, mas não necessariamente\nrepresenta o ponto de vista de todos os envolvidos no Projeto Freenet."
+
+#: pages/about.py:93
+msgid ""
+"### 2\\. Suggested prior reading\n"
+"\n"
+"For this document to make sense, you should probably know what Freenet is. You\n"
+"can get a good overview from [What is Freenet?](about.html#introduction)."
+msgstr "### 2\\. Leitura prévia sugerida\n\nPara que este documento faça algum sentido, você provavelmente tenha que saber o que é Freenet.\nVocê pode obter uma boa descrição na página [O que é Freenet?](about.html#introduction)."
+
+#: pages/about.py:99
+msgid ""
+"### 3\\. The importance of the Free flow of information\n"
+"\n"
+"Freedom of speech, in most western cultures, is generally considered to be one\n"
+"of the most important rights any individual might have. Why is the freedom to\n"
+"share ideas and opinions so important? There are several ways to answer this\n"
+"question."
+msgstr "### 3\\.  A importância do livre fluxo de informação\n\nLiberdade de expressão, na maioria das culturas ocidentais, é geralmente considerada como um\ndos mais importantes direitos que qualquer indivíduo pode ter. Por que a liberdade de\ncompartilhar ideias e opiniões é tão importante? Há várias maneiras de responder esta questão."
+
+#: pages/about.py:106
+msgid ""
+"#### 3.1 Communication is what makes us human\n"
+"\n"
+"One of the most obvious differences between mankind and the rest of the animal\n"
+"kingdom is our ability to communicate sophisticated and abstract concepts. While\n"
+"we constantly discover that animal's communication ability is more sophisticated\n"
+"than previously assumed, it is unlikely that any other animal approaches our own\n"
+"level of ability in this area."
+msgstr "#### 3.1 Comunicação é o que nos faz humanos\n\nUma das diferenças mais óbvias entre o ser humano e o restante do reino animal\né nossa habilidade para comunicar conceitos abstratos e sofisticados. Enquanto\ndescobrimos constantemente que a capacidade de comunicação dos animais é\nmais sofisticada do que anteriormente se supunha, é improvável que qualquer\noutro animal se aproxime do nosso nível de capacidade nesta área."
+
+#: pages/about.py:114
+msgid ""
+"#### 3.2 Knowledge is good\n"
+"\n"
+"Most people, given the option of knowing something and not knowing something,\n"
+"will choose to have more information rather than less. Wars have been won and\n"
+"lost over who was better-informed. This is because being better-informed allows\n"
+"us to make better decisions, and generally improve our ability to survive and be\n"
+"successful."
+msgstr "#### 3.2 Conhecimento é bom\n\nA maioria das pessoas, dada a opção de saber alguma coisa ou não saber nada,\nescolherá ter mais informações em vez de menos. Guerras têm sido ganhas e\nperdidas por quem estava melhor informado. Isso porque estando melhor\ninformados nos permite tomar melhores decisões, e, geralmente melhorar\nnossa capacidade de sobreviver e de ser bem sucedido."
+
+#: pages/about.py:122
+msgid ""
+"#### 3.3 Democracy assumes a well informed population\n"
+"\n"
+"Many people today live under democratic governments, and those who don't,\n"
+"probably want to. Democracy is an answer to the question of how to create\n"
+"leaders, while preventing them from abusing that power. It achieves this by\n"
+"giving the population the power to regulate their government through voting,\n"
+"yet the ability to vote does not necessarily mean that you live in a\n"
+"democratic country. For a population to regulate their government effectively\n"
+"it must know what their government is doing, they must be well informed. It\n"
+"is a feedback loop, but this loop can be broken if the government has the\n"
+"power to control the information the population has access to."
+msgstr "#### 3.3 Democracia pressupõe uma população bem informada\nMuita gente hoje vive sob governos democráticos, e aqueles que não,\nprovavelmente queiram. Democracia é uma resposta para a questão de\ncomo criar líderes, ao mesmo tempo que os impede-os de abusar deste\npoder. Ela consegue isso dando à população o poder de regular seu\ngoverno através do voto, mas, a capacidade de votar não significa\nnecessariamente que você viva em um país democrático. Para uma população\nregular seu governo de maneira eficaz, deve saber o que ele está fazendo,\ndeve estar bem informada. Trata-se de um laço de reação, mas este laço pode\nser quebrado se o governo tiver o poder de controlar as informações que a\npopulação tem acesso."
+
+#: pages/about.py:135
+msgid ""
+"### 4\\. Censorship and freedom\n"
+"\n"
+"Everyone values their freedom, in fact, many consider it so important that\n"
+"they will die for it. People like to think that they are free to form and\n"
+"hold whatever opinions they like, particularly in western countries. Consider\n"
+"now that someone had the ability to control the information you have access\n"
+"to. This would give them the ability to manipulate your opinions by hiding\n"
+"some facts from you, by presenting you with lies and censoring anything that\n"
+"contradicted those lies. This is not some Orwellian fiction, it is standard\n"
+"practice for most western governments to lie to their populations, so much\n"
+"so, that people now take it for granted, despite the fact that this\n"
+"undermines the very democratic principles which justify the government's\n"
+"existence in the first place."
+msgstr "### 4\\. Censura e liberdade\n\nTodo mundo valoriza sua liberdade, na verdade, muitos a consideram tão importante que\nmorrerão por ela. As pessoas gostam de pensar que são livres para formar e manter as\nopiniões que quiserem, particularmente nos países ocidentais. Imagine agora que alguém\ntenha a capacidade de controlar a informação que você acessa. Isso seria como lhe dar a\ncapacidade de manipular suas opiniões, ocultar fatos, apresentando-os como sendo\nmentiras e censurando qualquer coisa que contradiga essas mentiras. Isto não é uma ficção\nOrwelliana, é uma prática padrão para a maioria dos governos ocidentais, mentir para a\npopulação, tanto é assim, que agora as pessoas têm isso como certo, apesar do fato de que\nisso contraria os próprios princípios democráticos que justificam a existência do governo."
+
+#: pages/about.py:150
+msgid ""
+"### 5\\. The solution\n"
+"\n"
+"The only way to ensure that a democracy will remain effective is to ensure\n"
+"that the government cannot control its population's ability to share\n"
+"information, to communicate. So long as everything we see and hear is\n"
+"filtered, we are not truly free. Freenet's aim is to allow two or more people\n"
+"who wish to share information, to do so."
+msgstr "### 5\\. A solução\n\nA única maneira de garantir que uma democracia vai manter sua eficácia é assegurar\nque o governo não possa controlar a capacidade da população de compartilhar\ninformação, de comunicar-se. Absolutamente tudo o que vemos e ouvimos é filtrado,\nnão somos verdadeiramente livres. O objetivo da Freenet é permitir que duas ou mais\npessoas que queiram compartilhar informação, façam isso."
+
+#: pages/about.py:159
+msgid ""
+"### 6\\. Isn't censorship sometimes necessary?\n"
+"\n"
+"Of course no issue is black and white, and there are many who feel that\n"
+"censorship is a good thing in some circumstances. For example, in some\n"
+"European countries propagating information deemed to be racist is illegal.\n"
+"Governments seek to prevent people from advocating ideas which are deemed\n"
+"damaging to society. There are two answers to this however. The first is that\n"
+"you can't allow those in power to impose \"good\" censorship, without also\n"
+"enabling them to impose \"bad\" censorship. To impose any form of censorship a\n"
+"government must have the ability to monitor and thus restrict communication.\n"
+"There are already criticisms that the anti-racism censorship in many European\n"
+"countries is hampering legitimate historical analysis of events such as the\n"
+"second world war.\n"
+"\n"
+"The second argument is that this \"good\" censorship is counter-productive even\n"
+"when it does not leak into other areas. For example, it is generally more\n"
+"effective when trying to persuade someone of something to present them with\n"
+"the arguments against it, and then answer those arguments. Unfortunately,\n"
+"preventing people from being aware of the often sophisticated arguments used\n"
+"by racists, makes them vulnerable to those arguments when they do eventually\n"
+"encounter them.\n"
+"\n"
+"Of course the first argument is the stronger one, and would still hold-true\n"
+"even if you didn't accept the second. Basically, you either have censorship,\n"
+"or you don't. There is no middle-ground."
+msgstr ""
+
+#: pages/about.py:186
+msgid ""
+"### 7\\. But why is anonymity necessary?\n"
+"\n"
+"You cannot have freedom of speech without the option to remain anonymous.\n"
+"Most censorship is retrospective, it is generally much easier to curtail free\n"
+"speech by punishing those who exercise it afterward, rather than preventing\n"
+"them from doing it in the first place. The only way to prevent this is to\n"
+"remain anonymous. It is a common misconception that you cannot trust\n"
+"anonymous information. This is not necessarily true, using digital signatures\n"
+"people can create a secure anonymous pseudonym which, in time, people can\n"
+"learn to trust. Freenet incorporates a mechanism called \"subspaces\" to\n"
+"facilitate this."
+msgstr ""
+
+#: pages/about.py:208
+msgid "You cannot guarantee freedom of speech and enforce copyright law"
+msgstr "Você não pode garantir a liberdade de expressão cumprindo a lei de direitos autorais"
+
+#: pages/about.py:210
+msgid ""
+"It is for this reason that Freenet, a system designed to protect Freedom of\n"
+"Speech, must prevent enforcement of copyright."
+msgstr "É por esta razão que Freenet, um sistema concebido para proteger a Liberdade of Expressão, impede a aplicação dos direitos autorais."
+
+#: pages/about.py:214
+msgid ""
+"### 9\\. But how will artists be rewarded for their work without copyright?\n"
+"\n"
+"Firstly, even if copyright were the only way that artists could be rewarded\n"
+"for their work, then I would contend that freedom is more important than\n"
+"having professional artists (those who claim that we would have no art do not\n"
+"understand creativity: people will always create, it is a compulsion,\n"
+"the only question is whether they can do it for a living).\n"
+"\n"
+"Secondly, it could be questioned whether copyright is effective even now. The\n"
+"music industry is one of the most vocally opposed to enhancements in\n"
+"communication technology, yet according to many of the artists who should be\n"
+"rewarded by copyright, it is failing to do so. Rather it has allowed\n"
+"middle-men to gain control over the mechanisms of distribution, to the\n"
+"detriment of both artists and the public."
+msgstr ""
+
+#: pages/about.py:230
+msgid ""
+"### 10\\. Alternatives to Copyright\n"
+"\n"
+"Fortunately it won't come to this. There are many alternative ways to reward\n"
+"artists. The simplest is voluntary payment. This is an extension of the\n"
+"patronage system which was frequently used to reward artists prior to\n"
+"copyright, where a wealthy person would fund an artist to allow them to\n"
+"create full-time. The Internet permits an interesting extension of this idea,\n"
+"where rather than having just one wealthy patron, you could have hundreds of\n"
+"thousands, contributing small amounts of money over the Internet.\n"
+"\n"
+"We actually practice what we preach in this regard too, on the 15th of March\n"
+"2001 the Freenet Project started taking donations, and within a week we had\n"
+"collected over $1000\\."
+msgstr ""
+
+#: pages/about.py:199
+msgid ""
+"### 8\\. And what of copyright?\n"
+"\n"
+"Of course much of Freenet's publicity has centered around the issue of\n"
+"copyright, and thus I will speak to it briefly. The core problem with\n"
+"copyright is that enforcement of it requires monitoring of communications,\n"
+"and you cannot be guaranteed free speech if someone is monitoring everything\n"
+"you say. This is important, most people fail to see or address this point\n"
+"when debating the issue of copyright, so let me make it clear:\n"
+"<center>"
+msgstr ""
+
+#: pages/about.py:249
+msgid "People"
+msgstr "Pessoas"
+
+#: pages/about.py:252
+msgid ""
+"**Note:** This is an incomplete list, a large number of people have contributed\n"
+"to the project."
+msgstr ""
+
+#: pages/about.py:255
+msgid ""
+"### Ian Clarke\n"
+"\n"
+"Freenet is based on Ian's paper \"A Distributed Decentralised Information\n"
+"Storage and Retrieval System\". Ian started the Freenet Project around July of\n"
+"1999, and continues to coordinate the project. In his day job, Ian is the\n"
+"founder and CEO of [SenseArray](http://sensearray.com/)."
+msgstr ""
+
+#: pages/about.py:262
+msgid ""
+"### Matthew Toseland\n"
+"\n"
+"Matthew has been working on Freenet since before the 0.5 release. His work\n"
+"and that of others has resulted in dramatic improvements to the performance\n"
+"and stability of the network."
+msgstr ""
+
+#: pages/about.py:268
+msgid ""
+"### Oskar Sandberg\n"
+"\n"
+"Oskar was also one of the earliest contributors to the Freenet project,\n"
+"and has made some important theoretical breakthroughs that lead to the\n"
+"beginning of Freenet 0.7, see the papers page."
+msgstr ""
+
+#: pages/about.py:274
+msgid ""
+"### Florent Daignière\n"
+"\n"
+"Since 2003, Florent has improved various aspects of the software and\n"
+"performed the project's system administration. In his day job, he is the\n"
+"Technical Director of [Matta Consulting](https://www.trustmatta.com),\n"
+"a boutique security consultancy firm."
+msgstr ""
+
+#: pages/about.py:281
+msgid ""
+"### Scott Miller\n"
+"\n"
+"Scott is responsible for the implementation of much of the cryptography\n"
+"elements within Freenet."
+msgstr ""
+
+#: pages/about.py:286
+msgid ""
+"### Steven Starr\n"
+"\n"
+"Steven helps with administration of Freenet Project Inc, and is an advisor to\n"
+"the project on business and publicity matters."
+msgstr ""
+
+#: pages/about.py:291
+msgid ""
+"### Michael Rogers\n"
+"\n"
+"Michael has mostly contributed detailed simulations as part of the Google\n"
+"Summer of Code. He has been helpful in designing the [new transport layer](\n"
+"https://old-wiki.freenetproject.org/NewTransportLayer)."
+msgstr ""
+
+#: pages/about.py:297
+msgid ""
+"### Dave Baker\n"
+"\n"
+"Dave's main contribution has been [Freemail](documentation.html#freemail),\n"
+"his Summer of Code project to build a working email-over-freenet system,\n"
+"as well as some debugging and core work in various places."
+msgstr ""
+
+#: pages/about.py:303
+msgid ""
+"### Robert Hailey\n"
+"\n"
+"Robert has helped improve the speed and security of Freenet by finding two\n"
+"**major** bugs, and has recently contributed some code."
+msgstr ""
+
+#: pages/about.py:308
+msgid ""
+"### David Sowder\n"
+"\n"
+"David (Zothar) has helped the Freenet project as time permits and interest\n"
+"directs, including configuration, statistics and peer management via FCP,\n"
+"the FProxy stats page and Node 2 Node Messages (N2NM/N2NTMs).\n"
+"\n"
+"And **hundreds of others**, who either haven't asked to be added here, who\n"
+"prefer to remain nameless, or who we just haven't got around to thanking. Not to\n"
+"mention thousands of users, testers, and [donors](donate.html#sponsors)!"
+msgstr ""
+
+#: pages/about.py:323
+msgid "Papers"
+msgstr "Artigos"
+
+#: pages/about.py:326
+msgid ""
+"![](assets/img/pdf.icon.jpg)[Measuring Freenet in the Wild: Censorship-resilience under Observation](assets/papers/roos-pets2014.pdf) (PDF)\n"
+"Observations and measurements on the live Freenet network. Includes suggestions\n"
+"for improvement. This was submitted to PETS 2014."
+msgstr ""
+
+#: pages/about.py:330
+msgid ""
+"![](assets/img/pdf.icon.jpg)[The Dark Freenet](assets/papers/freenet-0.7.5-paper.pdf) (PDF)\n"
+"Detailed paper about the Freenet 0.7.5 network, as opposed to its routing\n"
+"algorithm, which is detailed in the below papers. Includes some new\n"
+"simulations. This has been submitted to PET 2010."
+msgstr ""
+
+#: pages/about.py:335
+msgid ""
+"![](assets/img/video.icon.png)[Video of Small World talk, Berlin, December 2005](http://player.vimeo.com/video/22488244?title=0&byline=0&portrait=0)  \n"
+"This is a video of a talk given by Ian Clarke and Oskar Sandberg at the Chaos\n"
+"Computer Congress in Berlin, December 2005, describing the (then) new\n"
+"architecture for Freenet 0.7\\. You can also download the [slideshow](\n"
+"assets/papers/ccc-slideshow.pdf.bz2), and the source for the Java [demo](\n"
+"assets/papers/ccc-freenet-demo.tar.bz2) (requires Java 1.5)."
+msgstr ""
+
+#: pages/about.py:342
+msgid ""
+"![](assets/img/pdf.icon.jpg)[Searching in a Small World](assets/papers/lic.pdf) (PDF)  \n"
+"Oskar Sandberg's licentiate thesis describing a simple decentralized\n"
+"mechanism for constructing small world networks that is inspired by Freenet's\n"
+"original design. Part II of the thesis describes the basis for the new\n"
+"Darknet architecture."
+msgstr ""
+
+#: pages/about.py:348
+msgid ""
+"![](assets/img/pdf.icon.jpg)[Distributed routing in Small World Networks](assets/papers/swroute.pdf) (PDF)  \n"
+"A paper by Oskar Sandberg describing the theoretical basis for the new\n"
+"\"Darknet\" routing mechanism employed by Freenet 0.7."
+msgstr ""
+
+#: pages/about.py:352
+msgid ""
+"![](assets/img/pdf.icon.jpg)Chaos Computer Congress Talk (slideshow)  \n"
+"This is a [slideshow](assets/papers/ccc-slideshow.pdf.bz2) for a talk given\n"
+"at the Chaos Computer Congress on 30th Dec 2005 in Berlin, Germany by Ian\n"
+"Clarke and Oskar Sandberg. It described the new \"darknet\" approach to be\n"
+"employed in Freenet 0.7\\. A Java demonstration to accompany the talk is [\n"
+"also](assets/papers/ccc-freenet-demo.tar.bz2) available."
+msgstr ""
+
+#: pages/about.py:359
+msgid ""
+"![](assets/img/pdf.icon.jpg)[Switching for a small world](assets/papers/vilhelm_thesis.pdf) (PDF)  \n"
+"A thesis by Vilhelm Verendel exploring ways to optimise the swapping algorithm."
+msgstr ""
+
+#: pages/about.py:362
+msgid ""
+"![](assets/img/pdf.icon.jpg)[Protecting Freedom of Information Online with Freenet](assets/papers/freenet-ieee.pdf) (PDF)  \n"
+"An IEEE Internet Computing article describing the Freenet architecture circa\n"
+"2002 - probably the best introduction to the theory behind Freenet."
+msgstr ""
+
+#: pages/about.py:366
+msgid ""
+"![](assets/img/pdf.icon.jpg)[FreeNet White Paper](assets/papers/ddisrs.pdf) (PDF)  \n"
+"Original white paper by Ian Clarke, Division of Informatics, University of\n"
+"Edinburgh 1999."
+msgstr ""
+
+#: pages/about.py:374
+msgid ""
+"![](assets/img/pdf.icon.jpg)[Attack Resistant Network Embeddings for Darknets](http://www.ukp.tu-darmstadt.de/fileadmin/user_upload/Group_P2P/share/publications/Attack_Resistant_Network_Embeddings_for_Darknets.pdf) (PDF)  \n"
+"A proposal for changing the darknet swapping algorithm which we are still\n"
+"considering (we have some doubts about long-term performance)."
+msgstr ""
+
+#: pages/about.py:378
+msgid ""
+"![](assets/img/pdf.icon.jpg)[A Contribution to Analyzing and Enhancing Darknet Routing](http://www.p2p.tu-darmstadt.de/publications/details/?no_cache=1&tx_bibtex_pi1%5Bpub_id%5D=TUD-CS-2013-0036) ([PDF](http://www.p2p.tu-darmstadt.de/fileadmin/user_upload/Group_P2P/share/INFOCOM.pdf))  \n"
+"A proposal for changing the routing algorithm which we are still considering\n"
+"(the worst case performance i.e. when a block has been lost may be\n"
+"unacceptable)."
+msgstr ""
+
+#: pages/about.py:383
+msgid ""
+"![](assets/img/pdf.icon.jpg)[Presentation: Towards \"Dark\" Social Networking Services (Strufe et al.)](https://www.icsi.berkeley.edu/icsi/sites/default/files/events/events_1303_strufe.pdf) (PDF)\n"
+"An interesting presentation by the group responsible for the two above papers."
+msgstr ""
+
+#: pages/about.py:386
+msgid ""
+"![](assets/img/pdf.icon.jpg)[Pisces: Anonymous Communication Using Social Networks](http://arxiv.org/abs/1208.6326)  \n"
+"An algorithm for setting up onion-like tunnels on darknets. We may implement\n"
+"this for Freenet 0.8/0.9."
+msgstr ""
+
+#: pages/about.py:390
+msgid ""
+"![](assets/img/pdf.icon.jpg)[Routing in the Dark: Pitch Black](http://grothoff.org/christian/pitchblack.pdf) ([citeseer](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.117.1543)) (PDF)  \n"
+"A paper describing some attacks on Freenet 0.7's location swapping algorithm.\n"
+"We have solutions for this but they are still being tested."
+msgstr ""
+
+#: pages/about.py:398
+msgid ""
+"The most up to date reference is of course [the source code](\n"
+"https://github.com/freenet/fred), but there is also some useful documentation on\n"
+"[the wiki](https://wiki.freenetproject.org/) (you may have to search a bit),\n"
+"and most implemented ideas have been discussed in detail on [the mailing\n"
+"lists](help.html#mailing-lists) at some point, more recently often in-Freenet\n"
+"forums such as FMS, or [the bug tracker](https://bugs.freenetproject.org/)."
+msgstr ""
+
+#: pages/about.py:409
+msgid "About"
+msgstr "Sobre"
 
 #: pages/contribute.py:8
 msgid "Developers"
@@ -64,904 +574,6 @@ msgstr "Rastreador de bugs"
 #: pages/contribute.py:35
 msgid "Contribute"
 msgstr "Contribuir"
-
-#: pages/news.py:21
-msgid ""
-"2015-09-17 - elliptic curves: using safe Bouncy Castle since November 2014"
-msgstr ""
-
-#: pages/news.py:22
-msgid ""
-"<p>\n"
-"A recent article outlines\n"
-"<a href=\"http://web-in-security.blogspot.ca/2015/09/practical-invalid-curve-attacks.html\">\n"
-"practical attacks against elliptic curves</a> to recover private keys\n"
-"which worked against the Bouncy Castle crypto provider used by Freenet\n"
-"until <a href=\"#build01466\">Build 1466</a> (released 2014-11-09) and\n"
-"against Java JCE\n"
-"<a href=\"http://www.oracle.com/technetwork/topics/security/cpujul2015-2367936.html\">\n"
-"until July 2015</a>. If you use the current stable\n"
-"<a href=\"#20150816-1470-release\">build 1470</a> on an updated Java, your\n"
-"node is not vulnerable to these attacks.\n"
-"</p>\n"
-"\n"
-"<p>\n"
-"On darknet the attacks required knowing both node references, so in\n"
-"darknet mode Freenet was only vulnerable to them if two friends\n"
-"connected to the same malicious third party or shared their node\n"
-"references in public. On opennet the target of these attacks would have\n"
-"been the seednodes because other opennet connections are neither\n"
-"persistent nor trusted.\n"
-"</p>\n"
-"\n"
-msgstr ""
-
-#: pages/news.py:47
-msgid "2015-08-16 - Freenet 0.7.5 build 1470 released"
-msgstr ""
-
-#: pages/news.py:48
-msgid ""
-"\n"
-"<p>\n"
-"This release fixes Freemail problems that prevented sending mail, and removes a\n"
-"compromised opennet seed node. Freemail also gains a new message link on the\n"
-"inbox page, links to senders' WoT profiles, and new translations:\n"
-"</p>\n"
-"\n"
-"<ul>\n"
-"<li>Czech</li>\n"
-"<li>Greek</li>\n"
-"<li>Spanish</li>\n"
-"<li>Finnish</li>\n"
-"<li>Hungarian</li>\n"
-"<li>Dutch</li>\n"
-"<li>Polish</li>\n"
-"<li>Portuguese (Portugal)</li>\n"
-"<li>Serbian</li>\n"
-"<li>Turkish</li>\n"
-"</ul>\n"
-"\n"
-"<p>\n"
-"To clarify, the CHK metadata bug fixes in 1468 are added as a new compatibility\n"
-"mode that is not yet the default. Compatibility with 1416 keys is available.\n"
-"</p>\n"
-"\n"
-"<p>\n"
-"The Fred Spanish translation has comprehensive updates as well.\n"
-"</p>\n"
-msgstr ""
-
-#: pages/news.py:79
-msgid "2015-08-07 - Windows translation update"
-msgstr ""
-
-#: pages/news.py:80
-msgid ""
-"\n"
-"<p>\n"
-"The Windows installer and tray app have updated translations. The installer is\n"
-"newly translated into Portuguese (Portugal) and Serbian. The tray app is newly\n"
-"translated into Spanish, Persian, Portuguese (Portugal), and Serbian.\n"
-"This also fixes a tray app problem where translations for Brazilian Portuguese\n"
-"and Simplified Chinese were not used.\n"
-"</p>\n"
-msgstr ""
-
-#: pages/news.py:91
-msgid "2015-07-19 - Freenet 0.7.5 build 1469 released"
-msgstr ""
-
-#: pages/news.py:92
-msgid ""
-"\n"
-"<p>\n"
-"This release fixes two bugs introduced in build 1468. One caused very\n"
-"slow operation and high CPU usage with large files and physical\n"
-"security levels above None (i.e. Freenet-level disk encryption). The\n"
-"other prevented interactive usage (e.g. freesite browsing) while\n"
-"finishing large downloads or starting large uploads.\n"
-"</p>\n"
-msgstr ""
-
-#: pages/news.py:103
-msgid "2015-07-13 - Build 1468 known issues"
-msgstr ""
-
-#: pages/news.py:104
-msgid ""
-"\n"
-"<p>\n"
-"Despite being in some form of prerelease for over 6 months, and two weeks of\n"
-"being available as a release candidate, we didn't catch some bugs in time. There\n"
-"are two main issues:\n"
-"</p>\n"
-"\n"
-"<ol>\n"
-"<li>\n"
-"Because the reimplementation of the client layer without db4o did not include\n"
-"prioritization of FEC decoding / encoding, large bulk download or upload queues\n"
-"can starve the realtime queues, making them unresponsive.\n"
-"(See <a href=\"https://github.com/freenet/fred/pull/381\">PR #381</a>.)\n"
-"</li>\n"
-"<li>\n"
-"Due to our misunderstanding of when the cryptography library we use - Bouncy\n"
-"Castle - included which fixes, we did not realize that version 1.51, used by\n"
-"build 1468, has severe performance problems with the way we use it to implement\n"
-"disk encryption. Build 1469 will upgrade to Bouncy Castle 1.52, which fixes this\n"
-"problem. It is only an issue when the physical security level is set to \"Low\" or\n"
-"higher. It does not happen when physical security is set to \"None.\"\n"
-"(See <a href=\"https://github.com/freenet/fred/pull/382\">PR #382</a>.)\n"
-"</li>\n"
-"</ol>\n"
-"\n"
-"<p>\n"
-"Sadly, these problems can combine to make a node use 100% CPU to slowly process\n"
-"bulk queues while the realtime queue does not respond. Matthew (toad_) has\n"
-"already released a snapshot to fix these problems, which you can find\n"
-"<a href=\"https://emu.freenetproject.org/pipermail/devl/2015-July/038123.html\">on the mailing list</a>\n"
-"or <a href=\"http://localhost:8080/forumviewthread.htm?messageuuid=E544C7BB-5E5E-4159-83F8-AFC46C089329@h2RzPS4fEzP0zU43GAfEgxqK2Y55kEUNR01cWvYApI#E544C7BB-5E5E-4159-83F8-AFC46C089329@h2RzPS4fEzP0zU43GAfEgxqK2Y55kEUNR01cWvYApI\">on FMS</a>.\n"
-"</p>\n"
-msgstr ""
-
-#: pages/news.py:139
-msgid "2015-07-11 - Freenet 0.7.5 build 1468 released"
-msgstr ""
-
-#: pages/news.py:140
-msgid ""
-"\n"
-"<p>\n"
-"The Freenet team is very happy to announce the stable release of Freenet 0.7.5 build 1468.\n"
-"</p>\n"
-"\n"
-"<p>\n"
-"<b>Important notes</b>: downgrading from build 1468 is not supported; if you want to go back to build 1467 without losing the upload and download queues, <b>before</b> upgrading, back-up the following files and directories: master.keys, persistent-temp-*/, and node.db4o (see https://wiki.freenetproject.org/Program_files ). Please note that running transfers will be restarted from scratch too. A reminder to those testing auto-update to 1468-pre4: please restore your auto-update key to the default. One way to do this is to stop Freenet, remove the \"node.updater.URI\" line from freenet.ini, and start Freenet again.\n"
-"</p>\n"
-"\n"
-"<p>\n"
-"In this release, the way Freenet stores data locally has changed drastically by no longer using the now-deprecated db4o object storage. It is replaced with the product of toad's summer of work - a custom on-disk format that is much more robust against corruption and more efficient.\n"
-"</p>\n"
-"\n"
-"<ul>\n"
-"<li>Existing unfinished downloads and uploads will be imported to a new format, which requires restarting them from the beginning.</li>\n"
-"<li>Space for downloads is now all allocated at the start, so machines very low on disk space may run out, which causes downloads to temporarily fail until more space is available.</li>\n"
-"<li>CHKs will change due to metadata bugfixes.</li>\n"
-"<li>Some unofficial plugins will need to be updated because of API changes. Sone already works, as do all official plugins.</li>\n"
-"<li>The queue format changes should make it extremely rare to lose the entire queue: the impact of corruption will almost always be localized.</li>\n"
-"<li>Multi-container / site uploads can now be persistent, making it more practical to upload large sites.</li>\n"
-"<li>Passworded physical security is now much stronger. (Full-disk encryption is still preferable.)</li>\n"
-"</ul>\n"
-"\n"
-"<ul>\n"
-"<li>The Windows installer now defaults to starting Freenet on login.</li>\n"
-"<li>There is a <a href=\"https://github.com/freenet/wintray\">new Windows tray app</a> with some useful features that is included with new installations. If you are using the existing Windows tray app you can download the new one <a href=\"https://downloads.freenetproject.org/alpha/installer/FreenetTray.exe.build01468\">here</a>. No need to put it in a specific directory - it will try the default installation location and prompt if it can't find it.</li>\n"
-"</ul>\n"
-"\n"
-"<ul>\n"
-"<li>The list of download keys moved from downloads/listFetchKeys.txt to downloads/listKeys.txt.</li>\n"
-"<li>A list of upload keys is now available at uploads/listKeys.txt</li>\n"
-"</ul>\n"
-"\n"
-"<ul>\n"
-"<li>Gantros' index is now in the default bookmarks. It uses the same software as Enzo's index, which is no longer updated.</li>\n"
-"</ul>\n"
-"\n"
-"<ul>\n"
-"<li>The obsolete and deprecated XMLLibrary and XMLSpider plugins are no longer officially supported. They will still load for those who have them added, but are no longer shown on the plugin page.</li>\n"
-"<li>In the interests of releasing this build more quickly, the new version of FlogHelper does not support exporting and importing backups from the web UI. The old backup code did not work with the new Freenet version after removing db4o. People can instead back up \"plugins.floghelper.FlogHelper\" files in the plugin-data directory. These can be dropped into the directory after unloading FlogHelper to restore a backup.</li>\n"
-"<li>ThawIndexBrowser works again. Thanks saces!</li>\n"
-"</ul>\n"
-"\n"
-"<ul>\n"
-"<li>Fred translations are updated.</li>\n"
-"</ul>\n"
-"\n"
-"<ul>\n"
-"<li>Add two seed nodes, one sponsored by meshnet.pl - the Polish radio/meshnet darknet users group, and another run by ArneBab. Thanks!</li>\n"
-"<li>Update existing seed node references.</li>\n"
-"</ul>\n"
-"\n"
-"<p>\n"
-"Thank you for using Freenet!\n"
-"</p>\n"
-msgstr ""
-
-#: pages/news.py:198
-msgid "2015-06-27 - New Windows installer and tray app"
-msgstr ""
-
-#: pages/news.py:199
-msgid ""
-"\n"
-"<p>\n"
-"The Windows installer is updated with Java 8u45, a <a href=\"https://github.com/freenet/wintray#freenet-tray-application\">new tray application</a>, and is newly translated into:\n"
-"</p>\n"
-"\n"
-"<ul>\n"
-"<li>Czech</li>\n"
-"<li>German</li>\n"
-"<li>Greek</li>\n"
-"<li>Indonesian</li>\n"
-"<li>Italian</li>\n"
-"<li>Polish</li>\n"
-"<li>Brazilian Portuguese</li>\n"
-"<li>Simplified Chinese</li>\n"
-"</ul>\n"
-msgstr ""
-
-#: pages/news.py:217
-msgid "2015-06-24 - Upcoming installer and testing releases"
-msgstr ""
-
-#: pages/news.py:218
-msgid ""
-"\n"
-"<p>\n"
-"This weekend we will release an updated Windows installer for build 1467 along\n"
-"with a <a href=\"https://github.com/freenet/wintray/blob/master/README.md\">new Windows tray application</a>.\n"
-"We will also release 1468-pre4, which if all goes according to plan will be the\n"
-"last prerelease before a stable release two weeks later.\n"
-"</p>\n"
-"\n"
-"<p>\n"
-"If you'd like to help with translations before then please do so! The\n"
-"Windows-related resources are:\n"
-"</p>\n"
-"<ul>\n"
-"<li><a href=\"https://www.transifex.com/projects/p/freenet/resource/windows-installer/\">Windows installer</a></li>\n"
-"<li><a href=\"https://www.transifex.com/projects/p/freenet/resource/windows-tray-commands/\">Windows tray commands</a></li>\n"
-"<li><a href=\"https://www.transifex.com/projects/p/freenet/resource/windows-tray-common/\">Windows tray common</a></li>\n"
-"<li><a href=\"https://www.transifex.com/projects/p/freenet/resource/windows-tray-crash/\">Windows tray crash</a></li>\n"
-"<li><a href=\"https://www.transifex.com/projects/p/freenet/resource/windows-tray-preferences/\">Windows tray preferences</a></li>\n"
-"</ul>\n"
-"<p>\n"
-"Some of the Windows tray resources contain many strings tagged notranslate; to\n"
-"hide these search for Tags: translate.\n"
-"</p>"
-msgstr ""
-
-#: pages/news.py:243
-msgid ""
-"2015-05-22 - UN Report: Encryption and Anonymity Deserve Strong Protection"
-msgstr ""
-
-#: pages/news.py:244
-msgid ""
-"The UN Special Rapporteur published [a report on encryption, anonymity,\n"
-"and the human rights framework](http://www.ohchr.org/EN/Issues/FreedomOpinion/Pages/CallForSubmission.aspx)\n"
-"([doc](http://www.ohchr.org/EN/HRBodies/HRC/RegularSessions/Session29/Documents/A.HRC.29.32_AEV.doc),\n"
-"[companion pdf](http://www.ohchr.org/Documents/Issues/Opinion/Communications/States/Selected_References_SR_Report.pdf)).\n"
-"From the summary:\n"
-"\n"
-"> encryption and anonymity enable individuals to exercise their rights to\n"
-"freedom of opinion and expression in the digital age.\n"
-"\n"
-"The reports concludes that\n"
-"\n"
-"> 63\\. The use of encryption and anonymity tools and better digital literacy\n"
-"should be encouraged. The Special Rapporteur, recognizing that the value\n"
-"of encryption and anonymity tools depends on their widespread adoption,\n"
-"encourages States, civil society organizations and corporations to engage\n"
-"in a campaign to bring encryption by design and default to users around\n"
-"the world and, where necessary, to ensure that users at risk be provided\n"
-"the tools to exercise their right to freedom of opinion and expression securely.\n"
-"\n"
-"We with the Freenet Project welcome the official recognition of our mission\n"
-"as important part of securing human rights in the digital age and we invite\n"
-"everyone - especially reporters and civil society organizations - to install\n"
-"Freenet and its communication tools to provide a point of contact for users at risk."
-msgstr ""
-
-#: pages/news.py:269
-msgid "2015-04-14 - SUMA Award Acceptance Speech (video)"
-msgstr ""
-
-#: pages/news.py:270
-msgid ""
-"The video from the talk given when Freenet [received the SUMA Award 2015](#20150211)\n"
-"for being the best project against surveillance and espionage on the Internet\n"
-"is available on [the Award page](http://www.searchstudies.org/de/suma2015.html)\n"
-"and [on YouTube](https://youtu.be/dZpsBSPsHDI?t=5m56s):\n"
-"\n"
-"<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/dZpsBSPsHDI\"\n"
-"frameborder=\"0\" allowfullscreen=\"\"></iframe>\n"
-"\n"
-"The Freenet Project receives the SUMA award and Arne Babenhauserheide accepts\n"
-"the prize as representative of the project. Arne then presents the current\n"
-"capabilities of Freenet to regain confidential and pseudonymous speech\n"
-"on the Internet, along with a vision of how whistleblowers could use Freenet\n"
-"to contact journalists without spilling their identity."
-msgstr ""
-
-#: pages/news.py:285
-msgid "2015-03-29 - New Linux/Unix/OS X installer"
-msgstr ""
-
-#: pages/news.py:286
-msgid ""
-"The installer for Linux, Unix, and Mac OS X is updated to better detect "
-"Java."
-msgstr ""
-
-#: pages/news.py:289
-msgid "2015-03-15 - Progress toward build 1468"
-msgstr ""
-
-#: pages/news.py:290
-msgid ""
-"Build 1468 continues to make progress toward release.\n"
-"\n"
-"What is done:\n"
-"\n"
-"*   Replace the unreliable db4o database. (Yay!)\n"
-"*   Create more flexible Windows tray app.\n"
-"*   Update Windows installer translations for Finnish and French.\n"
-"*   Add Windows installer translations for Czech, German, Italian, Polish, Brazilian Portuguese, and Simplified Chinese.\n"
-"*   Improve the reliability of starting Freenet under changing Java installations on Linux/OS X/POSIX.\n"
-"*   Update WebOfTrust with bug fixes and a new API.\n"
-"\n"
-"What remains to be done:\n"
-"\n"
-"*   <del>Finish reviewing the synchronous plugin communication API. Review is split between [GitHub](https://github.com/freenet/fred/pull/319) and more recently the [development mailing list](https://emu.freenetproject.org/pipermail/devl/2015-February/037986.html).</del> -- Done 2015-03-28\n"
-"*   Update all plugins (KeyUtils and WebOfTrust are already ready) for the API breakage in this version.\n"
-"*   Add a .NET 3.5 install to the Windows installer, along with the new tray app. (This is necessary for it to always work for those not on Windows 7.)\n"
-"*   Everything on [this list](https://bugs.freenetproject.org/roadmap_page.php?version_id=85).\n"
-"\n"
-"Because this is such a large release new installers for build 1467 will be released shortly to test those changes. Once everything on this list is complete, there will be a release candidate, then finally the stable release."
-msgstr ""
-
-#: pages/news.py:311
-msgid "2015-03-14 - Freenet translation joins Localization Lab"
-msgstr ""
-
-#: pages/news.py:312
-msgid ""
-"The Freenet project has joined the [Localization Lab](http://www.localizationlab.org) organization on Transifex. This allows a larger team of translators, translating into more languages, and access to paid support.\n"
-"\n"
-"If this transition has caused any problems please let us know!"
-msgstr ""
-
-#: pages/news.py:317
-msgid "2015-02-15 - New Windows tray app for testing"
-msgstr ""
-
-#: pages/news.py:318
-msgid ""
-"The Windows tray application distributed as of build 1467 is written in the automation scripting language AutoHotKey. It has not been well-maintained and is also often falsely detected by antivirus by virtue of the language it uses. We are pleased to announce a new Windows tray application written in C# which has some additional features:\n"
-"\n"
-"*   Allow choosing which browser to launch.\n"
-"*   Allow starting Freenet without the tray on startup.\n"
-"*   Allow opening the Downloads folder from the menu.\n"
-"*   Give a more actionable response to crashes.\n"
-"*   Can be hidden while keeping Freenet running.\n"
-"*   Can be located other places than in the Freenet installation folder.\n"
-"\n"
-"If all goes well we plan for this tray app to be distributed with build 1468. Testing is appreciated! If you'd like to try it for yourself you can find it [here](https://downloads.freenetproject.org/FreenetTray-testing-eaf31ea.exe). Please let us know how it goes and if you'd like to see any changes."
-msgstr ""
-
-#: pages/news.py:330
-msgid "2015-02-11 - Freenet received the SUMA Award 2014/15"
-msgstr ""
-
-#: pages/news.py:331
-msgid ""
-"<div style=\"float: right\"><img src=\"assets/img/suma2015_badge_transparent.png\" alt=\"SUMA Award 2014/15\"/></div>\n"
-"\n"
-"At this year's [congress](http://searchstudies.org/de/suma2015.html)\n"
-"of [SUMA-EV](http://suma-ev.de/en/index.html), association for free access to knowledge,\n"
-"the [SUMA award](http://suma-awards.de/en/index.html) was awarded in the venerable\n"
-"Karl-H.-Ditze lecture hall of the Hamburg University of Applied Sciences.\n"
-"The topic of the award, was the surveillance scandal, revealed by whistleblower\n"
-"Edward Snowden: 'protection against total surveillance'. From submissions of about\n"
-"50 projects for the SUMA award 2014/15 the panel of SUMA-EV selected the Freenet\n"
-"Project as the winner. The prize money of 2500 euro will be used like regular [donations](donate.html)\n"
-"to fund our one paid developer.\n"
-"\n"
-"> ![](assets/img/news/suma_award_2015_handover.jpg)  \n"
-"> Wolfgang Sander-Beuermann with Arne Babenhauserheide, long-term Freenet contributor, as representative of the award winner. Photo: Michael Christen in Hamburg, Lizenz: CC0."
-msgstr ""
-
-#: pages/news.py:347
-msgid "1st January 2015 - apt-get over Freenet"
-msgstr ""
-
-#: pages/news.py:348
-msgid ""
-"Developers of the privacy-focused Debian derivative Mempo report that it can download updates over Freenet! For details, see their page on [Apt over Freenet](http://deb.mempo.org/#install_apt_freenet).\n"
-"\n"
-"Key Points:\n"
-"\n"
-"*   use Freenet to distribute online updates\n"
-"*   most secure hosting option\n"
-"\n"
-"That means it is now possible to get reproducibly built kernels checked by anonymous (and therefore hard to pressure) contributors and update them over Freenet without disclosing that you use them. This applies to the packages provided by Mempo - other apt-get activity like installing GIMP is still public. It would be possible to host the entire Debian repository in Freenet, but this is not yet on the agenda for Mempo because this other activity does not disclose the potentially sensitive information that you want additional privacy.\n"
-"\n"
-"> The practical cool result now, is that Mempo repository can not be censored, DDoSed or taken offline, despite having just 1 tiny server (or no server at all) - rfreeman (one of the mempo developers)"
-msgstr ""
-
-#: pages/news.py:360
-msgid "2014-11-23 - Freenet 0.7.5 build 1467 released"
-msgstr ""
-
-#: pages/news.py:361
-msgid ""
-"This release fixes a bug introduced in build 1466 which can erase the list of plugins to load when Freenet starts if it crashes. If you are affected by this bug and can no longer connect, try adding the UPnP or JSTUN plugins again.\n"
-"\n"
-"</a>\n"
-"\n"
-"<a name=\"build01467\">This release also has updated Finnish, French, Dutch, and Brazilian Portuguese translations thanks to</a> [volunteers on Transifex](https://www.transifex.com/projects/p/freenet/).\n"
-"\n"
-"The Windows installer is updated:\n"
-"\n"
-"*   It now disables the Java installer's sponsor offers. Thanks artart78!\n"
-"*   It gained a Finnish translation. Thanks oselotti!\n"
-"\n"
-"Thank you for using Freenet!\n"
-"\n"
-"- Steve Dougherty"
-msgstr ""
-
-#: pages/news.py:377
-msgid "2014-11-09 - Freenet 0.7.5 build 1466 released"
-msgstr ""
-
-#: pages/news.py:378
-msgid ""
-"This release is planned to be the second-to-last version of Freenet to support Java 6\\. The version after this one will refuse to upgrade unless running on Java 7 or later. Support for this behavior is part of a larger effort to allow separate official update channels - stable, testing, and unstable - as well as make it easier to publish unofficial update channels and further improve deployment security.\n"
-"\n"
-"Highlights for this build:\n"
-"\n"
-"*   Add Hungarian Windows installer translation. Thanks drezzium!*   Allow hiding the Java version End Of Life alert. (I'm sorry for the excessive annoyingness. Still - please upgrade Java!)</a>\n"
-"*   Upgrades to the next version (that is, when running this build's upgrade code) should no longer get [stuck in an upgrade loop](https://bugs.freenetproject.org/view.php?id=3208).\n"
-"*   Increase opennet peer limit to 142 peers. This now has [more math behind it](https://github.com/freenet/fred/pull/286) and will change when network parameters are adjusted.\n"
-"*   Add more opennet seed nodes. Thanks saces and juiceman!\n"
-"*   This build will be mandatory starting 2014-11-16, because old nodes will reject new nodes with more than 110 peers. Updates only take a few hours to spread, so this should only cause short term disruption.\n"
-"\n"
-"Additionally Matthew's (toad_'s) summer work on a custom on-disk format is done. This release lays the groundwork to include the results of that work [in the next release](http://127.0.0.1:8888/USK@pxtehd-TmfJwyNUAW2Clk4pwv7Nshyg21NNfXcqzFv4,LTjcTWqvsq3ju6pMGe9Cqb3scvQgECG81hRdgj5WO4s,AQACAAE/blog/23/Content-626611C.html). This is designed for less disk activity and better behavior when corrupted.\n"
-"\n"
-"This release coincides with the 25th anniversary of the demolition of the Berlin wall (Mauerfall), which marked the beginning of the end of a large censorship and surveillance regime. May censorship be demolished everywhere!\n"
-"\n"
-"Thank you for using Freenet!\n"
-"\n"
-"- Steve Dougherty and Arne Babenhauserheide\n"
-"\n"
-"The link to http://127.0.0.1:8888 works for default Freenet nodes, but will not work for some setups. If you have a nonstandard setup, you should know the correct URL to use."
-msgstr ""
-
-#: pages/news.py:401
-msgid "2013-08-05 - Statement on the recent Freedom Hosting (Tor) bust"
-msgstr ""
-
-#: pages/news.py:402
-msgid ""
-"According to [the press](http://arstechnica.com/tech-policy/2013/08/alleged-tor-hidden-service-operator-busted-for-child-porn-distribution/), half of the hidden sites on Tor are now down, apparently connected to the arrest of a man allegedly behind Freedom Hosting, a hosting service for Tor hidden services. Some of these sites were said to offer illegal content and were apparently run by the FBI for two weeks, using a Javascript-based browser exploit to try to find their users.\n"
-"\n"
-"This has had no effect on Freenet and could not happen on Freenet. Tor hidden services are centralised: A hidden service on Tor is run by a single server somewhere, and if this server is found, the whole site can be shut down, or compromised. In this case half the hidden sites on Tor were run on the same group of servers! See the [Tor blog](https://blog.torproject.org/blog/hidden-services-current-events-and-freedom-hosting) and [mailing list](https://lists.torproject.org/pipermail/tor-announce/2013-August/000089.html).\n"
-"\n"
-"On Freenet, anything you upload is distributed across the network across thousands of separate nodes all over the world, and will remain available for as long as it remains sufficiently popular: Freenet is a distributed data storage network designed to prevent censorship, provide anonymity and be hard to block. To see more information on the difference between Freenet and Tor, see [our explanation in the FAQ](https://freenetproject.org/faq.html#tor).\n"
-"\n"
-"Also, the Javascript exploit mentioned would not have worked on Freenet because Freenet removes Javascript by default. The Tor Browser Bundle has an option to block Javascript. We recommend that you enable this if you use Tor.\n"
-"\n"
-"Furthermore, there was no attack against Tor itself: As far as we know, no users of the major \"darknets\" (Freenet, Tor and I2P) has been traced by attacking the networks, by law enforcement or anyone else. In this case, it appears to have been user error, not a problem with Tor itself. Similarly on Freenet, users need to be careful, and Freenet will often tell you when you are about to do something risky.\n"
-"\n"
-"Having said that, Freenet's security is not perfect, and there are some known (but theoretical) weaknesses, so it might be possible for an attacker with relatively limited resources to trace individual Freenet contributors. Most of Freenet's weaknesses can be addressed by making long-lived connections with people that you trust, i.e. building a friend-to-friend \"darknet\". This functionality is already a part of the regular Freenet software, but we need more users who use Freenet in friend-to-friend mode to improve anonymity.\n"
-"\n"
-"We have planned further improvements, which should greatly improve security (censorship resistance, anonymity and resistance to blocking), speed and usability. The expanding online surveillance from both governments (e.g. PRISM) and private corporations clearly show that tools such as Freenet, TOR and I2P are essential for a healthy democracy.\n"
-"\n"
-"Please help us secure freedom of access to information by contributing to the Freenet-project with code, donations, translations, or just by running a node or creating content (anonymously)!\n"
-"\n"
-"Volunteers - especially developers - are always very welcome. Feel free to contact us, through [IRC online chat](help.html#irc), [the mailing lists](help.html#mailing-lists), or on Freenet itself in the \"freenet\" board on FMS.\n"
-"\n"
-"For press enquiries please contact [Ian Clarke](mailto:ian@freenetproject.org)."
-msgstr ""
-
-#: pages/news.py:423
-msgid ""
-"2013-06-26 - Freenet gets a second paid developer to fix the Web of Trust!"
-msgstr ""
-
-#: pages/news.py:424
-msgid ""
-"Long time coder xor (also known as p0s) has agreed to work, in a paid role, for us on fixing the Web of Trust plugin. This is a crucial component of many Freenet plugins:\n"
-"\n"
-"*   **Sone**, an anonymous social network / microblogging tool.\n"
-"*   **Freemail**, a private and untraceable email over Freenet system.\n"
-"*   A filesharing system as yet unnamed which a student is working on.\n"
-"*   Extensions to Infocalypse, being worked on by another student, a tool for managing source code which is vital to developing software over Freenet.\n"
-"\n"
-"See the Freenet Social Networking Guide for how to load the first 2 plugins.\n"
-"\n"
-"xor is well qualified for the role as he wrote most of the current code in the Web of Trust. The immediate priority will be to improve stability and performance by implementing a new more efficient FCP API. After that further optimisations are planned.\n"
-"\n"
-"Freenet relies on unpaid volunteer developers as well as a few key paid developers. Toad (Matthew Toseland) is returning to full time work for Freenet after a study break, although he is off to university in October, and xor is just starting working for Freenet.\n"
-"\n"
-"Improving the Web of Trust should substantially improve the performance of the key tools mentioned above and may be used by more in the future. Thanks to all our developers and donors!"
-msgstr ""
-
-#: pages/news.py:440
-msgid ""
-"2012-09-11 - Response to the University of Hawaii's \"Experimental Study of "
-"Accountability in Existing Anonymous Networks\""
-msgstr ""
-
-#: pages/news.py:441
-msgid ""
-"Some academics [have published](http://www.ee.hawaii.edu/~dong/traceback/index.htm) a couple of attacks against Freenet, and they appear to be working on more as part of a project to unmask anonymous Freenet users. Build 1411, which was released on the 3rd of September, makes their main attack largely impractical. Nonetheless, we are working on improvements to both make this attack harder and to solve some of the [other known attacks](https://freenetproject.org/faq.html#attack). You can learn more about the attacks and our solution to them on our chief developer's [personal blog](http://amphibian.dyndns.org/flogmirror/#20120911-security).\n"
-"\n"
-"We welcome all work to understand Freenet's security and expose any problems with it, although we would suggest that next time they might let us know before they make the paper public, as is common practice in the security community.\n"
-"\n"
-"Finally, the long term solution is to build a darknet, a Freenet network where people only connect directly to people they trust. That means, get your friends using Freenet, and then add them as Friends on your node. When enough people use Freenet and form darknet connections, we won't need opennet, and this makes all attacks dramatically harder. We will work on making this easier and faster in the near future, as well as fixing the Pitch Black attack."
-msgstr ""
-
-#: pages/news.py:448
-msgid ""
-"2011-04-13 - Freenet top anti-censorship tool in survey of Chinese users!"
-msgstr ""
-
-#: pages/news.py:449
-msgid ""
-"A "
-"[report](http://www.freedomhouse.org/sites/default/files/inline_images/Censorship.pdf)"
-" by [Freedom House](http://freedomhouse.org/) surveyed users in Azerbaijan, "
-"Burma, "
-"[China](http://www.freedomhouse.org/sites/default/files/LOtF_China.pdf) and "
-"Iran for their perceptions of and preferred tools for bypassing local "
-"government censorship. In China, Freenet was the only anti-censorship tool "
-"to achieve 5 stars, and the third most widely used overall."
-msgstr ""
-
-#: pages/news.py:457
-msgid "News"
-msgstr "Notícias"
-
-#: pages/index.py:34
-msgid "Avoid Censorship"
-msgstr "Evite Censura"
-
-#: pages/index.py:34
-msgid ""
-"Freenet is a platform for censorship-resistant communication and publishing.\n"
-"It helps you to remain anonymous, and communicate without fear."
-msgstr "Freenet é uma plataforma de comunicação e publicação resistente à censura.\nEle ajuda você a manter o anonimato, e comunicar-se sem medo."
-
-#: pages/index.py:38
-msgid "Host a Website"
-msgstr "Hospede um Site"
-
-#: pages/index.py:38
-msgid ""
-"Need a website nobody can take over? That is hosted for free? That is very\n"
-"resistant to attacks? Publish it on Freenet!"
-msgstr "Precisa de um site que ninguém pode assumir? Que está hospedado de graça? Que é muito\nresistente a ataques? Publique-o na Freenet!"
-
-#: pages/index.py:42 pages/index.py:176
-msgid "Share Files"
-msgstr "Compartilhe Arquivos"
-
-#: pages/index.py:42
-msgid "Upload a file to Freenet and anyone with the secret URL can access it."
-msgstr "Faça o upload de um arquivo para Freenet e qualquer pessoa com o URL secreto pode acessá-lo."
-
-#: pages/index.py:45
-msgid "Meet New People"
-msgstr "Conheça Novas Pessoas"
-
-#: pages/index.py:45
-msgid ""
-"People from all over the world use Freenet to communicate. Some of them do so\n"
-"anonymously. You might never hear their voices in the open."
-msgstr "Pessoas de todo o mundo usam Freenet para se comunicar. Alguns deles faze-no\nanonimamente. Você nunca pode ouvir as suas vozes no aberto."
-
-#: pages/index.py:49
-msgid "Experiment with Exciting New Technology"
-msgstr "Experimente com uma Nova e Excitante Tecnologia  "
-
-#: pages/index.py:49
-msgid ""
-"Freenet is on the cutting edge of distributed routing research. The data\n"
-"storage provided by Freenet is a proving ground for a number of new\n"
-"distributed systems."
-msgstr "Freenet está na vanguarda da pesquisa de roteamento distribuído. O armazenamento\nde dados fornecidos pela Freenet é um campo de provas para uma série de novos\nsistemas distribuídos."
-
-#: pages/index.py:54
-msgid "Improve the World"
-msgstr "Melhore o Mundo"
-
-#: pages/index.py:54
-msgid ""
-"By using Freenet from the \"free world\" you help people in oppressive regimes\n"
-"share information. The more people use Freenet the easier it will be to\n"
-"obtain. Using it will also be less suspicious."
-msgstr "Usando Freenet do \"mundo livre\" você ajuda pessoas em regimes opressores\na compartilhar informação. Quanto mais as pessoas usam Freenet mais fácil será\nobter. Usando-a será também menos suspeito."
-
-#: pages/index.py:127 pages/index.py:221
-msgid "Share, Chat, Browse. Anonymously."
-msgstr "Compartilhe, Converse, Navegue. Anonimamente."
-
-#: pages/index.py:128 pages/index.py:222
-msgid "Download Freenet"
-msgstr "Baixar Freenet"
-
-#: pages/index.py:129
-msgid "Please Donate"
-msgstr "Por favor, doe"
-
-#: pages/index.py:130
-msgid ""
-"Your donations pay for our server and developer. Our current funds will last"
-msgstr "Suas doações pagam o nosso servidor e desenvolvedor. Os nossos fundos atuais durarão"
-
-#: pages/index.py:133
-msgid "Donate!"
-msgstr "Doe!"
-
-#: pages/index.py:145 pages/about.py:11 pages/help.py:53
-msgid "What is Freenet?"
-msgstr "O que é Freenet?"
-
-#: pages/index.py:164
-msgid "Secret Identity"
-msgstr "Identidade Secreta"
-
-#: pages/index.py:165
-msgid "Create a secret identity so nobody knows who you are."
-msgstr "Crie uma identidade secreta para que ninguém saiba quem é você."
-
-#: pages/index.py:167
-msgid "Browse Webpages"
-msgstr "Navegue por Páginas da Web"
-
-#: pages/index.py:168
-msgid ""
-"Freenet is home to webpages with topics ranging from programming to "
-"sustainable living."
-msgstr "Freenet é o lar de páginas da web com temas que vão desde a programação à vida sustentável."
-
-#: pages/index.py:170
-msgid "Forums"
-msgstr "Fóruns"
-
-#: pages/index.py:171
-msgid "Ask questions and exchange ideas."
-msgstr "Faça perguntas e troque ideias."
-
-#: pages/index.py:173
-msgid "Publish"
-msgstr "Publicação"
-
-#: pages/index.py:174
-msgid "Publish information while remaining anonymous."
-msgstr "Publique informações permanecendo anônimo."
-
-#: pages/index.py:177
-msgid "Easy upload & download."
-msgstr "Fácil download & upload"
-
-#: pages/index.py:179
-msgid "Platform"
-msgstr "Plataforma"
-
-#: pages/index.py:180
-msgid "Write your own applications on the Freenet platform."
-msgstr "Escreva seus próprios aplicativos na plataforma Freenet."
-
-#: pages/index.py:182
-msgid "Resistant"
-msgstr "Resistente"
-
-#: pages/index.py:183
-msgid "Freenet has been designed to be resistant to attacks and censorship."
-msgstr "Freenet foi projetado para resistir a ataques e censura."
-
-#: pages/index.py:185
-msgid "Distributed"
-msgstr "Distribuído"
-
-#: pages/index.py:186
-msgid "No central points of failure, efficient caching of popular content."
-msgstr "Não há pontos centrais de falha, eficiente cache de conteúdo popular."
-
-#: pages/index.py:188
-msgid "Proven"
-msgstr "Comprovado"
-
-#: pages/index.py:189
-msgid "Based on solid research and in practical use for 15 years."
-msgstr "Baseado em sólidas pesquisas e no uso prático por 15 anos."
-
-#: pages/index.py:230
-msgid "Latest News"
-msgstr "Últimas Notícias"
-
-#: pages/index.py:242
-msgid "Overview"
-msgstr "Visão geral"
-
-#: pages/common.py:212
-msgid "Freenet rabbit logo"
-msgstr "Logo coelho Freenet"
-
-#: pages/common.py:220
-msgid "Contact"
-msgstr "Contato"
-
-#: pages/common.py:247
-msgid "Press"
-msgstr "Imprensa"
-
-#: pages/common.py:248
-msgid "Support"
-msgstr "Apoio"
-
-#: pages/common.py:249
-msgid "IRC"
-msgstr "IRC"
-
-#: pages/common.py:250
-msgid ""
-"Content on this website is licensed under the GNU Free Documentation License"
-" and may be available under other licenses."
-msgstr "O conteúdo deste site está licenciado sob a GNU Free Documentation License e podem estar disponíveis sob outras licenças."
-
-#: pages/common.py:251
-msgid "Design by DesignBootstrap"
-msgstr "Projetado por DesignBootstrap"
-
-#: pages/donate.py:8 pages/donate.py:224
-msgid "Donate"
-msgstr "Doar"
-
-#: pages/donate.py:11
-msgid ""
-"#### Financial Status\n"
-"\n"
-"The project's current balance is **$MONEYBALANCE**. (updated twice a day)\n"
-"This will pay for the project's one paid developer (we have many volunteers) and\n"
-"the server for roughly another **MONEYMONTHS months** (MONEYDAYS days)."
-msgstr "#### Status Financeiro\n\nO saldo atual do projeto é **$MONEYBALANCE**. (atualizado duas vezes por dia)\nIsso irá pagar a um programador que recebe do projeto (temos muitos voluntários) e\no servidor por cerca de outros **MONEYMONTHS meses** (MONEYDAYS dias)."
-
-#: pages/donate.py:17
-msgid ""
-"#### Why does The Freenet Project need donations?\n"
-"\n"
-"Although countless people have given their time and skill to the project since\n"
-"its inception, The Freenet Project relies on your donations both to support\n"
-"those developers working full-time on this increasingly complex project, and to\n"
-"cover hardware (this server) and administrative costs (i.e. domain\n"
-"registrations and certificates). We would also like to start a legal defense\n"
-"fund should the need arise.\n"
-"\n"
-"Everyone involved is keenly interested in the future of The Freenet Project and\n"
-"you can be assured donations have been and will continue to be used wisely. All\n"
-"support is very much appreciated."
-msgstr "#### Por que o Projeto Freenet precisa de doações?\n\nApesar de inúmeras pessoas doarem o seu tempo e habilidade para o projeto desde\na sua criação, o Projeto Freenet depende de suas doações para apoiar\nos desenvolvedores que trabalham em tempo integral neste projeto cada vez mais complexo, e para\ndespesa de hardware (este servidor) e custos administrativos (ou seja, domínio\nregistros e certificados). Nós também gostaríamos de começar um fundo de defesa legal\npara casos de necessidade.\n\nTodos os envolvidos são muito interessados no futuro do projeto Freenet e\nvocê pode ter certeza de que as doações têm sido e continuarão a ser usadas com sabedoria. Todo\napoio é muito apreciado."
-
-#: pages/donate.py:30
-msgid ""
-"#### How can I donate?\n"
-"\n"
-"You have several options:\n"
-"\n"
-"* You can become a Freenet project \"member\" for a **recurring payment** of $5 or\n"
-"more per month. The advantage of this is that it gives the project a more stable\n"
-"and dependable income which makes it easier to make long term commitments to\n"
-"potential developers - right now it is often difficult to say whether we will be\n"
-"able to pay a developer the following month although so-far we have been\n"
-"fortunate. You can become a member by clicking on this button (you will need a\n"
-"[PayPal](https://www.paypal.com/) account):"
-msgstr "#### Como eu posso doar?\n\nVocê tem várias opções:\n\n* Você pode se tornar um \"membro\" do projeto Freenet por um **pagamento recorrente** de US $5 ou\nmais por mês. A vantagem desta opção é que dá ao projeto mais estabilidade\ne renda confiável que torna mais fácil para fechar compromissos a longo prazo com\npotenciais desenvolvedores - como estamos, é cada vez mais difícil dizer se seremos\ncapazes de pagar um desenvolvedor no mês seguinte, mas até agora, temos sido\nafortunados. Você pode se tornar um membro clicando neste botão (você vai precisar de uma\nconta (https //www.paypal.com/)[PayPal]:"
-
-#: pages/donate.py:92
-msgid "* You can *donate once* via Paypal by clicking on this button:"
-msgstr "* Você pode *doar uma vez* via Paypal clicando neste botão:"
-
-#: pages/donate.py:120
-msgid "Other amount:"
-msgstr "Outro valor:"
-
-#: pages/donate.py:139
-msgid ""
-"* * *\n"
-"\n"
-"![](assets/img/BC_nBG_48px.png) You can now donate to the Freenet Project using [bitcoin](http://www.bitcoin.org/).  \n"
-"\n"
-"Send your donations to the account: "
-msgstr ""
-
-#: pages/donate.py:145
-msgid ""
-"Alternatively, please contact us: <donate@freenetproject.org> if you cannot use\n"
-"any of these payment methods.\n"
-"\n"
-"You can also donate to the project by purchasing items from the Freenet\n"
-"[store](http://www.zazzle.com/freenetproject)."
-msgstr "Alternativamente, por favor, contate-nos: <donate@freenetproject.org> Se você não puder usar\nqualquer um desses métodos de pagamento.\n\nVocê também pode doar para o projeto através da compra de itens da Freenet\n[loja](http://www.zazzle.com/freenetproject)."
-
-#: pages/donate.py:151
-msgid ""
-"## How can I be sure that my donation will be used appropriately?\n"
-"\n"
-"All donations go to The Freenet Project Inc, a non-profit 501c3 corporation with\n"
-"the following mission statement:\n"
-"\n"
-"> The specific purpose of this corporation is to assist in developing and\n"
-"> disseminating technological solutions to further the open and democratic\n"
-"> distribution of information over the Internet or its successor electronic\n"
-"> communication networks or organizations. It is also the purpose of this\n"
-"> organization to guarantee consenting individuals the free, unmediated,\n"
-"> and unimpeded reception and impartation of all intellectual, scientific,\n"
-"> literary, social, artistic, creative, human rights, and cultural\n"
-"> expressions, opinions and ideas without interference or limitation by or\n"
-"> service to state, private, or special interests. It is also the purpose of\n"
-"> this organization to educate the world community and be an advocate of\n"
-"> these purposes.\n"
-"\n"
-"All funds received will only be utilized to advance our Mission Statement, and\n"
-"are administered at the direction of the Freenet Project Board."
-msgstr ""
-
-#: pages/donate.py:176
-msgid "Sponsors"
-msgstr "Patrocinadores"
-
-#: pages/donate.py:179
-msgid ""
-"The following persons, organisations and companies have generously sponsored\n"
-"this project through donations or discounts on hardware and services:\n"
-"\n"
-"*   [John Pozadzides](http://onemansblog.com/)  \n"
-"John is the founder of HTMLHelp.com and former Vice President of Sales for SAVVIS Communications. John has donated $10,000 to the Freenet Project to fund ongoing development of the Freenet software.\n"
-"*   [Web Hosting Search](http://www.webhostingsearch.com/)  \n"
-"WebHostingSearch is a top rated guide to various world wide web hosting companies. Mr Chris Reynolds and the friendly team behind this company have become one of our proud promoters.\n"
-"*   [John Gilmore](http://www.toad.com/gnu/)  \n"
-"John Gilmore is one of the founders of the Electronic Frontier Foundation, the Cypherpunks mailing list, and Cygnus Solutions. He created the alt.* hierarchy in Usenet and is a major contributor to the GNU project. He has donated $10,000.\n"
-"*   [Bytemark Hosting](http://bytemark.co.uk/)  \n"
-"Bytemark provides discounted hosting facilities to Freenet and comes with our highest recommendation.\n"
-"*   [zoozle Torrent Search](http://www.zoozle.org/)  \n"
-"zoozle is a search engine for BitTorrent and P2P networks. It is also available in [german](http://www.zoozle.net/ \"deutsche Torrent Suchmaschine\") and [french](http://www.zoozle.biz/ \"le moteur\n"
-"\t\t\t\t\t\t\tfrançais de recherche pour BitTorrent\"). They have donated $1,500.\n"
-"*   [YourKit, LLC](http://www.yourkit.com/)  \n"
-"YourKit is kindly supporting Freenet by providing us a free of charge license of its full-featured Java Profiler. YourKit, LLC is the creator of innovative and intelligent tools for profiling Java applications. You can learn more about [YourKit Java Profiler](http://www.yourkit.com/java/profiler/index.jsp) following the link.\n"
-"*   [Google](http://www.google.com/)  \n"
-"Google [open source](http://code.google.com/) have three times donated $18,000, as well as paying for students to work with us over summer since 2006 through the [Google Summer of Code](http://code.google.com/soc/) program.\n"
-"*   [Finanzvergleich](http://www.finanzvergleich.de)  \n"
-"Finanzvergleich is a German financial services comparison site, who have contributed $1,500.\n"
-"*   [TopDir](http://www.topdir.de \"Top Directory\")  \n"
-"TopDir is a human edited web directory with informations about interesting topics and websites in the German language.\n"
-"*   [All Filters](http://www.allfilters.com/ \"All Filters\") - another generous sponsor.\n"
-"*   [A German Site for Gardening and Plants](http://www.gartenheinz.de \"A German Site for Gardening and Plants\") - another generous sponsor.\n"
-"*   [Simple Car Rentals](http://www.simple-carrentals.com/)  \n"
-"Simple Car Rentals has generously supported Freenet by helping us with some of our administrative expenses over the years.\n"
-"*   [The Sports Den](http://www.sportsden.ie/)  \n"
-"The Sports Den has a wide variety of outdoor sports equipment, they are based in Ireland but can ship to the UK, Europe, and the United States.\n"
-"*   ![](assets/img/logo_intellij_idea.png)  \n"
-"[JetBrains](https://www.jetbrains.com) has kindly provided a license for the Ultimate edition of [IntelliJ IDEA](https://www.jetbrains.com/idea).\n"
-"\n"
-"Freenet Project Inc does not necessarily endorse the business activities of all of the companies listed on this page.\n"
-"\n"
-"Donation inquiries please contact [Ian Clarke](mailto:donate@freenetproject.org)"
-msgstr ""
-
-#: pages/donate.py:218
-msgid "Store"
-msgstr "Loja"
-
-#: pages/donate.py:234
-msgid "Thanks for your donation!"
-msgstr "Obrigado pela sua doação!"
-
-#: pages/donate.py:237
-msgid ""
-"We have received your generous donation. It will be used at the direction of\n"
-"the Freenet Board to advance the interests of the Freenet Project. If you\n"
-"have any questions about how your donation will be used please contact Ian\n"
-"Clarke: <donate@freenetproject.org>."
-msgstr ""
-
-#: pages/donate.py:247
-msgid "Thanks"
-msgstr "Obrigado"
 
 #: pages/documentation.py:10 pages/documentation.py:1003
 msgid "Documentation"
@@ -2081,512 +1693,6 @@ msgstr ""
 #: pages/documentation.py:997
 msgid "Wiki"
 msgstr "Wiki"
-
-#: pages/about.py:14
-msgid ""
-"> _\"I worry about my child and the Internet all the time, even though she's too\n"
-">  young to have logged on yet. Here's what I worry about. I worry that 10 or\n"
-">  15 years from now, she will come to me and say 'Daddy, where were you when\n"
-">  they took freedom of the press away from the Internet?'\"_\n"
-"> --Mike Godwin, [Electronic Frontier Foundation](https://www.eff.org/)"
-msgstr ""
-
-#: pages/about.py:20
-msgid ""
-"Freenet is free software which lets you anonymously share files, browse and\n"
-"publish \"freesites\" (web sites accessible only through Freenet) and chat on\n"
-"forums, without fear of censorship. Freenet is decentralised to make it less\n"
-"vulnerable to attack, and if used in \"darknet\" mode, where users only connect to\n"
-"their friends, is very difficult to detect."
-msgstr ""
-
-#: pages/about.py:26
-msgid ""
-"Communications by Freenet nodes are encrypted and are routed through other\n"
-"nodes to make it extremely difficult to determine who is requesting the\n"
-"information and what its content is."
-msgstr ""
-
-#: pages/about.py:30
-msgid ""
-"Users contribute to the network by giving bandwidth and a portion of their\n"
-"hard drive (called the \"data store\") for storing files. Files are\n"
-"automatically kept or deleted depending on how popular they are, with the\n"
-"least popular being discarded to make way for newer or more popular content.\n"
-"Files are encrypted, so generally the user cannot easily discover what is in\n"
-"his datastore, and hopefully can't be held accountable for it. Chat forums,\n"
-"websites, and search functionality, are all built on top of this distributed\n"
-"data store."
-msgstr ""
-
-#: pages/about.py:39
-msgid ""
-"Freenet has been downloaded over 2 million times since the project started,\n"
-"and used for the distribution of censored information all over the world\n"
-"including countries such as China and the Middle East. Ideas and concepts\n"
-"pioneered in Freenet have had a significant impact in the academic world. Our\n"
-"2000 paper \"Freenet: A Distributed Anonymous Information Storage and\n"
-"Retrieval System\" was the most cited computer science paper of 2000 according\n"
-"to Citeseer, and Freenet has also inspired papers in the worlds of law and\n"
-"philosophy. Ian Clarke, Freenet's creator and project coordinator,\n"
-"was selected as one of the top 100 innovators of 2003 by MIT's Technology\n"
-"Review magazine."
-msgstr ""
-
-#: pages/about.py:50
-msgid ""
-"An important recent development, which very few other networks have, is the\n"
-"\"darknet\": By only connecting to people they trust, users can greatly reduce\n"
-"their vulnerability, and yet still connect to a global network through their\n"
-"friends' friends' friends and so on. This enables people to use Freenet even\n"
-"in places where Freenet may be illegal, makes it very difficult for\n"
-"governments to block it, and does not rely on tunneling to the \"free world\"."
-msgstr ""
-
-#: pages/about.py:64
-msgid "The Philosophy behind Freenet"
-msgstr "A Filosofia por trás da Freenet"
-
-#. Translators: do not translate the anchors such as "#prior_reading"
-#: pages/about.py:69
-msgid ""
-"*Written by Ian Clarke*\n"
-"\n"
-"1.  [A Disclaimer](#disclaimer)\n"
-"2.  [Suggested prior reading](#prior_reading)\n"
-"3.  [The importance of the Free flow of information](#free_flow_info)\n"
-"4.  [Censorship and freedom](#censor_freedom)\n"
-"5.  [The solution](#solution)\n"
-"6.  [Isn't censorship sometimes necessary?](#is_censorship_necessary)\n"
-"7.  [But why is anonymity necessary?](#why_anonymity)\n"
-"8.  [And what of copyright?](#copyright)\n"
-"9.  [But how will artists be rewarded for their work without copyright?](#reward)\n"
-"10.  [Alternatives to Copyright](#alternative)"
-msgstr ""
-
-#: pages/about.py:83
-msgid ""
-"### 1\\. A Disclaimer\n"
-"\n"
-"There are many reasons why people get involved in the Freenet Project. Some\n"
-"share the views outlined in this document; some share variations of these views,\n"
-"which are also served by what we are trying to achieve; and some just enjoy the\n"
-"technical challenge. These are the ideas which motivated me to architect the\n"
-"system in the first place, but not necessarily the views that everyone involved\n"
-"in the Freenet project holds."
-msgstr ""
-
-#: pages/about.py:93
-msgid ""
-"### 2\\. Suggested prior reading\n"
-"\n"
-"For this document to make sense, you should probably know what Freenet is. You\n"
-"can get a good overview from [What is Freenet?](about.html#introduction)."
-msgstr ""
-
-#: pages/about.py:99
-msgid ""
-"### 3\\. The importance of the Free flow of information\n"
-"\n"
-"Freedom of speech, in most western cultures, is generally considered to be one\n"
-"of the most important rights any individual might have. Why is the freedom to\n"
-"share ideas and opinions so important? There are several ways to answer this\n"
-"question."
-msgstr ""
-
-#: pages/about.py:106
-msgid ""
-"#### 3.1 Communication is what makes us human\n"
-"\n"
-"One of the most obvious differences between mankind and the rest of the animal\n"
-"kingdom is our ability to communicate sophisticated and abstract concepts. While\n"
-"we constantly discover that animal's communication ability is more sophisticated\n"
-"than previously assumed, it is unlikely that any other animal approaches our own\n"
-"level of ability in this area."
-msgstr ""
-
-#: pages/about.py:114
-msgid ""
-"#### 3.2 Knowledge is good\n"
-"\n"
-"Most people, given the option of knowing something and not knowing something,\n"
-"will choose to have more information rather than less. Wars have been won and\n"
-"lost over who was better-informed. This is because being better-informed allows\n"
-"us to make better decisions, and generally improve our ability to survive and be\n"
-"successful."
-msgstr ""
-
-#: pages/about.py:122
-msgid ""
-"#### 3.3 Democracy assumes a well informed population\n"
-"\n"
-"Many people today live under democratic governments, and those who don't,\n"
-"probably want to. Democracy is an answer to the question of how to create\n"
-"leaders, while preventing them from abusing that power. It achieves this by\n"
-"giving the population the power to regulate their government through voting,\n"
-"yet the ability to vote does not necessarily mean that you live in a\n"
-"democratic country. For a population to regulate their government effectively\n"
-"it must know what their government is doing, they must be well informed. It\n"
-"is a feedback loop, but this loop can be broken if the government has the\n"
-"power to control the information the population has access to."
-msgstr ""
-
-#: pages/about.py:135
-msgid ""
-"### 4\\. Censorship and freedom\n"
-"\n"
-"Everyone values their freedom, in fact, many consider it so important that\n"
-"they will die for it. People like to think that they are free to form and\n"
-"hold whatever opinions they like, particularly in western countries. Consider\n"
-"now that someone had the ability to control the information you have access\n"
-"to. This would give them the ability to manipulate your opinions by hiding\n"
-"some facts from you, by presenting you with lies and censoring anything that\n"
-"contradicted those lies. This is not some Orwellian fiction, it is standard\n"
-"practice for most western governments to lie to their populations, so much\n"
-"so, that people now take it for granted, despite the fact that this\n"
-"undermines the very democratic principles which justify the government's\n"
-"existence in the first place."
-msgstr ""
-
-#: pages/about.py:150
-msgid ""
-"### 5\\. The solution\n"
-"\n"
-"The only way to ensure that a democracy will remain effective is to ensure\n"
-"that the government cannot control its population's ability to share\n"
-"information, to communicate. So long as everything we see and hear is\n"
-"filtered, we are not truly free. Freenet's aim is to allow two or more people\n"
-"who wish to share information, to do so."
-msgstr ""
-
-#: pages/about.py:159
-msgid ""
-"### 6\\. Isn't censorship sometimes necessary?\n"
-"\n"
-"Of course no issue is black and white, and there are many who feel that\n"
-"censorship is a good thing in some circumstances. For example, in some\n"
-"European countries propagating information deemed to be racist is illegal.\n"
-"Governments seek to prevent people from advocating ideas which are deemed\n"
-"damaging to society. There are two answers to this however. The first is that\n"
-"you can't allow those in power to impose \"good\" censorship, without also\n"
-"enabling them to impose \"bad\" censorship. To impose any form of censorship a\n"
-"government must have the ability to monitor and thus restrict communication.\n"
-"There are already criticisms that the anti-racism censorship in many European\n"
-"countries is hampering legitimate historical analysis of events such as the\n"
-"second world war.\n"
-"\n"
-"The second argument is that this \"good\" censorship is counter-productive even\n"
-"when it does not leak into other areas. For example, it is generally more\n"
-"effective when trying to persuade someone of something to present them with\n"
-"the arguments against it, and then answer those arguments. Unfortunately,\n"
-"preventing people from being aware of the often sophisticated arguments used\n"
-"by racists, makes them vulnerable to those arguments when they do eventually\n"
-"encounter them.\n"
-"\n"
-"Of course the first argument is the stronger one, and would still hold-true\n"
-"even if you didn't accept the second. Basically, you either have censorship,\n"
-"or you don't. There is no middle-ground."
-msgstr ""
-
-#: pages/about.py:186
-msgid ""
-"### 7\\. But why is anonymity necessary?\n"
-"\n"
-"You cannot have freedom of speech without the option to remain anonymous.\n"
-"Most censorship is retrospective, it is generally much easier to curtail free\n"
-"speech by punishing those who exercise it afterward, rather than preventing\n"
-"them from doing it in the first place. The only way to prevent this is to\n"
-"remain anonymous. It is a common misconception that you cannot trust\n"
-"anonymous information. This is not necessarily true, using digital signatures\n"
-"people can create a secure anonymous pseudonym which, in time, people can\n"
-"learn to trust. Freenet incorporates a mechanism called \"subspaces\" to\n"
-"facilitate this."
-msgstr ""
-
-#: pages/about.py:208
-msgid "You cannot guarantee freedom of speech and enforce copyright law"
-msgstr "Você não pode garantir a liberdade de expressão cumprindo a lei de direitos autorais"
-
-#: pages/about.py:210
-msgid ""
-"It is for this reason that Freenet, a system designed to protect Freedom of\n"
-"Speech, must prevent enforcement of copyright."
-msgstr "É por esta razão que Freenet, um sistema concebido para proteger a Liberdade of Expressão, impede a aplicação dos direitos autorais."
-
-#: pages/about.py:214
-msgid ""
-"### 9\\. But how will artists be rewarded for their work without copyright?\n"
-"\n"
-"Firstly, even if copyright were the only way that artists could be rewarded\n"
-"for their work, then I would contend that freedom is more important than\n"
-"having professional artists (those who claim that we would have no art do not\n"
-"understand creativity: people will always create, it is a compulsion,\n"
-"the only question is whether they can do it for a living).\n"
-"\n"
-"Secondly, it could be questioned whether copyright is effective even now. The\n"
-"music industry is one of the most vocally opposed to enhancements in\n"
-"communication technology, yet according to many of the artists who should be\n"
-"rewarded by copyright, it is failing to do so. Rather it has allowed\n"
-"middle-men to gain control over the mechanisms of distribution, to the\n"
-"detriment of both artists and the public."
-msgstr ""
-
-#: pages/about.py:230
-msgid ""
-"### 10\\. Alternatives to Copyright\n"
-"\n"
-"Fortunately it won't come to this. There are many alternative ways to reward\n"
-"artists. The simplest is voluntary payment. This is an extension of the\n"
-"patronage system which was frequently used to reward artists prior to\n"
-"copyright, where a wealthy person would fund an artist to allow them to\n"
-"create full-time. The Internet permits an interesting extension of this idea,\n"
-"where rather than having just one wealthy patron, you could have hundreds of\n"
-"thousands, contributing small amounts of money over the Internet.\n"
-"\n"
-"We actually practice what we preach in this regard too, on the 15th of March\n"
-"2001 the Freenet Project started taking donations, and within a week we had\n"
-"collected over $1000\\."
-msgstr ""
-
-#: pages/about.py:199
-msgid ""
-"### 8\\. And what of copyright?\n"
-"\n"
-"Of course much of Freenet's publicity has centered around the issue of\n"
-"copyright, and thus I will speak to it briefly. The core problem with\n"
-"copyright is that enforcement of it requires monitoring of communications,\n"
-"and you cannot be guaranteed free speech if someone is monitoring everything\n"
-"you say. This is important, most people fail to see or address this point\n"
-"when debating the issue of copyright, so let me make it clear:\n"
-"<center>"
-msgstr ""
-
-#: pages/about.py:249
-msgid "People"
-msgstr "Pessoas"
-
-#: pages/about.py:252
-msgid ""
-"**Note:** This is an incomplete list, a large number of people have contributed\n"
-"to the project."
-msgstr ""
-
-#: pages/about.py:255
-msgid ""
-"### Ian Clarke\n"
-"\n"
-"Freenet is based on Ian's paper \"A Distributed Decentralised Information\n"
-"Storage and Retrieval System\". Ian started the Freenet Project around July of\n"
-"1999, and continues to coordinate the project. In his day job, Ian is the\n"
-"founder and CEO of [SenseArray](http://sensearray.com/)."
-msgstr ""
-
-#: pages/about.py:262
-msgid ""
-"### Matthew Toseland\n"
-"\n"
-"Matthew has been working on Freenet since before the 0.5 release. His work\n"
-"and that of others has resulted in dramatic improvements to the performance\n"
-"and stability of the network."
-msgstr ""
-
-#: pages/about.py:268
-msgid ""
-"### Oskar Sandberg\n"
-"\n"
-"Oskar was also one of the earliest contributors to the Freenet project,\n"
-"and has made some important theoretical breakthroughs that lead to the\n"
-"beginning of Freenet 0.7, see the papers page."
-msgstr ""
-
-#: pages/about.py:274
-msgid ""
-"### Florent Daignière\n"
-"\n"
-"Since 2003, Florent has improved various aspects of the software and\n"
-"performed the project's system administration. In his day job, he is the\n"
-"Technical Director of [Matta Consulting](https://www.trustmatta.com),\n"
-"a boutique security consultancy firm."
-msgstr ""
-
-#: pages/about.py:281
-msgid ""
-"### Scott Miller\n"
-"\n"
-"Scott is responsible for the implementation of much of the cryptography\n"
-"elements within Freenet."
-msgstr ""
-
-#: pages/about.py:286
-msgid ""
-"### Steven Starr\n"
-"\n"
-"Steven helps with administration of Freenet Project Inc, and is an advisor to\n"
-"the project on business and publicity matters."
-msgstr ""
-
-#: pages/about.py:291
-msgid ""
-"### Michael Rogers\n"
-"\n"
-"Michael has mostly contributed detailed simulations as part of the Google\n"
-"Summer of Code. He has been helpful in designing the [new transport layer](\n"
-"https://old-wiki.freenetproject.org/NewTransportLayer)."
-msgstr ""
-
-#: pages/about.py:297
-msgid ""
-"### Dave Baker\n"
-"\n"
-"Dave's main contribution has been [Freemail](documentation.html#freemail),\n"
-"his Summer of Code project to build a working email-over-freenet system,\n"
-"as well as some debugging and core work in various places."
-msgstr ""
-
-#: pages/about.py:303
-msgid ""
-"### Robert Hailey\n"
-"\n"
-"Robert has helped improve the speed and security of Freenet by finding two\n"
-"**major** bugs, and has recently contributed some code."
-msgstr ""
-
-#: pages/about.py:308
-msgid ""
-"### David Sowder\n"
-"\n"
-"David (Zothar) has helped the Freenet project as time permits and interest\n"
-"directs, including configuration, statistics and peer management via FCP,\n"
-"the FProxy stats page and Node 2 Node Messages (N2NM/N2NTMs).\n"
-"\n"
-"And **hundreds of others**, who either haven't asked to be added here, who\n"
-"prefer to remain nameless, or who we just haven't got around to thanking. Not to\n"
-"mention thousands of users, testers, and [donors](donate.html#sponsors)!"
-msgstr ""
-
-#: pages/about.py:323
-msgid "Papers"
-msgstr "Artigos"
-
-#: pages/about.py:326
-msgid ""
-"![](assets/img/pdf.icon.jpg)[Measuring Freenet in the Wild: Censorship-resilience under Observation](assets/papers/roos-pets2014.pdf) (PDF)\n"
-"Observations and measurements on the live Freenet network. Includes suggestions\n"
-"for improvement. This was submitted to PETS 2014."
-msgstr ""
-
-#: pages/about.py:330
-msgid ""
-"![](assets/img/pdf.icon.jpg)[The Dark Freenet](assets/papers/freenet-0.7.5-paper.pdf) (PDF)\n"
-"Detailed paper about the Freenet 0.7.5 network, as opposed to its routing\n"
-"algorithm, which is detailed in the below papers. Includes some new\n"
-"simulations. This has been submitted to PET 2010."
-msgstr ""
-
-#: pages/about.py:335
-msgid ""
-"![](assets/img/video.icon.png)[Video of Small World talk, Berlin, December 2005](http://player.vimeo.com/video/22488244?title=0&byline=0&portrait=0)  \n"
-"This is a video of a talk given by Ian Clarke and Oskar Sandberg at the Chaos\n"
-"Computer Congress in Berlin, December 2005, describing the (then) new\n"
-"architecture for Freenet 0.7\\. You can also download the [slideshow](\n"
-"assets/papers/ccc-slideshow.pdf.bz2), and the source for the Java [demo](\n"
-"assets/papers/ccc-freenet-demo.tar.bz2) (requires Java 1.5)."
-msgstr ""
-
-#: pages/about.py:342
-msgid ""
-"![](assets/img/pdf.icon.jpg)[Searching in a Small World](assets/papers/lic.pdf) (PDF)  \n"
-"Oskar Sandberg's licentiate thesis describing a simple decentralized\n"
-"mechanism for constructing small world networks that is inspired by Freenet's\n"
-"original design. Part II of the thesis describes the basis for the new\n"
-"Darknet architecture."
-msgstr ""
-
-#: pages/about.py:348
-msgid ""
-"![](assets/img/pdf.icon.jpg)[Distributed routing in Small World Networks](assets/papers/swroute.pdf) (PDF)  \n"
-"A paper by Oskar Sandberg describing the theoretical basis for the new\n"
-"\"Darknet\" routing mechanism employed by Freenet 0.7."
-msgstr ""
-
-#: pages/about.py:352
-msgid ""
-"![](assets/img/pdf.icon.jpg)Chaos Computer Congress Talk (slideshow)  \n"
-"This is a [slideshow](assets/papers/ccc-slideshow.pdf.bz2) for a talk given\n"
-"at the Chaos Computer Congress on 30th Dec 2005 in Berlin, Germany by Ian\n"
-"Clarke and Oskar Sandberg. It described the new \"darknet\" approach to be\n"
-"employed in Freenet 0.7\\. A Java demonstration to accompany the talk is [\n"
-"also](assets/papers/ccc-freenet-demo.tar.bz2) available."
-msgstr ""
-
-#: pages/about.py:359
-msgid ""
-"![](assets/img/pdf.icon.jpg)[Switching for a small world](assets/papers/vilhelm_thesis.pdf) (PDF)  \n"
-"A thesis by Vilhelm Verendel exploring ways to optimise the swapping algorithm."
-msgstr ""
-
-#: pages/about.py:362
-msgid ""
-"![](assets/img/pdf.icon.jpg)[Protecting Freedom of Information Online with Freenet](assets/papers/freenet-ieee.pdf) (PDF)  \n"
-"An IEEE Internet Computing article describing the Freenet architecture circa\n"
-"2002 - probably the best introduction to the theory behind Freenet."
-msgstr ""
-
-#: pages/about.py:366
-msgid ""
-"![](assets/img/pdf.icon.jpg)[FreeNet White Paper](assets/papers/ddisrs.pdf) (PDF)  \n"
-"Original white paper by Ian Clarke, Division of Informatics, University of\n"
-"Edinburgh 1999."
-msgstr ""
-
-#: pages/about.py:374
-msgid ""
-"![](assets/img/pdf.icon.jpg)[Attack Resistant Network Embeddings for Darknets](http://www.ukp.tu-darmstadt.de/fileadmin/user_upload/Group_P2P/share/publications/Attack_Resistant_Network_Embeddings_for_Darknets.pdf) (PDF)  \n"
-"A proposal for changing the darknet swapping algorithm which we are still\n"
-"considering (we have some doubts about long-term performance)."
-msgstr ""
-
-#: pages/about.py:378
-msgid ""
-"![](assets/img/pdf.icon.jpg)[A Contribution to Analyzing and Enhancing Darknet Routing](http://www.p2p.tu-darmstadt.de/publications/details/?no_cache=1&tx_bibtex_pi1%5Bpub_id%5D=TUD-CS-2013-0036) ([PDF](http://www.p2p.tu-darmstadt.de/fileadmin/user_upload/Group_P2P/share/INFOCOM.pdf))  \n"
-"A proposal for changing the routing algorithm which we are still considering\n"
-"(the worst case performance i.e. when a block has been lost may be\n"
-"unacceptable)."
-msgstr ""
-
-#: pages/about.py:383
-msgid ""
-"![](assets/img/pdf.icon.jpg)[Presentation: Towards \"Dark\" Social Networking Services (Strufe et al.)](https://www.icsi.berkeley.edu/icsi/sites/default/files/events/events_1303_strufe.pdf) (PDF)\n"
-"An interesting presentation by the group responsible for the two above papers."
-msgstr ""
-
-#: pages/about.py:386
-msgid ""
-"![](assets/img/pdf.icon.jpg)[Pisces: Anonymous Communication Using Social Networks](http://arxiv.org/abs/1208.6326)  \n"
-"An algorithm for setting up onion-like tunnels on darknets. We may implement\n"
-"this for Freenet 0.8/0.9."
-msgstr ""
-
-#: pages/about.py:390
-msgid ""
-"![](assets/img/pdf.icon.jpg)[Routing in the Dark: Pitch Black](http://grothoff.org/christian/pitchblack.pdf) ([citeseer](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.117.1543)) (PDF)  \n"
-"A paper describing some attacks on Freenet 0.7's location swapping algorithm.\n"
-"We have solutions for this but they are still being tested."
-msgstr ""
-
-#: pages/about.py:398
-msgid ""
-"The most up to date reference is of course [the source code](\n"
-"https://github.com/freenet/fred), but there is also some useful documentation on\n"
-"[the wiki](https://wiki.freenetproject.org/) (you may have to search a bit),\n"
-"and most implemented ideas have been discussed in detail on [the mailing\n"
-"lists](help.html#mailing-lists) at some point, more recently often in-Freenet\n"
-"forums such as FMS, or [the bug tracker](https://bugs.freenetproject.org/)."
-msgstr ""
-
-#: pages/about.py:409
-msgid "About"
-msgstr "Sobre"
 
 #: pages/download.py:84 pages/download.py:303
 msgid "Download"
@@ -4223,8 +3329,937 @@ msgstr ""
 
 #: pages/help.py:1063
 msgid "Setup"
-msgstr ""
+msgstr "Configuração"
 
 #: pages/help.py:1069
 msgid "Help"
 msgstr "Ajuda"
+
+#: pages/donate.py:8 pages/donate.py:224
+msgid "Donate"
+msgstr "Doar"
+
+#: pages/donate.py:11
+msgid ""
+"#### Financial Status\n"
+"\n"
+"The project's current balance is **$MONEYBALANCE**. (updated twice a day)\n"
+"This will pay for the project's one paid developer (we have many volunteers) and\n"
+"the server for roughly another **MONEYMONTHS months** (MONEYDAYS days)."
+msgstr "#### Status Financeiro\n\nO saldo atual do projeto é **$MONEYBALANCE**. (atualizado duas vezes por dia)\nIsso irá pagar a um programador que recebe do projeto (temos muitos voluntários) e\no servidor por cerca de outros **MONEYMONTHS meses** (MONEYDAYS dias)."
+
+#: pages/donate.py:17
+msgid ""
+"#### Why does The Freenet Project need donations?\n"
+"\n"
+"Although countless people have given their time and skill to the project since\n"
+"its inception, The Freenet Project relies on your donations both to support\n"
+"those developers working full-time on this increasingly complex project, and to\n"
+"cover hardware (this server) and administrative costs (i.e. domain\n"
+"registrations and certificates). We would also like to start a legal defense\n"
+"fund should the need arise.\n"
+"\n"
+"Everyone involved is keenly interested in the future of The Freenet Project and\n"
+"you can be assured donations have been and will continue to be used wisely. All\n"
+"support is very much appreciated."
+msgstr "#### Por que o Projeto Freenet precisa de doações?\n\nApesar de inúmeras pessoas doarem o seu tempo e habilidade para o projeto desde\na sua criação, o Projeto Freenet depende de suas doações para apoiar\nos desenvolvedores que trabalham em tempo integral neste projeto cada vez mais complexo, e para\ndespesa de hardware (este servidor) e custos administrativos (ou seja, domínio\nregistros e certificados). Nós também gostaríamos de começar um fundo de defesa legal\npara casos de necessidade.\n\nTodos os envolvidos são muito interessados no futuro do projeto Freenet e\nvocê pode ter certeza de que as doações têm sido e continuarão a ser usadas com sabedoria. Todo\napoio é muito apreciado."
+
+#: pages/donate.py:30
+msgid ""
+"#### How can I donate?\n"
+"\n"
+"You have several options:\n"
+"\n"
+"* You can become a Freenet project \"member\" for a **recurring payment** of $5 or\n"
+"more per month. The advantage of this is that it gives the project a more stable\n"
+"and dependable income which makes it easier to make long term commitments to\n"
+"potential developers - right now it is often difficult to say whether we will be\n"
+"able to pay a developer the following month although so-far we have been\n"
+"fortunate. You can become a member by clicking on this button (you will need a\n"
+"[PayPal](https://www.paypal.com/) account):"
+msgstr "#### Como eu posso doar?\n\nVocê tem várias opções:\n\n* Você pode se tornar um \"membro\" do projeto Freenet por um **pagamento recorrente** de US $5 ou\nmais por mês. A vantagem desta opção é que dá ao projeto mais estabilidade\ne renda confiável que torna mais fácil para fechar compromissos a longo prazo com\npotenciais desenvolvedores - como estamos, é cada vez mais difícil dizer se seremos\ncapazes de pagar um desenvolvedor no mês seguinte, mas até agora, temos sido\nafortunados. Você pode se tornar um membro clicando neste botão (você vai precisar de uma\nconta (https //www.paypal.com/)[PayPal]:"
+
+#: pages/donate.py:92
+msgid "* You can *donate once* via Paypal by clicking on this button:"
+msgstr "* Você pode *doar uma vez* via Paypal clicando neste botão:"
+
+#: pages/donate.py:120
+msgid "Other amount:"
+msgstr "Outra quantia:"
+
+#: pages/donate.py:139
+msgid ""
+"* * *\n"
+"\n"
+"![](assets/img/BC_nBG_48px.png) You can now donate to the Freenet Project using [bitcoin](http://www.bitcoin.org/).  \n"
+"\n"
+"Send your donations to the account: "
+msgstr "* * *\n\n![](assets/img/BC_nBG_48px.png) Agora você pode doar para o Projeto Freenet usando [bitcoin](http://www.bitcoin.org/).  \n\nEnvie suas doações para a conta:"
+
+#: pages/donate.py:145
+msgid ""
+"Alternatively, please contact us: <span class=\"e-mail\" data-user=\"etanod\" data-website=\"gro.tcejorpteneerf\"></span> if you cannot use\n"
+"any of these payment methods.\n"
+"\n"
+"You can also donate to the project by purchasing items from the Freenet\n"
+"[store](http://www.zazzle.com/freenetproject)."
+msgstr ""
+
+#: pages/donate.py:151
+msgid ""
+"## How can I be sure that my donation will be used appropriately?\n"
+"\n"
+"All donations go to The Freenet Project Inc, a non-profit 501c3 corporation with\n"
+"the following mission statement:\n"
+"\n"
+"> The specific purpose of this corporation is to assist in developing and\n"
+"> disseminating technological solutions to further the open and democratic\n"
+"> distribution of information over the Internet or its successor electronic\n"
+"> communication networks or organizations. It is also the purpose of this\n"
+"> organization to guarantee consenting individuals the free, unmediated,\n"
+"> and unimpeded reception and impartation of all intellectual, scientific,\n"
+"> literary, social, artistic, creative, human rights, and cultural\n"
+"> expressions, opinions and ideas without interference or limitation by or\n"
+"> service to state, private, or special interests. It is also the purpose of\n"
+"> this organization to educate the world community and be an advocate of\n"
+"> these purposes.\n"
+"\n"
+"All funds received will only be utilized to advance our Mission Statement, and\n"
+"are administered at the direction of the Freenet Project Board."
+msgstr ""
+
+#: pages/donate.py:176
+msgid "Sponsors"
+msgstr "Patrocinadores"
+
+#: pages/donate.py:179
+msgid ""
+"The following persons, organisations and companies have generously sponsored\n"
+"this project through donations or discounts on hardware and services:\n"
+"\n"
+"*   [John Pozadzides](http://onemansblog.com/)  \n"
+"John is the founder of HTMLHelp.com and former Vice President of Sales for SAVVIS Communications. John has donated $10,000 to the Freenet Project to fund ongoing development of the Freenet software.\n"
+"*   [Web Hosting Search](http://www.webhostingsearch.com/)  \n"
+"WebHostingSearch is a top rated guide to various world wide web hosting companies. Mr Chris Reynolds and the friendly team behind this company have become one of our proud promoters.\n"
+"*   [John Gilmore](http://www.toad.com/gnu/)  \n"
+"John Gilmore is one of the founders of the Electronic Frontier Foundation, the Cypherpunks mailing list, and Cygnus Solutions. He created the alt.* hierarchy in Usenet and is a major contributor to the GNU project. He has donated $10,000.\n"
+"*   [Bytemark Hosting](http://bytemark.co.uk/)  \n"
+"Bytemark provides discounted hosting facilities to Freenet and comes with our highest recommendation.\n"
+"*   [zoozle Torrent Search](http://www.zoozle.org/)  \n"
+"zoozle is a search engine for BitTorrent and P2P networks. It is also available in [german](http://www.zoozle.net/ \"deutsche Torrent Suchmaschine\") and [french](http://www.zoozle.biz/ \"le moteur\n"
+"\t\t\t\t\t\t\tfrançais de recherche pour BitTorrent\"). They have donated $1,500.\n"
+"*   [YourKit, LLC](http://www.yourkit.com/)  \n"
+"YourKit is kindly supporting Freenet by providing us a free of charge license of its full-featured Java Profiler. YourKit, LLC is the creator of innovative and intelligent tools for profiling Java applications. You can learn more about [YourKit Java Profiler](http://www.yourkit.com/java/profiler/index.jsp) following the link.\n"
+"*   [Google](http://www.google.com/)  \n"
+"Google [open source](http://code.google.com/) have three times donated $18,000, as well as paying for students to work with us over summer since 2006 through the [Google Summer of Code](http://code.google.com/soc/) program.\n"
+"*   [Finanzvergleich](http://www.finanzvergleich.de)  \n"
+"Finanzvergleich is a German financial services comparison site, who have contributed $1,500.\n"
+"*   [TopDir](http://www.topdir.de \"Top Directory\")  \n"
+"TopDir is a human edited web directory with informations about interesting topics and websites in the German language.\n"
+"*   [All Filters](http://www.allfilters.com/ \"All Filters\") - another generous sponsor.\n"
+"*   [A German Site for Gardening and Plants](http://www.gartenheinz.de \"A German Site for Gardening and Plants\") - another generous sponsor.\n"
+"*   [Simple Car Rentals](http://www.simple-carrentals.com/)  \n"
+"Simple Car Rentals has generously supported Freenet by helping us with some of our administrative expenses over the years.\n"
+"*   [The Sports Den](http://www.sportsden.ie/)  \n"
+"The Sports Den has a wide variety of outdoor sports equipment, they are based in Ireland but can ship to the UK, Europe, and the United States.\n"
+"*   ![](assets/img/logo_intellij_idea.png)  \n"
+"[JetBrains](https://www.jetbrains.com) has kindly provided a license for the Ultimate edition of [IntelliJ IDEA](https://www.jetbrains.com/idea).\n"
+"\n"
+"Freenet Project Inc does not necessarily endorse the business activities of all of the companies listed on this page.\n"
+"\n"
+"Donation inquiries please contact Ian Clarke: <span class=\"e-mail\" data-user=\"etanod\" data-website=\"gro.tcejorpteneerf\"></span>"
+msgstr ""
+
+#: pages/donate.py:218
+msgid "Store"
+msgstr "Loja"
+
+#: pages/donate.py:234
+msgid "Thanks for your donation!"
+msgstr "Obrigado pela sua doação!"
+
+#: pages/donate.py:237
+msgid ""
+"We have received your generous donation. It will be used at the direction of\n"
+"the Freenet Board to advance the interests of the Freenet Project. If you\n"
+"have any questions about how your donation will be used please contact Ian\n"
+"Clarke: <span class=\"e-mail\" data-user=\"etanod\" data-website=\"gro.tcejorpteneerf\"></span>."
+msgstr ""
+
+#: pages/donate.py:247
+msgid "Thanks"
+msgstr "Obrigado"
+
+#: pages/common.py:212
+msgid "Freenet rabbit logo"
+msgstr "Logo coelho Freenet"
+
+#: pages/common.py:220
+msgid "Contact"
+msgstr "Contato"
+
+#: pages/common.py:247
+msgid "Press"
+msgstr "Imprensa"
+
+#: pages/common.py:248
+msgid "Support"
+msgstr "Apoio"
+
+#: pages/common.py:249
+msgid "IRC"
+msgstr "IRC"
+
+#: pages/common.py:250
+msgid ""
+"Content on this website is licensed under the GNU Free Documentation License"
+" and may be available under other licenses."
+msgstr "O conteúdo deste site está licenciado sob a GNU Free Documentation License e podem estar disponíveis sob outras licenças."
+
+#: pages/common.py:251
+msgid "Design by DesignBootstrap"
+msgstr "Projetado por DesignBootstrap"
+
+#: pages/index.py:34
+msgid "Avoid Censorship"
+msgstr "Evite Censura"
+
+#: pages/index.py:34
+msgid ""
+"Freenet is a platform for censorship-resistant communication and publishing.\n"
+"It helps you to remain anonymous, and communicate without fear."
+msgstr "Freenet é uma plataforma de comunicação e publicação resistente à censura.\nEle ajuda você a manter o anonimato, e comunicar-se sem medo."
+
+#: pages/index.py:38
+msgid "Host a Website"
+msgstr "Hospede um Site"
+
+#: pages/index.py:38
+msgid ""
+"Need a website nobody can take over? That is hosted for free? That is very\n"
+"resistant to attacks? Publish it on Freenet!"
+msgstr "Precisa de um site que ninguém pode assumir? Que está hospedado de graça? Que é muito\nresistente a ataques? Publique-o na Freenet!"
+
+#: pages/index.py:42 pages/index.py:176
+msgid "Share Files"
+msgstr "Compartilhe Arquivos"
+
+#: pages/index.py:42
+msgid "Upload a file to Freenet and anyone with the secret URL can access it."
+msgstr "Faça o upload de um arquivo para Freenet e qualquer pessoa com o URL secreto pode acessá-lo."
+
+#: pages/index.py:45
+msgid "Meet New People"
+msgstr "Conheça Novas Pessoas"
+
+#: pages/index.py:45
+msgid ""
+"People from all over the world use Freenet to communicate. Some of them do so\n"
+"anonymously. You might never hear their voices in the open."
+msgstr "Pessoas de todo o mundo usam Freenet para se comunicar. Alguns deles faze-no\nanonimamente. Você nunca pode ouvir as suas vozes no aberto."
+
+#: pages/index.py:49
+msgid "Experiment with Exciting New Technology"
+msgstr "Experimente com uma Nova e Excitante Tecnologia  "
+
+#: pages/index.py:49
+msgid ""
+"Freenet is on the cutting edge of distributed routing research. The data\n"
+"storage provided by Freenet is a proving ground for a number of new\n"
+"distributed systems."
+msgstr "Freenet está na vanguarda da pesquisa de roteamento distribuído. O armazenamento\nde dados fornecidos pela Freenet é um campo de provas para uma série de novos\nsistemas distribuídos."
+
+#: pages/index.py:54
+msgid "Improve the World"
+msgstr "Melhore o Mundo"
+
+#: pages/index.py:54
+msgid ""
+"By using Freenet from the \"free world\" you help people in oppressive regimes\n"
+"share information. The more people use Freenet the easier it will be to\n"
+"obtain. Using it will also be less suspicious."
+msgstr "Usando Freenet do \"mundo livre\" você ajuda pessoas em regimes opressores\na compartilhar informação. Quanto mais as pessoas usam Freenet mais fácil será\nobter. Usando-a será também menos suspeito."
+
+#: pages/index.py:127 pages/index.py:221
+msgid "Share, Chat, Browse. Anonymously."
+msgstr "Compartilhe, Converse, Navegue. Anonimamente."
+
+#: pages/index.py:128 pages/index.py:222
+msgid "Download Freenet"
+msgstr "Baixar Freenet"
+
+#: pages/index.py:129
+msgid "Please Donate"
+msgstr "Por favor, doe"
+
+#: pages/index.py:130
+msgid ""
+"Your donations pay for our server and developer. Our current funds will last"
+msgstr "Suas doações pagam o nosso servidor e desenvolvedor. Os nossos fundos atuais durarão"
+
+#: pages/index.py:133
+msgid "Donate!"
+msgstr "Doe!"
+
+#: pages/index.py:164
+msgid "Secret Identity"
+msgstr "Identidade Secreta"
+
+#: pages/index.py:165
+msgid "Create a secret identity so nobody knows who you are."
+msgstr "Crie uma identidade secreta para que ninguém saiba quem é você."
+
+#: pages/index.py:167
+msgid "Browse Webpages"
+msgstr "Navegue por Páginas da Web"
+
+#: pages/index.py:168
+msgid ""
+"Freenet is home to webpages with topics ranging from programming to "
+"sustainable living."
+msgstr "Freenet é o lar de páginas da web com temas que vão desde a programação à vida sustentável."
+
+#: pages/index.py:170
+msgid "Forums"
+msgstr "Fóruns"
+
+#: pages/index.py:171
+msgid "Ask questions and exchange ideas."
+msgstr "Faça perguntas e troque ideias."
+
+#: pages/index.py:173
+msgid "Publish"
+msgstr "Publicação"
+
+#: pages/index.py:174
+msgid "Publish information while remaining anonymous."
+msgstr "Publique informações permanecendo anônimo."
+
+#: pages/index.py:177
+msgid "Easy upload & download."
+msgstr "Fácil download & upload"
+
+#: pages/index.py:179
+msgid "Platform"
+msgstr "Plataforma"
+
+#: pages/index.py:180
+msgid "Write your own applications on the Freenet platform."
+msgstr "Escreva seus próprios aplicativos na plataforma Freenet."
+
+#: pages/index.py:182
+msgid "Resistant"
+msgstr "Resistente"
+
+#: pages/index.py:183
+msgid "Freenet has been designed to be resistant to attacks and censorship."
+msgstr "Freenet foi projetado para resistir a ataques e censura."
+
+#: pages/index.py:185
+msgid "Distributed"
+msgstr "Distribuído"
+
+#: pages/index.py:186
+msgid "No central points of failure, efficient caching of popular content."
+msgstr "Não há pontos centrais de falha, eficiente cache de conteúdo popular."
+
+#: pages/index.py:188
+msgid "Proven"
+msgstr "Comprovado"
+
+#: pages/index.py:189
+msgid "Based on solid research and in practical use for 15 years."
+msgstr "Baseado em sólidas pesquisas e no uso prático por 15 anos."
+
+#: pages/index.py:230
+msgid "Latest News"
+msgstr "Últimas Notícias"
+
+#: pages/index.py:242
+msgid "Overview"
+msgstr "Visão geral"
+
+#: pages/news.py:21
+msgid "2015-10-21 - Website redesign is live"
+msgstr ""
+
+#: pages/news.py:22
+msgid ""
+"The redesigned website is now live!\n"
+"Existing URLs [redirect](http://www.w3.org/Provider/Style/URI.html)\n"
+"to their new equivalents. Thanks to everyone who contributed feedback,\n"
+"development, and translations.\n"
+"\n"
+"If we missed something, please tell us in our [support chat](help.html#irc)!"
+msgstr ""
+
+#: pages/news.py:30
+msgid "2015-10-11 - Upcoming website redesign"
+msgstr ""
+
+#: pages/news.py:31
+msgid ""
+"In the next few weeks we will transition to a redesigned website. This will be\n"
+"the first major change since 2009. In addition to looking more modern, this new\n"
+"version is also more practical to modify, test, and translate.\n"
+"\n"
+"If you'd like to get a look at the site in testing you can find it [here](\n"
+"https://testing.freenetproject.org/) - as given in the prompt the\n"
+"username and password are \"guest\". If you'd like to help with translation,\n"
+"please join us on the [\"website\" resource on Transifex](\n"
+"https://www.transifex.com/otf/freenet/website/).\n"
+"\n"
+"If you have any feedback on the new website design please let us know on [\n"
+"chat](irc.html) or the [support list](https://emu.freenetproject.org/cgi-bin\n"
+"/mailman/listinfo/support)!"
+msgstr ""
+
+#: pages/news.py:46
+msgid ""
+"2015-09-17 - elliptic curves: using safe Bouncy Castle since November 2014"
+msgstr ""
+
+#: pages/news.py:47
+msgid ""
+"<p>\n"
+"A recent article outlines\n"
+"<a href=\"http://web-in-security.blogspot.ca/2015/09/practical-invalid-curve-attacks.html\">\n"
+"practical attacks against elliptic curves</a> to recover private keys\n"
+"which worked against the Bouncy Castle crypto provider used by Freenet\n"
+"until <a href=\"#build01466\">Build 1466</a> (released 2014-11-09) and\n"
+"against Java JCE\n"
+"<a href=\"http://www.oracle.com/technetwork/topics/security/cpujul2015-2367936.html\">\n"
+"until July 2015</a>. If you use the current stable\n"
+"<a href=\"#20150816-1470-release\">build 1470</a> on an updated Java, your\n"
+"node is not vulnerable to these attacks.\n"
+"</p>\n"
+"\n"
+"<p>\n"
+"On darknet the attacks required knowing both node references, so in\n"
+"darknet mode Freenet was only vulnerable to them if two friends\n"
+"connected to the same malicious third party or shared their node\n"
+"references in public. On opennet the target of these attacks would have\n"
+"been the seednodes because other opennet connections are neither\n"
+"persistent nor trusted.\n"
+"</p>\n"
+"\n"
+msgstr ""
+
+#: pages/news.py:72
+msgid "2015-08-16 - Freenet 0.7.5 build 1470 released"
+msgstr ""
+
+#: pages/news.py:73
+msgid ""
+"\n"
+"<p>\n"
+"This release fixes Freemail problems that prevented sending mail, and removes a\n"
+"compromised opennet seed node. Freemail also gains a new message link on the\n"
+"inbox page, links to senders' WoT profiles, and new translations:\n"
+"</p>\n"
+"\n"
+"<ul>\n"
+"<li>Czech</li>\n"
+"<li>Greek</li>\n"
+"<li>Spanish</li>\n"
+"<li>Finnish</li>\n"
+"<li>Hungarian</li>\n"
+"<li>Dutch</li>\n"
+"<li>Polish</li>\n"
+"<li>Portuguese (Portugal)</li>\n"
+"<li>Serbian</li>\n"
+"<li>Turkish</li>\n"
+"</ul>\n"
+"\n"
+"<p>\n"
+"To clarify, the CHK metadata bug fixes in 1468 are added as a new compatibility\n"
+"mode that is not yet the default. Compatibility with 1416 keys is available.\n"
+"</p>\n"
+"\n"
+"<p>\n"
+"The Fred Spanish translation has comprehensive updates as well.\n"
+"</p>\n"
+msgstr ""
+
+#: pages/news.py:104
+msgid "2015-08-07 - Windows translation update"
+msgstr ""
+
+#: pages/news.py:105
+msgid ""
+"\n"
+"<p>\n"
+"The Windows installer and tray app have updated translations. The installer is\n"
+"newly translated into Portuguese (Portugal) and Serbian. The tray app is newly\n"
+"translated into Spanish, Persian, Portuguese (Portugal), and Serbian.\n"
+"This also fixes a tray app problem where translations for Brazilian Portuguese\n"
+"and Simplified Chinese were not used.\n"
+"</p>\n"
+msgstr ""
+
+#: pages/news.py:116
+msgid "2015-07-19 - Freenet 0.7.5 build 1469 released"
+msgstr ""
+
+#: pages/news.py:117
+msgid ""
+"\n"
+"<p>\n"
+"This release fixes two bugs introduced in build 1468. One caused very\n"
+"slow operation and high CPU usage with large files and physical\n"
+"security levels above None (i.e. Freenet-level disk encryption). The\n"
+"other prevented interactive usage (e.g. freesite browsing) while\n"
+"finishing large downloads or starting large uploads.\n"
+"</p>\n"
+msgstr ""
+
+#: pages/news.py:128
+msgid "2015-07-13 - Build 1468 known issues"
+msgstr ""
+
+#: pages/news.py:129
+msgid ""
+"\n"
+"<p>\n"
+"Despite being in some form of prerelease for over 6 months, and two weeks of\n"
+"being available as a release candidate, we didn't catch some bugs in time. There\n"
+"are two main issues:\n"
+"</p>\n"
+"\n"
+"<ol>\n"
+"<li>\n"
+"Because the reimplementation of the client layer without db4o did not include\n"
+"prioritization of FEC decoding / encoding, large bulk download or upload queues\n"
+"can starve the realtime queues, making them unresponsive.\n"
+"(See <a href=\"https://github.com/freenet/fred/pull/381\">PR #381</a>.)\n"
+"</li>\n"
+"<li>\n"
+"Due to our misunderstanding of when the cryptography library we use - Bouncy\n"
+"Castle - included which fixes, we did not realize that version 1.51, used by\n"
+"build 1468, has severe performance problems with the way we use it to implement\n"
+"disk encryption. Build 1469 will upgrade to Bouncy Castle 1.52, which fixes this\n"
+"problem. It is only an issue when the physical security level is set to \"Low\" or\n"
+"higher. It does not happen when physical security is set to \"None.\"\n"
+"(See <a href=\"https://github.com/freenet/fred/pull/382\">PR #382</a>.)\n"
+"</li>\n"
+"</ol>\n"
+"\n"
+"<p>\n"
+"Sadly, these problems can combine to make a node use 100% CPU to slowly process\n"
+"bulk queues while the realtime queue does not respond. Matthew (toad_) has\n"
+"already released a snapshot to fix these problems, which you can find\n"
+"<a href=\"https://emu.freenetproject.org/pipermail/devl/2015-July/038123.html\">on the mailing list</a>\n"
+"or <a href=\"http://localhost:8080/forumviewthread.htm?messageuuid=E544C7BB-5E5E-4159-83F8-AFC46C089329@h2RzPS4fEzP0zU43GAfEgxqK2Y55kEUNR01cWvYApI#E544C7BB-5E5E-4159-83F8-AFC46C089329@h2RzPS4fEzP0zU43GAfEgxqK2Y55kEUNR01cWvYApI\">on FMS</a>.\n"
+"</p>\n"
+msgstr ""
+
+#: pages/news.py:164
+msgid "2015-07-11 - Freenet 0.7.5 build 1468 released"
+msgstr ""
+
+#: pages/news.py:165
+msgid ""
+"\n"
+"<p>\n"
+"The Freenet team is very happy to announce the stable release of Freenet 0.7.5 build 1468.\n"
+"</p>\n"
+"\n"
+"<p>\n"
+"<b>Important notes</b>: downgrading from build 1468 is not supported; if you want to go back to build 1467 without losing the upload and download queues, <b>before</b> upgrading, back-up the following files and directories: master.keys, persistent-temp-*/, and node.db4o (see https://wiki.freenetproject.org/Program_files ). Please note that running transfers will be restarted from scratch too. A reminder to those testing auto-update to 1468-pre4: please restore your auto-update key to the default. One way to do this is to stop Freenet, remove the \"node.updater.URI\" line from freenet.ini, and start Freenet again.\n"
+"</p>\n"
+"\n"
+"<p>\n"
+"In this release, the way Freenet stores data locally has changed drastically by no longer using the now-deprecated db4o object storage. It is replaced with the product of toad's summer of work - a custom on-disk format that is much more robust against corruption and more efficient.\n"
+"</p>\n"
+"\n"
+"<ul>\n"
+"<li>Existing unfinished downloads and uploads will be imported to a new format, which requires restarting them from the beginning.</li>\n"
+"<li>Space for downloads is now all allocated at the start, so machines very low on disk space may run out, which causes downloads to temporarily fail until more space is available.</li>\n"
+"<li>CHKs will change due to metadata bugfixes.</li>\n"
+"<li>Some unofficial plugins will need to be updated because of API changes. Sone already works, as do all official plugins.</li>\n"
+"<li>The queue format changes should make it extremely rare to lose the entire queue: the impact of corruption will almost always be localized.</li>\n"
+"<li>Multi-container / site uploads can now be persistent, making it more practical to upload large sites.</li>\n"
+"<li>Passworded physical security is now much stronger. (Full-disk encryption is still preferable.)</li>\n"
+"</ul>\n"
+"\n"
+"<ul>\n"
+"<li>The Windows installer now defaults to starting Freenet on login.</li>\n"
+"<li>There is a <a href=\"https://github.com/freenet/wintray\">new Windows tray app</a> with some useful features that is included with new installations. If you are using the existing Windows tray app you can download the new one <a href=\"https://downloads.freenetproject.org/alpha/installer/FreenetTray.exe.build01468\">here</a>. No need to put it in a specific directory - it will try the default installation location and prompt if it can't find it.</li>\n"
+"</ul>\n"
+"\n"
+"<ul>\n"
+"<li>The list of download keys moved from downloads/listFetchKeys.txt to downloads/listKeys.txt.</li>\n"
+"<li>A list of upload keys is now available at uploads/listKeys.txt</li>\n"
+"</ul>\n"
+"\n"
+"<ul>\n"
+"<li>Gantros' index is now in the default bookmarks. It uses the same software as Enzo's index, which is no longer updated.</li>\n"
+"</ul>\n"
+"\n"
+"<ul>\n"
+"<li>The obsolete and deprecated XMLLibrary and XMLSpider plugins are no longer officially supported. They will still load for those who have them added, but are no longer shown on the plugin page.</li>\n"
+"<li>In the interests of releasing this build more quickly, the new version of FlogHelper does not support exporting and importing backups from the web UI. The old backup code did not work with the new Freenet version after removing db4o. People can instead back up \"plugins.floghelper.FlogHelper\" files in the plugin-data directory. These can be dropped into the directory after unloading FlogHelper to restore a backup.</li>\n"
+"<li>ThawIndexBrowser works again. Thanks saces!</li>\n"
+"</ul>\n"
+"\n"
+"<ul>\n"
+"<li>Fred translations are updated.</li>\n"
+"</ul>\n"
+"\n"
+"<ul>\n"
+"<li>Add two seed nodes, one sponsored by meshnet.pl - the Polish radio/meshnet darknet users group, and another run by ArneBab. Thanks!</li>\n"
+"<li>Update existing seed node references.</li>\n"
+"</ul>\n"
+"\n"
+"<p>\n"
+"Thank you for using Freenet!\n"
+"</p>\n"
+msgstr ""
+
+#: pages/news.py:223
+msgid "2015-06-27 - New Windows installer and tray app"
+msgstr ""
+
+#: pages/news.py:224
+msgid ""
+"\n"
+"<p>\n"
+"The Windows installer is updated with Java 8u45, a <a href=\"https://github.com/freenet/wintray#freenet-tray-application\">new tray application</a>, and is newly translated into:\n"
+"</p>\n"
+"\n"
+"<ul>\n"
+"<li>Czech</li>\n"
+"<li>German</li>\n"
+"<li>Greek</li>\n"
+"<li>Indonesian</li>\n"
+"<li>Italian</li>\n"
+"<li>Polish</li>\n"
+"<li>Brazilian Portuguese</li>\n"
+"<li>Simplified Chinese</li>\n"
+"</ul>\n"
+msgstr ""
+
+#: pages/news.py:242
+msgid "2015-06-24 - Upcoming installer and testing releases"
+msgstr ""
+
+#: pages/news.py:243
+msgid ""
+"\n"
+"<p>\n"
+"This weekend we will release an updated Windows installer for build 1467 along\n"
+"with a <a href=\"https://github.com/freenet/wintray/blob/master/README.md\">new Windows tray application</a>.\n"
+"We will also release 1468-pre4, which if all goes according to plan will be the\n"
+"last prerelease before a stable release two weeks later.\n"
+"</p>\n"
+"\n"
+"<p>\n"
+"If you'd like to help with translations before then please do so! The\n"
+"Windows-related resources are:\n"
+"</p>\n"
+"<ul>\n"
+"<li><a href=\"https://www.transifex.com/projects/p/freenet/resource/windows-installer/\">Windows installer</a></li>\n"
+"<li><a href=\"https://www.transifex.com/projects/p/freenet/resource/windows-tray-commands/\">Windows tray commands</a></li>\n"
+"<li><a href=\"https://www.transifex.com/projects/p/freenet/resource/windows-tray-common/\">Windows tray common</a></li>\n"
+"<li><a href=\"https://www.transifex.com/projects/p/freenet/resource/windows-tray-crash/\">Windows tray crash</a></li>\n"
+"<li><a href=\"https://www.transifex.com/projects/p/freenet/resource/windows-tray-preferences/\">Windows tray preferences</a></li>\n"
+"</ul>\n"
+"<p>\n"
+"Some of the Windows tray resources contain many strings tagged notranslate; to\n"
+"hide these search for Tags: translate.\n"
+"</p>"
+msgstr ""
+
+#: pages/news.py:268
+msgid ""
+"2015-05-22 - UN Report: Encryption and Anonymity Deserve Strong Protection"
+msgstr ""
+
+#: pages/news.py:269
+msgid ""
+"The UN Special Rapporteur published [a report on encryption, anonymity,\n"
+"and the human rights framework](http://www.ohchr.org/EN/Issues/FreedomOpinion/Pages/CallForSubmission.aspx)\n"
+"([doc](http://www.ohchr.org/EN/HRBodies/HRC/RegularSessions/Session29/Documents/A.HRC.29.32_AEV.doc),\n"
+"[companion pdf](http://www.ohchr.org/Documents/Issues/Opinion/Communications/States/Selected_References_SR_Report.pdf)).\n"
+"From the summary:\n"
+"\n"
+"> encryption and anonymity enable individuals to exercise their rights to\n"
+"freedom of opinion and expression in the digital age.\n"
+"\n"
+"The reports concludes that\n"
+"\n"
+"> 63\\. The use of encryption and anonymity tools and better digital literacy\n"
+"should be encouraged. The Special Rapporteur, recognizing that the value\n"
+"of encryption and anonymity tools depends on their widespread adoption,\n"
+"encourages States, civil society organizations and corporations to engage\n"
+"in a campaign to bring encryption by design and default to users around\n"
+"the world and, where necessary, to ensure that users at risk be provided\n"
+"the tools to exercise their right to freedom of opinion and expression securely.\n"
+"\n"
+"We with the Freenet Project welcome the official recognition of our mission\n"
+"as important part of securing human rights in the digital age and we invite\n"
+"everyone - especially reporters and civil society organizations - to install\n"
+"Freenet and its communication tools to provide a point of contact for users at risk."
+msgstr ""
+
+#: pages/news.py:294
+msgid "2015-04-14 - SUMA Award Acceptance Speech (video)"
+msgstr ""
+
+#: pages/news.py:295
+msgid ""
+"The video from the talk given when Freenet [received the SUMA Award 2015](#20150211)\n"
+"for being the best project against surveillance and espionage on the Internet\n"
+"is available on [the Award page](http://www.searchstudies.org/de/suma2015.html)\n"
+"and [on YouTube](https://youtu.be/dZpsBSPsHDI?t=5m56s):\n"
+"\n"
+"<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/dZpsBSPsHDI\"\n"
+"frameborder=\"0\" allowfullscreen=\"\"></iframe>\n"
+"\n"
+"The Freenet Project receives the SUMA award and Arne Babenhauserheide accepts\n"
+"the prize as representative of the project. Arne then presents the current\n"
+"capabilities of Freenet to regain confidential and pseudonymous speech\n"
+"on the Internet, along with a vision of how whistleblowers could use Freenet\n"
+"to contact journalists without spilling their identity."
+msgstr ""
+
+#: pages/news.py:310
+msgid "2015-03-29 - New Linux/Unix/OS X installer"
+msgstr ""
+
+#: pages/news.py:311
+msgid ""
+"The installer for Linux, Unix, and Mac OS X is updated to better detect "
+"Java."
+msgstr ""
+
+#: pages/news.py:314
+msgid "2015-03-15 - Progress toward build 1468"
+msgstr ""
+
+#: pages/news.py:315
+msgid ""
+"Build 1468 continues to make progress toward release.\n"
+"\n"
+"What is done:\n"
+"\n"
+"*   Replace the unreliable db4o database. (Yay!)\n"
+"*   Create more flexible Windows tray app.\n"
+"*   Update Windows installer translations for Finnish and French.\n"
+"*   Add Windows installer translations for Czech, German, Italian, Polish, Brazilian Portuguese, and Simplified Chinese.\n"
+"*   Improve the reliability of starting Freenet under changing Java installations on Linux/OS X/POSIX.\n"
+"*   Update WebOfTrust with bug fixes and a new API.\n"
+"\n"
+"What remains to be done:\n"
+"\n"
+"*   <del>Finish reviewing the synchronous plugin communication API. Review is split between [GitHub](https://github.com/freenet/fred/pull/319) and more recently the [development mailing list](https://emu.freenetproject.org/pipermail/devl/2015-February/037986.html).</del> -- Done 2015-03-28\n"
+"*   Update all plugins (KeyUtils and WebOfTrust are already ready) for the API breakage in this version.\n"
+"*   Add a .NET 3.5 install to the Windows installer, along with the new tray app. (This is necessary for it to always work for those not on Windows 7.)\n"
+"*   Everything on [this list](https://bugs.freenetproject.org/roadmap_page.php?version_id=85).\n"
+"\n"
+"Because this is such a large release new installers for build 1467 will be released shortly to test those changes. Once everything on this list is complete, there will be a release candidate, then finally the stable release."
+msgstr ""
+
+#: pages/news.py:336
+msgid "2015-03-14 - Freenet translation joins Localization Lab"
+msgstr ""
+
+#: pages/news.py:337
+msgid ""
+"The Freenet project has joined the [Localization Lab](http://www.localizationlab.org) organization on Transifex. This allows a larger team of translators, translating into more languages, and access to paid support.\n"
+"\n"
+"If this transition has caused any problems please let us know!"
+msgstr ""
+
+#: pages/news.py:342
+msgid "2015-02-15 - New Windows tray app for testing"
+msgstr ""
+
+#: pages/news.py:343
+msgid ""
+"The Windows tray application distributed as of build 1467 is written in the automation scripting language AutoHotKey. It has not been well-maintained and is also often falsely detected by antivirus by virtue of the language it uses. We are pleased to announce a new Windows tray application written in C# which has some additional features:\n"
+"\n"
+"*   Allow choosing which browser to launch.\n"
+"*   Allow starting Freenet without the tray on startup.\n"
+"*   Allow opening the Downloads folder from the menu.\n"
+"*   Give a more actionable response to crashes.\n"
+"*   Can be hidden while keeping Freenet running.\n"
+"*   Can be located other places than in the Freenet installation folder.\n"
+"\n"
+"If all goes well we plan for this tray app to be distributed with build 1468. Testing is appreciated! If you'd like to try it for yourself you can find it [here](https://downloads.freenetproject.org/FreenetTray-testing-eaf31ea.exe). Please let us know how it goes and if you'd like to see any changes."
+msgstr ""
+
+#: pages/news.py:355
+msgid "2015-02-11 - Freenet received the SUMA Award 2014/15"
+msgstr ""
+
+#: pages/news.py:356
+msgid ""
+"<div style=\"float: right\"><img src=\"assets/img/suma2015_badge_transparent.png\" alt=\"SUMA Award 2014/15\"/></div>\n"
+"\n"
+"At this year's [congress](http://searchstudies.org/de/suma2015.html)\n"
+"of [SUMA-EV](http://suma-ev.de/en/index.html), association for free access to knowledge,\n"
+"the [SUMA award](http://suma-awards.de/en/index.html) was awarded in the venerable\n"
+"Karl-H.-Ditze lecture hall of the Hamburg University of Applied Sciences.\n"
+"The topic of the award, was the surveillance scandal, revealed by whistleblower\n"
+"Edward Snowden: 'protection against total surveillance'. From submissions of about\n"
+"50 projects for the SUMA award 2014/15 the panel of SUMA-EV selected the Freenet\n"
+"Project as the winner. The prize money of 2500 euro will be used like regular [donations](donate.html)\n"
+"to fund our one paid developer.\n"
+"\n"
+"> ![](assets/img/news/suma_award_2015_handover.jpg)  \n"
+"> Wolfgang Sander-Beuermann with Arne Babenhauserheide, long-term Freenet contributor, as representative of the award winner. Photo: Michael Christen in Hamburg, Lizenz: CC0."
+msgstr ""
+
+#: pages/news.py:372
+msgid "1st January 2015 - apt-get over Freenet"
+msgstr ""
+
+#: pages/news.py:373
+msgid ""
+"Developers of the privacy-focused Debian derivative Mempo report that it can download updates over Freenet! For details, see their page on [Apt over Freenet](http://deb.mempo.org/#install_apt_freenet).\n"
+"\n"
+"Key Points:\n"
+"\n"
+"*   use Freenet to distribute online updates\n"
+"*   most secure hosting option\n"
+"\n"
+"That means it is now possible to get reproducibly built kernels checked by anonymous (and therefore hard to pressure) contributors and update them over Freenet without disclosing that you use them. This applies to the packages provided by Mempo - other apt-get activity like installing GIMP is still public. It would be possible to host the entire Debian repository in Freenet, but this is not yet on the agenda for Mempo because this other activity does not disclose the potentially sensitive information that you want additional privacy.\n"
+"\n"
+"> The practical cool result now, is that Mempo repository can not be censored, DDoSed or taken offline, despite having just 1 tiny server (or no server at all) - rfreeman (one of the mempo developers)"
+msgstr ""
+
+#: pages/news.py:385
+msgid "2014-11-23 - Freenet 0.7.5 build 1467 released"
+msgstr ""
+
+#: pages/news.py:386
+msgid ""
+"This release fixes a bug introduced in build 1466 which can erase the list of plugins to load when Freenet starts if it crashes. If you are affected by this bug and can no longer connect, try adding the UPnP or JSTUN plugins again.\n"
+"\n"
+"</a>\n"
+"\n"
+"<a name=\"build01467\">This release also has updated Finnish, French, Dutch, and Brazilian Portuguese translations thanks to</a> [volunteers on Transifex](https://www.transifex.com/projects/p/freenet/).\n"
+"\n"
+"The Windows installer is updated:\n"
+"\n"
+"*   It now disables the Java installer's sponsor offers. Thanks artart78!\n"
+"*   It gained a Finnish translation. Thanks oselotti!\n"
+"\n"
+"Thank you for using Freenet!\n"
+"\n"
+"- Steve Dougherty"
+msgstr ""
+
+#: pages/news.py:402
+msgid "2014-11-09 - Freenet 0.7.5 build 1466 released"
+msgstr ""
+
+#: pages/news.py:403
+msgid ""
+"This release is planned to be the second-to-last version of Freenet to support Java 6\\. The version after this one will refuse to upgrade unless running on Java 7 or later. Support for this behavior is part of a larger effort to allow separate official update channels - stable, testing, and unstable - as well as make it easier to publish unofficial update channels and further improve deployment security.\n"
+"\n"
+"Highlights for this build:\n"
+"\n"
+"*   Add Hungarian Windows installer translation. Thanks drezzium!*   Allow hiding the Java version End Of Life alert. (I'm sorry for the excessive annoyingness. Still - please upgrade Java!)</a>\n"
+"*   Upgrades to the next version (that is, when running this build's upgrade code) should no longer get [stuck in an upgrade loop](https://bugs.freenetproject.org/view.php?id=3208).\n"
+"*   Increase opennet peer limit to 142 peers. This now has [more math behind it](https://github.com/freenet/fred/pull/286) and will change when network parameters are adjusted.\n"
+"*   Add more opennet seed nodes. Thanks saces and juiceman!\n"
+"*   This build will be mandatory starting 2014-11-16, because old nodes will reject new nodes with more than 110 peers. Updates only take a few hours to spread, so this should only cause short term disruption.\n"
+"\n"
+"Additionally Matthew's (toad_'s) summer work on a custom on-disk format is done. This release lays the groundwork to include the results of that work [in the next release](http://127.0.0.1:8888/USK@pxtehd-TmfJwyNUAW2Clk4pwv7Nshyg21NNfXcqzFv4,LTjcTWqvsq3ju6pMGe9Cqb3scvQgECG81hRdgj5WO4s,AQACAAE/blog/23/Content-626611C.html). This is designed for less disk activity and better behavior when corrupted.\n"
+"\n"
+"This release coincides with the 25th anniversary of the demolition of the Berlin wall (Mauerfall), which marked the beginning of the end of a large censorship and surveillance regime. May censorship be demolished everywhere!\n"
+"\n"
+"Thank you for using Freenet!\n"
+"\n"
+"- Steve Dougherty and Arne Babenhauserheide\n"
+"\n"
+"The link to http://127.0.0.1:8888 works for default Freenet nodes, but will not work for some setups. If you have a nonstandard setup, you should know the correct URL to use."
+msgstr ""
+
+#: pages/news.py:426
+msgid "2013-08-05 - Statement on the recent Freedom Hosting (Tor) bust"
+msgstr ""
+
+#: pages/news.py:427
+msgid ""
+"According to [the press](http://arstechnica.com/tech-policy/2013/08/alleged-tor-hidden-service-operator-busted-for-child-porn-distribution/), half of the hidden sites on Tor are now down, apparently connected to the arrest of a man allegedly behind Freedom Hosting, a hosting service for Tor hidden services. Some of these sites were said to offer illegal content and were apparently run by the FBI for two weeks, using a Javascript-based browser exploit to try to find their users.\n"
+"\n"
+"This has had no effect on Freenet and could not happen on Freenet. Tor hidden services are centralised: A hidden service on Tor is run by a single server somewhere, and if this server is found, the whole site can be shut down, or compromised. In this case half the hidden sites on Tor were run on the same group of servers! See the [Tor blog](https://blog.torproject.org/blog/hidden-services-current-events-and-freedom-hosting) and [mailing list](https://lists.torproject.org/pipermail/tor-announce/2013-August/000089.html).\n"
+"\n"
+"On Freenet, anything you upload is distributed across the network across thousands of separate nodes all over the world, and will remain available for as long as it remains sufficiently popular: Freenet is a distributed data storage network designed to prevent censorship, provide anonymity and be hard to block. To see more information on the difference between Freenet and Tor, see [our explanation in the FAQ](https://freenetproject.org/faq.html#tor).\n"
+"\n"
+"Also, the Javascript exploit mentioned would not have worked on Freenet because Freenet removes Javascript by default. The Tor Browser Bundle has an option to block Javascript. We recommend that you enable this if you use Tor.\n"
+"\n"
+"Furthermore, there was no attack against Tor itself: As far as we know, no users of the major \"darknets\" (Freenet, Tor and I2P) has been traced by attacking the networks, by law enforcement or anyone else. In this case, it appears to have been user error, not a problem with Tor itself. Similarly on Freenet, users need to be careful, and Freenet will often tell you when you are about to do something risky.\n"
+"\n"
+"Having said that, Freenet's security is not perfect, and there are some known (but theoretical) weaknesses, so it might be possible for an attacker with relatively limited resources to trace individual Freenet contributors. Most of Freenet's weaknesses can be addressed by making long-lived connections with people that you trust, i.e. building a friend-to-friend \"darknet\". This functionality is already a part of the regular Freenet software, but we need more users who use Freenet in friend-to-friend mode to improve anonymity.\n"
+"\n"
+"We have planned further improvements, which should greatly improve security (censorship resistance, anonymity and resistance to blocking), speed and usability. The expanding online surveillance from both governments (e.g. PRISM) and private corporations clearly show that tools such as Freenet, TOR and I2P are essential for a healthy democracy.\n"
+"\n"
+"Please help us secure freedom of access to information by contributing to the Freenet-project with code, donations, translations, or just by running a node or creating content (anonymously)!\n"
+"\n"
+"Volunteers - especially developers - are always very welcome. Feel free to contact us, through [IRC online chat](help.html#irc), [the mailing lists](help.html#mailing-lists), or on Freenet itself in the \"freenet\" board on FMS.\n"
+"\n"
+"For press enquiries please contact [Ian Clarke](mailto:ian@freenetproject.org)."
+msgstr ""
+
+#: pages/news.py:448
+msgid ""
+"2013-06-26 - Freenet gets a second paid developer to fix the Web of Trust!"
+msgstr ""
+
+#: pages/news.py:449
+msgid ""
+"Long time coder xor (also known as p0s) has agreed to work, in a paid role, for us on fixing the Web of Trust plugin. This is a crucial component of many Freenet plugins:\n"
+"\n"
+"*   **Sone**, an anonymous social network / microblogging tool.\n"
+"*   **Freemail**, a private and untraceable email over Freenet system.\n"
+"*   A filesharing system as yet unnamed which a student is working on.\n"
+"*   Extensions to Infocalypse, being worked on by another student, a tool for managing source code which is vital to developing software over Freenet.\n"
+"\n"
+"See the Freenet Social Networking Guide for how to load the first 2 plugins.\n"
+"\n"
+"xor is well qualified for the role as he wrote most of the current code in the Web of Trust. The immediate priority will be to improve stability and performance by implementing a new more efficient FCP API. After that further optimisations are planned.\n"
+"\n"
+"Freenet relies on unpaid volunteer developers as well as a few key paid developers. Toad (Matthew Toseland) is returning to full time work for Freenet after a study break, although he is off to university in October, and xor is just starting working for Freenet.\n"
+"\n"
+"Improving the Web of Trust should substantially improve the performance of the key tools mentioned above and may be used by more in the future. Thanks to all our developers and donors!"
+msgstr ""
+
+#: pages/news.py:465
+msgid ""
+"2012-09-11 - Response to the University of Hawaii's \"Experimental Study of "
+"Accountability in Existing Anonymous Networks\""
+msgstr ""
+
+#: pages/news.py:466
+msgid ""
+"Some academics [have published](http://www.ee.hawaii.edu/~dong/traceback/index.htm) a couple of attacks against Freenet, and they appear to be working on more as part of a project to unmask anonymous Freenet users. Build 1411, which was released on the 3rd of September, makes their main attack largely impractical. Nonetheless, we are working on improvements to both make this attack harder and to solve some of the [other known attacks](https://freenetproject.org/faq.html#attack). You can learn more about the attacks and our solution to them on our chief developer's [personal blog](http://amphibian.dyndns.org/flogmirror/#20120911-security).\n"
+"\n"
+"We welcome all work to understand Freenet's security and expose any problems with it, although we would suggest that next time they might let us know before they make the paper public, as is common practice in the security community.\n"
+"\n"
+"Finally, the long term solution is to build a darknet, a Freenet network where people only connect directly to people they trust. That means, get your friends using Freenet, and then add them as Friends on your node. When enough people use Freenet and form darknet connections, we won't need opennet, and this makes all attacks dramatically harder. We will work on making this easier and faster in the near future, as well as fixing the Pitch Black attack."
+msgstr ""
+
+#: pages/news.py:473
+msgid ""
+"2011-04-13 - Freenet top anti-censorship tool in survey of Chinese users!"
+msgstr ""
+
+#: pages/news.py:474
+msgid ""
+"A "
+"[report](http://www.freedomhouse.org/sites/default/files/inline_images/Censorship.pdf)"
+" by [Freedom House](http://freedomhouse.org/) surveyed users in Azerbaijan, "
+"Burma, "
+"[China](http://www.freedomhouse.org/sites/default/files/LOtF_China.pdf) and "
+"Iran for their perceptions of and preferred tools for bypassing local "
+"government censorship. In China, Freenet was the only anti-censorship tool "
+"to achieve 5 stars, and the third most widely used overall."
+msgstr ""
+
+#: pages/news.py:482
+msgid "News"
+msgstr "Notícias"
