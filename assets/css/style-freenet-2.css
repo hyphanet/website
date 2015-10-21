@@ -274,7 +274,7 @@ Any kind of usage allowed: https://css-tricks.com/license/ */
 .meter > span {
 	display: block;
 	height: 100%;
-    padding: 2px;
+    padding: 1px;
     text-align: center;
     font-size: x-small;
 	   -webkit-border-top-right-radius: 8px;
