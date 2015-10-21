@@ -93,7 +93,7 @@ def head(title):
 <!-- FONT AWESOME ICONS STYLES -->
 <link href="assets/css/font-awesome.css" rel="stylesheet" />
 <!-- CUSTOM CSS -->
-<link href="assets/css/style-freenet-2.css" rel="stylesheet" />
+<link href="assets/css/style-freenet-3.css" rel="stylesheet" />
 <!-- SLICK CAROUSEL -->
 <!-- Kept in one directory instead of split to stay with upstream. -->
 <link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
