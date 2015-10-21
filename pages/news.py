@@ -18,6 +18,13 @@ def news_items():
     
     # Below news items are licensed GFDL (from old freenetproject.org website)
     return [
+        NewsItem("20151021-site-deploy", _("2015-10-21 - Website redesign is live"),
+_("""
+The redesigned website is now live! This is the first major design change
+since 2009. Existing URLs [redirect](http://www.w3.org/Provider/Style/URI.html)
+to their new equivalents. Thanks to everyone who contributed feedback,
+development, and translations.
+""")),
               NewsItem("20151011-redesign", _("2015-10-11 - Upcoming website redesign"),
 _("""
 In the next few weeks we will transition to a redesigned website. This will be
