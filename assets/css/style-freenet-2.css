@@ -252,6 +252,20 @@ line-height: 25px;
 margin: 25px 20px;
 }
 
+/*Hide Suma-award notice on small screens*/
+@media screen and (max-width: 767px) {
+  #suma_award_notice {
+          visibility: hidden;
+  }
+}
+/*Donate button*/
+
+@media screen and (max-width: 767px) {
+  #donate_button {
+          max-width: 50%;
+  }
+}
+
 /*Progress Bars from CSS-tricks.
 
 - https://css-tricks.com/css3-progress-bars/
