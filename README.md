@@ -123,27 +123,3 @@ Probably we'd want to us a single license later, and it is nice to already have 
 There is a lot of overlap between those licenses so you are not giving much extra away.
 
 *What is the effect of licensing content under multiple licenses?* When someone want to use the content they can choose which of the licenses to use. This gives them a lot more freedom.
-
-## Migration ##
-Migration is complete:
-
-* download.html -> download.py
-* whatis.html -> index.html#introduction
-* index.html (no unique content)
-* news.html -> news.py
-* philosophy.html -> about.html#philosophy
-* people.html -> about.html#people
-* papers.html -> about.html#papers
-* documentation.html and subpages -> documentation.py
-* link to wiki
-* faq.html -> help.html#faq
-* lists.html -> help.html#mailing-lists
-* link to uservoice
-* irc.html -> help.html#irc
-* link to "The newcomer's guide to anonymous communication on Freenet"
-* donate.html -> donate.html
-* sponsors.html -> donate.html#sponsors
-* link to store http://www.zazzle.com/freenetproject
-* developer.html -> contribute.html#developers
-* link to https://wiki.freenetproject.org/Translation
-* link to bugtracker https://bugs.freenetproject.org/my_view_page.php
