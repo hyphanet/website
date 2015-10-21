@@ -385,8 +385,7 @@ unacceptable).
 An interesting presentation by the group responsible for the two above papers.
 """) + "\n\n" + _("""
 ![](assets/img/pdf.icon.jpg)[Pisces: Anonymous Communication Using Social Networks](http://arxiv.org/abs/1208.6326)  
-An algorithm for setting up onion-like tunnels on darknets. We may implement
-this for Freenet 0.8/0.9.
+An algorithm for setting up onion-like tunnels on darknets. 
 """) + "\n\n" + _("""
 ![](assets/img/pdf.icon.jpg)[Routing in the Dark: Pitch Black](http://grothoff.org/christian/pitchblack.pdf) ([citeseer](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.117.1543)) (PDF)  
 A paper describing some attacks on Freenet 0.7's location swapping algorithm.
