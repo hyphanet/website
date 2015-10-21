@@ -143,7 +143,7 @@ fortunate. You can become a member by clicking on this button (you will need a
 
 Send your donations to the account: """))+"1966U1pjj15tLxPXZ19U48c99EJDkdXeqb"+md("* * *")+
 md(_("""
-Alternatively, please contact us: <donate@freenetproject.org> if you cannot use
+Alternatively, please contact us: <span class="e-mail" data-user="etanod" data-website="gro.tcejorpteneerf"></span> if you cannot use
 any of these payment methods.
 
 You can also donate to the project by purchasing items from the Freenet
@@ -210,7 +210,7 @@ this project through donations or discounts on hardware and services:
 
 Freenet Project Inc does not necessarily endorse the business activities of all of the companies listed on this page.
 
-Donation inquiries please contact [Ian Clarke](mailto:donate@freenetproject.org)
+Donation inquiries please contact Ian Clarke: <span class="e-mail" data-user="etanod" data-website="gro.tcejorpteneerf"></span>
 """)))
 
 class StoreSection(Section):
@@ -238,7 +238,7 @@ class DonateThanksSection(Section):
 We have received your generous donation. It will be used at the direction of
 the Freenet Board to advance the interests of the Freenet Project. If you
 have any questions about how your donation will be used please contact Ian
-Clarke: <donate@freenetproject.org>.
+Clarke: <span class="e-mail" data-user="etanod" data-website="gro.tcejorpteneerf"></span>.
 """)))
             
 class DonateThanksPage(Page):
