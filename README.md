@@ -39,6 +39,18 @@ Tips:
 * Markdown: https://pypi.python.org/pypi/Markdown
 * Python 3: http://python.org
 
+## Development ##
+
+To generate a single language for local development:
+
+    ./generate -l en
+
+To generate a localized version suitable for a web server with multiview:
+
+    ./generate
+
+ TODO - describe multiview; cookie config
+
 ## License ##
 
 ### Content ###
