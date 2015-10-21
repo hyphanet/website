@@ -90,37 +90,37 @@ type:
 The first window you should see is the one below, which allows you to select
 your preferred language for the installation program.
 
-![](assets/img/install/1-langselect.png)
+<img height="160" src="assets/img/install/1-langselect.png" />
 
 Next is shown an about-box, some information about the version of Freenet and
 authors. Just click **Next** to proceed.
 
-![](assets/img/install/2-about.png)
+<img height="457" src="assets/img/install/2-about.png" />
 
 The next step is to choose the directory in which to install Freenet. The
 default location on GNU/Linux & POSIX operating systems is
 **/home/username/Freenet** as shown below. Change it to something appropriate or
 leave "as is". Click **Next** when you are finished.
 
-![](assets/img/install/4-Install_directory.png)
+<img height="458" src="assets/img/install/4-Install_directory.png" />
 
 Select the packages that you want to install with your Freenet software.
 Since it takes up virtually no extra disk-space, it is recommended that you
 leave all packages selected and press **Next**.
 
-![](assets/img/install/5-select_packages.png)
+<img height="458" src="assets/img/install/5-select_packages.png" />
 
 In the next stage, the packages are installed, and a progress meter runs
 across the window. When it is finished, press **Next** to continue to the
 next step.
 
-![](assets/img/install/6-Install_packages.png)
+<img height="457" src="assets/img/install/6-Install_packages.png" />
 
 After that, the Freenet software is installed and/or upgraded, plugins are
 enabled and the environment is started. When completed, press **Next** to
 proceed.
 
-![](assets/img/install/7-install_progress.png)
+<img height="454" src="assets/img/install/7-install_progress.png" />
 
 For some graphical environments, shortcuts in the menu-structure can be
 created. This is not the case for all of the platforms that Freenet run on.
@@ -128,11 +128,11 @@ However, there should be created shortcuts on the desktop in all supported
 environments. Change the application group according to your needs and press
 **Next** when finished.
 
-![](assets/img/install/8-create_shortcuts.png)
+<img height="458" src="assets/img/install/8-create_shortcuts.png" />
 
 After that, the installation is finished. Click **Done** to close the window.
 
-![](assets/img/install/9-Install_finished.png)
+<img height="457" src="assets/img/install/9-Install_finished.png" />
 
 If all has gone well, a browser window should have opened in the background.
 This will ask you a bunch of questions to configure Freenet, and then you
