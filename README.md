@@ -1,16 +1,5 @@
 # Website #
 
-The basic design is:
-
-- settings.py contains the supported languages and the menu definition
-- pages/*.py contain the separate pages of the site
-- assets contains css, javascript and images
-- locale contains translations
-- generate.py is the script that will turn this into a static site in output
-- Translation is done using gettext; update_pot.sh will extract all the translatable strings into freenet_site.pot
-- If you change English text in the site run update_translations.py so that all translations will get the new text. This may be a slightly
-dangerous operation as it may cause a lot of fuzzy matches.
-
 ## For Translators ##
 
 *Note that by contributing a translation you agree to triple license it under the GFDL, CC-BY-SA 4.0 and GPLv2+ licenses.*
@@ -53,6 +42,17 @@ To generate a localized version suitable for a web server with multiview:
     ./generate
 
  TODO - describe multiview; cookie config
+
+The basic design is:
+
+- settings.py contains the supported languages and the menu definition
+- pages/*.py contain the separate pages of the site
+- assets contains css, javascript and images
+- locale contains translations
+- generate.py is the script that will turn this into a static site in output
+- Translation is done using gettext; update_pot.sh will extract all the translatable strings into freenet_site.pot
+- If you change English text in the site run update_translations.py so that all translations will get the new text. This may be a slightly
+dangerous operation as it may cause a lot of fuzzy matches.
 
 ## License ##
 
