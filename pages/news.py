@@ -20,10 +20,12 @@ def news_items():
     return [
         NewsItem("20151021-site-deploy", _("2015-10-21 - Website redesign is live"),
 _("""
-The redesigned website is now live! This is the first major design change
-since 2009. Existing URLs [redirect](http://www.w3.org/Provider/Style/URI.html)
+The redesigned website is now live!
+Existing URLs [redirect](http://www.w3.org/Provider/Style/URI.html)
 to their new equivalents. Thanks to everyone who contributed feedback,
 development, and translations.
+
+If we missed something, please tell us in our [support chat](help.html#irc)!
 """)),
               NewsItem("20151011-redesign", _("2015-10-11 - Upcoming website redesign"),
 _("""
