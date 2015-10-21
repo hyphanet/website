@@ -15,7 +15,10 @@ dangerous operation as it may cause a lot of fuzzy matches.
 
 *Note that by contributing a translation you agree to triple license it under the GFDL, CC-BY-SA 4.0 and GPLv2+ licenses.*
 
-We might switch to Transifex soon, for now these are the steps:
+This website is being translated as the
+[website resource](https://www.transifex.com/otf/freenet/website/) on Transifex.
+
+To contribute without Transifex:
 
 * Fork this repository and create a checkout
 * Run update_po.sh from the root directory
