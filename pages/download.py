@@ -139,7 +139,7 @@ performance.
 
 Open a terminal and run:
 """) + "\n\n" + """
-    wget '[https://freenetproject.org/assets/jnlp/freenet_installer.jar](https://freenetproject.org/assets/jnlp/freenet_installer.jar)' -O new_installer_offline.jar
+    wget 'https://freenetproject.org/assets/jnlp/freenet_installer.jar' -O new_installer_offline.jar
     java -jar new_installer_offline.jar
 """ + "\n\n" + _("""
 Alternatively, downloading [the installer](assets/jnlp/freenet_installer.jar)
