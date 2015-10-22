@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: Freenet\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-21 11:58-0400\n"
-"PO-Revision-Date: 2015-10-21 15:58+0000\n"
-"Last-Translator: Steve Dougherty\n"
+"PO-Revision-Date: 2015-10-22 01:14+0000\n"
+"Last-Translator: Bert Massop <bert.massop@gmail.com>\n"
 "Language-Team: Dutch (http://www.transifex.com/otf/freenet/language/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -54,14 +54,14 @@ msgid ""
 "forums, without fear of censorship. Freenet is decentralised to make it less\n"
 "vulnerable to attack, and if used in \"darknet\" mode, where users only connect to\n"
 "their friends, is very difficult to detect."
-msgstr ""
+msgstr "Freenet is vrije software die je anoniem bestanden laat delen, “freesites” (websites die alleen toegankelijk zijn via Freenet) laat publiceren en laat chatten op fora, zonder je zorgen te maken om censuur. Freenet is gedecentraliseerd om het minder kwetsbaar te maken voor aanvallen. Indien gebruikt in “darknet”-modus, waar gebruikers alleen verbinden met hun vrienden, is het erg moeilijk te detecteren."
 
 #: pages/about.py:26
 msgid ""
 "Communications by Freenet nodes are encrypted and are routed through other\n"
 "nodes to make it extremely difficult to determine who is requesting the\n"
 "information and what its content is."
-msgstr ""
+msgstr "Communicatie tussen Freenet-nodes verloopt versleuteld en wordt gerouteerd via andere nodes om het extreem moeilijk te maken om te achterhalen wie de informatie opvraagt en wat de inhoud is."
 
 #: pages/about.py:30
 msgid ""
@@ -73,7 +73,7 @@ msgid ""
 "his datastore, and hopefully can't be held accountable for it. Chat forums,\n"
 "websites, and search functionality, are all built on top of this distributed\n"
 "data store."
-msgstr ""
+msgstr "Gebruikers ondersteunen het netwerk door bandbreedte en ruimte op hun harde schijf (de zogenaamde “datastore”) beschikbaar te stellen om bestanden op te slaan. Bestanden worden automatisch bewaard of verwijderd afhankelijk van hoe populair ze zijn, waarbij de minst populaire worden verwijderd om ruimte te maken voor nieuwere of populairdere inhoud."
 
 #: pages/about.py:39
 msgid ""
@@ -87,7 +87,7 @@ msgid ""
 "philosophy. Ian Clarke, Freenet's creator and project coordinator,\n"
 "was selected as one of the top 100 innovators of 2003 by MIT's Technology\n"
 "Review magazine."
-msgstr ""
+msgstr "Freenet is sinds de start van het project al meer dan 2 miljoen keer gedownload, en wordt gebruikt voor het verspreiden van gecensureerde informatie over de hele wereld, waaronder in landen zoals China en in het Midden-Oosten. Ideeën en concepten die voor het eerst werden gedemonstreerd in Freenet hebben een significante impact gehad op de academische wereld. Ons paper uit 2000, “Freenet: A Distributed Anonymous Information Storage and Retrieval System”, was volgens Citeseer het meest geciteerde informatica-paper uit 2000, en Freenet heeft ook als inspiratie gediend voor papers in de rechten en de filosofie. Ian Clarke, Freenet's oprichter en projectcoördinator, werd door het blad MIT Technology Review verkozen tot een van de top-100 innovators van 2003."
 
 #: pages/about.py:50
 msgid ""
@@ -97,7 +97,7 @@ msgid ""
 "friends' friends' friends and so on. This enables people to use Freenet even\n"
 "in places where Freenet may be illegal, makes it very difficult for\n"
 "governments to block it, and does not rely on tunneling to the \"free world\"."
-msgstr ""
+msgstr "Een belangrijke recente ontwikkeling, waarover weinig andere netwerken beschikken, is het “darknet”. Hiermee kunnen gebruikers hun kwetsbaarheid sterk verminderen door uitsluitend te verbinden met mensen die ze vertrouwen, en toch nog steeds verbonden zijn met een globaal netwerk via de vrienden van hun vrienden van hun vrienden, enzovoorts. Dit helpt mensen Freenet zelfs te gebruiken op plaatsen waar Freenet mogelijk illegaal is, maakt het erg ingewikkeld voor de overheid om het te blokkeren en vereist geen tunnels naar de “vrije wereld”."
 
 #: pages/about.py:64
 msgid "The Philosophy behind Freenet"
@@ -118,7 +118,7 @@ msgid ""
 "8.  [And what of copyright?](#copyright)\n"
 "9.  [But how will artists be rewarded for their work without copyright?](#reward)\n"
 "10.  [Alternatives to Copyright](#alternative)"
-msgstr ""
+msgstr "*Geschreven door Ian Clarke*\n\n1.  [Een disclaimer](#disclaimer)\n2.  [Aanbevolen leeswerk vooraf](#prior_reading)\n3.  [Het belang van een vrije informatiestroom](#free_flow_info)\n4.  [Censuur en vrijheid](#censor_freedom)\n5.  [De oplossing](#solution)\n6.  [Is censuur soms niet noodzakelijk?](#is_censorship_necessary)\n7.  [Maar waarom hebben we anonimiteit nodig?](#why_anonymity)\n8.  [En hoe zit het met auteursrechten?](#copyright)\n9.  [Maar hoe worden artiesten beloond voor hun werk zonder auteursrechten?](#reward)\n10.  [Alternatieven voor auteursrechten](#alternative)"
 
 #: pages/about.py:83
 msgid ""
@@ -130,7 +130,7 @@ msgid ""
 "technical challenge. These are the ideas which motivated me to architect the\n"
 "system in the first place, but not necessarily the views that everyone involved\n"
 "in the Freenet project holds."
-msgstr ""
+msgstr "### 1\\. Een disclaimer\n\nEr zijn veel redenen waarom mensen betrokken raken bij het Freenet-roject. Sommigen van hen delen de visie die in dit document wordt weergegeven, anderen delen variaties op deze visie waarin ook wordt voorzien door wat we proberen te bereiken, en sommigen houden gewoon van een technologische uitdaging. Dit zijn de ideeën die me motiveerden me om het systeem te ontwerpen, maar niet noodzakelijkerwijs het gedachtegoed van iedereen die betrokken is bij het Freenet-project."
 
 #: pages/about.py:93
 msgid ""
@@ -138,7 +138,7 @@ msgid ""
 "\n"
 "For this document to make sense, you should probably know what Freenet is. You\n"
 "can get a good overview from [What is Freenet?](about.html#introduction)."
-msgstr ""
+msgstr "### 2\\. Aanbevolen leeswerk vooraf\n\nOm dit document te kunnen begrijpen, moet je waarschijnlijk weten wat Freenet is. [Wat is Freenet?](about.html#introduction) geeft hiervan een goed overzicht."
 
 #: pages/about.py:99
 msgid ""
@@ -148,7 +148,7 @@ msgid ""
 "of the most important rights any individual might have. Why is the freedom to\n"
 "share ideas and opinions so important? There are several ways to answer this\n"
 "question."
-msgstr ""
+msgstr "### 3\\. Het belang van een vrije informatiestroom\n\nVrijheid van meningsuiting wordt in de meeste westerse culturen gezien als een van de meest belangrijke rechten die een individu kan hebben. Waarom is de vrijheid tot het delen van ideeën en meningen zo belangrijk? Deze vraag is op verschillende manieren te beantwoorden."
 
 #: pages/about.py:106
 msgid ""
@@ -159,7 +159,7 @@ msgid ""
 "we constantly discover that animal's communication ability is more sophisticated\n"
 "than previously assumed, it is unlikely that any other animal approaches our own\n"
 "level of ability in this area."
-msgstr ""
+msgstr "#### 3.1 Communicatie is wat ons mensen maakt\n\nEen van de meest opvallende verschillen tussen de mens en de rest van het dierenrijk is ons vermogen om verfijnde en abstracte concepten te communiceren. Hoewel we steeds ontdekken dat het dierlijk vermogen tot communiceren verfijnder is dan we voorheen dachten, is het onwaarschijnlijk dat enig ander dier in vermogen hiertoe bij ons in de buurt komt."
 
 #: pages/about.py:114
 msgid ""
@@ -170,7 +170,7 @@ msgid ""
 "lost over who was better-informed. This is because being better-informed allows\n"
 "us to make better decisions, and generally improve our ability to survive and be\n"
 "successful."
-msgstr ""
+msgstr "#### 3.2 Kennis is goed\n\nDe meeste mensen zullen, als ze de keuze hebben iets al dan niet te weten, ervoor kiezen meer informatie te hebben in plaats van minder. Oorlogen zijn gewonnen en verloren om wie er beter voorzien was van informatie. Dit komt doordat we als we beter geïnformeerd zijn, we betere beslissingen kunnen maken, en in het algemeen ons vermogen toeneemt om te overleven en succesvol te zijn."
 
 #: pages/about.py:122
 msgid ""
@@ -185,7 +185,7 @@ msgid ""
 "it must know what their government is doing, they must be well informed. It\n"
 "is a feedback loop, but this loop can be broken if the government has the\n"
 "power to control the information the population has access to."
-msgstr ""
+msgstr "#### 3.3 Democratie gaat uit van een goed geïnformeerde bevolking\n\nVeel mensen leven vandaag de dag onder een democratische regering en zij die dat niet doen, willen dat waarschijnlijk wel. Democratie is een antwoord op de vraag van het aanwijzen van leiders, en hen te verhinderen die macht te misbruiken. Het slaagt hierin door de bevolking de macht te geven haar overheid te reguleren middels het kiesrecht, hoewel de mogelijkheid tot stemmen niet per se betekent dat je in een democratisch land leeft. Wil een bevolking haar overheid op een effectieve manier kunnen reguleren, dan moet ze weten wat haar overheid aan het doen is: ze moet goed geïnformeerd zijn. Het is een lus van voortdurende terugkoppeling, maar deze lus kan doorbroken worden als de overheid de macht heeft te controleren tot welke informatie de bevolking toegang heeft."
 
 #: pages/about.py:135
 msgid ""
@@ -202,7 +202,7 @@ msgid ""
 "so, that people now take it for granted, despite the fact that this\n"
 "undermines the very democratic principles which justify the government's\n"
 "existence in the first place."
-msgstr ""
+msgstr "### 4\\. Censuur en vrijheid\n\nIedereen hecht belang aan zijn vrijheid, velen vinden het zelfs zo belangrijk dat ze ervoor willen sterven. Mensen denken graag dat ze vrij zijn om hun eigen meningen te hebben en te vormen, met name in westerse landen. Stel je nu voor dat iemand de mogelijkheid heeft te bepalen tot welke informatie je toegang hebt. Dit zou hen de mogelijkheid geven je meningen te manipuleren door feiten voor je te verbergen, door je leugens te presenteren en alles dat deze leugens tegenspreekt te censureren. Dit is niet een of ander Orwelliaans verzinsel, de meeste westerse overheden maken er een gewoonte van te liegen tegen hun bevolkingen, zoveel zelfs dat mensen het voor lief nemen, ondanks het feit dat dit de democratische principes waarop de overheid haar bestaan rechtvaardigt ondermijnt."
 
 #: pages/about.py:150
 msgid ""
@@ -213,7 +213,7 @@ msgid ""
 "information, to communicate. So long as everything we see and hear is\n"
 "filtered, we are not truly free. Freenet's aim is to allow two or more people\n"
 "who wish to share information, to do so."
-msgstr ""
+msgstr "### 5\\. De oplossing\n\nDe enige manier om ervoor te zorgen dat een democratie effectief blijft, is door ervoor te zorgen dat een overheid de mogelijkheden van haar bevolking om informatie te delen en te communiceren niet kan controleren. Zo lang alles dat we zien en horen wordt gefilterd, zijn we niet werkelijk vrij. Het doel van Freenet is om twee of meer mensen die informatie willen delen, hiertoe in staat te stellen."
 
 #: pages/about.py:159
 msgid ""
@@ -242,7 +242,7 @@ msgid ""
 "Of course the first argument is the stronger one, and would still hold-true\n"
 "even if you didn't accept the second. Basically, you either have censorship,\n"
 "or you don't. There is no middle-ground."
-msgstr ""
+msgstr "### 6\\. Is censuur soms niet noodzakelijk?\n\nNatuurlijk is geen enkel probleem zwart-wit, er zijn dan ook velen die vinden dat censuur onder sommige omstandigheden iets goeds is. In sommige Europese landen is het verspreiden van racistische informatie bijvoorbeeld verboden. Overheden proberen mensen ervan te weerhouden gedachtegoed te verspreiden dat als schadelijk voor de maatschappij wordt gezien. Er zijn hier echter twee antwoorden op mogelijk. Het eerste is dat je de machthebbers niet kan toelaten “goede” censuur toe te passen, zonder ze in staat te stellen “slechte” censuur toe te passen. Om om het even welke vorm van censuur toe te passen moet een overheid de mogelijkheid hebben communicatie te monitoren en zodoende te beperken. Er klinkt al kritiek dat de antiracistische censuur in veel Europese landen legitieme historische analyse van gebeurtenissen zoals de Tweede Wereldoorlog moeilijker maakt.\n\nHet tweede argument is dat deze “goede” censuur contraproductief is, zelfs als het beperkt blijft tot haar oorspronkelijke doel. Om iemand te overtuigen is het over het algemeen bijvoorbeeld effectiever om tegenargumenten te presenteren, en deze argumenten te beantwoorden. Helaas maakt het voorkomen dat mensen kennis nemen van de veelal geraffineerde argumenten die racisten gebruiken, dat juist deze mensen kwetsbaar zijn voor deze argumenten als ze ze ooit wel tegenkomen.\n\nNatuurlijk is het eerste argument het sterkst, deze houdt zelfs stand als je het tweede argument verwerpt. Kortom, het is een keuze tussen censuur óf geen censuur. Er is geen middenweg."
 
 #: pages/about.py:186
 msgid ""
@@ -257,7 +257,7 @@ msgid ""
 "people can create a secure anonymous pseudonym which, in time, people can\n"
 "learn to trust. Freenet incorporates a mechanism called \"subspaces\" to\n"
 "facilitate this."
-msgstr ""
+msgstr "### 7\\. Maar waarom is anonimiteit noodzakelijk?\n\nJe kan geen vrijheid van meningsuiting hebben zonder de mogelijkheid te hebben anoniem te blijven. De meeste censuur is retrospectief van aard, het is doorgaans veel gemakkelijker om de vrijheid van meningsuiting in te perken door zij die het gebruiken achteraf te straffen, dan te voorkomen dat het gebruikt wordt. De enige manier om dit te voorkomen is door anoniem te blijven. Het is een algemene misvatting dat anonieme informatie onbetrouwbaar is. Dit is niet noodzakelijkerwijs waar: door gebruik te maken van digitale handtekeningen kunnen mensen een veilig anoniem pseudoniem maken die mensen in de loop van de tijd kunnen leren te vertrouwen. Freenet kent een mechanisme van “subruimtes” om dit te faciliteren."
 
 #: pages/about.py:208
 msgid "You cannot guarantee freedom of speech and enforce copyright law"
@@ -3678,7 +3678,7 @@ msgstr "Overzicht"
 
 #: pages/news.py:21
 msgid "2015-10-21 - Website redesign is live"
-msgstr ""
+msgstr "21-10-2015 – Nieuw ontwerp website gelanceerd"
 
 #: pages/news.py:22
 msgid ""
@@ -3692,7 +3692,7 @@ msgstr ""
 
 #: pages/news.py:30
 msgid "2015-10-11 - Upcoming website redesign"
-msgstr ""
+msgstr "11-10-2015 – Aankomend nieuw websiteontwerp"
 
 #: pages/news.py:31
 msgid ""
