@@ -354,7 +354,7 @@ If all goes well we plan for this tray app to be distributed with build 1468. Te
 """)),
         NewsItem("20150211", _("2015-02-11 - Freenet received the SUMA Award 2014/15"),
                  _("""
-<div style="float: right"><img src="assets/img/suma2015_badge_transparent_2.png" alt="SUMA Award 2014/15"/></div>
+<div style="float: right"><img src="assets/img/suma2015_badge_transparent_3.png" alt="SUMA Award 2014/15"/></div>
 
 At this year's [congress](http://searchstudies.org/de/suma2015.html)
 of [SUMA-EV](http://suma-ev.de/en/index.html), association for free access to knowledge,

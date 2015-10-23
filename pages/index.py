@@ -68,7 +68,7 @@ obtain. Using it will also be less suspicious.
              <p>&nbsp; &nbsp;</p>
              <p>&nbsp; &nbsp;</p>
              <p>&nbsp; &nbsp;</p>
-             <p><a href="news.html#20150211"><img src="assets/img/suma2015_badge_transparent_2.png" alt="SUMA Award 2014/15" /></a></p>
+             <p><a href="news.html#20150211"><img src="assets/img/suma2015_badge_transparent_3.png" alt="SUMA Award 2014/15" /></a></p>
         </div>
 </div>
 
