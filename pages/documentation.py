@@ -357,10 +357,9 @@ It is hard, but not impossible, to determine which files that are stored in
 your local Freenet Datastore. This is to enable plausible deniability as to
 what kind of material that lies on your harddrive in the datastore.
 """) + "\n\n" + _("""
-The initial diskspace allocated for the datastore is 5%% of available disk
-space if it is over 20GB, 10%% if it is over 10GB, 512MB if under 10GB,
-and 256MB if under 5GB. You can change the store size at any time, the more
-the better, both for your personal browsing and for Freenet as a whole.
+Freenet suggests an initial size based on how much space is available, and
+you can change the store size at any time. A larger store uses more RAM,
+but makes for better browsing for you and helps Freenet as a whole.
 """) + "\n\n" + _("""
 ### Freenet Routing
 
