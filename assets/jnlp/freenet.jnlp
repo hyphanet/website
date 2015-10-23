@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- JNLP File for Freenet -->
-<jnlp spec="1.0+" href="https://freenetproject.org/jnlp/freenet.jnlp" codebase="https://freenetproject.org/jnlp/">
+<jnlp spec="1.0+" href="https://freenetproject.org/assets/jnlp/freenet.jnlp" codebase="https://freenetproject.org/assets/jnlp/">
 	<information>
 		<title>Freenet 0.7.5 installer</title>
 		<vendor>Freenet Project Inc.</vendor>
