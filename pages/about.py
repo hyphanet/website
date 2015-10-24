@@ -402,8 +402,8 @@ and most implemented ideas have been discussed in detail on [the mailing
 lists](help.html#mailing-lists) at some point, more recently often in-Freenet
 forums such as FMS, or [the bug tracker](https://bugs.freenetproject.org/).
 """ + """
-[icon_pdf]: assets/img/pdf.icon.jpg
-[icon_video]: assets/img/video.icon.png
+[icon_pdf]: assets/img/small-n-flat/file-pdf.png
+[icon_video]: assets/img/small-n-flat/file-video.png
 """)))
 class AboutPage(Page):
     def __init__(self):
