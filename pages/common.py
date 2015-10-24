@@ -233,7 +233,7 @@ class ContactSection(Section):
 </div>
 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 <div class="contact-wrapper">
-<h3>License</h3>
+<h3>$license_header</h3>
 $license
 <div class="footer-div" >
 &copy; 2015 The Freenet Project Inc<br/>
@@ -247,6 +247,7 @@ $license
             press=_("Press"),
             support=_("Support"),
             irc=_("IRC"),
+            license_header=_("License"),
             license=_("Content on this website is licensed under the GNU Free Documentation License and may be available under other licenses."),
             design=_("Design by DesignBootstrap")
             )
