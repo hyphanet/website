@@ -227,7 +227,7 @@ class ContactSection(Section):
 <h3>Contact</h3>
 <h4><strong>$press </strong><span class="e-mail" data-user="sserp" data-website="gro.tcejorpteneerf"></span></h4>
 <h4><strong>$support </strong> support@freenetproject.org </h4>
-<h4><strong>$irc </strong> #freenet on chat.freenode.net</h4>
+<h4><strong>$irc </strong> $irc_value</h4>
 </div>
 
 </div>
@@ -247,6 +247,7 @@ $license
             press=_("Press:"),
             support=_("Support:"),
             irc=_("IRC:"),
+            irc_value=_("{irc_channel} on {irc_server}").format(irc_channel="#freenet", irc_server="chat.freenode.net"),
             license_header=_("License"),
             license=_("Content on this website is licensed under the GNU Free Documentation License and may be available under other licenses."),
             design=_("Design by DesignBootstrap")
