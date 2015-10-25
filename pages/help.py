@@ -1050,7 +1050,7 @@ Almost everyone on the channel is a volunteer, and may be busy with other
 things, so you may not get an instant answer: **Ask your question/say what
 the problem is, then wait for a few minutes, and somebody may help you**.
 
-[Chat with us](https://webchat.freenode.net/?randomnick=1&channels=freenet)
+[Chat with us](#chatlink "chatlink")
 
 If you do not get an answer within the first few minutes, please keep the
 chat window open. We read our backlog, and if you stay, you will normally get

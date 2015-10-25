@@ -130,7 +130,27 @@ $content
 <script src="assets/js/custom.js"></script>
 <!-- SLICK CAROUSEL -->
 <script type="text/javascript" src="assets/slick/slick.min.js"></script>
+<!-- BOOTBOX -->
+<script type="text/javascript" src="assets/js/bootbox.min.js"></script>
 
+<!-- Chat link modal alert handler. This must go after jQuery is loaded, which restricts it to being in common. -->
+<script type="text/javascript">
+jQuery(document).on("click", '[title="chatlink"]', function(e) {
+    bootbox.dialog({
+        message: "This chat is staffed by volunteers, and it may be that no one is around right now. Please ask your question, and someone will answer within several hours.",
+        title: "Please note",
+        buttons: {
+            main: {
+                label: "OK",
+                className: "btn-primary",
+                callback: function() {
+                    window.open("https://webchat.freenode.net/?randomnick=1&channels=freenet");
+                }
+            }
+        }
+    });
+});
+</script>
 </body>
 """
     return string.Template(template).substitute(content=content)
