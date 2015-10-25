@@ -941,9 +941,9 @@ and the human readable name for the site, as seen in the address-field of the
 browser:
 
 * **Request URI** - this is filled in automatically and should be a long string
-  of seemingly random characters
+  of seemingly random characters.
 * **Insert URI** - this is also filled in automatically and will look similar to
-  the Request URI..
+  the Request URI.
 * **Path** - You need to enter a single word here without spaces. This will
   appear at the end of the address of your site. You can't leave this blank.
 
