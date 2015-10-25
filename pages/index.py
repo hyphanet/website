@@ -110,7 +110,7 @@ $tagline
              <h4>$donate_title</h4>
              <p>$donate_text</p>
              <div class="meter blue">
-                 <span style="width: calc(MONEYMONTHS / 12 *100%)">MONEYMONTHS / 12 months</span>
+                 <span style="width: calc(MONEYMONTHS / 12 *100%)">$months_text</span>
              </div>
              <a class="btn button-custom btn-custom-two donate-button" href="donate.html">$donate_button_text</a>
         </div>
@@ -131,12 +131,14 @@ $tagline
 Your donations pay for our server and developer. Our current funds will last
         """))
         donate_button_text = _("Donate!")
+        months_text = _("{num_months} / 12 months").format(num_months="MONEYMONTHS")
         return string.Template(content).substitute(sliders="".join(sliders),
                                                    tagline=tagline,
                                                    download_text=download_text,
                                                    donate_text=donate_text,
                                                    donate_title=donate_title,
-                                                   donate_button_text=donate_button_text)
+                                                   donate_button_text=donate_button_text,
+                                                   months_text=months_text)
 
 
 class ServiceSection(Section):
