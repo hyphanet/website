@@ -137,8 +137,8 @@ $content
 <script type="text/javascript">
 jQuery(document).on("click", '[title="chatlink"]', function(e) {
     bootbox.dialog({
-        message: "This chat is staffed by volunteers, and it may be that no one is around right now. Please ask your question, and someone will answer within several hours.",
-        title: "Please note",
+        message: "$chat_modal_message",
+        title: "$chat_modal_title",
         buttons: {
             main: {
                 label: "OK",
@@ -153,7 +153,9 @@ jQuery(document).on("click", '[title="chatlink"]', function(e) {
 </script>
 </body>
 """
-    return string.Template(template).substitute(content=content)
+    chat_modal_title = _("Please note")
+    chat_modal_message = _("This chat is staffed by volunteers, and it may be that no one is around right now. Please ask your question, and someone will answer within several hours.")
+    return string.Template(template).substitute(content=content, chat_modal_title=chat_modal_title, chat_modal_message=chat_modal_message)
 
 def menu(site_menu, current_page):
     menu_content = "";
