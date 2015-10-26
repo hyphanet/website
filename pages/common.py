@@ -141,7 +141,7 @@ jQuery(document).on("click", '[title="chatlink"]', function(e) {
         title: "$chat_modal_title",
         buttons: {
             main: {
-                label: "OK",
+                label: "$chat_modal_button",
                 className: "btn-primary",
                 callback: function() {
                     window.open("https://webchat.freenode.net/?randomnick=1&channels=freenet");
@@ -153,9 +153,10 @@ jQuery(document).on("click", '[title="chatlink"]', function(e) {
 </script>
 </body>
 """
+    chat_modal_button = _("OK")
     chat_modal_title = _("Please note")
     chat_modal_message = _("This chat is staffed by volunteers, and it may be that no one is around right now. Please ask your question, and someone will answer within several hours.")
-    return string.Template(template).substitute(content=content, chat_modal_title=chat_modal_title, chat_modal_message=chat_modal_message)
+    return string.Template(template).substitute(content=content, chat_modal_title=chat_modal_title, chat_modal_message=chat_modal_message, chat_modal_button=chat_modal_button)
 
 def menu(site_menu, current_page):
     menu_content = "";
