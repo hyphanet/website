@@ -8,6 +8,8 @@ class DonateSection(Section):
         self.title = _("Donate")
     def get_content(self):
         # License: GFDL (from old freenetproject.org website)
+        donate_email = """<span class="e-mail" data-user="etanod" data-website="gro.tcejorpteneerf"></span>"""
+        bitcoin_address = "1966U1pjj15tLxPXZ19U48c99EJDkdXeqb"
         return text(md(_("""
 #### Financial Status
 
@@ -38,9 +40,10 @@ and dependable income which makes it easier to make long term commitments to
 potential developers - right now it is often difficult to say whether we will be
 able to pay a developer the following month although so-far we have been
 fortunate. You can become a member by clicking on this button (you will need a
-[PayPal](https://www.paypal.com/) account):
-""")) +
-"""
+[PayPal][url_paypal] account):
+""") + "\n\n" + """
+[url_paypal]: https://www.paypal.com/
+""") + """
 	  <center>
 	    <table>
 	      <tbody><tr>
@@ -136,19 +139,17 @@ fortunate. You can become a member by clicking on this button (you will need a
 		</tr>
 	      </tbody></table>
 	    </center>
-"""+md(_("""
-* * *
+"""+md("* * *" + "\n\n" + _("""
+![][logo_bitcoin] You can now donate to the Freenet Project using [bitcoin][url_bitcoin].  
 
-![](assets/img/BC_nBG_48px.png) You can now donate to the Freenet Project using [bitcoin](http://www.bitcoin.org/).  
-
-Send your donations to the account: """))+"1966U1pjj15tLxPXZ19U48c99EJDkdXeqb"+md("* * *")+
-md(_("""
-Alternatively, please contact us: <span class="e-mail" data-user="etanod" data-website="gro.tcejorpteneerf"></span> if you cannot use
+Send your donations to the account: {bitcoin_address}
+""").format(bitcoin_address=bitcoin_address) + "\n\n" + "* * *" + "\n\n" + _("""
+Alternatively, please contact us: {donate_email} if you cannot use
 any of these payment methods.
 
 You can also donate to the project by purchasing items from the Freenet
-[store](http://www.zazzle.com/freenetproject).
-""") + "\n\n" + _("""
+[store][url_zazzle_store].
+""").format(donate_email=donate_email) + "\n\n" + _("""
 ## How can I be sure that my donation will be used appropriately?
 
 All donations go to The Freenet Project Inc, a non-profit 501c3 corporation with
@@ -168,50 +169,76 @@ the following mission statement:
 
 All funds received will only be utilized to advance our Mission Statement, and
 are administered at the direction of the Freenet Project Board.
-""")))
+""") + "\n\n" + """
+[url_bitcoin]: http://www.bitcoin.org/
+[logo_bitcoin]: assets/img/BC_nBG_48px.png
+[url_zazzle_store]: http://www.zazzle.com/freenetproject
+"""))
 
 class SponsorsSection(Section):
     def __init__(self):
         self.slug = "Sponsors"
         self.title = _("Sponsors")
     def get_content(self):
+        donate_email = """<span class="e-mail" data-user="etanod" data-website="gro.tcejorpteneerf"></span>"""
         # License: GFDL (from old freenetproject.org website)
         return text(md(_("""
 The following persons, organisations and companies have generously sponsored
 this project through donations or discounts on hardware and services:
 
-*   [John Pozadzides](http://onemansblog.com/)  
+*   [John Pozadzides][url_john_pozadzides]  
      John is the founder of HTMLHelp.com and former Vice President of Sales for SAVVIS Communications. John has donated $10,000 to the Freenet Project to fund ongoing development of the Freenet software.
-*   [Web Hosting Search](http://www.webhostingsearch.com/)  
+*   [Web Hosting Search][url_web_hosting_search]  
      WebHostingSearch is a top rated guide to various world wide web hosting companies. Mr Chris Reynolds and the friendly team behind this company have become one of our proud promoters.
-*   [John Gilmore](http://www.toad.com/gnu/)  
+*   [John Gilmore][url_john_gilmore]  
      John Gilmore is one of the founders of the Electronic Frontier Foundation, the Cypherpunks mailing list, and Cygnus Solutions. He created the alt.* hierarchy in Usenet and is a major contributor to the GNU project. He has donated $10,000.
-*   [Bytemark Hosting](http://bytemark.co.uk/)  
+*   [Bytemark Hosting][url_bytemark_hosting]  
      Bytemark provides discounted hosting facilities to Freenet and comes with our highest recommendation.
-*   [zoozle Torrent Search](http://www.zoozle.org/)  
-     zoozle is a search engine for BitTorrent and P2P networks. It is also available in [german](http://www.zoozle.net/ "deutsche Torrent Suchmaschine") and [french](http://www.zoozle.biz/ "le moteur
-    							français de recherche pour BitTorrent"). They have donated $1,500.
-*   [YourKit, LLC](http://www.yourkit.com/)  
-     YourKit is kindly supporting Freenet by providing us a free of charge license of its full-featured Java Profiler. YourKit, LLC is the creator of innovative and intelligent tools for profiling Java applications. You can learn more about [YourKit Java Profiler](http://www.yourkit.com/java/profiler/index.jsp) following the link.
-*   [Google](http://www.google.com/)  
-     Google [open source](http://code.google.com/) have three times donated $18,000, as well as paying for students to work with us over summer since 2006 through the [Google Summer of Code](http://code.google.com/soc/) program.
-*   [Finanzvergleich](http://www.finanzvergleich.de)  
+*   [zoozle Torrent Search][url_zoozle]  
+     zoozle is a search engine for BitTorrent and P2P networks. It is also available in [german][url_zoozle_german] and [french][url_zoozle_french]. They have donated $1,500.
+*   [YourKit, LLC][url_yourkit]  
+     YourKit is kindly supporting Freenet by providing us a free of charge license of its full-featured Java Profiler. YourKit, LLC is the creator of innovative and intelligent tools for profiling Java applications. You can learn more about [YourKit Java Profiler][url_yourkit_profiler] following the link.
+*   [Google][url_google]  
+     Google [open source][url_google_opensource] have three times donated $18,000, as well as paying for students to work with us over summer since 2006 through the [Google Summer of Code][url_google_soc] program.
+*   [Finanzvergleich][url_finanzvergleich]  
      Finanzvergleich is a German financial services comparison site, who have contributed $1,500.
-*   [TopDir](http://www.topdir.de "Top Directory")  
+*   [TopDir][url_topdir]  
      TopDir is a human edited web directory with informations about interesting topics and websites in the German language.
-*   [All Filters](http://www.allfilters.com/ "All Filters") - another generous sponsor.
-*   [A German Site for Gardening and Plants](http://www.gartenheinz.de "A German Site for Gardening and Plants") - another generous sponsor.
-*   [Simple Car Rentals](http://www.simple-carrentals.com/)  
+*   [All Filters][url_allfilters] - another generous sponsor.
+*   [A German Site for Gardening and Plants][url_gartenheinz] - another generous sponsor.
+*   [Simple Car Rentals][url_simple_carrentals]  
      Simple Car Rentals has generously supported Freenet by helping us with some of our administrative expenses over the years.
-*   [The Sports Den](http://www.sportsden.ie/)  
+*   [The Sports Den][url_sportsden]  
      The Sports Den has a wide variety of outdoor sports equipment, they are based in Ireland but can ship to the UK, Europe, and the United States.
-*   ![](assets/img/logo_intellij_idea.png)  
-    [JetBrains](https://www.jetbrains.com) has kindly provided a license for the Ultimate edition of [IntelliJ IDEA](https://www.jetbrains.com/idea).
+*   ![][logo_intellij_idea]  
+    [JetBrains][url_jetbrains] has kindly provided a license for the Ultimate edition of [IntelliJ IDEA][url_intellij_idea].
 
 Freenet Project Inc does not necessarily endorse the business activities of all of the companies listed on this page.
 
-Donation inquiries please contact Ian Clarke: <span class="e-mail" data-user="etanod" data-website="gro.tcejorpteneerf"></span>
-""")))
+Donation inquiries please contact Ian Clarke: {donate_email}
+""").format(donate_email=donate_email) + "\n\n" + """
+[url_john_pozadzides]: http://onemansblog.com/
+[url_web_hosting_search]: http://www.webhostingsearch.com/
+[url_john_gilmore]: http://www.toad.com/gnu/
+[url_bytemark_hosting]: http://bytemark.co.uk/
+[url_zoozle]: http://www.zoozle.org/
+[url_zoozle_german]: http://www.zoozle.net/ "deutsche Torrent Suchmaschine"
+[url_zoozle_french]: http://www.zoozle.biz/ "le moteur français de recherche pour BitTorrent"
+[url_yourkit]: http://www.yourkit.com/
+[url_yourkit_profiler]: http://www.yourkit.com/java/profiler/index.jsp
+[url_google]: http://www.google.com/
+[url_google_opensource]: http://code.google.com/
+[url_google_soc]: http://code.google.com/soc/
+[url_finanzvergleich]: http://www.finanzvergleich.de
+[url_topdir]: http://www.topdir.de "Top Directory"
+[url_allfilters]: http://www.allfilters.com/
+[url_gartenheinz]: http://www.gartenheinz.de
+[url_simple_carrentals]: http://www.simple-carrentals.com/
+[url_sportsden]: http://www.sportsden.ie/
+[logo_intellij_idea]: assets/img/logo_intellij_idea.png
+[url_jetbrains]: https://www.jetbrains.com
+[url_intellij_idea]: https://www.jetbrains.com/idea
+"""))
 
 class StoreSection(Section):
     def __init__(self):
@@ -234,12 +261,13 @@ class DonateThanksSection(Section):
         self.title = _("Thanks for your donation!")
     def get_content(self):
         # License: GFDL (from old freenetproject.org website)
+        donate_email = """<span class="e-mail" data-user="etanod" data-website="gro.tcejorpteneerf"></span>"""
         return text(md(_("""
 We have received your generous donation. It will be used at the direction of
 the Freenet Board to advance the interests of the Freenet Project. If you
 have any questions about how your donation will be used please contact Ian
-Clarke: <span class="e-mail" data-user="etanod" data-website="gro.tcejorpteneerf"></span>.
-""")))
+Clarke: {donate_email}.
+""").format(donate_email=donate_email)))
             
 class DonateThanksPage(Page):
     def __init__(self):
