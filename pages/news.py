@@ -15,9 +15,19 @@ class NewsItem(object):
 
 def news_items():
     # write these in markdown
-    
-    # Below news items are licensed GFDL (from old freenetproject.org website)
     return [
+        NewsItem("20151025", _("2015-10-25 - Prerelease and Windows installer"),
+_("""
+The Windows installer has updated translations for French, Indonesian, and
+Simplified Chinese, and is newly translated into Bulgarian, Croatian,
+and Japanese.
+
+In addition, Freenet unstable testing prerelease 1471-pre2 is now available.
+For details on what it contains and how to test it see the
+[release announcement][announcement].
+""") + """
+[announcement]: https://emu.freenetproject.org/pipermail/devl/2015-October/038449.html
+"""),
         NewsItem("20151021-site-deploy", _("2015-10-21 - Website redesign is live"),
 _("""
 The redesigned website is now live!
@@ -27,6 +37,7 @@ development, and translations.
 
 If we missed something, please tell us in our [support chat](help.html#irc)!
 """)),
+# Below news items are licensed GFDL (from old freenetproject.org website)
               NewsItem("20151011-redesign", _("2015-10-11 - Upcoming website redesign"),
 _("""
 In the next few weeks we will transition to a redesigned website. This will be
