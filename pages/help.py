@@ -1050,13 +1050,15 @@ Almost everyone on the channel is a volunteer, and may be busy with other
 things, so you may not get an instant answer: **Ask your question/say what
 the problem is, then wait for a few minutes, and somebody may help you**.
 
-[Chat with us](#chatlink "chatlink")
+[Chat with us][url_chat]
 
 If you do not get an answer within the first few minutes, please keep the
 chat window open. We read our backlog, and if you stay, you will normally get
 an answer **within at most 4 hours** (when people with the relevant knowledge
 wake up).
-""")))
+""") + "\n\n" + """
+[url_chat]: #chatlink "chatlink"
+"""))
 
 class SetupSection(Section):
     def __init__(self):
