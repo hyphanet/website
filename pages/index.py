@@ -110,7 +110,18 @@ $tagline
              <h4>$donate_title</h4>
              <p>$donate_text</p>
              <div class="meter blue">
-                 <span style="width: calc(MONEYMONTHS / 12 *100%)">$months_text</span>
+                 <span style="width: calc(MONEYMONTHS / 12 *100%)"></span>
+                 
+                 <!-- div to precisely float over and cover the whole bar box so we can center the text in it -->
+                 <div style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; display:table;">
+                     <!-- div to center vertically -->
+                     <div style="display: table-cell; vertical-align: middle;">
+                         <!-- div to set font properties (text-shadow creates a black outline, aka stroke) -->
+                         <div style="font-size: small; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">
+                             $months_text
+                         </div>
+                     </div>
+                </div>
              </div>
              <a class="btn button-custom btn-custom-two donate-button" href="donate.html">$donate_button_text</a>
         </div>
