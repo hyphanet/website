@@ -705,30 +705,3 @@ top: -250px;visibility: hidden;
 	visibility: visible !important;
 	opacity: 1.0 !important;
 }
-
-
-/*============================
-TWINKLE ANIMATION FOR DONATION BAR
-Source: http://stackoverflow.com/questions/12740235/jquery-opacity-fade-in-out-loop
-==============================*/
-
-@-webkit-keyframes twinkly {
-    0%   { opacity: 0.4; }
-    100% { opacity: 1; }
-}
-
-@-moz-keyframes twinkly  {
-    0%   { opacity: 0.4; }
-    100% { opacity: 1; }
-}
-
-@-ms-keyframes twinkly  {
-    0%   { opacity: 0.4; }
-    100% { opacity: 1; }
-}
-
-.twinkle {
-    -webkit-animation: twinkly 1s alternate infinite;
-    -moz-animation: twinkly 1s alternate infinite;
-    -ms-animation: twinkly 1s alternate infinite;
-}
