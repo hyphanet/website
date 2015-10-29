@@ -142,7 +142,7 @@ $tagline
 Your donations pay for our server and developer. Our current funds will last
         """))
         donate_button_text = _("Donate!")
-        months_text = _("{num_months} / 12 months").format(num_months="MONEYMONTHS")
+        months_text = _("{num_months} months").format(num_months="MONEYMONTHS")
         return string.Template(content).substitute(sliders="".join(sliders),
                                                    tagline=tagline,
                                                    download_text=download_text,
