@@ -127,7 +127,8 @@ $tagline
                  fund_percentage_year = (MONEYMONTHS / 12);
                  if(fund_percentage_year <= 1/3) {
                      donate_bar = document.getElementById("donate_bar_small");
-                     donate_bar.className = "meter red";
+                     donate_bar.className  = "meter red";      // Red bar
+                     donate_bar.className += " " + "twinkle";  // Blinking bar
                  }
              </script>
              <a class="btn button-custom btn-custom-two donate-button" href="donate.html">$donate_button_text</a>
