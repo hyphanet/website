@@ -109,7 +109,7 @@ $tagline
         <div class="item active donate" id="donate_button">
              <h4>$donate_title</h4>
              <p>$donate_text</p>
-             <div class="meter blue">
+             <div class="meter blue" id="donate_bar_small">
                  <span style="width: calc(MONEYMONTHS / 12 *100%)"></span>
                  
                  <!-- div to precisely float over and cover the whole bar box so we can center the text in it -->
@@ -123,6 +123,13 @@ $tagline
                      </div>
                 </div>
              </div>
+             <script type="text/javascript">
+                 fund_percentage_year = (MONEYMONTHS / 12);
+                 if(fund_percentage_year <= 1/3) {
+                     donate_bar = document.getElementById("donate_bar_small");
+                     donate_bar.className = "meter red";
+                 }
+             </script>
              <a class="btn button-custom btn-custom-two donate-button" href="donate.html">$donate_button_text</a>
         </div>
 </div>
