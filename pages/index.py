@@ -61,6 +61,37 @@ obtain. Using it will also be less suspicious.
 <!--HOME SECTION START-->
 <section id="home">
 <div class="container">
+<div class="row">
+<!--DONATE SUBSECTION -->
+<div class="col-sm-12 col-md-12 col-lg-12">
+        <div class="item active donate" id="donate_button">
+             <p>$donate_text</p>
+             <div class="meter blue" id="donate_bar_small">
+                 <span style="width: calc(MONEYMONTHS / 12 *100%)"></span>
+                 
+                 <!-- div to precisely float over and cover the whole bar box so we can center the text in it -->
+                 <div style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; display:table;">
+                     <!-- div to center vertically -->
+                     <div style="display: table-cell; vertical-align: middle;">
+                         <!-- div to set font properties (text-shadow creates a black outline, aka stroke) -->
+                         <div style="font-size: small; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">
+                             $months_text
+                         </div>
+                     </div>
+                </div>
+             </div>
+             <script type="text/javascript">
+                 fund_percentage_year = (MONEYMONTHS / 12);
+                 if(fund_percentage_year <= 1/3) {
+                     donate_bar = document.getElementById("donate_bar_small");
+                     donate_bar.className = "meter red";
+                 }
+             </script>
+             <a class="btn button-custom btn-custom-two donate-button" href="donate.html">$donate_button_text</a>
+        </div>
+</div>
+<!-- DONATE SUBSECTION END -->
+</div>
 <div class="row text-center">
 <div class="col-sm-2 col-md-2 col-lg-2">
         <div class="item active" id="suma_award_notice">
@@ -103,37 +134,6 @@ $tagline
 </div>
 </div>
 </div>
-
-<!--DONATE SUBSECTION -->
-<div class="col-sm-2 col-md-2 col-lg-2">
-        <div class="item active donate" id="donate_button">
-             <h4>$donate_title</h4>
-             <p>$donate_text</p>
-             <div class="meter blue" id="donate_bar_small">
-                 <span style="width: calc(MONEYMONTHS / 12 *100%)"></span>
-                 
-                 <!-- div to precisely float over and cover the whole bar box so we can center the text in it -->
-                 <div style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; display:table;">
-                     <!-- div to center vertically -->
-                     <div style="display: table-cell; vertical-align: middle;">
-                         <!-- div to set font properties (text-shadow creates a black outline, aka stroke) -->
-                         <div style="font-size: small; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">
-                             $months_text
-                         </div>
-                     </div>
-                </div>
-             </div>
-             <script type="text/javascript">
-                 fund_percentage_year = (MONEYMONTHS / 12);
-                 if(fund_percentage_year <= 1/3) {
-                     donate_bar = document.getElementById("donate_bar_small");
-                     donate_bar.className = "meter red";
-                 }
-             </script>
-             <a class="btn button-custom btn-custom-two donate-button" href="donate.html">$donate_button_text</a>
-        </div>
-</div>
-<!-- DONATE SUBSECTION END -->
 </div>
 </div>
 </div>
@@ -144,9 +144,8 @@ $tagline
 """
         tagline = _("Share, Chat, Browse. Anonymously.")
         download_text = _("Download Freenet")
-        donate_title = _("Please Donate")
         donate_text = md(_("""
-Your donations pay for our server and developer. Our current funds will last
+We are raising funds so we can continue paying our developer for another year.
         """))
         donate_button_text = _("Donate!")
         months_text = _("{num_months} months").format(num_months="MONEYMONTHS")
@@ -154,7 +153,6 @@ Your donations pay for our server and developer. Our current funds will last
                                                    tagline=tagline,
                                                    download_text=download_text,
                                                    donate_text=donate_text,
-                                                   donate_title=donate_title,
                                                    donate_button_text=donate_button_text,
                                                    months_text=months_text)
 

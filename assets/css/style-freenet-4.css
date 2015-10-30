@@ -217,10 +217,6 @@ padding-top: 120px;
 padding-bottom: 60px;
 }
 
-#home .donate {
-padding-top: 7em;
-}
-
 #home .donate p {
 font-style: italic;
 }
@@ -266,6 +262,19 @@ margin: 25px 20px;
           max-width: 50%;
           margin-right: auto;
           margin-left: auto;
+  }
+}
+
+/* Padding to ensure donation content isn't hidden by the navigation bar */
+@media screen and (min-width: 767px) and (max-width: 992px) {
+  #home .donate {
+	  padding-top: 6em;
+  }
+}
+
+@media screen and (min-width : 992px) and (max-width: 1200px) {
+  #home .donate {
+	  padding-top: 3em;
   }
 }
 
