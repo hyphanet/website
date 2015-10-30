@@ -40,11 +40,10 @@ support is very much appreciated.
 
 You have several options:
 
-* You can donate using PayPal. You can become a Freenet project "member" for a
-recurring payment of $5 or more per month. This helps give the project a
-more stable and dependable income which makes it easier to make long-term
-commitments to potential developers. Right now it is often difficult to say
-whether we will be able to pay a developer the following month.
+* You can donate using PayPal.
+You can become a Freenet project "member" for a recurring payment of $5 or more per month.
+This helps give the project a more stable and dependable income which makes it easier to make long-term commitments to potential developers.
+Right now it is often difficult to say whether we will be able to pay a developer the following month.
 You can become a member by signing up for a monthly recurring donation below (this requires a [PayPal][url_paypal] account).
 Alternatively you can make a one-time donation.
 """) + "\n\n" + """
