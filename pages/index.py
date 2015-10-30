@@ -65,7 +65,6 @@ obtain. Using it will also be less suspicious.
 <!--DONATE SUBSECTION -->
 <div class="col-sm-12 col-md-12 col-lg-12">
         <div class="item active donate" id="donate_button">
-             <h4>$donate_title</h4>
              <p>$donate_text</p>
              <div class="meter blue" id="donate_bar_small">
                  <span style="width: calc(MONEYMONTHS / 12 *100%)"></span>
@@ -145,7 +144,6 @@ $tagline
 """
         tagline = _("Share, Chat, Browse. Anonymously.")
         download_text = _("Download Freenet")
-        donate_title = _("Please Donate")
         donate_text = md(_("""
 We are raising funds so we can continue paying our developer for another year.
         """))
@@ -155,7 +153,6 @@ We are raising funds so we can continue paying our developer for another year.
                                                    tagline=tagline,
                                                    download_text=download_text,
                                                    donate_text=donate_text,
-                                                   donate_title=donate_title,
                                                    donate_button_text=donate_button_text,
                                                    months_text=months_text)
 
