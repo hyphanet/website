@@ -147,7 +147,7 @@ $tagline
         download_text = _("Download Freenet")
         donate_title = _("Please Donate")
         donate_text = md(_("""
-Your donations pay for our server and developer. Our current funds will last
+We are raising funds so we can continue paying our developer for another year.
         """))
         donate_button_text = _("Donate!")
         months_text = _("{num_months} months").format(num_months="MONEYMONTHS")
