@@ -213,7 +213,6 @@ HOME SECTION STYLES
 
 #home {
 text-align: center;
-padding-top: 120px;
 padding-bottom: 60px;
 }
 
@@ -266,6 +265,19 @@ margin: 25px 20px;
           max-width: 50%;
           margin-right: auto;
           margin-left: auto;
+  }
+}
+
+/* Padding to ensure first row isn't hidden by the navigation bar */
+@media screen and (min-width: 767px) and (max-width: 992px) {
+  body {
+	  padding-top: 6em;
+  }
+}
+
+@media screen and (min-width : 992px) and (max-width: 1200px) {
+  body {
+	  padding-top: 3em;
   }
 }
 
