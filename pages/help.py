@@ -1044,18 +1044,11 @@ class ChatSection(Section):
     def get_content(self):
         # License: GFDL (from old freenetproject.org website)
         return text(md(_("""
-Many of the developers and users of Freenet can often be found on an [IRC](
-https://en.wikipedia.org/wiki/IRC) channel, #freenet on chat.freenode.net.
-Almost everyone on the channel is a volunteer, and may be busy with other
-things, so you may not get an instant answer: **Ask your question/say what
-the problem is, then wait for a few minutes, and somebody may help you**.
+Many of the developers and users of Freenet are on the [IRC](
+https://en.wikipedia.org/wiki/IRC) channel #freenet on chat.freenode.net.
 
 [Chat with us][url_chat]
 
-If you do not get an answer within the first few minutes, please keep the
-chat window open. We read our backlog, and if you stay, you will normally get
-an answer **within at most 4 hours** (when people with the relevant knowledge
-wake up).
 """) + "\n\n" + """
 [url_chat]: #chatlink "chatlink"
 """))
