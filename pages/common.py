@@ -261,49 +261,41 @@ def menu(site_menu, current_page):
     template = """
 <!--MENU SECTION START-->
 <div class="navbar navbar-inverse navbar-fixed-top" id="menu-section" >
-<div class="container">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
 
+            <div class="navbar-brand">
+                <a href="index.html">
+                    <img src="assets/img/logo_65_49.png" style="height: 2em;" alt="$str__rabbit"/>
+                    $str__brand
+                </a>
+            </div>
+        </div>
 
-<div class="navbar-header">
-<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-</button>
+        <!-- languages -->
+        <div class="navbar-collapse collapse navbar-language">
+            <ul class="nav navbar-nav navbar-nav-language navbar-right">
+                $html__languages
+            </ul>
+        </div>
 
-<div class="navbar-brand">
-    <a href="index.html">
-        <img src="assets/img/logo_65_49.png" style="height: 2em;" alt="$str__rabbit"/>
-        $str__brand
-    </a>
-</div>
-</div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-nav-page navbar-right">
+                $html__menu_content
+            </ul>
+        </div>
 
-<!-- languages -->
-<div class="navbar-collapse collapse navbar-language">
-<ul class="nav navbar-nav navbar-nav-language navbar-right">
-
-$html__languages
-
-</ul>
-</div>
-
-
-<div class="navbar-collapse collapse">
-    <ul class="nav navbar-nav navbar-nav-page navbar-right">
-        $html__menu_content
-    </ul>
-</div>
-
-<div class="navbar-collapse collapse">
-<ul class="nav navbar-nav navbar-right">
-
-$html__submenu_content
-
-</ul>
-</div>
-
-</div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                $html__submenu_content
+            </ul>
+        </div>
+    </div>
 </div>
 <!--MENU SECTION END-->
 """
@@ -320,26 +312,24 @@ class ContactSection(Section):
     def get_content(self):
         template = """
 <div class="row">
-
-<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-<div class="contact-wrapper">
-<h3>Contact</h3>
-<h4><strong>$str__press </strong><span class="e-mail" data-user="sserp" data-website="gro.tcejorpteneerf"></span></h4>
-<h4><strong>$str__support </strong> support@freenetproject.org </h4>
-<h4><strong>$str__irc </strong> $str__irc_value</h4>
-</div>
-
-</div>
-<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-<div class="contact-wrapper">
-<h3>$str__license_header</h3>
-$str__license
-<div class="footer-div" >
-&copy; 2015 The Freenet Project Inc<br/>
-<a href="http://www.designbootstrap.com/" target="_blank" >$str__design</a>
-</div>
-</div>
-
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <div class="contact-wrapper">
+            <h3>Contact</h3>
+            <h4><strong>$str__press </strong><span class="e-mail" data-user="sserp" data-website="gro.tcejorpteneerf"></span></h4>
+            <h4><strong>$str__support </strong> support@freenetproject.org </h4>
+            <h4><strong>$str__irc </strong> $str__irc_value</h4>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <div class="contact-wrapper">
+            <h3>$str__license_header</h3>
+            $str__license
+            <div class="footer-div" >
+                &copy; 2015 The Freenet Project Inc<br/>
+                <a href="http://www.designbootstrap.com/" target="_blank" >$str__design</a>
+            </div>
+        </div>
+    </div>
 </div>
 """
         return substitute_html(template,
@@ -357,17 +347,15 @@ def section(name, title, content):
     template = """
 <!--section $str__name start-->
 <section id="$str__name" >
-<div class="container">
-<div class="row text-center header">
-<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-
-<h3>$str__title</h3>
-<hr />
-</div>
-</div>
-
-$html__content
-
+    <div class="container">
+        <div class="row text-center header">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h3>$str__title</h3>
+                <hr />
+            </div>
+        </div>
+        $html__content
+    </div>
 </section>
 <!-- section $str__name end -->
 """
@@ -377,9 +365,9 @@ def text(content):
     template = """
 <!-- text start -->
 <div class="row">
-<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-$html__content
-</div>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        $html__content
+    </div>
 </div>
 <!-- text end -->
 """

@@ -56,76 +56,72 @@ obtain. Using it will also be less suspicious.
         content = """
 <!--HOME SECTION START-->
 <section id="home">
-<div class="container">
-<div class="row">
-<!--DONATE SUBSECTION -->
-<div class="col-sm-12 col-md-12 col-lg-12">
-        <div class="item active donate" id="donate_button">
-             $md__donate_text
-             <div class="meter blue" id="donate_bar_small">
-                 <div class="quantity" style="left: 15px;">$$MONEYBALANCE</div>
-                 <div class="quantity" style="right: 15px;">$$$str__donation_target</div>
-                 <span style="width: calc(MONEYBALANCE / $str__donation_target * 100%)">
-                 </span>
-             </div>
-             <script type="text/javascript">
-                 fund_percentage = (MONEYBALANCE / $str__donation_target);
-                 if(fund_percentage <= 1/3) {
-                     donate_bar = document.getElementById("donate_bar_small");
-                     donate_bar.className = "meter red";
-                 }
-             </script>
-             <a class="btn button-custom btn-custom-two donate-button" href="donate.html">$str__donate_button_text</a>
+    <div class="container">
+        <div class="row">
+            <!--DONATE SUBSECTION -->
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="item active donate" id="donate_button">
+                     $md__donate_text
+                     <div class="meter blue" id="donate_bar_small">
+                         <div class="quantity" style="left: 15px;">$$MONEYBALANCE</div>
+                         <div class="quantity" style="right: 15px;">$$$str__donation_target</div>
+                         <span style="width: calc(MONEYBALANCE / $str__donation_target * 100%)">
+                         </span>
+                     </div>
+                     <script type="text/javascript">
+                         fund_percentage = (MONEYBALANCE / $str__donation_target);
+                         if(fund_percentage <= 1/3) {
+                             donate_bar = document.getElementById("donate_bar_small");
+                             donate_bar.className = "meter red";
+                         }
+                     </script>
+                     <a class="btn button-custom btn-custom-two donate-button" href="donate.html">$str__donate_button_text</a>
+                </div>
+            </div>
+            <!-- DONATE SUBSECTION END -->
         </div>
-</div>
-<!-- DONATE SUBSECTION END -->
-</div>
-<div class="row text-center">
-<div class="col-sm-2 col-md-2 col-lg-2">
-        <div class="item active" id="suma_award_notice">
-             <h4>&nbsp; &nbsp;</h4>
-             <p>&nbsp; &nbsp;</p>
-             <p>&nbsp; &nbsp;</p>
-             <p>&nbsp; &nbsp;</p>
-             <p><a href="news.html#20150211"><img src="assets/img/suma2015_badge_transparent_3.png" alt="SUMA Award 2014/15" /></a></p>
+        <div class="row text-center">
+            <div class="col-sm-2 col-md-2 col-lg-2">
+                <div class="item active" id="suma_award_notice">
+                    <h4>&nbsp; &nbsp;</h4>
+                    <p>&nbsp; &nbsp;</p>
+                    <p>&nbsp; &nbsp;</p>
+                    <p>&nbsp; &nbsp;</p>
+                    <p><a href="news.html#20150211"><img src="assets/img/suma2015_badge_transparent_3.png" alt="SUMA Award 2014/15" /></a></p>
+                </div>
+            </div>
+
+            <div class="col-sm-8 col-md-8 col-lg-8">
+                <div class="row">
+                    <div id="carousel-slider">
+                        <div class="carousel-inner">
+                            $html__sliders
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="download">
+                        <p>$str__tagline</p>
+                        <!-- FIXME: become social
+                        <div class="social">
+                        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-facebook "></i></a>
+                        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-google-plus "></i></a>
+                        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-linkedin "></i></a>
+                        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-pinterest "></i></a>
+                        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-github "></i></a>
+                        </div>
+                        -->
+                        <a href="download.html#autostart" class=" btn button-custom btn-custom-two">
+                            <i class="icon ion-arrow-down-a"></i>
+                            $str__download_text
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-</div>
-
-<div class="col-sm-8 col-md-8 col-lg-8">
-<div class="row">
-<div id="carousel-slider">
-<div class="carousel-inner">
-$html__sliders
-</div>
-</div>
-</div>
-<div class="row">
-<div class="download">
-
-<p>$str__tagline</p>
-<!-- FIXME: become social
-<div class="social">
-<a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-facebook "></i></a>
-<a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-twitter"></i></a>
-<a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-google-plus "></i></a>
-<a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-linkedin "></i></a>
-<a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-pinterest "></i></a>
-<a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-github "></i></a>
-</div>
--->
-<a href="download.html#autostart" class=" btn button-custom btn-custom-two">
-    <i class="icon ion-arrow-down-a"></i>
-    $str__download_text
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
+    </div>
 </section>
-
 <!--HOME SECTION END-->
 """
         tagline = _("Share, Chat, Browse. Anonymously.")
@@ -196,27 +192,26 @@ class ServiceSection(Section):
         content = """
 <!-- service start -->
 <div class="row">
-$html__services
-<div class="col-sm-12 col-md-12 col-lg-12" style="text-align: center">
-<div class="download">
-
-<p>$str__tagline</p>
-<!-- FIXME: become social
-<div class="social">
-<a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-facebook "></i></a>
-<a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-twitter"></i></a>
-<a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-google-plus "></i></a>
-<a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-linkedin "></i></a>
-<a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-pinterest "></i></a>
-<a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-github "></i></a>
-</div>
--->
-<a href="download.html#autostart" class=" btn button-custom btn-custom-two">
-    <i class="icon ion-arrow-down-a"></i>
-    $str__download_text
-</a>
-</div>
-</div>
+    $html__services
+    <div class="col-sm-12 col-md-12 col-lg-12" style="text-align: center">
+        <div class="download">
+        <p>$str__tagline</p>
+        <!-- FIXME: become social
+        <div class="social">
+        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-facebook "></i></a>
+        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-twitter"></i></a>
+        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-google-plus "></i></a>
+        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-linkedin "></i></a>
+        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-pinterest "></i></a>
+        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-github "></i></a>
+        </div>
+        -->
+        <a href="download.html#autostart" class=" btn button-custom btn-custom-two">
+            <i class="icon ion-arrow-down-a"></i>
+            $str__download_text
+        </a>
+        </div>
+    </div>
 </div>
 <!-- service end -->
 """
