@@ -12,6 +12,8 @@ import builtins
 import re
 import argparse
 
+from pages.common import force_unicode
+
 output_path = 'output'
 
 
@@ -58,7 +60,7 @@ def generate_language(language, multiview=True):
             filename = single_filename(page.slug)
 
         f = codecs.open(filename, "w", "utf-8")
-        f.write(page.generate(language, menu))
+        f.write(force_unicode(page.generate(language, menu)))
         f.close()
 
 

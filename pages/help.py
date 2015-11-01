@@ -11,8 +11,8 @@ class FaqSubSection(object):
 <h2>$title</h2>
 $items
 """
-        items = "".join([x.generate() for x in self.items])
-        return string.Template(content).substitute(title=self.title, items=items)
+        items = concat_html([x.generate() for x in self.items])
+        return substitute_html(content, title=self.title, items=items)
     def generate_index(self):
         content = """
 <h3>$title</h3>
@@ -20,8 +20,8 @@ $items
 $itemlinks
 </ol>
 """
-        itemlinks = "".join([x.generate_link() for x in self.items])
-        return string.Template(content).substitute(title=self.title, itemlinks=itemlinks)
+        itemlinks = concat_html([x.generate_link() for x in self.items])
+        return substitute_html(content, title=self.title, itemlinks=itemlinks)
     
 class FaqItem(object):
     def __init__(self, name, title, content):
@@ -34,12 +34,12 @@ class FaqItem(object):
     $content
 </p>        
 """
-        return string.Template(content).substitute(name=self.name, title=force_unicode(self.title), content=md(self.content))
+        return substitute_html(content, name=self.name, title=self.title, content=md(self.content))
     def generate_link(self):
         content = """
 <li><a href="#$name">$title</a></li>
 """
-        return string.Template(content).substitute(name=self.name, title=self.title)
+        return substitute_html(content, name=self.name, title=self.title)
 
 class FaqSection(Section):
     # FIXME: this should probably be split up for easier maintenance and easier translation
@@ -950,8 +950,8 @@ software, and if you are a developer you can check the installer source code
 """)),
                 ]),
             ]
-        table_of_contents = "".join([x.generate_index() for x in subsections])
-        content = "".join([x.generate() for x in subsections])
+        table_of_contents = concat_html([x.generate_index() for x in subsections])
+        content = concat_html([x.generate() for x in subsections])
         
         return text(force_unicode(table_of_contents) + md("""
 ### Additional information sources
