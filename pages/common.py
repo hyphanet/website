@@ -6,23 +6,97 @@ import markdown
 import re
 import settings
 
-# Python 2 compatibility
-def nop2(x,y):
-    return x
-try:
-    unicode = unicode
-except:
-    unicode = nop2
+site_brand = "Freenet"
 
-# This function will pass unicode text right through, other text will be decoded as utf-8
-def force_unicode(text):
-    if repr(text)[0] == 'u': #FIXME...
-        return text
-    return unicode(text.strip(),"utf-8")
+# Wrapper for HTML intended to catch markdown-of-html bugs
+# The HTML class taints all strings that are added to it to be HTML as well
+class HTML(object):
+    def __init__(self, text):
+        if not isinstance(text, str):
+            raise TypeError("HTML text must be of str, {f} found".format(f=text.__class__.__name__))
+        self.text = text
+    
+    def __add__(self, other):
+        if isinstance(other, HTML):
+            return HTML(self.text + other.text)
+        return HTML(self.text + other)
+    
+    def __radd__(self, other):
+        if isinstance(other, HTML):
+            return HTML(other.text + self.text)
+        return HTML(other + self.text)
+    
+    def __repr__(self):
+        return u"HTML: " + self.text
+    
+    def __unicode__(self):
+        raise AssertionError("Implicitly converting HTML to unicode")
+    
+    def __str__(self):
+        raise AssertionError("Implicitly converting HTML to str")
+
+# Forces the given value to be represented as a unicode string
+def force_unicode(val):
+    if isinstance(val, str):
+        return val
+    if isinstance(val, HTML):
+        return val.text
+    return str(val)
+
+# Forces the given value to be represented as an HTML object
+def force_html(val):
+    if isinstance(val, HTML):
+        return val
+    return HTML(force_unicode(val))
+
+# Concatenates the given list of values into a HTML object
+def concat_html(vals):
+    if not isinstance(vals, list):
+        raise TypeError
+    return HTML(u"".join(map(force_unicode, vals)))
+
+# Template substitution with HTML support. Substitutes the placeholders in the first argument
+# string with the named values in the kwargs into a HTML object
+# kwargs starting with html__, str__ and md__ are checked to be of HTML, str or Markdown type
+# respectively
+def substitute_html(*args, **kwargs):
+    if len(args) is not 1:
+        raise TypeError("substitute_html() takes exactly one template argument ({n} given)".format(n=len(args)))
+    template = args[0]
+    
+    for k, v in kwargs.items():
+        if k.startswith("html__") and not isinstance(v, HTML):
+            raise TypeError("Expected HTML for substition of {k}, {f} found".format(
+                k=k, f=v.__class__.__name__))
+        if k.startswith("str__") and not isinstance(v, str):
+            raise TypeError("Expected str for substition of {k}, {f} found".format(
+                k=k, f=v.__class__.__name__))
+        if k.startswith("md__") and not isinstance(v, Markdown):
+            raise TypeError("Expected Markdown for substition of {k}, {f} found".format(
+                k=k, f=v.__class__.__name__))
+    
+    kwargs = {k: force_unicode(v) for k, v in kwargs.items()}
+    return HTML(string.Template(force_unicode(template)).substitute(**kwargs))
+
+# Wrapper for markdowned text intended for catching double-markdown bugs
+class Markdown(HTML):
+    def __add__(self, other):
+        if isinstance(other, Markdown):
+            return Markdown(HTML(self) + HTML(other))
+        return super(Markdown, self).__add__(other)
+    
+    def __radd__(self, other):
+        if isinstance(other, Markdown):
+            return Markdown(HTML(other) + HTML(self))
+        return super(Markdown, self).__radd__(other)
 
 # Shorter way to encode markdown, also strips leading and trailing whitespace
 def md(text):
-    return markdown.markdown(force_unicode(text.strip()))
+    if isinstance(text, Markdown):
+        raise ValueError("Attempting to markdown already markdowned text")
+    if isinstance(text, HTML):
+        raise ValueError("Attempting to markdown HTML text")
+    return Markdown(markdown.markdown(force_unicode(text)))
     
 class Section(object):
     # slug, title, content
@@ -36,19 +110,18 @@ class Page(object):
     sections = []
     first_section_in_menu = False
     def generate(self, language, site_menu):
-        section_content = "".join([force_unicode(x.generate()) for x in self.sections if not x.direct_link])
-        return html(head("Freenet - " + self.title), body(
-            force_unicode(menu(site_menu, self))+section_content))
+        section_content = concat_html([x.generate() for x in self.sections if not x.direct_link])
+        return html(head("Freenet - " + self.title), body(menu(site_menu, self) + section_content))
     
 def html(head, body):
     template = """
 <!DOCTYPE html>
 <html lang="en" class="no-js" >
-$head
-$body
+$html__head
+$html__body
 </html>
 """
-    return string.Template(template).substitute(head=head, body=body)
+    return substitute_html(template, html__head=head, html__body=body)
 
 def head(title):
     template = """
@@ -107,13 +180,13 @@ def head(title):
 
 </head>
 """
-    return string.Template(template).substitute(title=title)
+    return substitute_html(template, title=title)
     
 def body(content):
     template = """    
 <body data-spy="scroll" data-target="#menu-section">
 
-$content
+$html__content
 
 <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME -->
 <!-- CORE JQUERY -->
@@ -133,10 +206,11 @@ $content
 
 </body>
 """
-    return string.Template(template).substitute(content=content)
+    return substitute_html(template, html__content=content)
 
 def menu(site_menu, current_page):
     menu_content = "";
+    menu_template = """<li><a href="$filename#$section" class="uppercase">$title</a></li>"""
     for page in site_menu:
         if page.hidden: continue
         filename = page.slug + ".html"
@@ -145,73 +219,65 @@ def menu(site_menu, current_page):
         section = ""
         if not page.first_section_in_menu:
             section = page.sections[0].slug
-        menu_content += string.Template("""<li><a href="$filename#$section">$title</a></li>""").substitute(filename=filename,section=section,title=page.title.upper())
+        menu_content += substitute_html(menu_template, filename=filename, section=section, title=page.title)
     submenu_content = ""
     if current_page.first_section_in_menu:
         skip = 0
     else:
         skip = 1
-    for section in current_page.sections[skip:]:
-        link = section.direct_link or "#" + section.slug
-        submenu_content += string.Template("""<li><a href="$link">$title</a></li>""").substitute(link=link,title=section.title.upper())
-    languages = ""
-    for language in settings.languages:
-        languages += string.Template(
-            """<li><a href="?language=$language">$title</a></li>"""
-        ).substitute(language=language, title=language.upper())
+    submenu_template = """<li><a href="$link" class="uppercase">$title</a></li>"""
+    submenu_content = concat_html([
+        substitute_html(submenu_template, link=(section.direct_link or "#" + section.slug), title=section.title)
+        for section in current_page.sections[skip:]])
+    language_template = """<li><a href="?language=$language" class="uppercase">$title</a></li>"""
+    languages = concat_html([
+        substitute_html(language_template, language=language, title=language)
+        for language in settings.languages])
     template = """
 <!--MENU SECTION START-->
 <div class="navbar navbar-inverse navbar-fixed-top" id="menu-section" >
-<div class="container">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
 
+            <div class="navbar-brand">
+                <a href="index.html">
+                    <img src="assets/img/logo_65_49.png" style="height: 2em;" alt="$str__rabbit"/>
+                    <span class="uppercase">$str__brand</span>
+                </a>
+            </div>
+        </div>
 
-<div class="navbar-header">
-<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-</button>
+        <!-- languages -->
+        <div class="navbar-collapse collapse navbar-language">
+            <ul class="nav navbar-nav navbar-nav-language navbar-right">
+                $html__languages
+            </ul>
+        </div>
 
-<div class="navbar-brand">
-    <a href="index.html">
-        <img src="assets/img/logo_65_49.png" style="height: 2em;" alt="$rabbit"/>
-        $brand
-    </a>
-</div>
-</div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-nav-page navbar-right">
+                $html__menu_content
+            </ul>
+        </div>
 
-<!-- languages -->
-<div class="navbar-collapse collapse navbar-language">
-<ul class="nav navbar-nav navbar-nav-language navbar-right">
-
-$languages
-
-</ul>
-</div>
-
-
-<div class="navbar-collapse collapse">
-    <ul class="nav navbar-nav navbar-nav-page navbar-right">
-        $menu_content
-    </ul>
-</div>
-
-<div class="navbar-collapse collapse">
-<ul class="nav navbar-nav navbar-right">
-
-$submenu_content
-
-</ul>
-</div>
-
-</div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                $html__submenu_content
+            </ul>
+        </div>
+    </div>
 </div>
 <!--MENU SECTION END-->
 """
-    return string.Template(template).substitute(
-        brand="FREENET", rabbit=_("Freenet rabbit logo"),
-        menu_content=menu_content, submenu_content=submenu_content,
-        languages=languages
+    return substitute_html(template,
+        str__brand=site_brand, str__rabbit=_("Freenet rabbit logo"),
+        html__menu_content=menu_content, html__submenu_content=submenu_content,
+        html__languages=languages
     )
 
 class ContactSection(Section):
@@ -221,67 +287,63 @@ class ContactSection(Section):
     def get_content(self):
         template = """
 <div class="row">
-
-<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-<div class="contact-wrapper">
-<h3>Contact</h3>
-<h4><strong>$press </strong><span class="e-mail" data-user="sserp" data-website="gro.tcejorpteneerf"></span></h4>
-<h4><strong>$support </strong> support@freenetproject.org </h4>
-<h4><strong>$irc </strong> $irc_value</h4>
-</div>
-
-</div>
-<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-<div class="contact-wrapper">
-<h3>$license_header</h3>
-$license
-<div class="footer-div" >
-&copy; 2015 The Freenet Project Inc<br/>
-<a href="http://www.designbootstrap.com/" target="_blank" >$design</a>
-</div>
-</div>
-
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <div class="contact-wrapper">
+            <h3>Contact</h3>
+            <h4><strong>$str__press </strong><span class="e-mail" data-user="sserp" data-website="gro.tcejorpteneerf"></span></h4>
+            <h4><strong>$str__support </strong> support@freenetproject.org </h4>
+            <h4><strong>$str__irc </strong> $str__irc_value</h4>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <div class="contact-wrapper">
+            <h3>$str__license_header</h3>
+            $str__license
+            <div class="footer-div" >
+                &copy; 2015 The Freenet Project Inc<br/>
+                <a href="http://www.designbootstrap.com/" target="_blank" >$str__design</a>
+            </div>
+        </div>
+    </div>
 </div>
 """
-        return string.Template(template).substitute(
-            press=_("Press:"),
-            support=_("Support:"),
-            irc=_("IRC:"),
-            irc_value=_("{irc_channel} on {irc_server}").format(irc_channel="#freenet", irc_server="chat.freenode.net"),
-            license_header=_("License"),
-            license=_("Content on this website is licensed under the GNU Free Documentation License and may be available under other licenses."),
-            design=_("Design by DesignBootstrap")
+        return substitute_html(template,
+            str__press=_("Press:"),
+            str__support=_("Support:"),
+            str__irc=_("IRC:"),
+            str__irc_value=_("{irc_channel} on {irc_server}").format(irc_channel="#freenet", irc_server="chat.freenode.net"),
+            str__license_header=_("License"),
+            str__license=_("Content on this website is licensed under the GNU Free Documentation License and may be available under other licenses."),
+            str__design=_("Design by DesignBootstrap")
             )
 
 
 def section(name, title, content):
     template = """
-<!--section $name start-->
-<section id="$name" >
-<div class="container">
-<div class="row text-center header">
-<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-
-<h3>$title</h3>
-<hr />
-</div>
-</div>
-
-$content
-
+<!--section $str__name start-->
+<section id="$str__name" >
+    <div class="container">
+        <div class="row text-center header">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h3>$str__title</h3>
+                <hr />
+            </div>
+        </div>
+        $html__content
+    </div>
 </section>
-<!-- section $name end -->
+<!-- section $str__name end -->
 """
-    return string.Template(template).substitute(name=name, title=title,content=content)
+    return substitute_html(template, str__name=name, str__title=title, html__content=content)
 
 def text(content):
     template = """
 <!-- text start -->
 <div class="row">
-<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-$content
-</div>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        $html__content
+    </div>
 </div>
 <!-- text end -->
 """
-    return string.Template(template).substitute(content=content)
+    return substitute_html(template, html__content=content)

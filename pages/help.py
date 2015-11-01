@@ -8,20 +8,20 @@ class FaqSubSection(object):
         self.items = items
     def generate(self):
         content = """
-<h2>$title</h2>
-$items
+<h2>$str__title</h2>
+$html__items
 """
-        items = "".join([x.generate() for x in self.items])
-        return string.Template(content).substitute(title=self.title, items=items)
+        items = concat_html([x.generate() for x in self.items])
+        return substitute_html(content, str__title=self.title, html__items=items)
     def generate_index(self):
         content = """
-<h3>$title</h3>
+<h3>$str__title</h3>
 <ol>
-$itemlinks
+$html__itemlinks
 </ol>
 """
-        itemlinks = "".join([x.generate_link() for x in self.items])
-        return string.Template(content).substitute(title=self.title, itemlinks=itemlinks)
+        itemlinks = concat_html([x.generate_link() for x in self.items])
+        return substitute_html(content, str__title=self.title, html__itemlinks=itemlinks)
     
 class FaqItem(object):
     def __init__(self, name, title, content):
@@ -30,16 +30,15 @@ class FaqItem(object):
         self.content = content
     def generate(self):
         content = """
-<p><a class="anchor" id="$name"></a><h3>$title</h3><br/>
-    $content
-</p>        
+<a class="anchor" id="$str__name"></a><h3>$str__title</h3>
+$md__content
 """
-        return string.Template(content).substitute(name=self.name, title=force_unicode(self.title), content=md(self.content))
+        return substitute_html(content, str__name=self.name, str__title=self.title, md__content=md(self.content))
     def generate_link(self):
         content = """
-<li><a href="#$name">$title</a></li>
+<li><a href="#$str__name">$str__title</a></li>
 """
-        return string.Template(content).substitute(name=self.name, title=self.title)
+        return substitute_html(content, str__name=self.name, str__title=self.title)
 
 class FaqSection(Section):
     # FIXME: this should probably be split up for easier maintenance and easier translation
@@ -489,10 +488,9 @@ Freenet logs messages excessively during normal operation. It's something we're
 aware of and are working on.
 """)),
                     FaqItem("kaspersky", _("I have Kaspersky anti-virus, and Freenet doesn't install, or shows \"Download/upload queue database corrupted!\""), _("""
-                    Kaspersky can be a problem with Freenet. See [here](
-https://wiki.freenetproject.org/Installing/Windows#.27Download
-.2Fupload_queue_database_corrupted.21.27_.28When_using_Kaspersky_on_Windows_7
-.29). We recommend you turn off Kaspersky during install and during node
+                    Kaspersky can be a problem with Freenet.
+See [here](https://wiki.freenetproject.org/Installing/Windows#.27Download.2Fupload_queue_database_corrupted.21.27_.28When_using_Kaspersky_on_Windows_7.29).
+We recommend you turn off Kaspersky during install and during node
 startup, and exclude the directory you installed Freenet in (most likely
 C:\Program Files\Freenet or C:\Program Files (x86)\Freenet).
 """)),
@@ -594,11 +592,7 @@ spelling/grammar mistakes, new ideas (see [the previous answer](#idea)),
 are all welcome. You may find [the wiki](
 https://wiki.freenetproject.org/Main_Page) helpful.
 """) + "\n\n" + _("""
-If you have any questions about contributing, please contact us, via [the
-developers mailing list](https://emu.freenetproject.org/cgi-bin/mailman
-/listinfo/devl/), [the chat channel](help.html#irc), [the support
-mailing list](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/support)
-or anonymously via the freenet board on FMS.
+If you have any questions about contributing, please contact us, via [the developers mailing list](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/devl/), [the chat channel](help.html#irc), [the support mailing list](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/support) or anonymously via the freenet board on FMS.
 
 Last but not least you can [donate](donate.html) to support our paid
 developer(s) and cover server costs.
@@ -942,24 +936,21 @@ https://wiki.freenetproject.org/Program_files) for details on some of the
 files.
 """)),
                     FaqItem("smartscreen", _("Windows SmartScreen filter warns the Freenet installer might put my PC at risk. What's going on?"), _("""
-[SmartScreen](http://windows.microsoft.com/en-us/windows7/smartscreen-filter
--frequently-asked-questions-ie9) is sometimes incorrect in classifying a file
-as dangerous. We believe our installer is not infected with malicious
-software, and if you are a developer you can check the installer source code
-[here](https://github.com/freenet/wininstaller-innosetup).
+[SmartScreen](http://windows.microsoft.com/en-us/windows7/smartscreen-filter-frequently-asked-questions-ie9) is sometimes incorrect in classifying a file as dangerous.
+We believe our installer is not infected with malicious software, and if you are a developer you can check the installer source code [here](https://github.com/freenet/wininstaller-innosetup).
 """)),
                 ]),
             ]
-        table_of_contents = "".join([x.generate_index() for x in subsections])
-        content = "".join([x.generate() for x in subsections])
+        table_of_contents = concat_html([x.generate_index() for x in subsections])
+        content = concat_html([x.generate() for x in subsections])
         
-        return text(force_unicode(table_of_contents) + md("""
+        return text(table_of_contents + md("""
 ### Additional information sources
 
 *   [Wiki FAQ page](https://wiki.freenetproject.org/FAQ)
 *   [Security summary](https://wiki.freenetproject.org/Security_summary)
 *   [High quality copy of the rabbit icon](assets/img/rabbit/freenet-bunny.svg)
-""")+force_unicode(content))
+""") + content)
 
 class MailingListSection(Section):
     def __init__(self):
@@ -1028,8 +1019,7 @@ forgot it.)_
   C++?" should be addressed to this list.
 
 _**Third party tools**: We are hosting some other mailing lists on our server
-here is the [full list](https://emu.freenetproject.org/cgi-bin/mailman
-/listinfo/)._
+here is the [full list](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/)._
 """)))
 
 class SuggestionsSection(Section):

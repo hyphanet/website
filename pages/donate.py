@@ -56,8 +56,8 @@ Alternatively you can make a one-time donation.
                 <h4 class="panel-title">{subscribe_header}</h4>
             </div>
             <div class="panel-body">
-                <p style="color:black">{choose_subscription}</p>
-                <p><form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <h5 style="color:black">{choose_subscription}</h5>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
                     <input type="hidden" name="cmd" value="_xclick-subscriptions">
                     <input type="hidden" name="business" value="ian@freenetproject.org">
                     <input type="hidden" name="item_name" value="Freenet Project Membership">
@@ -84,16 +84,16 @@ Alternatively you can make a one-time donation.
                             </div>
                         </div>
                         <div class="col-xs-2 col-sm-2 col-md-3 col-lg-2">
-                          <input type="image" src="https://www.paypal.com/images/x-click-but20.gif" border="0" name="submit" alt="PayPal Subscribe">
+                          <input type="image" src="https://www.paypal.com/images/x-click-but20.gif" name="submit" alt="PayPal Subscribe">
                         </div>
                     </div>
                     <input type="hidden" name="p3" value="1">
                     <input type="hidden" name="t3" value="M">
                     <input type="hidden" name="src" value="1">
                     <input type="hidden" name="sra" value="1">
-                </form></p>
-                <p style="color:black">{set_custom_amount}</p>
-                <p><form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                </form>
+                <h5 style="color:black">{set_custom_amount}</h5>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
                     <input type="hidden" name="cmd" value="_xclick-subscriptions">
                     <input type="hidden" name="business" value="ian@freenetproject.org">
                     <input type="hidden" name="item_name" value="Freenet Project Membership">
@@ -110,14 +110,14 @@ Alternatively you can make a one-time donation.
                             </div>
                         </div>
                         <div class="col-xs-2 col-sm-2 col-md-3 col-lg-2">
-                            <input type="image" src="https://www.paypal.com/images/x-click-but20.gif" border="0" name="submit" alt="PayPal Subscribe">
+                            <input type="image" src="https://www.paypal.com/images/x-click-but20.gif" name="submit" alt="PayPal Subscribe">
                         </div>
                     </div>
                     <input type="hidden" name="p3" value="1">
                     <input type="hidden" name="t3" value="M">
                     <input type="hidden" name="src" value="1">
                     <input type="hidden" name="sra" value="1">
-                </form></p>
+                </form>
             </div>
         </div>
     </div>
@@ -127,8 +127,8 @@ Alternatively you can make a one-time donation.
                 <h4 class="panel-title">{donation_header}</h4>
             </div>
             <div class="panel-body">
-                <p style="color:black">{choose_donation}</p>
-                <p><form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <h5 style="color:black">{choose_donation}</h5>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
                     <input type="hidden" name="cmd" value="_xclick">
                     <input type="hidden" name="business" value="ian@freenetproject.org">
                     <input type="hidden" name="item_name" value="Freenet Donation">
@@ -160,12 +160,12 @@ Alternatively you can make a one-time donation.
                             </div>
                         </div>
                         <div class="col-xs-2 col-sm-2 col-md-3 col-lg-2">
-                          <input type="image" src="assets/img/paypal-submit.gif" border="0" name="submit" alt="PayPal Donate">
+                          <input type="image" src="assets/img/paypal-submit.gif" name="submit" alt="PayPal Donate">
                         </div>
                     </div>
-                </form></p>
-                <p style="color:black">{set_custom_amount}</p>
-                <p><form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                </form>
+                <h5 style="color:black">{set_custom_amount}</h5>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
                     <input type="hidden" name="cmd" value="_xclick">
                     <input type="hidden" name="business" value="ian@freenetproject.org">
                     <input type="hidden" name="item_name" value="Freenet Donation">
@@ -181,10 +181,10 @@ Alternatively you can make a one-time donation.
                             </div>
                         </div>
                         <div class="col-xs-2 col-sm-2 col-md-3 col-lg-2">
-                          <input type="image" src="assets/img/paypal-submit.gif" border="0" name="submit" alt="PayPal Donate">
+                          <input type="image" src="assets/img/paypal-submit.gif" name="submit" alt="PayPal Donate">
                         </div>
                     </div>
-                </form></p>
+                </form>
             </div>
         </div>
     </div>

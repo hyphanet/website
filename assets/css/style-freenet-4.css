@@ -90,6 +90,10 @@ h4 {
     font-weight: bold;
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+
 /* =============================================================
 CUSTOM BUTTON STYLES
 ============================================================ */
@@ -217,7 +221,7 @@ padding-top: 120px;
 padding-bottom: 60px;
 }
 
-#home .donate {
+#home .sidebar {
 padding-top: 7em;
 }
 

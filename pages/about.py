@@ -205,9 +205,9 @@ copyright is that enforcement of it requires monitoring of communications,
 and you cannot be guaranteed free speech if someone is monitoring everything
 you say. This is important, most people fail to see or address this point
 when debating the issue of copyright, so let me make it clear:
-""" + """<center>""" + _("""
-You cannot guarantee freedom of speech and enforce copyright law""") +
-"""</center>""" + _("""
+
+> *You cannot guarantee freedom of speech and enforce copyright law*
+
 It is for this reason that Freenet, a system designed to protect Freedom of
 Speech, must prevent enforcement of copyright.
 """) + """
@@ -241,7 +241,7 @@ thousands, contributing small amounts of money over the Internet.
 We actually practice what we preach in this regard too, on the 15th of March
 2001 the Freenet Project started taking donations, and within a week we had
 collected over $1000\.
-"""))))
+""")))
 
 class PeopleSection(Section):
     def __init__(self):

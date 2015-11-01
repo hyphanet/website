@@ -11,7 +11,7 @@ class NewsItem(object):
     def render(self):
         return section(self.section, self.title, text(self.content))
     def markdown_link(self):
-        return string.Template("[$title]($url)").substitute(url="news.html#"+self.section, title=self.title)
+        return "[{title}](news.html#{anchor})".format(anchor=self.section, title=self.title)
 
 def news_items():
     # write these in markdown
@@ -51,8 +51,7 @@ please join us on the ["website" resource on Transifex](
 https://www.transifex.com/otf/freenet/website/).
 
 If you have any feedback on the new website design please let us know on [
-chat](irc.html) or the [support list](https://emu.freenetproject.org/cgi-bin
-/mailman/listinfo/support)!
+chat](irc.html) or the [support list](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/support)!
 """)),
               NewsItem("20150917-ecdsa-vulnerability", _("2015-09-17 - elliptic curves: using safe Bouncy Castle since November 2014"),
 _("""
@@ -310,7 +309,7 @@ is available on [the Award page](http://www.searchstudies.org/de/suma2015.html)
 and [on YouTube](https://youtu.be/dZpsBSPsHDI?t=5m56s):
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dZpsBSPsHDI"
-frameborder="0" allowfullscreen=""></iframe>
+style="border: none;" allowfullscreen=""></iframe>
 
 The Freenet Project receives the SUMA award and Arne Babenhauserheide accepts
 the prize as representative of the project. Arne then presents the current
@@ -397,9 +396,7 @@ That means it is now possible to get reproducibly built kernels checked by anony
                  _("""
 This release fixes a bug introduced in build 1466 which can erase the list of plugins to load when Freenet starts if it crashes. If you are affected by this bug and can no longer connect, try adding the UPnP or JSTUN plugins again.
 
-</a>
-
-<a name="build01467">This release also has updated Finnish, French, Dutch, and Brazilian Portuguese translations thanks to</a> [volunteers on Transifex](https://www.transifex.com/projects/p/freenet/).
+This release also has updated Finnish, French, Dutch, and Brazilian Portuguese translations thanks to [volunteers on Transifex](https://www.transifex.com/projects/p/freenet/).
 
 The Windows installer is updated:
 
@@ -416,7 +413,7 @@ This release is planned to be the second-to-last version of Freenet to support J
 
 Highlights for this build:
 
-*   Add Hungarian Windows installer translation. Thanks drezzium!*   Allow hiding the Java version End Of Life alert. (I'm sorry for the excessive annoyingness. Still - please upgrade Java!)</a>
+*   Add Hungarian Windows installer translation. Thanks drezzium!*   Allow hiding the Java version End Of Life alert. (I'm sorry for the excessive annoyingness. Still - please upgrade Java!)
 *   Upgrades to the next version (that is, when running this build's upgrade code) should no longer get [stuck in an upgrade loop](https://bugs.freenetproject.org/view.php?id=3208).
 *   Increase opennet peer limit to 142 peers. This now has [more math behind it](https://github.com/freenet/fred/pull/286) and will change when network parameters are adjusted.
 *   Add more opennet seed nodes. Thanks saces and juiceman!
@@ -505,4 +502,5 @@ class NewsSection(Section):
         return self.get_content()
 
     def get_content(self):
-        return "".join([x.render() for x in news_items()])
+        return concat_html([x.render() for x in news_items()])
+
