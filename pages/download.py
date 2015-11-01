@@ -3,8 +3,8 @@ import string
 import markdown
 from .common import *
 
-def div(name, content):
-    return """<div id="{}">{}</div>""".format(name, content)
+def div(id, content):
+    return substitute_html("""<div id="$id">$content</div>""", id=id, content=content)
     
 def show_hide_script():
     # License: GFDL (from old freenetproject.org website)

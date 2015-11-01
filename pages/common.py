@@ -6,23 +6,81 @@ import markdown
 import re
 import settings
 
-# Python 2 compatibility
-def nop2(x,y):
-    return x
-try:
-    unicode = unicode
-except:
-    unicode = nop2
+# Wrapper for HTML intended to catch markdown-of-html bugs
+# The HTML class taints all strings that are added to it to be HTML as well
+class HTML(object):
+    def __init__(self, text):
+        if not isinstance(text, str):
+            raise TypeError("HTML text must be of str, {f} found".format(f=text.__class__.__name__))
+        self.text = text
+    
+    def __add__(self, other):
+        if isinstance(other, HTML):
+            return HTML(self.text + other.text)
+        return HTML(self.text + other)
+    
+    def __radd__(self, other):
+        if isinstance(other, HTML):
+            return HTML(other.text + self.text)
+        return HTML(other + self.text)
+    
+    def __repr__(self):
+        return u"HTML: " + self.text
+    
+    def __unicode__(self):
+        raise AssertionError("Implicitly converting HTML to unicode")
+    
+    def __str__(self):
+        raise AssertionError("Implicitly converting HTML to str")
 
-# This function will pass unicode text right through, other text will be decoded as utf-8
-def force_unicode(text):
-    if repr(text)[0] == 'u': #FIXME...
-        return text
-    return unicode(text.strip(),"utf-8")
+# Forces the given value to be represented as a unicode string
+def force_unicode(val):
+    if isinstance(val, str):
+        return val
+    if isinstance(val, HTML):
+        return val.text
+    return str(val)
+
+# Forces the given value to be represented as an HTML object
+def force_html(val):
+    if isinstance(val, HTML):
+        return val
+    return HTML(force_unicode(val))
+
+# Concatenates the given list of values into a HTML object
+def concat_html(vals):
+    if not isinstance(vals, list):
+        raise TypeError
+    return HTML(u"".join(map(force_unicode, vals)))
+
+# Template substitution with HTML support. Substitutes the placeholders in the first argument
+# string with the named values in the kwargs into a HTML object
+def substitute_html(*args, **kwargs):
+    if len(args) is not 1:
+        raise TypeError("substitute_html() takes exactly one template argument ({n} given)".format(n=len(args)))
+    template = args[0]
+    kwargs = {k: force_unicode(v) for k, v in kwargs.items()}
+    return HTML(string.Template(force_unicode(template)).substitute(**kwargs))
+
+# Wrapper for markdowned text intended for catching double-markdown bugs
+class Markdown(HTML):
+    def __add__(self, other):
+        if isinstance(other, Markdown):
+            return Markdown(HTML(self) + HTML(other))
+        return super(Markdown, self).__add__(other)
+    
+    def __radd__(self, other):
+        if isinstance(other, Markdown):
+            return Markdown(HTML(other) + HTML(self))
+        return super(Markdown, self).__radd__(other)
 
 # Shorter way to encode markdown, also strips leading and trailing whitespace
 def md(text):
-    return markdown.markdown(force_unicode(text.strip()))
+    if isinstance(text, Markdown):
+        pass # raise ValueError("Attempting to markdown already markdowned text")
+    if isinstance(text, HTML):
+        pass # raise ValueError("Attempting to markdown HTML text")
+    return Markdown(markdown.markdown(force_unicode(text)))
     
 class Section(object):
     # slug, title, content
@@ -36,9 +94,8 @@ class Page(object):
     sections = []
     first_section_in_menu = False
     def generate(self, language, site_menu):
-        section_content = "".join([force_unicode(x.generate()) for x in self.sections if not x.direct_link])
-        return html(head("Freenet - " + self.title), body(
-            force_unicode(menu(site_menu, self))+section_content))
+        section_content = concat_html([x.generate() for x in self.sections if not x.direct_link])
+        return html(head("Freenet - " + self.title), body(menu(site_menu, self) + section_content))
     
 def html(head, body):
     template = """
@@ -48,7 +105,7 @@ $head
 $body
 </html>
 """
-    return string.Template(template).substitute(head=head, body=body)
+    return substitute_html(template, head=head, body=body)
 
 def head(title):
     template = """
@@ -107,7 +164,7 @@ def head(title):
 
 </head>
 """
-    return string.Template(template).substitute(title=title)
+    return substitute_html(template, title=title)
     
 def body(content):
     template = """    
@@ -156,10 +213,11 @@ jQuery('#chatlink').click(function(e) {
     chat_modal_button = _("Open chat")
     chat_modal_title = _("Please note")
     chat_modal_message = _("This chat is staffed by volunteers, and it may be that no one is around right now. Please ask your question, and someone will answer within several hours.")
-    return string.Template(template).substitute(content=content, chat_modal_title=chat_modal_title, chat_modal_message=chat_modal_message, chat_modal_button=chat_modal_button)
+    return substitute_html(template, content=content, chat_modal_title=chat_modal_title, chat_modal_message=chat_modal_message, chat_modal_button=chat_modal_button)
 
 def menu(site_menu, current_page):
     menu_content = "";
+    menu_template = """<li><a href="$filename#$section">$title</a></li>"""
     for page in site_menu:
         if page.hidden: continue
         filename = page.slug + ".html"
@@ -168,20 +226,20 @@ def menu(site_menu, current_page):
         section = ""
         if not page.first_section_in_menu:
             section = page.sections[0].slug
-        menu_content += string.Template("""<li><a href="$filename#$section">$title</a></li>""").substitute(filename=filename,section=section,title=page.title.upper())
+        menu_content += substitute_html(menu_template, filename=filename, section=section, title=page.title.upper())
     submenu_content = ""
     if current_page.first_section_in_menu:
         skip = 0
     else:
         skip = 1
-    for section in current_page.sections[skip:]:
-        link = section.direct_link or "#" + section.slug
-        submenu_content += string.Template("""<li><a href="$link">$title</a></li>""").substitute(link=link,title=section.title.upper())
-    languages = ""
-    for language in settings.languages:
-        languages += string.Template(
-            """<li><a href="?language=$language">$title</a></li>"""
-        ).substitute(language=language, title=language.upper())
+    submenu_template = """<li><a href="$link">$title</a></li>"""
+    submenu_content = concat_html([
+        substitute_html(submenu_template, link=(section.direct_link or "#" + section.slug), title=section.title.upper())
+        for section in current_page.sections[skip:]])
+    language_template = """<li><a href="?language=$language">$title</a></li>"""
+    languages = concat_html([
+        substitute_html(language_template, language=language, title=language.upper())
+        for language in settings.languages])
     template = """
 <!--MENU SECTION START-->
 <div class="navbar navbar-inverse navbar-fixed-top" id="menu-section" >
@@ -231,7 +289,7 @@ $submenu_content
 </div>
 <!--MENU SECTION END-->
 """
-    return string.Template(template).substitute(
+    return substitute_html(template,
         brand="FREENET", rabbit=_("Freenet rabbit logo"),
         menu_content=menu_content, submenu_content=submenu_content,
         languages=languages
@@ -266,7 +324,7 @@ $license
 
 </div>
 """
-        return string.Template(template).substitute(
+        return substitute_html(template,
             press=_("Press:"),
             support=_("Support:"),
             irc=_("IRC:"),
@@ -295,7 +353,7 @@ $content
 </section>
 <!-- section $name end -->
 """
-    return string.Template(template).substitute(name=name, title=title,content=content)
+    return substitute_html(template, name=name, title=title, content=content)
 
 def text(content):
     template = """
@@ -307,4 +365,4 @@ $content
 </div>
 <!-- text end -->
 """
-    return string.Template(template).substitute(content=content)
+    return substitute_html(template, content=content)
