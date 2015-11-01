@@ -6,6 +6,8 @@ import markdown
 import re
 import settings
 
+site_brand = "Freenet"
+
 # Wrapper for HTML intended to catch markdown-of-html bugs
 # The HTML class taints all strings that are added to it to be HTML as well
 class HTML(object):
@@ -235,7 +237,7 @@ jQuery('#chatlink').click(function(e) {
 
 def menu(site_menu, current_page):
     menu_content = "";
-    menu_template = """<li><a href="$filename#$section">$title</a></li>"""
+    menu_template = """<li><a href="$filename#$section" class="uppercase">$title</a></li>"""
     for page in site_menu:
         if page.hidden: continue
         filename = page.slug + ".html"
@@ -244,19 +246,19 @@ def menu(site_menu, current_page):
         section = ""
         if not page.first_section_in_menu:
             section = page.sections[0].slug
-        menu_content += substitute_html(menu_template, filename=filename, section=section, title=page.title.upper())
+        menu_content += substitute_html(menu_template, filename=filename, section=section, title=page.title)
     submenu_content = ""
     if current_page.first_section_in_menu:
         skip = 0
     else:
         skip = 1
-    submenu_template = """<li><a href="$link">$title</a></li>"""
+    submenu_template = """<li><a href="$link" class="uppercase">$title</a></li>"""
     submenu_content = concat_html([
-        substitute_html(submenu_template, link=(section.direct_link or "#" + section.slug), title=section.title.upper())
+        substitute_html(submenu_template, link=(section.direct_link or "#" + section.slug), title=section.title)
         for section in current_page.sections[skip:]])
-    language_template = """<li><a href="?language=$language">$title</a></li>"""
+    language_template = """<li><a href="?language=$language" class="uppercase">$title</a></li>"""
     languages = concat_html([
-        substitute_html(language_template, language=language, title=language.upper())
+        substitute_html(language_template, language=language, title=language)
         for language in settings.languages])
     template = """
 <!--MENU SECTION START-->
@@ -272,7 +274,7 @@ def menu(site_menu, current_page):
             <div class="navbar-brand">
                 <a href="index.html">
                     <img src="assets/img/logo_65_49.png" style="height: 2em;" alt="$str__rabbit"/>
-                    $str__brand
+                    <span class="uppercase">$str__brand</span>
                 </a>
             </div>
         </div>
@@ -300,7 +302,7 @@ def menu(site_menu, current_page):
 <!--MENU SECTION END-->
 """
     return substitute_html(template,
-        str__brand="FREENET", str__rabbit=_("Freenet rabbit logo"),
+        str__brand=site_brand, str__rabbit=_("Freenet rabbit logo"),
         html__menu_content=menu_content, html__submenu_content=submenu_content,
         html__languages=languages
     )
