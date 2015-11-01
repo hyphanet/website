@@ -59,11 +59,7 @@ obtain. Using it will also be less suspicious.
     <div class="container">
         <div class="row text-center">
             <div class="col-sm-2 col-md-2 col-lg-2">
-                <div class="item active" id="suma_award_notice">
-                    <h4>&nbsp; &nbsp;</h4>
-                    <p>&nbsp; &nbsp;</p>
-                    <p>&nbsp; &nbsp;</p>
-                    <p>&nbsp; &nbsp;</p>
+                <div class="item active sidebar" id="suma_award_notice">
                     <p><a href="news.html#20150211"><img src="assets/img/suma2015_badge_transparent_3.png" alt="SUMA Award 2014/15" /></a></p>
                 </div>
             </div>
@@ -99,7 +95,7 @@ obtain. Using it will also be less suspicious.
 
             <!--DONATE SUBSECTION -->
             <div class="col-sm-2 col-md-2 col-lg-2">
-                <div class="item active donate" id="donate_button">
+                <div class="item active donate sidebar" id="donate_button">
                     <h4>$str__donate_title</h4>
                     $md__donate_text
                     
