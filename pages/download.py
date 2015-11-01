@@ -174,7 +174,7 @@ cares about its host's IP address; it can't, or Freenet would fail on
 machines that get IP addresses from a DHCP pool.
 
 All you actually need to do is tell the system you've mirrored to that it
-should start the Freenet proxy daemon for you on boot. Do <tt>crontab -l</tt>
+should start the Freenet proxy daemon for you on boot. Do `crontab -l`
 on the source machine, find the line that is tagged "FREENET AUTOSTART" and
 add that to your crontab on the mirrored machine.
 
@@ -290,7 +290,7 @@ Normally Freenet will connect automatically and should "just work",
 automatically connecting to other nodes (Strangers). However,
 if you know several people who are already using Freenet, you can
 enable high security mode and 
-[add them as Friends](http://127.0.0.1:8888/addfriend/").
+[add them as Friends](http://127.0.0.1:8888/addfriend/).
 so Freenet will only connect to them, making your usage of Freenet 
 almost undetectable, while still being able to access the rest of the
 network through their friends' friends etc. This will be slower unless 
