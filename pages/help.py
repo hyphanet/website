@@ -488,10 +488,9 @@ Freenet logs messages excessively during normal operation. It's something we're
 aware of and are working on.
 """)),
                     FaqItem("kaspersky", _("I have Kaspersky anti-virus, and Freenet doesn't install, or shows \"Download/upload queue database corrupted!\""), _("""
-                    Kaspersky can be a problem with Freenet. See [here](
-https://wiki.freenetproject.org/Installing/Windows#.27Download
-.2Fupload_queue_database_corrupted.21.27_.28When_using_Kaspersky_on_Windows_7
-.29). We recommend you turn off Kaspersky during install and during node
+                    Kaspersky can be a problem with Freenet.
+See [here](https://wiki.freenetproject.org/Installing/Windows#.27Download.2Fupload_queue_database_corrupted.21.27_.28When_using_Kaspersky_on_Windows_7.29).
+We recommend you turn off Kaspersky during install and during node
 startup, and exclude the directory you installed Freenet in (most likely
 C:\Program Files\Freenet or C:\Program Files (x86)\Freenet).
 """)),
@@ -593,11 +592,7 @@ spelling/grammar mistakes, new ideas (see [the previous answer](#idea)),
 are all welcome. You may find [the wiki](
 https://wiki.freenetproject.org/Main_Page) helpful.
 """) + "\n\n" + _("""
-If you have any questions about contributing, please contact us, via [the
-developers mailing list](https://emu.freenetproject.org/cgi-bin/mailman
-/listinfo/devl/), [the chat channel](help.html#irc), [the support
-mailing list](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/support)
-or anonymously via the freenet board on FMS.
+If you have any questions about contributing, please contact us, via [the developers mailing list](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/devl/), [the chat channel](help.html#irc), [the support mailing list](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/support) or anonymously via the freenet board on FMS.
 
 Last but not least you can [donate](donate.html) to support our paid
 developer(s) and cover server costs.
@@ -941,11 +936,8 @@ https://wiki.freenetproject.org/Program_files) for details on some of the
 files.
 """)),
                     FaqItem("smartscreen", _("Windows SmartScreen filter warns the Freenet installer might put my PC at risk. What's going on?"), _("""
-[SmartScreen](http://windows.microsoft.com/en-us/windows7/smartscreen-filter
--frequently-asked-questions-ie9) is sometimes incorrect in classifying a file
-as dangerous. We believe our installer is not infected with malicious
-software, and if you are a developer you can check the installer source code
-[here](https://github.com/freenet/wininstaller-innosetup).
+[SmartScreen](http://windows.microsoft.com/en-us/windows7/smartscreen-filter-frequently-asked-questions-ie9) is sometimes incorrect in classifying a file as dangerous.
+We believe our installer is not infected with malicious software, and if you are a developer you can check the installer source code [here](https://github.com/freenet/wininstaller-innosetup).
 """)),
                 ]),
             ]
@@ -1027,8 +1019,7 @@ forgot it.)_
   C++?" should be addressed to this list.
 
 _**Third party tools**: We are hosting some other mailing lists on our server
-here is the [full list](https://emu.freenetproject.org/cgi-bin/mailman
-/listinfo/)._
+here is the [full list](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/)._
 """)))
 
 class SuggestionsSection(Section):
