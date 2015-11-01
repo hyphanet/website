@@ -11,7 +11,7 @@ class NewsItem(object):
     def render(self):
         return section(self.section, self.title, text(self.content))
     def markdown_link(self):
-        return string.Template("[$title]($url)").substitute(url="news.html#"+self.section, title=self.title)
+        return "[{title}](news.html#{anchor})".format(anchor=self.section, title=self.title)
 
 def news_items():
     # write these in markdown
