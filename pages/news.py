@@ -505,4 +505,5 @@ class NewsSection(Section):
         return self.get_content()
 
     def get_content(self):
-        return "".join([x.render() for x in news_items()])
+        return concat_html([x.render() for x in news_items()])
+

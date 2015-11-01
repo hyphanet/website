@@ -24,7 +24,7 @@ class HomeSection(Section):
         </p>
     </div>
     """
-            return string.Template(template).substitute(
+            return substitute_html(template,
                 title=title,
                 text=md(text),
                 active=active)
@@ -141,14 +141,13 @@ We are raising funds so we can continue paying our developer for another year.
         """))
         donate_button_text = _("Donate!")
         donation_target = "27500"
-        return string.Template(content).substitute(sliders="".join(sliders),
-                                                   tagline=tagline,
-                                                   download_text=download_text,
-                                                   donate_text=donate_text,
-                                                   donate_button_text=donate_button_text,
-                                                   donation_target=donation_target,
-                                                   )
-
+        return substitute_html(content,
+            sliders=concat_html(sliders),
+            tagline=tagline,
+            download_text=download_text,
+            donate_text=donate_text,
+            donate_button_text=donate_button_text,
+            donation_target=donation_target)
 
 class ServiceSection(Section):
     def __init__(self):
@@ -167,7 +166,7 @@ class ServiceSection(Section):
 </div>
 </a>
 """
-            return string.Template(content).substitute(
+            return substitute_html(content,
                 icon=icon, title=title, text=text, link=link,
             )
         services = [
@@ -231,10 +230,11 @@ $tagline
 """
         tagline = _("Share, Chat, Browse. Anonymously.")
         download_text = _("Download Freenet")
-        return string.Template(content).substitute(services="".join(services),
-                                                   tagline=tagline,
-                                                   download_text=download_text)
-    
+        return substitute_html(content,
+            services=concat_html(services),
+            tagline=tagline,
+            download_text=download_text)
+
 class NewsSection(Section):
     def __init__(self):
         self.slug = "news"
