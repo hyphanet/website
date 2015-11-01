@@ -944,13 +944,13 @@ We believe our installer is not infected with malicious software, and if you are
         table_of_contents = concat_html([x.generate_index() for x in subsections])
         content = concat_html([x.generate() for x in subsections])
         
-        return text(force_unicode(table_of_contents) + md("""
+        return text(table_of_contents + md("""
 ### Additional information sources
 
 *   [Wiki FAQ page](https://wiki.freenetproject.org/FAQ)
 *   [Security summary](https://wiki.freenetproject.org/Security_summary)
 *   [High quality copy of the rabbit icon](assets/img/rabbit/freenet-bunny.svg)
-""")+force_unicode(content))
+""") + content)
 
 class MailingListSection(Section):
     def __init__(self):
