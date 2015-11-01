@@ -77,9 +77,9 @@ class Markdown(HTML):
 # Shorter way to encode markdown, also strips leading and trailing whitespace
 def md(text):
     if isinstance(text, Markdown):
-        pass # raise ValueError("Attempting to markdown already markdowned text")
+        raise ValueError("Attempting to markdown already markdowned text")
     if isinstance(text, HTML):
-        pass # raise ValueError("Attempting to markdown HTML text")
+        raise ValueError("Attempting to markdown HTML text")
     return Markdown(markdown.markdown(force_unicode(text)))
     
 class Section(object):
