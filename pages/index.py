@@ -31,10 +31,10 @@ class HomeSection(Section):
 
         sliders = [
             # Slider items copyright Gerard Krol, licensed GFDL/CC-BY-SA 4.0/GPLv2+
-            slider_item(_("Avoid Censorship"), md(_("""
+            slider_item(_("Avoid Censorship"), _("""
 Freenet is a platform for censorship-resistant communication and publishing.
 It helps you to remain anonymous, and communicate without fear.
-""")), "active"),
+"""), "active"),
             slider_item(_("Host a Website"), _("""
 Need a website nobody can take over? That is hosted for free? That is very
 resistant to attacks? Publish it on Freenet!
