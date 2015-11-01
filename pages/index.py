@@ -3,9 +3,6 @@
 import pages.news as news
 from pages.common import *
 
-site_brand = "Freenet"
-
-
 class HomeSection(Section):
 
     def __init__(self):
