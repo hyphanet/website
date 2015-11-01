@@ -8,20 +8,20 @@ class FaqSubSection(object):
         self.items = items
     def generate(self):
         content = """
-<h2>$title</h2>
-$items
+<h2>$str__title</h2>
+$html__items
 """
         items = concat_html([x.generate() for x in self.items])
-        return substitute_html(content, title=self.title, items=items)
+        return substitute_html(content, str__title=self.title, html__items=items)
     def generate_index(self):
         content = """
-<h3>$title</h3>
+<h3>$str__title</h3>
 <ol>
-$itemlinks
+$html__itemlinks
 </ol>
 """
         itemlinks = concat_html([x.generate_link() for x in self.items])
-        return substitute_html(content, title=self.title, itemlinks=itemlinks)
+        return substitute_html(content, str__title=self.title, html__itemlinks=itemlinks)
     
 class FaqItem(object):
     def __init__(self, name, title, content):
@@ -30,16 +30,15 @@ class FaqItem(object):
         self.content = content
     def generate(self):
         content = """
-<p><a class="anchor" id="$name"></a><h3>$title</h3><br/>
-    $content
-</p>        
+<a class="anchor" id="$str__name"></a><h3>$str__title</h3>
+$md__content
 """
-        return substitute_html(content, name=self.name, title=self.title, content=md(self.content))
+        return substitute_html(content, str__name=self.name, str__title=self.title, md__content=md(self.content))
     def generate_link(self):
         content = """
-<li><a href="#$name">$title</a></li>
+<li><a href="#$str__name">$str__title</a></li>
 """
-        return substitute_html(content, name=self.name, title=self.title)
+        return substitute_html(content, str__name=self.name, str__title=self.title)
 
 class FaqSection(Section):
     # FIXME: this should probably be split up for easier maintenance and easier translation

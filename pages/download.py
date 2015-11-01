@@ -4,7 +4,7 @@ import markdown
 from .common import *
 
 def div(id, content):
-    return substitute_html("""<div id="$id">$content</div>""", id=id, content=content)
+    return substitute_html("""<div id="$str__id">$html__content</div>""", str__id=id, html__content=content)
     
 def show_hide_script():
     # License: GFDL (from old freenetproject.org website)
