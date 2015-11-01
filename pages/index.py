@@ -56,84 +56,81 @@ obtain. Using it will also be less suspicious.
         content = """
 <!--HOME SECTION START-->
 <section id="home">
-<div class="container">
-<div class="row text-center">
-<div class="col-sm-2 col-md-2 col-lg-2">
-        <div class="item active" id="suma_award_notice">
-             <h4>&nbsp; &nbsp;</h4>
-             <p>&nbsp; &nbsp;</p>
-             <p>&nbsp; &nbsp;</p>
-             <p>&nbsp; &nbsp;</p>
-             <p><a href="news.html#20150211"><img src="assets/img/suma2015_badge_transparent_3.png" alt="SUMA Award 2014/15" /></a></p>
-        </div>
-</div>
-
-<div class="col-sm-8 col-md-8 col-lg-8">
-<div class="row">
-<div id="carousel-slider">
-<div class="carousel-inner">
-$html__sliders
-</div>
-</div>
-</div>
-<div class="row">
-<div class="download">
-
-<p>$str__tagline</p>
-<!-- FIXME: become social
-<div class="social">
-<a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-facebook "></i></a>
-<a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-twitter"></i></a>
-<a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-google-plus "></i></a>
-<a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-linkedin "></i></a>
-<a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-pinterest "></i></a>
-<a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-github "></i></a>
-</div>
--->
-<a href="download.html#autostart" class=" btn button-custom btn-custom-two">
-    <i class="icon ion-arrow-down-a"></i>
-    $str__download_text
-</a>
-</div>
-</div>
-</div>
-
-<!--DONATE SUBSECTION -->
-<div class="col-sm-2 col-md-2 col-lg-2">
-        <div class="item active donate" id="donate_button">
-             <h4>$str__donate_title</h4>
-             $md__donate_text
-             <div class="meter blue" id="donate_bar_small">
-                 <span style="width: calc(MONEYMONTHS / 12 *100%)"></span>
-                 
-                 <!-- div to precisely float over and cover the whole bar box so we can center the text in it -->
-                 <div style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; display:table;">
-                     <!-- div to center vertically -->
-                     <div style="display: table-cell; vertical-align: middle;">
-                         <!-- div to set font properties (text-shadow creates a black outline, aka stroke) -->
-                         <div style="font-size: small; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">
-                             $str__months_text
-                         </div>
-                     </div>
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-sm-2 col-md-2 col-lg-2">
+                <div class="item active" id="suma_award_notice">
+                    <h4>&nbsp; &nbsp;</h4>
+                    <p>&nbsp; &nbsp;</p>
+                    <p>&nbsp; &nbsp;</p>
+                    <p>&nbsp; &nbsp;</p>
+                    <p><a href="news.html#20150211"><img src="assets/img/suma2015_badge_transparent_3.png" alt="SUMA Award 2014/15" /></a></p>
                 </div>
-             </div>
-             <script type="text/javascript">
-                 fund_percentage_year = (MONEYMONTHS / 12);
-                 if(fund_percentage_year <= 1/3) {
-                     donate_bar = document.getElementById("donate_bar_small");
-                     donate_bar.className = "meter red";
-                 }
-             </script>
-             <a class="btn button-custom btn-custom-two donate-button" href="donate.html">$str__donate_button_text</a>
+            </div>
+
+            <div class="col-sm-8 col-md-8 col-lg-8">
+                <div class="row">
+                    <div id="carousel-slider">
+                        <div class="carousel-inner">
+                            $html__sliders
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="download">
+                        <p>$str__tagline</p>
+                        <!-- FIXME: become social
+                        <div class="social">
+                        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-facebook "></i></a>
+                        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-google-plus "></i></a>
+                        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-linkedin "></i></a>
+                        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-pinterest "></i></a>
+                        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-github "></i></a>
+                        </div>
+                        -->
+                        <a href="download.html#autostart" class=" btn button-custom btn-custom-two">
+                            <i class="icon ion-arrow-down-a"></i>
+                            $str__download_text
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--DONATE SUBSECTION -->
+            <div class="col-sm-2 col-md-2 col-lg-2">
+                <div class="item active donate" id="donate_button">
+                    <h4>$str__donate_title</h4>
+                    $md__donate_text
+                    
+                    <div class="meter blue" id="donate_bar_small">
+                        <span style="width: calc(MONEYMONTHS / 12 *100%)"></span>
+
+                        <!-- div to precisely float over and cover the whole bar box so we can center the text in it -->
+                        <div style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; display:table;">
+                            <!-- div to center vertically -->
+                            <div style="display: table-cell; vertical-align: middle;">
+                                <!-- div to set font properties (text-shadow creates a black outline, aka stroke) -->
+                                <div style="font-size: small; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">
+                                    $str__months_text
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        fund_percentage_year = (MONEYMONTHS / 12);
+                        if(fund_percentage_year <= 1/3) {
+                            donate_bar = document.getElementById("donate_bar_small");
+                            donate_bar.className = "meter red";
+                        }
+                    </script>
+                    <a class="btn button-custom btn-custom-two donate-button" href="donate.html">$str__donate_button_text</a>
+                </div>
+            </div>
+            <!-- DONATE SUBSECTION END -->
         </div>
-</div>
-<!-- DONATE SUBSECTION END -->
-</div>
-</div>
-</div>
-
+    </div>
 </section>
-
 <!--HOME SECTION END-->
 """
         tagline = _("Share, Chat, Browse. Anonymously.")
@@ -206,27 +203,26 @@ class ServiceSection(Section):
         content = """
 <!-- service start -->
 <div class="row">
-$html__services
-<div class="col-sm-12 col-md-12 col-lg-12" style="text-align: center">
-<div class="download">
-
-<p>$str__tagline</p>
-<!-- FIXME: become social
-<div class="social">
-<a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-facebook "></i></a>
-<a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-twitter"></i></a>
-<a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-google-plus "></i></a>
-<a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-linkedin "></i></a>
-<a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-pinterest "></i></a>
-<a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-github "></i></a>
-</div>
--->
-<a href="download.html#autostart" class=" btn button-custom btn-custom-two">
-    <i class="icon ion-arrow-down-a"></i>
-    $str__download_text
-</a>
-</div>
-</div>
+    $html__services
+    <div class="col-sm-12 col-md-12 col-lg-12" style="text-align: center">
+        <div class="download">
+        <p>$str__tagline</p>
+        <!-- FIXME: become social
+        <div class="social">
+        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-facebook "></i></a>
+        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-twitter"></i></a>
+        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-google-plus "></i></a>
+        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-linkedin "></i></a>
+        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-pinterest "></i></a>
+        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-github "></i></a>
+        </div>
+        -->
+        <a href="download.html#autostart" class=" btn button-custom btn-custom-two">
+            <i class="icon ion-arrow-down-a"></i>
+            $str__download_text
+        </a>
+        </div>
+    </div>
 </div>
 <!-- service end -->
 """
