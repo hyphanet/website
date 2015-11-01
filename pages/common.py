@@ -55,10 +55,24 @@ def concat_html(vals):
 
 # Template substitution with HTML support. Substitutes the placeholders in the first argument
 # string with the named values in the kwargs into a HTML object
+# kwargs starting with html__, str__ and md__ are checked to be of HTML, str or Markdown type
+# respectively
 def substitute_html(*args, **kwargs):
     if len(args) is not 1:
         raise TypeError("substitute_html() takes exactly one template argument ({n} given)".format(n=len(args)))
     template = args[0]
+    
+    for k, v in kwargs.items():
+        if k.startswith("html__") and not isinstance(v, HTML):
+            raise TypeError("Expected HTML for substition of {k}, {f} found".format(
+                k=k, f=v.__class__.__name__))
+        if k.startswith("str__") and not isinstance(v, str):
+            raise TypeError("Expected str for substition of {k}, {f} found".format(
+                k=k, f=v.__class__.__name__))
+        if k.startswith("md__") and not isinstance(v, Markdown):
+            raise TypeError("Expected Markdown for substition of {k}, {f} found".format(
+                k=k, f=v.__class__.__name__))
+    
     kwargs = {k: force_unicode(v) for k, v in kwargs.items()}
     return HTML(string.Template(force_unicode(template)).substitute(**kwargs))
 
@@ -101,11 +115,11 @@ def html(head, body):
     template = """
 <!DOCTYPE html>
 <html lang="en" class="no-js" >
-$head
-$body
+$html__head
+$html__body
 </html>
 """
-    return substitute_html(template, head=head, body=body)
+    return substitute_html(template, html__head=head, html__body=body)
 
 def head(title):
     template = """
@@ -170,7 +184,7 @@ def body(content):
     template = """    
 <body data-spy="scroll" data-target="#menu-section">
 
-$content
+$html__content
 
 <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME -->
 <!-- CORE JQUERY -->
@@ -190,7 +204,7 @@ $content
 
 </body>
 """
-    return substitute_html(template, content=content)
+    return substitute_html(template, html__content=content)
 
 def menu(site_menu, current_page):
     menu_content = "";
@@ -232,8 +246,8 @@ def menu(site_menu, current_page):
 
 <div class="navbar-brand">
     <a href="index.html">
-        <img src="assets/img/logo_65_49.png" style="height: 2em;" alt="$rabbit"/>
-        $brand
+        <img src="assets/img/logo_65_49.png" style="height: 2em;" alt="$str__rabbit"/>
+        $str__brand
     </a>
 </div>
 </div>
@@ -242,7 +256,7 @@ def menu(site_menu, current_page):
 <div class="navbar-collapse collapse navbar-language">
 <ul class="nav navbar-nav navbar-nav-language navbar-right">
 
-$languages
+$html__languages
 
 </ul>
 </div>
@@ -250,14 +264,14 @@ $languages
 
 <div class="navbar-collapse collapse">
     <ul class="nav navbar-nav navbar-nav-page navbar-right">
-        $menu_content
+        $html__menu_content
     </ul>
 </div>
 
 <div class="navbar-collapse collapse">
 <ul class="nav navbar-nav navbar-right">
 
-$submenu_content
+$html__submenu_content
 
 </ul>
 </div>
@@ -267,9 +281,9 @@ $submenu_content
 <!--MENU SECTION END-->
 """
     return substitute_html(template,
-        brand="FREENET", rabbit=_("Freenet rabbit logo"),
-        menu_content=menu_content, submenu_content=submenu_content,
-        languages=languages
+        str__brand="FREENET", str__rabbit=_("Freenet rabbit logo"),
+        html__menu_content=menu_content, html__submenu_content=submenu_content,
+        html__languages=languages
     )
 
 class ContactSection(Section):
@@ -283,63 +297,63 @@ class ContactSection(Section):
 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 <div class="contact-wrapper">
 <h3>Contact</h3>
-<h4><strong>$press </strong><span class="e-mail" data-user="sserp" data-website="gro.tcejorpteneerf"></span></h4>
-<h4><strong>$support </strong> support@freenetproject.org </h4>
-<h4><strong>$irc </strong> $irc_value</h4>
+<h4><strong>$str__press </strong><span class="e-mail" data-user="sserp" data-website="gro.tcejorpteneerf"></span></h4>
+<h4><strong>$str__support </strong> support@freenetproject.org </h4>
+<h4><strong>$str__irc </strong> $str__irc_value</h4>
 </div>
 
 </div>
 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 <div class="contact-wrapper">
-<h3>$license_header</h3>
-$license
+<h3>$str__license_header</h3>
+$str__license
 <div class="footer-div" >
 &copy; 2015 The Freenet Project Inc<br/>
-<a href="http://www.designbootstrap.com/" target="_blank" >$design</a>
+<a href="http://www.designbootstrap.com/" target="_blank" >$str__design</a>
 </div>
 </div>
 
 </div>
 """
         return substitute_html(template,
-            press=_("Press:"),
-            support=_("Support:"),
-            irc=_("IRC:"),
-            irc_value=_("{irc_channel} on {irc_server}").format(irc_channel="#freenet", irc_server="chat.freenode.net"),
-            license_header=_("License"),
-            license=_("Content on this website is licensed under the GNU Free Documentation License and may be available under other licenses."),
-            design=_("Design by DesignBootstrap")
+            str__press=_("Press:"),
+            str__support=_("Support:"),
+            str__irc=_("IRC:"),
+            str__irc_value=_("{irc_channel} on {irc_server}").format(irc_channel="#freenet", irc_server="chat.freenode.net"),
+            str__license_header=_("License"),
+            str__license=_("Content on this website is licensed under the GNU Free Documentation License and may be available under other licenses."),
+            str__design=_("Design by DesignBootstrap")
             )
 
 
 def section(name, title, content):
     template = """
-<!--section $name start-->
-<section id="$name" >
+<!--section $str__name start-->
+<section id="$str__name" >
 <div class="container">
 <div class="row text-center header">
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
-<h3>$title</h3>
+<h3>$str__title</h3>
 <hr />
 </div>
 </div>
 
-$content
+$html__content
 
 </section>
-<!-- section $name end -->
+<!-- section $str__name end -->
 """
-    return substitute_html(template, name=name, title=title, content=content)
+    return substitute_html(template, str__name=name, str__title=title, html__content=content)
 
 def text(content):
     template = """
 <!-- text start -->
 <div class="row">
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-$content
+$html__content
 </div>
 </div>
 <!-- text end -->
 """
-    return substitute_html(template, content=content)
+    return substitute_html(template, html__content=content)

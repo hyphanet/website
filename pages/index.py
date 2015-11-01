@@ -15,19 +15,15 @@ class HomeSection(Section):
     def generate(self):
         def slider_item(title, text, active=""):
             template = """
-    <div class="item $active">
-        <h3>
-            $title
-        </h3>
-        <p>
-            $text
-        </p>
+    <div class="item $str__active">
+        <h3>$str__title</h3>
+        $md__text
     </div>
     """
             return substitute_html(template,
-                title=title,
-                text=md(text),
-                active=active)
+                str__title=title,
+                md__text=md(text),
+                str__active=active)
 
         sliders = [
             # Slider items copyright Gerard Krol, licensed GFDL/CC-BY-SA 4.0/GPLv2+
@@ -76,16 +72,14 @@ obtain. Using it will also be less suspicious.
 <div class="row">
 <div id="carousel-slider">
 <div class="carousel-inner">
-$sliders
+$html__sliders
 </div>
 </div>
 </div>
 <div class="row">
 <div class="download">
 
-<p >
-$tagline
-</p>
+<p>$str__tagline</p>
 <!-- FIXME: become social
 <div class="social">
 <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-facebook "></i></a>
@@ -98,7 +92,7 @@ $tagline
 -->
 <a href="download.html#autostart" class=" btn button-custom btn-custom-two">
     <i class="icon ion-arrow-down-a"></i>
-    $download_text
+    $str__download_text
 </a>
 </div>
 </div>
@@ -107,8 +101,8 @@ $tagline
 <!--DONATE SUBSECTION -->
 <div class="col-sm-2 col-md-2 col-lg-2">
         <div class="item active donate" id="donate_button">
-             <h4>$donate_title</h4>
-             <p>$donate_text</p>
+             <h4>$str__donate_title</h4>
+             $md__donate_text
              <div class="meter blue" id="donate_bar_small">
                  <span style="width: calc(MONEYMONTHS / 12 *100%)"></span>
                  
@@ -118,7 +112,7 @@ $tagline
                      <div style="display: table-cell; vertical-align: middle;">
                          <!-- div to set font properties (text-shadow creates a black outline, aka stroke) -->
                          <div style="font-size: small; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">
-                             $months_text
+                             $str__months_text
                          </div>
                      </div>
                 </div>
@@ -130,7 +124,7 @@ $tagline
                      donate_bar.className = "meter red";
                  }
              </script>
-             <a class="btn button-custom btn-custom-two donate-button" href="donate.html">$donate_button_text</a>
+             <a class="btn button-custom btn-custom-two donate-button" href="donate.html">$str__donate_button_text</a>
         </div>
 </div>
 <!-- DONATE SUBSECTION END -->
@@ -150,13 +144,13 @@ Your donations pay for our server and developer. Our current funds will last
         """))
         donate_button_text = _("Donate!")
         months_text = _("{num_months} months").format(num_months="MONEYMONTHS")
-        return substitute_html(content, sliders=concat_html(sliders),
-            tagline=tagline,
-            download_text=download_text,
-            donate_text=donate_text,
-            donate_title=donate_title,
-            donate_button_text=donate_button_text,
-            months_text=months_text)
+        return substitute_html(content, html__sliders=concat_html(sliders),
+            str__tagline=tagline,
+            str__download_text=download_text,
+            md__donate_text=donate_text,
+            str__donate_title=donate_title,
+            str__donate_button_text=donate_button_text,
+            str__months_text=months_text)
 
 
 class ServiceSection(Section):
@@ -166,18 +160,18 @@ class ServiceSection(Section):
     def get_content(self):
         def service(icon, title, text, link):
             content = """
-<a href="$link">
+<a href="$str__link">
 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
     <div class="services-wrapper">
-        <i class="$icon"></i>
-        <h3>$title</h3>
-        $text
+        <i class="$str__icon"></i>
+        <h3>$str__title</h3>
+        $str__text
     </div>
 </div>
 </a>
 """
             return substitute_html(content,
-                icon=icon, title=title, text=text, link=link,
+                str__icon=icon, str__title=title, str__text=text, str__link=link,
             )
         services = [
              # Services items copyright Gerard Krol, licensed GFDL/CC-BY-SA 4.0/GPLv2+
@@ -212,13 +206,11 @@ class ServiceSection(Section):
         content = """
 <!-- service start -->
 <div class="row">
-$services
+$html__services
 <div class="col-sm-12 col-md-12 col-lg-12" style="text-align: center">
 <div class="download">
 
-<p >
-$tagline
-</p>
+<p>$str__tagline</p>
 <!-- FIXME: become social
 <div class="social">
 <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-facebook "></i></a>
@@ -231,7 +223,7 @@ $tagline
 -->
 <a href="download.html#autostart" class=" btn button-custom btn-custom-two">
     <i class="icon ion-arrow-down-a"></i>
-    $download_text
+    $str__download_text
 </a>
 </div>
 </div>
@@ -241,9 +233,9 @@ $tagline
         tagline = _("Share, Chat, Browse. Anonymously.")
         download_text = _("Download Freenet")
         return substitute_html(content,
-            services=concat_html(services),
-            tagline=tagline,
-            download_text=download_text)
+            html__services=concat_html(services),
+            str__tagline=tagline,
+            str__download_text=download_text)
 
 class NewsSection(Section):
     def __init__(self):
@@ -266,3 +258,4 @@ class IndexPage(Page):
             ServiceSection(),
             NewsSection(),
             ContactSection()]
+
