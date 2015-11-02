@@ -1046,12 +1046,9 @@ class ChatSection(Section):
         return text(md(_("""
 Many of the developers and users of Freenet are on the [IRC](
 https://en.wikipedia.org/wiki/IRC) channel #freenet on chat.freenode.net.
-
-[Chat with us][url_chat]
-
 """) + "\n\n" + """
-[url_chat]: #chatlink "chatlink"
-"""))
+<a href="#chatlink" title="chatlink" class="btn button-custom btn-custom-two">{}</a>
+""".format(_("Chat with us"))))
 
 class SetupSection(Section):
     def __init__(self):
