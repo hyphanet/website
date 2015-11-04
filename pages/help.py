@@ -952,12 +952,16 @@ We believe our installer is not infected with malicious software, and if you are
         table_of_contents = concat_html([x.generate_index() for x in subsections])
         content = concat_html([x.generate() for x in subsections])
         
-        return text(table_of_contents + md("""
+        return text(table_of_contents + md(_("""
 ### Additional information sources
 
-*   [Wiki FAQ page](https://wiki.freenetproject.org/FAQ)
-*   [Security summary](https://wiki.freenetproject.org/Security_summary)
-*   [High quality copy of the rabbit icon](assets/img/rabbit/freenet-bunny.svg)
+*   [Wiki FAQ page][url_wiki]
+*   [Security summary][url_security]
+*   [High quality copy of the rabbit icon][url_rabbit_icon]
+""") + "\n\n" + """
+[url_wiki]: https://wiki.freenetproject.org/FAQ
+[url_security]: https://wiki.freenetproject.org/Security_summary
+[url_rabbit_icon]: assets/img/rabbit/freenet-bunny.svg
 """) + content)
 
 class MailingListSection(Section):

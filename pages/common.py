@@ -331,7 +331,7 @@ class ContactSection(Section):
 <div class="row">
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
         <div class="contact-wrapper">
-            <h3>Contact</h3>
+            <h3>$str__contact_header</h3>
             <h4><strong>$str__press </strong><span class="e-mail" data-user="sserp" data-website="gro.tcejorpteneerf"></span></h4>
             <h4><strong>$str__support </strong> support@freenetproject.org </h4>
             <h4><strong>$str__irc </strong> $str__irc_value</h4>
@@ -350,6 +350,7 @@ class ContactSection(Section):
 </div>
 """
         return substitute_html(template,
+            str__contact_header=_("Contact"),
             str__press=_("Press:"),
             str__support=_("Support:"),
             str__irc=_("IRC:"),
