@@ -8,9 +8,15 @@ import settings
 
 site_brand = "Freenet"
 
-# Wrapper for HTML intended to catch markdown-of-html bugs
-# The HTML class taints all strings that are added to it to be HTML as well
 class HTML(object):
+    """
+    Wrapper for HTML intended to catch markdown-of-html bugs.
+    
+    The HTML class taints all strings that are added to it to be HTML as well,
+    and raises an AssertionError when implicitly converted to a string
+    representation. To combine HTML values in other ways than simply appending,
+    use `concat_html` or `substitute_html`.
+    """
     def __init__(self, text):
         if not isinstance(text, str):
             raise TypeError("HTML text must be of str, {f} found".format(f=text.__class__.__name__))
@@ -35,31 +41,37 @@ class HTML(object):
     def __str__(self):
         raise AssertionError("Implicitly converting HTML to str")
 
-# Forces the given value to be represented as a unicode string
 def force_unicode(val):
+    """Forces the given value to be represented as a unicode string."""
     if isinstance(val, str):
         return val
     if isinstance(val, HTML):
         return val.text
     return str(val)
 
-# Forces the given value to be represented as an HTML object
 def force_html(val):
+    """Forces the given value to be represented as an HTML object."""
     if isinstance(val, HTML):
         return val
     return HTML(force_unicode(val))
 
-# Concatenates the given list of values into a HTML object
 def concat_html(vals):
+    """Concatenates the given list of values into a HTML object."""
     if not isinstance(vals, list):
         raise TypeError
     return HTML(u"".join(map(force_unicode, vals)))
 
-# Template substitution with HTML support. Substitutes the placeholders in the first argument
-# string with the named values in the kwargs into a HTML object
-# kwargs starting with html__, str__ and md__ are checked to be of HTML, str or Markdown type
-# respectively
 def substitute_html(*args, **kwargs):
+    """
+    Template substitution with HTML support.
+    
+    Substitutes the placeholders in the first argument string with the named
+    values in the `kwargs` into a HTML object.
+    
+    `kwargs` starting with `html__`, `str__` and `md__` are checked to be of
+    HTML, str or Markdown type respectively. A TypeError is raised if they
+    are not.
+    """
     if len(args) is not 1:
         raise TypeError("substitute_html() takes exactly one template argument ({n} given)".format(n=len(args)))
     template = args[0]
@@ -78,8 +90,8 @@ def substitute_html(*args, **kwargs):
     kwargs = {k: force_unicode(v) for k, v in kwargs.items()}
     return HTML(string.Template(force_unicode(template)).substitute(**kwargs))
 
-# Wrapper for markdowned text intended for catching double-markdown bugs
 class Markdown(HTML):
+    """Wrapper for markdowned text intended for catching double-markdown bugs."""
     def __add__(self, other):
         if isinstance(other, Markdown):
             return Markdown(HTML(self) + HTML(other))
@@ -93,8 +105,8 @@ class Markdown(HTML):
     def __repr__(self):
         return "Markdown({})".format(repr(force_unicode(self)))
 
-# Shorter way to encode markdown, also strips leading and trailing whitespace
 def md(text):
+    """Processes Markdown-formatted text and returns a HTML representation."""
     if isinstance(text, Markdown):
         raise ValueError("Attempting to markdown already markdowned text")
     if isinstance(text, HTML):
