@@ -44,14 +44,15 @@ In the next few weeks we will transition to a redesigned website. This will be
 the first major change since 2009. In addition to looking more modern, this new
 version is also more practical to modify, test, and translate.
 
-If you'd like to get a look at the site in testing you can find it [here](
-https://testing.freenetproject.org/) - as given in the prompt the
-username and password are "guest". If you'd like to help with translation,
-please join us on the ["website" resource on Transifex](
-https://www.transifex.com/otf/freenet/website/).
+If you'd like to get a look at the site in testing you can find it [here][url_testing] - as given in the prompt the username and password are "guest".
+If you'd like to help with translation, please join us on the ["website" resource on Transifex][url_transifex].
 
-If you have any feedback on the new website design please let us know on [
-chat](irc.html) or the [support list](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/support)!
+If you have any feedback on the new website design please let us know on [chat][url_chat] or the [support list][url_supportlist]!
+""" + "\n\n" + """
+[url_testing]: https://testing.freenetproject.org/
+[url_transifex]: https://www.transifex.com/otf/freenet/website/
+[url_supportlist]: https://emu.freenetproject.org/cgi-bin/mailman/listinfo/support
+[url_chat]: irc.html
 """)),
               NewsItem("20150917-ecdsa-vulnerability", _("2015-09-17 - elliptic curves: using safe Bouncy Castle since November 2014"),
 _("""
@@ -305,18 +306,22 @@ Freenet and its communication tools to provide a point of contact for users at r
                  _("""
 The video from the talk given when Freenet [received the SUMA Award 2015](#20150211)
 for being the best project against surveillance and espionage on the Internet
-is available on [the Award page](http://www.searchstudies.org/de/suma2015.html)
-and [on YouTube](https://youtu.be/dZpsBSPsHDI?t=5m56s):
+is available on [the Award page][url_award] and [on YouTube][url_youtube]:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dZpsBSPsHDI"
-style="border: none;" allowfullscreen=""></iframe>
+{embed_youtube}
 
 The Freenet Project receives the SUMA award and Arne Babenhauserheide accepts
 the prize as representative of the project. Arne then presents the current
 capabilities of Freenet to regain confidential and pseudonymous speech
 on the Internet, along with a vision of how whistleblowers could use Freenet
 to contact journalists without spilling their identity.
-""")),
+""").format(embed_youtube="""
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dZpsBSPsHDI"
+style="border: none;" allowfullscreen=""></iframe>
+""") + "\n\n" + """
+[url_award]: http://www.searchstudies.org/de/suma2015.html
+[url_youtube]: https://youtu.be/dZpsBSPsHDI?t=5m56s
+"""),
         NewsItem("20150329", _("2015-03-29 - New Linux/Unix/OS X installer"),
                  _("""
 The installer for Linux, Unix, and Mac OS X is updated to better detect Java.
@@ -396,7 +401,7 @@ That means it is now possible to get reproducibly built kernels checked by anony
                  _("""
 This release fixes a bug introduced in build 1466 which can erase the list of plugins to load when Freenet starts if it crashes. If you are affected by this bug and can no longer connect, try adding the UPnP or JSTUN plugins again.
 
-This release also has updated Finnish, French, Dutch, and Brazilian Portuguese translations thanks to [volunteers on Transifex](https://www.transifex.com/projects/p/freenet/).
+This release also has updated Finnish, French, Dutch, and Brazilian Portuguese translations thanks to [volunteers on Transifex][url_transifex].
 
 The Windows installer is updated:
 
@@ -406,7 +411,9 @@ The Windows installer is updated:
 Thank you for using Freenet!
 
 - Steve Dougherty
-""")),
+""") + "\n\n" + """
+[url_transifex]: https://www.transifex.com/projects/p/freenet/
+"""),
         NewsItem("build01466", _("2014-11-09 - Freenet 0.7.5 build 1466 released"),
                  _("""
 This release is planned to be the second-to-last version of Freenet to support Java 6\. The version after this one will refuse to upgrade unless running on Java 7 or later. Support for this behavior is part of a larger effort to allow separate official update channels - stable, testing, and unstable - as well as make it easier to publish unofficial update channels and further improve deployment security.
@@ -414,12 +421,12 @@ This release is planned to be the second-to-last version of Freenet to support J
 Highlights for this build:
 
 *   Add Hungarian Windows installer translation. Thanks drezzium!*   Allow hiding the Java version End Of Life alert. (I'm sorry for the excessive annoyingness. Still - please upgrade Java!)
-*   Upgrades to the next version (that is, when running this build's upgrade code) should no longer get [stuck in an upgrade loop](https://bugs.freenetproject.org/view.php?id=3208).
-*   Increase opennet peer limit to 142 peers. This now has [more math behind it](https://github.com/freenet/fred/pull/286) and will change when network parameters are adjusted.
+*   Upgrades to the next version (that is, when running this build's upgrade code) should no longer get [stuck in an upgrade loop][url_bug3208].
+*   Increase opennet peer limit to 142 peers. This now has [more math behind it][url_peermath] and will change when network parameters are adjusted.
 *   Add more opennet seed nodes. Thanks saces and juiceman!
 *   This build will be mandatory starting 2014-11-16, because old nodes will reject new nodes with more than 110 peers. Updates only take a few hours to spread, so this should only cause short term disruption.
 
-Additionally Matthew's (toad_'s) summer work on a custom on-disk format is done. This release lays the groundwork to include the results of that work [in the next release](http://127.0.0.1:8888/USK@pxtehd-TmfJwyNUAW2Clk4pwv7Nshyg21NNfXcqzFv4,LTjcTWqvsq3ju6pMGe9Cqb3scvQgECG81hRdgj5WO4s,AQACAAE/blog/23/Content-626611C.html). This is designed for less disk activity and better behavior when corrupted.
+Additionally Matthew's (toad_'s) summer work on a custom on-disk format is done. This release lays the groundwork to include the results of that work [in the next release][url_toad]. This is designed for less disk activity and better behavior when corrupted.
 
 This release coincides with the 25th anniversary of the demolition of the Berlin wall (Mauerfall), which marked the beginning of the end of a large censorship and surveillance regime. May censorship be demolished everywhere!
 
@@ -428,7 +435,11 @@ Thank you for using Freenet!
 - Steve Dougherty and Arne Babenhauserheide
 
 The link to http://127.0.0.1:8888 works for default Freenet nodes, but will not work for some setups. If you have a nonstandard setup, you should know the correct URL to use.
-""")),
+""") + "\n\n" + """
+[url_bug3208]: https://bugs.freenetproject.org/view.php?id=3208
+[url_peermath]: https://github.com/freenet/fred/pull/286
+[url_toad]: http://127.0.0.1:8888/USK@pxtehd-TmfJwyNUAW2Clk4pwv7Nshyg21NNfXcqzFv4,LTjcTWqvsq3ju6pMGe9Cqb3scvQgECG81hRdgj5WO4s,AQACAAE/blog/23/Content-626611C.html
+"""),
         # from here news items were selectively migrated as old release notes aren't that useful to keep around
         # TODO: Include all items again and select them in index.py instead.
         NewsItem("2013-tor-bust", _("2013-08-05 - Statement on the recent Freedom Hosting (Tor) bust"),
