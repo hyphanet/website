@@ -27,7 +27,7 @@ class HTML(object):
         return HTML(other + self.text)
     
     def __repr__(self):
-        return u"HTML: " + self.text
+        return "HTML({})".format(repr(self.text))
     
     def __unicode__(self):
         raise AssertionError("Implicitly converting HTML to unicode")
@@ -89,6 +89,9 @@ class Markdown(HTML):
         if isinstance(other, Markdown):
             return Markdown(HTML(other) + HTML(self))
         return super(Markdown, self).__radd__(other)
+    
+    def __repr__(self):
+        return "Markdown({})".format(repr(force_unicode(self)))
 
 # Shorter way to encode markdown, also strips leading and trailing whitespace
 def md(text):
