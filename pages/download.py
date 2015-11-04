@@ -290,12 +290,14 @@ Normally Freenet will connect automatically and should "just work",
 automatically connecting to other nodes (Strangers). However,
 if you know several people who are already using Freenet, you can
 enable high security mode and 
-[add them as Friends](http://127.0.0.1:8888/addfriend/).
+[add them as Friends][url_addfriend].
 so Freenet will only connect to them, making your usage of Freenet 
 almost undetectable, while still being able to access the rest of the
 network through their friends' friends etc. This will be slower unless 
 you add 10+ friends who are usually online when you are.
-""")))
+""") + "\n\n" + """
+[url_addfriend]: http://127.0.0.1:8888/addfriend/
+"""))
 
 class DownloadPage(Page):
     def __init__(self):
