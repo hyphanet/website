@@ -135,7 +135,7 @@ $content
 
 <!-- Chat link modal alert handler. This must go after jQuery is loaded, which restricts it to being in common. -->
 <script type="text/javascript">
-jQuery(document).on("click", '[title="chatlink"]', function(e) {
+jQuery('#chatlink').click(function(e) {
     bootbox.dialog({
         message: "$chat_modal_message",
         title: "$chat_modal_title",
