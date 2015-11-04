@@ -1047,7 +1047,7 @@ class ChatSection(Section):
 Many of the developers and users of Freenet are on the [IRC](
 https://en.wikipedia.org/wiki/IRC) channel #freenet on chat.freenode.net.
 """) + "\n\n" + """
-<a href="#chatlink" title="chatlink" class="btn button-custom btn-custom-two">{}</a>
+<a href="#chatlink" id="chatlink" class="btn button-custom btn-custom-two">{}</a>
 """.format(_("Chat with us"))))
 
 class SetupSection(Section):
