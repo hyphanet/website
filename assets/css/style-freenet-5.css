@@ -283,6 +283,16 @@ margin: 25px 20px;
 
 Any kind of usage allowed: https://css-tricks.com/license/ */
 
+.meter .quantity {
+  z-index: 10;
+  height: 15px;
+  line-height: 1.25em;
+  position: absolute;
+  font-size: small;
+  font-family: 'Ubuntu', sans-serif;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
 .meter {
 	height: 25px;  /* Can be anything */
     margin-bottom: 0.5em;
