@@ -67,22 +67,14 @@ obtain. Using it will also be less suspicious.
         <div class="item active donate" id="donate_button">
              <p>$donate_text</p>
              <div class="meter blue" id="donate_bar_small">
-                 <span style="width: calc(MONEYMONTHS / 12 *100%)"></span>
-                 
-                 <!-- div to precisely float over and cover the whole bar box so we can center the text in it -->
-                 <div style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; display:table;">
-                     <!-- div to center vertically -->
-                     <div style="display: table-cell; vertical-align: middle;">
-                         <!-- div to set font properties (text-shadow creates a black outline, aka stroke) -->
-                         <div style="font-size: small; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">
-                             $months_text
-                         </div>
-                     </div>
-                </div>
+                 <div class="quantity" style="left: 15px;">$donation_current_text</div>
+                 <div class="quantity" style="right: 15px;">$donation_target_text</div>
+                 <span style="width: calc(DONATIONCURRENT / $donation_target * 100%)">
+                 </span>
              </div>
              <script type="text/javascript">
-                 fund_percentage_year = (MONEYMONTHS / 12);
-                 if(fund_percentage_year <= 1/3) {
+                 fund_percentage = (DONATIONCURRENT / $donation_target);
+                 if(fund_percentage <= 1/3) {
                      donate_bar = document.getElementById("donate_bar_small");
                      donate_bar.className = "meter red";
                  }
@@ -148,13 +140,18 @@ $tagline
 We are raising funds so we can continue paying our developer for another year.
         """))
         donate_button_text = _("Donate!")
-        months_text = _("{num_months} months").format(num_months="MONEYMONTHS")
+        donation_target = "27500"
+        donation_target_text = _("${donation_target}").format(donation_target=donation_target)
+        donation_current_text = _("${donation_current}").format(donation_current="DONATIONCURRENT")
         return string.Template(content).substitute(sliders="".join(sliders),
                                                    tagline=tagline,
                                                    download_text=download_text,
                                                    donate_text=donate_text,
                                                    donate_button_text=donate_button_text,
-                                                   months_text=months_text)
+                                                   donation_target=donation_target,
+                                                   donation_target_text=donation_target_text,
+                                                   donation_current_text=donation_current_text,
+                                                   )
 
 
 class ServiceSection(Section):
