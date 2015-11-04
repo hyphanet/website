@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Freenet\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-27 20:33-0400\n"
-"PO-Revision-Date: 2015-10-28 00:33+0000\n"
+"POT-Creation-Date: 2015-10-29 22:41-0400\n"
+"PO-Revision-Date: 2015-10-30 02:42+0000\n"
 "Last-Translator: Steve Dougherty\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/otf/freenet/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -70,7 +70,7 @@ msgstr "常见问题"
 msgid "Philosophical"
 msgstr "哲学"
 
-#: pages/help.py:53 pages/about.py:11 pages/index.py:143
+#: pages/help.py:53 pages/about.py:11 pages/index.py:165
 msgid "What is Freenet?"
 msgstr "什么是 Freenet？"
 
@@ -893,7 +893,7 @@ msgstr "我怎样才能访问代码和网站？"
 
 #: pages/help.py:606
 msgid "See our [GitHub repository](https://github.com/freenet/)."
-msgstr ""
+msgstr "参见我们的 [GitHub 版本库](https://github.com/freenet/)。"
 
 #: pages/help.py:609
 msgid "What tools do I need to help develop?"
@@ -2215,202 +2215,6 @@ msgstr ""
 msgid "About"
 msgstr "关于"
 
-#: pages/common.py:212
-msgid "Freenet rabbit logo"
-msgstr "Freenet 兔子标志"
-
-#: pages/common.py:220
-msgid "Contact"
-msgstr "联系"
-
-#: pages/common.py:247
-msgid "Press:"
-msgstr "报刊："
-
-#: pages/common.py:248
-msgid "Support:"
-msgstr "用户支持："
-
-#: pages/common.py:249
-msgid "IRC:"
-msgstr "IRC："
-
-#: pages/common.py:250
-#, python-brace-format
-msgid "{irc_channel} on {irc_server}"
-msgstr "{irc_channel} 于 {irc_server}"
-
-#: pages/common.py:251
-msgid "License"
-msgstr "许可协议"
-
-#: pages/common.py:252
-msgid ""
-"Content on this website is licensed under the GNU Free Documentation License"
-" and may be available under other licenses."
-msgstr "本网站上的内容可按照 GNU 自由文档许可证及其他可适用的许可协议授权。"
-
-#: pages/common.py:253
-msgid "Design by DesignBootstrap"
-msgstr "设计者 DesignBootstrap"
-
-#: pages/index.py:34
-msgid "Avoid Censorship"
-msgstr "避免审查"
-
-#: pages/index.py:34
-msgid ""
-"Freenet is a platform for censorship-resistant communication and publishing.\n"
-"It helps you to remain anonymous, and communicate without fear."
-msgstr "Freenet 是一个抗审查的沟通和发布平台。\n它可以帮助你保持匿名，无惧通讯。"
-
-#: pages/index.py:38
-msgid "Host a Website"
-msgstr "托管一个网站"
-
-#: pages/index.py:38
-msgid ""
-"Need a website nobody can take over? That is hosted for free? That is very\n"
-"resistant to attacks? Publish it on Freenet!"
-msgstr "需要一个没人能接手的网站？想要免费托管？还要能抵抗攻击？把它发在 Freenet 吧！"
-
-#: pages/index.py:42 pages/index.py:174
-msgid "Share Files"
-msgstr "分享文件"
-
-#: pages/index.py:42
-msgid "Upload a file to Freenet and anyone with the secret URL can access it."
-msgstr "上传一个文件到 Freenet，任何人都可以用秘密的网址访问它。"
-
-#: pages/index.py:45
-msgid "Meet New People"
-msgstr "遇见新朋友"
-
-#: pages/index.py:45
-msgid ""
-"People from all over the world use Freenet to communicate. Some of them do so\n"
-"anonymously. You might never hear their voices in the open."
-msgstr "来自世界各地的人们用 Freenet 来通信。他们其中一些人是匿名的。你可能从来没有在开放场合听到他们的声音。"
-
-#: pages/index.py:49
-msgid "Experiment with Exciting New Technology"
-msgstr "实验激动人心的新技术"
-
-#: pages/index.py:49
-msgid ""
-"Freenet is on the cutting edge of distributed routing research. The data\n"
-"storage provided by Freenet is a proving ground for a number of new\n"
-"distributed systems."
-msgstr "Freenet 是分布式路由的先锋者。Freenet 提供的数据存储是一个新一代分布式系统的试验场。"
-
-#: pages/index.py:54
-msgid "Improve the World"
-msgstr "改善世界"
-
-#: pages/index.py:54
-msgid ""
-"By using Freenet from the \"free world\" you help people in oppressive regimes\n"
-"share information. The more people use Freenet the easier it will be to\n"
-"obtain. Using it will also be less suspicious."
-msgstr ""
-
-#: pages/index.py:124 pages/index.py:219
-msgid "Share, Chat, Browse. Anonymously."
-msgstr "分享，聊天，浏览，匿名。"
-
-#: pages/index.py:125 pages/index.py:220
-msgid "Download Freenet"
-msgstr "下载 Freenet"
-
-#: pages/index.py:126
-msgid "Please Donate"
-msgstr "请捐款"
-
-#: pages/index.py:127
-msgid "Your donations pay our server costs."
-msgstr ""
-
-#: pages/index.py:130
-msgid "Donate!"
-msgstr "捐款！"
-
-#: pages/index.py:162
-msgid "Secret Identity"
-msgstr "秘密身份"
-
-#: pages/index.py:163
-msgid "Create a secret identity so nobody knows who you are."
-msgstr "创建一个秘密身份，没人知道你是谁。"
-
-#: pages/index.py:165
-msgid "Browse Websites"
-msgstr "浏览网站"
-
-#: pages/index.py:166
-msgid ""
-"Freenet is home to sites ranging from programming to sustainable living."
-msgstr "Freenet 是围绕自程序设计至可持续留存的网站之家。"
-
-#: pages/index.py:168
-msgid "Forums"
-msgstr "论坛"
-
-#: pages/index.py:169
-msgid "Ask questions and exchange ideas."
-msgstr "提出问题和交换点子。"
-
-#: pages/index.py:171
-msgid "Publish"
-msgstr "发布"
-
-#: pages/index.py:172
-msgid "Publish anonymously without need for a server."
-msgstr "发布匿名信息，无需一个服务器。"
-
-#: pages/index.py:175
-msgid "Easy upload & download."
-msgstr "轻松上传和下载。"
-
-#: pages/index.py:177
-msgid "Platform"
-msgstr "平台"
-
-#: pages/index.py:178
-msgid "Write your own applications on the Freenet platform."
-msgstr "将你的应用写在 Freenet 平台上。"
-
-#: pages/index.py:180
-msgid "Resistant"
-msgstr "有抗性"
-
-#: pages/index.py:181
-msgid "Freenet has been designed to be resistant to attacks and censorship."
-msgstr "Freenet 的设计能抵抗攻击和审查制度。"
-
-#: pages/index.py:183
-msgid "Distributed"
-msgstr "分布式"
-
-#: pages/index.py:184
-msgid "No central points of failure, efficient caching of popular content."
-msgstr "无中心故障点，流行内容高效缓存。"
-
-#: pages/index.py:186
-msgid "Proven"
-msgstr "成熟"
-
-#: pages/index.py:187
-msgid "Based on solid research and in practical use for 15 years."
-msgstr "基于扎实研究，并已实际使用15年。"
-
-#: pages/index.py:228
-msgid "Latest News"
-msgstr "最新消息"
-
-#: pages/index.py:240
-msgid "Overview"
-msgstr "概述"
-
 #: pages/documentation.py:10 pages/documentation.py:1002
 msgid "Documentation"
 msgstr "文档"
@@ -3528,161 +3332,6 @@ msgstr ""
 msgid "Wiki"
 msgstr "Wiki"
 
-#: pages/donate.py:8 pages/donate.py:224
-msgid "Donate"
-msgstr "捐款"
-
-#: pages/donate.py:11
-msgid ""
-"#### Financial Status\n"
-"\n"
-"The project's current balance is **$MONEYBALANCE**. (updated twice a day)\n"
-"This will pay for the project's one paid developer (we have many volunteers) and\n"
-"the server for roughly another **MONEYMONTHS months** (MONEYDAYS days)."
-msgstr "#### 金融状态\n\n本项目目前余额 **$MONEYBALANCE**。（每天更新两次）。这将支付给本项目的一名全职开发者（我们还有很多志愿者）以及大约 **MONEYMONTHS 个月**（MONEYDAYS 天）的服务器费用。"
-
-#: pages/donate.py:17
-msgid ""
-"#### Why does The Freenet Project need donations?\n"
-"\n"
-"Although countless people have given their time and skill to the project since\n"
-"its inception, The Freenet Project relies on your donations both to support\n"
-"those developers working full-time on this increasingly complex project, and to\n"
-"cover hardware (this server) and administrative costs (i.e. domain\n"
-"registrations and certificates). We would also like to start a legal defense\n"
-"fund should the need arise.\n"
-"\n"
-"Everyone involved is keenly interested in the future of The Freenet Project and\n"
-"you can be assured donations have been and will continue to be used wisely. All\n"
-"support is very much appreciated."
-msgstr ""
-
-#: pages/donate.py:30
-msgid ""
-"#### How can I donate?\n"
-"\n"
-"You have several options:\n"
-"\n"
-"* You can become a Freenet project \"member\" for a **recurring payment** of $5 or\n"
-"more per month. The advantage of this is that it gives the project a more stable\n"
-"and dependable income which makes it easier to make long term commitments to\n"
-"potential developers - right now it is often difficult to say whether we will be\n"
-"able to pay a developer the following month although so-far we have been\n"
-"fortunate. You can become a member by clicking on this button (you will need a\n"
-"[PayPal](https://www.paypal.com/) account):"
-msgstr ""
-
-#: pages/donate.py:92
-msgid "* You can *donate once* via Paypal by clicking on this button:"
-msgstr "* 您可以点击下面的按钮使用 Paypal *捐款一次*："
-
-#: pages/donate.py:120
-msgid "Other amount:"
-msgstr "其他金额："
-
-#: pages/donate.py:139
-msgid ""
-"* * *\n"
-"\n"
-"![](assets/img/BC_nBG_48px.png) You can now donate to the Freenet Project using [bitcoin](http://www.bitcoin.org/).  \n"
-"\n"
-"Send your donations to the account: "
-msgstr "* * *\n\n![](assets/img/BC_nBG_48px.png) 您现在可以使用[比特币](http://www.bitcoin.org/)为 Freenet 项目捐款。\n\n请将您的捐款发送到："
-
-#: pages/donate.py:145
-msgid ""
-"Alternatively, please contact us: <span class=\"e-mail\" data-user=\"etanod\" data-website=\"gro.tcejorpteneerf\"></span> if you cannot use\n"
-"any of these payment methods.\n"
-"\n"
-"You can also donate to the project by purchasing items from the Freenet\n"
-"[store](http://www.zazzle.com/freenetproject)."
-msgstr ""
-
-#: pages/donate.py:151
-msgid ""
-"## How can I be sure that my donation will be used appropriately?\n"
-"\n"
-"All donations go to The Freenet Project Inc, a non-profit 501c3 corporation with\n"
-"the following mission statement:\n"
-"\n"
-"> The specific purpose of this corporation is to assist in developing and\n"
-"> disseminating technological solutions to further the open and democratic\n"
-"> distribution of information over the Internet or its successor electronic\n"
-"> communication networks or organizations. It is also the purpose of this\n"
-"> organization to guarantee consenting individuals the free, unmediated,\n"
-"> and unimpeded reception and impartation of all intellectual, scientific,\n"
-"> literary, social, artistic, creative, human rights, and cultural\n"
-"> expressions, opinions and ideas without interference or limitation by or\n"
-"> service to state, private, or special interests. It is also the purpose of\n"
-"> this organization to educate the world community and be an advocate of\n"
-"> these purposes.\n"
-"\n"
-"All funds received will only be utilized to advance our Mission Statement, and\n"
-"are administered at the direction of the Freenet Project Board."
-msgstr ""
-
-#: pages/donate.py:176
-msgid "Sponsors"
-msgstr "赞助者"
-
-#: pages/donate.py:179
-msgid ""
-"The following persons, organisations and companies have generously sponsored\n"
-"this project through donations or discounts on hardware and services:\n"
-"\n"
-"*   [John Pozadzides](http://onemansblog.com/)  \n"
-"John is the founder of HTMLHelp.com and former Vice President of Sales for SAVVIS Communications. John has donated $10,000 to the Freenet Project to fund ongoing development of the Freenet software.\n"
-"*   [Web Hosting Search](http://www.webhostingsearch.com/)  \n"
-"WebHostingSearch is a top rated guide to various world wide web hosting companies. Mr Chris Reynolds and the friendly team behind this company have become one of our proud promoters.\n"
-"*   [John Gilmore](http://www.toad.com/gnu/)  \n"
-"John Gilmore is one of the founders of the Electronic Frontier Foundation, the Cypherpunks mailing list, and Cygnus Solutions. He created the alt.* hierarchy in Usenet and is a major contributor to the GNU project. He has donated $10,000.\n"
-"*   [Bytemark Hosting](http://bytemark.co.uk/)  \n"
-"Bytemark provides discounted hosting facilities to Freenet and comes with our highest recommendation.\n"
-"*   [zoozle Torrent Search](http://www.zoozle.org/)  \n"
-"zoozle is a search engine for BitTorrent and P2P networks. It is also available in [german](http://www.zoozle.net/ \"deutsche Torrent Suchmaschine\") and [french](http://www.zoozle.biz/ \"le moteur\n"
-"\t\t\t\t\t\t\tfrançais de recherche pour BitTorrent\"). They have donated $1,500.\n"
-"*   [YourKit, LLC](http://www.yourkit.com/)  \n"
-"YourKit is kindly supporting Freenet by providing us a free of charge license of its full-featured Java Profiler. YourKit, LLC is the creator of innovative and intelligent tools for profiling Java applications. You can learn more about [YourKit Java Profiler](http://www.yourkit.com/java/profiler/index.jsp) following the link.\n"
-"*   [Google](http://www.google.com/)  \n"
-"Google [open source](http://code.google.com/) have three times donated $18,000, as well as paying for students to work with us over summer since 2006 through the [Google Summer of Code](http://code.google.com/soc/) program.\n"
-"*   [Finanzvergleich](http://www.finanzvergleich.de)  \n"
-"Finanzvergleich is a German financial services comparison site, who have contributed $1,500.\n"
-"*   [TopDir](http://www.topdir.de \"Top Directory\")  \n"
-"TopDir is a human edited web directory with informations about interesting topics and websites in the German language.\n"
-"*   [All Filters](http://www.allfilters.com/ \"All Filters\") - another generous sponsor.\n"
-"*   [A German Site for Gardening and Plants](http://www.gartenheinz.de \"A German Site for Gardening and Plants\") - another generous sponsor.\n"
-"*   [Simple Car Rentals](http://www.simple-carrentals.com/)  \n"
-"Simple Car Rentals has generously supported Freenet by helping us with some of our administrative expenses over the years.\n"
-"*   [The Sports Den](http://www.sportsden.ie/)  \n"
-"The Sports Den has a wide variety of outdoor sports equipment, they are based in Ireland but can ship to the UK, Europe, and the United States.\n"
-"*   ![](assets/img/logo_intellij_idea.png)  \n"
-"[JetBrains](https://www.jetbrains.com) has kindly provided a license for the Ultimate edition of [IntelliJ IDEA](https://www.jetbrains.com/idea).\n"
-"\n"
-"Freenet Project Inc does not necessarily endorse the business activities of all of the companies listed on this page.\n"
-"\n"
-"Donation inquiries please contact Ian Clarke: <span class=\"e-mail\" data-user=\"etanod\" data-website=\"gro.tcejorpteneerf\"></span>"
-msgstr ""
-
-#: pages/donate.py:218
-msgid "Store"
-msgstr "存储"
-
-#: pages/donate.py:234
-msgid "Thanks for your donation!"
-msgstr "感谢您的捐款！"
-
-#: pages/donate.py:237
-msgid ""
-"We have received your generous donation. It will be used at the direction of\n"
-"the Freenet Board to advance the interests of the Freenet Project. If you\n"
-"have any questions about how your donation will be used please contact Ian\n"
-"Clarke: <span class=\"e-mail\" data-user=\"etanod\" data-website=\"gro.tcejorpteneerf\"></span>."
-msgstr ""
-
-#: pages/donate.py:247
-msgid "Thanks"
-msgstr "感谢"
-
 #: pages/news.py:19
 msgid "2015-10-25 - Prerelease and Windows installer"
 msgstr ""
@@ -4282,3 +3931,435 @@ msgstr "[Freedom House](https://freedomhouse.org/) 制作了一份[报告](https
 #: pages/news.py:493
 msgid "News"
 msgstr "新闻"
+
+#: pages/common.py:212
+msgid "Freenet rabbit logo"
+msgstr "Freenet 兔子标志"
+
+#: pages/common.py:220
+msgid "Contact"
+msgstr "联系"
+
+#: pages/common.py:247
+msgid "Press:"
+msgstr "报刊："
+
+#: pages/common.py:248
+msgid "Support:"
+msgstr "用户支持："
+
+#: pages/common.py:249
+msgid "IRC:"
+msgstr "IRC："
+
+#: pages/common.py:250
+#, python-brace-format
+msgid "{irc_channel} on {irc_server}"
+msgstr "{irc_channel} 于 {irc_server}"
+
+#: pages/common.py:251
+msgid "License"
+msgstr "许可协议"
+
+#: pages/common.py:252
+msgid ""
+"Content on this website is licensed under the GNU Free Documentation License"
+" and may be available under other licenses."
+msgstr "本网站上的内容可按照 GNU 自由文档许可证及其他可适用的许可协议授权。"
+
+#: pages/common.py:253
+msgid "Design by DesignBootstrap"
+msgstr "设计者 DesignBootstrap"
+
+#: pages/index.py:34
+msgid "Avoid Censorship"
+msgstr "避免审查"
+
+#: pages/index.py:34
+msgid ""
+"Freenet is a platform for censorship-resistant communication and publishing.\n"
+"It helps you to remain anonymous, and communicate without fear."
+msgstr "Freenet 是一个抗审查的沟通和发布平台。\n它可以帮助你保持匿名，无惧通讯。"
+
+#: pages/index.py:38
+msgid "Host a Website"
+msgstr "托管一个网站"
+
+#: pages/index.py:38
+msgid ""
+"Need a website nobody can take over? That is hosted for free? That is very\n"
+"resistant to attacks? Publish it on Freenet!"
+msgstr "需要一个没人能接手的网站？想要免费托管？还要能抵抗攻击？把它发在 Freenet 吧！"
+
+#: pages/index.py:42 pages/index.py:196
+msgid "Share Files"
+msgstr "分享文件"
+
+#: pages/index.py:42
+msgid "Upload a file to Freenet and anyone with the secret URL can access it."
+msgstr "上传一个文件到 Freenet，任何人都可以用秘密的网址访问它。"
+
+#: pages/index.py:45
+msgid "Meet New People"
+msgstr "遇见新朋友"
+
+#: pages/index.py:45
+msgid ""
+"People from all over the world use Freenet to communicate. Some of them do so\n"
+"anonymously. You might never hear their voices in the open."
+msgstr "来自世界各地的人们用 Freenet 来通信。他们其中一些人是匿名的。你可能从来没有在开放场合听到他们的声音。"
+
+#: pages/index.py:49
+msgid "Experiment with Exciting New Technology"
+msgstr "实验激动人心的新技术"
+
+#: pages/index.py:49
+msgid ""
+"Freenet is on the cutting edge of distributed routing research. The data\n"
+"storage provided by Freenet is a proving ground for a number of new\n"
+"distributed systems."
+msgstr "Freenet 是分布式路由的先锋者。Freenet 提供的数据存储是一个新一代分布式系统的试验场。"
+
+#: pages/index.py:54
+msgid "Improve the World"
+msgstr "改善世界"
+
+#: pages/index.py:54
+msgid ""
+"By using Freenet from the \"free world\" you help people in oppressive regimes\n"
+"share information. The more people use Freenet the easier it will be to\n"
+"obtain. Using it will also be less suspicious."
+msgstr ""
+
+#: pages/index.py:145 pages/index.py:241
+msgid "Share, Chat, Browse. Anonymously."
+msgstr "分享，聊天，浏览，匿名。"
+
+#: pages/index.py:146 pages/index.py:242
+msgid "Download Freenet"
+msgstr "下载 Freenet"
+
+#: pages/index.py:147
+msgid "Please Donate"
+msgstr "请捐款"
+
+#: pages/index.py:148
+msgid ""
+"Your donations pay for our server and developer. Our current funds will last"
+msgstr ""
+
+#: pages/index.py:151
+msgid "Donate!"
+msgstr "捐款！"
+
+#: pages/index.py:152
+#, python-brace-format
+msgid "{num_months} months"
+msgstr ""
+
+#: pages/index.py:184
+msgid "Secret Identity"
+msgstr "秘密身份"
+
+#: pages/index.py:185
+msgid "Create a secret identity so nobody knows who you are."
+msgstr "创建一个秘密身份，没人知道你是谁。"
+
+#: pages/index.py:187
+msgid "Browse Websites"
+msgstr "浏览网站"
+
+#: pages/index.py:188
+msgid ""
+"Freenet is home to sites ranging from programming to sustainable living."
+msgstr "Freenet 是围绕自程序设计至可持续留存的网站之家。"
+
+#: pages/index.py:190
+msgid "Forums"
+msgstr "论坛"
+
+#: pages/index.py:191
+msgid "Ask questions and exchange ideas."
+msgstr "提出问题和交换点子。"
+
+#: pages/index.py:193
+msgid "Publish"
+msgstr "发布"
+
+#: pages/index.py:194
+msgid "Publish anonymously without need for a server."
+msgstr "发布匿名信息，无需一个服务器。"
+
+#: pages/index.py:197
+msgid "Easy upload & download."
+msgstr "轻松上传和下载。"
+
+#: pages/index.py:199
+msgid "Platform"
+msgstr "平台"
+
+#: pages/index.py:200
+msgid "Write your own applications on the Freenet platform."
+msgstr "将你的应用写在 Freenet 平台上。"
+
+#: pages/index.py:202
+msgid "Resistant"
+msgstr "有抗性"
+
+#: pages/index.py:203
+msgid "Freenet has been designed to be resistant to attacks and censorship."
+msgstr "Freenet 的设计能抵抗攻击和审查制度。"
+
+#: pages/index.py:205
+msgid "Distributed"
+msgstr "分布式"
+
+#: pages/index.py:206
+msgid "No central points of failure, efficient caching of popular content."
+msgstr "无中心故障点，流行内容高效缓存。"
+
+#: pages/index.py:208
+msgid "Proven"
+msgstr "成熟"
+
+#: pages/index.py:209
+msgid "Based on solid research and in practical use for 15 years."
+msgstr "基于扎实研究，并已实际使用15年。"
+
+#: pages/index.py:250
+msgid "Latest News"
+msgstr "最新消息"
+
+#: pages/index.py:262
+msgid "Overview"
+msgstr "概述"
+
+#: pages/donate.py:8 pages/donate.py:320
+msgid "Donate"
+msgstr "捐款"
+
+#: pages/donate.py:13
+msgid "Become a member"
+msgstr ""
+
+#: pages/donate.py:14
+msgid "Make a donation"
+msgstr ""
+
+#: pages/donate.py:15
+msgid "Choose your monthly donation:"
+msgstr ""
+
+#: pages/donate.py:16
+msgid "Choose your one-time donation:"
+msgstr ""
+
+#: pages/donate.py:17
+msgid "Or set your own amount:"
+msgstr ""
+
+#: pages/donate.py:18
+msgid "Custom amount"
+msgstr ""
+
+#: pages/donate.py:19
+msgid ""
+"#### Financial Status\n"
+"\n"
+"The project's current balance is **$MONEYBALANCE**. (updated twice a day)\n"
+"This will pay for the project's one paid developer (we have many volunteers) and\n"
+"the server for roughly another **MONEYMONTHS months** (MONEYDAYS days)."
+msgstr "#### 金融状态\n\n本项目目前余额 **$MONEYBALANCE**。（每天更新两次）。这将支付给本项目的一名全职开发者（我们还有很多志愿者）以及大约 **MONEYMONTHS 个月**（MONEYDAYS 天）的服务器费用。"
+
+#: pages/donate.py:25
+msgid ""
+"#### Why does The Freenet Project need donations?\n"
+"\n"
+"Although countless people have given their time and skill to the project since\n"
+"its inception, The Freenet Project relies on your donations both to support\n"
+"those developers working full-time on this increasingly complex project, and to\n"
+"cover hardware (this server) and administrative costs (i.e. domain\n"
+"registrations and certificates). We would also like to start a legal defense\n"
+"fund should the need arise.\n"
+"\n"
+"Everyone involved is keenly interested in the future of The Freenet Project and\n"
+"you can be assured donations have been and will continue to be used wisely. All\n"
+"support is very much appreciated."
+msgstr ""
+
+#: pages/donate.py:38
+msgid ""
+"#### How can I donate?\n"
+"\n"
+"You have several options:\n"
+"\n"
+"* You can donate using PayPal.\n"
+"You can become a Freenet project \"member\" for a recurring payment of $5 or more per month.\n"
+"This helps give the project a more stable and dependable income which makes it easier to make long-term commitments to potential developers.\n"
+"Right now it is often difficult to say whether we will be able to pay a developer the following month.\n"
+"You can become a member by signing up for a monthly recurring donation below (this requires a [PayPal][url_paypal] account).\n"
+"Alternatively you can make a one-time donation."
+msgstr ""
+
+#: pages/donate.py:193
+#, python-brace-format
+msgid ""
+"* ![][logo_bitcoin] You can now donate to the Freenet Project using [Bitcoin][url_bitcoin].  \n"
+"Send your donations to the account: {bitcoin_address}\n"
+"\n"
+"* Alternatively, please contact us: {donate_email} if you cannot use any of these payment methods.\n"
+"\n"
+"* You can also donate to the project by purchasing items from the Freenet [store][url_zazzle_store]."
+msgstr ""
+
+#: pages/donate.py:200
+msgid ""
+"## How can I be sure that my donation will be used appropriately?\n"
+"\n"
+"All donations go to The Freenet Project Inc, a non-profit 501c3 corporation with\n"
+"the following mission statement:\n"
+"\n"
+"> The specific purpose of this corporation is to assist in developing and\n"
+"> disseminating technological solutions to further the open and democratic\n"
+"> distribution of information over the Internet or its successor electronic\n"
+"> communication networks or organizations. It is also the purpose of this\n"
+"> organization to guarantee consenting individuals the free, unmediated,\n"
+"> and unimpeded reception and impartation of all intellectual, scientific,\n"
+"> literary, social, artistic, creative, human rights, and cultural\n"
+"> expressions, opinions and ideas without interference or limitation by or\n"
+"> service to state, private, or special interests. It is also the purpose of\n"
+"> this organization to educate the world community and be an advocate of\n"
+"> these purposes.\n"
+"\n"
+"All funds received will only be utilized to advance our Mission Statement, and\n"
+"are administered at the direction of the Freenet Project Board."
+msgstr ""
+
+#: pages/donate.py:229
+msgid "Sponsors"
+msgstr "赞助者"
+
+#: pages/donate.py:233
+msgid ""
+"The following persons, organisations and companies have generously sponsored\n"
+"this project through donations or discounts on hardware and services:"
+msgstr ""
+
+#: pages/donate.py:236
+msgid ""
+"*   [John Pozadzides][url_john_pozadzides]  \n"
+"John is the founder of HTMLHelp.com and former Vice President of Sales for SAVVIS Communications.\n"
+"John has donated $10,000 to the Freenet Project to fund ongoing development of the Freenet software."
+msgstr ""
+
+#: pages/donate.py:240
+msgid ""
+"*   [Web Hosting Search][url_web_hosting_search]  \n"
+"WebHostingSearch is a top rated guide to various world wide web hosting companies.\n"
+"Mr Chris Reynolds and the friendly team behind this company have become one of our proud promoters."
+msgstr ""
+
+#: pages/donate.py:244
+msgid ""
+"*   [John Gilmore][url_john_gilmore]  \n"
+"John Gilmore is one of the founders of the Electronic Frontier Foundation, the Cypherpunks mailing list, and Cygnus Solutions.\n"
+"He created the alt.* hierarchy in Usenet and is a major contributor to the GNU project.\n"
+"He has donated $10,000."
+msgstr ""
+
+#: pages/donate.py:249
+msgid ""
+"*   [Bytemark Hosting][url_bytemark_hosting]  \n"
+"Bytemark provides discounted hosting facilities to Freenet and comes with our highest recommendation."
+msgstr ""
+
+#: pages/donate.py:252
+msgid ""
+"*   [zoozle Torrent Search][url_zoozle]  \n"
+"zoozle is a search engine for BitTorrent and P2P networks.\n"
+"It is also available in [german][url_zoozle_german] and [french][url_zoozle_french].\n"
+"They have donated $1,500."
+msgstr ""
+
+#: pages/donate.py:257
+msgid ""
+"*   [YourKit, LLC][url_yourkit]  \n"
+"YourKit is kindly supporting Freenet by providing us a free of charge license of its full-featured Java Profiler.\n"
+"YourKit, LLC is the creator of innovative and intelligent tools for profiling Java applications.\n"
+"You can learn more about [YourKit Java Profiler][url_yourkit_profiler] following the link."
+msgstr ""
+
+#: pages/donate.py:262
+msgid ""
+"*   [Google][url_google]  \n"
+"Google [open source][url_google_opensource] have three times donated $18,000, as well as paying for students to work with us over summer since 2006 through the [Google Summer of Code][url_google_soc] program."
+msgstr ""
+
+#: pages/donate.py:265
+msgid ""
+"*   [Finanzvergleich][url_finanzvergleich]  \n"
+"Finanzvergleich is a German financial services comparison site, who have contributed $1,500."
+msgstr ""
+
+#: pages/donate.py:268
+msgid ""
+"*   [TopDir][url_topdir]  \n"
+"TopDir is a human edited web directory with informations about interesting topics and websites in the German language."
+msgstr ""
+
+#: pages/donate.py:271
+msgid "*   [All Filters][url_allfilters] - another generous sponsor."
+msgstr ""
+
+#: pages/donate.py:273
+msgid ""
+"*   [A German Site for Gardening and Plants][url_gartenheinz] - another "
+"generous sponsor."
+msgstr ""
+
+#: pages/donate.py:275
+msgid ""
+"*   [Simple Car Rentals][url_simple_carrentals]  \n"
+"Simple Car Rentals has generously supported Freenet by helping us with some of our administrative expenses over the years."
+msgstr ""
+
+#: pages/donate.py:278
+msgid ""
+"*   [The Sports Den][url_sportsden]  \n"
+"The Sports Den has a wide variety of outdoor sports equipment, they are based in Ireland but can ship to the UK, Europe, and the United States."
+msgstr ""
+
+#: pages/donate.py:281
+msgid ""
+"*   ![][logo_intellij_idea]  \n"
+"[JetBrains][url_jetbrains] has kindly provided a license for the Ultimate edition of [IntelliJ IDEA][url_intellij_idea]."
+msgstr ""
+
+#: pages/donate.py:284
+#, python-brace-format
+msgid ""
+"Freenet Project Inc does not necessarily endorse the business activities of all of the companies listed on this page.\n"
+"\n"
+"Donation inquiries please contact Ian Clarke: {donate_email}"
+msgstr ""
+
+#: pages/donate.py:314
+msgid "Store"
+msgstr "存储"
+
+#: pages/donate.py:330
+msgid "Thanks for your donation!"
+msgstr "感谢您的捐款！"
+
+#: pages/donate.py:334
+#, python-brace-format
+msgid ""
+"We have received your generous donation. It will be used at the direction of\n"
+"the Freenet Board to advance the interests of the Freenet Project. If you\n"
+"have any questions about how your donation will be used please contact Ian\n"
+"Clarke: {donate_email}."
+msgstr ""
+
+#: pages/donate.py:344
+msgid "Thanks"
+msgstr "感谢"
