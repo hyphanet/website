@@ -288,13 +288,13 @@ Any kind of usage allowed: https://css-tricks.com/license/ */
   height: 15px;
   line-height: 1.25em;
   position: absolute;
-  font-size: small;
+  font-size: medium;
   font-family: 'Ubuntu', sans-serif;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .meter {
-	height: 25px;  /* Can be anything */
+	height: 30px;
     margin-bottom: 0.5em;
 	position: relative;
 	background: #00375E;
