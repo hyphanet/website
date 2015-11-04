@@ -191,8 +191,10 @@ Alternatively you can make a one-time donation.
 </div>
 """.format(subscribe_header=subscribe_header, donation_header=donation_header, choose_subscription=choose_subscription,
 choose_donation=choose_donation, set_custom_amount=set_custom_amount, custom_amount=custom_amount) + md(_("""
-* ![][logo_bitcoin] You can now donate to the Freenet Project using [Bitcoin][url_bitcoin].  
-Send your donations to the Bitcoin address: {bitcoin_address}
+<<<<<<< HEAD
+* ![][logo_bitcoin]
+You can donate using [Bitcoin][url_bitcoin].
+Send your donations to {bitcoin_address}.
 
 * Alternatively, please contact us: {donate_email} if you cannot use any of these payment methods.
 
