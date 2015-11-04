@@ -236,4 +236,3 @@ class IndexPage(Page):
             ServiceSection(),
             NewsSection(),
             ContactSection()]
-
