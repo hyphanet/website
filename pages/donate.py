@@ -191,7 +191,6 @@ Alternatively you can make a one-time donation.
 </div>
 """.format(subscribe_header=subscribe_header, donation_header=donation_header, choose_subscription=choose_subscription,
 choose_donation=choose_donation, set_custom_amount=set_custom_amount, custom_amount=custom_amount) + md(_("""
-<<<<<<< HEAD
 * ![][logo_bitcoin]
 You can donate using [Bitcoin][url_bitcoin].
 Send your donations to {bitcoin_address}.
