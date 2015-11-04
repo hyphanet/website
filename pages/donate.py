@@ -9,7 +9,7 @@ class DonateSection(Section):
     def get_content(self):
         # License: GFDL (from old freenetproject.org website)
         donate_email = """<span class="e-mail" data-user="etanod" data-website="gro.tcejorpteneerf"></span>"""
-        bitcoin_address = "1966U1pjj15tLxPXZ19U48c99EJDkdXeqb"
+        bitcoin_address = "**1966U1pjj15tLxPXZ19U48c99EJDkdXeqb**"
         subscribe_header = _("Become a member")
         donation_header = _("Make a donation")
         choose_subscription = _("Choose your monthly donation:")
