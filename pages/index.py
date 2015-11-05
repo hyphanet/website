@@ -34,6 +34,9 @@ class HomeSection(Section):
             slider_item(_("Avoid Censorship"), md(_("""
 Freenet is a platform for censorship-resistant communication and publishing.
 It helps you to remain anonymous, and communicate without fear.
+
+*'Daddy, where were you when they took freedom of the press away from the Internet?'*
+— [about Freenet](about.html)
 """)), "active"),
             slider_item(_("Host a Website"), _("""
 Need a website nobody can take over? That is hosted for free? That is very
