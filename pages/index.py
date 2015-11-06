@@ -125,7 +125,7 @@ We are raising funds so we can continue paying our developer for another year.
         """))
         donate_button_text = _("Donate!")
         donation_target = "27500"
-        nonprofit = _("The Freenet Project Inc is a non-profit 501(c)(3) corporation.")
+        nonprofit = _("The Freenet Project Inc is a non-profit 501(c)(3) organization.")
         return substitute_html(content,
             html__sliders=concat_html(sliders),
             str__tagline=tagline,
