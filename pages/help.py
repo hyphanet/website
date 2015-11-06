@@ -30,7 +30,7 @@ class FaqItem(object):
         self.content = content
     def generate(self):
         content = """
-<a class="anchor" id="$str__name"></a><h3>$str__title</h3>
+<a id="$str__name"></a><h3>$str__title</h3>
 $md__content
 """
         return substitute_html(content, str__name=self.name, str__title=self.title, md__content=md(self.content))
