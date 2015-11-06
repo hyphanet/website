@@ -239,6 +239,25 @@ jQuery('#chatlink').click(function(e) {
     });
 });
 </script>
+
+<!-- Update the body padding to always match the height of the top navigation bar. -->
+<script type="text/javascript">
+jQuery(document).ready(function() {
+    var menu = jQuery('#menu-section');
+    menu.addClass('navbar-fixed-top');
+    menu.removeClass('navbar-static-top');
+    var menuHeight = 0;
+    var onResize = function() {
+        var newHeight = menu.height();
+        if (newHeight != menuHeight) {
+            menuHeight = newHeight;
+            jQuery('body').css('padding-top', newHeight);
+        }
+    };
+    onResize();
+    jQuery(window).resize(onResize);
+})
+</script>
 </body>
 """
     chat_modal_button = _("Open chat")
@@ -277,7 +296,7 @@ def menu(site_menu, current_page):
         for language in settings.languages])
     template = """
 <!--MENU SECTION START-->
-<div class="navbar navbar-inverse navbar-fixed-top" id="menu-section" >
+<div class="navbar navbar-inverse navbar-static-top" id="menu-section">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
