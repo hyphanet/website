@@ -244,23 +244,25 @@ jQuery('#chatlink').click(function(e) {
 <script type="text/javascript">
 jQuery(document).ready(function() {
     var menu = jQuery('#menu-section');
-    // Javascript is supported, add the appropriate class and remove the fallback
+    // Calculate the vertical margin/border around the static navbar (assume it is bottom-only)
+    var margin = menu.outerHeight(true) - menu.innerHeight();
+    // Add the appropriate class and remove the fallback
     menu.addClass('navbar-fixed-top');
     menu.removeClass('navbar-static-top');
-    var menuHeight = 0;
+    var offset = 0;
     // Handler to account for the new navigation bar height if it changes due to wrapping
     var onResize = function() {
-        var newHeight = menu.height();
-        if (newHeight != menuHeight) {
-            menuHeight = newHeight;
+        var newOffset = menu.height() + margin;
+        if (newOffset != offset) {
+            offset = newOffset;
             // Update body padding to match new navigation bar height
             var body = jQuery('body');
-            body.css('padding-top', newHeight);
+            body.css('padding-top', offset);
             // Notify the Bootstrap Scrollspy of the new offset
-            body.attr('data-offset', newHeight);
+            body.attr('data-offset', offset);
             var scrollspy = body.data('bs.scrollspy');
             if (scrollspy) {
-                scrollspy.options.offset = newHeight;
+                scrollspy.options.offset = offset;
                 scrollspy.refresh();
             }
         }
@@ -275,7 +277,7 @@ jQuery(document).ready(function() {
             var target = jQuery(href);
             if (target.length) {
                 // The target anchor exists, scroll to the right position
-                jQuery('html, body').scrollTop(target.offset().top - menuHeight);
+                jQuery('html, body').scrollTop(target.offset().top - offset);
                 if (history && 'pushState' in history) {
                     history.pushState({}, document.title, window.location.pathname + href);
                     return false;
