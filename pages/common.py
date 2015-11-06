@@ -244,23 +244,37 @@ jQuery('#chatlink').click(function(e) {
 <script type="text/javascript">
 jQuery(document).ready(function() {
     var menu = jQuery('#menu-section');
+    // Javascript is supported, add the appropriate class and remove the fallback
     menu.addClass('navbar-fixed-top');
     menu.removeClass('navbar-static-top');
     var menuHeight = 0;
+    // Handler to account for the new navigation bar height if it changes due to wrapping
     var onResize = function() {
         var newHeight = menu.height();
         if (newHeight != menuHeight) {
             menuHeight = newHeight;
-            jQuery('body').css('padding-top', newHeight);
+            // Update body padding to match new navigation bar height
+            var body = jQuery('body');
+            body.css('padding-top', newHeight);
+            // Notify the Bootstrap Scrollspy of the new offset
+            body.attr('data-offset', newHeight);
+            var scrollspy = body.data('bs.scrollspy');
+            if (scrollspy) {
+                scrollspy.options.offset = newHeight;
+                scrollspy.refresh();
+            }
         }
     };
+    // Scroll to a hash on this page, correcting for navigation bar height
     var scrollToHash = function(href) {
         if (typeof(href) != 'string') {
             href = jQuery(this).attr('href');
         }
         if (href.indexOf("#") == 0) {
+            // The url passed is a hash on this page
             var target = jQuery(href);
             if (target.length) {
+                // The target anchor exists, scroll to the right position
                 jQuery('html, body').scrollTop(target.offset().top - menuHeight);
                 if (history && 'pushState' in history) {
                     history.pushState({}, document.title, window.location.pathname + href);
