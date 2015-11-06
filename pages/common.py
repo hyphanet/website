@@ -254,8 +254,29 @@ jQuery(document).ready(function() {
             jQuery('body').css('padding-top', newHeight);
         }
     };
+    var scrollToHash = function(href) {
+        if (typeof(href) != 'string') {
+            href = jQuery(this).attr('href');
+        }
+        if (href.indexOf("#") == 0) {
+            var target = jQuery(href);
+            if (target.length) {
+                jQuery('html, body').scrollTop(target.offset().top - menuHeight);
+                if (history && 'pushState' in history) {
+                    history.pushState({}, document.title, window.location.pathname + href);
+                    return false;
+                }
+            }
+        }
+    };
+    var onHashChange = function() {
+        scrollToHash(window.location.hash)
+    }
     onResize();
+    scrollToHash(window.location.hash);
     jQuery(window).resize(onResize);
+    jQuery(window).on('hashchange', onHashChange);
+    jQuery('body').on('click', 'a', scrollToHash);
 })
 </script>
 </body>
