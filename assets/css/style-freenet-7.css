@@ -710,13 +710,6 @@ color:#fff;
 text-decoration:none;
 }
 
-/* Shift the anchors so links to them won't cause the title to end up under the menu at the top of the page */
-a.anchor {
-display: block;
-position: relative;
-top: -250px;visibility: hidden;
-}
-
 /* Fix fadein so browser search for text works on long pages */
 /* opacity is changed to 0.1 from Javascript for in-freenet compat */
 .animate-in,
