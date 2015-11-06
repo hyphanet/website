@@ -55,8 +55,8 @@ overflow: visible;
 }
 
 section {
-padding-top: 80px;
-padding-bottom: 40px;
+padding-top: 1em;
+padding-bottom: 2em;
 }
 
 .pad-bottom {
@@ -218,15 +218,12 @@ background-color: rgb(40, 141, 203);
 border-color: rgb(40, 141, 203);
 }
 
-
 /* =============================================================
 HOME SECTION STYLES
 ============================================================ */
 
 #home {
 text-align: center;
-padding-top: 120px;
-padding-bottom: 60px;
 }
 
 #home .sidebar {
