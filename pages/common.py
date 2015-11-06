@@ -242,8 +242,9 @@ jQuery('#chatlink').click(function(e) {
 
 <!-- Update the body padding to always match the height of the top navigation bar. -->
 <script type="text/javascript">
-jQuery(document).ready(function() {
+(function() {
     var menu = jQuery('#menu-section');
+
     // Calculate the vertical margin/border around the static navbar (assume it is bottom-only)
     var margin = menu.outerHeight(true) - menu.innerHeight();
     // Add the appropriate class and remove the fallback
@@ -267,33 +268,50 @@ jQuery(document).ready(function() {
             }
         }
     };
+    onResize();
+    jQuery(window).resize(onResize);
+    
     // Scroll to a hash on this page, correcting for navigation bar height
-    var scrollToHash = function(href) {
-        if (typeof(href) != 'string') {
-            href = jQuery(this).attr('href');
-        }
+    var scrollToHash = function(href, push) {
         if (href.indexOf("#") == 0) {
             // The url passed is a hash on this page
             var target = jQuery(href);
             if (target.length) {
                 // The target anchor exists, scroll to the right position
                 jQuery('html, body').scrollTop(target.offset().top - offset);
-                if (history && 'pushState' in history) {
+                if (push && window.location.hash != href && history && 'pushState' in history) {
                     history.pushState({}, document.title, window.location.pathname + href);
-                    return false;
                 }
+                return false;
             }
         }
     };
+    
+    // Capture mouse clicks on links to anchors
+    var onClick = function() {
+        return scrollToHash(jQuery(this).attr('href'), true);
+    };
+    jQuery('body').on('click', 'a', onClick);
+    
+    // Capture hash changes: requests for scrolling to an anchor from the address bar
     var onHashChange = function() {
-        scrollToHash(window.location.hash)
+        return scrollToHash(window.location.hash, true);
     }
-    onResize();
-    scrollToHash(window.location.hash);
-    jQuery(window).resize(onResize);
-    jQuery(window).on('hashchange', onHashChange);
-    jQuery('body').on('click', 'a', scrollToHash);
-})
+    // Now this is a bit of a hack. Browsers really like to handle their own scrolling,
+    // so they might scroll to the hash anchor because that's what the user requested.
+    // If we unset the hash before the document loading finished, we can be sure that
+    // there is nothing to scroll to. Then, after loading has finished, we replace the
+    // hash into the url and scroll to the correct location.
+    var hash = window.location.hash;
+    window.location.hash = "";
+    window.setTimeout(function() {
+        if (history && 'replaceState' in history) {
+            history.replaceState({}, document.title, window.location.pathname + hash);
+        }
+        scrollToHash(hash, false);
+        jQuery(window).on('hashchange', onHashChange);
+    }, 0);
+})()
 </script>
 </body>
 """
