@@ -54,30 +54,6 @@ obtain. Using it will also be less suspicious.
 <!--HOME SECTION START-->
 <section id="home">
     <div class="container">
-        <div class="row">
-            <!--DONATE SUBSECTION -->
-            <div class="col-sm-12 col-md-12 col-lg-12">
-                <div class="item active donate" id="donate_button">
-                     $md__donate_text
-                     <div class="meter blue" id="donate_bar_small">
-                         <div class="quantity" style="left: 15px;">$$MONEYBALANCE</div>
-                         <div class="quantity" style="right: 15px;">$$$str__donation_target</div>
-                         <span style="width: calc(MONEYBALANCE / $str__donation_target * 100%)">
-                         </span>
-                     </div>
-                     <script type="text/javascript">
-                         fund_percentage = (MONEYBALANCE / $str__donation_target);
-                         if(fund_percentage <= 1/3) {
-                             donate_bar = document.getElementById("donate_bar_small");
-                             donate_bar.className = "meter red";
-                         }
-                     </script>
-                     <p><i>$str__nonprofit</i></p>
-                     <a class="btn button-custom btn-custom-two donate-button" href="donate.html">$str__donate_button_text</a>
-                </div>
-            </div>
-            <!-- DONATE SUBSECTION END -->
-        </div>
         <div class="row text-center">
             <div class="col-sm-2 col-md-2 col-lg-2">
                 <div class="item active sidebar" id="suma_award_notice">
@@ -113,6 +89,30 @@ obtain. Using it will also be less suspicious.
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="row">
+            <!--DONATE SUBSECTION -->
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="item active donate" id="donate_button">
+                     $md__donate_text
+                     <div class="meter blue" id="donate_bar_small">
+                         <div class="quantity" style="left: 15px;">$$MONEYBALANCE</div>
+                         <div class="quantity" style="right: 15px;">$$$str__donation_target</div>
+                         <span style="width: calc(MONEYBALANCE / $str__donation_target * 100%)">
+                         </span>
+                     </div>
+                     <script type="text/javascript">
+                         fund_percentage = (MONEYBALANCE / $str__donation_target);
+                         if(fund_percentage <= 1/3) {
+                             donate_bar = document.getElementById("donate_bar_small");
+                             donate_bar.className = "meter red";
+                         }
+                     </script>
+                     <p><i>$str__nonprofit</i></p>
+                     <a class="btn button-custom btn-custom-two donate-button" href="donate.html">$str__donate_button_text</a>
+                </div>
+            </div>
+            <!-- DONATE SUBSECTION END -->
         </div>
     </div>
 </section>
