@@ -133,7 +133,9 @@ We are raising funds so we can continue paying our developer for another year.
             md__donate_text=donate_text,
             str__donate_button_text=donate_button_text,
             str__donation_target=donation_target,
-            str__nonprofit=nonprofit,)
+            str__nonprofit=nonprofit,
+        )
+
 
 class ServiceSection(Section):
     def __init__(self):
