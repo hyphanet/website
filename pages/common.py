@@ -181,7 +181,7 @@ def head(title):
 <!-- FONT AWESOME ICONS STYLES -->
 <link href="assets/css/font-awesome.css" rel="stylesheet" />
 <!-- CUSTOM CSS -->
-<link href="assets/css/style-freenet-8.css" rel="stylesheet" />
+<link href="assets/css/style-freenet.css?v8" rel="stylesheet" />
 <!-- SLICK CAROUSEL -->
 <!-- Kept in one directory instead of split to stay with upstream. -->
 <link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
@@ -239,6 +239,80 @@ jQuery('#chatlink').click(function(e) {
     });
 });
 </script>
+
+<!-- Update the body padding to always match the height of the top navigation bar. -->
+<script type="text/javascript">
+(function() {
+    var menu = jQuery('#menu-section');
+
+    // Calculate the vertical margin/border around the static navbar (assume it is bottom-only)
+    var margin = menu.outerHeight(true) - menu.innerHeight();
+    // Add the appropriate class and remove the fallback
+    menu.addClass('navbar-fixed-top');
+    menu.removeClass('navbar-static-top');
+    var offset = 0;
+    // Handler to account for the new navigation bar height if it changes due to wrapping
+    var onResize = function() {
+        var newOffset = menu.height() + margin;
+        if (newOffset != offset) {
+            offset = newOffset;
+            // Update body padding to match new navigation bar height
+            var body = jQuery('body');
+            body.css('padding-top', offset);
+            // Notify the Bootstrap Scrollspy of the new offset
+            body.attr('data-offset', offset);
+            var scrollspy = body.data('bs.scrollspy');
+            if (scrollspy) {
+                scrollspy.options.offset = offset;
+                scrollspy.refresh();
+            }
+        }
+    };
+    onResize();
+    jQuery(window).resize(onResize);
+    
+    // Scroll to a hash on this page, correcting for navigation bar height
+    var scrollToHash = function(href, push) {
+        if (href.indexOf("#") == 0) {
+            // The url passed is a hash on this page
+            var target = jQuery(href);
+            if (target.length) {
+                // The target anchor exists, scroll to the right position
+                jQuery('html, body').scrollTop(target.offset().top - offset);
+                if (push && window.location.hash != href && history && 'pushState' in history) {
+                    history.pushState({}, document.title, window.location.pathname + href);
+                }
+                return false;
+            }
+        }
+    };
+    
+    // Capture mouse clicks on links to anchors
+    var onClick = function() {
+        return scrollToHash(jQuery(this).attr('href'), true);
+    };
+    jQuery('body').on('click', 'a', onClick);
+    
+    // Capture hash changes: requests for scrolling to an anchor from the address bar
+    var onHashChange = function() {
+        return scrollToHash(window.location.hash, true);
+    }
+    // Now this is a bit of a hack. Browsers really like to handle their own scrolling,
+    // so they might scroll to the hash anchor because that's what the user requested.
+    // If we unset the hash before the document loading finished, we can be sure that
+    // there is nothing to scroll to. Then, after loading has finished, we replace the
+    // hash into the url and scroll to the correct location.
+    var hash = window.location.hash;
+    window.location.hash = "";
+    window.setTimeout(function() {
+        if (history && 'replaceState' in history) {
+            history.replaceState({}, document.title, window.location.pathname + hash);
+        }
+        scrollToHash(hash, false);
+        jQuery(window).on('hashchange', onHashChange);
+    }, 0);
+})()
+</script>
 </body>
 """
     chat_modal_button = _("Open chat")
@@ -277,7 +351,7 @@ def menu(site_menu, current_page):
         for language in settings.languages])
     template = """
 <!--MENU SECTION START-->
-<div class="navbar navbar-inverse navbar-fixed-top" id="menu-section" >
+<div class="navbar navbar-inverse navbar-static-top" id="menu-section">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">

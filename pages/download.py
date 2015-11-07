@@ -85,7 +85,7 @@ class DownloadSection(Section):
         self.slug = "download"
     def get_content(self):
         # License for all content in this section: GFDL (from old freenetproject.org website)
-        return show_hide_script()+text("<a name=\"autostart\" class=\"anchor\"></a>"+md(_("""
+        return show_hide_script()+text("""<a id="autostart"></a>""" + md(_("""
 [Step by step guide](http://freesocial.draketo.de/) to setting up Freenet and
 various Freenet apps. Please try this, especially if installing on OS X. We
 are not responsible for unofficial third party apps it recommends (including
@@ -164,7 +164,7 @@ If this doesn't work on a headless server, try
 "java -jar new_installer_offline.jar -console", and follow the prompts to
 tell it where to install Freenet etc.
 """) + "\n\n" + """
-<a class="anchor" name="mirrored"></a>""" + "\n\n" + _("""
+<a id="mirrored"></a>""" + "\n\n" + _("""
 ### Mirrored installation
 
 If you have a working Freenet installation directory that you have mirrored
