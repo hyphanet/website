@@ -233,6 +233,10 @@ padding-bottom: 60px;
 padding-top: 7em;
 }
 
+#donate_button {
+    padding-top: 5em;
+}
+
 #home .donate p {
 font-style: italic;
 }
