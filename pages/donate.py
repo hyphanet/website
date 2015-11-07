@@ -201,8 +201,7 @@ Send your donations to {bitcoin_address}.
 """).format(donate_email=donate_email, bitcoin_address=bitcoin_address) + "\n\n" + _("""
 ## How can I be sure that my donation will be used appropriately?
 
-All donations go to The Freenet Project Inc, a non-profit 501c3 corporation with
-the following mission statement:
+All donations go to The Freenet Project Incorporated, a non-profit 501(c)(3) organization with the following mission statement:
 
 > The specific purpose of this corporation is to assist in developing and
 > disseminating technological solutions to further the open and democratic
