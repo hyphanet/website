@@ -126,7 +126,6 @@ We are raising funds so we can continue paying our developer for another year.
         nonprofit = _("The Freenet Project Inc is a non-profit 501(c)(3) organization.")
         return substitute_html(content,
             html__sliders=concat_html(sliders),
-            str__tagline=tagline,
             str__download_text=download_text,
             md__donate_text=donate_text,
             str__donate_button_text=donate_button_text,
