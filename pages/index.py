@@ -24,7 +24,7 @@ class HomeSection(Section):
 
         sliders = [
             # Slider items copyright Gerard Krol, licensed GFDL/CC-BY-SA 4.0/GPLv2+
-            slider_item(_("Avoid Censorship"), _("""
+            slider_item(_("Share, Chat, Browse. Anonymously."), _("""
 Freenet is a platform for censorship-resistant communication and publishing.
 It helps you to remain anonymous, and communicate without fear.
 """), "active"),
@@ -71,7 +71,6 @@ obtain. Using it will also be less suspicious.
                 </div>
                 <div class="row">
                     <div class="download">
-                        <p>$str__tagline</p>
                         <!-- FIXME: become social
                         <div class="social">
                         <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-facebook "></i></a>
@@ -118,7 +117,6 @@ obtain. Using it will also be less suspicious.
 </section>
 <!--HOME SECTION END-->
 """
-        tagline = _("Share, Chat, Browse. Anonymously.")
         download_text = _("Download Freenet")
         donate_text = md(_("""
 We are raising funds so we can continue paying our developer for another year.
