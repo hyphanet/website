@@ -1,5 +1,7 @@
 # Website #
 
+*Reporting issues*: Please add bugs and feature requests to the [project bug tracker](https://bugs.freenetproject.org/search.php?project_id=21&sticky_issues=off&sortby=last_updated&dir=DESC&hide_status_id=90&match_type=0)
+
 ## Table of Contents ##
 
 * [Translations](#translations)
