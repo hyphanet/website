@@ -1,6 +1,14 @@
 # Website #
 
-## For Translators ##
+## Table of Contents ##
+
+* [Translations](#translations)
+* [Requirements](#requirements)
+* [Usage](#usage)
+* [License](#license)
+* [FAQ](#faq)
+
+## Translations ##
 
 *Note that by contributing a translation you agree to triple license it under the GFDL, CC-BY-SA 4.0 and GPLv2+ licenses.*
 
@@ -31,7 +39,7 @@ Tips:
 * Markdown: https://pypi.python.org/pypi/Markdown
 * Python 3: http://python.org
 
-## Development ##
+## Usage ##
 
 To generate a single language for local development:
 
