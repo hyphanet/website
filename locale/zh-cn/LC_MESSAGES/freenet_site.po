@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Freenet\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-11-06 08:00-0500\n"
-"PO-Revision-Date: 2015-11-08 04:04+0000\n"
+"PO-Revision-Date: 2015-11-09 07:56+0000\n"
 "Last-Translator: Xiaoyu Huang <007pig@gmail.com>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/otf/freenet/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -97,7 +97,7 @@ msgid ""
 "The Freenet Wiki is a user driven space where new features may be described\n"
 "before finding its way into the website. It is a good source of information\n"
 "about all sorts of Freenet related issues."
-msgstr ""
+msgstr "Freenet 的开发是持续进行的，它的文档也在不断更新。在本页面您可以阅读它的各种文档资源，包括：如何安装设置 Freenet；如何使用最流行的 Freenet 工具；以及如何访问 Freenet 用户贡献的 Wiki 站点和详尽的常见问题解答。\n\n*   [**安装**](#install)\n详尽的 Freenet 安装指南（使用全新安装程序）。\n*   [**连接**](#connect)\n如何连接到 Freenet。\n*   [**内容**](#content)\n如何使用 Freenet 发布您的内容。\n*   [**理解**](#understand)\n解释 Freenet 是如何工作的，以及对常见属于的解释。\n*   [**Freemail**](#freemail)\n如何配置 Freenet 自己的匿名邮件服务。\n*   [**Frost**](#frost)\nFrost 是 Freenet 上历史最悠久、用户最多的论坛和文件共享工具。您在这里可以了解如何安装盒使用它。\n*   [**jSite**](#jsite)\njSite 是 Freenet 网站 (也称为 Freesite) 插入工具。\n*   [**Wiki**](https://wiki.freenetproject.org/)\nFreenet Wiki 是用户自发贡献的文档的集散地。一些新功能文档会首先在 Wiki 上出现，然后才会被整理到本站。这里是 Freenet 所有相关问题的信息来源。"
 
 #: pages/documentation.py:47
 msgid "Install"
@@ -1907,7 +1907,7 @@ msgstr ""
 
 #: pages/download.py:278
 msgid "Important note for first time users"
-msgstr "对首次用户的重要提示"
+msgstr "新用户重要提示"
 
 #: pages/download.py:281
 #, python-format
@@ -3370,7 +3370,7 @@ msgstr ""
 #: pages/news.py:57
 msgid ""
 "2015-09-17 - elliptic curves: using safe Bouncy Castle since November 2014"
-msgstr "2015-09-17 - 椭圆曲线：使用2014年10月以来安全的 Bouncy Castle"
+msgstr "2015-09-17 - 椭圆曲线：使用2014年10月后发布的 Bouncy Castle 安全版本 "
 
 #: pages/news.py:58
 msgid ""
@@ -3935,11 +3935,11 @@ msgstr "Freenet 兔子标志"
 
 #: pages/common.py:328 pages/common.py:353
 msgid "Contact"
-msgstr "联系"
+msgstr "联系我们"
 
 #: pages/common.py:354
 msgid "Press:"
-msgstr "报刊："
+msgstr "媒体："
 
 #: pages/common.py:355
 msgid "Support:"
@@ -3952,7 +3952,7 @@ msgstr "IRC："
 #: pages/common.py:357
 #, python-brace-format
 msgid "{irc_channel} on {irc_server}"
-msgstr "{irc_channel} 于 {irc_server}"
+msgstr "{irc_server} 上的 {irc_channel} 频道"
 
 #: pages/common.py:358
 msgid "License"
@@ -3966,7 +3966,7 @@ msgstr "本网站上的内容可按照 GNU 自由文档许可证及其他可适�
 
 #: pages/common.py:360
 msgid "Design by DesignBootstrap"
-msgstr "设计者 DesignBootstrap"
+msgstr "网站设计 DesignBootstrap"
 
 #: pages/index.py:27
 msgid "Avoid Censorship"
@@ -3986,7 +3986,7 @@ msgstr "托管网站"
 msgid ""
 "Need a website nobody can take over? That is hosted for free? That is very\n"
 "resistant to attacks? Publish it on Freenet!"
-msgstr "需要一个没人能接手的网站？想要免费托管？还要能抵抗攻击？把它发在 Freenet 吧！"
+msgstr "不想自己的网站被其他人强制接管？网站托管还是免费的？还能抵御攻击？把它发布在 Freenet 上吧！"
 
 #: pages/index.py:35 pages/index.py:174
 msgid "Share Files"
@@ -3994,28 +3994,28 @@ msgstr "分享文件"
 
 #: pages/index.py:35
 msgid "Upload a file to Freenet and anyone with the secret URL can access it."
-msgstr "上传一个文件到 Freenet，任何人都可以用秘密的网址访问它。"
+msgstr "上传一个文件到 Freenet，所有知道其秘密网址的人都可以下载它。"
 
 #: pages/index.py:38
 msgid "Meet New People"
-msgstr "遇见新朋友"
+msgstr "认识新朋友"
 
 #: pages/index.py:38
 msgid ""
 "People from all over the world use Freenet to communicate. Some of them do so\n"
 "anonymously. You might never hear their voices in the open."
-msgstr "来自世界各地的人们用 Freenet 来通信。他们其中一些人是匿名的。你可能从来没有在开放场合听到他们的声音。"
+msgstr "来自世界各地的人们使用 Freenet 沟通。其中某些人喜欢匿名沟通。您可能从来没有在开放场合听到过他们的声音。"
 
 #: pages/index.py:42
 msgid "Experiment with Exciting New Technology"
-msgstr "实验激动人心的新技术"
+msgstr "体验激动人心的新技术"
 
 #: pages/index.py:42
 msgid ""
 "Freenet is on the cutting edge of distributed routing research. The data\n"
 "storage provided by Freenet is a proving ground for a number of new\n"
 "distributed systems."
-msgstr "Freenet 是分布式路由的先锋者。Freenet 提供的数据存储是一个新一代分布式系统的试验场。"
+msgstr "Freenet 是分布式路由研究的先锋者。Freenet 提供的数据存储是很多新的分布式系统的试验场。"
 
 #: pages/index.py:47
 msgid "Improve the World"
@@ -4026,11 +4026,11 @@ msgid ""
 "By using Freenet from the \"free world\" you help people in oppressive regimes\n"
 "share information. The more people use Freenet the easier it will be to\n"
 "obtain. Using it will also be less suspicious."
-msgstr ""
+msgstr "在“自由的世界”使用 Freenet，帮助那些在专制政权压迫下的人们分享信息。越多的人使用 Freenet，信息便越容易获得，也更难引起怀疑。"
 
 #: pages/index.py:121 pages/index.py:216
 msgid "Share, Chat, Browse. Anonymously."
-msgstr "分享，聊天，浏览。不露踪迹。"
+msgstr "分享，聊天，浏览。不露踪迹"
 
 #: pages/index.py:122 pages/index.py:217
 msgid "Download Freenet"
@@ -4056,7 +4056,7 @@ msgstr "秘密身份"
 
 #: pages/index.py:163
 msgid "Create a secret identity so nobody knows who you are."
-msgstr "创建一个秘密身份，没人知道你是谁。"
+msgstr "创建一个秘密身份，没人知道您是谁。"
 
 #: pages/index.py:165
 msgid "Browse Websites"
@@ -4065,7 +4065,7 @@ msgstr "浏览网站"
 #: pages/index.py:166
 msgid ""
 "Freenet is home to sites ranging from programming to sustainable living."
-msgstr "Freenet 是围绕自程序设计至可持续留存的网站之家。"
+msgstr "从编程网站到绿色生活网站，Freenet 都是您的家。"
 
 #: pages/index.py:168
 msgid "Forums"
@@ -4073,7 +4073,7 @@ msgstr "论坛"
 
 #: pages/index.py:169
 msgid "Ask questions and exchange ideas."
-msgstr "提出问题和交换点子。"
+msgstr "提出问题和交换想法。"
 
 #: pages/index.py:171
 msgid "Publish"
@@ -4081,7 +4081,7 @@ msgstr "发布"
 
 #: pages/index.py:172
 msgid "Publish anonymously without need for a server."
-msgstr "发布匿名信息，无需一个服务器。"
+msgstr "发布匿名信息，无需服务器。"
 
 #: pages/index.py:175
 msgid "Easy upload & download."
@@ -4093,7 +4093,7 @@ msgstr "平台"
 
 #: pages/index.py:178
 msgid "Write your own applications on the Freenet platform."
-msgstr "将你的应用写在 Freenet 平台上。"
+msgstr "在 Freenet 平台上编写您自己的应用程序。"
 
 #: pages/index.py:180
 msgid "Resistant"
@@ -4105,7 +4105,7 @@ msgstr "Freenet 专为抵御攻击和网络审查而设计。"
 
 #: pages/index.py:183
 msgid "Distributed"
-msgstr "分布式"
+msgstr "去中心化"
 
 #: pages/index.py:184
 msgid "No central points of failure, efficient caching of popular content."
