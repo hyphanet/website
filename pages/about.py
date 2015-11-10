@@ -266,8 +266,8 @@ to the project.
 
 Freenet is based on Ian's paper "A Distributed Decentralised Information
 Storage and Retrieval System". Ian started the Freenet Project around July of
-1999, and continues to coordinate the project. In his day job, Ian is the
-founder and CEO of [SenseArray](http://sensearray.com/).
+1999, and continues to coordinate the project.
+Learn more about Ian on his [personal website](http://blog.locut.us/).
 """) + "\n\n" + _("""
 ### Matthew Toseland
 
