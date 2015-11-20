@@ -23,12 +23,9 @@ The project's current balance is **$MONEYBALANCE**. (updated every hour)
 """) + "\n\n" + _("""
 #### Why does The Freenet Project need donations?
 
-Although countless people have given their time and skill to the project since
-its inception, The Freenet Project relies on your donations both to support
-those developers working full-time on this increasingly complex project, and to
-cover hardware (this server) and administrative costs (i.e. domain
-registrations and certificates). We would also like to start a legal defense
-fund should the need arise.
+Although countless people have given their time and skill to the project since its inception, The Freenet Project relies on your donations to cover hosting and administrative costs (i.e. domain registrations and certificates).
+If we have enough funds, we can hire developers to work on Freenet.
+Currently we are raising $27500 to hire a developer for a year.
 
 Everyone involved is keenly interested in the future of The Freenet Project and
 you can be assured donations have been and will continue to be used wisely. All
