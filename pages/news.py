@@ -16,6 +16,52 @@ class NewsItem(object):
 def news_items():
     # write these in markdown
     return [
+        NewsItem("20151120-hackathon", _("2015-11-20 - \"Weekend of Code\" hackathon announcement"),
+_("""
+## What?
+
+The Freenet Project is holding a "Weekend of Code" hackathon to improve the user experience!
+
+## When?
+
+The weekend of December 19th and 20th.
+
+## Where?
+
+[chat.freenode.net #freenet][irc_url]
+
+[FLIP][flip_url] #freenet
+
+Local meetups are arranged separately.
+
+## Details
+
+This hackathon is open to developers of all skill levels, designers, translators, and users.
+It will be held remotely over IRC on Freenode and on Freenet's anonymous IRC system, [FLIP][flip_url].
+Some people are also meeting locally, and announcing it through developer / maker groups.
+
+Many Freenet veterans have pet projects they will be working on.
+If you don't have anything in mind we invite you to join us in working on [Winterface][winterface_url].
+Winterface is a plugin for Freenet which seeks to modernize the Freenet user interface and make user interface development easier.
+By making Freenet more usable, we can bring privacy, anonymity, and free speech to more people than ever before!
+Additionally we have put together a list of [hackathon project ideas][hackathon_url].
+
+If you would like to participate, please consider alerting us ahead of time, but you are also welcome if you come spontaneously.
+You may find it helpful to have your GitHub account ready, Freenet installed, and hopefully even have an idea of what to work on, so you can hit the ground running!
+If you plan to participate anonymously, please [contact a developer](contact_url) over FLIP, Sone, FMS, or Freemail with questions or patches. At minimum ensure that you can upload a patch into Freenet and publish the link.
+
+Please feel free to join us on the [mailing list](url_devl) or on [IRC](irc_url) to introduce yourself.
+
+Happy hacking!
+""") + """
+
+[url_devl]: https://emu.freenetproject.org/cgi-bin/mailman/listinfo/devl
+[irc_url]: help.html#irc
+[flip_url]: https://wiki.freenetproject.org/FLIP
+[contact_url]: https://wiki.freenetproject.org/Wiki/Hackathon#Contact
+[hackathon_url]: https://wiki.freenetproject.org/Wiki/Hackathon
+[winterface_url]: https://github.com/WinterfaceDevelopment/Winterface
+"""),
         NewsItem("20151025", _("2015-10-25 - Prerelease and Windows installer"),
 _("""
 The Windows installer has updated translations for French, Indonesian, and
