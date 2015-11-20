@@ -118,7 +118,7 @@ obtain. Using it will also be less suspicious.
 """
         download_text = _("Download Freenet")
         donate_text = md(_("""
-We are raising funds so we can continue paying our developer for another year.
+The Freenet Project can no longer afford to pay a developer. Would you please consider donating toward a year of development costs?
         """))
         donate_button_text = _("Donate!")
         donation_target = "27500"
