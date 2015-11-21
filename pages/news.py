@@ -45,12 +45,9 @@ See the [wiki Hackathon page][hackathon_url] for details.
 Happy hacking!
 """) + """
 
-[url_devl]: https://emu.freenetproject.org/cgi-bin/mailman/listinfo/devl
 [irc_url]: help.html#irc
 [flip_url]: https://wiki.freenetproject.org/FLIP
-[contact_url]: https://wiki.freenetproject.org/Wiki/Hackathon#Contact
 [hackathon_url]: https://wiki.freenetproject.org/Wiki/Hackathon
-[winterface_url]: https://github.com/WinterfaceDevelopment/Winterface
 """),
         NewsItem("20151025", _("2015-10-25 - Prerelease and Windows installer"),
 _("""
