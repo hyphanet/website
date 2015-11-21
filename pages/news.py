@@ -36,21 +36,7 @@ Local meetups are arranged separately.
 
 ## Details
 
-This hackathon is open to developers of all skill levels, designers, translators, and users.
-It will be held remotely over IRC on Freenode and on Freenet's anonymous IRC system, [FLIP][flip_url].
-Some people are also meeting locally, and announcing it through developer / maker groups.
-
-Many Freenet veterans have pet projects they will be working on.
-If you don't have anything in mind we invite you to join us in working on [Winterface][winterface_url].
-Winterface is a plugin for Freenet which seeks to modernize the Freenet user interface and make user interface development easier.
-By making Freenet more usable, we can bring privacy, anonymity, and free speech to more people than ever before!
-Additionally we have put together a list of [hackathon project ideas][hackathon_url].
-
-If you would like to participate, please consider alerting us ahead of time, but you are also welcome if you come spontaneously.
-You may find it helpful to have your GitHub account ready, Freenet installed, and hopefully even have an idea of what to work on, so you can hit the ground running!
-If you plan to participate anonymously, please [contact a developer](contact_url) over FLIP, Sone, FMS, or Freemail with questions or patches. At minimum ensure that you can upload a patch into Freenet and publish the link.
-
-Please feel free to join us on the [mailing list](url_devl) or on [IRC](irc_url) to introduce yourself.
+See the [wiki Hackathon page][hackathon_url] for details.
 
 Happy hacking!
 """) + """
