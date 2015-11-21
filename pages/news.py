@@ -24,7 +24,7 @@ We welcome developers of all skill levels, designers, translators, and users.
 
 ## What?
 
-The Freenet Project is holding a "Weekend of Code" hackathon to improve the user experience!
+The Freenet Project is holding a "Weekend of Code" hackathon to improve user experience.
 
 ## When?
 
