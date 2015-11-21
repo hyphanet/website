@@ -18,6 +18,10 @@ def news_items():
     return [
         NewsItem("20151120-hackathon", _("2015-11-20 - \"Weekend of Code\" hackathon announcement"),
 _("""
+## Who?
+
+We welcome developers of all skill levels, designers, translators, and users.
+
 ## What?
 
 The Freenet Project is holding a "Weekend of Code" hackathon to improve the user experience!
