@@ -107,6 +107,7 @@ obtain. Using it will also be less suspicious.
                              donate_bar.className = "meter red";
                          }
                      </script>
+                     <p><i>$str__nonprofit</i></p>
                      <a class="btn button-custom btn-custom-two donate-button" href="donate.html">$str__donate_button_text</a>
                 </div>
             </div>
@@ -122,12 +123,14 @@ The Freenet Project can no longer afford to pay a developer. Would you please co
         """))
         donate_button_text = _("Donate!")
         donation_target = "27500"
+        nonprofit = _("The Freenet Project Inc is a non-profit 501(c)(3) organization.")
         return substitute_html(content,
             html__sliders=concat_html(sliders),
             str__download_text=download_text,
             md__donate_text=donate_text,
             str__donate_button_text=donate_button_text,
             str__donation_target=donation_target,
+            str__nonprofit=nonprofit,
         )
 
 
