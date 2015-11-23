@@ -947,6 +947,22 @@ We believe our installer is not infected with malicious software, and if you are
 [url_smartscreen]: http://windows.microsoft.com/en-us/windows7/smartscreen-filter-frequently-asked-questions-ie9
 [url_installer]: https://github.com/freenet/wininstaller-innosetup
 """),
+                    FaqItem("legal-trouble", _("Has anyone ever faced legal trouble for their anonymous activities conducted on Freenet?"),
+_("""
+Yes.
+There is one such instance that we know of.
+United States law enforcement can identify anonymous users of [Freenet][f] and [Tor][t].
+It is reasonable to assume that other governments have access to the same technology, which is provided by private contractors.
+If you are concerned about governments, you should use Freenet's capacity to connect only to users you trust, ("high" network security level or higher) and bear in mind that no anonymity technology provides perfect protection.
+
+While we applaud law enforcement's apparent success in apprehending suspects allegedly sharing child abuse images, any security flaws they may have used are not limited to such noble usage.
+Many governments persecute and prosecute political dissidents for legitimate speech published online.
+Therefore we hope to discover and fix these flaws to protect legitimate users.
+""") + """
+
+[f]: http://www.thedickinsonpress.com/news/north-dakota/3885239-predators-police-online-struggle
+[t]: http://motherboard.vice.com/read/court-docs-show-a-university-helped-fbi-bust-silk-road-2-child-porn-suspects
+"""),
                 ]),
             ]
         table_of_contents = concat_html([x.generate_index() for x in subsections])
