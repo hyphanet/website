@@ -248,6 +248,12 @@ font-style: italic;
 padding: inherit;
 }
 
+#donate_fineprint {
+    font-size: 85%;
+    font-style: normal !important;
+    margin-top: 5px;
+}
+
 #home .social {
 display: block;
 margin: 50px 20px;
