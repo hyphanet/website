@@ -107,8 +107,8 @@ obtain. Using it will also be less suspicious.
                              donate_bar.className = "meter red";
                          }
                      </script>
-                     <p><i>$str__nonprofit</i></p>
                      <a class="btn button-custom btn-custom-two donate-button" href="donate.html">$str__donate_button_text</a>
+                     <p id="donate_fineprint">$str__nonprofit</p>
                 </div>
             </div>
             <!-- DONATE SUBSECTION END -->
