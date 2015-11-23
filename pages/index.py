@@ -108,7 +108,7 @@ obtain. Using it will also be less suspicious.
                          }
                      </script>
                      <a class="btn button-custom btn-custom-two donate-button" href="donate.html">$str__donate_button_text</a>
-                     <p id="donate_fineprint">$str__nonprofit</p>
+                     <p id="donate_fineprint">$str__nonprofit $str__tax_deductable</p>
                 </div>
             </div>
             <!-- DONATE SUBSECTION END -->
@@ -124,6 +124,7 @@ The Freenet Project can no longer afford to pay a developer. Would you please co
         donate_button_text = _("Donate!")
         donation_target = "27500"
         nonprofit = _("The Freenet Project Inc is a non-profit 501(c)(3) organization.")
+        tax_deductable = _("Donations are tax-deductible.")
         return substitute_html(content,
             html__sliders=concat_html(sliders),
             str__download_text=download_text,
@@ -131,6 +132,7 @@ The Freenet Project can no longer afford to pay a developer. Would you please co
             str__donate_button_text=donate_button_text,
             str__donation_target=donation_target,
             str__nonprofit=nonprofit,
+            str__tax_deductable=tax_deductable,
         )
 
 
