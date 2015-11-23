@@ -294,7 +294,7 @@ While most people wish that child pornography and terrorism did not exist,
 humanity should not be deprived of their freedom to communicate just because
 of how a very small number of people might use that freedom.
 """)),
-                    FaqItem("offensive", _("I don't want my node to be used to harbor child porn, offensive content or terrorism. What can I do?"), _("""
+                    FaqItem("offensive", _("I don't want my node to be used to harbor child porn, offensive content, or terrorism. What can I do?"), _("""
 This is a problem that sadly any censorship-resistance tool faces.
 If the capacity to remove content existed, it might only be used to remove things one finds offensive, but it could be used to remove anything.
 From a technological point of view one cannot have censorship-resistance with exceptions.
