@@ -300,6 +300,11 @@ If the capacity to remove content existed, it might only be used to remove thing
 From a technological point of view one cannot have censorship-resistance with exceptions.
 Freenet is a tool - it is not a tool's fault how people choose to use it, and this tool certainly doesn't do anything to encourage offensive content.
 A communication medium cannot be considered responsible for what people use it for - one doesn't see ISPs, telecoms, or postal services held responsible for their users either.
+
+Note that files are encrypted and split into pieces.
+They are not stored on your machine in their entirety.
+Your instance of Freenet will likely have a very small number of encrypted pieces of a given file.
+A file can only be assembled when all its pieces are combined with the decryption key, which is not included with each piece.
 """)),
                     FaqItem("export", _("How about encryption export restrictions?"), _("""
 The Freenet Project has notified the US authorities that it will be exporting
