@@ -29,7 +29,7 @@ Freenet is a platform for censorship-resistant communication and publishing.
 It helps you to remain anonymous, and communicate without fear.
 """) + "\n\n" + _("""
 *'Daddy, where were you when they took freedom of the press away from the Internet?'*  
-— Mike Godwin ([about Freenet](about.html))
+— Mike Godwin ([read more](about.html))
 """), "active"),
             slider_item(_("Host a Website"), _("""
 Need a website nobody can take over? That is hosted for free? That is very
