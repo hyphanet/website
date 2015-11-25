@@ -28,20 +28,20 @@ class HomeSection(Section):
 Freenet is a platform for censorship-resistant communication and publishing.
 It helps you to remain anonymous, and communicate without fear.
 """) + "\n\n" + _("""
-*'Daddy, where were you when they took freedom of the press away from the Internet?'*  
+*'Daddy, where were you when they took freedom of the press away from the Internet?'*
 — Mike Godwin ([read more](about.html))
 """), "active"),
             slider_item(_("Host a Website"), _("""
 Need a website nobody can take over? That is hosted for free? That is very
 resistant to attacks? Publish it on Freenet!
 """) + "\n\n" + _("""
-*'I never had to worry no more about security of my sites. With Freenet I am Free.'* — Unkwon  
+*'I never had to worry no more about security of my sites. With Freenet I am Free.'* — Unkwon
 *'Now the Mempo repository can not be censored, DDoSed or taken offline, despite having just one tiny server.'* — rfree in [apt-get over Freenet](/news.html#20150105)
 """)),
             slider_item(_("Share Files"), _("""
 Upload a file to Freenet and anyone with the secret URL can access it.
 """) + "\n\n" + _("""
-*[follow the blue rabbit  
+*[follow the blue rabbit
 through the looking glass](download.html#autostart)*
 """)),
             slider_item(_("Meet New People"), _("""
