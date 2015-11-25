@@ -957,7 +957,7 @@ If you are concerned about governments, you should use Freenet's capacity to con
 
 While we applaud law enforcement's apparent success in apprehending suspects allegedly sharing child abuse images, any security flaws they may have used are not limited to such noble usage.
 Many governments persecute and prosecute political dissidents for legitimate speech published online.
-Therefore we hope to discover and fix these flaws to protect legitimate users.
+Therefore we hope to discover and fix these flaws to protect those who fight for human rights, against corruption, for a peaceful future, and for other legitimate goals.
 """) + """
 
 [f]: http://www.thedickinsonpress.com/news/north-dakota/3885239-predators-police-online-struggle
