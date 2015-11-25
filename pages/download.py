@@ -143,7 +143,7 @@ Open a terminal and run:
     java -jar new_installer_offline.jar
 """ + "\n\n" + _("""
 Alternatively, downloading [the installer](assets/jnlp/freenet_installer.jar)
-([gpg signature](https://downloads.freenetproject.org/alpha/installer/new_installer_offline_1467.jar.sig))
+([gpg signature](https://downloads.freenetproject.org/alpha/installer/new_installer_offline_1470.jar.sig))
 and then clicking on the file may work on some systems, but if there are
 problems we recommend the above command lines. If wget is not installed,
 it can be installed with a package manager, such as sudo apt-get install wget
