@@ -294,17 +294,18 @@ While most people wish that child pornography and terrorism did not exist,
 humanity should not be deprived of their freedom to communicate just because
 of how a very small number of people might use that freedom.
 """)),
-                    FaqItem("offensive", _("I don't want my node to be used to harbor child porn, offensive content or terrorism. What can I do?"), _("""
-The true test of someone who claims to believe in Freedom of Speech is
-whether they tolerate speech which they disagree with, or even find
-disgusting. If this is not acceptable to you, you should not run a Freenet
-node. Also, content in Freenet is available only as long as it is popular,
-so it will go away if people lose interest. However, it should persist for
-some time, and if enough people are interested, it will persist forever. Note
-that other people's file are encrypted and split into pieces. They are not
-stored on your machine in their entirety. Your instance of Freenet will
-likely have a very small number of encrypted pieces from a given file. A file
-can only be assembled when all its pieces are combined with the decryption key.
+                    FaqItem("offensive", _("I don't want my node to be used to harbor child porn, offensive content, or terrorism. What can I do?"), _("""
+This is a problem that sadly any censorship-resistance tool faces.
+If the capacity to remove content existed, it might only be used to remove things one finds offensive, but it could be used to remove anything.
+From a technological point of view one cannot have censorship-resistance with exceptions.
+Freenet is merely a tool that by itself doesn't do anything to promote offensive content.
+How people choose to use the tool is their sole responsibility.
+As a communication medium, Freenet cannot be considered responsible for what people use it for — just like Internet Service Providers, telecoms, or postal services cannot be held responsible for their users either.
+
+Note that files are encrypted and split into pieces.
+They are not stored on your machine in their entirety.
+Your instance of Freenet will likely have a very small number of encrypted pieces of a given file.
+A file can only be assembled when all its pieces are combined with the decryption key, which is not included with each piece.
 """)),
                     FaqItem("export", _("How about encryption export restrictions?"), _("""
 The Freenet Project has notified the US authorities that it will be exporting
