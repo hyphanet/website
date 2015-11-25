@@ -304,7 +304,7 @@ As a communication medium, Freenet cannot be considered responsible for what peo
 
 Note that files are encrypted and split into pieces.
 They are not stored on your machine in their entirety.
-Your instance of Freenet will likely have a very small number of encrypted pieces of a given file.
+Your instance of Freenet will likely have very few encrypted pieces of a given file.
 These pieces cannot be used as pieces of the file they were made from without additional information.
 Reassembling a file requires knowing both what pieces to use and the key to decrypt them, neither of which is included with each piece.
 """)),
