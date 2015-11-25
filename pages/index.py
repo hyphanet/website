@@ -27,27 +27,42 @@ class HomeSection(Section):
             slider_item(_("Share, Chat, Browse. Anonymously."), _("""
 Freenet is a platform for censorship-resistant communication and publishing.
 It helps you to remain anonymous, and communicate without fear.
+
+*'Daddy, where were you when they took freedom of the press away from the Internet?'*  
+— Mike Godwin ([about Freenet](about.html))
 """), "active"),
             slider_item(_("Host a Website"), _("""
 Need a website nobody can take over? That is hosted for free? That is very
 resistant to attacks? Publish it on Freenet!
+
+*'I never had to worry no more about security of my sites. With Freenet I am Free.'* — Unkwon  
+*'Now the Mempo repository can not be censored, DDoSed or taken offline, despite having just one tiny server.'* — rfree in [apt-get over Freenet](/news.html#20150105)
 """)),
             slider_item(_("Share Files"), _("""
 Upload a file to Freenet and anyone with the secret URL can access it.
+
+*[follow the blue rabbit  
+through the looking glass](download.html#autostart)*
 """)),
             slider_item(_("Meet New People"), _("""
 People from all over the world use Freenet to communicate. Some of them do so
 anonymously. You might never hear their voices in the open.
+
+*'The value of publishing is not me wanting you to watch. The value of publishing is you wanting to see what I provide.'* — A.B.
 """)),
             slider_item(_("Experiment with Exciting New Technology"), _("""
 Freenet is on the cutting edge of distributed routing research. The data
 storage provided by Freenet is a proving ground for a number of new
 distributed systems.
+
+*'A decentralized anonymous datastore with real censorship resistance, no central authority and long lifetime only for information which people actually use.'* — [The forgotten Cryptopunk Paradise](http://draketo.de/english/freenet/forgotten-cryptopunk-paradise)
 """)),
             slider_item(_("Improve the World"), _("""
 By using Freenet from the "free world" you help people in oppressive regimes
 share information. The more people use Freenet the easier it will be to
-obtain. Using it will also be less suspicious.
+obtain.
+
+*'Many years passed, two towers fell, the empire expanded its hunt for rebels all over the globe, and now, as the empire’s grip has become so horrid that even the most loyal servants of the emperors turn and expose their dark secrets, Freenet is still moving forward.'* — [The forgotten Cryptopunk Paradise](http://draketo.de/english/freenet/forgotten-cryptopunk-paradise)
 """)),
         ]
         content = """
