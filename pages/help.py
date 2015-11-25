@@ -305,7 +305,8 @@ As a communication medium, Freenet cannot be considered responsible for what peo
 Note that files are encrypted and split into pieces.
 They are not stored on your machine in their entirety.
 Your instance of Freenet will likely have a very small number of encrypted pieces of a given file.
-A file can only be assembled when all its pieces are combined with the decryption key, which is not included with each piece.
+These pieces cannot be used as pieces of the file they were made from without additional information.
+Reassembling a file requires knowing both what pieces to use and the key to decrypt them, neither of which is included with each piece.
 """)),
                     FaqItem("export", _("How about encryption export restrictions?"), _("""
 The Freenet Project has notified the US authorities that it will be exporting
