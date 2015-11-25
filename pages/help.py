@@ -298,8 +298,9 @@ of how a very small number of people might use that freedom.
 This is a problem that sadly any censorship-resistance tool faces.
 If the capacity to remove content existed, it might only be used to remove things one finds offensive, but it could be used to remove anything.
 From a technological point of view one cannot have censorship-resistance with exceptions.
-Freenet is a tool - it is not a tool's fault how people choose to use it, and this tool certainly doesn't do anything to encourage offensive content.
-A communication medium cannot be considered responsible for what people use it for - one doesn't see Internet Service Providers, telecoms, or postal services held responsible for their users either.
+Freenet is merely a tool that by itself doesn't do anything to promote offensive content.
+How people choose to use the tool is their sole responsibility.
+As a communication medium, Freenet cannot be considered responsible for what people use it for — just like Internet Service Providers, telecoms, or postal services cannot be held responsible for their users either.
 
 Note that files are encrypted and split into pieces.
 They are not stored on your machine in their entirety.
