@@ -952,6 +952,7 @@ _("""
 Yes.
 There is one such instance that we know of.
 United States law enforcement can identify anonymous users of [Freenet][f] and [Tor][t].
+Without further information we do not know how they did this, but we suspect it affects people using "normal" or lower network security level.
 It is reasonable to assume that other governments have access to the same technology, which is provided by private contractors.
 If you are concerned about governments, you should use Freenet's capacity to connect only to users you trust, ("high" network security level or higher) and bear in mind that no anonymity technology provides perfect protection.
 
