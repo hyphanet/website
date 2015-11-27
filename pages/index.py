@@ -70,7 +70,8 @@ If one percent of people used Freenet, everyone could safely be a whistleblower.
 *'Daddy, where were you when they took freedom of the press away from the Internet?'*
 — Mike Godwin ([read more](about.html))
 """) + """</span>""" + """<span class="hidden-xs">""" + _("""
-*'Many years passed, two towers fell, the empire expanded its hunt for rebels all over the globe, and now, as the empire’s grip has become so horrid that even the most loyal servants of the emperors turn and expose their dark secrets, Freenet is still moving forward.'* — [The forgotten Cryptopunk Paradise](http://draketo.de/english/freenet/forgotten-cryptopunk-paradise)
+*'Many years passed, two towers fell, the empire expanded its hunt for rebels all over the globe, and now, as the empire’s grip has become so horrid that even the most loyal servants of the emperors turn and expose their dark secrets, Freenet is still moving forward.'*
+— [The forgotten Cryptopunk Paradise](http://draketo.de/english/freenet/forgotten-cryptopunk-paradise)
 """) + """</span>"""),
         ]
         content = """
