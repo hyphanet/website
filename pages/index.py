@@ -27,18 +27,18 @@ class HomeSection(Section):
             slider_item(_("Share, Chat, Browse. Anonymously."), _("""
 Freenet is a platform for censorship-resistant communication and publishing.
 It helps you to remain anonymous, and communicate without fear.
-""") + "\n\n" + """<span class="hidden-xs" markdown="1">""" + _("""
+""") + "\n\n" + """<span class="hidden-xs">""" + _("""
 *'Daddy, where were you when they took freedom of the press away from the Internet?'*
 — Mike Godwin ([read more](about.html))
 """) + """</span>""", "active"),
             slider_item(_("Host a Website"), _("""
 Need a website nobody can take over? That is hosted for free? That is very
 resistant to attacks? Publish it on Freenet!
-""") + "\n\n" + """<span class="visible-xs" markdown="1">""" + _("""
+""") + "\n\n" + """<span class="visible-xs">""" + _("""
 *'I never had to worry no more about security of my sites.'*
-""") + """</span>""" + """<span class="hidden-xs" markdown="1">""" + _("""
+""") + """</span>""" + """<span class="hidden-xs">""" + _("""
 *'I never had to worry no more about security of my sites. With Freenet I am Free.'* — Unkwon in [Sone](https://wiki.freenetproject.org/Sone)
-""") + """</span>""" + """<br /><span class="hidden-xs hidden-sm" markdown="1">""" + _("""
+""") + """</span>""" + """<br /><span class="hidden-xs hidden-sm">""" + _("""
 *'Now the Mempo repository can not be censored, DDoSed or taken offline, despite having just one tiny server.'* — rfree in [apt-get over Freenet](/news.html#20150105)
 """) + """</span>"""),
             slider_item(_("Share Files"), _("""
@@ -50,26 +50,26 @@ through the looking glass](download.html#autostart)*
             slider_item(_("Meet New People"), _("""
 People from all over the world use Freenet to communicate. Some of them do so
 anonymously. You might never hear their voices in the open.
-""") + "\n\n" + """<span class="hidden-xs" markdown="1">""" + _("""
+""") + "\n\n" + """<span class="hidden-xs">""" + _("""
 *'The value of publishing is not me wanting you to watch. The value of publishing is you wanting to see what I provide.'* — A.B.
 """) + """</span>"""),
             slider_item(_("Experiment with Exciting New Technology"), _("""
 Freenet is on the cutting edge of distributed routing research. The data
 storage provided by Freenet is a proving ground for a number of new
 distributed systems. ([Papers](about.html#papers))
-""") + "\n\n" + """<span class="hidden-xs hidden-sm" markdown="1">""" + _("""
+""") + "\n\n" + """<span class="hidden-xs hidden-sm">""" + _("""
 *'A decentralized anonymous datastore with real censorship resistance, no central authority and long lifetime only for information which people actually use.'* — [The forgotten Cryptopunk Paradise](http://draketo.de/english/freenet/forgotten-cryptopunk-paradise)
 """) + """</span>"""),
             slider_item(_("Improve the World"), _("""
 By using Freenet from the "free world" you help people in oppressive regimes
 share information. The more people use Freenet the easier it will be to
-obtain.""") + "\n\n" + """<span class="hidden-xs hidden-sm" markdown="1">""" + _("""
+obtain.""") + "\n\n" + """<span class="hidden-xs hidden-sm">""" + _("""
 If one percent of people used Freenet, everyone could safely be a whistleblower.
 """) + """</span>"""),
-            slider_item(_("Join us in Freenet"), """<span class="visible-xs" markdown="1">""" + _("""
+            slider_item(_("Join us in Freenet"), """<span class="visible-xs">""" + _("""
 *'Daddy, where were you when they took freedom of the press away from the Internet?'*
 — Mike Godwin ([read more](about.html))*
-""") + """</span>""" + """<span class="hidden-xs" markdown="1">""" + _("""
+""") + """</span>""" + """<span class="hidden-xs">""" + _("""
 *'Many years passed, two towers fell, the empire expanded its hunt for rebels all over the globe, and now, as the empire’s grip has become so horrid that even the most loyal servants of the emperors turn and expose their dark secrets, Freenet is still moving forward.'* — [The forgotten Cryptopunk Paradise](http://draketo.de/english/freenet/forgotten-cryptopunk-paradise)
 """) + """</span>"""),
         ]
