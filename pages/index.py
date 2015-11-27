@@ -44,7 +44,7 @@ resistant to attacks? Publish it on Freenet!
             slider_item(_("Share Files"), _("""
 Upload a file to Freenet and anyone with the secret URL can access it.
 """) + "\n\n" + _("""
-*[follow the blue rabbit  
+*[follow the blue rabbit
 through the looking glass](download.html#autostart)*
 """)),
             slider_item(_("Meet New People"), _("""
