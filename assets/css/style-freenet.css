@@ -115,8 +115,6 @@ border-radius: 0px;
 transition: all 0.5s ease-in-out;
 margin: 25px 5px 5px 0px;
 margin: 5px;
-position: relative;
-z-index: 1100;
 }
 
 .btn-custom-one {
