@@ -220,9 +220,11 @@ All donations go to The Freenet Project Inc, a 501(c)(3) charitable non-profit o
 
 All funds received will only be utilized to advance our Mission Statement, and
 are administered at the direction of the Freenet Project Board.
+
+The Freenet Project Inc is registered under EIN `95-4864038`
 """)))
 
-    
+
 class SponsorsSection(Section):
     def __init__(self):
         self.slug = "Sponsors"
