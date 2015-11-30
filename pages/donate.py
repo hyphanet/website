@@ -204,7 +204,7 @@ class FreenetProjectIncSection(Section):
     def get_content(self):
         # License: GFDL (from old freenetproject.org website)
         return text(md(_("""
-All donations go to The Freenet Project Inc, a 501(c)(3) charitable non-profit organization with the following mission statement:
+All donations go to The Freenet Project Inc, a 501(c)(3) non-profit organization with the following mission statement:
 
 > The specific purpose of this corporation is to assist in developing and
 > disseminating technological solutions to further the open and democratic
