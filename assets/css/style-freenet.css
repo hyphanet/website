@@ -249,6 +249,14 @@ padding: inherit;
     margin-top: 5px;
 }
 
+#donate_fineprint .readmore:before {
+    content: '('
+}
+
+#donate_fineprint .readmore:after {
+    content: ')'
+}
+
 #home .social {
 display: block;
 margin: 50px 20px;
