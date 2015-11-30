@@ -193,10 +193,20 @@ Send your donations to {bitcoin_address}.
 * Alternatively, please contact us: {donate_email} if you cannot use any of these payment methods.
 
 * You can also donate to the project by purchasing items from the Freenet [store][url_zazzle_store].
-""").format(donate_email=donate_email, bitcoin_address=bitcoin_address) + "\n\n" + _("""
-## How can I be sure that my donation will be used appropriately?
+""").format(donate_email=donate_email, bitcoin_address=bitcoin_address) + "\n\n" + """
+[url_bitcoin]: http://www.bitcoin.org/
+[logo_bitcoin]: assets/img/BC_nBG_48px.png
+[url_zazzle_store]: http://www.zazzle.com/freenetproject
+"""))
 
-All donations go to The Freenet Project Inc, a non-profit 501(c)(3) organization with the following mission statement:
+class SponsorsSection(Section):
+    def __init__(self):
+        self.slug = "fpi"
+        self.title = _("The Freenet Non-Profit")
+    def get_content(self):
+        # License: GFDL (from old freenetproject.org website)
+        return text(md(_("""
+All donations go to The Freenet Project Inc, a 501(c)(3) charitable non-profit organization with the following mission statement:
 
 > The specific purpose of this corporation is to assist in developing and
 > disseminating technological solutions to further the open and democratic
@@ -212,12 +222,9 @@ All donations go to The Freenet Project Inc, a non-profit 501(c)(3) organization
 
 All funds received will only be utilized to advance our Mission Statement, and
 are administered at the direction of the Freenet Project Board.
-""") + "\n\n" + """
-[url_bitcoin]: http://www.bitcoin.org/
-[logo_bitcoin]: assets/img/BC_nBG_48px.png
-[url_zazzle_store]: http://www.zazzle.com/freenetproject
-"""))
+""")))
 
+    
 class SponsorsSection(Section):
     def __init__(self):
         self.slug = "Sponsors"
