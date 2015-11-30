@@ -27,9 +27,7 @@ Although countless people have given their time and skill to the project since i
 If we have enough funds, we can hire developers to work on Freenet.
 Currently we are raising $27500 to hire a developer for a year.
 
-Everyone involved is keenly interested in the future of The Freenet Project and
-you can be assured donations have been and will continue to be used wisely. All
-support is very much appreciated.
+All support is very much appreciated.
 """) + "\n\n" + _("""
 #### How can I donate?
 
