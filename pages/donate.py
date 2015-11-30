@@ -199,7 +199,7 @@ Send your donations to {bitcoin_address}.
 [url_zazzle_store]: http://www.zazzle.com/freenetproject
 """))
 
-class SponsorsSection(Section):
+class FreenetProjectIncSection(Section):
     def __init__(self):
         self.slug = "fpi"
         self.title = _("The Freenet Non-Profit")
@@ -322,6 +322,7 @@ class DonatePage(Page):
         self.title = _("Donate")
         self.sections = [
             DonateSection(),
+            FreenetProjectIncSection(),
             SponsorsSection(),
             StoreSection(),
             ]
