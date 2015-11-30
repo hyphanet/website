@@ -123,8 +123,8 @@ The Freenet Project can no longer afford to pay a developer. Would you please co
         """))
         donate_button_text = _("Donate!")
         donation_target = "27500"
-        nonprofit = _("The Freenet Project Inc is a charitable non-profit 501(c)(3) organization ([Read more...](donate.html#fpi)).")
-        tax_deductable = _("Donations are tax-deductible.")
+        nonprofit = _("The Freenet Project Inc is a charitable non-profit 501(c)(3) organization") 
+        tax_deductable = _("""Donations are tax-deductible. (<a href="donate.html#fpi">Read more...</a>).""")
         return substitute_html(content,
             html__sliders=concat_html(sliders),
             str__download_text=download_text,
