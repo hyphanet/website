@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Freenet\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-11-25 02:41-0500\n"
-"PO-Revision-Date: 2015-11-27 09:16+0000\n"
+"PO-Revision-Date: 2015-12-06 14:49+0000\n"
 "Last-Translator: Xiaoyu Huang <007pig@gmail.com>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/otf/freenet/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -84,14 +84,14 @@ msgid ""
 "forums, without fear of censorship. Freenet is decentralised to make it less\n"
 "vulnerable to attack, and if used in \"darknet\" mode, where users only connect to\n"
 "their friends, is very difficult to detect."
-msgstr ""
+msgstr "Freenet 是一个免费软件，您可以通过它匿名的分享文件、浏览和发布“Freesite”（只能在 Freenet 网络中访问的网站）、在论坛中发帖，不用担心被审查。Freenet 是去中心化的，很难被攻击。如果使用它的“暗网（Darknet）”模式，用户仅会连接到他们的好友，那么他人很难侦测到这个用户。"
 
 #: pages/about.py:26
 msgid ""
 "Communications by Freenet nodes are encrypted and are routed through other\n"
 "nodes to make it extremely difficult to determine who is requesting the\n"
 "information and what its content is."
-msgstr ""
+msgstr "Freenet 节点之间的通讯是加密的，并通过其他节点路由。因此要了解谁在请求某些信息、请求的内容是什么，是极其困难的。"
 
 #: pages/about.py:30
 msgid ""
@@ -103,7 +103,7 @@ msgid ""
 "his datastore, and hopefully can't be held accountable for it. Chat forums,\n"
 "websites, and search functionality, are all built on top of this distributed\n"
 "data store."
-msgstr ""
+msgstr "用户通过贡献自己的互联网带宽和他们的一部分硬盘空间（称为“数据存储（Data Store）”）来储存文件。根据文件的流行程度，文件会自动被保留或删除。不流行的文件被删除，可以腾出更多的空间给流行的文件。文件是加密的，因此用户无法轻易得知它的“数据存储”内储存了什么内容，因此也不会因其被追究责任。聊天论坛、网站和搜索功能，都是基于该分布式“数据存储”构建。"
 
 #: pages/about.py:39
 msgid ""
@@ -117,7 +117,7 @@ msgid ""
 "philosophy. Ian Clarke, Freenet's creator and project coordinator,\n"
 "was selected as one of the top 100 innovators of 2003 by MIT's Technology\n"
 "Review magazine."
-msgstr ""
+msgstr "Freenet 自诞生起已被下载超过 200 万次，用来在全世界分发敏感受审查的信息，包括中国和中东国家。Freenet 中的先驱思想和概念也深深影响了学术界。我们在 2000 年的论文《Freenet：一个分布式匿名信息存储和接收系统》（Freenet: A Distributed Anonymous Information Storage and Retrieval System）， 是 2000 年被引用次数最多的计算机科学论文（来源：Citeseer）。Freenet 也给世界法律和哲学论文带来了灵感。Ian Clarke，Freenet 的创造者和项目协调人，被 2003 年《麻省理工科技评论 》杂志（MIT's Technology Review）评为世界百强革新者。"
 
 #: pages/about.py:50
 msgid ""
@@ -127,7 +127,7 @@ msgid ""
 "friends' friends' friends and so on. This enables people to use Freenet even\n"
 "in places where Freenet may be illegal, makes it very difficult for\n"
 "governments to block it, and does not rely on tunneling to the \"free world\"."
-msgstr ""
+msgstr "在最近的开发中，我们引入了一个重要的功能（在其他类似网络中鲜见），称为“暗网（Darknet）”：用户仅与自己信任的人互相连接，这能够极大的降低他们的风险，同时仍然能够通过他们朋友的朋友的朋友来连接到整个 Freenet 网络。这能够让那些“使用 Freenet 即违法”的地方的人们使用 Freenet。政府很难封禁它，用户无需“翻墙隧道”就可以进入“自由的世界”。"
 
 #: pages/about.py:64
 msgid "The Philosophy behind Freenet"
@@ -148,7 +148,7 @@ msgid ""
 "8.  [And what of copyright?](#copyright)\n"
 "9.  [But how will artists be rewarded for their work without copyright?](#reward)\n"
 "10.  [Alternatives to Copyright](#alternative)"
-msgstr ""
+msgstr "*作者：Ian Clarke*\n\n1.  [免责声明](#disclaimer)\n2.  [建议提前阅读](#prior_reading)\n3.  [自由信息流的重要性](#free_flow_info)\n4.  [审查制度和自由](#censor_freedom)\n5.  [解决方案](#solution)\n6.  [有时审查制度不是必须的吗？](#is_censorship_necessary)\n7.  [但是为何需要匿名？](#why_anonymity)\n8.  [版权又将怎样？](#copyright)\n9.  [但若艺术家的工作没有版权，他们如何得到回报？](#reward)\n10.  [版权的替代品](#alternative)"
 
 #: pages/about.py:88
 msgid ""
@@ -160,7 +160,7 @@ msgid ""
 "technical challenge. These are the ideas which motivated me to architect the\n"
 "system in the first place, but not necessarily the views that everyone involved\n"
 "in the Freenet project holds."
-msgstr ""
+msgstr "### 1\\. 免责声明\n\n人们参与 Freenet 项目有很多原因。有些人赞同本文的观点；有些人有着不同的观点，但是这些观点同样支持我们要完成的事业；而另一些人仅热衷于技术方面的挑战。上述想法驱动我最初实现了这个系统，但这些观点不一定是所有 Freenet 项目的参与者认同的。"
 
 #: pages/about.py:98
 msgid ""
@@ -168,7 +168,7 @@ msgid ""
 "\n"
 "For this document to make sense, you should probably know what Freenet is. You\n"
 "can get a good overview from [What is Freenet?](about.html#introduction)."
-msgstr ""
+msgstr "### 2\\. 建议提前阅读\n\n要理解本文讲述的内容，您应该事先了解什么是 Freenet。您可以先阅读《[What is Freenet?](about.html#introduction)》章节，以大致了解。"
 
 #: pages/about.py:104
 msgid ""
@@ -178,7 +178,7 @@ msgid ""
 "of the most important rights any individual might have. Why is the freedom to\n"
 "share ideas and opinions so important? There are several ways to answer this\n"
 "question."
-msgstr ""
+msgstr "### 3\\. 自由信息流的重要性\n\n言论自由，在大多数西方文化中，被普遍认为是个人最重要的权利之一。为什么自由分享想法和观点如此重要？可以从几个方面来回答这个问题。"
 
 #: pages/about.py:112
 msgid ""
@@ -189,7 +189,7 @@ msgid ""
 "we constantly discover that animal's communication ability is more sophisticated\n"
 "than previously assumed, it is unlikely that any other animal approaches our own\n"
 "level of ability in this area."
-msgstr ""
+msgstr "#### 3.1 沟通是我们之所以成为人类的原因\n\n人类和其他动物王国最显著的不同是我们的复杂沟通和抽象概念的能力。虽然我们现在发现动物之间的沟通其实也十分复杂，但其他动物要达到我们的沟通水平几乎是不可能的。"
 
 #: pages/about.py:121
 msgid ""
@@ -200,7 +200,7 @@ msgid ""
 "lost over who was better-informed. This is because being better-informed allows\n"
 "us to make better decisions, and generally improve our ability to survive and be\n"
 "successful."
-msgstr ""
+msgstr "#### 3.2 知识为善\n\n大多数人对于某件事，面对“懂”与“不懂”的选择时，都会去选择去弄懂，了解更多信息。战争见多识广的一方更可能赢。这是因为见多识广让我们能够做出更好的决定，让我们更有能力生存和成功。"
 
 #: pages/about.py:130
 msgid ""
@@ -215,7 +215,7 @@ msgid ""
 "it must know what their government is doing, they must be well informed. It\n"
 "is a feedback loop, but this loop can be broken if the government has the\n"
 "power to control the information the population has access to."
-msgstr ""
+msgstr "#### 3.3 民主需要知情的人民\n\n很多人今天都生活在一个民主的政权。而其他人，可能也想。民主是“如何创造领导人、且避免权力滥用”这一问题的答案。人民通过投票权来监管他们的政府，但是拥有投票权并不意味着您生活在一个民主的国家。为了有效的监管他们的政府，人民必须知道政府正在做什么。他们必须充分知情。这是一个反馈循环，但若政府有权控制人民可以掌握的信息，该循环便可被破坏。"
 
 #: pages/about.py:143
 msgid ""
@@ -232,7 +232,7 @@ msgid ""
 "so, that people now take it for granted, despite the fact that this\n"
 "undermines the very democratic principles which justify the government's\n"
 "existence in the first place."
-msgstr ""
+msgstr "### 4\\. 审查制度和自由\n\n每个人都珍视他们的自由，很多人为之奋斗至终。人们认为他们应该能够自由的形成和持有任何观点，特别是在西方国家。假如某人有能力控制您可以掌握的信息，他们就可以对您欺骗，并审查隐藏那些可以揭穿谎言的信息，从而操控您的思想。这并不只是集权的假象，大部分西方的政府实际上就是这样欺骗民众的，以至于人们视之为理所当然。然而事实是这暗中破坏了民主的原则，该原则决定了此政府的存在与否。"
 
 #: pages/about.py:158
 msgid ""
@@ -243,7 +243,7 @@ msgid ""
 "information, to communicate. So long as everything we see and hear is\n"
 "filtered, we are not truly free. Freenet's aim is to allow two or more people\n"
 "who wish to share information, to do so."
-msgstr ""
+msgstr "### 5\\. 解决方案\n\n确保民主仍然有效的唯一方法是保证政府无法控制人民分享信息、沟通的能力。只要我们能看到和听到的每件事都被过滤，我们不会真正的自由。Freenet 的目标就是允许愿意互相分享信息的人们，能够自由的分享。"
 
 #: pages/about.py:167
 msgid ""
@@ -272,7 +272,7 @@ msgid ""
 "Of course the first argument is the stronger one, and would still hold-true\n"
 "even if you didn't accept the second. Basically, you either have censorship,\n"
 "or you don't. There is no middle-ground."
-msgstr ""
+msgstr "### 6\\. 有时审查制度不是必须的吗？\n\n所有问题都不是非黑即白的，很多人都认为在某些情况下审查制度是个好东西。例如，在某些欧洲国家，传播种族主义信息是违法的。政府寻求阻止此思想的宣扬，以免破坏社会。但对此行为有两种争论。首先，您不能确保当权者实施“好的”审查制度，而不实施“坏的”审查制度。要实施任何形式的审查制度，政府一定拥有监视和限制沟通的权力。在很多欧洲国家已经有对种族主义审查制度的批评，它阻止了合理的对历史事件的分析（如第二次世界大战）。\n\n第二种争论是，即使“好的”审查制度没有渗入其他领域，它仍然会起到反作用。例如，通常来说，将争议摆在桌面，回答这些争议，更容易说服某人。不幸的是，虽然阻止了人们了解种族主义分子的争议，但当他们最终遇到这些争论时，他们会变得更加脆弱。\n\n当然第一种争论是最强的，即使您不接受第二种争论，它也是正确的。根本上，要么存在审查制度，要么不存在。不存在中间的情况。"
 
 #: pages/about.py:194
 msgid ""
@@ -287,7 +287,7 @@ msgid ""
 "people can create a secure anonymous pseudonym which, in time, people can\n"
 "learn to trust. Freenet incorporates a mechanism called \"subspaces\" to\n"
 "facilitate this."
-msgstr ""
+msgstr "### 7\\. 但是为何需要匿名？\n\n如果您无法匿名，您不可能拥有言论自由。大部分的审查是可追溯的。在发表言论后再惩罚相关人员，比在言论发表第一时间处理更容易。唯一可避免惩罚的方式就是保持匿名。有一个常见的误解是，匿名信息不可信。这不一定是正确的。使用数字签名，人们可以创建一个安全的笔名，他人可以去信任这个笔名。Freenet 引入了“子空间（Subspaces）”的机制来使之成为可能。"
 
 #: pages/about.py:207
 msgid ""
@@ -304,7 +304,7 @@ msgid ""
 "\n"
 "It is for this reason that Freenet, a system designed to protect Freedom of\n"
 "Speech, must prevent enforcement of copyright."
-msgstr ""
+msgstr "### 8\\. 版权又将怎样？\n\nFreenet 的很多媒体报道都关注它带来的版权问题，因此我在这里简单说一下。版权的核心问题在于，为了保护版权，就需要监视通讯。如果某人监视了您所说的一切，您的言论自由就无法保障。这非常重要，在人们争论保护版权的问题时，往往忽略了这一点。因此，我再次强调：\n\n> *您无法在保证言论自由的同时实施版权法*\n\n这就是 Freenet——一个被设计为保护言论自由的系统——拒绝保护版权的原因。"
 
 #: pages/about.py:222
 msgid ""
@@ -322,7 +322,7 @@ msgid ""
 "rewarded by copyright, it is failing to do so. Rather it has allowed\n"
 "middle-men to gain control over the mechanisms of distribution, to the\n"
 "detriment of both artists and the public."
-msgstr ""
+msgstr "### 9\\. 但若艺术家的工作没有版权，他们如何得到回报？\n\n首先，即使版权是艺术家从其作品获得回报的唯一方式，我主张自由比拥有专业艺术家更重要（那些声称我们没有艺术细胞不懂得创新的人：人们总是在创新，这是种冲动，唯一的问题是他们是不是考创新生存的）。\n\n其次，甚至到现在，版权是否起作用也是值得怀疑的。音乐产业就是一个典型的例子。在不断提高的通讯技术下，音乐文件得到广泛自由的传播，但是应当从版权得到丰厚回报的艺术家们，并没有。版权让中间人控制了发行机制，同时损害了艺术家和公众的利益。"
 
 #: pages/about.py:238
 msgid ""
@@ -339,17 +339,17 @@ msgid ""
 "We actually practice what we preach in this regard too, on the 15th of March\n"
 "2001 the Freenet Project started taking donations, and within a week we had\n"
 "collected over $1000\\."
-msgstr ""
+msgstr "### 10\\. 版权的替代品\n\n幸运的是，艺术家不会饿死。现在有很多其他的方式来回报他们。最简单的方式是众筹捐款。这是赞助系统的扩展。赞助现在被频繁用于在版权前给艺术家以回报，具体做法是某个有钱人愿意资助艺术家让他们全心全意创作。互联网扩展了这个想法，不再是某一个人资助大笔资金，而是成百上千人，每人资助少量的资金。\n\n我们自己也开始言行施教，在2001年3月15日，Freenet 项目开始接受捐款，一周内我们收到超过 $1000 美元。"
 
 #: pages/about.py:258
 msgid "People"
-msgstr "人"
+msgstr "参与人员"
 
 #: pages/about.py:261
 msgid ""
 "**Note:** This is an incomplete list, a large number of people have contributed\n"
 "to the project."
-msgstr "**注意：**这不是一个完整的名单，还有很多人为本项目进行贡献。"
+msgstr "**注意：**这不是一个完整的名单，还有很多人为本项目做出了贡献。"
 
 #: pages/about.py:264
 msgid ""
@@ -4379,7 +4379,7 @@ msgid ""
 "shell script in the Freenet directory.\n"
 "\n"
 "**Source Code:** See [the GitHub repository](https://github.com/freenet/fred)."
-msgstr ""
+msgstr "### 升级\n\nFreenet 提供了通过 Freenet 网络自动升级的机制：它会自动从其他节点下载升级文件，自动更新。即使您的 Freenet 版本过旧，无法正常通过其他节点路由，仍能够自动升级。升级是匿名安全的，我们建议您使用这种方式。但是，如果出现严重问题，无法自动升级，您可以连接到我们的服务器手动升级：\n\n* Windows 用户可以点击系统托盘图标相应的菜单，或者运行 Freenet 安装目录下的“update.cmd”升级到最新稳定版本。\n* OS X、GNU/Linux 或其他 POSIX 操作系统的用户可以运行 Freenet 安装目录下的“update.sh”脚本来升级。\n\n**源代码**：参见 [GitHub 库](https://github.com/freenet/fred)。"
 
 #: pages/download.py:282
 msgid "Important note for first time users"
