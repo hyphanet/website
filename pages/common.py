@@ -215,7 +215,7 @@ $html__content
 <!-- VIEWPORT ANIMATION SCRIPTS   -->
 <script src="assets/js/appear.min.js"></script>
 <!-- CUSTOM SCRIPTS -->
-<script src="assets/js/custom.js"></script>
+<script src="assets/js/custom.js?v2"></script>
 <!-- SLICK CAROUSEL -->
 <script type="text/javascript" src="assets/slick/slick.min.js"></script>
 <!-- BOOTBOX -->
