@@ -34,11 +34,7 @@ It helps you to remain anonymous, and communicate without fear.
             slider_item(_("Host a Website"), _("""
 Need a website nobody can take over? That is hosted for free? That is very
 resistant to attacks? Publish it on Freenet!
-""") + "\n\n" + """<span class="visible-xs">""" + _("""
-*'I never had to worry no more about security of my sites.'*
-""") + """</span>""" + """<span class="hidden-xs">""" + _("""
-*'I never had to worry no more about security of my sites. With Freenet I am Free.'* — Unkwon in [Sone](https://wiki.freenetproject.org/Sone)
-""") + """</span>""" + """<br /><span class="hidden-xs hidden-sm">""" + _("""
+""") + "\n\n" + """<br /><span class="hidden-xs hidden-sm">""" + _("""
 *'Now the Mempo repository can not be censored, DDoSed or taken offline, despite having just one tiny server.'* — rfree in [apt-get over Freenet](/news.html#20150105)
 """) + """</span>"""),
             slider_item(_("Share Files"), _("""
