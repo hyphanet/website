@@ -35,7 +35,7 @@ It helps you to remain anonymous, and communicate without fear.
 Need a website nobody can take over? That is hosted for free? That is very
 resistant to attacks? Publish it on Freenet!
 """) + "\n\n" + """<br /><span class="hidden-xs hidden-sm">""" + _("""
-*'Now the Mempo repository can not be censored, DDoSed or taken offline, despite having just one tiny server.'* — rfree in [apt-get over Freenet](/news.html#20150105)
+*'Now the Mempo repository can not be censored, DDoSed or taken offline, despite having just one tiny server.'* — rfree in [apt-get over Freenet](news.html#20150105)
 """) + """</span>"""),
             slider_item(_("Share Files"), _("""
 Upload a file to Freenet and anyone with the secret URL can access it.
