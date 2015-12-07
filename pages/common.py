@@ -181,10 +181,10 @@ def head(title):
 <!-- FONT AWESOME ICONS STYLES -->
 <link href="assets/css/font-awesome.css" rel="stylesheet" />
 <!-- CUSTOM CSS -->
-<link href="assets/css/style-freenet.css?v8" rel="stylesheet" />
+<link href="assets/css/style-freenet.css?v9" rel="stylesheet" />
 <!-- SLICK CAROUSEL -->
 <!-- Kept in one directory instead of split to stay with upstream. -->
-<link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="assets/slick/slick.css?v2"/>
 <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
 <!-- HTML5 Shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -215,7 +215,7 @@ $html__content
 <!-- VIEWPORT ANIMATION SCRIPTS   -->
 <script src="assets/js/appear.min.js"></script>
 <!-- CUSTOM SCRIPTS -->
-<script src="assets/js/custom.js"></script>
+<script src="assets/js/custom.js?v2"></script>
 <!-- SLICK CAROUSEL -->
 <script type="text/javascript" src="assets/slick/slick.min.js"></script>
 <!-- BOOTBOX -->
