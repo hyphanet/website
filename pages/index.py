@@ -108,7 +108,7 @@ obtain. Using it will also be less suspicious.
                          }
                      </script>
                      <a class="btn button-custom btn-custom-two donate-button" href="donate.html">$str__donate_button_text</a>
-                     <p id="donate_fineprint">$str__nonprofit $str__tax_deductable $str__read_more</p>
+                     <p id="donate_fineprint">$str__nonprofit $str__tax_deductable $str__503_read_more</p>
                 </div>
             </div>
             <!-- DONATE SUBSECTION END -->
@@ -118,13 +118,11 @@ obtain. Using it will also be less suspicious.
 <!--HOME SECTION END-->
 """
         download_text = _("Download Freenet")
-        donate_text = md(_("""
-The Freenet Project can no longer afford to pay a developer. Would you please consider donating toward a year of development costs?
-        """))
+        read_more = """<a href="{}" class="readmore">""" + _("""read more…""") + """</a>"""
+        donate_text = md(_("Would you please consider donating toward another year of paid development?") + " " + read_more.format("news.html#20151206-donation-appeal"))
         donate_button_text = _("Donate!")
         donation_target = "27500"
         nonprofit = _("The Freenet Project Inc is a non-profit 501(c)(3) organization.")
-        read_more = """<a href="donate.html#fpi" class="readmore">""" + _("""read more…""") + """</a>"""
         tax_deductable = _("""Donations are tax-deductible.""")
         return substitute_html(content,
             html__sliders=concat_html(sliders),
@@ -134,7 +132,7 @@ The Freenet Project can no longer afford to pay a developer. Would you please co
             str__donation_target=donation_target,
             str__nonprofit=nonprofit,
             str__tax_deductable=tax_deductable,
-            str__read_more=read_more
+            str__503_read_more=read_more.format("donate.html#fpi"),
         )
 
 

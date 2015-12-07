@@ -249,11 +249,11 @@ padding: inherit;
     margin-top: 5px;
 }
 
-#donate_fineprint .readmore:before {
+.readmore:before {
     content: '('
 }
 
-#donate_fineprint .readmore:after {
+.readmore:after {
     content: ')'
 }
 
