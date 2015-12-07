@@ -294,17 +294,19 @@ While most people wish that child pornography and terrorism did not exist,
 humanity should not be deprived of their freedom to communicate just because
 of how a very small number of people might use that freedom.
 """)),
-                    FaqItem("offensive", _("I don't want my node to be used to harbor child porn, offensive content or terrorism. What can I do?"), _("""
-The true test of someone who claims to believe in Freedom of Speech is
-whether they tolerate speech which they disagree with, or even find
-disgusting. If this is not acceptable to you, you should not run a Freenet
-node. Also, content in Freenet is available only as long as it is popular,
-so it will go away if people lose interest. However, it should persist for
-some time, and if enough people are interested, it will persist forever. Note
-that other people's file are encrypted and split into pieces. They are not
-stored on your machine in their entirety. Your instance of Freenet will
-likely have a very small number of encrypted pieces from a given file. A file
-can only be assembled when all its pieces are combined with the decryption key.
+                    FaqItem("offensive", _("I don't want my node to be used to harbor child porn, offensive content, or terrorism. What can I do?"), _("""
+This is a problem that sadly any censorship-resistance tool faces.
+If the capacity to remove content existed, it might only be used to remove things one finds offensive, but it could be used to remove anything.
+From a technological point of view one cannot have censorship-resistance with exceptions.
+Freenet is merely a tool that by itself doesn't do anything to promote offensive content.
+How people choose to use the tool is their sole responsibility.
+As a communication medium, Freenet cannot be considered responsible for what people use it for — just like Internet Service Providers, telecoms, or postal services cannot be held responsible for their users either.
+
+Note that files are encrypted and split into pieces.
+They are not stored on your machine in their entirety.
+Your instance of Freenet will likely have very few encrypted pieces of a given file, if any.
+These pieces cannot be used as parts of the file they were made from without additional information.
+Reassembling a file requires knowing both what pieces to use and the key to decrypt them, neither of which is included with each piece.
 """)),
                     FaqItem("export", _("How about encryption export restrictions?"), _("""
 The Freenet Project has notified the US authorities that it will be exporting
@@ -946,6 +948,23 @@ We believe our installer is not infected with malicious software, and if you are
 """) + "\n\n" + """
 [url_smartscreen]: http://windows.microsoft.com/en-us/windows7/smartscreen-filter-frequently-asked-questions-ie9
 [url_installer]: https://github.com/freenet/wininstaller-innosetup
+"""),
+                    FaqItem("legal-trouble", _("Has anyone ever faced legal trouble for their anonymous activities conducted on Freenet?"),
+_("""
+Yes.
+There is one such instance that we know of.
+United States law enforcement can identify anonymous users of [Freenet][f] and [Tor][t].
+Without further information we do not know how they did this, but we suspect it affects people using the network security level "normal" or lower.
+It is reasonable to assume that other governments have access to the same technology, which is provided by private contractors.
+If you are concerned about governments, you should use Freenet's capacity to connect only to users you trust, ("high" network security level or higher) and bear in mind that no anonymity technology provides perfect protection.
+
+While we applaud law enforcement's apparent success in apprehending suspects allegedly sharing child abuse images, any security flaws they may have used are not limited to such noble usage.
+Many governments persecute and prosecute political dissidents for legitimate speech published online.
+Therefore we hope to discover and fix these flaws to protect those who fight for human rights, against corruption, for a peaceful future, and for other legitimate goals.
+""") + """
+
+[f]: http://www.thedickinsonpress.com/news/north-dakota/3885239-predators-police-online-struggle
+[t]: http://motherboard.vice.com/read/court-docs-show-a-university-helped-fbi-bust-silk-road-2-child-porn-suspects
 """),
                 ]),
             ]

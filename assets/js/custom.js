@@ -16,6 +16,8 @@
 $(document).ready(function () {
 
 $('.carousel-inner').slick({
+  autoplay: true,
+  autoplaySpeed: 10000,
 });
 
 /*====================================

@@ -143,7 +143,7 @@ Open a terminal and run:
     java -jar new_installer_offline.jar
 """ + "\n\n" + _("""
 Alternatively, downloading [the installer](assets/jnlp/freenet_installer.jar)
-([gpg signature](https://downloads.freenetproject.org/alpha/installer/new_installer_offline_1467.jar.sig))
+([gpg signature][jar_sig])
 and then clicking on the file may work on some systems, but if there are
 problems we recommend the above command lines. If wget is not installed,
 it can be installed with a package manager, such as sudo apt-get install wget
@@ -163,7 +163,11 @@ to join us and help it would be much appreciated!
 If this doesn't work on a headless server, try
 "java -jar new_installer_offline.jar -console", and follow the prompts to
 tell it where to install Freenet etc.
-""") + "\n\n" + """
+""") + """
+
+[jar_sig]: FREENET_MAIN_JAR_SIG_URL
+
+""" + """
 <a id="mirrored"></a>""" + "\n\n" + _("""
 ### Mirrored installation
 
