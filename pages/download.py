@@ -111,16 +111,14 @@ Freenet requires Windows XP or later.
 """)))+div("macos",md(_("""
 ### OS X
 
-[Install Freenet 0.7](assets/jnlp/freenet.jnlp) using Java Web Start.  
-This requires that Java is installed and that Java Web Start is enabled. If
-it doesn't work, try [installing Java](http://www.java.com/),
-then downloading [the installer](assets/jnlp/freenet_installer.jar) and
-opening it. It might take a moment to launch.
+Download and run [the installer](https://github.com/steveatinfincia/mactray/releases/download/v2.0.0/FreenetTray_2.0.0-signed.zip)
 
-**Note:** Mavericks does not ship with Java Web Start enabled. We would like
-to make a _.dmg_ for easier OS X installation but don't know how yet. If you
-are a developer and would like to join us and help it would be much
-appreciated!
+It will automatically install Freenet and other required components for you.
+When done, your default browser will automatically open up to Freenet's
+web-based user interface. (Freenet contains **NO spyware or adware** ,
+it's Free Software! The source code is publicly available for review)
+
+Freenet requires OS X 10.8 or later.
 """)))+div("unix",md(_("""
 ### GNU/Linux & POSIX
 
