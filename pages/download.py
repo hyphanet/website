@@ -112,6 +112,7 @@ Freenet requires Windows XP or later.
 ### OS X
 
 Download and run [the installer](https://github.com/steveatinfincia/mactray/releases/download/v2.0.0/FreenetTray_2.0.0-signed.zip)
+([gpg signature](https://github.com/steveatinfincia/mactray/releases/download/v2.0.0/FreenetTray_2.0.0-signed.zip.sig))
 
 It will automatically install Freenet and other required components for you.
 When done, your default browser will automatically open up to Freenet's
