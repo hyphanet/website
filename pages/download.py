@@ -116,8 +116,7 @@ Download and run [the installer](https://github.com/steveatinfincia/mactray/rele
 
 It will automatically install Freenet and other required components for you.
 When done, your default browser will automatically open up to Freenet's
-web-based user interface. (Freenet contains **NO spyware or adware** ,
-it's Free Software! The source code is publicly available for review)
+web-based user interface.
 
 Freenet requires OS X 10.8 or later.
 """)))+div("unix",md(_("""
