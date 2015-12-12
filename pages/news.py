@@ -14,7 +14,7 @@ class NewsItem(object):
         return "[{title}](news.html#{anchor})".format(anchor=self.section, title=self.title)
 
 def news_items():
-    # write these in markdown
+    donate_button = """<a class="btn button-custom btn-custom-two donate-button" href="donate.html">""" + _("Donate now") + """</a>"""
     return [
         NewsItem("20151206-donation-appeal", _("2015-12-07 - Appeal for donations"),
 _("""
@@ -30,10 +30,12 @@ We are extremely excited for the future of Freenet and the [projects built on to
 There is so much more work to do, and full-time developers greatly benefit the project.
 Please consider donating to help us keep Internet freedom alive and expand human liberty.
 
+{donate_button}
+
 Thank you,
 
 Freenet Project volunteers
-""") + """
+""").format(donate_button=donate_button) + """
 
 [build18]: https://github.com/freenet/plugin-WebOfTrust/releases/tag/build0018
 [projects]: https://wiki.freenetproject.org/Projects
