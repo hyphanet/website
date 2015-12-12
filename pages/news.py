@@ -14,7 +14,7 @@ class NewsItem(object):
         return "[{title}](news.html#{anchor})".format(anchor=self.section, title=self.title)
 
 def news_items():
-    donate_button = """<a class="btn button-custom btn-custom-two donate-button" href="donate.html">""" + _("Donate now") + """</a>"""
+    donate_button = """<a class="btn button-custom btn-custom-two donate-button" href="donate.html">""" + _("Donate today.") + """</a>"""
     return [
         NewsItem("20151206-donation-appeal", _("2015-12-07 - Appeal for donations"),
 _("""
@@ -28,9 +28,8 @@ This greatly reduces his capacity to continue this important work.
 
 We are extremely excited for the future of Freenet and the [projects built on top of it][projects].
 There is so much more work to do, and full-time developers greatly benefit the project.
-Please consider donating to help us keep Internet freedom alive and expand human liberty.
 
-{donate_button}
+Help us keep Internet freedom alive and expand human liberty. {donate_button}
 
 Thank you,
 
