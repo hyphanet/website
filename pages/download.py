@@ -72,6 +72,9 @@ def run_show_hide_script():
             if (OSName == "windows") {
                 download('assets/jnlp/FreenetInstaller.exe');
             }
+            if (OSName == "macos") {
+                download('https://github.com/freenet/mactray/releases/download/v2.0.0/FreenetTray_2.0.0-signed.zip');
+            }
             if (OSName == "unix") {
                 download('assets/jnlp/freenet.jnlp');
             }
@@ -111,15 +114,17 @@ Freenet requires Windows XP or later.
 """)))+div("macos",md(_("""
 ### OS X
 
-Download and run [the installer](https://github.com/steveatinfincia/mactray/releases/download/v2.0.0/FreenetTray_2.0.0-signed.zip)
-([gpg signature](https://github.com/steveatinfincia/mactray/releases/download/v2.0.0/FreenetTray_2.0.0-signed.zip.sig))
+Download and run [the installer][url_mac_installer] ([gpg signature][url_gpg_sig]).
 
 It will automatically install Freenet and other required components for you.
 When done, your default browser will automatically open up to Freenet's
 web-based user interface.
 
 Freenet requires OS X 10.8 or later.
-""")))+div("unix",md(_("""
+""") + "\n\n" + """
+[url_mac_installer]: https://github.com/freenet/mactray/releases/download/v2.0.0/FreenetTray_2.0.0-signed.zip
+[url_gpg_sig]: https://downloads.freenetproject.org/alpha/mactray/FreenetTray_2.0.0-signed.zip.sig
+"""))+div("unix",md(_("""
 ### GNU/Linux & POSIX
 
 Try the [Java Web Start installer](assets/jnlp/freenet.jnlp). If it doesn't
