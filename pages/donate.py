@@ -17,10 +17,6 @@ class DonateSection(Section):
         set_custom_amount = _("Or set your own amount:")
         custom_amount = _("Custom amount")
         return text(md(_("""
-#### Financial Status
-
-The project's current balance is **$MONEYBALANCE**. (updated every hour)
-""") + "\n\n" + _("""
 #### Why does The Freenet Project need donations?
 
 Although countless people have given their time and skill to the project since its inception, The Freenet Project relies on your donations to cover hosting and administrative costs (i.e. domain registrations and certificates).

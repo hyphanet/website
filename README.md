@@ -55,7 +55,7 @@ To generate a localized version suitable for a web server with multiview:
 
 To fill in the project balance substitution:
 
-    ./generate -l en && sed -ri 's/\<MONEYBALANCE\>/1337/' output/index.html output/donate.html
+    ./generate -l en && sed -ri 's/\<MONEYBALANCE\>/1337/' output/index.html
 
 The basic design is:
 
