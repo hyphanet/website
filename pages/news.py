@@ -18,12 +18,17 @@ def news_items():
     return [
         NewsItem("20151212-mactray", _("2015-12-12 - New OS X installer and tray app"),
 _("""
-The OS X installer is now newly written native OS X software which works better on modern OS X machines.
-It includes an updated [tray application][tray_url].
+The [Freenet installer][downloads_url] for OS X is now a native application. It should fix several major installation problems OS X users have encountered in the past.
+
+It also includes an updated [tray application][tray_url] with bugfixes and new features.
+
+All Freenet users on OS X are encouraged to [download][tray_release_url] the new tray application.
 
 ![][tray_screenshot_url]
 """) + """
+[downloads_url]: download.html
 [tray_screenshot_url]: assets/img/mactray/osx_installer_step2_transparent.png
+[tray_release_url]: https://github.com/freenet/mactray/releases
 [tray_url]: https://github.com/freenet/mactray#freenettray
 """),
         NewsItem("20151212-donation-appeal", _("2015-12-12 - Appeal for donations"),
