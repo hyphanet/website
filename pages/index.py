@@ -127,8 +127,8 @@ If one percent of people used Freenet, everyone could safely be a whistleblower.
                              donate_bar.className = "meter red";
                          }
                      </script>
-                     <p><i>$str__nonprofit</i></p>
                      <a class="btn button-custom btn-custom-two donate-button" href="donate.html">$str__donate_button_text</a>
+                     <p id="donate_fineprint">$str__nonprofit $str__tax_deductable $str__503_read_more</p>
                 </div>
             </div>
             <!-- DONATE SUBSECTION END -->
@@ -138,12 +138,12 @@ If one percent of people used Freenet, everyone could safely be a whistleblower.
 <!--HOME SECTION END-->
 """
         download_text = _("Download Freenet")
-        donate_text = md(_("""
-We are raising funds so we can continue paying our developer for another year.
-        """))
+        read_more = """<a href="{}" class="readmore">""" + _("""read more…""") + """</a>"""
+        donate_text = md(_("Help keep Internet freedom alive and expand human liberty! Support another year of paid development. [Learn more about our fundraiser.][url_fundraiser]") + "\n\n" + "[url_fundraiser]: news.html#20151206-donation-appeal")
         donate_button_text = _("Donate!")
         donation_target = "27500"
         nonprofit = _("The Freenet Project Inc is a non-profit 501(c)(3) organization.")
+        tax_deductable = _("""Donations are tax-deductible.""")
         return substitute_html(content,
             html__sliders=concat_html(sliders),
             str__download_text=download_text,
@@ -151,6 +151,8 @@ We are raising funds so we can continue paying our developer for another year.
             str__donate_button_text=donate_button_text,
             str__donation_target=donation_target,
             str__nonprofit=nonprofit,
+            str__tax_deductable=tax_deductable,
+            str__503_read_more=read_more.format("donate.html#fpi"),
         )
 
 

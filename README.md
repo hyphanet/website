@@ -53,6 +53,10 @@ To generate a localized version suitable for a web server with multiview:
 
  TODO - describe multiview; cookie config
 
+To fill in the project balance substitution:
+
+    ./generate -l en && sed -ri 's/\<MONEYBALANCE\>/1337/' output/index.html
+
 The basic design is:
 
 - settings.py contains the supported languages and the menu definition

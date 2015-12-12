@@ -17,24 +17,14 @@ class DonateSection(Section):
         set_custom_amount = _("Or set your own amount:")
         custom_amount = _("Custom amount")
         return text(md(_("""
-#### Financial Status
-
-The project's current balance is **$MONEYBALANCE**. (updated every hour)
-This will pay for the project's one paid developer (we have many volunteers) and
-the server for roughly another **MONEYMONTHS months** (MONEYDAYS days).
-""") + "\n\n" + _("""
 #### Why does The Freenet Project need donations?
 
-Although countless people have given their time and skill to the project since
-its inception, The Freenet Project relies on your donations both to support
-those developers working full-time on this increasingly complex project, and to
-cover hardware (this server) and administrative costs (i.e. domain
-registrations and certificates). We would also like to start a legal defense
-fund should the need arise.
+Although countless people have given their time and skill to the project since its inception, The Freenet Project relies on your donations to cover hosting and administrative costs (i.e. domain registrations and certificates).
+If we have enough funds, we can hire developers to work on Freenet.
+Currently we are raising $27500 to hire a developer for a year.
+[Learn more about our fundraiser.][url_fundraiser]
 
-Everyone involved is keenly interested in the future of The Freenet Project and
-you can be assured donations have been and will continue to be used wisely. All
-support is very much appreciated.
+All support is very much appreciated.
 """) + "\n\n" + _("""
 #### How can I donate?
 
@@ -48,6 +38,7 @@ You can become a member by signing up for a monthly recurring donation below (th
 Alternatively you can make a one-time donation.
 """) + "\n\n" + """
 [url_paypal]: https://www.paypal.com/
+[url_fundraiser]: news.html#20151206-donation-appeal
 """) + """
 <div class="row">
     <div class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0 col-lg-6 col-lg-offset-0">
@@ -198,10 +189,20 @@ Send your donations to {bitcoin_address}.
 * Alternatively, please contact us: {donate_email} if you cannot use any of these payment methods.
 
 * You can also donate to the project by purchasing items from the Freenet [store][url_zazzle_store].
-""").format(donate_email=donate_email, bitcoin_address=bitcoin_address) + "\n\n" + _("""
-## How can I be sure that my donation will be used appropriately?
+""").format(donate_email=donate_email, bitcoin_address=bitcoin_address) + "\n\n" + """
+[url_bitcoin]: http://www.bitcoin.org/
+[logo_bitcoin]: assets/img/BC_nBG_48px.png
+[url_zazzle_store]: http://www.zazzle.com/freenetproject
+"""))
 
-All donations go to The Freenet Project Inc, a non-profit 501(c)(3) organization with the following mission statement:
+class FreenetProjectIncSection(Section):
+    def __init__(self):
+        self.slug = "fpi"
+        self.title = _("The Freenet Non-Profit")
+    def get_content(self):
+        # License: GFDL (from old freenetproject.org website)
+        return text(md(_("""
+All donations go to The Freenet Project Inc, a 501(c)(3) non-profit organization with the following mission statement:
 
 > The specific purpose of this corporation is to assist in developing and
 > disseminating technological solutions to further the open and democratic
@@ -217,11 +218,10 @@ All donations go to The Freenet Project Inc, a non-profit 501(c)(3) organization
 
 All funds received will only be utilized to advance our Mission Statement, and
 are administered at the direction of the Freenet Project Board.
-""") + "\n\n" + """
-[url_bitcoin]: http://www.bitcoin.org/
-[logo_bitcoin]: assets/img/BC_nBG_48px.png
-[url_zazzle_store]: http://www.zazzle.com/freenetproject
-"""))
+
+The Freenet Project Inc is registered under EIN `95-4864038`
+""")))
+
 
 class SponsorsSection(Section):
     def __init__(self):
@@ -320,6 +320,7 @@ class DonatePage(Page):
         self.title = _("Donate")
         self.sections = [
             DonateSection(),
+            FreenetProjectIncSection(),
             SponsorsSection(),
             StoreSection(),
             ]

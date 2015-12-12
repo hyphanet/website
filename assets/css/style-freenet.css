@@ -240,12 +240,21 @@ padding-top: 7em;
     padding-top: 5em;
 }
 
-#home .donate p {
-font-style: italic;
-}
-
 #home .download {
 padding: inherit;
+}
+
+#donate_fineprint {
+    font-size: 85%;
+    margin-top: 5px;
+}
+
+.readmore:before {
+    content: '('
+}
+
+.readmore:after {
+    content: ')'
 }
 
 #home .social {
