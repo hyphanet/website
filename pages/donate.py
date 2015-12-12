@@ -26,6 +26,7 @@ The project's current balance is **$MONEYBALANCE**. (updated every hour)
 Although countless people have given their time and skill to the project since its inception, The Freenet Project relies on your donations to cover hosting and administrative costs (i.e. domain registrations and certificates).
 If we have enough funds, we can hire developers to work on Freenet.
 Currently we are raising $27500 to hire a developer for a year.
+[Learn more about our fundraiser.][url_fundraiser]
 
 All support is very much appreciated.
 """) + "\n\n" + _("""
@@ -41,6 +42,7 @@ You can become a member by signing up for a monthly recurring donation below (th
 Alternatively you can make a one-time donation.
 """) + "\n\n" + """
 [url_paypal]: https://www.paypal.com/
+[url_fundraiser]: news.html#20151206-donation-appeal
 """) + """
 <div class="row">
     <div class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0 col-lg-6 col-lg-offset-0">
