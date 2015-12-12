@@ -117,8 +117,7 @@ Freenet requires Windows XP or later.
 Download and run [the installer][url_mac_installer] ([gpg signature][url_gpg_sig]).
 
 It will automatically install Freenet and other required components for you.
-When done, your default browser will automatically open up to Freenet's
-web-based user interface.
+When done, your default browser will automatically open up to Freenet's web-based user interface.
 
 Freenet requires OS X 10.8 or later.
 """) + "\n\n" + """
