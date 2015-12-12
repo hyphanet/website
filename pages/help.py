@@ -8,20 +8,20 @@ class FaqSubSection(object):
         self.items = items
     def generate(self):
         content = """
-<h2>$title</h2>
-$items
+<h2>$str__title</h2>
+$html__items
 """
-        items = "".join([x.generate() for x in self.items])
-        return string.Template(content).substitute(title=self.title, items=items)
+        items = concat_html([x.generate() for x in self.items])
+        return substitute_html(content, str__title=self.title, html__items=items)
     def generate_index(self):
         content = """
-<h3>$title</h3>
+<h3>$str__title</h3>
 <ol>
-$itemlinks
+$html__itemlinks
 </ol>
 """
-        itemlinks = "".join([x.generate_link() for x in self.items])
-        return string.Template(content).substitute(title=self.title, itemlinks=itemlinks)
+        itemlinks = concat_html([x.generate_link() for x in self.items])
+        return substitute_html(content, str__title=self.title, html__itemlinks=itemlinks)
     
 class FaqItem(object):
     def __init__(self, name, title, content):
@@ -30,16 +30,15 @@ class FaqItem(object):
         self.content = content
     def generate(self):
         content = """
-<p><a class="anchor" id="$name"></a><h3>$title</h3><br/>
-    $content
-</p>        
+<a id="$str__name"></a><h3>$str__title</h3>
+$md__content
 """
-        return string.Template(content).substitute(name=self.name, title=force_unicode(self.title), content=md(self.content))
+        return substitute_html(content, str__name=self.name, str__title=self.title, md__content=md(self.content))
     def generate_link(self):
         content = """
-<li><a href="#$name">$title</a></li>
+<li><a href="#$str__name">$str__title</a></li>
 """
-        return string.Template(content).substitute(name=self.name, title=self.title)
+        return substitute_html(content, str__name=self.name, str__title=self.title)
 
 class FaqSection(Section):
     # FIXME: this should probably be split up for easier maintenance and easier translation
@@ -295,17 +294,19 @@ While most people wish that child pornography and terrorism did not exist,
 humanity should not be deprived of their freedom to communicate just because
 of how a very small number of people might use that freedom.
 """)),
-                    FaqItem("offensive", _("I don't want my node to be used to harbor child porn, offensive content or terrorism. What can I do?"), _("""
-The true test of someone who claims to believe in Freedom of Speech is
-whether they tolerate speech which they disagree with, or even find
-disgusting. If this is not acceptable to you, you should not run a Freenet
-node. Also, content in Freenet is available only as long as it is popular,
-so it will go away if people lose interest. However, it should persist for
-some time, and if enough people are interested, it will persist forever. Note
-that other people's file are encrypted and split into pieces. They are not
-stored on your machine in their entirety. Your instance of Freenet will
-likely have a very small number of encrypted pieces from a given file. A file
-can only be assembled when all its pieces are combined with the decryption key.
+                    FaqItem("offensive", _("I don't want my node to be used to harbor child porn, offensive content, or terrorism. What can I do?"), _("""
+This is a problem that sadly any censorship-resistance tool faces.
+If the capacity to remove content existed, it might only be used to remove things one finds offensive, but it could be used to remove anything.
+From a technological point of view one cannot have censorship-resistance with exceptions.
+Freenet is merely a tool that by itself doesn't do anything to promote offensive content.
+How people choose to use the tool is their sole responsibility.
+As a communication medium, Freenet cannot be considered responsible for what people use it for — just like Internet Service Providers, telecoms, or postal services cannot be held responsible for their users either.
+
+Note that files are encrypted and split into pieces.
+They are not stored on your machine in their entirety.
+Your instance of Freenet will likely have very few encrypted pieces of a given file, if any.
+These pieces cannot be used as parts of the file they were made from without additional information.
+Reassembling a file requires knowing both what pieces to use and the key to decrypt them, neither of which is included with each piece.
 """)),
                     FaqItem("export", _("How about encryption export restrictions?"), _("""
 The Freenet Project has notified the US authorities that it will be exporting
@@ -489,13 +490,12 @@ Freenet logs messages excessively during normal operation. It's something we're
 aware of and are working on.
 """)),
                     FaqItem("kaspersky", _("I have Kaspersky anti-virus, and Freenet doesn't install, or shows \"Download/upload queue database corrupted!\""), _("""
-                    Kaspersky can be a problem with Freenet. See [here](
-https://wiki.freenetproject.org/Installing/Windows#.27Download
-.2Fupload_queue_database_corrupted.21.27_.28When_using_Kaspersky_on_Windows_7
-.29). We recommend you turn off Kaspersky during install and during node
-startup, and exclude the directory you installed Freenet in (most likely
-C:\Program Files\Freenet or C:\Program Files (x86)\Freenet).
-""")),
+Kaspersky can be a problem with Freenet. See [here][url_kaspersky].
+We recommend you turn off Kaspersky during install and during node startup, and exclude the directory you installed Freenet in (most likely {freenet_install_dir_1} or {freenet_install_dir_2}).
+""").format(freenet_install_dir_1="C:\Program Files\Freenet",
+            freenet_install_dir_2="C:\Program Files (x86)\Freenet") + "\n\n" + """
+[url_kaspersky]: https://wiki.freenetproject.org/Installing/Windows#.27Download.2Fupload_queue_database_corrupted.21.27_.28When_using_Kaspersky_on_Windows_7.29
+"""),
                     FaqItem("forgotpass", _("I set a password and now I forgot it, what can I do?"), _("""
 The password protects your downloads and uploads and the client-cache (cache
 of what you've recently browsed on Freenet). It is stored in the file
@@ -594,15 +594,16 @@ spelling/grammar mistakes, new ideas (see [the previous answer](#idea)),
 are all welcome. You may find [the wiki](
 https://wiki.freenetproject.org/Main_Page) helpful.
 """) + "\n\n" + _("""
-If you have any questions about contributing, please contact us, via [the
-developers mailing list](https://emu.freenetproject.org/cgi-bin/mailman
-/listinfo/devl/), [the chat channel](help.html#irc), [the support
-mailing list](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/support)
-or anonymously via the freenet board on FMS.
+If you have any questions about contributing, please contact us, via [the developers mailing list][url_devlist], [the chat channel][url_chat], [the support mailing list][url_supportlist] or anonymously via the freenet board on FMS.
 
-Last but not least you can [donate](donate.html) to support our paid
+Last but not least you can [donate][url_donate] to support our paid
 developer(s) and cover server costs.
-""")),
+""") + "\n\n" + """
+[url_devlist]: https://emu.freenetproject.org/cgi-bin/mailman/listinfo/devl/
+[url_supportlist]: https://emu.freenetproject.org/cgi-bin/mailman/listinfo/support
+[url_chat]: help.html#irc
+[url_donate]: donate.html
+"""),
                     FaqItem("access", _("How can I access the code and website?"), _("""
 See our [GitHub repository](https://github.com/freenet/).
 """)),
@@ -942,24 +943,45 @@ https://wiki.freenetproject.org/Program_files) for details on some of the
 files.
 """)),
                     FaqItem("smartscreen", _("Windows SmartScreen filter warns the Freenet installer might put my PC at risk. What's going on?"), _("""
-[SmartScreen](http://windows.microsoft.com/en-us/windows7/smartscreen-filter
--frequently-asked-questions-ie9) is sometimes incorrect in classifying a file
-as dangerous. We believe our installer is not infected with malicious
-software, and if you are a developer you can check the installer source code
-[here](https://github.com/freenet/wininstaller-innosetup).
-""")),
+[SmartScreen][url_smartscreen] is sometimes incorrect in classifying a file as dangerous.
+We believe our installer is not infected with malicious software, and if you are a developer you can check the installer source code [here][url_installer].
+""") + "\n\n" + """
+[url_smartscreen]: http://windows.microsoft.com/en-us/windows7/smartscreen-filter-frequently-asked-questions-ie9
+[url_installer]: https://github.com/freenet/wininstaller-innosetup
+"""),
+                    FaqItem("legal-trouble", _("Has anyone ever faced legal trouble for their anonymous activities conducted on Freenet?"),
+_("""
+Yes.
+There is one such instance that we know of.
+United States law enforcement can identify anonymous users of [Freenet][f] and [Tor][t].
+Without further information we do not know how they did this, but we suspect it affects people using the network security level "normal" or lower.
+It is reasonable to assume that other governments have access to the same technology, which is provided by private contractors.
+If you are concerned about governments, you should use Freenet's capacity to connect only to users you trust, ("high" network security level or higher) and bear in mind that no anonymity technology provides perfect protection.
+
+While we applaud law enforcement's apparent success in apprehending suspects allegedly sharing child abuse images, any security flaws they may have used are not limited to such noble usage.
+Many governments persecute and prosecute political dissidents for legitimate speech published online.
+Therefore we hope to discover and fix these flaws to protect those who fight for human rights, against corruption, for a peaceful future, and for other legitimate goals.
+""") + """
+
+[f]: http://www.thedickinsonpress.com/news/north-dakota/3885239-predators-police-online-struggle
+[t]: http://motherboard.vice.com/read/court-docs-show-a-university-helped-fbi-bust-silk-road-2-child-porn-suspects
+"""),
                 ]),
             ]
-        table_of_contents = "".join([x.generate_index() for x in subsections])
-        content = "".join([x.generate() for x in subsections])
+        table_of_contents = concat_html([x.generate_index() for x in subsections])
+        content = concat_html([x.generate() for x in subsections])
         
-        return text(force_unicode(table_of_contents) + md("""
+        return text(table_of_contents + md(_("""
 ### Additional information sources
 
-*   [Wiki FAQ page](https://wiki.freenetproject.org/FAQ)
-*   [Security summary](https://wiki.freenetproject.org/Security_summary)
-*   [High quality copy of the rabbit icon](assets/img/rabbit/freenet-bunny.svg)
-""")+force_unicode(content))
+*   [Wiki FAQ page][url_wiki]
+*   [Security summary][url_security]
+*   [High quality copy of the rabbit icon][url_rabbit_icon]
+""") + "\n\n" + """
+[url_wiki]: https://wiki.freenetproject.org/FAQ
+[url_security]: https://wiki.freenetproject.org/Security_summary
+[url_rabbit_icon]: assets/img/rabbit/freenet-bunny.svg
+""") + content)
 
 class MailingListSection(Section):
     def __init__(self):
@@ -1028,9 +1050,10 @@ forgot it.)_
   C++?" should be addressed to this list.
 
 _**Third party tools**: We are hosting some other mailing lists on our server
-here is the [full list](https://emu.freenetproject.org/cgi-bin/mailman
-/listinfo/)._
-""")))
+here is the [full list][url_listinfo]._
+""") + "\n\n" + """
+[url_listinfo]: https://emu.freenetproject.org/cgi-bin/mailman/listinfo/
+"""))
 
 class SuggestionsSection(Section):
     def __init__(self):
@@ -1044,19 +1067,11 @@ class ChatSection(Section):
     def get_content(self):
         # License: GFDL (from old freenetproject.org website)
         return text(md(_("""
-Many of the developers and users of Freenet can often be found on an [IRC](
-https://en.wikipedia.org/wiki/IRC) channel, #freenet on chat.freenode.net.
-Almost everyone on the channel is a volunteer, and may be busy with other
-things, so you may not get an instant answer: **Ask your question/say what
-the problem is, then wait for a few minutes, and somebody may help you**.
-
-[Chat with us](https://webchat.freenode.net/?randomnick=1&channels=freenet)
-
-If you do not get an answer within the first few minutes, please keep the
-chat window open. We read our backlog, and if you stay, you will normally get
-an answer **within at most 4 hours** (when people with the relevant knowledge
-wake up).
-""")))
+Many of the developers and users of Freenet are on the [IRC](
+https://en.wikipedia.org/wiki/IRC) channel #freenet on chat.freenode.net.
+""") + "\n\n" + """
+<a href="#chatlink" id="chatlink" class="btn button-custom btn-custom-two">{}</a>
+""".format(_("Chat with us"))))
 
 class SetupSection(Section):
     def __init__(self):

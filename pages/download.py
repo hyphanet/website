@@ -3,8 +3,8 @@ import string
 import markdown
 from .common import *
 
-def div(name, content):
-    return """<div id="{}">{}</div>""".format(name, content)
+def div(id, content):
+    return substitute_html("""<div id="$str__id">$html__content</div>""", str__id=id, html__content=content)
     
 def show_hide_script():
     # License: GFDL (from old freenetproject.org website)
@@ -85,7 +85,7 @@ class DownloadSection(Section):
         self.slug = "download"
     def get_content(self):
         # License for all content in this section: GFDL (from old freenetproject.org website)
-        return show_hide_script()+text("<a name=\"autostart\" class=\"anchor\"></a>"+md(_("""
+        return show_hide_script()+text("""<a id="autostart"></a>""" + md(_("""
 [Step by step guide](http://freesocial.draketo.de/) to setting up Freenet and
 various Freenet apps. Please try this, especially if installing on OS X. We
 are not responsible for unofficial third party apps it recommends (including
@@ -141,7 +141,7 @@ Open a terminal and run:
     java -jar new_installer_offline.jar
 """ + "\n\n" + _("""
 Alternatively, downloading [the installer](assets/jnlp/freenet_installer.jar)
-([gpg signature](https://downloads.freenetproject.org/alpha/installer/new_installer_offline_1467.jar.sig))
+([gpg signature][jar_sig])
 and then clicking on the file may work on some systems, but if there are
 problems we recommend the above command lines. If wget is not installed,
 it can be installed with a package manager, such as sudo apt-get install wget
@@ -161,8 +161,12 @@ to join us and help it would be much appreciated!
 If this doesn't work on a headless server, try
 "java -jar new_installer_offline.jar -console", and follow the prompts to
 tell it where to install Freenet etc.
-""") + "\n\n" + """
-<a class="anchor" name="mirrored"></a>""" + "\n\n" + _("""
+""") + """
+
+[jar_sig]: FREENET_MAIN_JAR_SIG_URL
+
+""" + """
+<a id="mirrored"></a>""" + "\n\n" + _("""
 ### Mirrored installation
 
 If you have a working Freenet installation directory that you have mirrored
@@ -172,7 +176,7 @@ cares about its host's IP address; it can't, or Freenet would fail on
 machines that get IP addresses from a DHCP pool.
 
 All you actually need to do is tell the system you've mirrored to that it
-should start the Freenet proxy daemon for you on boot. Do <tt>crontab -l</tt>
+should start the Freenet proxy daemon for you on boot. Do `crontab -l`
 on the source machine, find the line that is tagged "FREENET AUTOSTART" and
 add that to your crontab on the mirrored machine.
 
@@ -288,12 +292,14 @@ Normally Freenet will connect automatically and should "just work",
 automatically connecting to other nodes (Strangers). However,
 if you know several people who are already using Freenet, you can
 enable high security mode and 
-[add them as Friends](http://127.0.0.1:8888/addfriend/").
+[add them as Friends][url_addfriend].
 so Freenet will only connect to them, making your usage of Freenet 
 almost undetectable, while still being able to access the rest of the
 network through their friends' friends etc. This will be slower unless 
 you add 10+ friends who are usually online when you are.
-""")))
+""") + "\n\n" + """
+[url_addfriend]: http://127.0.0.1:8888/addfriend/
+"""))
 
 class DownloadPage(Page):
     def __init__(self):

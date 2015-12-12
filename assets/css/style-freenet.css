@@ -55,8 +55,8 @@ overflow: visible;
 }
 
 section {
-padding-top: 80px;
-padding-bottom: 40px;
+padding-top: 1em;
+padding-bottom: 2em;
 }
 
 .pad-bottom {
@@ -88,6 +88,18 @@ a:focus {
 
 h4 {
     font-weight: bold;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* =============================================================
+OVERRIDE GLOBAL COLOR FOR MODAL DIALOG
+============================================================ */
+
+.modal-content {
+    color: black;
 }
 
 /* =============================================================
@@ -145,9 +157,15 @@ background-color: rgba(0, 0, 0, 0.8);
 border-color: transparent;
 }
 
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav-page > .active > a, .navbar-inverse .navbar-nav-page > .active > a:hover, .navbar-inverse .navbar-nav-page > .active > a:focus {
-background-color: transparent;
-border-bottom: 1px solid rgb(40, 141, 203);
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav-page > .active > a,
+.navbar-inverse .navbar-nav-page > .active > a:hover,
+.navbar-inverse .navbar-nav-page > .active > a:focus {
+    background-color: transparent;
+    border-bottom: 1px solid rgb(40, 141, 203);
+    padding-bottom: 0px;
 }
 
 .navbar-inverse .navbar-nav > li > a,  .navbar-inverse .navbar-nav-page > li > a{
@@ -165,8 +183,8 @@ padding-bottom: 1px; /* to make space for the blue activation line */
 }
 
 .navbar-inverse .navbar-nav-page > li > a {
-font-size: 13px;
-margin: 10px 20px 10px 20px;
+    font-size: 13px;
+    margin: 10px 1em;
 }
 
 .navbar-inverse .navbar-nav-language > li > a {
@@ -206,27 +224,37 @@ background-color: rgb(40, 141, 203);
 border-color: rgb(40, 141, 203);
 }
 
-
 /* =============================================================
 HOME SECTION STYLES
 ============================================================ */
 
 #home {
 text-align: center;
-padding-top: 120px;
-padding-bottom: 60px;
 }
 
-#home .donate {
+#home .sidebar {
 padding-top: 7em;
 }
 
-#home .donate p {
-font-style: italic;
+#donate_button {
+    padding-top: 5em;
 }
 
 #home .download {
 padding: inherit;
+}
+
+#donate_fineprint {
+    font-size: 85%;
+    margin-top: 5px;
+}
+
+.readmore:before {
+    content: '('
+}
+
+.readmore:after {
+    content: ')'
 }
 
 #home .social {
@@ -237,19 +265,13 @@ margin: 50px 20px;
 /*Carousel Slider*/
 
 #carousel-slider {
-padding: 50px 20px 5px 20px;
-height: 20em;
-}
-
-#carousel-slider h3 {
-line-height: 50px;
-font-family: 'Oswald', sans-serif;
+padding-left: 20px;
+padding-right: 20px;
 }
 
 #carousel-slider p {
-font-size: 16px;
-line-height: 25px;
-margin: 25px 20px;
+margin-left: 20px;
+margin-right: 20px;
 }
 
 /*Hide Suma-award notice on small screens*/
@@ -275,8 +297,18 @@ margin: 25px 20px;
 
 Any kind of usage allowed: https://css-tricks.com/license/ */
 
+.meter .quantity {
+  z-index: 10;
+  line-height: 1.25em;
+  position: absolute;
+  font-size: medium;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
 .meter {
-	height: 25px;  /* Can be anything */
+	height: 30px;
     margin-bottom: 0.5em;
 	position: relative;
 	background: #00375E;
@@ -689,13 +721,6 @@ font-size:10px;
 
 color:#fff;
 text-decoration:none;
-}
-
-/* Shift the anchors so links to them won't cause the title to end up under the menu at the top of the page */
-a.anchor {
-display: block;
-position: relative;
-top: -250px;visibility: hidden;
 }
 
 /* Fix fadein so browser search for text works on long pages */

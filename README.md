@@ -1,6 +1,16 @@
 # Website #
 
-## For Translators ##
+*Reporting issues*: Please add bugs and feature requests to the [project bug tracker](https://bugs.freenetproject.org/search.php?project_id=21&sticky_issues=off&sortby=last_updated&dir=DESC&hide_status_id=90&match_type=0).
+
+## Table of Contents ##
+
+* [Translations](#translations)
+* [Requirements](#requirements)
+* [Usage](#usage)
+* [License](#license)
+* [FAQ](#faq)
+
+## Translations ##
 
 *Note that by contributing a translation you agree to triple license it under the GFDL, CC-BY-SA 4.0 and GPLv2+ licenses.*
 
@@ -31,7 +41,7 @@ Tips:
 * Markdown: https://pypi.python.org/pypi/Markdown
 * Python 3: http://python.org
 
-## Development ##
+## Usage ##
 
 To generate a single language for local development:
 
@@ -42,6 +52,10 @@ To generate a localized version suitable for a web server with multiview:
     ./generate
 
  TODO - describe multiview; cookie config
+
+To fill in the project balance substitution:
+
+    ./generate -l en && sed -ri 's/\<MONEYBALANCE\>/1337/' output/index.html
 
 The basic design is:
 

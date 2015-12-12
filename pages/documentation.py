@@ -49,7 +49,7 @@ class InstallSection(Section):
         # License: GFDL (from old freenetproject.org website)
         return text(md(_("""
 To install Freenet might not be as difficult as you might have heard. There are
-two ways to install Freenet:
+three ways to install Freenet:
 
 *   Graphical install
 *   Headless install
