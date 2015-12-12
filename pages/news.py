@@ -16,7 +16,7 @@ class NewsItem(object):
 def news_items():
     donate_button = """<a class="btn button-custom btn-custom-two donate-button" href="donate.html">""" + _("Donate today.") + """</a>"""
     return [
-        NewsItem("20151206-donation-appeal", _("2015-12-07 - Appeal for donations"),
+        NewsItem("20151212-donation-appeal", _("2015-12-12 - Appeal for donations"),
 _("""
 Freenet is a platform for censorship-resistant communication and publishing. For the past 15 years the project has built tools to fight for freedom of speech and information.
 Our software provides a decentralized peer-to-peer network designed to hide who publishes or accesses potentially controversial information - or even that it exists - especially useful for those living in oppressive political regimes.
