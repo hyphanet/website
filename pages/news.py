@@ -20,8 +20,10 @@ def news_items():
 _("""
 The OS X installer is now newly written native OS X software which works better on modern OS X machines.
 It includes an updated [tray application][tray_url].
-""") + """
 
+![][tray_screenshot_url]
+""") + """
+[tray_screenshot_url]: assets/img/mactray/osx_installer_step2_transparent.png
 [tray_url]: https://github.com/freenet/mactray#freenettray
 """),
         NewsItem("20151212-donation-appeal", _("2015-12-12 - Appeal for donations"),
