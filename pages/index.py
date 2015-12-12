@@ -139,7 +139,7 @@ If one percent of people used Freenet, everyone could safely be a whistleblower.
 """
         download_text = _("Download Freenet")
         read_more = """<a href="{}" class="readmore">""" + _("""read more…""") + """</a>"""
-        donate_text = md(_("Help keep Internet freedom alive and expand human liberty, support another year of paid development. [Learn more about our fundraiser.][url_fundraiser]") + "\n\n" + "[url_fundraiser]: news.html#20151206-donation-appeal")
+        donate_text = md(_("Help keep Internet freedom alive and expand human liberty! Support another year of paid development. [Learn more about our fundraiser.][url_fundraiser]") + "\n\n" + "[url_fundraiser]: news.html#20151206-donation-appeal")
         donate_button_text = _("Donate!")
         donation_target = "27500"
         nonprofit = _("The Freenet Project Inc is a non-profit 501(c)(3) organization.")
