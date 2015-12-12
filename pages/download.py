@@ -72,6 +72,9 @@ def run_show_hide_script():
             if (OSName == "windows") {
                 download('assets/jnlp/FreenetInstaller.exe');
             }
+            if (OSName == "macos") {
+                download('https://github.com/freenet/mactray/releases/download/v2.0.0/FreenetTray_2.0.0-signed.zip');
+            }
             if (OSName == "unix") {
                 download('assets/jnlp/freenet.jnlp');
             }
