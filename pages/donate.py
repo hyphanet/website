@@ -38,7 +38,7 @@ You can become a member by signing up for a monthly recurring donation below (th
 Alternatively you can make a one-time donation.
 """) + "\n\n" + """
 [url_paypal]: https://www.paypal.com/
-[url_fundraiser]: news.html#20151206-donation-appeal
+[url_fundraiser]: news.html#20151212-donation-appeal
 """) + """
 <div class="row">
     <div class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0 col-lg-6 col-lg-offset-0">
