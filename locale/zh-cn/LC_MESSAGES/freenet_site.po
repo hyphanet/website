@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Freenet\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-12-12 16:53-0500\n"
-"PO-Revision-Date: 2015-12-14 00:08+0000\n"
+"PO-Revision-Date: 2015-12-20 13:35+0000\n"
 "Last-Translator: Xiaoyu Huang <007pig@gmail.com>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/otf/freenet/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -436,14 +436,14 @@ msgid ""
 "mechanism for constructing small world networks that is inspired by Freenet's\n"
 "original design. Part II of the thesis describes the basis for the new\n"
 "Darknet architecture."
-msgstr ""
+msgstr "![][icon_pdf] [Searching in a Small World](assets/papers/lic.pdf) (PDF)  \nOskar Sandberg 的博士论文描述了一个简单的去中心化的机制，来构建一个小世界网络。此论文给 Freenet 最初的设计带来了灵感。论文的第二部分描述了新的暗网架构的基础。"
 
 #: pages/about.py:357
 msgid ""
 "![][icon_pdf] [Distributed routing in Small World Networks](assets/papers/swroute.pdf) (PDF)  \n"
 "A paper by Oskar Sandberg describing the theoretical basis for the new\n"
 "\"Darknet\" routing mechanism employed by Freenet 0.7."
-msgstr ""
+msgstr "![][icon_pdf] [Distributed routing in Small World Networks](assets/papers/swroute.pdf) (PDF)  \nOskar Sandberg 的论文描述了新的“暗网”路由机制的理论基础。Freenet 0.7 采用了它。"
 
 #: pages/about.py:361
 msgid ""
@@ -453,34 +453,34 @@ msgid ""
 "Clarke and Oskar Sandberg. It described the new \"darknet\" approach to be\n"
 "employed in Freenet 0.7\\. A Java demonstration to accompany the talk is [\n"
 "also](assets/papers/ccc-freenet-demo.tar.bz2) available."
-msgstr ""
+msgstr "![][icon_pdf] Chaos Computer Congress Talk (幻灯片)  \n这是2005年12月30日在德国柏林的 Chaos Computer Congress 大会上 Ian Clarke 和 Oskar Sandberg 演讲所使用的[幻灯片]。它描述了（当时）即将在 Freenet 0.7 中引入的“暗网”模式。演讲配套的 Java 演示程序可以[在这里下载](assets/papers/ccc-freenet-demo.tar.bz2)。"
 
 #: pages/about.py:368
 msgid ""
 "![][icon_pdf] [Switching for a small world](assets/papers/vilhelm_thesis.pdf) (PDF)  \n"
 "A thesis by Vilhelm Verendel exploring ways to optimise the swapping algorithm."
-msgstr ""
+msgstr "![][icon_pdf] [Switching for a small world](assets/papers/vilhelm_thesis.pdf) (PDF)  \nVilhelm Verendel 的论文探索了优化交换算法的途径。"
 
 #: pages/about.py:371
 msgid ""
 "![][icon_pdf] [Protecting Freedom of Information Online with Freenet](assets/papers/freenet-ieee.pdf) (PDF)  \n"
 "An IEEE Internet Computing article describing the Freenet architecture circa\n"
 "2002 - probably the best introduction to the theory behind Freenet."
-msgstr ""
+msgstr "![][icon_pdf] [Protecting Freedom of Information Online with Freenet](assets/papers/freenet-ieee.pdf) (PDF)  \n这是一篇 2002 年左右《IEEE Internet Computing》的文章，描述了 Freenet 的架构。这可能是对 Freenet 背后理论的最好介绍。"
 
 #: pages/about.py:375
 msgid ""
 "![][icon_pdf] [FreeNet White Paper](assets/papers/ddisrs.pdf) (PDF)  \n"
 "Original white paper by Ian Clarke, Division of Informatics, University of\n"
 "Edinburgh 1999."
-msgstr ""
+msgstr "![][icon_pdf] [FreeNet White Paper](assets/papers/ddisrs.pdf) (PDF)  \n这是 Ian Clarke 于 1999 年在英国爱丁堡大学信息学系撰写的白皮书原稿。"
 
 #: pages/about.py:383
 msgid ""
 "![][icon_pdf] [Attack Resistant Network Embeddings for Darknets](http://www.ukp.tu-darmstadt.de/fileadmin/user_upload/Group_P2P/share/publications/Attack_Resistant_Network_Embeddings_for_Darknets.pdf) (PDF)  \n"
 "A proposal for changing the darknet swapping algorithm which we are still\n"
 "considering (we have some doubts about long-term performance)."
-msgstr ""
+msgstr "![][icon_pdf] [Attack Resistant Network Embeddings for Darknets](http://www.ukp.tu-darmstadt.de/fileadmin/user_upload/Group_P2P/share/publications/Attack_Resistant_Network_Embeddings_for_Darknets.pdf) (PDF)  \n我们目前正在考虑的一篇关于修改暗网交换算法的提议（我们有些怀疑该方式长期运行会影响性能）。"
 
 #: pages/about.py:387
 msgid ""
@@ -488,26 +488,26 @@ msgid ""
 "A proposal for changing the routing algorithm which we are still considering\n"
 "(the worst case performance i.e. when a block has been lost may be\n"
 "unacceptable)."
-msgstr ""
+msgstr "![][icon_pdf] [A Contribution to Analyzing and Enhancing Darknet Routing](http://www.p2p.tu-darmstadt.de/publications/details/?no_cache=1&tx_bibtex_pi1%5Bpub_id%5D=TUD-CS-2013-0036) ([PDF](http://www.p2p.tu-darmstadt.de/fileadmin/user_upload/Group_P2P/share/INFOCOM.pdf))  \n我们正在考虑的一篇关于修改路由算法的提议（我们在考虑最坏的情况下的性能问题，也就是某个数据块丢失或无法接受的情况）。"
 
 #: pages/about.py:392
 msgid ""
 "![][icon_pdf] [Presentation: Towards \"Dark\" Social Networking Services (Strufe et al.)](https://www.icsi.berkeley.edu/icsi/sites/default/files/events/events_1303_strufe.pdf) (PDF)\n"
 "An interesting presentation by the group responsible for the two above papers."
-msgstr ""
+msgstr "![][icon_pdf] [Presentation: Towards \"Dark\" Social Networking Services (Strufe et al.)](https://www.icsi.berkeley.edu/icsi/sites/default/files/events/events_1303_strufe.pdf) (PDF)\n来自上面两篇论文团队的一个有趣的幻灯演示。"
 
 #: pages/about.py:395
 msgid ""
 "![][icon_pdf] [Pisces: Anonymous Communication Using Social Networks](http://arxiv.org/abs/1208.6326)  \n"
 "An algorithm for setting up onion-like tunnels on darknets. "
-msgstr ""
+msgstr "![][icon_pdf] [Pisces: Anonymous Communication Using Social Networks](http://arxiv.org/abs/1208.6326)  \n一篇关于在暗网中设置类似 Tor 隧道的算法论文。"
 
 #: pages/about.py:398
 msgid ""
 "![][icon_pdf] [Routing in the Dark: Pitch Black](http://grothoff.org/christian/pitchblack.pdf) ([citeseer](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.117.1543)) (PDF)  \n"
 "A paper describing some attacks on Freenet 0.7's location swapping algorithm.\n"
 "We have solutions for this but they are still being tested."
-msgstr ""
+msgstr "![][icon_pdf] [Routing in the Dark: Pitch Black](http://grothoff.org/christian/pitchblack.pdf) ([citeseer](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.117.1543)) (PDF)  \n这篇论文描述了一些对 Freenet 0.7 位置交换算法的攻击方式。\n我们对此已经有了解决方案，仍在测试中。"
 
 #: pages/about.py:406
 msgid ""
@@ -520,7 +520,7 @@ msgid ""
 "\n"
 "[icon_pdf]: assets/img/small-n-flat/file-pdf.png\n"
 "[icon_video]: assets/img/small-n-flat/file-video.png"
-msgstr ""
+msgstr "最新的参考资料当然是[源代码](\nhttps://github.com/freenet/fred)，但是\n[Wiki](https://wiki.freenetproject.org/) 中也有一些有用的文档（您可能需要搜索一下）。而很多实现的想法细节也曾在[邮件列表](help.html#mailing-lists)中讨论过。最近我们也经常在 Freenet\n中的论坛（如 FMS），或是[Bug 跟踪网站](https://bugs.freenetproject.org/)中讨论。\n\n[icon_pdf]: assets/img/small-n-flat/file-pdf.png\n[icon_video]: assets/img/small-n-flat/file-video.png"
 
 #: pages/about.py:420
 msgid "About"
@@ -662,7 +662,7 @@ msgid ""
 "mirrored a working Freenet installation to a machine without explicitly\n"
 "installing it, see [Mirrored install](download.html#mirrored). Otherwise,\n"
 "continue reading."
-msgstr ""
+msgstr "安装 Freenet 并不是您想像得那么难。安装 Freenet 有三种方式：\n\n*   图形界面安装\n*   无外设安装\n*   复制一个已安装的 Freenet 镜像\n\n如果您要在无图形界面的操作系统下安装 Freenet 软件，参见[无外设安装](download.html#unix)说明。如果您想复制一套安装好的 Freenet 到另一台电脑，参见[镜像安装](download.html#mirrored)。如果不是上述两种情况，请继续阅读本文。"
 
 #: pages/documentation.py:63
 msgid ""
@@ -684,7 +684,7 @@ msgid ""
 "again. Your home-directory should be a good place. The next step requires you\n"
 "to know where you stored the file (the path to it), so it is quite important\n"
 "that you do that step thoroughly."
-msgstr ""
+msgstr "#### 图形界面安装\n\n**下述内容在 Windows 系统下已经过时**。Windows 下您应该使用[Windows 安装程序](assets/jnlp/FreenetInstaller.exe)安装，参见[下载页面](download.html)。您也可以在[这里下载](https://downloads.freenetproject.org/latest/FreenetInstaller.exe) Windows 安装程序。\n\n要进行图形界面安装，您需要有：\n\n*   一个可以正常工作的 Java 运行库；\n*   最新版本的离线安装 jar 文件 [new_installer.jar](assets/jnlp/freenet_installer.jar)\n（如果前面的链接无法下载，可以试试[这个链接](https://downloads.freenetproject.org/latest/new_installer_offline.jar)）\n*   一个图形化用户界面（GUI）\n\n您应该将 new_installer.jar 保存到一个可以找到的地方，譬如您的下载目录。下一步您需要找到这个文件（知道其路径），因此这个步骤很重要。"
 
 #: pages/documentation.py:82
 msgid ""
@@ -745,7 +745,7 @@ msgid ""
 "If all has gone well, a browser window should have opened in the background.\n"
 "This will ask you a bunch of questions to configure Freenet, and then you\n"
 "should be able to use it."
-msgstr ""
+msgstr "要开始安装，您需要打开命令行提示符/终端/Shell 窗口。运行命令时，请将命令中的 **/path/to** 替换为 new_installer.jar 文件的真实路径（例如：/home/username/download/new_installer.jar）然后输入下面的命令：\n\n<pre>\t$ java -jar /path/to/new_installer_offline.jar</pre>\n\n首先弹出的窗口让您选择安装程序的语言。\n\n![](assets/img/install/1-langselect.png)\n\n接下来会显示关于对话框，显示一些 Freenet 版本和作者的信息。点击 **Next** 继续。\n\n![](assets/img/install/2-about.png)\n\n下一步选择 Freenet 的安装目录。GNU/Linux 和 POSIX 操作系统的默认安装目录是 **/home/username/Freenet**，如下图所示。您可以根据需要修改，或者直接点击 **Next** 按钮。\n\n![](assets/img/install/4-Install_directory.png)\n\n选择您要安装的 Freenet 组件。因为选择更多的组件不会使用额外的磁盘空间，建议您全部选择。完成后点击 **Next**。\n\n![](assets/img/install/5-select_packages.png)\n\n下一步，安装开始。当进度条走完，点击 **Next** 来到下一步。\n\n![](assets/img/install/6-Install_packages.png)\n\n完成后，Freenet 便安装或升级完成，插件会自动启用，Freenet 会自动开始运行。完成后，点击 **Next** 继续。\n\n![](assets/img/install/7-install_progress.png)\n\n在一些图形环境，可以创建菜单，不是所有环境都支持这一点。但是 Freenet 可运行的图形环境都支持创建桌面快捷方式。根据您的需要修改应用程序组，然后点击 **Next** 按钮。\n\n![](assets/img/install/8-create_shortcuts.png)\n\n安装完成！点击 **Done** 按钮关闭窗口。\n\n![](assets/img/install/9-Install_finished.png)\n\n如果一切正常，一个新的浏览器窗口会打开。打开的页面会询问您一些问题来配置 Freenet，之后您就可以正式开始使用 Freenet 了。"
 
 #: pages/documentation.py:140
 msgid ""
@@ -755,7 +755,7 @@ msgid ""
 "Freenet will need you to add Friends before you can use it. These must be\n"
 "people you personally know. Adding people you don't know will not improve\n"
 "security."
-msgstr ""
+msgstr "其中有一个问题是关于网络安全级别的 —— ”protection from strangers\nattacking you over the internet“（对陌生人通过互联网攻击您的保护）。如果您选择“低“或“中”，Freenet 应该“可以工作”了，需要等待数分钟连接到网络。如果您选择“高”或“最高”，您需要添加几个好友才能使用 Freenet。这些好友必须是您真实认识的。添加那些您不认识的人为好友不会提高安全性。"
 
 #: pages/documentation.py:152
 msgid "Connect"
@@ -779,7 +779,7 @@ msgid ""
 "To connect to your friends' nodes, you have to exchange Node references with\n"
 "them. The references must be added on **both sides** to be established. That\n"
 "is, you need to add his/hers, and he/she needs to add yours."
-msgstr ""
+msgstr "有两种方式连接到 Freenet：\n\n* 您可以启用非安全模式（安装向导会询问您），Freenet 就会自动查找并连接到陌生人。\n* 您可以连接到您认识的人运行的节点——好友。请注意他们应当是您比较熟识的人，以维护好的网络拓补和保证最大的安全性。\n\n实践中，两种模式是混合的，除非您比较偏执。非安全模式启用后会自动工作，因此接下来我们会主要介绍如何连接到好友。\n\n要连接到您好友的节点，您需要与他们互相交换节点信息。节点信息必须**双方**都要添加，连接才能建立。也就是，您要添加对方的节点信息，对方也要添加您的节点信息。"
 
 #: pages/documentation.py:172
 msgid ""
@@ -799,7 +799,7 @@ msgid ""
 "your Friends. In practice most people start off with insecure mode and\n"
 "gradually add Friends, and hopefully turn off insecure mode once they have at\n"
 "least 10 Friends."
-msgstr ""
+msgstr "*对于一个全新安装的 Freenet，您的数据存储中不会有任何数据，即使非安全模式启用，连接数也会很少。请求是随机发出的。**这会导致某些（或全部）请求在还未获取数据前便超时。**数天后，您的 Freenet 节点的速度才会变得正常，因此请勿沮丧。*\n\n您应当至少保证随时有 3 个节点连接，5 到 7 个连接是更理想的。因为某些节点有时无法连接，您需要添加更多的节点以保证连接数。只有那些直接与您的 Freenet 节点连接的节点才有可能侦测到通过您的节点的数据。但是如果非安全模式启用，任何节点都有可能侦测到。这就是**不启用**非安全模式的最大优点：您可以有效的隐身，只有您的好友知道。实践中很多人始于非安全模式并逐渐添加好友。当他们拥有超过 10 位好友时，关闭非安全模式"
 
 #: pages/documentation.py:189
 msgid ""
@@ -818,7 +818,7 @@ msgid ""
 "know. If that is not possible, then at least people you've talked to.\n"
 "\n"
 "There are a number of ways to add peer node references."
-msgstr ""
+msgstr "![](assets/img/Freenet-architecture-small.png)\n\n*图表 1: 可见的 Freenet 连接*\n\n图表中，一些其他的节点连接到**节点 A**（Node A） ，但是这些节点您都看不到。您只能看到与自己的节点（Your Node）建立连接的节点。流量路由算法因此仅会在与您建立连接的节点中寻找最合适的节点获取数据。\n\n传输的数据是加密的，因此与您连接的那些节点很难了结到您的 Freenet 节点到底获取了哪些数据，但是这并不是完全不可能的。所以您只能连接到您认识的人，这非常重要。如果很难实现，至少与那些您说过话的人建立连接。\n\n有数种方式添加他人的节点信息。"
 
 #: pages/documentation.py:205
 msgid ""
@@ -851,7 +851,7 @@ msgid ""
 "http://127.0.0.1:8888/friends/](http://127.0.0.1:8888/friends/) page,\n"
 "under the caption **My reference**. It might look something like this (cut\n"
 "for screen purposes):"
-msgstr ""
+msgstr "### Fproxy\n\n在 FProxy 中与好友节点建立连接有几种方式。最常见的方式是进入“朋友”菜单或直接访问 [http://127.0.0.1:8888/friends/](http://127.0.0.1:8888/friends/) 链接。然后您就可以找到下面的框添加好友了：\n\n![](assets/img/add_peers.png)\n\n如您所见，有三种方式添加好友的节点信息：\n\n*   直接将节点信息粘贴到那个大的输入框，\n*   输入节点信息的 URL，或，\n*   上传节点信息文件。\n\n[http://dark-code.bulix.org/](http://dark-code.bulix.org/) 网站被称为 \n**Paste-bin**，您可以将自己的节点信息复制粘贴到那个网站，选中“**private**”框，然后点击 **Paste** 按钮。\n\nPaste-bin 便会返回一个网址 (如：http://dark-code.bulix.org/yuf01h-34676?raw)，您可以将这个网址分享给自己的好友。请记得在网址后添加 **?raw**。添加后这个网址只会原封不动下载您的节点信息，而不会添加其他信息。\n\n您自己的 Freenet 节点信息可以在 [http://127.0.0.1:8888/friends/](http://127.0.0.1:8888/friends/) 朋友页面中“**我的节点信息**”一栏找到，它看上去如下图（因为页面宽度有限，内容做了裁剪）:"
 
 #: pages/documentation.py:253
 msgid ""
@@ -859,7 +859,7 @@ msgid ""
 "to make the connection work. This means that if you add a persons node\n"
 "reference on your side, but that person does not add your reference on\n"
 "his/her side, the connection **does not work**."
-msgstr ""
+msgstr "请记得您和您的好友必须都互相添加了对方的节点信息，你们才能互相连接。也就是说，如果您添加了某位好友的节点信息，但是他并没有添加您的节点信息，你们俩是**连不上的**。"
 
 #: pages/documentation.py:258
 msgid ""
@@ -883,7 +883,7 @@ msgid ""
 "\n"
 "In the Idle-column, you can see how much time has passed since the last status\n"
 "message."
-msgstr ""
+msgstr "### 暗网节点\n\n当您有了一定数量的好友连接时，您可以在“朋友”页面查看他们的状态。如下图：\n\n![](assets/img/Freenet-darknet_peers.png)\n\n这里可能看到几个状态信息。解释如下：\n\n* 已连接 - 节点已经连接，准备好接受您的请求\n* 暂不接受 - 节点十分繁忙，无法响应\n* 已断开 - 节点当前未连接到您的节点，可能已经关闭\n* 从未连接 - 两个节点间的连接从未建立。这可能是因为防火墙的限制或配置问题，或是一方没有添加另一方的节点信息，或是那些节点在当时还未上线来确认连接。如果问题持续了较长时间，尝试重新建立连接。\n\n在“空闲”那列，您可以看到自转换到上一个状态以来，经过了多长时间。"
 
 #: pages/documentation.py:284
 msgid "Content"
@@ -923,11 +923,11 @@ msgid ""
 "https://emu.freenetproject.org/cgi-bin/mailman/listinfo/support) - remember\n"
 "that we will only link to content that can be legally distributed in the\n"
 "United States of America."
-msgstr ""
+msgstr "除了匿名功能外，作为一个分布式内容网络，Freenet 还有如下优点：\n\n*   **完全去中心化**  \n内容可以插入到 Freenet 以供他人下载，无需中心服务器。插入后，只需要将内容的“键值”提供给他人，他人便可下载该内容。\n*   **自适应缓存**  \n许多 CDN 架构只允许已经下载了某个文件的节点将这个文件共享给其他节点。Freenet 节点则会在需要时自适应缓存数据，无论该节点是否已下载该数据。这个特性让 Freenet 可以比常规解决方案更快的传播流行文件，并改善了负载均衡。\n*   **强健的安全性**  \nFreenet 很久以前就已支持“内容哈希键值（Content Hash Keys）”，保证了接受到的数据的完整性。此方式后来被其他应用程序和架构借用。Freenet 也支持“已签名子空间键值（Signed Subspace Keys）”，可以对内容数字签名。这种方式也能保证数据的完整性，且比 CHK 更加灵活。\n*   **前向纠错**  \n与其他 CDN 架构类似，Freenet 引入了“前向纠错（Forward Error Correction）”机制，这样即使在文件的某些部分无法获取时，文件也可以被正确重建。Freenet 还有一个独特的特性：“恢复（healing）”，在需要时可以重建和自动插入丢失的文件数据。\n\n本页包含了一些 Freenet 上广泛可用的内容。如果您想将连接添加进来，可以[发邮件给我们](\nhttps://emu.freenetproject.org/cgi-bin/mailman/listinfo/support) - 请注意我们仅会添加那些符合美国法律的链接。"
 
 #: pages/documentation.py:325
 msgid "Understand"
-msgstr "理解"
+msgstr "原理"
 
 #: pages/documentation.py:328
 msgid ""
@@ -939,7 +939,7 @@ msgid ""
 "Freenet is a Peer-to-peer network, which is both decentralized and\n"
 "anonymized. The nodes that you connect to only knows its nearest neighbours\n"
 "and has no idea about how the network as a whole is structured."
-msgstr ""
+msgstr "Freenet 可被认为上一个大型的数据存储设备。当您将文件储存其中时，您会得到一个键值。在您将某个键值提供给 Freenet 时，它会下载键值对应的文件（如果文件存在）。这个存储设备的存储空间分布在所有的 Freenet 节点中。\n\nFreenet 是一个点对点的网络，去中心化且匿名。您连接的节点仅会知道其最近的邻居，对整个网络的组成结构是不知道的。"
 
 #: pages/documentation.py:337
 msgid ""
@@ -948,7 +948,7 @@ msgid ""
 "Freenet is built on the principle of small world networks. By connecting to\n"
 "nodes of people you already know, and the people you know in turn connect to\n"
 "people they know, one should be able to reach all nodes in a Freenet network."
-msgstr ""
+msgstr "### 小世界网络\n\nFreenet 基于“小世界网络”的理论构建。您只连接到自己认识的人的节点，而其他人也只连接到自己认识的人的节点，那么所有人都可以访问所有节点的数据。"
 
 #: pages/documentation.py:343
 msgid ""
@@ -957,7 +957,7 @@ msgid ""
 "All Freenet nodes contribute with a part of their harddrive space to store\n"
 "files. The files are stored encrypted in the **store**-directory in the\n"
 "Freenet installation directory."
-msgstr ""
+msgstr "### 数据存储\n\n所有 Freenet 节点都会贡献自己硬盘的一部分空间来储存文件数据。这些文件是加密储存在 Freenet 安装目录下的 **datastore** 目录中。"
 
 #: pages/documentation.py:349
 msgid ""
@@ -966,21 +966,21 @@ msgid ""
 "depending on how popular they are. This is to ensure that Freenet is\n"
 "censorship resistant. The only possible way to remove something from Freenet\n"
 "is to not search for it, and hope that everybody else does the same."
-msgstr ""
+msgstr "与其他点对点网络不同，作为一个用户，您无法控制储存在您的”数据存储“中的内容。事实上，文件是根据它们的流行程度来自动保留或删除的。这是为了保证 Freenet 无法被审查者删除。要从 Freenet 上删除内容的唯一方法是您不要搜索下载它，同时也寄希望于其他人不搜索下载它。"
 
 #: pages/documentation.py:355
 msgid ""
 "It is hard, but not impossible, to determine which files that are stored in\n"
 "your local Freenet Datastore. This is to enable plausible deniability as to\n"
 "what kind of material that lies on your harddrive in the datastore."
-msgstr ""
+msgstr "要了解您的本地 Freenet 数据存储中储存的内容非常困难（但并非不可能）。这样在遇到问题时，您便可以借故不知道自己电脑内储存的是什么内容而进行合理的推诿。"
 
 #: pages/documentation.py:359
 msgid ""
 "Freenet suggests an initial size based on how much space is available, and\n"
 "you can change the store size at any time. A larger store uses more RAM,\n"
 "but makes for better browsing for you and helps Freenet as a whole."
-msgstr ""
+msgstr "我们建议您根据自己的硬盘可用空间大小合理的设置 Freenet 数据存储的大小。您可以在以后随时更改它。更大的存储需要更多的内存，但是这能够让您更好的浏览 Freenet，同时也为整个 Freenet 作出了贡献。"
 
 #: pages/documentation.py:363
 msgid ""
@@ -991,7 +991,7 @@ msgid ""
 "random. But since different nodes have different randomness, they will\n"
 "disagree about where to send a request, given a key. So the data in a\n"
 "newly-started Freenet will be distributed somewhat randomly."
-msgstr ""
+msgstr "### Freenet 路由\n\n起初，每个节点都不了解它所知的其他节点的有关性能的信息。这意味着对请求的路由是随机的。但由于不同的节点都有不同的随机性，有些会拒绝对某个键值的请求。因此新启动的 Freenet 会被随机分布在某个位置。"
 
 #: pages/documentation.py:371
 msgid ""
@@ -1000,7 +1000,7 @@ msgid ""
 "rules are used for all of them. More importantly, as data items and requests\n"
 "from different nodes \"cross paths\", they will begin to share clustering\n"
 "information as well."
-msgstr ""
+msgstr "随着越来越多的数据被相同的节点插入，键值类似（参见下文）的数据将自动聚合起来，因为同样的路由规则对所有这些数据都是有效的。更重要的是，因为来自不同节点的数据内容和请求跨路径传输，节点便互相开始分享这些聚合信息。"
 
 #: pages/documentation.py:377
 msgid ""
@@ -1009,7 +1009,7 @@ msgid ""
 "together in key space. There will probably be multiple such clusters\n"
 "throughout the network, any given document being replicated numerous times,\n"
 "depending on how much it is used."
-msgstr ""
+msgstr "结果是整个网络会自我组织为一个分布式、聚合的结构，节点会趋向于储存键值空间接近的的数据。网络中可能有多个类似的聚合，根据数据的使用频率，数据会被重复储存多次。"
 
 #: pages/documentation.py:383
 msgid ""
@@ -1019,7 +1019,7 @@ msgid ""
 "has various types of keys. Keys are used for everything on freenet, and are a\n"
 "kind of [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) (\n"
 "e.g. freenet:=KSK@sample.txt)."
-msgstr ""
+msgstr "### Freenet 键值\n\n每个 Freenet 网络中的文件都有一个键值。Freenet 0.7 的键值有数种类型。Freenet 网络的一切都在使用键值，键值是 [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) (\ne.g. freenet:=KSK@sample.txt)（统一资源标识符）的一种。"
 
 #: pages/documentation.py:390
 msgid ""
@@ -1028,7 +1028,7 @@ msgid ""
 "closeness and similar popularity of data as there might be if keys did\n"
 "exhibit some semantic meaning, thus avoiding bottlenecks caused by popular\n"
 "subjects."
-msgstr ""
+msgstr "大部分的键值都是哈希值：我们在说键值比较接近，不是指它们在人可以看懂的那一部分比较接近。即使两个键值人能看懂的部分是一致的，键值接近和数据流行的相似程度间也没有直接的关系。两个语义相同的键值可以是不同的内容。这就避免了某个流行话题的相关数据太多，键值不够用的情况。"
 
 #: pages/documentation.py:396
 msgid ""
@@ -1046,7 +1046,7 @@ msgid ""
 "*   **SSK** - Signed Subspace Keys\n"
 "*   **USK** - Updateable Subspace Keys\n"
 "*   **KSK** - Keyword Signed Keys"
-msgstr ""
+msgstr "### 访问数据\n\n要访问 Freenet 上的数据，您可以使用 FProxy。您需要知道数据的键值，并使用如下网址访问（或者点击包含该键值的链接）：\n\n<pre>\thttp://localhost:8888/[Freenet 键值]</pre>\n\nFreenet 中有 4 种不同类型的键值：\n\n*   **CHK** - 内容哈希键值\n*   **SSK** - 已签名子空间键值\n*   **USK** - 可更新子空间键值\n*   **KSK** - 关键词签名键值"
 
 #: pages/documentation.py:411
 msgid ""
@@ -1058,7 +1058,7 @@ msgid ""
 "e.g. =KSK@sample.txt). These are spammable but convenient in some cases. And\n"
 "USKs are a form of updatable keys especially useful for freesites and\n"
 "**Address Resolution Keys**."
-msgstr ""
+msgstr "CHK 是最基础的。所有超过 1kB 的文件最终都会分割到一或多个 32kB 的 CHK 中。CHK 的文件名只根据它们的内容决定。SSK 是另外一种基本类型。它们是由一个公钥和一个人可读的文件名组合起来的，因此支持 Freesite 网站。KSK 是 SSK 的变种，其键值仅根据人可读的文件名（例如 =KSK@sample.txt）来决定。KSK 容易被垃圾信息骚扰，但是在某些情况下会比较方便。USK 是可更新的键值，对 Freesite 和**地址解析键值**（Address Resolution Key）特别有用。"
 
 #: pages/documentation.py:420
 msgid ""
@@ -1071,7 +1071,7 @@ msgid ""
 "\n"
 "ARKs are an implementation detail and you don't need to know anything about\n"
 "them to use Freenet."
-msgstr ""
+msgstr "地址解析键值 (ARK) 是一个可更新子空间键值 (USK)。节点在其 IP 地址改变后会自动插入该键值。它包含了节点的信息，包括加密细节和新的 IP 地址。在出现防火墙、路由的问题，或 IP 地址改变时，ARK 可以帮助人们连接到 Freenet。如果某人无法接收他人的传入连接，ARK 能帮得上忙。\n\nARK 是一个实现的细节，日常使用 Freenet 时您不需要了解它。"
 
 #: pages/documentation.py:430
 msgid ""
