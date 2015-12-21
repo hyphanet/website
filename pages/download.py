@@ -73,7 +73,7 @@ def run_show_hide_script():
                 download('assets/jnlp/FreenetInstaller.exe');
             }
             if (OSName == "macos") {
-                download('https://github.com/freenet/mactray/releases/download/v2.0.0/FreenetTray_2.0.0-signed.zip');
+                download('https://github.com/freenet/mactray/releases/download/v2.0.1/FreenetTray_2.0.1.zip');
             }
             if (OSName == "unix") {
                 download('assets/jnlp/freenet.jnlp');
@@ -121,8 +121,8 @@ When done, your default browser will automatically open up to Freenet's web-base
 
 Freenet requires OS X 10.8 or later.
 """) + "\n\n" + """
-[url_mac_installer]: https://github.com/freenet/mactray/releases/download/v2.0.0/FreenetTray_2.0.0-signed.zip
-[url_gpg_sig]: https://downloads.freenetproject.org/alpha/mactray/FreenetTray_2.0.0-signed.zip.sig
+[url_mac_installer]: https://github.com/freenet/mactray/releases/download/v2.0.1/FreenetTray_2.0.1.zip
+[url_gpg_sig]: https://downloads.freenetproject.org/alpha/mactray/FreenetTray_2.0.1.zip.sig
 """))+div("unix",md(_("""
 ### GNU/Linux & POSIX
 
