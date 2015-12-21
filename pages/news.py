@@ -31,6 +31,7 @@ During the hackathon we got some changes done:
 - Order alerts by date.
 - Progress toward Freemail "to" field autocomplete.
 - Progress toward changing the language setting in Winterface.
+- Progress toward building and verifying dependencies for Fred and Winterface using Gradle and gradle-witness.
 
 If we're able to get final changes ready build 1471-pre3 will be released the weekend of January 2nd.
 """)),
