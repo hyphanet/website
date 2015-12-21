@@ -20,14 +20,14 @@ def news_items():
 _("""
 During the hackathon we got some changes done:
 
-- Fix Bokmål localization loading.
-- Remove Gantros Index because it stopped updating.
-- Remove Linkageddon because it stopped updating.
 - Fix uploads stalling when using MAXIMUM physical security.
-- Remove deprecated negtype crypto.
 - Fix lots of "setNativePriority(X) has failed!"
+- Fix Bokmål localization loading.
 - Fix JVM version string parsing.
 - Fix and add test for broken localization substitution token pairs.
+- Remove Gantros Index because it stopped updating.
+- Remove Linkageddon because it stopped updating.
+- Remove deprecated negtype crypto.
 - Order alerts by date.
 - Progress toward Freemail "to" field autocomplete.
 - Progress toward changing the language setting in Winterface.
