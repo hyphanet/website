@@ -16,6 +16,24 @@ class NewsItem(object):
 def news_items():
     donate_button = """<a class="btn button-custom btn-custom-two donate-button" href="donate.html">""" + _("Donate today.") + """</a>"""
     return [
+        NewsItem("20151220-hackathon-results", _("2015-12-20 \"Weekend of Code\" hackathon results"),
+_("""
+During the hackathon we got some changes done:
+
+- Fix Bokmål localization loading.
+- Remove Gantros Index because it stopped updating.
+- Remove Linkageddon because it stopped updating.
+- Fix uploads stalling when using MAXIMUM physical security.
+- Remove deprecated negtype crypto.
+- Fix lots of "setNativePriority(X) has failed!"
+- Fix JVM version string parsing.
+- Fix and add test for broken localization substitution token pairs.
+- Order alerts by date.
+- Progress toward Freemail "to" field autocomplete.
+- Progress toward changing the language setting in Winterface.
+
+If we're able to get final changes ready build 1471-pre3 will be released the weekend of January 2nd.
+""")),
         NewsItem("20151212-mactray", _("2015-12-12 - New OS X installer and tray app"),
 _("""
 The [Freenet installer][downloads_url] for OS X is now a native application. It should fix several major installation problems OS X users have encountered in the past.
