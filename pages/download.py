@@ -167,7 +167,7 @@ If this doesn't work on a headless server, try
 tell it where to install Freenet etc.
 """) + """
 
-[jar_sig]: FREENET_MAIN_JAR_SIG_URL
+[jar_sig]: FREENET_INSTALLER_SIG_URL
 
 """ + """
 <a id="mirrored"></a>""" + "\n\n" + _("""
