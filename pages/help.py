@@ -208,7 +208,7 @@ improvement we need more people to start thinking like you. Bandwidth counts
 more than diskspace.
 """)),
                     FaqItem("legal", _("Is Freenet legal?"), _("""
-We don't currently know of any prosecutions for using merely using Freenet.
+We don't currently know of any prosecutions for merely using Freenet.
 Some people claim that the [DADVSI](https://en.wikipedia.org/wiki/DADVSI)
 makes Freenet illegal in France; the German data retention law might have
 required logging, but [was struck down](http://en.wikipedia.org/wiki/Telecommunications_data_retention#Germany).
