@@ -75,7 +75,7 @@ For a graphical installation you have to have:
     (if this does not work try [here](https://downloads.freenetproject.org/latest/new_installer_offline.jar))
 *   a working graphical user interface (GUI)
 
-You should save the new_installer.jar file somewhere were you can find it
+You should save the new_installer.jar file somewhere where you can find it
 again. Your home-directory should be a good place. The next step requires you
 to know where you stored the file (the path to it), so it is quite important
 that you do that step thoroughly.
