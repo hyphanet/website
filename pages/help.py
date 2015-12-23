@@ -385,7 +385,7 @@ settings config page](http://127.0.0.1:8888/config/node?mode=2) (in advanced
 mode), and find the option "IP address override". Put your domain name in
 that box, and apply the settings.
 """)),
-                    FaqItem("connection-perm", _("Do I need a permanent connection to run a node?"), _("""
+                    FaqItem("connection-perm", _("Do I need a permanent Internet connection to run a node?"), _("""
 No, but it is preferred. You can run the software and test it from a
 "transient" connection (e.g. dial up/mobile modem), but for the network as a
 whole to be most useful, we will need as many permanent nodes as possible (
