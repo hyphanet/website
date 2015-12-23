@@ -848,10 +848,7 @@ class FrostSection(Section):
     def get_content(self):
         # License: GFDL (from old freenetproject.org website)
         return text(md(_("""
-Frost is an application for Freenet that provides usenet-like message boards
-and file uploading/downloading/sharing functionalities. It should get
-installed with Freenet 0.7 automatically if you used the standard Freenet
-installers.
+Frost provides message boards with filesharing.
 
 To run Frost on GNU/Linux or POSIX from the command line, change to your
 Freenet install directory, then change to the frost subdirectory. Then make
