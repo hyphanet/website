@@ -39,7 +39,7 @@ data store.
 """) + "\n\n" + _("""
 Freenet has been downloaded over 2 million times since the project started,
 and used for the distribution of censored information all over the world
-including countries such as China and the Middle East. Ideas and concepts
+including countries such as China and in the Middle East. Ideas and concepts
 pioneered in Freenet have had a significant impact in the academic world. Our
 2000 paper "Freenet: A Distributed Anonymous Information Storage and
 Retrieval System" was the most cited computer science paper of 2000 according

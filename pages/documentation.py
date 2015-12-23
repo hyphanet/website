@@ -28,7 +28,7 @@ department.
      Explains the workings of Freenet, and a glossary with the most frequently
      used terms.
 *   [**Freemail**](#freemail)
-     How to setup Freenets own anonymous email service.
+     How to setup Freenet's own anonymous email service.
 *   [**Frost**](#frost)
      Frost is the oldest and most used messaging and file sharing tool in the
      Freenet suite. This describes how to set it up and use it for the first
@@ -75,7 +75,7 @@ For a graphical installation you have to have:
     (if this does not work try [here](https://downloads.freenetproject.org/latest/new_installer_offline.jar))
 *   a working graphical user interface (GUI)
 
-You should save the new_installer.jar file somewhere were you can find it
+You should save the new_installer.jar file somewhere where you can find it
 again. Your home-directory should be a good place. The next step requires you
 to know where you stored the file (the path to it), so it is quite important
 that you do that step thoroughly.
@@ -848,10 +848,7 @@ class FrostSection(Section):
     def get_content(self):
         # License: GFDL (from old freenetproject.org website)
         return text(md(_("""
-Frost is an application for Freenet that provides usenet-like message boards
-and file uploading/downloading/sharing functionalities. It should get
-installed with Freenet 0.7 automatically if you used the standard Freenet
-installers.
+Frost provides message boards with filesharing.
 
 To run Frost on GNU/Linux or POSIX from the command line, change to your
 Freenet install directory, then change to the frost subdirectory. Then make
