@@ -28,7 +28,7 @@ department.
      Explains the workings of Freenet, and a glossary with the most frequently
      used terms.
 *   [**Freemail**](#freemail)
-     How to setup Freenets own anonymous email service.
+     How to setup Freenet's own anonymous email service.
 *   [**Frost**](#frost)
      Frost is the oldest and most used messaging and file sharing tool in the
      Freenet suite. This describes how to set it up and use it for the first
