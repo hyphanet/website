@@ -16,6 +16,24 @@ class NewsItem(object):
 def news_items():
     donate_button = """<a class="btn button-custom btn-custom-two donate-button" href="donate.html">""" + _("Donate today.") + """</a>"""
     return [
+        NewsItem("20160103-1471-pre3", _("2016-01-03 - Testing release build 1471-pre3"),
+_("""
+Freenet unstable testing prerelease 1471-pre3 is now available.
+
+This is feature-complete and hopefully the last testing release before the stable release of build 1471.
+Build 1471 will be the last to support Java 6.
+
+Highlights:
+
+- Fix uploads stalling when using MAXIMUM physical security.
+- Fix lots of "setNativePriority(X) has failed!", which was caused by a serious thread priority problem. This might fix nodes unexpectedly losing peers.
+- Order alerts within a category by time: if you have lots of messages from darknet peers they will remain nicely sorted.
+
+For more information and how to help test see the [developer mailing list][devl_1471].
+""") + """
+
+[devl_1471]: https://emu.freenetproject.org/pipermail/devl/2016-January/038771.html
+"""),
         NewsItem("20151220-hackathon-results", _("2015-12-20 - \"Weekend of Code\" hackathon results"),
 _("""
 During the hackathon we got some changes done:
