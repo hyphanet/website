@@ -16,7 +16,7 @@ class NewsItem(object):
 def news_items():
     donate_button = """<a class="btn button-custom btn-custom-two donate-button" href="donate.html">""" + _("Donate today.") + """</a>"""
     return [
-        NewsItem("20151220-hackathon-results", _("2015-12-20 \"Weekend of Code\" hackathon results"),
+        NewsItem("20151220-hackathon-results", _("2015-12-20 - \"Weekend of Code\" hackathon results"),
 _("""
 During the hackathon we got some changes done:
 
