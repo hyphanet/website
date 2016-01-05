@@ -28,7 +28,7 @@ department.
      Explains the workings of Freenet, and a glossary with the most frequently
      used terms.
 *   [**Social**](#social)
-     How to setup E-Mail, Forums and Microblogging over Freenet.
+     How to setup email, forums and microblogging over Freenet.
 *   [**jSite**](#jsite)
      jSite is a Freenet website (a.k.a. Freesite) insertion tool.
 *   [**Wiki**](https://wiki.freenetproject.org/)
@@ -607,7 +607,7 @@ class SocialSection(Section):
     def get_content(self):
         # License: GFDL (from old freenetproject.org website)
         return text(md(_("""
-Freenet provides the foundation for anonymous E-Mail, Forums and Chat,
+Freenet provides the foundation for anonymous email, forums and chat,
 as well as a replacement for Facebook/Twitter. Setup of these is
 described in the
 [Freenet Social Networking Guide](http://freesocial.draketo.de/)
