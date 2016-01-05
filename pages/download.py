@@ -290,11 +290,11 @@ If you know other people who also use Freenet, you can
 safer against attacks on infrastructure of the Freenet Project
 (the [seednodes][url_seednode_info]).
 """) + "\n\n" + _("""
-Once you are connected to 5 or more friends, you can enable high
-security mode.  In high security mode Freenet will only connect to
-your friends, making your usage of Freenet almost undetectable, while
-still being able to access the rest of the network through their
-friends' friends.
+Once you are connected to 5 or more friends, you can enable
+**high security mode**.  In high security mode Freenet will only connect to
+your friends. This makes your usage of Freenet almost undetectable, but
+you are still able to access the rest of the network through your
+friends' friends friends ....
 """) + "\n\n" + """
 [url_addfriend]: http://127.0.0.1:8888/addfriend/
 [url_seednode_info]: https://wiki.freenetproject.org/Seed_nodes#Seed_node
