@@ -285,16 +285,14 @@ class NoteSection(Section):
     def get_content(self):
         # License: GFDL (from old freenetproject.org website)
         return text(md(_("""
-If you know other people who also use Freenet, you can
-[add them as Friends][url_addfriend]. This will make you
-safer against attacks on infrastructure of the Freenet Project
+If you know other people who also use Freenet, you can [add them as Friends][url_addfriend].
+This will make you safer against attacks on Freenet Project infrastructure
 (the [seednodes][url_seednode_info]).
 """) + "\n\n" + _("""
-Once you are connected to 5 or more friends, you can enable
-**high security mode**.  In high security mode Freenet will only connect to
-your friends. This makes your usage of Freenet almost undetectable, but
-you are still able to access the rest of the network through your
-friends' friends friends ....
+Once you are connected to 5 or more friends, you can enable **high security mode**.
+In high security mode Freenet will only connect to your friends. 
+This makes your usage of Freenet almost undetectable, 
+but you are still able to access the rest of the network through your friends' friends friends ....
 """) + "\n\n" + """
 [url_addfriend]: http://127.0.0.1:8888/addfriend/
 [url_seednode_info]: https://wiki.freenetproject.org/Seed_nodes#Seed_node
