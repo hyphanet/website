@@ -285,24 +285,19 @@ class NoteSection(Section):
     def get_content(self):
         # License: GFDL (from old freenetproject.org website)
         return text(md(_("""
-For best performance, Freenet will run continually. It should
-not interfere with your computer usage, as it requires around 
-200MB of RAM and 10%% of one CPU core, plus some disk access. We 
-strongly recommend you shut down Freenet while playing computer 
-games etc. On Windows you can do this from the system tray icon, 
-on other systems use the links on the system menu or the desktop.
+If you know other people who also use Freenet, you can
+[add them as Friends][url_addfriend]. This will make you
+safer against attacks on infrastructure of the Freenet Project
+(the [seednodes][url_seednode_info]).
 """) + "\n\n" + _("""
-Normally Freenet will connect automatically and should "just work",
-automatically connecting to other nodes (Strangers). However,
-if you know several people who are already using Freenet, you can
-enable high security mode and 
-[add them as Friends][url_addfriend].
-so Freenet will only connect to them, making your usage of Freenet 
-almost undetectable, while still being able to access the rest of the
-network through their friends' friends etc. This will be slower unless 
-you add 10+ friends who are usually online when you are.
+Once you are connected to 5 or more friends, you can enable high
+security mode.  In high security mode Freenet will only connect to
+your friends, making your usage of Freenet almost undetectable, while
+still being able to access the rest of the network through their
+friends' friends.
 """) + "\n\n" + """
 [url_addfriend]: http://127.0.0.1:8888/addfriend/
+[url_seednode_info]: https://wiki.freenetproject.org/Seed_nodes#Seed_node
 """))
 
 class DownloadPage(Page):
