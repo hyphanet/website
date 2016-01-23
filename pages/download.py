@@ -88,13 +88,7 @@ class DownloadSection(Section):
         self.slug = "download"
     def get_content(self):
         # License for all content in this section: GFDL (from old freenetproject.org website)
-        return show_hide_script()+text("""<a id="autostart"></a>""" + md(_("""
-[Step by step guide](http://freesocial.draketo.de/) to setting up Freenet and
-various Freenet apps. Please try this, especially if installing on OS X. We
-are not responsible for unofficial third party apps it recommends (including
-FMS), but many Freenet users and developers use them.
-"""))+
-_("Show instructions for:")+"""
+        return show_hide_script()+text("""<a id="autostart"></a>""" + _("Show instructions for:")+"""
       <a href="javascript:showDiv('windows');hideDiv('macos');hideDiv('unix');">Windows
         </a>, <a href="javascript:hideDiv('windows');showDiv('macos');hideDiv('unix');">OS X
         </a>, <a href="javascript:hideDiv('windows');hideDiv('macos');showDiv('unix');">GNU/Linux & POSIX
@@ -197,6 +191,11 @@ class UsingSection(Section):
     def get_content(self):
         # License for all content in this section: GFDL (from old freenetproject.org website)
         return text(md(_("""
+[Step by step guide](http://freesocial.draketo.de/) to setting up Freenet and
+various Freenet apps. Please try this, especially if installing on OS X. We
+are not responsible for unofficial third party apps it recommends (including
+FMS), but many Freenet users and developers use them.
+""") + _("""
 ### HOWTO
 
 You might find the
