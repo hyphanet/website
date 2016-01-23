@@ -193,7 +193,7 @@ this!
 class UsingSection(Section):
     def __init__(self):
         self.title = _("Using Freenet")
-        self.slug = "using"
+        self.slug = "usage"
     def get_content(self):
         # License for all content in this section: GFDL (from old freenetproject.org website)
         return text(md(_("""
