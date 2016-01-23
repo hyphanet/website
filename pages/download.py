@@ -188,13 +188,21 @@ However: each installation has a unique identity key generated at
 installation time. If you try to run two instances with the same identity _at
 the same time_, both proxy demons will become confused and upset. Don't do
 this!
+""")))+run_show_hide_script())
 
+class UsingSection(Section):
+    def __init__(self):
+        self.title = _("Using Freenet")
+        self.slug = "using"
+    def get_content(self):
+        # License for all content in this section: GFDL (from old freenetproject.org website)
+        return text(md(_("""
 ### HOWTO
 
 You might find the
 [Freenet Social Networking Guide](http://freesocial.draketo.de/index.html)
 useful.
-""")))+run_show_hide_script()+md(_("""
+""") + "\n\n" + _("""
 ### Firewalls and routers
 
 Freenet should work fine with most routers, but if you are having problems
@@ -281,7 +289,7 @@ broken, you can update your node manually from our servers:
 class NoteSection(Section):
     def __init__(self):
         self.slug = "note"
-        self.title = _("Important note for first time users")
+        self.title = _("Connect to Friends")
     def get_content(self):
         # License: GFDL (from old freenetproject.org website)
         return text(md(_("""
@@ -303,6 +311,7 @@ class DownloadPage(Page):
         self.slug = "download"
         self.title = _("Download")
         self.sections = [
-            NoteSection(),
             DownloadSection(),
+            NoteSection(),
+            UsingSection(),
             ]
