@@ -248,7 +248,7 @@ thousands, contributing small amounts of money over the Internet.
 
 We actually practice what we preach in this regard too, on the 15th of March
 2001 the Freenet Project started taking donations, and within a week we had
-collected over $1000\.
+collected over $1000.
 """))
 ]))
 
