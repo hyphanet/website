@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Freenet\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-05 22:52-0500\n"
-"PO-Revision-Date: 2016-01-06 23:12+0000\n"
+"PO-Revision-Date: 2016-01-19 14:36+0000\n"
 "Last-Translator: Xiaoyu Huang <007pig@gmail.com>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/otf/freenet/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -638,7 +638,7 @@ msgid ""
 "The Freenet Wiki is a user driven space where new features may be described\n"
 "before finding its way into the website. It is a good source of information\n"
 "about all sorts of Freenet related issues."
-msgstr ""
+msgstr "Freenet 的开发是持续进行的，它的文档也在不断更新。在本页面您可以阅读它的各种文档资源，包括：如何安装设置 Freenet；如何使用最流行的 Freenet 工具；以及如何访问 Freenet 用户贡献的 Wiki 站点和详尽的常见问题解答。\n\n*   [**安装**](#install)\n详尽的 Freenet 安装指南（使用全新安装程序）。\n*   [**连接**](#connect)\n如何连接到 Freenet。\n*   [**内容**](#content)\n如何使用 Freenet 发布您的内容。\n*   [**理解**](#understand)\n解释 Freenet 是如何工作的，以及对常见属于的解释。\n* [**社交**](#social)\n如何设置 Freenet 上的 Email、论坛和微博。\n*   [**jSite**](#jsite)\njSite 是 Freenet 网站 (也称为 Freesite) 插入工具。\n*   [**Wiki**](https://wiki.freenetproject.org/)\nFreenet Wiki 是用户自发贡献的文档的集散地。一些新功能文档会首先在 Wiki 上出现，然后才会被整理到本站。这里是 Freenet 所有相关问题的信息来源。"
 
 #: pages/documentation.py:43
 msgid "Install"
@@ -1279,7 +1279,7 @@ msgstr "### Manifest\n\nManifest 包含了 CHK 分块列表的元数据、一些
 
 #: pages/documentation.py:606
 msgid "Social"
-msgstr ""
+msgstr "社交"
 
 #: pages/documentation.py:609
 msgid ""
@@ -1289,7 +1289,7 @@ msgid ""
 "[Freenet Social Networking Guide](http://freesocial.draketo.de/)\n"
 "which can also be accessed\n"
 "[over Freenet](http://127.0.0.1:8888/USK@t5zaONbYd5DvGNNSokVnDCdrIEytn9U5SSD~pYF0RTE,guWyS9aCMcywU5PFBrKsMiXs7LzwKfQlGSRi17fpffc,AQACAAE/fsng/58/)."
-msgstr ""
+msgstr "Freenet 提供了匿名 Email、论坛和聊天工具，也提供了类似 Facebook/Twitter 的社交网络。您可以在《[Freenet 社交网络指南](http://freesocial.draketo.de/)》一文了解到详细的设置方法。此文也可以[在 Freenet 中访问](http://127.0.0.1:8888/USK@t5zaONbYd5DvGNNSokVnDCdrIEytn9U5SSD~pYF0RTE,guWyS9aCMcywU5PFBrKsMiXs7LzwKfQlGSRi17fpffc,AQACAAE/fsng/58/)。"
 
 #: pages/documentation.py:621
 msgid "jSite"
@@ -1354,7 +1354,7 @@ msgid ""
 "![](assets/img/jsite/project-details.png)\n"
 "\n"
 "When everything is filled in correctly, you may press **Next**."
-msgstr ""
+msgstr "在 Address 栏，有自动生成的地址，以及便于人记忆的网站名称。您在浏览器的地址栏会看到相同的网址：\n\n* **Request URI** - 此栏目会自动填充，是一个长随机字符串。\n* **Insert URI** - 此栏目会自动填充，看上去和上面的 Request URI 类似。\n* **Path** - 您需要在这里输入一个单词，不能有空格。它会附在您网站的网址最后。此栏目必填。\n\n下面的截图是一个示例：\n\n![](assets/img/jsite/project-details.png)\n\nWhen everything is filled in correctly, you may press **Next**."
 
 #: pages/documentation.py:673
 msgid ""
@@ -1373,7 +1373,7 @@ msgid ""
 "index.html might be a good choice) and check the **Default file** checkbox.\n"
 "It should recognise the MIME type as text/html, so leave everything else as\n"
 "they are and click the **Insert now** button."
-msgstr ""
+msgstr "下一步是添加您的 Freenet 网站（Freesite）文件。您可以在 **Project Files** 对话框添加文件。因为我们在当前目录还没用文件，此对话框是空的。\n\n![](assets/img/jsite/project-files.png)\n\n要添加文件，我们可以将一些文件放到我们之前指定的目录“**/home/test**”，然后点击“**Re-scan**”按钮。然后文件就会出现。\n\n![](assets/img/jsite/default-file.png)\n\n之后我们选中其中一个文件作为页面（例如，您可以选择 index.html），并选中“**Default file**”复选框。它的 MIME 类型应当被识别为 text/html。您可以暂时不用了解其他的选项，直接点击“**Insert now**”按钮。"
 
 #: pages/documentation.py:689
 msgid ""
@@ -1385,7 +1385,7 @@ msgid ""
 "When all is finished, you will get a message pop-up that tells you that the\n"
 "site has been inserted successfully. You can copy the URI to the clip-board\n"
 "by clicking the **Copy URI to Clipboard** -button."
-msgstr ""
+msgstr "如果一切正常，下面的窗口会出现。插入一个 Freesite 可能需要数分钟的时间。\n\n![](assets/img/jsite/project-insert.png)\n\n当一切完成时，您会看到一个弹出消息，告诉您网站已经被成功插入。您可以点击“**Copy URI to Clipboard**”按钮将网址复制到剪贴板。"
 
 #: pages/documentation.py:698
 msgid ""
@@ -1399,7 +1399,7 @@ msgid ""
 "<pre>\thttp://localhost:8888/freenet:USK@cJNO6G0[..]joM,AQACAAE/watergate2/1/</pre>\n"
 "\n"
 "If it works, congratulations, you have just created your first Freesite!"
-msgstr ""
+msgstr "接下来您可以使用 FProxy 浏览您刚刚插入的 Freesite。只要在浏览器地址栏中将网址粘贴到\n\n[http://localhost:8888/](http://localhost:8888/)\n\n之后，如下（截短以适配页面宽度）：\n\n<pre>\thttp://localhost:8888/freenet:USK@cJNO6G0[..]joM,AQACAAE/watergate2/1/</pre>\n\n如果您可以访问网站，那么祝贺您成功创建了您的第一个 Freesite！"
 
 #: pages/documentation.py:714
 msgid "Wiki"
