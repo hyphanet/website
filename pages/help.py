@@ -1069,6 +1069,8 @@ class ChatSection(Section):
         return text(md(_("""
 Many of the developers and users of Freenet are on the [IRC](
 https://en.wikipedia.org/wiki/IRC) channel #freenet on chat.freenode.net.
+If you don’t get an answer at once, please **stay a few hours**:
+we’re volunteers and live in different timezones.
 """) + "\n\n" + """
 <a href="#chatlink" id="chatlink" class="btn button-custom btn-custom-two">{}</a>
 """.format(_("Chat with us"))))
