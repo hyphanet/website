@@ -191,16 +191,10 @@ class UsingSection(Section):
     def get_content(self):
         # License for all content in this section: GFDL (from old freenetproject.org website)
         return text(md(_("""
-[Step by step guide](http://freesocial.draketo.de/) to setting up Freenet and
-various Freenet apps. Please try this, especially if installing on OS X. We
-are not responsible for unofficial third party apps it recommends (including
-FMS), but many Freenet users and developers use them.
-""") + _("""
-### HOWTO
-
-You might find the
-[Freenet Social Networking Guide](http://freesocial.draketo.de/index.html)
-useful.
+Please try the [step by step guide][url_freesocial] to setting up Freenet and various Freenet apps,
+especially if installing on OS X.
+We are not responsible for unofficial third party apps it recommends (including FMS),
+but many Freenet users and developers use them.
 """) + "\n\n" + _("""
 ### Firewalls and routers
 
@@ -283,7 +277,9 @@ broken, you can update your node manually from our servers:
   shell script in the Freenet directory.
 
 **Source Code:** See [the GitHub repository](https://github.com/freenet/fred).
-""")))
+""") + "\n\n" + """
+[url_freesocial]: http://freesocial.draketo.de/
+"""))
 
 class NoteSection(Section):
     def __init__(self):
