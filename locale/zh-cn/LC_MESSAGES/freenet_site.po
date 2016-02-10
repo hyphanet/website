@@ -5,14 +5,14 @@
 # Translators:
 # Mingye Wang <arthur200126@gmail.com>, 2015
 # Xiaoyu Huang <007pig@gmail.com>, 2015-2016
-# YF <yfdyh000@gmail.com>, 2015
+# YF <yfdyh000@gmail.com>, 2015-2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Freenet\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-05 22:52-0500\n"
-"PO-Revision-Date: 2016-01-19 14:36+0000\n"
-"Last-Translator: Xiaoyu Huang <007pig@gmail.com>\n"
+"POT-Creation-Date: 2016-01-25 06:44-0500\n"
+"PO-Revision-Date: 2016-02-04 17:13+0000\n"
+"Last-Translator: YF <yfdyh000@gmail.com>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/otf/freenet/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -294,8 +294,8 @@ msgid ""
 "\n"
 "We actually practice what we preach in this regard too, on the 15th of March\n"
 "2001 the Freenet Project started taking donations, and within a week we had\n"
-"collected over $1000\\."
-msgstr "### 10\\. 版权的替代品\n\n幸运的是，艺术家不会饿死。现在有很多其他的方式来回报他们。最简单的方式是众筹捐款。这是赞助系统的扩展。赞助现在被频繁用于在版权前给艺术家以回报，具体做法是某个有钱人愿意资助艺术家让他们全心全意创作。互联网扩展了这个想法，不再是某一个人资助大笔资金，而是成百上千人，每人资助少量的资金。\n\n我们自己也开始言行施教，在2001年3月15日，Freenet 项目开始接受捐款，一周内我们收到超过 $1000 美元。"
+"collected over $1000."
+msgstr ""
 
 #: pages/about.py:258
 msgid "People"
@@ -795,7 +795,7 @@ msgid ""
 "your Friends. In practice most people start off with insecure mode and\n"
 "gradually add Friends, and hopefully turn off insecure mode once they have at\n"
 "least 10 Friends."
-msgstr "*对于一个全新安装的 Freenet，您的数据存储中不会有任何数据，即使非安全模式启用，连接数也会很少。请求是随机发出的。**这会导致某些（或全部）请求在还未获取数据前便超时。**数天后，您的 Freenet 节点的速度才会变得正常，因此请勿沮丧。*\n\n您应当至少保证随时有 3 个节点连接，5 到 7 个连接是更理想的。因为某些节点有时无法连接，您需要添加更多的节点以保证连接数。只有那些直接与您的 Freenet 节点连接的节点才有可能侦测到通过您的节点的数据。但是如果非安全模式启用，任何节点都有可能侦测到。这就是**不启用**非安全模式的最大优点：您可以有效的隐身，只有您的好友知道。实践中很多人始于非安全模式并逐渐添加好友。当他们拥有超过 10 位好友时，关闭非安全模式"
+msgstr "*对于一个全新安装的 Freenet，您的数据存储中不会有任何数据，即使非安全模式启用，连接数也会很少。请求是随机发出的。**这会导致部分（或全部）请求在还未获取数据前便超时。**数天后，您的 Freenet 节点的速度才会变得正常，因此请勿沮丧。*\n\n您应当至少保证随时有 3 个节点连接，5 到 7 个连接是更理想的。因为某些节点有时无法连接，您需要添加更多的节点以保证连接数。只有那些直接与您的 Freenet 节点连接的节点才有可能侦测到通过您的节点的数据。但是如果非安全模式启用，任何节点都有可能侦测到。这就是**不启用**非安全模式的最大优点：您可以有效的隐身，只有您的好友知道。实践中很多人始于非安全模式并逐渐添加好友。当他们拥有超过 10 位好友时，关闭非安全模式。"
 
 #: pages/documentation.py:185
 msgid ""
@@ -814,7 +814,7 @@ msgid ""
 "know. If that is not possible, then at least people you've talked to.\n"
 "\n"
 "There are a number of ways to add peer node references."
-msgstr "![](assets/img/Freenet-architecture-small.png)\n\n*图表 1: 可见的 Freenet 连接*\n\n图表中，一些其他的节点连接到**节点 A**（Node A） ，但是这些节点您都看不到。您只能看到与自己的节点（Your Node）建立连接的节点。流量路由算法因此仅会在与您建立连接的节点中寻找最合适的节点获取数据。\n\n传输的数据是加密的，因此与您连接的那些节点很难了结到您的 Freenet 节点到底获取了哪些数据，但是这并不是完全不可能的。所以您只能连接到您认识的人，这非常重要。如果很难实现，至少与那些您说过话的人建立连接。\n\n有数种方式添加他人的节点信息。"
+msgstr "![](assets/img/Freenet-architecture-small.png)\n\n*图表 1：可见的 Freenet 连接*\n\n在图表中，一些其他的节点连接到**节点 A**（Node A） ，但是这些节点您都看不到。您只能看到与您的节点建立连接的节点。流量路由算法因此仅能在您已知的节点中寻找最可能的找到数据的节点以获取数据。\n\n数据传输是加密的，因此与您连接的那些节点很难了解您的 Freenet 节点到底获取了哪些数据，但是这也并不是完全不可能的。所以您应该只连接到认识的人，这非常重要。如果很难实现，至少应该与那些您说过话的人建立连接。\n\n这里有多种方式添加其他人的节点信息。"
 
 #: pages/documentation.py:201
 msgid ""
@@ -847,7 +847,7 @@ msgid ""
 "http://127.0.0.1:8888/friends/](http://127.0.0.1:8888/friends/) page,\n"
 "under the caption **My reference**. It might look something like this (cut\n"
 "for screen purposes):"
-msgstr "### Fproxy\n\n在 FProxy 中与好友节点建立连接有几种方式。最常见的方式是进入“朋友”菜单或直接访问 [http://127.0.0.1:8888/friends/](http://127.0.0.1:8888/friends/) 链接。然后您就可以找到下面的框添加好友了：\n\n![](assets/img/add_peers.png)\n\n如您所见，有三种方式添加好友的节点信息：\n\n*   直接将节点信息粘贴到那个大的输入框，\n*   输入节点信息的 URL，或，\n*   上传节点信息文件。\n\n[http://dark-code.bulix.org/](http://dark-code.bulix.org/) 网站被称为 \n**Paste-bin**，您可以将自己的节点信息复制粘贴到那个网站，选中“**private**”框，然后点击 **Paste** 按钮。\n\nPaste-bin 便会返回一个网址 (如：http://dark-code.bulix.org/yuf01h-34676?raw)，您可以将这个网址分享给自己的好友。请记得在网址后添加 **?raw**。添加后这个网址只会原封不动下载您的节点信息，而不会添加其他信息。\n\n您自己的 Freenet 节点信息可以在 [http://127.0.0.1:8888/friends/](http://127.0.0.1:8888/friends/) 朋友页面中“**我的节点信息**”一栏找到，它看上去如下图（因为页面宽度有限，内容做了裁剪）:"
+msgstr "### Fproxy\n\n在 FProxy 中与好友节点建立连接有几种方式。最常见的方式是进入“朋友”菜单或直接访问 [http://127.0.0.1:8888/friends/](http://127.0.0.1:8888/friends/) 链接。然后您就可以找到下面的框添加好友了：\n\n![](assets/img/add_peers.png)\n\n如您所见，有三种方式添加好友的节点信息：\n\n*   直接将节点信息粘贴到那个大的输入框，\n*   输入节点信息的 URL，\n*   上传节点信息文件。\n\n[http://dark-code.bulix.org/](http://dark-code.bulix.org/) 网站被称为 \n**Paste-bin**，您可以将自己的节点信息复制粘贴到那个网站，选中“**private**”框，然后点击 **Paste** 按钮。\n\nPaste-bin 便会返回一个网址 (如：http://dark-code.bulix.org/yuf01h-34676?raw)，您可以将这个网址分享给自己的好友。请记得在网址后添加 **?raw**。添加后这个网址只会原封不动下载您的节点信息，而不会添加其他信息。\n\n您自己的 Freenet 节点信息可以在 [http://127.0.0.1:8888/friends/](http://127.0.0.1:8888/friends/) 朋友页面中“**我的节点信息**”一栏找到，它看上去如下图（因为页面宽度有限，内容做了裁剪）:"
 
 #: pages/documentation.py:249
 msgid ""
@@ -962,7 +962,7 @@ msgid ""
 "depending on how popular they are. This is to ensure that Freenet is\n"
 "censorship resistant. The only possible way to remove something from Freenet\n"
 "is to not search for it, and hope that everybody else does the same."
-msgstr "与其他点对点网络不同，作为一个用户，您无法控制储存在您的”数据存储“中的内容。事实上，文件是根据它们的流行程度来自动保留或删除的。这是为了保证 Freenet 无法被审查者删除。要从 Freenet 上删除内容的唯一方法是您不要搜索下载它，同时也寄希望于其他人不搜索下载它。"
+msgstr "与其他点对点网络不同，作为一个用户，您无法控制储存在您的“数据存储”中的内容。事实上，文件是根据它们的流行程度来自动保留或去除。这是为了保证 Freenet 无法被审查者摧毁。从 Freenet 上删除内容的唯一方法就是不要搜寻它，并也寄希望于其他人不搜寻它。"
 
 #: pages/documentation.py:351
 msgid ""
