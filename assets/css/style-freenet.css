@@ -207,6 +207,18 @@ margin-top: -3px; /* fixme: negative margins are ugly */
 margin-top: 5px; /* to create room for the language bar */
 }
 
+/* Max width of navbar-nav-page for each of the sizes to avoid
+breaking up the header. */
+@media (min-width: 768px) {
+    .navbar-inverse .navbar-nav-page { max-width: 600px; }
+}
+@media (min-width: 992px) {
+    .navbar-inverse .navbar-nav-page { max-width: 800px; }
+}
+@media (min-width: 1200px) {
+    .navbar-inverse .navbar-nav-page { max-width: 1000px; }
+}
+
 
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-brand:hover {
 color: #fff;
