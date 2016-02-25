@@ -33,7 +33,7 @@ department.
      jSite is a Freenet website (a.k.a. Freesite) insertion tool.
 *   [**Wiki**](https://wiki.freenetproject.org/)
      The Freenet Wiki is a user driven space where new features may be described
-     before finding its way into the website. It is a good source of information
+     before finding their way into the website. It is a good source of information
      about all sorts of Freenet related issues.
 """)))
 
@@ -59,14 +59,14 @@ continue reading.
 """) + "\n\n" + _("""
 #### Graphical install
 
-**The below is outdated for Windows systems**, for Windows you should use
-[the Windows installer](assets/jnlp/FreenetInstaller.exe) as described on
+**The information below is outdated for Windows systems**, for Windows you should use
+[the installer for Windows](assets/jnlp/FreenetInstaller.exe) as described on
 [the download page](download.html). You can also get the Windows installer
 from [here](https://downloads.freenetproject.org/latest/FreenetInstaller.exe).
 
 For a graphical installation you have to have:
 
-*   A working Java Runtime Environment,
+*   a working Java Runtime Environment
 *   a downloaded copy of [new_installer_offline.jar](assets/jnlp/freenet_installer.jar)
     (if this does not work try [here](https://downloads.freenetproject.org/latest/new_installer_offline.jar))
 *   a working graphical user interface (GUI)
@@ -328,7 +328,7 @@ Freenet with a key, it returns the appropriate file (if it is located). The
 storage space is distributed among all connected nodes on Freenet.
 
 Freenet is a Peer-to-peer network, which is both decentralized and
-anonymized. The nodes that you connect to only knows its nearest neighbours
+anonymized. The nodes that you connect to only knows their nearest neighbours
 and has no idea about how the network as a whole is structured.
 """) + "\n\n" + _("""
 ### Small world network
