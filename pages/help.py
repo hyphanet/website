@@ -1017,10 +1017,6 @@ forgot it.)_
 """) + "\n\n" + _("""
 ### The lists
 
-* [Announcements](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/announce/) ([archive](https://emu.freenetproject.org/pipermail/announce/))<br/>
-  Please sign up here to be notified of major Freenet developments, such as
-  announcements of new releases or important bugfixes. This list is moderated
-  and is very low traffic (less than one message per month).
 * [Support](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/support/) ([archive](https://emu.freenetproject.org/pipermail/support/))<br/>
   Asking for or giving advice relating to getting Freenet working,
   bug reports, and suggestions on improving the user experience. Requests for
@@ -1028,26 +1024,10 @@ forgot it.)_
   **Note:** Emails sent to this mailing list from those not subscribed to the
   list must be manually approved, and this can impose a delay of several days.
   To avoid this delay, please [subscribe](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/support/).
-* [Tech](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/tech/) ([archive](https://emu.freenetproject.org/pipermail/tech/))<br/>
-  This is for general technical discussion of Freenet. If you want to discuss
-  longer-term technical ideas about Freenet, please use this list.
 * [Development](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/devl/) ([archive](https://emu.freenetproject.org/pipermail/devl/))<br/>
   This list is for active developers to discuss bugs, and the implementation
   of near-term new features. Please only post to this list if you know what you
   are talking about, otherwise use the tech mailing list (see above).
-* [Darknet-Tools](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/darknet-tools/) ([archive](https://emu.freenetproject.org/pipermail/darknet-tools/))<br/>
-  A mailing list to discuss and develop ways of extending the darknet while
-  keeping it a darknet: Instant messenger plugins, IRC plugins, email
-  invitations, functionality in the node needed to support these, and any other
-  means of extending the darknet while keeping it a darknet as much as possible.
-* [Chat](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/chat/) ([archive](https://emu.freenetproject.org/pipermail/chat/))<br/>
-  This list is for general discussion of Freenet, topics that are not
-  suitable to other lists. Discussions of politics, law, philosophy, lawsuits,
-  programming languages, related technology that should not be part of Freenet,
-  and any thread that the developers and users don't deem appropriate to the
-  main lists should be discussed here. Questions such as "How can I prevent my
-  node from being used by terrorists?", or "Why don't you rewrite Freenet in
-  C++?" should be addressed to this list.
 
 _**Third party tools**: We are hosting some other mailing lists on our server
 here is the [full list][url_listinfo]._
