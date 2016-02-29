@@ -315,7 +315,7 @@ jQuery('#chatlink').click(function(e) {
 </script>
 </body>
 """
-    chat_modal_button = _("Open chat")
+    chat_modal_button = _("I'll be patient, I promise!")
     chat_modal_title = _("Please note")
     chat_modal_message = _("This chat is staffed by volunteers, and it may be that no one is around right now. Please ask your question, and someone will answer within several hours.")
     return substitute_html(template,
