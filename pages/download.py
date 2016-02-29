@@ -88,13 +88,7 @@ class DownloadSection(Section):
         self.slug = "download"
     def get_content(self):
         # License for all content in this section: GFDL (from old freenetproject.org website)
-        return show_hide_script()+text("""<a id="autostart"></a>""" + md(_("""
-[Step by step guide](http://freesocial.draketo.de/) to setting up Freenet and
-various Freenet apps. Please try this, especially if installing on OS X. We
-are not responsible for unofficial third party apps it recommends (including
-FMS), but many Freenet users and developers use them.
-"""))+
-_("Show instructions for:")+"""
+        return show_hide_script()+text("""<a id="autostart"></a>""" + _("Show instructions for:")+"""
       <a href="javascript:showDiv('windows');hideDiv('macos');hideDiv('unix');">Windows
         </a>, <a href="javascript:hideDiv('windows');showDiv('macos');hideDiv('unix');">OS X
         </a>, <a href="javascript:hideDiv('windows');hideDiv('macos');showDiv('unix');">GNU/Linux & POSIX
@@ -188,13 +182,20 @@ However: each installation has a unique identity key generated at
 installation time. If you try to run two instances with the same identity _at
 the same time_, both proxy demons will become confused and upset. Don't do
 this!
+""")))+run_show_hide_script())
 
-### HOWTO
-
-You might find the
-[Freenet Social Networking Guide](http://freesocial.draketo.de/index.html)
-useful.
-""")))+run_show_hide_script()+md(_("""
+class UsingSection(Section):
+    def __init__(self):
+        self.title = _("Using Freenet")
+        self.slug = "usage"
+    def get_content(self):
+        # License for all content in this section: GFDL (from old freenetproject.org website)
+        return text(md(_("""
+Please try the [step by step guide][url_freesocial] to setting up Freenet and various Freenet apps,
+especially if installing on OS X.
+We are not responsible for unofficial third party apps it recommends (including FMS),
+but many Freenet users and developers use them.
+""") + "\n\n" + _("""
 ### Firewalls and routers
 
 Freenet should work fine with most routers, but if you are having problems
@@ -276,12 +277,14 @@ broken, you can update your node manually from our servers:
   shell script in the Freenet directory.
 
 **Source Code:** See [the GitHub repository](https://github.com/freenet/fred).
-""")))
+""") + "\n\n" + """
+[url_freesocial]: http://freesocial.draketo.de/
+"""))
 
 class NoteSection(Section):
     def __init__(self):
         self.slug = "note"
-        self.title = _("Important note for first time users")
+        self.title = _("Connect to Friends")
     def get_content(self):
         # License: GFDL (from old freenetproject.org website)
         return text(md(_("""
@@ -303,6 +306,7 @@ class DownloadPage(Page):
         self.slug = "download"
         self.title = _("Download")
         self.sections = [
-            NoteSection(),
             DownloadSection(),
+            NoteSection(),
+            UsingSection(),
             ]
