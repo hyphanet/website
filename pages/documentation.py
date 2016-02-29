@@ -59,9 +59,9 @@ continue reading.
 """) + "\n\n" + _("""
 #### Graphical install
 
-**The information below is outdated for Windows systems**, for Windows you should use
+**The information below does not apply to Windows systems**. For Windows you should use
 [the installer for Windows](assets/jnlp/FreenetInstaller.exe) as described on
-[the download page](download.html). You can also get the Windows installer
+[the download page](download.html). You can also get the installer for Windows
 from [here](https://downloads.freenetproject.org/latest/FreenetInstaller.exe).
 
 For a graphical installation you have to have:
@@ -327,9 +327,9 @@ it, you receive a key which can be used to retrieve the file. When you supply
 Freenet with a key, it returns the appropriate file (if it is located). The
 storage space is distributed among all connected nodes on Freenet.
 
-Freenet is a Peer-to-peer network, which is both decentralized and
-anonymized. The nodes that you connect to only knows their nearest neighbours
-and has no idea about how the network as a whole is structured.
+Freenet is a peer-to-peer network which is both decentralized and
+anonymized. The nodes that you connect to only know their nearest neighbours
+and have no idea about how the network as a whole is structured.
 """) + "\n\n" + _("""
 ### Small world network
 
