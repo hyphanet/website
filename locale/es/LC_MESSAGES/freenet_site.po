@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Freenet\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-25 06:44-0500\n"
-"PO-Revision-Date: 2016-01-28 03:39+0000\n"
+"POT-Creation-Date: 2016-02-28 20:56-0500\n"
+"PO-Revision-Date: 2016-03-06 02:06+0000\n"
 "Last-Translator: strel\n"
 "Language-Team: Spanish (http://www.transifex.com/otf/freenet/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -526,8 +526,8 @@ msgid "About"
 msgstr "Acerca de"
 
 #: pages/common.py:318
-msgid "Open chat"
-msgstr "Abrir chat"
+msgid "I'll be patient, I promise!"
+msgstr "¡Tendré paciencia, lo prometo!"
 
 #: pages/common.py:319
 msgid "Please note"
@@ -635,9 +635,9 @@ msgid ""
 "jSite is a Freenet website (a.k.a. Freesite) insertion tool.\n"
 "*   [**Wiki**](https://wiki.freenetproject.org/)\n"
 "The Freenet Wiki is a user driven space where new features may be described\n"
-"before finding its way into the website. It is a good source of information\n"
+"before finding their way into the website. It is a good source of information\n"
 "about all sorts of Freenet related issues."
-msgstr "La documentación en Freenet siempre está cambiando ya que este es un\nproyecto en desarrollo. Sin embargo, aquí, bajo el menú Documentación, puede\nque encuentre documentos de uso sobre cómo configurar Freenet y usar las \nherramientas más populares de Freenet, además de un Wiki gestionado por los\nusuarios y un extenso apartado de Preguntas Frecuentes (FAQ).\n\n\n*   [**Instalar**](#install)\nContiene instrucciones detalladas sobre cómo instalar Freenet usando el nuevo\ninstalador.\n*   [**Conectar**](#connect)\nCómo conectar a Freenet.\n*   [**Contenido**](#content)\nFreenet como un sistema de distribución de contenidos.\n*   [**Comprender**](#understand)\nExplica los mecanismos de Freenet, e incluye un glosario con los términos\nusados más frecuentemente.\n*   [**Social**](#social)\nCómo configurar correo electrónico, foros y microblogging sobre Freenet.\n*   [**jSite**](#jsite)\njSite es una herramienta de inserción de sitios web de Freenet (freesites).\n*   [**Wiki**](https://wiki.freenetproject.org/)\nEl Wiki de Freenet es un espacio conducido por los usuarios donde las nuevas\ncaracterísticas puede que sean descritas antes de encontrar su camino hacia\nel sitio web. Es una buena fuente de información acerca de todo tipo de\nasuntos relacionados con Freenet."
+msgstr "La documentación en Freenet siempre está cambiando, ya que este es un\nproyecto en desarrollo. Sin embargo, aquí bajo el menú Documentación, puede\nencontrar documentos de uso sobre cómo instalar Freenet y usar las\nherramientas de Freenet más populares, además de un Wiki llevado por los\nusuarios y un extenso apartado de Preguntas Frecuentes (FAQ).\n\n*   [**Instalar**](#install)\nContiene instrucciones detalladas sobre cómo instalar Freenet usando el\nnuevo instalador.\n*   [**Conectar**](#connect)\nCómo conectar a Freenet.\n*   [**Contenido**](#content)\nFreenet como un sistema de distribución de contenidos (CDS).\n*   [**Comprender**](#understand)\nExplica los trabajos sobre Freenet e incluye un glosario con los términos\nmás frecuentemente usados.\n*   [**Social**](#social)\nCómo configurar correo electrónico, foros y microblogging sobre Freenet.\n*   [**jSite**](#jsite)\njSite es una herramienta de inserción de sitios web de Freenet (Freesites).\n*   [**Wiki**](https://wiki.freenetproject.org/)\nEl Wiki de Freenet es un espacio llevado por los usuarios donde se pueden\ndescribir nuevas características antes de que encuentren su camino hacia el\nsitio web de Freenet. Es una buena fuente de información sobre todo tipo de\nasuntos relacionados con Freenet."
 
 #: pages/documentation.py:43
 msgid "Install"
@@ -663,14 +663,14 @@ msgstr "Instalar Freenet podría no ser tan difícil como puede haber oído. Hay
 msgid ""
 "#### Graphical install\n"
 "\n"
-"**The below is outdated for Windows systems**, for Windows you should use\n"
-"[the Windows installer](assets/jnlp/FreenetInstaller.exe) as described on\n"
-"[the download page](download.html). You can also get the Windows installer\n"
+"**The information below does not apply to Windows systems**. For Windows you should use\n"
+"[the installer for Windows](assets/jnlp/FreenetInstaller.exe) as described on\n"
+"[the download page](download.html). You can also get the installer for Windows\n"
 "from [here](https://downloads.freenetproject.org/latest/FreenetInstaller.exe).\n"
 "\n"
 "For a graphical installation you have to have:\n"
 "\n"
-"*   A working Java Runtime Environment,\n"
+"*   a working Java Runtime Environment\n"
 "*   a downloaded copy of [new_installer_offline.jar](assets/jnlp/freenet_installer.jar)\n"
 "(if this does not work try [here](https://downloads.freenetproject.org/latest/new_installer_offline.jar))\n"
 "*   a working graphical user interface (GUI)\n"
@@ -679,7 +679,7 @@ msgid ""
 "again. Your home-directory should be a good place. The next step requires you\n"
 "to know where you stored the file (the path to it), so it is quite important\n"
 "that you do that step thoroughly."
-msgstr "#### Instalación gráfica\n\n**Lo siguiente no está actualizado para sistemas Windows**, para Windows debe usar\n[el instalador Windows](assets/jnlp/FreenetInstaller.exe) tal como se describe en\n[la página de descargas](download.html). También puede obtener el instalador Windows\nde [aquí](https://downloads.freenetproject.org/latest/FreenetInstaller.exe).\n\nPara una instalación gráfica ha de tener:\n\n*   Un entorno de ejecución Java (Java Runtime Environment) funcional,\n*   una copia descargada de [new_installer_offline.jar](assets/jnlp/freenet_installer.jar)\n(si este no funciona pruebe [aquí](https://downloads.freenetproject.org/latest/new_installer_offline.jar))\n*   una interfaz gráfica de usuario (GUI) funcional\n\nDebe guardar el fichero new_installer.jar en algún lugar donde pueda encontrarlo de nuevo.\nSu directorio principal debería ser un buen lugar. El siguiente paso requiere que sepa dónde guardó\nel fichero (la ruta hacia él), así que es bastante importante que realice ese paso concienzudamente."
+msgstr "#### Instalación gráfica\n\n**La información de debajo no se aplica a sistemas Windows**. Para Windows debe usar [el instalador para Windows](assets/jnlp/FreenetInstaller.exe) tal como se describe en [la página de descargas](download.html). También puede obtener el instalador para Windows [aquí](https://downloads.freenetproject.org/latest/FreenetInstaller.exe).\n\nPara una instalación gráfica ha de tener:\n\n*   un Java Runtime Environment (entorno de ejecución de Java) funcional\n*   una copia descargada del [new_installer_offline.jar](assets/jnlp/freenet_installer.jar)\n(si este no funciona pruebe [aquí](https://downloads.freenetproject.org/latest/new_installer_offline.jar))\n*   una interfaz gráfica de usuario (GUI) funcional\n\nDebe guardar el fichero new_installer.jar en algún lugar donde pueda encontrarlo de nuevo. Su directorio personal debería ser un buen lugar. El próximo paso requiere que sepa dónde guardó el fichero (la ruta hacia este), así que es bastante importante que realice este paso concienzudamente."
 
 #: pages/documentation.py:78
 msgid ""
@@ -931,10 +931,10 @@ msgid ""
 "Freenet with a key, it returns the appropriate file (if it is located). The\n"
 "storage space is distributed among all connected nodes on Freenet.\n"
 "\n"
-"Freenet is a Peer-to-peer network, which is both decentralized and\n"
-"anonymized. The nodes that you connect to only knows its nearest neighbours\n"
-"and has no idea about how the network as a whole is structured."
-msgstr "Se puede pensar en Freenet como un gran dispositivo de almacenamiento. \nCuando almacena dentro un fichero, recibe una clave que se puede usar para\ndescargar este fichero. Cuando se le proporciona una clave a Freenet, devuelve\nel fichero apropiado (si se localiza). El espacio de almacenamiento está\ndistribuido entre todos los nodos conectados de Freenet.\n\nFreenet es una red entre pares (P2P), que está tanto descentralizada como anonimizada.\nLos nodos a los que se conecta conocen a sus vecinos más cercanos y no tienen\nni idea acerca de cómo se estructura el conjunto de la red."
+"Freenet is a peer-to-peer network which is both decentralized and\n"
+"anonymized. The nodes that you connect to only know their nearest neighbours\n"
+"and have no idea about how the network as a whole is structured."
+msgstr "Se puede pensar en Freenet como en un gran dispositivo de almacenamiento.\nCuando guarda un fichero en él, recibe una clave que se puede usar para\ndescargar el fichero. Cuando proporciona a Freenet una de estas claves\ndevuelve el fichero asociado (si se localiza). El espacio de almacenamiento\nestá distribuido entre todos los nodos conectados en Freenet.\n\nFreenet es una red entre pares (P2P) que es tanto descentralizada como\nanonimizada. Los nodos a los que se conecta sólo conocen a sus vecinos más\ncercanos y no tienen ni idea acerca de cómo se estructura la red en conjunto."
 
 #: pages/documentation.py:333
 msgid ""
@@ -1625,23 +1625,15 @@ msgstr "Hemos recibido su generosa donación. Se usará bajo la orientación del
 msgid "Thanks"
 msgstr "Gracias"
 
-#: pages/download.py:87 pages/download.py:304
+#: pages/download.py:87 pages/download.py:307
 msgid "Download"
 msgstr "Descargar"
 
 #: pages/download.py:91
-msgid ""
-"[Step by step guide](http://freesocial.draketo.de/) to setting up Freenet and\n"
-"various Freenet apps. Please try this, especially if installing on OS X. We\n"
-"are not responsible for unofficial third party apps it recommends (including\n"
-"FMS), but many Freenet users and developers use them."
-msgstr "[Guía paso a paso](http://freesocial.draketo.de/) para configurar Freenet y\nvarias aplicaciones de Freenet. Por favor, pruebe esto, especialmente si\nestá instalando en OS X. No somos responsables de las aplicaciones no\noficiales de terceros que recomienda (incluyendo FMS), pero muchos\nusuarios y desarrolladores de Freenet las usan."
-
-#: pages/download.py:97
 msgid "Show instructions for:"
 msgstr "Mostrar instrucciones para:"
 
-#: pages/download.py:102
+#: pages/download.py:96
 msgid ""
 "### Windows\n"
 "\n"
@@ -1656,7 +1648,7 @@ msgid ""
 "Freenet requires Windows XP or later."
 msgstr "### Windows\n\nDescargue y ejecute [el instalador](assets/jnlp/FreenetInstaller.exe)\n([pruebe esto si el primer enlace está bloqueado](https://downloads.freenetproject.org/latest/FreenetInstaller.exe))\n\nInstalará Freenet y otros componentes necesarios automáticamente\npara usted. Cuando termine, su navegador predeterminado se abrirá\nautomáticamente en la interfaz web de usuario de Freenet. (Freenet\n**NO contiene spyware o adware**, ¡es software libre! El código fuente\nestá disponible públicamente para revisión)\n\nFreenet requiere Windows XP o posterior."
 
-#: pages/download.py:114
+#: pages/download.py:108
 msgid ""
 "### OS X\n"
 "\n"
@@ -1668,7 +1660,7 @@ msgid ""
 "Freenet requires OS X 10.8 or later."
 msgstr "### OS X\n\nDescargue y ejecute [el instalador][url_mac_installer] ([firma GPG][url_gpg_sig]).\n\nInstalará Freenet y otros componentes necesarios automáticamente para usted.\nCuando termine, su navegador predeterminado abrirá automáticamente la interfaz web de usuario de Freenet.\n\nFreenet requiere OS X 10.8 o posterior."
 
-#: pages/download.py:126
+#: pages/download.py:120
 msgid ""
 "### GNU/Linux & POSIX\n"
 "\n"
@@ -1688,7 +1680,7 @@ msgid ""
 "Open a terminal and run:"
 msgstr "### GNU/Linux y POSIX\n\nPruebe el [instalador Java Web Start](assets/jnlp/freenet.jnlp). Si no funciona:\n\nNecesita tener un **Java Runtime Environment** (JRE, entorno de ejecución\nde Java) reciente. Hemos experimentado los mejores resultados con el JRE de\nOracle que se puede obtener a través de su [administrador de paquetes](\nhttps://es.wikipedia.org/wiki/Sistema_de_gestión_de_paquetes) o desde [\nhttp://www.java.com/](http://www.java.com/).\n\nSe requiere Java versión 1.6 o superior, y se recomienda firmemente la 1.7 o\nsuperior. Debe mantener Java actualizado para evitar problemas y para un\nmejor rendimiento.\n\nAbra un terminal y ejecute:"
 
-#: pages/download.py:146
+#: pages/download.py:140
 msgid ""
 "Alternatively, downloading [the installer](assets/jnlp/freenet_installer.jar)\n"
 "([gpg signature][jar_sig])\n"
@@ -1713,7 +1705,7 @@ msgid ""
 "tell it where to install Freenet etc."
 msgstr "Como alternativa, descargando [el instalador](assets/jnlp/freenet_installer.jar)\n([firma GPG][jar_sig])\ny luego haciendo clic en el fichero, puede funcionar en algunos sistemas,\npero si hay problemas recomendamos las líneas de comando de arriba. Si\nwget no está instalado, se puede instalar con un administrador de paquetes,\ncomo con 'sudo apt-get install wget' en Debian o Ubuntu.\n\nSi el enlace de arriba está bloqueado, podría descargarlo desde nuestro\nservidor [aquí](https://downloads.freenetproject.org/latest/new_installer_offline.jar).\nPero, por favor, utilice el otro enlace si puede.\n\n**Nota:** Muchas distribuciones GNU/Linux ya no vienen con Java Web\nStart habilitado. Nos gustaría hacer paquetes de distribución para una\ninstalación más fácil, y tener un [paquete Debian](\nhttps://github.com/freenet/debian) en-desarrollo\n(y no mantenido), pero no hemos logrado uno estable u oficiales para\notras distribuciones. Si es un desarrollador y desea unirse a nosotros y\nayudar, ¡sería muy apreciado!\n\nSi esto no funciona en un servidor sin interfaz gráfica (headless), pruebe\n\"java -jar new_installer_offline.jar -console\", y siga las indicaciones para\ndecirle dónde instalar Freenet etc."
 
-#: pages/download.py:173
+#: pages/download.py:167
 msgid ""
 "### Mirrored installation\n"
 "\n"
@@ -1731,16 +1723,22 @@ msgid ""
 "However: each installation has a unique identity key generated at\n"
 "installation time. If you try to run two instances with the same identity _at\n"
 "the same time_, both proxy demons will become confused and upset. Don't do\n"
-"this!\n"
-"\n"
-"### HOWTO\n"
-"\n"
-"You might find the\n"
-"[Freenet Social Networking Guide](http://freesocial.draketo.de/index.html)\n"
-"useful."
-msgstr "### Instalación replicada\n\nSi tiene un directorio de instalación de Freenet funcional que haya\nreplicado (mirror) de una máquina Unix a otra (ej. vía rsync o unison),\nhabilitar la instalación replicada no es difícil. No hay nada en una\ninstalación Freenet para lo que importe la dirección IP de su máquina\nanfitrión; no puede ser así, o Freenet fallaría en máquinas que obtienen\ndirecciones IP de un surtido DHCP.\n\nTodo lo que en realidad tiene que hacer es decirle al sistema réplica que\ndebe iniciar para usted el demonio de proxy Freenet al arrancar. Haga\n`crontab -l` en la máquina fuente, busque la línea que está etiquetada\ncomo \"FREENET AUTOSTART\" y añada eso en el crontab de su\nmáquina réplica.\n\nSin embargo: cada instalación tiene una clave de identidad única\ngenerada en el momento de la instalación. Si trata de ejecutar dos\ninstancias con la misma identidad _al mismo tiempo_, ambos\ndemonios proxy entrarán en un estado de confusión y malestar.\n¡No haga esto!\n\n### CÓMO HACER (HOWTO)\n\nPodría encontrar útil la\n[Guía de redes sociales de Freenet (Freenet Social Networking Guide)](http://freesocial.draketo.de/index.html)."
+"this!"
+msgstr "### Instalación replicada\n\nSi tiene un directorio de instalación de Freenet funcional que haya replicado\ndesde una máquina Unix a otra (ej. mediante rsync o unison), habilitar la\ninstalación replicada no es difícil. No hay nada en una instalación de Freenet\npara lo que importe la dirección IP del nodo; no puede ser así, o Freenet\nfallaría en máquinas que obtienen direcciones IP de un surtido DHCP.\n\nTodo lo que necesita en realidad es decirle al sistema hacia el que ha replicado\nque debe iniciar el demonio de proxy Freenet para usted en el arranque. Haga\n`crontab -l` en la máquina de origen, busque la línea que está etiquetada\n\"FREENET AUTOSTART\" y añada el resultado al crontab en la máquina réplica.\n\nSin embargo: cada instalación tiene una única clave de identidad generada en\nel momento de la instalación. Si trata de ejecutar dos instancias con la misma\nidentidad _al mismo tiempo_, ambos demonios proxy pasarán a estar confusos\ny molestos. ¡No haga esto!"
 
-#: pages/download.py:197
+#: pages/download.py:189
+msgid "Using Freenet"
+msgstr "Uso de Freenet"
+
+#: pages/download.py:193
+msgid ""
+"Please try the [step by step guide][url_freesocial] to setting up Freenet and various Freenet apps,\n"
+"especially if installing on OS X.\n"
+"We are not responsible for unofficial third party apps it recommends (including FMS),\n"
+"but many Freenet users and developers use them."
+msgstr "Por favor, pruebe la [guía paso a paso][url_freesocial] para instalar Freenet y distintas aplicaciones\nde Freenet, especialmente si se instala sobre OS X.\nNo somos responsables por las aplicaciones no oficiales de terceros que esta recomienda\n(incluyendo FMS), pero muchos usuarios y desarrolladores de Freenet las usan."
+
+#: pages/download.py:198
 msgid ""
 "### Firewalls and routers\n"
 "\n"
@@ -1749,7 +1747,7 @@ msgid ""
 "some info."
 msgstr "### Firewalls y routers\n\nFreenet debería funcionar bien con la mayoría de routers, pero si está\nteniendo problemas y tiene un cortafuegos (firewall) o un router, haga\nclic [**aquí**](help.html#firewall) para obtener algo de información."
 
-#: pages/download.py:203
+#: pages/download.py:204
 msgid ""
 "### So it's running, what do I do?\n"
 "\n"
@@ -1778,7 +1776,7 @@ msgid ""
 "guys!)."
 msgstr "### Así que está en marcha, ¿qué hago?\n\nCuando se cierre el instalador debería abrir una ventana de navegador\napuntando al asistente de primer inicio. Aquí puede configurar las\nopciones básicas, y luego comenzar a usar Freenet. Puede acceder a\nFreenet más tarde a través del menú de la bandeja de sistema (en la\nparte inferior derecha de la pantalla), o usar atajo Navegar por Freenet\nen el escritorio y/o menú de inicio. Si no funciona, abra\n[http://127.0.0.1:8888/](http://127.0.0.1:8888/)\nen su navegador web.\n\nPara lograr la mejor seguridad debe usar un navegador aparte para\nFreenet, preferiblemente en modo privacidad. En Windows, el menú de\nla bandeja de sistema tratará de usar Chrome en modo incógnito si es\nposible. Internet Explorer no funciona bien con Freenet, Firefox y Opera\nson ampliamente usados.\n\nSi conoce alguien ejecutando Freenet, puede mejorar su seguridad y ayudar\na construir una red robusta al conectarse al nodo de este. Primero, abra la\npágina [Añadir un amigo](http://127.0.0.1:8888/addfriend/). Usted y su amigo deben cada uno\ndescargar su \"referencia de nodo\". Envíe el fichero a la otra persona, y añada\nla referencia de nodo de esta usando el formulario de la parte inferior de la página.\nCuando ambos estén añadidos, el nodo de su amigo debería mostrarse en\nla página Amigos, probablemente como \"CONECTADO\" u \"OCUPADO\".\nPuede establecer un nombre para su nodo en la página de configuración\npara hacer facilitar que se vea de quién se trata. Añada sólo nodos ejecutados\npor personas a las que **conozca realmente**, tanto en línea como\nfísicamente, ya que añadir a completos extraños daña el rendimiento y no\nmejora mucho la seguridad (¡podrían ser los chicos malos!)."
 
-#: pages/download.py:229
+#: pages/download.py:230
 msgid ""
 "### So I'm connected, what do I do?\n"
 "\n"
@@ -1791,7 +1789,7 @@ msgid ""
 "micro-blogging (Sone, a bit like twitter)."
 msgstr "### Así que estoy conectado, ¿qué hago?\n\nEl propio Freenet incluye sitios web anónimos (\"freesites\"), compartición de\nficheros, búsqueda, y más, pero también puede usar aplicaciones de\nterceros para chat, compartición de ficheros, ayudarle a subir freesites, etc.\n\nLa [Guía de redes sociales de Freenet (Freenet Social Networking Guide)](http://freesocial.draketo.de/)\nexplica cómo instalar las principales herramientas de terceros, incluyendo\ncorreo electrónico, foros y micro-blogging (Sone, algo parecido a Twitter)."
 
-#: pages/download.py:239
+#: pages/download.py:240
 msgid ""
 "### It doesn't work, now what?\n"
 "\n"
@@ -1802,7 +1800,7 @@ msgid ""
 "https://webchat.freenode.net/?randomnick=1&channels=freenet))."
 msgstr "### No funciona, ¿ahora qué?\n\nSi tiene problemas instalando o ejecutando Freenet, por favor, contacte con\nnosotros en [la lista de soporte](mailto:support@freenetproject.org) ([suscríbase aquí](\nhelp.html#mailing-lists)), o únase a\nnosotros en el IRC en el canal #freenet de irc.freenode.net (pruebe [aquí](\nhttps://webchat.freenode.net/?randomnick=1&channels=freenet))."
 
-#: pages/download.py:247
+#: pages/download.py:248
 msgid ""
 "### Hardware requirements\n"
 "\n"
@@ -1822,7 +1820,7 @@ msgid ""
 "http://wrapper.tanukisoftware.org/doc/english/download.jsp)."
 msgstr "### Requerimientos de hardware\n\nGeneralmente un procesador de 1 GHz y 1 GB de RAM debería estar bien.\nFreenet se podrá ejecutar en sistemas más pequeños, pero usa al menos\n128 MB de RAM, así que, a menos que el sistema no haga nada más, le costará\nejecutarse en menos de 512 MB. Sin embargo, el procesador es un problema\nmenor, se sabe de gente que ha estado ejecutándolo sobre Pentium II o ATOM\nde 400 MHz, aunque las descargas y la navegación serían lentas.\n\nFreenet usará una porción de su disco para almacenar datos, puede configurar\nesto a cualquier tamaño desde 100 MB en adelante, pero recomendamos al\nmenos de 1 GB. Freenet también usa espacio de disco para sus descargas.\nEl uso de memoria de Freenet es aproximadamente de 256 MB más 400 KB\npara cada 2 GB de almacenamiento de datos.\n\nEn Windows de 64 bits, instalaremos una Java Virtual Machine (máquina\nvirtual de Java) de 32 bits a causa de las limitaciones del [Java Service\nWrapper (encapsulador como servicio escrito en Java)](http://wrapper.tanukisoftware.com/doc/spanish/download.jsp)."
 
-#: pages/download.py:264
+#: pages/download.py:265
 msgid ""
 "### Upgrading\n"
 "\n"
@@ -1840,18 +1838,18 @@ msgid ""
 "**Source Code:** See [the GitHub repository](https://github.com/freenet/fred)."
 msgstr "### Actualizar\n\nFreenet proporciona un mecanismo de actualización sobre la red Freenet: Se\nmantendrá a si mismo al día automáticamente mediante otros nodos Freenet,\ny normalmente esto funcionará incluso si no es posible enrutar hacia ellos\ndebido a que sean demasiado nuevos. Esto es anónimo y seguro, y\nrecomendamos a la gente que lo use. Sin embargo, si algo está gravemente\ndañado, puede actualizar su nodo manualmente desde nuestros servidores:\n\n* Los usuarios de Windows pueden actualizar a la última versión estable de\nFreenet desde el menú de bandeja de sistema, o al ejecutar \"update.cmd\" en\nel directorio de Freenet. \n* OS X, GNU/Linux, u otros usuarios POSIX pueden actualizar ejecutando el\nscript de consola update.sh en el directorio Freenet. \n\n**Código fuente:** Vea el [repositorio en GitHub](https://github.com/freenet/fred)."
 
-#: pages/download.py:284
-msgid "Important note for first time users"
-msgstr "Nota importante para nuevos usuarios"
-
 #: pages/download.py:287
+msgid "Connect to Friends"
+msgstr "Conectar con amigos"
+
+#: pages/download.py:290
 msgid ""
 "If you know other people who also use Freenet, you can [add them as Friends][url_addfriend].\n"
 "This will make you safer against attacks on Freenet Project infrastructure\n"
 "(the [seednodes][url_seednode_info])."
 msgstr "Si conoce a otras personas que también usan Freenet, puede [añadirles como amigos][url_addfriend].\nEsto le hará más seguro contra ataques en la infraestructura del Freenet Project\n(los [nodos semilla][url_seednode_info])."
 
-#: pages/download.py:291
+#: pages/download.py:294
 msgid ""
 "Once you are connected to 5 or more friends, you can enable **high security mode**.\n"
 "In high security mode Freenet will only connect to your friends. \n"
@@ -3205,10 +3203,6 @@ msgstr "### Desuscribirse\n\nPara desuscribirse de una de la listas a las que es
 msgid ""
 "### The lists\n"
 "\n"
-"* [Announcements](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/announce/) ([archive](https://emu.freenetproject.org/pipermail/announce/))<br/>\n"
-"Please sign up here to be notified of major Freenet developments, such as\n"
-"announcements of new releases or important bugfixes. This list is moderated\n"
-"and is very low traffic (less than one message per month).\n"
 "* [Support](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/support/) ([archive](https://emu.freenetproject.org/pipermail/support/))<br/>\n"
 "Asking for or giving advice relating to getting Freenet working,\n"
 "bug reports, and suggestions on improving the user experience. Requests for\n"
@@ -3216,50 +3210,34 @@ msgid ""
 "**Note:** Emails sent to this mailing list from those not subscribed to the\n"
 "list must be manually approved, and this can impose a delay of several days.\n"
 "To avoid this delay, please [subscribe](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/support/).\n"
-"* [Tech](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/tech/) ([archive](https://emu.freenetproject.org/pipermail/tech/))<br/>\n"
-"This is for general technical discussion of Freenet. If you want to discuss\n"
-"longer-term technical ideas about Freenet, please use this list.\n"
 "* [Development](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/devl/) ([archive](https://emu.freenetproject.org/pipermail/devl/))<br/>\n"
 "This list is for active developers to discuss bugs, and the implementation\n"
 "of near-term new features. Please only post to this list if you know what you\n"
 "are talking about, otherwise use the tech mailing list (see above).\n"
-"* [Darknet-Tools](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/darknet-tools/) ([archive](https://emu.freenetproject.org/pipermail/darknet-tools/))<br/>\n"
-"A mailing list to discuss and develop ways of extending the darknet while\n"
-"keeping it a darknet: Instant messenger plugins, IRC plugins, email\n"
-"invitations, functionality in the node needed to support these, and any other\n"
-"means of extending the darknet while keeping it a darknet as much as possible.\n"
-"* [Chat](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/chat/) ([archive](https://emu.freenetproject.org/pipermail/chat/))<br/>\n"
-"This list is for general discussion of Freenet, topics that are not\n"
-"suitable to other lists. Discussions of politics, law, philosophy, lawsuits,\n"
-"programming languages, related technology that should not be part of Freenet,\n"
-"and any thread that the developers and users don't deem appropriate to the\n"
-"main lists should be discussed here. Questions such as \"How can I prevent my\n"
-"node from being used by terrorists?\", or \"Why don't you rewrite Freenet in\n"
-"C++?\" should be addressed to this list.\n"
 "\n"
 "_**Third party tools**: We are hosting some other mailing lists on our server\n"
 "here is the [full list][url_listinfo]._"
-msgstr "### Las listas\n\n* [Announcements (anunciamientos)](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/announce/) ([archivo](https://emu.freenetproject.org/pipermail/announce/))<br/>\nPor favor, regístrese aquí para ser notificado de los principales desarrollos de\nFreenet, tales como anuncios de nuevas versiones o importantes reparaciones\nde fallos. Esta lista está moderada y tiene un tráfico muy bajo (menos de un\nmensaje al mes).\n* [Suppor (soporte)](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/support/) ([archivo](https://emu.freenetproject.org/pipermail/support/))<br/>\nPedir o dar consejo en relación a poner en marcha Freenet, informes de\nfallos, y sugerencias sobre mejora de la experiencia de usuario. Las peticiones\nde ayuda es más probable que sean escuchadas aquí que en las otras listas\nde correo.\n**Nota:** Los correos enviados a esta lista de correo desde aquellos no\nsuscritos a la listas deben ser aprobados manualmente, y esto puede imponer\nun retardo de varios días. Para evitar este retardo, por favor [suscríbase](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/support/).\n* [Tech (tecnología)](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/tech/) ([archivo](https://emu.freenetproject.org/pipermail/tech/))<br/>\nEsto es para la discusión técnica general de Freenet. Si quiere discutir ideas\ntécnicas sobre Freenet a largo plazo, por favor, use esta lista.\n* [Development (desarrollo)](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/devl/) ([archivo](https://emu.freenetproject.org/pipermail/devl/))<br/>\nEsta lista es para que los desarrolladores activos discutan fallos, y la\nimplementación de nuevas características a corto plazo. Por favor, si habla\ncon conocimiento de causa, publique sólo en esta lista, de otro modo use la\nlista de correo de tecnología (ver arriba).\n* [Darknet-Tools (herramientas de la darknet)](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/darknet-tools/) ([archivo](https://emu.freenetproject.org/pipermail/darknet-tools/))<br/>\nUna lista de correo para discutir y desarrollar formas de extender la darknet\nmanteniéndola como una darknet: Complementos de mensajería instantánea,\ncomplementos de IRC, invitaciones de correo electrónico, funcionalidad en el\nnodo necesaria para soportar estas, y cualquier otro medio de extender la\ndarknet manteniéndola como una darknet tanto como sea posible.\n* [Chat](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/chat/) ([archivo](https://emu.freenetproject.org/pipermail/chat/))<br/>\nEsta lista es para discusión general sobre Freenet, temas que no se ajustan a\notras listas. Debates sobre política, leyes, filosofía, demandas judiciales,\nlenguajes de programación, tecnología relacionada que no debe ser parte de\nFreenet, y cualquier otro hilo que los desarrolladores y usuarios no consideren\napropiado para las listas principales, se debe discutir aquí. Preguntas del estilo\n\"¿Cómo puedo evitar que mi nodo sea usado por terroristas?\", o \"¿Por qué no\nreescribe Freenet en C++?\" deben ser abordadas en esta lista.\n\n_**Herramientas de terceros**: Estamos alojando algunas otras listas de\ncorreo en nuestro servidor web, aquí tiene la [lista completa][url_listinfo]._"
+msgstr "### Las listas de correo\n\n* [Soporte](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/support/) ([archivo](https://emu.freenetproject.org/pipermail/support/))<br/>\nPara preguntar por, o aconsejar, en relación a lograr que Freenet funcione, \npresentar informes de fallos, o hacer sugerencias para mejorar la experiencia\ndel usuario. Las peticiones de ayuda es más probable que sean oídas aquí\nque en otras listas de correo.\n**Nota:** Los correos electrónicos enviados a esta lista de correo por parte de \naquellos no suscritos a la lista, deben ser aprobados manualmente, y esto\npuede imponer un retardo de varios días. Para evitar este retardo, por favor\n[suscríbase](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/support/).\n* [Desarrollo](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/devl/) ([archivo](https://emu.freenetproject.org/pipermail/devl/))<br/>\nEsta lista es para que los desarrolladores activos discutan fallos, y la\nimplementación de nuevas características a corto plazo. Por favor, únicamente\npublique en esta lista si sabe de lo que está hablando, de otro modo use la lista\nde correo de tecnología (ver arriba).\n\n_**Herramientas de terceros**: Estamos alojando algunas otras listas\nde correo en nuestro servidor, aquí tiene el [listado completo][url_listinfo]._"
 
-#: pages/help.py:1060
+#: pages/help.py:1040
 msgid "Suggestions"
 msgstr "Sugerencias"
 
-#: pages/help.py:1066 pages/help.py:1074
+#: pages/help.py:1046 pages/help.py:1054
 msgid "Chat with us"
 msgstr "Charle con nosotros"
 
-#: pages/help.py:1069
+#: pages/help.py:1049
 msgid ""
 "Many of the developers and users of Freenet are on the [IRC](\n"
 "https://en.wikipedia.org/wiki/IRC) channel #freenet on chat.freenode.net."
 msgstr "Algunos de los desarrolladores y usuarios de Freener estan en el canal\n[IRC](https://en.wikipedia.org/wiki/IRC) #freenet en chat.freenode.net."
 
-#: pages/help.py:1078
+#: pages/help.py:1058
 msgid "Setup"
 msgstr "Instalar"
 
-#: pages/help.py:1084
+#: pages/help.py:1064
 msgid "Help"
 msgstr "Ayuda"
 
