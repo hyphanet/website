@@ -83,6 +83,12 @@ If one percent of people used Freenet, everyone could safely be a whistleblower.
 
             <div class="col-sm-8 col-md-8 col-lg-8">
                 <div class="row">
+                    <div id="main-logo">
+                        <img src="assets/img/rabbit/freenet-bunny-with-name.png" alt="Freenet Logo, leap over censorship"/><br />
+                        <br />
+                        Leap over censorship<br />
+                        Escape total surveillance
+                    </div>
                     <div id="carousel-slider">
                         <div class="carousel-inner">
                             $html__sliders
