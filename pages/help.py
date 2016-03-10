@@ -1067,11 +1067,11 @@ class SupportSection(Section):
     def get_content(self):
         # License: GFDL (from old freenetproject.org website)
         return text(md(_("""
-If you need help installing Freenet for the first time, or have trouble using Freenet and can't find an answer to your problem in the [FAQ][] above or in the [Knowledge Base][kb_link], please create a new discussion on our support forum.
+If you need help installing Freenet for the first time, or have trouble using Freenet and can't find an answer to your problem in the [FAQ][faq_link] above or in the [Knowledge Base][kb_link], please create a new discussion on our support forum.
 
 When writing your support request, please make sure you include a full description of the problem, your current version of Java, your operating system and current Freenet version.
 """) + "\n\n" + """
-[FAQ]: #faq
+[faq_link]: #faq
 [kb_link]: https://freenetproject.tenderapp.com/kb
 """  + "\n\n" + """
 <a href="https://freenetproject.tenderapp.com/discussion/new" id="supportlink" class="btn button-custom btn-custom-two">{}</a>
