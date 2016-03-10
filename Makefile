@@ -1,2 +1,2 @@
-all: pages/** assets/**
+all: pages/ assets/
 	./generate

@@ -295,10 +295,22 @@ margin-right: 20px;
 }
 
 /*Main Logo*/
-#main-logo {
+#home-logo {
     margin-top: 2em;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
 }
+
+#home-download {
+    margin-bottom: 2em;
+}
+
+#home-slogan {
+    margin-bottom: 1em;
+}
+#home-mission {
+    margin-bottom: 1em;
+}
+
 
 /*Donate button*/
 

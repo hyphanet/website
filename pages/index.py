@@ -83,20 +83,17 @@ If one percent of people used Freenet, everyone could safely be a whistleblower.
 
             <div class="col-sm-8 col-md-8 col-lg-8">
                 <div class="row">
-                    <div id="main-logo">
+                    <div id="home-logo">
                         <img src="assets/img/rabbit/freenet-bunny-with-name.png" alt="Freenet Logo, leap over censorship"/><br />
-                        <br />
+                    </div>
+                    <div id="home-slogan" class="h3">
                         Leap over censorship<br />
                         Escape total surveillance
                     </div>
-                    <div id="carousel-slider">
-                        <div class="carousel-inner">
-                            $html__sliders
-                        </div>
+                    <div id="home-mission">
+                        Freenet recovers confidential and anonymous communication in digital space
                     </div>
-                </div>
-                <div class="row">
-                    <div class="download">
+                    <div id="home-download" class="download">
                         <!-- FIXME: become social
                         <div class="social">
                         <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-facebook "></i></a>
@@ -111,6 +108,13 @@ If one percent of people used Freenet, everyone could safely be a whistleblower.
                             <i class="icon ion-arrow-down-a"></i>
                             $str__download_text
                         </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="carousel-slider">
+                        <div class="carousel-inner">
+                            $html__sliders
+                        </div>
                     </div>
                 </div>
             </div>
