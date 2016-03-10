@@ -1060,6 +1060,23 @@ class SuggestionsSection(Section):
         self.title = _("Suggestions")
         self.direct_link = "https://freenet.uservoice.com/"
 
+class SupportSection(Section):
+    def __init__(self):
+        self.slug = "support"
+        self.title = _("Get Support")
+    def get_content(self):
+        # License: GFDL (from old freenetproject.org website)
+        return text(md(_("""
+If you need help installing Freenet for the first time, or have trouble using Freenet and can't find an answer to your problem in the [FAQ][] above or in the [Knowledge Base][kb_link], please create a new discussion on our support forum.
+
+When writing your support request, please make sure you include a full description of the problem, your current version of Java, your operating system and current Freenet version.
+""") + "\n\n" + """
+[FAQ]: #faq
+[kb_link]: https://freenetproject.tenderapp.com/kb
+"""  + "\n\n" + """
+<a href="https://freenetproject.tenderapp.com/discussion/new" id="supportlink" class="btn button-custom btn-custom-two">{}</a>
+""".format(_("Create a support discussion"))))
+
 class ChatSection(Section):
     def __init__(self):
         self.slug = "irc"
@@ -1085,6 +1102,7 @@ class HelpPage(Page):
         self.first_section_in_menu = True
         self.sections = [
             FaqSection(),
+            SupportSection(),
             MailingListSection(),
             SuggestionsSection(),
             ChatSection(),
