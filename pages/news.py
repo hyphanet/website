@@ -16,6 +16,54 @@ class NewsItem(object):
 def news_items():
     donate_button = """<a class="btn button-custom btn-custom-two donate-button" href="donate.html">""" + _("Donate today.") + """</a>"""
     return [
+        NewsItem("20160319-1472", _("2016-03-19 - Freenet 0.7.5 build 1472 released"),
+_("""
+This is the last build to support Java 6! The next build will require Java 7 or higher. Nodes running Java 7 or higher and using the official update key will now use a new update key. Nodes on Java 6 remain using the old update key and will not be updated to further builds. Thanks to yadevel for fixing the regression this release was blocking on!
+
+This version was initially partially released as build 1471 - it was released on GitHub but not offered from the website or auto-update. Build 1472 fixes a bug which when using Java 6 prevented nodes from starting for the first time. It did not break existing installations.
+
+Highlights:
+
+- Fix uploads stalling when using MAXIMUM physical security.
+- Fix lots of "setNativePriority(X) has failed!", which was caused by a serious thread priority problem. This might fix nodes unexpectedly losing peers.
+- Order alerts within a category by time: if you have lots of messages from darknet peers they will remain nicely sorted.
+
+Translations:
+
+- Add partial Greek translation.
+- Update German, Bokmål, Brazilian Portuguese, Simplified Chinese, and  Traditional Chinese translations.
+- Fix Bokmål localization loading.
+
+Also:
+
+- Remove Gantros Index because it stopped updating.
+- Remove Linkageddon because it stopped updating.
+- New version of UPnP to fix some instability and compatibility problems. Thanks to 007pig we have a [new UPnP plugin][upnp2] in development which supports UPnP2, but it is not yet included.
+- New version of KeyUtils.
+
+WebOfTrust now has an updatable testing version built and maintained by xor. To use it, unload WebOfTrust, then load "WebOfTrust Testing Versions" on the Plugins page. Versions built by xor will not work with Java 6.
+
+Sites can set favicons with <link ref="icon" type=... href=...>. (type could be "image/x-icon")
+
+Extensive review and improvement of English source strings and French and Spanish translations. Tests for and fixes of value substitution in translations. Thanks Vaughan Woodzell!
+
+The default theme is now sky-static instead of clean-dropdown. This looks less outdated, though not modern.
+
+There is now a [caching layer][caching] on the store. This should significantly reduce I/O load.
+
+Fix default bookmarks missing the "software" category since build 1470. If you don't see this category please re-add the default bookmark set from the bookmark editing page.
+
+IpToCountry database is updated. (This allows providing the country flags on the peers pages. It is local to each instance and does not contact an external service.)
+
+WebOfTrust is updated to build 18. Its [changelog][wot18] is separate, but one of the major changes is incremental score recomputation which requires roughly 3% of the time of a full recomputation.
+
+Add partial CSS3 support, including viewport lengths. Thanks, Ben Green!
+""") +
+"""
+[caching]: https://github.com/freenet/fred/pull/157
+[wot18]: https://github.com/freenet/plugin-WebOfTrust/releases/tag/build0018
+[upnp2]: https://github.com/freenet/plugin-UPnP2
+"""),
         NewsItem("20160103-1471-pre3", _("2016-01-03 - Testing release build 1471-pre3"),
 _("""
 Freenet unstable testing prerelease 1471-pre3 is now available.
