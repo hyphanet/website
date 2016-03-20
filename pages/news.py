@@ -27,6 +27,7 @@ Highlights:
 - Fix uploads stalling when using MAXIMUM physical security.
 - Fix lots of "setNativePriority(X) has failed!", which was caused by a serious thread priority problem. This might fix nodes unexpectedly losing peers.
 - Order alerts within a category by time: if you have lots of messages from darknet peers they will remain nicely sorted.
+- There is now a [caching layer][caching] which should significantly reduce I/O load.
 
 Translations:
 
@@ -48,8 +49,6 @@ Sites can set favicons with <link ref="icon" type=... href=...>. (type could be 
 Extensive review and improvement of English source strings and French and Spanish translations. Tests for and fixes of value substitution in translations. Thanks Vaughan Woodzell!
 
 The default theme is now sky-static instead of clean-dropdown. This looks less outdated, though not modern.
-
-There is now a [caching layer][caching] on the store. This should significantly reduce I/O load.
 
 Fix default bookmarks missing the "software" category since build 1470. If you don't see this category please re-add the default bookmark set from the bookmark editing page.
 
