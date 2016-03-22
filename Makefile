@@ -1,0 +1,2 @@
+all: pages/ assets/
+	./generate

@@ -293,6 +293,24 @@ margin-right: 20px;
           height: 0px;
   }
 }
+
+/*Main Logo*/
+#home-logo {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+#home-download {
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+#home-slogan {
+}
+#home-mission {
+}
+
+
 /*Donate button*/
 
 @media screen and (max-width: 767px) {
