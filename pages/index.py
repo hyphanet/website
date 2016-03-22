@@ -91,7 +91,7 @@ If one percent of people used Freenet, everyone could safely be a whistleblower.
                         Escape total surveillance
                     </div>
                     <div id="home-mission">
-                        Freenet re-establishes freedom of speech in the internet.
+                        Freenet re-establishes freedom of speech on the Internet.
                     </div>
                     <div id="home-download" class="download">
                         <!-- FIXME: become social
