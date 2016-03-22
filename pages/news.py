@@ -44,7 +44,7 @@ Also:
 
 WebOfTrust now has an updatable testing version built and maintained by xor. To use it, unload WebOfTrust, then load "WebOfTrust Testing Versions" on the Plugins page. Versions built by xor will not work with Java 6.
 
-Sites can set favicons with <link ref="icon" type=... href=...>. (type could be "image/x-icon")
+Sites can set favicons with `<link rel="icon" type=... href=...>`. (`type` could be `"image/x-icon"`)
 
 Extensive review and improvement of English source strings and French and Spanish translations. Tests for and fixes of value substitution in translations. Thanks Vaughan Woodzell!
 
