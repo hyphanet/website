@@ -28,6 +28,7 @@ Highlights:
 - Fix lots of "setNativePriority(X) has failed!", which was caused by a serious thread priority problem. This might fix nodes unexpectedly losing peers.
 - Order alerts within a category by time: if you have lots of messages from darknet peers they will remain nicely sorted.
 - There is now a [caching layer][caching] which should significantly reduce I/O load.
+- Update WebOfTrust from build 15 to build 18. [Its][wot16] [changelogs][wot17] [are][wot18] separate, but the changes reduce CPU load. Incremental score recomputation requires roughly 3% of the time of full recomputation, and queuing trust lists to disk lowers thread usage.
 
 Translations:
 
@@ -54,13 +55,13 @@ Fix default bookmarks missing the "software" category since build 1470. If you d
 
 IpToCountry database is updated. (This allows providing the country flags on the peers pages. It is local to each instance and does not contact an external service.)
 
-WebOfTrust is updated to build 18. Its [changelog][wot18] is separate, but one of the major changes is incremental score recomputation which requires roughly 3% of the time of a full recomputation.
-
 Add partial CSS3 support, including viewport lengths. Thanks, Ben Green!
 """) +
 """
 [caching]: https://github.com/freenet/fred/pull/157
 [wot18]: https://github.com/freenet/plugin-WebOfTrust/releases/tag/build0018
+[wot17]: https://github.com/freenet/plugin-WebOfTrust/releases/tag/build0017
+[wot16]: https://github.com/freenet/plugin-WebOfTrust/releases/tag/build0016
 [upnp2]: https://github.com/freenet/plugin-UPnP2
 """),
         NewsItem("20160103-1471-pre3", _("2016-01-03 - Testing release build 1471-pre3"),
