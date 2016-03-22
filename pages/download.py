@@ -37,8 +37,8 @@ def run_show_hide_script():
     # License: GFDL (from old freenetproject.org website)
     return """
       <script type="text/javascript">
-         // Try to detect if Java 1.6.0 or higher is installed
-         //var Java = PluginDetect.isMinVersion('Java', '1,6,0');
+         // Try to detect if Java 1.7.0 or higher is installed
+         //var Java = PluginDetect.isMinVersion('Java', '1,7,0');
          
          // Os detection
          var OSName="";
@@ -129,12 +129,12 @@ obtained via your [package manager](
 https://en.wikipedia.org/wiki/Package_manager) or from [
 http://www.java.com/](http://www.java.com/).
 
-Java version 1.6 or higher is required, and 1.7 or higher is strongly
+Java version {java_required} or higher is required, and version {java_recommended} or higher is strongly
 recommended. You should keep Java up to date to avoid problems and for better
 performance.
 
 Open a terminal and run:
-""") + "\n\n" + """
+""").format(java_required=7, java_recommended=8) + "\n\n" + """
     wget 'https://freenetproject.org/assets/jnlp/freenet_installer.jar' -O new_installer_offline.jar
     java -jar new_installer_offline.jar
 """ + "\n\n" + _("""
