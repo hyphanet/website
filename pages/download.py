@@ -87,13 +87,26 @@ class DownloadSection(Section):
         self.title = _("Download")
         self.slug = "download"
     def get_content(self):
+        download_intro = md(_("""
+To access Freenet, you first need to install the main application. Freenet will run in the background and you can use
+your browser to change settings and access content. There are other applications that you can install
+at a later time to add more functionality.
+
+Steps:
+
+* [Download and install Freenet](#autostart)
+* [Add friends (or connect to strangers)](#note)
+* [Start using Freenet!](#usage)
+"""))
         # License for all content in this section: GFDL (from old freenetproject.org website)
-        return show_hide_script()+text("""<a id="autostart"></a>""" + _("Show instructions for:")+"""
+        return show_hide_script()+text(download_intro)+text("""<a id="autostart"></a><p>""" + _("Show installation instructions for:")+"""
       <a href="javascript:showDiv('windows');hideDiv('macos');hideDiv('unix');">Windows
         </a>, <a href="javascript:hideDiv('windows');showDiv('macos');hideDiv('unix');">OS X
         </a>, <a href="javascript:hideDiv('windows');hideDiv('macos');showDiv('unix');">GNU/Linux & POSIX
-        </a><br>
-"""+div("windows",md(_("""
+        </a></p>
+"""+md(_("""
+*Freenet is Open Source (GPLv2+), get the source code on [GitHub](https://github.com/freenet/fred).*
+"""))+div("windows",md(_("""
 ### Windows
 
 Download and run [the installer](assets/jnlp/FreenetInstaller.exe)
@@ -284,7 +297,7 @@ broken, you can update your node manually from our servers:
 class NoteSection(Section):
     def __init__(self):
         self.slug = "note"
-        self.title = _("Connect to Friends")
+        self.title = _("Add friends (or connect to strangers)")
     def get_content(self):
         # License: GFDL (from old freenetproject.org website)
         return text(md(_("""
@@ -299,6 +312,10 @@ but you are still able to access the rest of the network through your friends' f
 """) + "\n\n" + """
 [url_addfriend]: http://127.0.0.1:8888/addfriend/
 [url_seednode_info]: https://wiki.freenetproject.org/Seed_nodes#Seed_node
+""") + "\n\n" + _("""
+You don't have to add friends right now. Freenet will automatically connect to strangers
+and will work just fine. However, your (or someone elses) government may be able to find out who you are with
+enough effort. Be careful!
 """))
 
 class DownloadPage(Page):
