@@ -87,11 +87,10 @@ If one percent of people used Freenet, everyone could safely be a whistleblower.
                         <img src="assets/img/rabbit/freenet-bunny-with-name-flying.png" alt="Freenet Logo, leap over censorship"/><br />
                     </div>
                     <div id="home-slogan" class="h3">
-                        Leap over censorship<br />
-                        Escape total surveillance
+                        $html__slogan
                     </div>
                     <div id="home-mission">
-                        Freenet re-establishes freedom of speech on the Internet.
+                        $html__mission
                     </div>
                     <div id="home-download" class="download">
                         <!-- FIXME: become social
@@ -147,6 +146,14 @@ If one percent of people used Freenet, everyone could safely be a whistleblower.
 </section>
 <!--HOME SECTION END-->
 """
+        slogan = md(_("""
+Leap over censorship  
+Escape total surveillance
+"""))
+        mission = md(_("""
+Freenet re-establishes freedom of speech on the Internet.  
+Install Freenet and join the peer-to-peer network today!
+"""))
         download_text = _("Download Freenet")
         read_more = """<a href="{}" class="readmore">""" + _("""read more…""") + """</a>"""
         donate_text = md(_("Help keep Internet freedom alive and expand human liberty! Support another year of paid development. [Learn more about our fundraiser.][url_fundraiser]") + "\n\n" + "[url_fundraiser]: news.html#20151212-donation-appeal")
@@ -155,6 +162,8 @@ If one percent of people used Freenet, everyone could safely be a whistleblower.
         nonprofit = _("The Freenet Project Inc is a non-profit 501(c)(3) organization.")
         tax_deductable = _("""Donations are tax-deductible.""")
         return substitute_html(content,
+            html__slogan=slogan,
+            html__mission=mission,
             html__sliders=concat_html(sliders),
             str__download_text=download_text,
             md__donate_text=donate_text,
