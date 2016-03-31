@@ -17,28 +17,13 @@ class DonateSection(Section):
         set_custom_amount = _("Or set your own amount:")
         custom_amount = _("Custom amount")
         return text(md(_("""
-#### Why does The Freenet Project need donations?
-
-Although countless people have given their time and skill to the project since its inception, The Freenet Project relies on your donations to cover hosting and administrative costs (i.e. domain registrations and certificates).
-If we have enough funds, we can hire developers to work on Freenet.
-Currently we are raising $27500 to hire a developer for a year.
-[Learn more about our fundraiser.][url_fundraiser]
-
-All support is very much appreciated.
-""") + "\n\n" + _("""
 #### How can I donate?
 
-You have several options:
-
-* You can donate using PayPal.
-You can become a Freenet project "member" for a recurring payment of $5 or more per month.
-This helps give the project a more stable and dependable income which makes it easier to make long-term commitments to potential developers.
-Right now it is often difficult to say whether we will be able to pay a developer the following month.
-You can become a member by signing up for a monthly recurring donation below (this requires a [PayPal][url_paypal] account).
+* You can donate using PayPal. For a recurring payment of $5 or more per month you can become a Freenet "member" (this requires a [PayPal][url_paypal] account).
+Recurring donations give the project a more stable and dependable income which makes it easier to make long-term commitments to potential developers.
 Alternatively you can make a one-time donation.
 """) + "\n\n" + """
 [url_paypal]: https://www.paypal.com/
-[url_fundraiser]: news.html#20151212-donation-appeal
 """) + """
 <div class="row">
     <div class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0 col-lg-6 col-lg-offset-0">
@@ -220,7 +205,25 @@ All funds received will only be utilized to advance our Mission Statement, and
 are administered at the direction of the Freenet Project Board.
 
 The Freenet Project Inc is registered under EIN `95-4864038`
-""")))
+""") + "\n\n" + _("""
+#### Why does The Freenet Project need donations?
+
+Although countless people have given their time and skill to the project since its inception, The Freenet Project relies on your donations to cover hosting and administrative costs (i.e. domain registrations and certificates).
+If we have enough funds, we can hire developers to work on Freenet.
+
+Freenet is a platform for censorship-resistant communication and publishing. For the past 15 years the project has built tools to fight for freedom of speech and information. Our software provides a decentralized peer-to-peer network designed to hide who publishes or accesses potentially controversial information - or even that it exists - especially useful for those living in oppressive political regimes.
+
+While development is primarily driven by volunteers, the project has also employed paid developers to provide more-focused work. Over the past 2 years, the project's paid developer has made great progress improving “Web of Trust” functionality to combat spam, which is a central problem in any anonymous system. Unfortunately, the Freenet Project no longer has enough money to retain his services, so he is now a volunteer. This greatly reduces his capacity to continue this important work.
+
+We are excited for the future of Freenet and the projects built on top of it. There is so much more work to do, and full-time developers greatly benefit the project.
+
+Help us keep Internet freedom alive and expand human liberty.  
+[Learn more about our fundraiser.][url_fundraiser]
+
+All support is very much appreciated.
+""") + "\n\n" + """
+[url_fundraiser]: news.html#20151212-donation-appeal
+"""))
 
 
 class SponsorsSection(Section):
