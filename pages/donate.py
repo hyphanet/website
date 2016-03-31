@@ -205,9 +205,17 @@ All funds received will only be utilized to advance our Mission Statement, and
 are administered at the direction of the Freenet Project Board.
 
 The Freenet Project Inc is registered under EIN `95-4864038`
-""") + "\n\n" + _("""
-#### Why does The Freenet Project need donations?
+""")))
 
+
+class WhySection(Section):
+    def __init__(self):
+        self.slug = "why"
+        self.title = _("Why donate")
+    def get_content(self):
+        donate_email = """<span class="e-mail" data-user="etanod" data-website="gro.tcejorpteneerf"></span>"""
+        # License: GFDL (from old freenetproject.org website)
+        return text(md(_("""
 Although countless people have given their time and skill to the project since its inception, The Freenet Project relies on your donations to cover hosting and administrative costs (i.e. domain registrations and certificates).
 If we have enough funds, we can hire developers to work on Freenet.
 
@@ -324,6 +332,7 @@ class DonatePage(Page):
         self.sections = [
             DonateSection(),
             FreenetProjectIncSection(),
+            WhySection(),
             SponsorsSection(),
             StoreSection(),
             ]
