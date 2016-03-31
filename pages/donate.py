@@ -186,13 +186,17 @@ choose_donation=choose_donation, set_custom_amount=set_custom_amount, custom_amo
 You can donate using [Bitcoin][url_bitcoin].
 Send your donations to {bitcoin_address}.
 
+* You can also donate by purchasing items from the Freenet [store][url_zazzle_store].
+
+* Or support us via [Salt at Bountysource][url_salt_bountysource].
+
 * Alternatively, please contact us: {donate_email} if you cannot use any of these payment methods.
 
-* You can also donate to the project by purchasing items from the Freenet [store][url_zazzle_store].
 """).format(donate_email=donate_email, bitcoin_address=bitcoin_address) + "\n\n" + """
 [url_bitcoin]: http://www.bitcoin.org/
 [logo_bitcoin]: assets/img/BC_nBG_48px.png
 [url_zazzle_store]: http://www.zazzle.com/freenetproject
+[url_salt_bountysource]: https://salt.bountysource.com/teams/freenet
 """))
 
 class FreenetProjectIncSection(Section):
