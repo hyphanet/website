@@ -88,16 +88,20 @@ class DownloadSection(Section):
         self.slug = "download"
     def get_content(self):
         download_intro = md(_("""
-To access Freenet, you first need to install the main application. Freenet will run in the background and you can use
-your browser to change settings and access content. There are other applications that you can install
-at a later time to add more functionality.
+To access Freenet, you first need to install the main application.
+Freenet will run in the background and you can use your browser to change settings and access content.
+There are other applications that you can install at a later time to add more functionality.
 
 Steps:
 
-* [Download and install Freenet](#autostart)
-* [Add friends (or connect to strangers)](#note)
-* [Start using Freenet!](#usage)
-"""))
+* [Download and install Freenet][autostart]
+* [Add friends (or connect to strangers)][add_friends]
+* [Start using Freenet!][usage]
+""") + """
+[autostart]: #autostart
+[add_friends]: #note
+[usage]: #usage
+""")
         # License for all content in this section: GFDL (from old freenetproject.org website)
         return show_hide_script()+text(download_intro)+text("""<a id="autostart"></a><p>""" + _("Show installation instructions for:")+"""
       <a href="javascript:showDiv('windows');hideDiv('macos');hideDiv('unix');">Windows
@@ -105,8 +109,10 @@ Steps:
         </a>, <a href="javascript:hideDiv('windows');hideDiv('macos');showDiv('unix');">GNU/Linux & POSIX
         </a></p>
 """+md(_("""
-*Freenet is Open Source (GPLv2+), get the source code on [GitHub](https://github.com/freenet/fred).*
-"""))+div("windows",md(_("""
+*Freenet is Open Source (GPLv2+), get the source code on [GitHub][github_freenet].*
+""") + """
+[github_freenet]: https://github.com/freenet/fred
+""")+div("windows",md(_("""
 ### Windows
 
 Download and run [the installer](assets/jnlp/FreenetInstaller.exe)
@@ -309,14 +315,13 @@ Once you are connected to 5 or more friends, you can enable **high security mode
 In high security mode Freenet will only connect to your friends. 
 This makes your usage of Freenet almost undetectable, 
 but you are still able to access the rest of the network through your friends' friends friends ....
-""") + "\n\n" + """
+""") + "\n\n" + _("""
+You don't have to add friends right now. If you use a "low" or "normal" security level Freenet will automatically connect to strangers and will work just fine.
+However, your (or someone else's) government may be able to find out who you are with enough effort. Be careful!
+""")) + """
 [url_addfriend]: http://127.0.0.1:8888/addfriend/
 [url_seednode_info]: https://wiki.freenetproject.org/Seed_nodes#Seed_node
-""") + "\n\n" + _("""
-You don't have to add friends right now. Freenet will automatically connect to strangers
-and will work just fine. However, your (or someone elses) government may be able to find out who you are with
-enough effort. Be careful!
-"""))
+""") + "\n\n" 
 
 class DownloadPage(Page):
     def __init__(self):

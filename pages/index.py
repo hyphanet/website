@@ -87,10 +87,10 @@ If one percent of people used Freenet, everyone could safely be a whistleblower.
                         <img src="assets/img/rabbit/freenet-bunny-with-name-flying.png" alt="Freenet Logo, leap over censorship"/><br />
                     </div>
                     <div id="home-slogan" class="h3">
-                        $html__slogan
+                        $md__slogan
                     </div>
                     <div id="home-mission">
-                        $html__mission
+                        $md__mission
                     </div>
                     <div id="home-download" class="download">
                         <!-- FIXME: become social
@@ -162,8 +162,8 @@ Install Freenet and join the peer-to-peer network today!
         nonprofit = _("The Freenet Project Inc is a non-profit 501(c)(3) organization.")
         tax_deductable = _("""Donations are tax-deductible.""")
         return substitute_html(content,
-            html__slogan=slogan,
-            html__mission=mission,
+            md__slogan=slogan,
+            md__mission=mission,
             html__sliders=concat_html(sliders),
             str__download_text=download_text,
             md__donate_text=donate_text,
