@@ -87,11 +87,10 @@ If one percent of people used Freenet, everyone could safely be a whistleblower.
                         <img src="assets/img/rabbit/freenet-bunny-with-name-flying.png" alt="Freenet Logo, leap over censorship"/><br />
                     </div>
                     <div id="home-slogan" class="h3">
-                        Leap over censorship<br />
-                        Escape total surveillance
+                        $md__slogan
                     </div>
                     <div id="home-mission">
-                        Freenet re-establishes freedom of speech on the Internet.
+                        $md__mission
                     </div>
                     <div id="home-download" class="download">
                         <!-- FIXME: become social
@@ -147,6 +146,14 @@ If one percent of people used Freenet, everyone could safely be a whistleblower.
 </section>
 <!--HOME SECTION END-->
 """
+        slogan = md(_("""
+Leap over censorship  
+Escape total surveillance
+"""))
+        mission = md(_("""
+Freenet re-establishes freedom of speech on the Internet.  
+Install Freenet and join the peer-to-peer network today!
+"""))
         download_text = _("Download Freenet")
         read_more = """<a href="{}" class="readmore">""" + _("""read more…""") + """</a>"""
         donate_text = md(_("Help keep Internet freedom alive and expand human liberty! Support another year of paid development. [Learn more about our fundraiser.][url_fundraiser]") + "\n\n" + "[url_fundraiser]: news.html#20151212-donation-appeal")
@@ -155,6 +162,8 @@ If one percent of people used Freenet, everyone could safely be a whistleblower.
         nonprofit = _("The Freenet Project Inc is a non-profit 501(c)(3) organization.")
         tax_deductable = _("""Donations are tax-deductible.""")
         return substitute_html(content,
+            md__slogan=slogan,
+            md__mission=mission,
             html__sliders=concat_html(sliders),
             str__download_text=download_text,
             md__donate_text=donate_text,
@@ -219,6 +228,9 @@ class ServiceSection(Section):
         content = """
 <!-- service start -->
 <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12" style="text-align: center">
+        $md__whatis_text
+    </div>
     $html__services
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="text-align: center">
         <div class="download">
@@ -245,6 +257,7 @@ class ServiceSection(Section):
         tagline = _("Share, Chat, Browse. Anonymously.")
         download_text = _("Download Freenet")
         return substitute_html(content,
+            md__whatis_text=md(_("Freenet is a peer-to-peer network for censorship-resistant communication.")),
             html__services=concat_html(services),
             str__tagline=tagline,
             str__download_text=download_text)
