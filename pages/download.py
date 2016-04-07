@@ -109,7 +109,7 @@ Steps:
         </a>, <a href="javascript:hideDiv('windows');hideDiv('macos');showDiv('unix');">GNU/Linux & POSIX
         </a></p>
 """+md(_("""
-*Freenet is Open Source (GPLv2+), get the source code on [GitHub][github_freenet].*
+*Freenet is free and open source software available under GPLv2+. The source code is on [GitHub][github_freenet].*
 """) + """
 [github_freenet]: https://github.com/freenet/fred
 """)+div("windows",md(_("""
