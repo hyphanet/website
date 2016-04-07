@@ -120,8 +120,7 @@ Download and run [the installer](assets/jnlp/FreenetInstaller.exe)
 
 It will automatically install Freenet and other required components for you.
 When done, your default browser will automatically open up to Freenet's
-web-based user interface. (Freenet contains **NO spyware or adware** ,
-it's Free Software! The source code is publicly available for review)
+web-based user interface.
 
 Freenet requires Windows XP or later.
 """)))+div("macos",md(_("""
@@ -294,8 +293,6 @@ broken, you can update your node manually from our servers:
   system tray menu, or by running "update.cmd" in the Freenet directory.
 * OS X, GNU/Linux, or other POSIX users may upgrade by running the update.sh
   shell script in the Freenet directory.
-
-**Source Code:** See [the GitHub repository](https://github.com/freenet/fred).
 """) + """
 
 [url_freesocial]: http://freesocial.draketo.de/
