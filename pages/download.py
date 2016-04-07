@@ -296,7 +296,8 @@ broken, you can update your node manually from our servers:
   shell script in the Freenet directory.
 
 **Source Code:** See [the GitHub repository](https://github.com/freenet/fred).
-""") + "\n\n" + """
+""") + """
+
 [url_freesocial]: http://freesocial.draketo.de/
 """))
 
@@ -312,11 +313,12 @@ This will make you safer against attacks on Freenet Project infrastructure
 (the [seednodes][url_seednode_info]).
 """) + "\n\n" + _("""
 Once you are connected to 5 or more friends, you can enable **high security mode**.
-In high security mode Freenet will only connect to your friends. 
-This makes your usage of Freenet almost undetectable, 
+In high security mode Freenet will only connect to your friends.
+This makes your usage of Freenet almost undetectable,
 but you are still able to access the rest of the network through your friends' friends friends ....
 """) + "\n\n" + _("""
-You don't have to add friends right now. If you use a "low" or "normal" security level Freenet will automatically connect to strangers and will work just fine.
+You don't have to add friends right now.
+If you use a "low" or "normal" security level Freenet will automatically connect to strangers and will work just fine.
 However, your (or someone else's) government may be able to find out who you are with enough effort. Be careful!
 """) + """
 

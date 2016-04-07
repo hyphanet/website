@@ -147,11 +147,11 @@ If one percent of people used Freenet, everyone could safely be a whistleblower.
 <!--HOME SECTION END-->
 """
         slogan = md(_("""
-Leap over censorship  
+Leap over censorship<br>
 Escape total surveillance
 """))
         mission = md(_("""
-Freenet re-establishes freedom of speech on the Internet.  
+Freenet re-establishes freedom of speech on the Internet.<br>
 Install Freenet and join the peer-to-peer network today!
 """))
         download_text = _("Download Freenet")
