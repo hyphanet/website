@@ -220,7 +220,7 @@ class ServiceSection(Section):
 <!-- service start -->
 <div class="row">
     $html__services
-    <div class="col-sm-12 col-md-12 col-lg-12" style="text-align: center">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="text-align: center">
         <div class="download">
         <p>$str__tagline</p>
         <!-- FIXME: become social
