@@ -318,10 +318,11 @@ but you are still able to access the rest of the network through your friends' f
 """) + "\n\n" + _("""
 You don't have to add friends right now. If you use a "low" or "normal" security level Freenet will automatically connect to strangers and will work just fine.
 However, your (or someone else's) government may be able to find out who you are with enough effort. Be careful!
-""")) + """
+""") + """
+
 [url_addfriend]: http://127.0.0.1:8888/addfriend/
 [url_seednode_info]: https://wiki.freenetproject.org/Seed_nodes#Seed_node
-""") + "\n\n" 
+"""))
 
 class DownloadPage(Page):
     def __init__(self):
