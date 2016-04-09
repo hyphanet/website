@@ -137,7 +137,7 @@ should be able to use it.
 It will ask about network security level - "protection from strangers
 attacking you over the internet". If you choose LOW or NORMAL, Freenet should
 "just work", connecting in a few minutes. If you choose HIGH or MAXIMUM,
-Freenet will need you to add Friends before you can use it. These must be
+Freenet will need you to add friends before you can use it. These must be
 people you personally know. Adding people you don't know will not improve
 security.
 """)))
@@ -179,9 +179,9 @@ that are connected directly to you are the only nodes on Freenet that might
 see what kind of traffic that passes through to your Freenet node. But if
 insecure mode is enabled, any node can find yours; this is the big advantage
 of **not** enabling insecure mode: you are effectively invisible except to
-your Friends. In practice most people start off with insecure mode and
-gradually add Friends, and hopefully turn off insecure mode once they have at
-least 10 Friends.
+your friends. In practice most people start off with insecure mode and
+gradually add friends, and hopefully turn off insecure mode once they have at
+least 10 friends.
 """) + "\n\n" + _("""
 ![](assets/img/Freenet-architecture-small.png)
 
