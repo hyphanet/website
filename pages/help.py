@@ -1026,8 +1026,7 @@ forgot it.)_
   To avoid this delay, please [subscribe](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/support/).
 * [Development](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/devl/) ([archive](https://emu.freenetproject.org/pipermail/devl/))<br/>
   This list is for active developers to discuss bugs, and the implementation
-  of near-term new features. Please only post to this list if you know what you
-  are talking about, otherwise use the tech mailing list (see above).
+  of near-term new features.
 
 _**Third party tools**: We are hosting some other mailing lists on our server
 here is the [full list][url_listinfo]._
