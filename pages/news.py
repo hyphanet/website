@@ -28,7 +28,7 @@ Highlights:
 - Fix lots of "setNativePriority(X) has failed!", which was caused by a serious thread priority problem. This might fix nodes unexpectedly losing peers.
 - Order alerts within a category by time: if you have lots of messages from darknet peers they will remain nicely sorted.
 - There is now a [caching layer][caching] which should significantly reduce I/O load.
-- Update WebOfTrust from build 15 to build 18. [Its][wot16] [changelogs][wot17] [are][wot18] separate, but the changes reduce CPU load. Incremental score recomputation requires roughly 3% of the time of full recomputation, and queuing trust lists to disk lowers thread usage.
+- Update WebOfTrust from build 15 to build 18. [Its][wot16] [changelogs][wot17] [are][wot18] separate, but the changes reduce CPU load. Incremental score recomputation requires roughly 3 percent of the time of full recomputation, and queuing trust lists to disk lowers thread usage.
 
 Translations:
 
