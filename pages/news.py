@@ -38,8 +38,8 @@ Translations:
 
 Also:
 
-- Remove Gantros Index because it stopped updating.
-- Remove Linkageddon because it stopped updating.
+- Remove Gantros Index from the default bookmark list because it stopped updating.
+- Remove Linkageddon from the default bookmark list because it stopped updating.
 - New version of UPnP to fix some instability and compatibility problems. Thanks to 007pig we have a [new UPnP plugin][upnp2] in development which supports UPnP2, but it is not yet included.
 - New version of KeyUtils.
 
