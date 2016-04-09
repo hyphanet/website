@@ -170,7 +170,7 @@ is, you need to add his/hers, and he/she needs to add yours.
 datastore, and very few connections even if insecure mode is enabled.
 Requests are sent out in a random fashion. **This makes some (or all)
 requests time out before retrieving anything.** It takes a couple of days for
-your Freenet-node to get up to speed, so please don't get discouraged by this.*
+your Freenet node to get up to speed, so please don't get discouraged by this.*
 
 You should have at least three nodes that are connected to you at all times,
 ideally at least five to seven. Since some nodes may be unreachable at times,
@@ -193,7 +193,7 @@ algorithm is therefore only able to direct traffic to one of the few nodes
 that you know of that it thinks is most able to find what you are looking for.
 
 The traffic is encrypted, so it is quite difficult for the nodes that you
-connect to to see what your Freenet-traffic consists of, but it is far from
+connect to to see what your Freenet traffic consists of, but it is far from
 impossible. It is therefore important that you connect only to people you
 know. If that is not possible, then at least people you've talked to.
 
