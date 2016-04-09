@@ -175,7 +175,7 @@ your Freenet-node to get up to speed, so please don't get discouraged by this.*
 You should have at least three nodes that are connected to you at all times,
 ideally at least five to seven. Since some nodes may be unreachable at times,
 you need to connect to some more nodes to get the expected number. The nodes
-that are connected directly to you are the only nodes on freenet that might
+that are connected directly to you are the only nodes on Freenet that might
 see what kind of traffic that passes through to your Freenet node. But if
 insecure mode is enabled, any node can find yours; this is the big advantage
 of **not** enabling insecure mode: you are effectively invisible except to
@@ -380,7 +380,7 @@ depending on how much it is used.
 ### Freenet keys
 
 Each file that exists on Freenet has a key associated with it. Freenet 0.7
-has various types of keys. Keys are used for everything on freenet, and are a
+has various types of keys. Keys are used for everything on Freenet, and are a
 kind of [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) (
 e.g. freenet:=KSK@sample.txt).
 """) + "\n\n" + _("""
@@ -582,7 +582,7 @@ the file itself.
 ### Containers
 
 A container, in general Freenet terms, is a file that contains several other
-files. In freenet 0.7, a freesite, or other collection of files, may be
+files. In Freenet 0.7, a freesite, or other collection of files, may be
 bundled together in a ZIP file, which is limited in size to 2MB. Containers
 have the advantage that when you load one page you load all the files on the
 freesite, so either it loads in its entirety or it doesn't load at all,

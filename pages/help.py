@@ -322,7 +322,7 @@ Yes, in fact even without the anonymity feature Freenet is very useful
 because of its unique way it handles content distribution and information
 load. In simple terms that means you can publish a website without worrying
 about how big the site will be and without having to put someone elses ad
-banners on it. While it is unlikely that freenet sites will ever load faster
+banners on it. While it is unlikely that Freenet sites will ever load faster
 than regular websites, it does adapt to sudden surges of visitors better (
 which often happen when relatively unknown sites get linked to from a big
 site), and reasonable download speeds for big files are feasible too. Just
@@ -359,7 +359,7 @@ configure how much to a degree by changing the security levels on the page
 under Configuration.
 """)),
                     FaqItem("search", _("Is Freenet searchable?"), _("""
-Yes, there are a few different search mechanisms. To search the freenet web
+Yes, there are a few different search mechanisms. To search the Freenet web
 (freesites), you should be able to just use the search box on the homepage,
 or go to Search Freenet on the Browse submenu. If it's not there, go to the
 Plugins page under Configuration, and load the Library plugin. Alternatively,
@@ -367,7 +367,7 @@ Frost and Thaw also provide searching for messages and files. Note that
 searching on Freenet is a good deal more difficult than on other networks
 because of Freenet's different architecture and design goals.
 """)),
-                    FaqItem("firewall", _("How do I get freenet working with a Firewall/NAT?"), _("""
+                    FaqItem("firewall", _("How do I get Freenet working with a Firewall/NAT?"), _("""
 Mostly, Freenet should just work with a NAT. However, you should forward the
 ports manually if you can. Click on the [Connectivity](
 http://127.0.0.1:8888/connectivity/) page. At the top you will see a list of
@@ -432,13 +432,13 @@ available from a random point on the network.
 """)),
                     FaqItem("why-java", _("Why is Freenet implemented in Java?"), _("""
 Opinions differ about the choice of java for the reference implementation of
-freenet (even among the core developers). [Ian Clarke](about.html#people) and
+Freenet (even among the core developers). [Ian Clarke](about.html#people) and
 several other developers are java proponents and the choice for java was
 made. Even if everybody could be convinced to switch to a different language
-reimplementing the current freenet protocol would be quite a big task,
+reimplementing the current Freenet protocol would be quite a big task,
 and take up a significant amount of time, while there is only a limited
 amount of developer-time available. Flame wars on the development list about
-the language choice aren't welcome, people willing to implement freenet in
+the language choice aren't welcome, people willing to implement Freenet in
 other languages however are very much encouraged to try. Don't underestimate
 the amount of work however.
 """)),
@@ -510,7 +510,7 @@ this happens when something is resetting your clock regularly in big jumps.
 On linux, you should run ntpd to make sure your clock isn't too far off (this
 isn't vital but it's helpful), but if you see clock skew errors, try adding
 the -x option to it to avoid big backwards jumps. Also, running ntpdate on
-startup so there is one big jump before freenet starts is a good idea. This
+startup so there is one big jump before Freenet starts is a good idea. This
 can also happen on Windows sometimes, let us know how you managed to fix it
 ... generally it's not all that serious though, especially if big jumps in
 the clock are only once a day.

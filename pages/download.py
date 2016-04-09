@@ -286,7 +286,7 @@ http://wrapper.tanukisoftware.org/doc/english/download.jsp).
 """) + "\n\n" + _("""
 ### Upgrading
 
-Freenet provides an update-over-freenet mechanism: It will keep itself up to
+Freenet provides an update-over-Freenet mechanism: It will keep itself up to
 date automatically from other Freenet nodes, and this will normally work even
 if it is unable to route to them due to them being too new. This is anonymous
 and secure, and we recommend people use it. However, if something is severely

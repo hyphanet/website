@@ -307,7 +307,7 @@ https://old-wiki.freenetproject.org/NewTransportLayer).
 ### Dave Baker
 
 Dave's main contribution has been [Freemail](documentation.html#freemail),
-his Summer of Code project to build a working email-over-freenet system,
+his Summer of Code project to build a working email-over-Freenet system,
 as well as some debugging and core work in various places.
 """) + "\n\n" + _("""
 ### Robert Hailey
