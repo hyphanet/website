@@ -176,7 +176,7 @@ You should have at least three nodes that are connected to you at all times,
 ideally at least five to seven. Since some nodes may be unreachable at times,
 you need to connect to some more nodes to get the expected number. The nodes
 that are connected directly to you are the only nodes on Freenet that might
-see what kind of traffic that passes through to your Freenet node. But if
+see what kind of traffic passes through to your Freenet node. But if
 insecure mode is enabled, any node can find yours; this is the big advantage
 of **not** enabling insecure mode: you are effectively invisible except to
 your friends. In practice most people start off with insecure mode and
