@@ -339,19 +339,16 @@ people they know, one should be able to reach all nodes in a Freenet network.
 """) + "\n\n" + _("""
 ### The datastore
 
-All Freenet nodes contribute with a part of their harddrive space to store
-files. The files are stored encrypted in the **store**-directory in the
-Freenet installation directory.
+All Freenet nodes contribute a part of their hard drive space to store encrypted pieces of files.
+They are stored in the **datastore** directory in the Freenet installation directory.
 """) + "\n\n" + _("""
 Unlike other peer-to-peer networks, you as a user have little or no control
 over what is stored in your datastore. Instead, files are kept or deleted
-depending on how popular they are. This is to ensure that Freenet is
-censorship resistant. The only possible way to remove something from Freenet
-is to not search for it, and hope that everybody else does the same.
+depending on how popular they are. This allows Freenet to be censorship-resistant.
+There is no "delete file" operation.
 """) + "\n\n" + _("""
-It is hard, but not impossible, to determine which files that are stored in
-your local Freenet Datastore. This is to enable plausible deniability as to
-what kind of material that lies on your harddrive in the datastore.
+It is hard, but not impossible, to determine what the encrypted file pieces stored in your local Freenet datastore are part of.
+This allows plausible deniability.
 """) + "\n\n" + _("""
 Freenet suggests an initial size based on how much space is available, and
 you can change the store size at any time. A larger store uses more RAM,
