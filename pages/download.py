@@ -258,12 +258,15 @@ micro-blogging (Sone, a bit like twitter).
 """) + "\n\n" + _("""
 ### It doesn't work, now what?
 
-If you have problems installing or running Freenet, please contact us on [the
-support list](mailto:support@freenetproject.org) ([subscribe here](
-help.html#mailing-lists)), or join us on IRC on the #freenet channel on
-irc.freenode.net (try [here](
-https://webchat.freenode.net/?randomnick=1&channels=freenet)).
-""") + "\n\n" + _("""
+If you have problems installing or running Freenet, please see the [knowledge base][kb_url], [FAQ][faq_url], [chat][chat_url], or [mailing list][ml_url].
+""") + """
+
+[kb_url]: https://freenetproject.tenderapp.com/kb
+[faq_url]: help.html#faq
+[chat_url]: help.html#irc
+[ml_url]: help.html#mailing-lists
+
+""" + _("""
 ### Hardware requirements
 
 Generally a 1GHz processor and 1GB of RAM should be fine. Freenet will run on
