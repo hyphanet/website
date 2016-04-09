@@ -226,8 +226,8 @@ point only to the actual pasted data, with no extra design elements.
 
 Your own Freenet reference can be found on the [
 http://127.0.0.1:8888/friends/](http://127.0.0.1:8888/friends/) page,
-under the caption **My reference**. It might look something like this (cut
-for screen purposes):
+under the caption **My Node Reference**. It might look something like this (cut
+to fit on the screen):
 """) + """
 
 <pre>	lastGoodVersion=Fred,0.7,1.0,1010
