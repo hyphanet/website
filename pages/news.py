@@ -16,6 +16,23 @@ class NewsItem(object):
 def news_items():
     donate_button = """<a class="btn button-custom btn-custom-two donate-button" href="donate.html">""" + _("Donate today.") + """</a>"""
     return [
+        NewsItem("20160410-1473-pre1", _("2016-04-10 - Freenet testing build 1473-pre1 released"),
+_("""
+Freenet unstable testing prerelease build 1473-pre1 is now available.
+It's the first build to require Java 7.
+
+Highlights:
+
+* Add The Filtered Index to the default bookmark list
+* Improve MP3 filter stability
+* Fix binary blob download over FCP
+* Fix handling of filenames with non-ASCII spaces
+
+For more details and information on how to test this release see the [development mailing list thread][devl_thread].
+""") + """
+
+[devl_thread]: https://emu.freenetproject.org/pipermail/devl/2016-April/038888.html
+"""),
         NewsItem("20160319-1472", _("2016-03-19 - Freenet 0.7.5 build 1472 released"),
 _("""
 This is the last build to support Java 6! The next build will require Java 7 or higher. Nodes running Java 7 or higher and using the official update key will now use a new update key. Nodes on Java 6 remain using the old update key and will not be updated to further builds. Thanks to yadevel for fixing the regression this release was blocking on!
