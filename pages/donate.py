@@ -175,7 +175,7 @@ Send your donations to {bitcoin_address}.
 
 * Or support us via [Salt at Bountysource][url_salt_bountysource].
 
-* Alternatively, please contact us: {donate_email} if you cannot use any of these payment methods.
+* Alternatively, please contact us at {donate_email} if you cannot use any of these payment methods.
 
 """).format(donate_email=donate_email, bitcoin_address=bitcoin_address) + "\n\n" + """
 [url_bitcoin]: http://www.bitcoin.org/
