@@ -444,8 +444,9 @@ or for example:
 
     CHK@SVbD9~HM5nzf3AX4yFCBc-A4dhNUF5DPJZLL5NX5Brs,bA7qLNJR7IXRKn6uS5PAySjIM6azPFvK~18kSi6bbNQ,AAEA--8
 
-The decryption key is stored encrypted within the file, so it is not possible
-to decrypt the file without the CHK key.
+The decryption key is part of the key for the file, and is not included in
+requests for the file's pieces. It is thus not possible to decrypt the file
+without the CHK key.
 
 To access the file, the whole key must be pasted behind the FProxy address
 (cut to fit screen):
