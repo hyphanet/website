@@ -262,6 +262,10 @@ class PeopleSection(Section):
 **Note:** This is an incomplete list, a large number of people have contributed
 to the project.
 """) + "\n\n" + _("""
+
+## Current Contributors
+
+""") + "\n\n" + _("""
 ### Ian Clarke
 
 Freenet is based on Ian's paper "A Distributed Decentralised Information
@@ -288,6 +292,91 @@ performed the project's system administration. In his day job, he is the
 Technical Director of [Matta Consulting](https://www.trustmatta.com),
 a boutique security consultancy firm.
 """) + "\n\n" + _("""
+### Michael Rogers
+
+Michael has mostly contributed detailed simulations as part of the Google
+Summer of Code. He has been helpful in designing the [new transport layer](
+https://old-wiki.freenetproject.org/NewTransportLayer).
+""") + "\n\n" + _("""
+### Steve Dougherty
+
+The current release manager. He joined in GSoC 2013 and has been a
+driving force behind tackling long standing issues in Freenet.
+
+""") + "\n\n" + _("""
+### xor
+
+The Developer of the Web of Trust and Freetalk. He worked on the Web
+of Trust in part-time for one year and is now working as volunteer
+again.
+
+""") + "\n\n" + _("""
+### David (Bombe) Roden
+
+The developer of the site insertion tool jSite and of Sone, the Social
+Network over Freenet.
+
+""") + "\n\n" + _("""
+### Ximin Luo
+
+A debian developer who currently works on packaging Freenet.
+
+""") + "\n\n" + _("""
+### Bert Massop
+
+Works on the Freenet core and wherever there is need.
+
+""") + "\n\n" + _("""
+### TheSeeker
+
+A long term contributor who, among other things, helps keep the
+contact between the core developers and users in active subgroups.
+
+""") + "\n\n" + _("""
+### Tommy[D]
+
+A Gentoo packager who untangled all the dependencies of Freenet and
+packaged it cleanly in Gentoo.
+
+""") + "\n\n" + _("""
+### Arne Babenhauserheide
+
+The current maintainer of pyFreenet and infocalypse. He also writes
+articles and tutorials for Freenet.
+
+""") + "\n\n" + _("""
+## Anonymous Contributors
+
+""") + "\n\n" + _("""
+### Eleriseth
+
+Works on Freenet core and communicates via FMS.
+
+""") + "\n\n" + _("""
+### Somedude
+
+The developer of the Freenet-based Forum system FMS, of FreenetHG and
+of FLIP, chat over Freenet.
+
+""") + "\n\n" + _("""
+### The folks from Frost
+
+A group of users and programmers who use an old spammable
+Freenet-based forum system which has been abandoned by most of the
+core developers. They are active, however, and though it takes time
+for their contributions to reach to core development, they take part
+in Freenet development.
+
+""") + "\n\n" + _("""
+
+## Previous Contributors
+
+""") + "\n\n" + _("""
+### Thomas Markus
+
+A dutch developer and statistic-enthusiast. He now works at Topicus.Education..
+
+""") + "\n\n" + _("""
 ### Scott Miller
 
 Scott is responsible for the implementation of much of the cryptography
@@ -297,12 +386,6 @@ elements within Freenet.
 
 Steven helps with administration of Freenet Project Inc, and is an advisor to
 the project on business and publicity matters.
-""") + "\n\n" + _("""
-### Michael Rogers
-
-Michael has mostly contributed detailed simulations as part of the Google
-Summer of Code. He has been helpful in designing the [new transport layer](
-https://old-wiki.freenetproject.org/NewTransportLayer).
 """) + "\n\n" + _("""
 ### Dave Baker
 
