@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Freenet\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-12 07:26-0400\n"
-"PO-Revision-Date: 2016-04-13 05:44+0000\n"
+"POT-Creation-Date: 2016-04-13 07:11-0400\n"
+"PO-Revision-Date: 2016-04-26 05:13+0000\n"
 "Last-Translator: strel\n"
 "Language-Team: Spanish (http://www.transifex.com/otf/freenet/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -376,7 +376,7 @@ msgid ""
 "Dave's main contribution has been [Freemail](documentation.html#freemail),\n"
 "his Summer of Code project to build a working email-over-Freenet system,\n"
 "as well as some debugging and core work in various places."
-msgstr "### Dave Baker\n\nLa principal contribución de Dave ha sido [Freemail](documentation.html#freemail),\nsu proyecto del Summer of Code para construir un sistema de\nemail-sobre-Freenet funcional, así como algo de depuración\ny trabajos esenciales en varios puntos."
+msgstr "### Dave Baker\n\nLa principal contribución de Dave ha sido [Freemail](documentation.html#freemail),\nsu proyecto del Summer of Code para construir un sistema de\nemail-sobre-Freenet funcional, además de  algo de depuración\ny trabajos en la aplicación principal en varios puntos."
 
 #: pages/about.py:312
 msgid ""
@@ -607,7 +607,7 @@ msgstr "Monitor de errores"
 msgid "Contribute"
 msgstr "Contribuir"
 
-#: pages/documentation.py:10 pages/documentation.py:717
+#: pages/documentation.py:10 pages/documentation.py:718
 msgid "Documentation"
 msgstr "Documentación"
 
@@ -750,7 +750,7 @@ msgid ""
 "Freenet will need you to add friends before you can use it. These must be\n"
 "people you personally know. Adding people you don't know will not improve\n"
 "security."
-msgstr "Preguntará acerca del nivel de seguridad de red - \"protección frente a extraños\nque le ataquen sobre Internet\". Si escoge BAJO o NORMAL, Freenet debería\n\"simplemente funcionar\", conectando en unos pocos minutos. Si elige ALTO o\nMÁXIMO, Freenet necesitará añadir amigos antes de que pueda usarlo. Deben\nser personas que conozca personalmente. Añadir personas que no conoce\nno mejorará la seguridad."
+msgstr "Preguntará acerca del nivel de seguridad de red - \"protección frente a extraños\nque le ataquen a traves de Internet\". Si escoge BAJO o NORMAL, Freenet\ndebería \"simplemente funcionar\", conectando en unos pocos minutos. Si elige\nALTO o MÁXIMO, Freenet precisará que añada amigos antes de que pueda\nusarlo. Debe ser gente que conozca personalmente. Añadir personas que no\nconoce no mejorará la seguridad."
 
 #: pages/documentation.py:148
 msgid "Connect"
@@ -794,7 +794,7 @@ msgid ""
 "your friends. In practice most people start off with insecure mode and\n"
 "gradually add friends, and hopefully turn off insecure mode once they have at\n"
 "least 10 friends."
-msgstr "*Cuando tenga un nodo conectado por primera vez, no tendrá datos guardados\nen caché en su almacenamiento de datos, y tendrá muy pocas conexiones\nincluso si el modo inseguro está habilitado. Las peticiones se envían de forma\naleatoria. **Esto hace que algunas (o todas) las peticiones expiren antes de\ndescargar algo.** Llevará un par días para que su nodo Freenet adquiera\nvelocidad, así que, por favor, no se desanime por esto.*\n\nDebería tener al menos tres nodos que estén conectados a usted en todo\nmomento, lo ideal serían al menos de cinco a siete. Como algunos nodos\npuede que sean inalcanzables en ocasiones, necesitará conectar a algunos\nnodos más para lograr el número esperado. Los nodos que estén conectados\ndirectamente a usted son los únicos nodos en Freenet que podrían ver qué\nclase de tráfico se dirige hacia su nodo Freenet. Pero si el modo inseguro\nestá habilitado, cualquier nodo puede encontrar el suyo; esta es la gran\nventaja de **no** habilitar el modo inseguro: usted es invisible de forma efectiva\nexcepto para sus amigos. En la práctica la mayoría de la gente se inicializa con\nel modo inseguro y gradualmente añade amigos, hasta que eventualmente\napagan el modo inseguro una vez tienen al menos 10 amigos."
+msgstr "*Cuando tenga un nodo conectado por primera vez, no tendrá datos guardados\nen caché en su almacenamiento de datos, y tendrá muy pocas conexiones\nincluso si el modo inseguro está habilitado. Las peticiones se envían de forma\naleatoria. **Esto hace que algunas (o todas) las peticiones expiren antes de\ndescargar algo.** Llevará un par días para que su nodo Freenet adquiera\nvelocidad, así que, por favor, no se desanime por esto.*\n\nDebería tener al menos tres nodos que estén conectados a usted en todo\nmomento, lo ideal sería al menos entre cinco y siete. Como algunos nodos\npuede que sean inalcanzables en ocasiones, necesita conectar a algunos\nnodos más para lograr el número esperado. Los nodos que estén conectados\ndirectamente a usted son los únicos nodos en Freenet que podrían ver qué\nclase de tráfico atraviesa su nodo Freenet. Pero si el modo inseguro está\nhabilitado, cualquier nodo puede encontrar el suyo; he aquí la gran ventaja\nde **no** habilitar el modo inseguro: usted se hace invisible de forma efectiva\nexcepto para sus amigos. En la práctica la mayoría de la gente se inicializa\nen modo inseguro y gradualmente añade amigos, hasta que eventualmente\napagan el modo inseguro una vez tienen al menos 10 amigos."
 
 #: pages/documentation.py:185
 msgid ""
@@ -813,7 +813,7 @@ msgid ""
 "know. If that is not possible, then at least people you've talked to.\n"
 "\n"
 "There are a number of ways to add peer node references."
-msgstr "![](assets/img/Freenet-architecture-small.png)\n\n*Figura 1: Conexiones visibles de Freenet*\n\nEl **Nodo A** en la figura tiene también distintos nodos conectados\na él, pero (excepto desde su propio nodo) todos son invisibles hacia\nusted. Por tanto el algoritmo de enrutamiento del tráfico sólo puede\ndirigir el tráfico hacia uno de los pocos nodos de los que tiene noción\nque crea es el más capaz de encontrar lo que usted está buscando.\n\nEl tráfico está cifrado, así que es bastante difícil para los nodos a los\nque se conecta ver en qué consiste su tráfico de Freenet, aunque está\nlejos de ser imposible. Por tanto es importante que conecte sólo con\npersonas que conoce. Si eso no es posible, entonces al menos con\npersonas con las que haya hablado.\n\nHay distintas formas de añadir referencias de nodos de pares (peers)."
+msgstr "![](assets/img/Freenet-architecture-small.png)\n\n*Figura 1: Conexiones visibles de Freenet*\n\nEl **Nodo A** en la figura tiene también distintos nodos conectados\na él, pero (excepto su propio nodo) todos son invisibles para usted.\nPor tanto el algoritmo de enrutamiento del tráfico sólo puede dirigir el\ntráfico hacia uno de los pocos nodos de entre los que usted conoce que\nel algoritmo crea que es el más capaz de encontrar lo que usted está\nbuscando.\n\nEl tráfico está cifrado, así que para los nodos a los que se conecta es\nbastante difícil ver en qué consiste su tráfico de Freenet, aunque está\nlejos de ser imposible. Por tanto, es importante que conecte sólo con\npersonas que conoce. Si eso no es posible, entonces al menos con\npersonas con las que haya hablado.\n\nHay distintas formas de añadir referencias de nodos de pares (peers)."
 
 #: pages/documentation.py:201
 msgid ""
@@ -846,7 +846,7 @@ msgid ""
 "http://127.0.0.1:8888/friends/](http://127.0.0.1:8888/friends/) page,\n"
 "under the caption **My Node Reference**. It might look something like this (cut\n"
 "to fit on the screen):"
-msgstr "### Fproxy\n\nConectar a nodos de pares (peers) con FProxy puede hacerse de varias formas.\nTodas ellas tienen en común que se realizan bajo el elemento de menú **Darknet**\no usando el enlace [http://127.0.0.1:8888/friends/](http://127.0.0.1:8888/friends/).\nDebajo está aquello que hace que todo esto ocurra:\n\n![](assets/img/add_peers.png)\n\nComo puede ver, hay tres formas de obtener una referencia de nodo de alguna\notra persona:\n\n*   Pegarla \"como está\", en el campo de la parte superior,\n*   una URL apuntando a la referencia, o\n*   un fichero, que contenga la referencia\n\n[http://dark-code.bulix.org/](http://dark-code.bulix.org/) es uno de los llamados\n**paste-bin** (recipiente de pegados), donde puede añadir la referencia de su\nnodo, asegúrese de que la casilla **privado** está marcada, y pulse **Pegar**.\n\nEl paste-bin devuelve una URL (ej. http://dark-code.bulix.org/yuf01h-34676?raw),\na continuación, que puede compartirse con otros. Asegúrese de que añade\n**?raw** al enlace. Esto hace que el enlace apunte únicamente a los datos\nque realmente se pegaron, sin elementos de diseño adicionales.\n\nSu propia referencia de Freenet se puede encontrar en la página\n[http://127.0.0.1:8888/friends/](http://127.0.0.1:8888/friends/), bajo el encabezado\n**Referencia de mi nodo**. Podría tener un aspecto similar a este (está cortado\npara ajustarlo a la pantalla)."
+msgstr "### Fproxy\n\nConectar a nodos de pares (peers) con FProxy se puede hacer de varias formas.\nTodas ellas tienen en común que se realizan bajo el elemento de menú **Darknet**\no usando el enlace [http://127.0.0.1:8888/friends/](http://127.0.0.1:8888/friends/).\nDebajo está aquello que hace que todo esto ocurra:\n\n![](assets/img/add_peers.png)\n\nComo puede ver, hay tres formas de obtener una referencia de nodo de alguna\notra persona:\n\n*   Pegarla \"tal cual\", en el campo de la parte superior,\n*   una URL apuntando a la referencia, o\n*   un fichero, que contenga la referencia\n\n[http://dark-code.bulix.org/](http://dark-code.bulix.org/) es uno de los llamados\n**paste-bin** (recipiente de pegados), donde puede añadir la referencia de su\nnodo, asegúrese de que la casilla **privado** está marcada, y pulse **Pegar**.\n\nEl paste-bin devuelve una URL (ej. http://dark-code.bulix.org/yuf01h-34676?raw)\na continuación, que se puede compartir con otros. Asegúrese de que añade\n**?raw** al enlace. Esto hace que el enlace apunte únicamente a los datos\nque realmente se pegaron, sin elementos adicionales del diseño de la página.\n\nSu propia referencia de Freenet se puede encontrar en la página\n[http://127.0.0.1:8888/friends/](http://127.0.0.1:8888/friends/), bajo el encabezado\n**Referencia de mi nodo**. Podría tener un aspecto similar a este (aquí\nrecortada para ajustarlo a la pantalla)."
 
 #: pages/documentation.py:249
 msgid ""
@@ -951,7 +951,7 @@ msgid ""
 "\n"
 "All Freenet nodes contribute a part of their hard drive space to store encrypted pieces of files.\n"
 "They are stored in the **datastore** directory in the Freenet installation directory."
-msgstr "### El almacenamiento de datos\n\nTodos los nodos Freeenet aportan una parte del espacio de su disco duro para almacenar fragmentos de ficheros.\nEstán almacenados en el directorio del **almacenamiento de datos** dentro del directorio de instalación de Freenet."
+msgstr "### El almacenamiento de datos\n\nTodos los nodos Freenet aportan una parte del espacio de sus discos duros para almacenar fragmentos de ficheros.\nEstán almacenados en el directorio **datastore** dentro del directorio de instalación de Freenet."
 
 #: pages/documentation.py:344
 msgid ""
@@ -965,7 +965,7 @@ msgstr "Al contrario que otras redes entre pares (P2P), usted como usuario tiene
 msgid ""
 "It is hard, but not impossible, to determine what the encrypted file pieces stored in your local Freenet datastore are part of.\n"
 "This allows plausible deniability."
-msgstr "Es difícil, pero no imposible, determinar de qué forman parte los fragmentos de fichero guardados en su almacenamiento de datos local de Freenet.\nEsto permite la denegabilidad plausible."
+msgstr "Es difícil, pero no imposible, determinar el todo del que forman parte los fragmentos de fichero guardados en su almacenamiento de datos (datastore) local de Freenet.\nEsto permite la denegabilidad plausible."
 
 #: pages/documentation.py:352
 msgid ""
@@ -1011,7 +1011,7 @@ msgid ""
 "has various types of keys. Keys are used for everything on Freenet, and are a\n"
 "kind of [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) (\n"
 "e.g. freenet:=KSK@sample.txt)."
-msgstr "### Claves de Freenet\n\nCada fichero existente en Freenet tiene una clave asociada a él. Freenet 0.7\ntiene varios tipos de claves. Las claves se usan para todo en Freenet, y son\nun tipo de [URI](https://es.wikipedia.org/wiki/Identificador_de_recursos_uniforme)\n(ej. freenet:=KSK@sample.txt)."
+msgstr "### Claves Freenet\n\nCada fichero existente en Freenet tiene una clave de Freenet asociada a él.\nFreenet 0.7 tiene varios tipos de claves. Las claves Freenet se usan para\ntodo en Freenet, y son un tipo de [URI](https://es.wikipedia.org/wiki/Identificador_de_recursos_uniforme) (ej. freenet:=KSK@sample.txt)."
 
 #: pages/documentation.py:383
 msgid ""
@@ -1093,16 +1093,17 @@ msgid ""
 "\n"
 "CHK@SVbD9~HM5nzf3AX4yFCBc-A4dhNUF5DPJZLL5NX5Brs,bA7qLNJR7IXRKn6uS5PAySjIM6azPFvK~18kSi6bbNQ,AAEA--8\n"
 "\n"
-"The decryption key is stored encrypted within the file, so it is not possible\n"
-"to decrypt the file without the CHK key.\n"
+"The decryption key is part of the key for the file, and is not included in\n"
+"requests for the file's pieces. It is thus not possible to decrypt the file\n"
+"without the CHK key.\n"
 "\n"
 "To access the file, the whole key must be pasted behind the FProxy address\n"
 "(cut to fit screen):\n"
 "\n"
 "http://localhost:8888/CHK@SVbD9~[..]X5Brs,bA7qLN[..]Si6bbNQ,AAEA--8"
-msgstr "Una clave CHK típica se parece a esto:\n\nCHK@hash-del-fichero,clave-de-desifrado,configuraciones-criptográficas\n\no por ejemplo:\n\nCHK@SVbD9~HM5nzf3AX4yFCBc-A4dhNUF5DPJZLL5NX5Brs,bA7qLNJR7IXRKn6uS5PAySjIM6azPFvK~18kSi6bbNQ,AAEA--8\n\nLa clave de descifrado se almacena cifrada dentro de un fichero, así que\nno es posible descifrar el fichero sin la clave CHK.\n\nPara acceder al fichero, la totalidad de la clave debe pegarse tras la dirección\ndel FProxy (recortada para que se ajuste a la pantalla):\n\nhttp://localhost:8888/CHK@SVbD9~[..]X5Brs,bA7qLN[..]Si6bbNQ,AAEA--8"
+msgstr "Una clave Freenet CHK típica tiene este aspecto:\n\nCHK@hash-del-fichero,clave-de-descifrado,configuraciones-de-criptografía\n\no, por ejemplo:\n\nCHK@SVbD9~HM5nzf3AX4yFCBc-A4dhNUF5DPJZLL5NX5Brs,bA7qLNJR7IXRKn6uS5PAySjIM6azPFvK~18kSi6bbNQ,AAEA--8\n\nLa clave de descifrado forma parte de la clave Freenet para el fichero,\ny no se incluye en las peticiones de fragmentos del fichero. Por tanto,\nno es posible descifrar el fichero del ejemplo sin la clave Freenet CHK.\n\nPara acceder al fichero, se debe pegar la clave Freenet completa tras\nla dirección de FProxy (aquí recortada para ajustarla a la pantalla):\n\nhttp://localhost:8888/CHK@SVbD9~[..]X5Brs,bA7qLN[..]Si6bbNQ,AAEA--8"
 
-#: pages/documentation.py:454
+#: pages/documentation.py:455
 msgid ""
 "### Signed Subspace Keys\n"
 "\n"
@@ -1115,7 +1116,7 @@ msgid ""
 "person with the secret key can add updated versions of your site to Freenet."
 msgstr "### Signed Subspace Keys\n\nLas Signed Subspace Keys (SSKs, claves de subespacio firmadas) normalmente\nson para sitios que van a cambiar con el tiempo. Por ejemplo, un sitio web que\npuede necesitar que se actualicen las noticias o que se corrija, añada, o borre\ninformación. Funcionan de modo que cualquier otra persona que colocase una\nnueva versión de su sitio web no pueda pretender que fue usted quien lo hizo.\n\nFunciona usando criptografía de clave-pública de forma que puede firmar su\nsitio web. Sólo la persona en posesión de la clave secreta puede añadir\nversiones actualizadas de su sitio web a Freenet."
 
-#: pages/documentation.py:464
+#: pages/documentation.py:465
 msgid ""
 "Also the SSK consists of five parts:\n"
 "\n"
@@ -1143,7 +1144,7 @@ msgid ""
 "SSK@GB3wuHmt[..]o-eHK35w,c63EzO7u[..]3YDduXDs,AQABAAE/mysite-4"
 msgstr "Además la SSK consta de cinco partes:\n\n* **hash de clave pública** - Esta parte es todo lo que se requiere para\nidentificar de forma única el fichero (pero no descifrarlo), así que los nodos\nsólo necesitan almacenar este pedacito. La clave pública actual se almacena\n(sin cifrar) con los datos (cifrados).\n* **clave de descifrado de documento** - Esta sólo es conocida por los\nclientes y no por los nodos que almacenan los datos, así que los nodos no\npueden descifrar los datos que almacenan sin la dirección completa.\n* **configuraciones de criptografía** - El algoritmo criptográfico usado, etc.\n* **nombre seleccionado por el usuario** - una palabra o frase elegida por\nel autor del sitio.\n* **versión** - la versión actual del sitio.\n\nEl número de versión se incrementa cada vez que se crea e inserta en\nFreenet una nueva versión del sitio. Esta aproximación se usa ya que\nactualmente no es posible actualizar datos ya insertados en Freenet.\nLas claves de subespacio actualizables (USKs) hacen que esto sea más\ntransparente para el usuario, vea debajo.\n\nUna clave SSK típica se parece a esto:\n\nSSK@hash_de_clave_pública,clave_de_descifrado,configuraciones_de_criptografía/nombre_seleccionado_por_usuario-versión\n\nPor ejemplo (cortada para ajustar a la pantalla):\n\nSSK@GB3wuHmt[..]o-eHK35w,c63EzO7u[..]3YDduXDs,AQABAAE/mysite-4"
 
-#: pages/documentation.py:489
+#: pages/documentation.py:490
 msgid ""
 "### How Signed Subspace Keys work\n"
 "\n"
@@ -1169,7 +1170,7 @@ msgid ""
 "always retrieve the most up-to-date version of the site."
 msgstr "### Cómo funcionan las claves de subespacio firmadas (SSKs)\n\n* El autor genera un par de claves criptográficas: una **clave privada** para\nfirmar ficheros y una **clave pública** para verificar la firma.\n* El autor también genera una única **clave simétrica** (una que se usa\ntanto para cifrar como descifrar).\n* Cuando se inserta un fichero en Freenet, se cifra con la **clave simétrica**\ny se firma con la **clave privada**. La firma se almacena con el fichero. Los\nnodos no almacenan la **clave simétrica**, sólo la **clave pública** parte\nde la SSK, como un índice hacia los datos. Esto es así para que que los autores\npueden negar de forma plausible conocimiento de los datos presentes en\nsus nodos.\n\nLa SSK se compone de un hash de la clave pública, y la clave simétrica. El \nhash de la clave pública actúa como el índice hacia los datos para propósitos\nde búsqueda. Además, la clave pública actual se almacena con los datos.\nEsto es así para que los nodos Freenet puedan verificar la firma cuando el\nfichero SSK llega a su nodos, y también para que los clientes puedan\nverificar la firma al descargar el fichero. La clave simétrica está para que \nlos clientes puedan descifrar el fichero.\n\nLos sitios con clave de subespacio firmada (SSK) han sido ampliamente\nreemplazados por sitios con clave de subespacio actualizable (USK), que\nestán basados en SSKs pero permiten enlaces que siempre tratan de\ndescargar la versión más actualizada del sitio."
 
-#: pages/documentation.py:512
+#: pages/documentation.py:513
 msgid ""
 "### Updateable Subspace Keys\n"
 "\n"
@@ -1189,7 +1190,7 @@ msgid ""
 "*   an USK with a negative number at the end."
 msgstr "### Updateable Subspace Keys\n\nLas Updateable Subspace Keys (USKs, claves de subespacio actualizables)\nson útiles para enlazar a la última versión de un sitio con Signed Subspace\nKey (SSK, clave de subespacio firmado). Observe que las USKs son en\nrealidad sólo un envoltorio amigable en torno a las SSKs, que ocultan el\nproceso de búsqueda para versiones más recientes de un sitio.\n\nUna clave USK típica se parece a esto:\n\nUSK@hash_de_clave_pública,clave_de_descifrado,configuraciones_de_criptografía/nombre_elegido_por_el_usuario/número/\n\nEs casi identica a la clave de subespacio firmada (SSK), con la excepción\ndel número de versión. Hay dos tipos de direcciones USK:\n\n*   una USK con un número positivo al final, o\n*   una USK con un número negativo al final."
 
-#: pages/documentation.py:529
+#: pages/documentation.py:530
 msgid ""
 "The USK with a **positive** number at the end works like this: the Freenet\n"
 "node on your computer keeps a list of versions of USKs that it knows about,\n"
@@ -1206,7 +1207,7 @@ msgid ""
 "USK@GB3wuHmt[..]o-eHK35w,c63EzO7u[..]3YDduXDs,AQABAAE/mysite/5/"
 msgstr "La USK que termina con un número **positivo** funciona de este modo:\nel nodo Freenet en su computadora conserva una lista de versiones de\nUSKs de las que tiene conocimiento, sin necesariamente guardar también\nlos datos. Esta lista se desarrolla en base a visitas previas, además de\npeticiones en segundo plano de visitas previas a esta clase de enlaces.\nCuando visita una USK como la del ejemplo de debajo, consulta esta lista\nde versiones del sitio 'misitio' de número 5 o mayor. Si encuentra alguno,\ndevuelve el último. Entonces, en segundo plano, busca las versiones\n**más recientes** de las que aún no tiene conocimiento, para añadirlas\na su registro de USKs para la próxima vez que visite la dirección.\n\nEjemplo (recortado para que quepa en pantalla):\n\nUSK@GB3wuHmt[..]o-eHK35w,c63EzO7u[..]3YDduXDs,AQABAAE/misitio/5/"
 
-#: pages/documentation.py:543
+#: pages/documentation.py:544
 msgid ""
 "When you visit a link with a **negative** number at the end, Freenet searches\n"
 "for the version you requested (e.g. **-7**) plus four more (i.e. 7,8,9,10,\n"
@@ -1224,7 +1225,7 @@ msgid ""
 "more on that elsewhere."
 msgstr "Cuando visita un enlace terminado en un número **negativo**, Freenet\nbusca la versión que pidió (ej. **-7**) más cuatro más (es decir 7,8,9,10,11)\nen el nodo de su computadora y en otros nodos. Si sólo encuentra la versión\n7, devolverá esa. Si encuentra una de las otras, busca el siguiente lote de\ncinco versiones: 12,13,14,15,16\\. Y repite esto hasta que haya cuatro\nversiones consecutivas que no pueda encontrar. Entonces devolverá la\núltima versión que encontró hasta el momento.\n\nEjemplo (recortada para que quepa en pantalla):\n\nUSK@GB3wuHmt[..]o-eHK35w,c63EzO7u[..]3YDduXDs,AQABAAE/misitio/-7/\n\nLa amenaza real con las USKs viene cuando los datos se van a insertar en\nFreenet. Pero este problema ocurre cualquier parte."
 
-#: pages/documentation.py:558
+#: pages/documentation.py:559
 msgid ""
 "### Keyword Signed Keys\n"
 "\n"
@@ -1247,7 +1248,7 @@ msgid ""
 "the file itself."
 msgstr "### Keyword Signed Keys\n\nLas Keyword-Signed Keys (KSKs, claves firmadas con contraseña) le permiten\nguardar páginas con nombre en Freenet. No son seguras contra su envío\ncomo spam o el secuestro de nombre. Varias personas podrían insertar un\nfichero diferente cada una en Freenet, todas con la misma dirección. Sin\nembargo hay detección de colisiones, lo cual trata de evitar la sobrescritura\nde una página ya insertada. Una dirección KSK se parece a esto:\n\nKSK@mifichero.txt\n\nEl inconveniente de las KSKs es que cualquiera puede insertar un fichero\ncon el mismo nombre que el suyo y derivar tráfico desde su fichero al de él.\nLa ventaja es que son enlaces legibles por humanos que pueden recordarse\nfácilmente.\n\nLa descripción de la KSK no debe contener barras oblicuas (/), igual que las\ndemás claves (las barras oblicuas se usan para denotar manifiestos o\ncontenedores).\n\nUna dirección KSK puede contener un redireccionamiento a una dirección\nCHK, o puede contener el propio fichero."
 
-#: pages/documentation.py:578
+#: pages/documentation.py:579
 msgid ""
 "### Containers\n"
 "\n"
@@ -1259,9 +1260,9 @@ msgid ""
 "and greatly reduce the number of keys required to insert a given freesite.\n"
 "Containers are currently created transparently when inserting a freesite\n"
 "using e.g. jSite."
-msgstr "### Contenedores\n\nUn contenedor, en términos generales de Freenet, es un fichero que\ncontiene varios otros ficheros. En Freenet 0.7, un freesite, u otra colección\nde ficheros puede ser empaquetado en conjunto en un fichero ZIP, que está\nlimitado en tamaño a 2 MB. Los contenedores tienen la ventaja de que\ncuando cargue una página cargará todos los ficheros del freesite, así que o\nbien la carga por completo o no la carga en absoluto, y reducen\nenormemente el número de claves necesarias para insertar en Freenet un\nfreesite dado. Los contenedores actualmente se crean de forma\ntransparente al insertar un freesite usando por ejemplo jSite."
+msgstr "### Contenedores\n\nEn términos generales, un contenedor de Freenet es un fichero que\ncontiene varios otros ficheros. En Freenet 0.7 un freesite, u otra colección\nde ficheros, puede empaquetarse en conjunto en un fichero ZIP, cuyo\ntamaño está limitado a 2 MB. Los contenedores tienen la ventaja de que\nal cargar una página cargará todos los ficheros del freesite, así que\no bien carga la página por completo o no la carga en absoluto, y además\nreducen enormemente el número de claves Freenet necesarias para\ninsertar un freesite determinado en Freenet. Los contenedores en la\nactualidad se crean de forma transparente cuando se inserta un freesite,\npor ejemplo, usando jSite."
 
-#: pages/documentation.py:589
+#: pages/documentation.py:590
 msgid ""
 "### Manifests\n"
 "\n"
@@ -1273,11 +1274,11 @@ msgid ""
 "is handled internally."
 msgstr "### Manifiestos\n\nUn manifiesto contiene metadatos acerca de la lista de bloques en que está\ndividido un CHK, y algo de información acerca del tipo de contenido (MIME),\nlos nombres de ficheros y otra información útil. La información principal es si\nla clave CHK es un fichero por bloques (splitfile) o no, y si el manifiesto está\nencadenado o no. No necesita saber mucho acerca de manifiestos para usar\nFreenet, ya que es una parte que se maneja internamente."
 
-#: pages/documentation.py:603
+#: pages/documentation.py:604
 msgid "Social"
 msgstr "Social"
 
-#: pages/documentation.py:606
+#: pages/documentation.py:607
 msgid ""
 "Freenet provides the foundation for anonymous email, forums and chat,\n"
 "as well as a replacement for Facebook/Twitter. Setup of these is\n"
@@ -1287,11 +1288,11 @@ msgid ""
 "[over Freenet](http://127.0.0.1:8888/USK@t5zaONbYd5DvGNNSokVnDCdrIEytn9U5SSD~pYF0RTE,guWyS9aCMcywU5PFBrKsMiXs7LzwKfQlGSRi17fpffc,AQACAAE/fsng/58/)."
 msgstr "Freenet proporciona los fundamentos para correo electrónico, foros y\nchat anónimos, así como un sustitutivo para Facebook/Twitter. La\nconfiguración de estos se describe en la\n[Guía de redes sociales de Freenet](http://freesocial.draketo.de/)\na la que también se puede acceder \n[sobre Freenet](http://127.0.0.1:8888/USK@t5zaONbYd5DvGNNSokVnDCdrIEytn9U5SSD~pYF0RTE,guWyS9aCMcywU5PFBrKsMiXs7LzwKfQlGSRi17fpffc,AQACAAE/fsng/58/)."
 
-#: pages/documentation.py:618
+#: pages/documentation.py:619
 msgid "jSite"
 msgstr "jSite"
 
-#: pages/documentation.py:621
+#: pages/documentation.py:622
 msgid ""
 "jSite is a graphical application that you can use to create, insert and\n"
 "manage your own Freenet sites. It was written in Java by Bombe.\n"
@@ -1299,7 +1300,7 @@ msgid ""
 "You can [download jSite here](https://downloads.freenetproject.org/alpha/jSite/jSite.jar)"
 msgstr "jSite es una aplicación gráfica que puede usar para crear, insertar y\nadministrar sus propios sitios de Freenet. Fue escrita en Java por Bombe.\nis a graphical application that you can use to create, insert and\nmanage your own Freenet sites. It was written in Java by Bombe.\n\nPuede [descargar jSite aquí](https://downloads.freenetproject.org/alpha/jSite/jSite.jar)"
 
-#: pages/documentation.py:626
+#: pages/documentation.py:627
 msgid ""
 "### Starting jSite\n"
 "\n"
@@ -1316,7 +1317,7 @@ msgid ""
 "projects exist."
 msgstr "### Iniciar jSite\n\nPara iniciar jSite, escriba lo siguiente en un terminal:\n\n<pre>\tjava -jar jSite.jar</pre>\n\nLa primera ventana que verá es esta:\n\n![](assets/img/jsite/select-project.png)\n\nEn el panel de la izquierda, los proyectos ya creados se pueden\nseleccionar para actualizarlos, eliminarlos o clonarlos. Como este es\nel primer inicio, no existen tales proyectos."
 
-#: pages/documentation.py:640
+#: pages/documentation.py:641
 msgid ""
 "### Creating a Freesite\n"
 "\n"
@@ -1332,7 +1333,7 @@ msgid ""
 "button to select a directory graphically or just type it in."
 msgstr "### Crear un freesite\n\nPara crear un nuevo freesite pulse el botón **Añadir proyecto**. Luego tiene\nque rellenar los detalles del proyecto bajo la sección Información del Proyecto:\n\n* **Nombre** - Esto sólo es un nombre para que reconozca el proyecto,\nde forma que cualquiera lo hará. Puede contener espacios.\n* **Descripción** - De nuevo, es sólo una descripción ligeramente más larga\ndel proyecto para su propia conveniencia.\n* **Ruta local** - Esto es un directorio donde almacenará todas las páginas\ndel freesite que está creando. Introduzca la ruta completa. Puede hacer clic en\nel botón Examinar para seleccionar gráficamente un directorio, o simplemente\nescríba la ruta."
 
-#: pages/documentation.py:653
+#: pages/documentation.py:654
 msgid ""
 "Under the Address-section, there are some automatically generated entries,\n"
 "and the human readable name for the site, as seen in the address-field of the\n"
@@ -1352,7 +1353,7 @@ msgid ""
 "When everything is filled in correctly, you may press **Next**."
 msgstr "Bajo la sección Dirección, hay algunas entradas generadas automáticamente,\ny el nombre legible por humanos para el sitio, tal como se ve en la barra de\ndirecciones del navegador:\n\n* **Solicitar URI** - Esto se rellena automáticamente y debe ser una cadena\nlarga y fluida de caracteres aleatorios.\n* **Insertar URI** - Esto también se rellena automáticamente y se parecerá\na la URI solicitada.\n* **Ruta** - Aquí tiene que introducir una única palabra sin espacios. Esta\naparecerá al final de la dirección de su sitio. No puede dejar esto en blanco.\n\nDebajo tiene un ejemplo del aspecto que podría tener:\n\n![](assets/img/jsite/project-details.png)\n\nCuando todo esté rellenado correctamente, puede pulsar **Siguiente**."
 
-#: pages/documentation.py:670
+#: pages/documentation.py:671
 msgid ""
 "The next step is to add files to your Freenet site (or Freesite). This is\n"
 "done in the dialog called **Project Files**. Since we have no files in the\n"
@@ -1371,7 +1372,7 @@ msgid ""
 "they are and click the **Insert now** button."
 msgstr "El siguiente paso es añadir ficheros a su sitio Freenet (o freesite). Esto se\nhace en el cuadro de diálogo llamado **Ficheros del proyecto**. Como\naún no tenemos ficheros en el directorio actual, el cuadro de diálogo está\nbastante vacío.\n\n![](assets/img/jsite/project-files.png)\n\nPara añadir ficheros, pondremos algunos ficheros en el directorio local\nque especificamos con anterioridad, **/home/test**, y pulsamos \n**Reescanear**. Entonces, aparecerán los ficheros rápidamente.\n\n![](assets/img/jsite/default-file.png)\n\nLuego señalamos uno de estos ficheros que pasará a ser la página\npredeterminada (ej. index.html puede ser una buena elección) y\nmarcamos la casilla **Fichero predeterminado**. Debería reconocer el\ntipo MIME como text/html, así que deje todo lo demás como está y pulse\nel botón **Insertar ahora**."
 
-#: pages/documentation.py:686
+#: pages/documentation.py:687
 msgid ""
 "If all goes well, a window like the one below should appear. It may take\n"
 "quite a while to insert the Freesite, several minutes in fact.\n"
@@ -1383,7 +1384,7 @@ msgid ""
 "by clicking the **Copy URI to Clipboard** -button."
 msgstr "Si todo va bien, debe aparecer una ventana como la de debajo. Puede\nllevar un buen rato insertar el freesite, de hecho varios minutos.\n\n![](assets/img/jsite/project-insert.png)\n\nCuando todo haya finalizado, obtendrá un mensaje emergente que le\ndirá que el sitio ha sido insertado correctamente. Puede copiar la URI al\nportapapeles pulsando el botón **Copiar URI al portapapeles**."
 
-#: pages/documentation.py:695
+#: pages/documentation.py:696
 msgid ""
 "Then you can use FProxy to surf to your newly created Freesite. Just paste\n"
 "the URI after the\n"
@@ -1397,7 +1398,7 @@ msgid ""
 "If it works, congratulations, you have just created your first Freesite!"
 msgstr "Luego puede usar FProxy para navegar por su freesite recientemente\ncreado. Simplemente pegue la URI detrás de\n\n[http://localhost:8888/](http://localhost:8888/)\n\nen la barra de direcciones del navegador, del modo siguiente (cortado para\najustarlo a la pantalla):\n\n<pre>\thttp://localhost:8888/freenet:USK@cJNO6G0[..]joM,AQACAAE/watergate2/1/</pre>\n\nIf it works, congratulations, you have just created your first Freesite!"
 
-#: pages/documentation.py:711
+#: pages/documentation.py:712
 msgid "Wiki"
 msgstr "Wiki"
 
@@ -2581,7 +2582,7 @@ msgid ""
 "can also happen on Windows sometimes, let us know how you managed to fix it\n"
 "... generally it's not all that serious though, especially if big jumps in\n"
 "the clock are only once a day."
-msgstr ""
+msgstr "Freenet tendrá problemas si su reloj está siendo regulado retrasado.\nHabitualmente esto ocurre cuando algo está reajustando su reloj con\nregularidad en grandes saltos. En Linux, debe ejecutar ntpd para asegurarse\nde que su reloj no está demasiado descompensado (esto no es vital pero es\nútil), aunque si ve errores de desfase de reloj, pruebe a añadiir la opción -x\npara que este evite grandes saltos hacia atrás. Además, ejecutar ntpdate en\nel arranque para que haya un gran salto antes de que se inicie Freenet, es\nuna buena idea. Todo esto también puede ocurrir a veces sobre Windows,\nháganos saber cómo consiguió corregirlo... no obstante habitualmente esto\nno es tan serio, especialmente si los grandes saltos en el reloj sólo se\nproducen una vez al día."
 
 #: pages/help.py:519
 msgid "Publishing"
@@ -3404,13 +3405,13 @@ msgstr "*'Pasaron muchos años, dos torres cayeron, el imperio expandió su caza
 msgid ""
 "Leap over censorship<br>\n"
 "Escape total surveillance"
-msgstr ""
+msgstr "Supere la censura<br>\nEscape a la vigilancia total"
 
 #: pages/index.py:153
 msgid ""
 "Freenet re-establishes freedom of speech on the Internet.<br>\n"
 "Install Freenet and join the peer-to-peer network today!"
-msgstr ""
+msgstr "Freenet restablece la libertad de expresión en Internet.<br>\n¡Instale Freenet y únase hoy a la red entre pares (P2P)!"
 
 #: pages/index.py:157 pages/index.py:258
 msgid "Download Freenet"
@@ -3510,7 +3511,7 @@ msgstr "Basado en una investigación solida y en un uso práctico por 15 años."
 #: pages/index.py:260
 msgid ""
 "Freenet is a peer-to-peer network for censorship-resistant communication."
-msgstr ""
+msgstr "Freenet es una red entre pares (P2P) para la comunicación resistente a la censura."
 
 #: pages/index.py:268
 msgid "Latest News"
@@ -3526,7 +3527,7 @@ msgstr "Done hoy."
 
 #: pages/news.py:19
 msgid "2016-04-10 - Freenet testing build 1473-pre1 released"
-msgstr ""
+msgstr "2016-04-10 - Freenet testing build 1473-pre1 ha sido publicada"
 
 #: pages/news.py:20
 msgid ""
@@ -3541,7 +3542,7 @@ msgid ""
 "* Fix handling of filenames with non-ASCII spaces\n"
 "\n"
 "For more details and information on how to test this release see the [development mailing list thread][devl_thread]."
-msgstr ""
+msgstr "La pre-versión de prueba inestable de Freenet build 1473-pre1 está ahora disponible.\nEsta es la primera versión que requiere Java 7.\n\nDestacados:\n\n* Añade The Filtered Index (el índice filtrado) a la lista de marcadores predeterminada\n* Mejora la estabilidad del filtro MP3\n* Corrige la descarga de blob (gran objeto) binario sobre FCP (protocolo de cliente de Freenet)\n* Corrige el manejo de nombres de fichero con espacios no-ASCII\n\nPara más detalles e información sobre cómo probar esta versión, vea el [hilo de la lista de correo de desarrollo][devl_thread]."
 
 #: pages/news.py:36
 msgid "2016-03-19 - Freenet 0.7.5 build 1472 released"
@@ -3587,7 +3588,7 @@ msgid ""
 "IpToCountry database is updated. (This allows providing the country flags on the peers pages. It is local to each instance and does not contact an external service.)\n"
 "\n"
 "Add partial CSS3 support, including viewport lengths. Thanks, Ben Green!"
-msgstr ""
+msgstr "¡Esta es la última versión (build) que soporta Java 6! La próxima versión (build) requerirá Java 7 o superior. Los nodos que ejecuten Java 7 o superior y usen la clave Freenet de actualización oficial, ahora usarán una nueva clave Freenet de actualización. Los nodos sobre Java 6 continuarán usando la antigua clave Freenet de actualización y no serán actualizados a versiones (build) posteriores. ¡Gracias a yadevel por corregir la regresión sobre la que se estaba bloqueando esta versión!\n\nEsta versión fue inicialmente publicada parcialmente como build 1471 - fue publicada en GitHub pero no ofrecida desde el sitio web de Freenet o el sistema de auto-actualización. La build 1472 corrige un fallo por el que al usar Java 6 se evitaba que los nodos se iniciaran por primera vez (se inicializaran). No estropeaba instalaciones existentes.\n\nDestacados:\n\n- Corrige subidas que encallaban al usar el nivel de seguridad física MÁXIMO.\n- Corrige muchos fallos \"¡setNativePriority(X) ha fallado!\", que estaban causados por un grave problema de prioridad de hilo (subproceso). Esto podría corregir el problema de los nodos que pierden pares (peers) de forma inesperada.\n- Ordena por tiempo las alertas dentro de una categoría: Si tiene muchos mensajes de pares de la darknet permanecerán convenientemente ordenados.\n- Ahora hay una [capa de caché][caching] que debería reducir significativamente la carga de E/S.\n- Actualiza WebOfTrust desde la build 15 a la build 18. [Sus][wot16] [registros de cambios][wot17] [están][wot18] separados, pero los cambios reducen la carga de la CPU. El recalculado incremental de la puntuación apenas requiere el 3 por ciento del tiempo que ocuparía el recalculado completo, y formar las colas de listas de confianza en disco reduce el uso de hilos (subprocesos).\n\nTraducciones:\n\n- Añade una traducción parcial al griego.\n- Actualiza las traducciones al alemán, noruego bokmål, portugués de Brasil, chino simplificado, y chino tradicional.\n- Repara la carga de la localización noruego bokmål.\n\nAdemás:\n\n- Elimina el índice Gantros de la lista de marcadores predeterminada a causa de que dejó de actualizarse.\n- Elimina Linkageddon de la lista de marcadores predeterminada a causa de que dejó de actualizarse.\n- Nueva versión de UPnP para corregir algunos problemas de inestabilidad y compatibilidad. Gracias a 007pig tenemos un [nuevo complemento UPnP][upnp2] en desarrollo que soporta UPnP2, pero aún no está incluído.\n- Nueva versión de KeyUtils.\n\nWebOfTrust ahora tiene una versión de prueba actualizable compilada y mantenida por xor. Para usarla, cierre WebOfTrust, y luego cargue las \"Versiones de prueba de WebOfTrust\" en la página de Complementos. Las versiones compiladas por xor no funcionarán con Java 6.\n\nLos sitios puede establecer favicons con `<link rel=\"icon\" type=... href=...>`. (el tipo `type` podría ser `\"image/x-icon\"`)\n\nRevisión y mejora extensiva de las cadenas de texto fuente en inglés, y las traducciones al francés y español. Pruebas y correcciones de sustitución de valores en traducciones. ¡Gracias a Vaughan Woodzell!\n\nEl tema decorativo principal ahora es sky-static en lugar de clean-dropdown. Este tiene un aspecto menos desfasado aunque no moderno.\n\nCorrige los marcadores predeterminados carentes de la categoría \"software\" desde la build 1470. Si no ve esta categoría, por favor, vuelva a añadir el juego de marcadores predeterminado desde la página de edición de marcadores. \n\nLa base de datos IpToCountry se ha actualizado. (Esto permite proporcionar las banderas de los países en las páginas de los pares (peers). Es una consulta local para cada instancia y no contacta con ningún servicio externo).\n\nAñade soporte parcial para CSS3, incluyendo los tamaños viewport (vano útil de ventana). ¡Gracias, Ben Green!"
 
 #: pages/news.py:84
 msgid "2016-01-03 - Testing release build 1471-pre3"
