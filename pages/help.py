@@ -197,7 +197,7 @@ resource pool.
 Do you get to do that anonymously? Freenet is designed with anonymity in
 mind, performance comes second.
 """)),
-                    FaqItem("donate-more-bw", _("All my friends donate very little space and bandwidth. Why should I donate more?"), _("""
+                    FaqItem("donate-more-bw", _("All my friends donate very little space and bandwidth. Should I donate more?"), _("""
 If you are happy with what you are getting then no. But if you want more you
 should consider donating more and running your node as close to 24x7 as
 possible, and you should ask your friends to do the same.
@@ -319,11 +319,11 @@ will however work even without this, by using its built-in encryption code.
 """)),
                     FaqItem("whatelse", _("I have nothing to hide and don't need anonymity. Is there anything else Freenet can offer?"), _("""
 Yes, in fact even without the anonymity feature Freenet is very useful
-because of its unique way it handles content distribution and information
+because of the unique way it handles content distribution and information
 load. In simple terms that means you can publish a website without worrying
-about how big the site will be and without having to put someone elses ad
-banners on it. While it is unlikely that Freenet sites will ever load faster
-than regular websites, it does adapt to sudden surges of visitors better (
+about how big the site will be and without having to put someone else's ad
+banners on it. While it is unlikely that freesites will ever load faster
+than regular websites, they do adapt to sudden surges of visitors better (
 which often happen when relatively unknown sites get linked to from a big
 site), and reasonable download speeds for big files are feasible too. Just
 don't expect very low latency.

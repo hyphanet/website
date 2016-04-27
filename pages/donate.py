@@ -233,7 +233,7 @@ information - or even that it exists - especially useful
 for those living in oppressive political regimes.
 
 While development is primarily driven by volunteers, 
-the project has also employed paid developers to provide more-focused work. 
+the project has also employed paid developers to provide more focused work. 
 Over the past 2 years, the project's paid developer has made great progress 
 improving “Web of Trust” functionality to combat spam,
 which is a central problem in any anonymous system. 
