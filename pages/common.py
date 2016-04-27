@@ -416,7 +416,7 @@ class ContactSection(Section):
             <h3>$str__license_header</h3>
             $str__license
             <div class="footer-div" >
-                &copy; 2015 The Freenet Project Inc<br/>
+                &copy; 2016 The Freenet Project Inc<br/>
                 <a href="http://www.designbootstrap.com/" target="_blank" >$str__design</a>
             </div>
         </div>
