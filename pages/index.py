@@ -126,7 +126,7 @@ If one percent of people used Freenet, everyone could safely be a whistleblower.
                      <div class="meter blue" id="donate_bar_small">
                          <div class="quantity" style="left: 15px;">$$MONEYBALANCE</div>
                          <div class="quantity" style="right: 15px;">$$$str__donation_target</div>
-                         <span style="width: calc(MONEYBALANCE / $str__donation_target * 100%)">
+                         <span style="width: 100%)">
                          </span>
                      </div>
                      <script type="text/javascript">
