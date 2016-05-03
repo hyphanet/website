@@ -16,6 +16,16 @@ class NewsItem(object):
 def news_items():
     donate_button = """<a class="btn button-custom btn-custom-two donate-button" href="donate.html">""" + _("Donate today.") + """</a>"""
     return [
+        NewsItem("20160503-ddg", _("2016-05-03 - DuckDuckGo donated $25,000"),
+_("""
+The Freenet Project is very excited to announce that [DuckDuckGo have donated][ddg_url] $25,000 to our project.
+This new funding will be used to advance our goal of ensuring true freedom of communication on the Internet.
+
+The project has always operated in a democratic manner, and we will use an open process to set priorities for how we allocate this funding, which will incorporate the views of Freenet’s users, developers, and supporters.
+""") + """
+
+[ddg_url]: https://duck.co/blog/post/303/2016-foss-donations-announcement
+"""),
         NewsItem("20160410-1473-pre1", _("2016-04-10 - Freenet testing build 1473-pre1 released"),
 _("""
 Freenet unstable testing prerelease build 1473-pre1 is now available.
