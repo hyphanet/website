@@ -3,17 +3,18 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Ikono Gangansi <ikonogangansi@gmail.com>, 2016
 # Sebastian Schmiedt <hansfritzenmeister@yahoo.de>, 2016
-# Wilhelm Waldläufer <ikonogangansi@gmail.com>, 2015-2016
+# Ikono Gangansi <ikonogangansi@gmail.com>, 2015-2016
 # xor-freenet, 2015
 # yamahapsr200 <yamahapsr200@googlemail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Freenet\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-28 20:56-0500\n"
-"PO-Revision-Date: 2016-03-05 08:15+0000\n"
-"Last-Translator: Wilhelm Waldläufer <ikonogangansi@gmail.com>\n"
+"POT-Creation-Date: 2016-04-26 23:59-0400\n"
+"PO-Revision-Date: 2016-05-02 07:39+0000\n"
+"Last-Translator: Ikono Gangansi <ikonogangansi@gmail.com>\n"
 "Language-Team: German (http://www.transifex.com/otf/freenet/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,7 +22,7 @@ msgstr ""
 "Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: pages/about.py:11 pages/help.py:52 pages/index.py:162
+#: pages/about.py:11 pages/help.py:52 pages/index.py:181
 msgid "What is Freenet?"
 msgstr "Was ist Freenet?"
 
@@ -376,7 +377,7 @@ msgid ""
 "### Dave Baker\n"
 "\n"
 "Dave's main contribution has been [Freemail](documentation.html#freemail),\n"
-"his Summer of Code project to build a working email-over-freenet system,\n"
+"his Summer of Code project to build a working email-over-Freenet system,\n"
 "as well as some debugging and core work in various places."
 msgstr ""
 
@@ -609,7 +610,7 @@ msgstr "Bugtracker"
 msgid "Contribute"
 msgstr "Mitwirken"
 
-#: pages/documentation.py:10 pages/documentation.py:720
+#: pages/documentation.py:10 pages/documentation.py:718
 msgid "Documentation"
 msgstr "Dokumentation"
 
@@ -749,7 +750,7 @@ msgid ""
 "It will ask about network security level - \"protection from strangers\n"
 "attacking you over the internet\". If you choose LOW or NORMAL, Freenet should\n"
 "\"just work\", connecting in a few minutes. If you choose HIGH or MAXIMUM,\n"
-"Freenet will need you to add Friends before you can use it. These must be\n"
+"Freenet will need you to add friends before you can use it. These must be\n"
 "people you personally know. Adding people you don't know will not improve\n"
 "security."
 msgstr ""
@@ -784,18 +785,18 @@ msgid ""
 "datastore, and very few connections even if insecure mode is enabled.\n"
 "Requests are sent out in a random fashion. **This makes some (or all)\n"
 "requests time out before retrieving anything.** It takes a couple of days for\n"
-"your Freenet-node to get up to speed, so please don't get discouraged by this.*\n"
+"your Freenet node to get up to speed, so please don't get discouraged by this.*\n"
 "\n"
 "You should have at least three nodes that are connected to you at all times,\n"
 "ideally at least five to seven. Since some nodes may be unreachable at times,\n"
 "you need to connect to some more nodes to get the expected number. The nodes\n"
-"that are connected directly to you are the only nodes on freenet that might\n"
-"see what kind of traffic that passes through to your Freenet node. But if\n"
+"that are connected directly to you are the only nodes on Freenet that might\n"
+"see what kind of traffic passes through to your Freenet node. But if\n"
 "insecure mode is enabled, any node can find yours; this is the big advantage\n"
 "of **not** enabling insecure mode: you are effectively invisible except to\n"
-"your Friends. In practice most people start off with insecure mode and\n"
-"gradually add Friends, and hopefully turn off insecure mode once they have at\n"
-"least 10 Friends."
+"your friends. In practice most people start off with insecure mode and\n"
+"gradually add friends, and hopefully turn off insecure mode once they have at\n"
+"least 10 friends."
 msgstr ""
 
 #: pages/documentation.py:185
@@ -810,7 +811,7 @@ msgid ""
 "that you know of that it thinks is most able to find what you are looking for.\n"
 "\n"
 "The traffic is encrypted, so it is quite difficult for the nodes that you\n"
-"connect to to see what your Freenet-traffic consists of, but it is far from\n"
+"connect to to see what your Freenet traffic consists of, but it is far from\n"
 "impossible. It is therefore important that you connect only to people you\n"
 "know. If that is not possible, then at least people you've talked to.\n"
 "\n"
@@ -846,8 +847,8 @@ msgid ""
 "\n"
 "Your own Freenet reference can be found on the [\n"
 "http://127.0.0.1:8888/friends/](http://127.0.0.1:8888/friends/) page,\n"
-"under the caption **My reference**. It might look something like this (cut\n"
-"for screen purposes):"
+"under the caption **My Node Reference**. It might look something like this (cut\n"
+"to fit on the screen):"
 msgstr ""
 
 #: pages/documentation.py:249
@@ -951,35 +952,32 @@ msgstr ""
 msgid ""
 "### The datastore\n"
 "\n"
-"All Freenet nodes contribute with a part of their harddrive space to store\n"
-"files. The files are stored encrypted in the **store**-directory in the\n"
-"Freenet installation directory."
+"All Freenet nodes contribute a part of their hard drive space to store encrypted pieces of files.\n"
+"They are stored in the **datastore** directory in the Freenet installation directory."
 msgstr ""
 
-#: pages/documentation.py:345
+#: pages/documentation.py:344
 msgid ""
 "Unlike other peer-to-peer networks, you as a user have little or no control\n"
 "over what is stored in your datastore. Instead, files are kept or deleted\n"
-"depending on how popular they are. This is to ensure that Freenet is\n"
-"censorship resistant. The only possible way to remove something from Freenet\n"
-"is to not search for it, and hope that everybody else does the same."
+"depending on how popular they are. This allows Freenet to be censorship-resistant.\n"
+"There is no \"delete file\" operation."
 msgstr ""
 
-#: pages/documentation.py:351
+#: pages/documentation.py:349
 msgid ""
-"It is hard, but not impossible, to determine which files that are stored in\n"
-"your local Freenet Datastore. This is to enable plausible deniability as to\n"
-"what kind of material that lies on your harddrive in the datastore."
+"It is hard, but not impossible, to determine what the encrypted file pieces stored in your local Freenet datastore are part of.\n"
+"This allows plausible deniability."
 msgstr ""
 
-#: pages/documentation.py:355
+#: pages/documentation.py:352
 msgid ""
 "Freenet suggests an initial size based on how much space is available, and\n"
 "you can change the store size at any time. A larger store uses more RAM,\n"
 "but makes for better browsing for you and helps Freenet as a whole."
 msgstr ""
 
-#: pages/documentation.py:359
+#: pages/documentation.py:356
 msgid ""
 "### Freenet Routing\n"
 "\n"
@@ -990,7 +988,7 @@ msgid ""
 "newly-started Freenet will be distributed somewhat randomly."
 msgstr ""
 
-#: pages/documentation.py:367
+#: pages/documentation.py:364
 msgid ""
 "As more documents are inserted by the same node, they will begin to cluster\n"
 "with data items whose keys (see below) are similar, because the same routing\n"
@@ -999,7 +997,7 @@ msgid ""
 "information as well."
 msgstr ""
 
-#: pages/documentation.py:373
+#: pages/documentation.py:370
 msgid ""
 "The result is that the network will self-organize into a distributed,\n"
 "clustered structure where nodes tend to hold data items that are close\n"
@@ -1008,17 +1006,17 @@ msgid ""
 "depending on how much it is used."
 msgstr ""
 
-#: pages/documentation.py:379
+#: pages/documentation.py:376
 msgid ""
 "### Freenet keys\n"
 "\n"
 "Each file that exists on Freenet has a key associated with it. Freenet 0.7\n"
-"has various types of keys. Keys are used for everything on freenet, and are a\n"
+"has various types of keys. Keys are used for everything on Freenet, and are a\n"
 "kind of [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) (\n"
 "e.g. freenet:=KSK@sample.txt)."
 msgstr ""
 
-#: pages/documentation.py:386
+#: pages/documentation.py:383
 msgid ""
 "Most keys are hashes: there is no notion of semantic closeness when speaking\n"
 "of key closeness. Therefore there will be no correlation between key\n"
@@ -1027,7 +1025,7 @@ msgid ""
 "subjects."
 msgstr ""
 
-#: pages/documentation.py:392
+#: pages/documentation.py:389
 msgid ""
 "### Accessing data\n"
 "\n"
@@ -1045,7 +1043,7 @@ msgid ""
 "*   **KSK** - Keyword Signed Keys"
 msgstr ""
 
-#: pages/documentation.py:407
+#: pages/documentation.py:404
 msgid ""
 "CHKs are the most fundamental. All files over 1kB are ultimately divided into\n"
 "one or more 32kB CHKs. CHKs' filenames are determined only by their contents.\n"
@@ -1057,7 +1055,7 @@ msgid ""
 "**Address Resolution Keys**."
 msgstr ""
 
-#: pages/documentation.py:416
+#: pages/documentation.py:413
 msgid ""
 "An Address Resolution Key (ARK) is an Updateable Subspace Key (USK) inserted\n"
 "by the node whenever its IP address changes. It contains the reference for\n"
@@ -1070,7 +1068,7 @@ msgid ""
 "them to use Freenet."
 msgstr ""
 
-#: pages/documentation.py:426
+#: pages/documentation.py:423
 msgid ""
 "### Content Hash Keys\n"
 "\n"
@@ -1088,7 +1086,7 @@ msgid ""
 "3.  the cryptographic settings used"
 msgstr ""
 
-#: pages/documentation.py:441
+#: pages/documentation.py:438
 msgid ""
 "A typical CHK key looks like this:\n"
 "\n"
@@ -1098,8 +1096,9 @@ msgid ""
 "\n"
 "CHK@SVbD9~HM5nzf3AX4yFCBc-A4dhNUF5DPJZLL5NX5Brs,bA7qLNJR7IXRKn6uS5PAySjIM6azPFvK~18kSi6bbNQ,AAEA--8\n"
 "\n"
-"The decryption key is stored encrypted within the file, so it is not possible\n"
-"to decrypt the file without the CHK key.\n"
+"The decryption key is part of the key for the file, and is not included in\n"
+"requests for the file's pieces. It is thus not possible to decrypt the file\n"
+"without the CHK key.\n"
 "\n"
 "To access the file, the whole key must be pasted behind the FProxy address\n"
 "(cut to fit screen):\n"
@@ -1107,7 +1106,7 @@ msgid ""
 "http://localhost:8888/CHK@SVbD9~[..]X5Brs,bA7qLN[..]Si6bbNQ,AAEA--8"
 msgstr ""
 
-#: pages/documentation.py:457
+#: pages/documentation.py:455
 msgid ""
 "### Signed Subspace Keys\n"
 "\n"
@@ -1120,7 +1119,7 @@ msgid ""
 "person with the secret key can add updated versions of your site to Freenet."
 msgstr ""
 
-#: pages/documentation.py:467
+#: pages/documentation.py:465
 msgid ""
 "Also the SSK consists of five parts:\n"
 "\n"
@@ -1148,7 +1147,7 @@ msgid ""
 "SSK@GB3wuHmt[..]o-eHK35w,c63EzO7u[..]3YDduXDs,AQABAAE/mysite-4"
 msgstr ""
 
-#: pages/documentation.py:492
+#: pages/documentation.py:490
 msgid ""
 "### How Signed Subspace Keys work\n"
 "\n"
@@ -1174,7 +1173,7 @@ msgid ""
 "always retrieve the most up-to-date version of the site."
 msgstr ""
 
-#: pages/documentation.py:515
+#: pages/documentation.py:513
 msgid ""
 "### Updateable Subspace Keys\n"
 "\n"
@@ -1194,7 +1193,7 @@ msgid ""
 "*   an USK with a negative number at the end."
 msgstr ""
 
-#: pages/documentation.py:532
+#: pages/documentation.py:530
 msgid ""
 "The USK with a **positive** number at the end works like this: the Freenet\n"
 "node on your computer keeps a list of versions of USKs that it knows about,\n"
@@ -1211,7 +1210,7 @@ msgid ""
 "USK@GB3wuHmt[..]o-eHK35w,c63EzO7u[..]3YDduXDs,AQABAAE/mysite/5/"
 msgstr ""
 
-#: pages/documentation.py:546
+#: pages/documentation.py:544
 msgid ""
 "When you visit a link with a **negative** number at the end, Freenet searches\n"
 "for the version you requested (e.g. **-7**) plus four more (i.e. 7,8,9,10,\n"
@@ -1229,7 +1228,7 @@ msgid ""
 "more on that elsewhere."
 msgstr ""
 
-#: pages/documentation.py:561
+#: pages/documentation.py:559
 msgid ""
 "### Keyword Signed Keys\n"
 "\n"
@@ -1252,12 +1251,12 @@ msgid ""
 "the file itself."
 msgstr ""
 
-#: pages/documentation.py:581
+#: pages/documentation.py:579
 msgid ""
 "### Containers\n"
 "\n"
 "A container, in general Freenet terms, is a file that contains several other\n"
-"files. In freenet 0.7, a freesite, or other collection of files, may be\n"
+"files. In Freenet 0.7, a freesite, or other collection of files, may be\n"
 "bundled together in a ZIP file, which is limited in size to 2MB. Containers\n"
 "have the advantage that when you load one page you load all the files on the\n"
 "freesite, so either it loads in its entirety or it doesn't load at all,\n"
@@ -1266,7 +1265,7 @@ msgid ""
 "using e.g. jSite."
 msgstr ""
 
-#: pages/documentation.py:592
+#: pages/documentation.py:590
 msgid ""
 "### Manifests\n"
 "\n"
@@ -1278,11 +1277,11 @@ msgid ""
 "is handled internally."
 msgstr ""
 
-#: pages/documentation.py:606
+#: pages/documentation.py:604
 msgid "Social"
 msgstr "Sozial"
 
-#: pages/documentation.py:609
+#: pages/documentation.py:607
 msgid ""
 "Freenet provides the foundation for anonymous email, forums and chat,\n"
 "as well as a replacement for Facebook/Twitter. Setup of these is\n"
@@ -1292,11 +1291,11 @@ msgid ""
 "[over Freenet](http://127.0.0.1:8888/USK@t5zaONbYd5DvGNNSokVnDCdrIEytn9U5SSD~pYF0RTE,guWyS9aCMcywU5PFBrKsMiXs7LzwKfQlGSRi17fpffc,AQACAAE/fsng/58/)."
 msgstr ""
 
-#: pages/documentation.py:621
+#: pages/documentation.py:619
 msgid "jSite"
 msgstr "jSite"
 
-#: pages/documentation.py:624
+#: pages/documentation.py:622
 msgid ""
 "jSite is a graphical application that you can use to create, insert and\n"
 "manage your own Freenet sites. It was written in Java by Bombe.\n"
@@ -1304,7 +1303,7 @@ msgid ""
 "You can [download jSite here](https://downloads.freenetproject.org/alpha/jSite/jSite.jar)"
 msgstr ""
 
-#: pages/documentation.py:629
+#: pages/documentation.py:627
 msgid ""
 "### Starting jSite\n"
 "\n"
@@ -1321,7 +1320,7 @@ msgid ""
 "projects exist."
 msgstr ""
 
-#: pages/documentation.py:643
+#: pages/documentation.py:641
 msgid ""
 "### Creating a Freesite\n"
 "\n"
@@ -1337,7 +1336,7 @@ msgid ""
 "button to select a directory graphically or just type it in."
 msgstr ""
 
-#: pages/documentation.py:656
+#: pages/documentation.py:654
 msgid ""
 "Under the Address-section, there are some automatically generated entries,\n"
 "and the human readable name for the site, as seen in the address-field of the\n"
@@ -1357,7 +1356,7 @@ msgid ""
 "When everything is filled in correctly, you may press **Next**."
 msgstr ""
 
-#: pages/documentation.py:673
+#: pages/documentation.py:671
 msgid ""
 "The next step is to add files to your Freenet site (or Freesite). This is\n"
 "done in the dialog called **Project Files**. Since we have no files in the\n"
@@ -1376,7 +1375,7 @@ msgid ""
 "they are and click the **Insert now** button."
 msgstr ""
 
-#: pages/documentation.py:689
+#: pages/documentation.py:687
 msgid ""
 "If all goes well, a window like the one below should appear. It may take\n"
 "quite a while to insert the Freesite, several minutes in fact.\n"
@@ -1388,7 +1387,7 @@ msgid ""
 "by clicking the **Copy URI to Clipboard** -button."
 msgstr ""
 
-#: pages/documentation.py:698
+#: pages/documentation.py:696
 msgid ""
 "Then you can use FProxy to surf to your newly created Freesite. Just paste\n"
 "the URI after the\n"
@@ -1402,11 +1401,11 @@ msgid ""
 "If it works, congratulations, you have just created your first Freesite!"
 msgstr ""
 
-#: pages/documentation.py:714
+#: pages/documentation.py:712
 msgid "Wiki"
 msgstr "Wiki"
 
-#: pages/donate.py:8 pages/donate.py:320
+#: pages/donate.py:8 pages/donate.py:349
 msgid "Donate"
 msgstr "Spenden"
 
@@ -1436,47 +1435,32 @@ msgstr "Individueller Betrag"
 
 #: pages/donate.py:19
 msgid ""
-"#### Why does The Freenet Project need donations?\n"
-"\n"
-"Although countless people have given their time and skill to the project since its inception, The Freenet Project relies on your donations to cover hosting and administrative costs (i.e. domain registrations and certificates).\n"
-"If we have enough funds, we can hire developers to work on Freenet.\n"
-"Currently we are raising $27500 to hire a developer for a year.\n"
-"[Learn more about our fundraiser.][url_fundraiser]\n"
-"\n"
-"All support is very much appreciated."
-msgstr "#### Warum braucht das Freenet Projekt Spenden?\n\nObwohl unzählige Menschen ihre Zeit und ihre Fähigkeiten in das Projekt seit seiner Gründung gegeben, setzt das Freenet Project auf Ihre Spenden, um das Hosting und die Verwaltungskosten (dh Domain-Registrierungen und Zertifikate) abzudecken. Wenn wir genug Geld haben, können wir Entwickler einzustellen, um an Freenet zu arbeiten. Derzeit planen wir 27500 $ zu bekommen, um einen Entwickler für ein Jahr ein zustellen. [Erfahren Sie mehr über unsere Spendenaktion.][url_fundraiser]\n\nAlle Unterstützung wird sehr geschätzt. "
-
-#: pages/donate.py:28
-msgid ""
 "#### How can I donate?\n"
 "\n"
-"You have several options:\n"
-"\n"
-"* You can donate using PayPal.\n"
-"You can become a Freenet project \"member\" for a recurring payment of $5 or more per month.\n"
-"This helps give the project a more stable and dependable income which makes it easier to make long-term commitments to potential developers.\n"
-"Right now it is often difficult to say whether we will be able to pay a developer the following month.\n"
-"You can become a member by signing up for a monthly recurring donation below (this requires a [PayPal][url_paypal] account).\n"
+"* You can donate using PayPal. For a recurring payment of $5 or more per month you can become a Freenet \"member\" (this requires a [PayPal][url_paypal] account).\n"
+"Recurring donations give the project a more stable and dependable income which makes it easier to make long-term commitments to potential developers.\n"
 "Alternatively you can make a one-time donation."
-msgstr "#### Wie kann ich Spenden?\n\nSie haben mehrere Möglichkeiten\n\n* Sie können mit PayPal spenden.\nSie können ein Freenet Projekt \"Mitglied\" werden und regelmäßig 5$ oder mehr pro Monat spenden.\nDas verhilft dem Projekt zu stabilen und regelmäßigen Einnahmen und macht es einfacher längere Verpflichtungen mit möglichen Entwicklern einzugehen.\nGerade jetzt ist es oft schwierig zu sagen ob wir in der Lage sind, einen Entwickler den folgenden Monat zu bezahlen.\nSie können Mitglied werden wenn Sie sich für eine monatliche Spende entscheiden.  (dies erfordert ein [PayPal][url_paypal] account).\nAlternativ können Sie auch einmalig spenden."
+msgstr ""
 
-#: pages/donate.py:184
+#: pages/donate.py:169
 #, python-brace-format
 msgid ""
 "* ![][logo_bitcoin]\n"
 "You can donate using [Bitcoin][url_bitcoin].\n"
 "Send your donations to {bitcoin_address}.\n"
 "\n"
-"* Alternatively, please contact us: {donate_email} if you cannot use any of these payment methods.\n"
+"* You can also donate by purchasing items from the Freenet [store][url_zazzle_store].\n"
 "\n"
-"* You can also donate to the project by purchasing items from the Freenet [store][url_zazzle_store]."
-msgstr "* ![][logo_bitcoin]\nSie können mit [Bitcoin][url_bitcoin] spenden.\nSende die Spende an {bitcoin_address}.\n\n* Alternativ, kontaktieren Sie uns bitte unter: {donate_email} falls Sie keine dieser Bezahlmethoden nutzen können\n\n* Sie können auch spenden wenn Sie Produkte im Freenet [store][url_zazzle_store]kaufen."
+"* Or support us via [Salt at Bountysource][url_salt_bountysource].\n"
+"\n"
+"* Alternatively, please contact us at {donate_email} if you cannot use any of these payment methods.\n"
+msgstr ""
 
-#: pages/donate.py:201
+#: pages/donate.py:190
 msgid "The Freenet Non-Profit"
 msgstr "Freenet ist Gemeinnützig"
 
-#: pages/donate.py:204
+#: pages/donate.py:193
 msgid ""
 "All donations go to The Freenet Project Inc, a 501(c)(3) non-profit organization with the following mission statement:\n"
 "\n"
@@ -1498,31 +1482,66 @@ msgid ""
 "The Freenet Project Inc is registered under EIN `95-4864038`"
 msgstr ""
 
-#: pages/donate.py:229
+#: pages/donate.py:218
+msgid "Why donate"
+msgstr "Warum Spenden?"
+
+#: pages/donate.py:222
+msgid ""
+"Although countless people have given their time and skill to the project since its inception, \n"
+"The Freenet Project relies on your donations to cover hosting and administrative costs \n"
+"(i.e. domain registrations and certificates).\n"
+"If we have enough funds, we can hire developers to work on Freenet.\n"
+"\n"
+"Freenet is a platform for censorship-resistant communication and publishing. \n"
+"For the past 15 years the project has built tools to fight for freedom of speech and information. \n"
+"Our software provides a decentralized peer-to-peer network\n"
+"designed to hide who publishes or accesses potentially controversial \n"
+"information - or even that it exists - especially useful\n"
+"for those living in oppressive political regimes.\n"
+"\n"
+"While development is primarily driven by volunteers, \n"
+"the project has also employed paid developers to provide more focused work. \n"
+"Over the past 2 years, the project's paid developer has made great progress \n"
+"improving “Web of Trust” functionality to combat spam,\n"
+"which is a central problem in any anonymous system. \n"
+"Unfortunately, the Freenet Project no longer has enough money to retain his services, \n"
+"so he is now a volunteer. This greatly reduces his capacity to continue this important work.\n"
+"\n"
+"We are excited for the future of Freenet and the projects built on top of it. \n"
+"There is so much more work to do, and full-time developers greatly benefit the project.\n"
+"\n"
+"Help us keep Internet freedom alive and expand human liberty.  \n"
+"[Learn more about our fundraiser.][url_fundraiser]\n"
+"\n"
+"All support is very much appreciated."
+msgstr ""
+
+#: pages/donate.py:258
 msgid "Sponsors"
 msgstr "Sponsoren/Unterstützer"
 
-#: pages/donate.py:233
+#: pages/donate.py:262
 msgid ""
 "The following persons, organisations and companies have generously sponsored\n"
 "this project through donations or discounts on hardware and services:"
 msgstr ""
 
-#: pages/donate.py:236
+#: pages/donate.py:265
 msgid ""
 "*   [John Pozadzides][url_john_pozadzides]  \n"
 "John is the founder of HTMLHelp.com and former Vice President of Sales for SAVVIS Communications.\n"
 "John has donated $10,000 to the Freenet Project to fund ongoing development of the Freenet software."
 msgstr ""
 
-#: pages/donate.py:240
+#: pages/donate.py:269
 msgid ""
 "*   [Web Hosting Search][url_web_hosting_search]  \n"
 "WebHostingSearch is a top rated guide to various world wide web hosting companies.\n"
 "Mr Chris Reynolds and the friendly team behind this company have become one of our proud promoters."
 msgstr ""
 
-#: pages/donate.py:244
+#: pages/donate.py:273
 msgid ""
 "*   [John Gilmore][url_john_gilmore]  \n"
 "John Gilmore is one of the founders of the Electronic Frontier Foundation, the Cypherpunks mailing list, and Cygnus Solutions.\n"
@@ -1530,13 +1549,13 @@ msgid ""
 "He has donated $10,000."
 msgstr ""
 
-#: pages/donate.py:249
+#: pages/donate.py:278
 msgid ""
 "*   [Bytemark Hosting][url_bytemark_hosting]  \n"
 "Bytemark provides discounted hosting facilities to Freenet and comes with our highest recommendation."
 msgstr ""
 
-#: pages/donate.py:252
+#: pages/donate.py:281
 msgid ""
 "*   [zoozle Torrent Search][url_zoozle]  \n"
 "zoozle is a search engine for BitTorrent and P2P networks.\n"
@@ -1544,7 +1563,7 @@ msgid ""
 "They have donated $1,500."
 msgstr ""
 
-#: pages/donate.py:257
+#: pages/donate.py:286
 msgid ""
 "*   [YourKit, LLC][url_yourkit]  \n"
 "YourKit is kindly supporting Freenet by providing us a free of charge license of its full-featured Java Profiler.\n"
@@ -1552,53 +1571,53 @@ msgid ""
 "You can learn more about [YourKit Java Profiler][url_yourkit_profiler] following the link."
 msgstr ""
 
-#: pages/donate.py:262
+#: pages/donate.py:291
 msgid ""
 "*   [Google][url_google]  \n"
 "Google [open source][url_google_opensource] have three times donated $18,000, as well as paying for students to work with us over summer since 2006 through the [Google Summer of Code][url_google_soc] program."
 msgstr ""
 
-#: pages/donate.py:265
+#: pages/donate.py:294
 msgid ""
 "*   [Finanzvergleich][url_finanzvergleich]  \n"
 "Finanzvergleich is a German financial services comparison site, who have contributed $1,500."
 msgstr ""
 
-#: pages/donate.py:268
+#: pages/donate.py:297
 msgid ""
 "*   [TopDir][url_topdir]  \n"
 "TopDir is a human edited web directory with informations about interesting topics and websites in the German language."
 msgstr ""
 
-#: pages/donate.py:271
+#: pages/donate.py:300
 msgid "*   [All Filters][url_allfilters] - another generous sponsor."
 msgstr ""
 
-#: pages/donate.py:273
+#: pages/donate.py:302
 msgid ""
 "*   [A German Site for Gardening and Plants][url_gartenheinz] - another "
 "generous sponsor."
 msgstr ""
 
-#: pages/donate.py:275
+#: pages/donate.py:304
 msgid ""
 "*   [Simple Car Rentals][url_simple_carrentals]  \n"
 "Simple Car Rentals has generously supported Freenet by helping us with some of our administrative expenses over the years."
 msgstr ""
 
-#: pages/donate.py:278
+#: pages/donate.py:307
 msgid ""
 "*   [The Sports Den][url_sportsden]  \n"
 "The Sports Den has a wide variety of outdoor sports equipment, they are based in Ireland but can ship to the UK, Europe, and the United States."
 msgstr ""
 
-#: pages/donate.py:281
+#: pages/donate.py:310
 msgid ""
 "*   ![][logo_intellij_idea]  \n"
 "[JetBrains][url_jetbrains] has kindly provided a license for the Ultimate edition of [IntelliJ IDEA][url_intellij_idea]."
 msgstr ""
 
-#: pages/donate.py:284
+#: pages/donate.py:313
 #, python-brace-format
 msgid ""
 "Freenet Project Inc does not necessarily endorse the business activities of all of the companies listed on this page.\n"
@@ -1606,15 +1625,15 @@ msgid ""
 "Donation inquiries please contact Ian Clarke: {donate_email}"
 msgstr ""
 
-#: pages/donate.py:314
+#: pages/donate.py:343
 msgid "Store"
 msgstr "Laden"
 
-#: pages/donate.py:331
+#: pages/donate.py:361
 msgid "Thanks for your donation!"
 msgstr "Danke für Ihre Spende!"
 
-#: pages/donate.py:335
+#: pages/donate.py:365
 #, python-brace-format
 msgid ""
 "We have received your generous donation. It will be used at the direction of\n"
@@ -1623,19 +1642,38 @@ msgid ""
 "Clarke: {donate_email}."
 msgstr ""
 
-#: pages/donate.py:345
+#: pages/donate.py:375
 msgid "Thanks"
 msgstr "Danke"
 
-#: pages/download.py:87 pages/download.py:307
+#: pages/download.py:87 pages/download.py:332
 msgid "Download"
 msgstr "Herunterladen"
 
-#: pages/download.py:91
-msgid "Show instructions for:"
-msgstr "Anleitung zeigen für:"
+#: pages/download.py:90
+msgid ""
+"To access Freenet, you first need to install the main application.\n"
+"Freenet will run in the background and you can use your browser to change settings and access content.\n"
+"There are other applications that you can install at a later time to add more functionality.\n"
+"\n"
+"Steps:\n"
+"\n"
+"* [Download and install Freenet][autostart]\n"
+"* [Add friends (or connect to strangers)][add_friends]\n"
+"* [Start using Freenet!][usage]"
+msgstr ""
 
-#: pages/download.py:96
+#: pages/download.py:106
+msgid "Show installation instructions for:"
+msgstr ""
+
+#: pages/download.py:111
+msgid ""
+"*Freenet is free and open source software available under GPLv2+. The source"
+" code is on [GitHub][github_freenet].*"
+msgstr ""
+
+#: pages/download.py:115
 msgid ""
 "### Windows\n"
 "\n"
@@ -1644,13 +1682,12 @@ msgid ""
 "\n"
 "It will automatically install Freenet and other required components for you.\n"
 "When done, your default browser will automatically open up to Freenet's\n"
-"web-based user interface. (Freenet contains **NO spyware or adware** ,\n"
-"it's Free Software! The source code is publicly available for review)\n"
+"web-based user interface.\n"
 "\n"
 "Freenet requires Windows XP or later."
 msgstr ""
 
-#: pages/download.py:108
+#: pages/download.py:126
 msgid ""
 "### OS X\n"
 "\n"
@@ -1662,7 +1699,7 @@ msgid ""
 "Freenet requires OS X 10.8 or later."
 msgstr ""
 
-#: pages/download.py:120
+#: pages/download.py:138
 msgid ""
 "### GNU/Linux & POSIX\n"
 "\n"
@@ -1682,7 +1719,7 @@ msgid ""
 "Open a terminal and run:"
 msgstr ""
 
-#: pages/download.py:140
+#: pages/download.py:158
 msgid ""
 "Alternatively, downloading [the installer](assets/jnlp/freenet_installer.jar)\n"
 "([gpg signature][jar_sig])\n"
@@ -1707,7 +1744,7 @@ msgid ""
 "tell it where to install Freenet etc."
 msgstr ""
 
-#: pages/download.py:167
+#: pages/download.py:185
 msgid ""
 "### Mirrored installation\n"
 "\n"
@@ -1728,11 +1765,11 @@ msgid ""
 "this!"
 msgstr ""
 
-#: pages/download.py:189
+#: pages/download.py:207
 msgid "Using Freenet"
 msgstr "Freenet benutzen"
 
-#: pages/download.py:193
+#: pages/download.py:211
 msgid ""
 "Please try the [step by step guide][url_freesocial] to setting up Freenet and various Freenet apps,\n"
 "especially if installing on OS X.\n"
@@ -1740,7 +1777,7 @@ msgid ""
 "but many Freenet users and developers use them."
 msgstr ""
 
-#: pages/download.py:198
+#: pages/download.py:216
 msgid ""
 "### Firewalls and routers\n"
 "\n"
@@ -1749,7 +1786,7 @@ msgid ""
 "some info."
 msgstr ""
 
-#: pages/download.py:204
+#: pages/download.py:222
 msgid ""
 "### So it's running, what do I do?\n"
 "\n"
@@ -1778,7 +1815,7 @@ msgid ""
 "guys!)."
 msgstr ""
 
-#: pages/download.py:230
+#: pages/download.py:248
 msgid ""
 "### So I'm connected, what do I do?\n"
 "\n"
@@ -1791,18 +1828,14 @@ msgid ""
 "micro-blogging (Sone, a bit like twitter)."
 msgstr ""
 
-#: pages/download.py:240
+#: pages/download.py:258
 msgid ""
 "### It doesn't work, now what?\n"
 "\n"
-"If you have problems installing or running Freenet, please contact us on [the\n"
-"support list](mailto:support@freenetproject.org) ([subscribe here](\n"
-"help.html#mailing-lists)), or join us on IRC on the #freenet channel on\n"
-"irc.freenode.net (try [here](\n"
-"https://webchat.freenode.net/?randomnick=1&channels=freenet))."
+"If you have problems installing or running Freenet, please see the [knowledge base][kb_url], [FAQ][faq_url], [chat][chat_url], or [mailing list][ml_url]."
 msgstr ""
 
-#: pages/download.py:248
+#: pages/download.py:269
 msgid ""
 "### Hardware requirements\n"
 "\n"
@@ -1822,11 +1855,11 @@ msgid ""
 "http://wrapper.tanukisoftware.org/doc/english/download.jsp)."
 msgstr ""
 
-#: pages/download.py:265
+#: pages/download.py:286
 msgid ""
 "### Upgrading\n"
 "\n"
-"Freenet provides an update-over-freenet mechanism: It will keep itself up to\n"
+"Freenet provides an update-over-Freenet mechanism: It will keep itself up to\n"
 "date automatically from other Freenet nodes, and this will normally work even\n"
 "if it is unable to route to them due to them being too new. This is anonymous\n"
 "and secure, and we recommend people use it. However, if something is severely\n"
@@ -1835,28 +1868,33 @@ msgid ""
 "* Windows users can upgrade to the latest-stable Freenet release from the\n"
 "system tray menu, or by running \"update.cmd\" in the Freenet directory.\n"
 "* OS X, GNU/Linux, or other POSIX users may upgrade by running the update.sh\n"
-"shell script in the Freenet directory.\n"
-"\n"
-"**Source Code:** See [the GitHub repository](https://github.com/freenet/fred)."
+"shell script in the Freenet directory."
 msgstr ""
 
-#: pages/download.py:287
-msgid "Connect to Friends"
-msgstr "Zu Freunden verbinden"
+#: pages/download.py:307
+msgid "Add friends (or connect to strangers)"
+msgstr ""
 
-#: pages/download.py:290
+#: pages/download.py:310
 msgid ""
 "If you know other people who also use Freenet, you can [add them as Friends][url_addfriend].\n"
 "This will make you safer against attacks on Freenet Project infrastructure\n"
 "(the [seednodes][url_seednode_info])."
 msgstr ""
 
-#: pages/download.py:294
+#: pages/download.py:314
 msgid ""
 "Once you are connected to 5 or more friends, you can enable **high security mode**.\n"
-"In high security mode Freenet will only connect to your friends. \n"
-"This makes your usage of Freenet almost undetectable, \n"
+"In high security mode Freenet will only connect to your friends.\n"
+"This makes your usage of Freenet almost undetectable,\n"
 "but you are still able to access the rest of the network through your friends' friends friends ...."
+msgstr ""
+
+#: pages/download.py:319
+msgid ""
+"You don't have to add friends right now.\n"
+"If you use a \"low\" or \"normal\" security level Freenet will automatically connect to strangers and will work just fine.\n"
+"However, your (or someone else's) government may be able to find out who you are with enough effort. Be careful!"
 msgstr ""
 
 #: pages/help.py:47
@@ -2078,9 +2116,8 @@ msgstr ""
 
 #: pages/help.py:200
 msgid ""
-"All my friends donate very little space and bandwidth. Why should I donate "
-"more?"
-msgstr "Alle meine Freunde spenden sehr wenig Platz und Bandbreite. Warum sollte ich mehr spenden?"
+"All my friends donate very little space and bandwidth. Should I donate more?"
+msgstr ""
 
 #: pages/help.py:200
 msgid ""
@@ -2266,11 +2303,11 @@ msgstr "Ich habe nichts zu verbergen und benötige keine Anonymität. Hat Freene
 #: pages/help.py:320
 msgid ""
 "Yes, in fact even without the anonymity feature Freenet is very useful\n"
-"because of its unique way it handles content distribution and information\n"
+"because of the unique way it handles content distribution and information\n"
 "load. In simple terms that means you can publish a website without worrying\n"
-"about how big the site will be and without having to put someone elses ad\n"
-"banners on it. While it is unlikely that freenet sites will ever load faster\n"
-"than regular websites, it does adapt to sudden surges of visitors better (\n"
+"about how big the site will be and without having to put someone else's ad\n"
+"banners on it. While it is unlikely that freesites will ever load faster\n"
+"than regular websites, they do adapt to sudden surges of visitors better (\n"
 "which often happen when relatively unknown sites get linked to from a big\n"
 "site), and reasonable download speeds for big files are feasible too. Just\n"
 "don't expect very low latency."
@@ -2328,7 +2365,7 @@ msgstr "Ist Freenet durchsuchbar?"
 
 #: pages/help.py:361
 msgid ""
-"Yes, there are a few different search mechanisms. To search the freenet web\n"
+"Yes, there are a few different search mechanisms. To search the Freenet web\n"
 "(freesites), you should be able to just use the search box on the homepage,\n"
 "or go to Search Freenet on the Browse submenu. If it's not there, go to the\n"
 "Plugins page under Configuration, and load the Library plugin. Alternatively,\n"
@@ -2338,8 +2375,8 @@ msgid ""
 msgstr ""
 
 #: pages/help.py:370
-msgid "How do I get freenet working with a Firewall/NAT?"
-msgstr "Wie kann ich Freenet mit einer Firewall/NAT zum funktionieren bringen?"
+msgid "How do I get Freenet working with a Firewall/NAT?"
+msgstr ""
 
 #: pages/help.py:370
 msgid ""
@@ -2427,13 +2464,13 @@ msgstr "Warum ist Freenet in Java implementiert?"
 #: pages/help.py:433
 msgid ""
 "Opinions differ about the choice of java for the reference implementation of\n"
-"freenet (even among the core developers). [Ian Clarke](about.html#people) and\n"
+"Freenet (even among the core developers). [Ian Clarke](about.html#people) and\n"
 "several other developers are java proponents and the choice for java was\n"
 "made. Even if everybody could be convinced to switch to a different language\n"
-"reimplementing the current freenet protocol would be quite a big task,\n"
+"reimplementing the current Freenet protocol would be quite a big task,\n"
 "and take up a significant amount of time, while there is only a limited\n"
 "amount of developer-time available. Flame wars on the development list about\n"
-"the language choice aren't welcome, people willing to implement freenet in\n"
+"the language choice aren't welcome, people willing to implement Freenet in\n"
 "other languages however are very much encouraged to try. Don't underestimate\n"
 "the amount of work however."
 msgstr ""
@@ -2543,7 +2580,7 @@ msgid ""
 "On linux, you should run ntpd to make sure your clock isn't too far off (this\n"
 "isn't vital but it's helpful), but if you see clock skew errors, try adding\n"
 "the -x option to it to avoid big backwards jumps. Also, running ntpdate on\n"
-"startup so there is one big jump before freenet starts is a good idea. This\n"
+"startup so there is one big jump before Freenet starts is a good idea. This\n"
 "can also happen on Windows sometimes, let us know how you managed to fix it\n"
 "... generally it's not all that serious though, especially if big jumps in\n"
 "the clock are only once a day."
@@ -3214,36 +3251,50 @@ msgid ""
 "To avoid this delay, please [subscribe](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/support/).\n"
 "* [Development](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/devl/) ([archive](https://emu.freenetproject.org/pipermail/devl/))<br/>\n"
 "This list is for active developers to discuss bugs, and the implementation\n"
-"of near-term new features. Please only post to this list if you know what you\n"
-"are talking about, otherwise use the tech mailing list (see above).\n"
+"of near-term new features.\n"
 "\n"
 "_**Third party tools**: We are hosting some other mailing lists on our server\n"
 "here is the [full list][url_listinfo]._"
 msgstr ""
 
-#: pages/help.py:1040
+#: pages/help.py:1039
 msgid "Suggestions"
 msgstr "Vorschläge"
 
-#: pages/help.py:1046 pages/help.py:1054
+#: pages/help.py:1045
+msgid "Get Support"
+msgstr ""
+
+#: pages/help.py:1048
+msgid ""
+"If you need help installing Freenet for the first time, or have trouble using Freenet and can't find an answer to your problem in the [FAQ][faq_link] above or in the [Knowledge Base][kb_link], please create a new discussion on our support forum.\n"
+"\n"
+"When writing your support request, please make sure you include a full description of the problem, your current version of Java, your operating system and current Freenet version."
+msgstr ""
+
+#: pages/help.py:1057
+msgid "Create a support discussion"
+msgstr ""
+
+#: pages/help.py:1062 pages/help.py:1070
 msgid "Chat with us"
 msgstr "Chatte mit uns"
 
-#: pages/help.py:1049
+#: pages/help.py:1065
 msgid ""
 "Many of the developers and users of Freenet are on the [IRC](\n"
 "https://en.wikipedia.org/wiki/IRC) channel #freenet on chat.freenode.net."
 msgstr "Viele der Entwickler und Anwender von Freenet sind auf dem IRC-Kanal [IRC](\nhttps://en.wikipedia.org/wiki/IRC) #freenet auf chat.freenode.net."
 
-#: pages/help.py:1058
+#: pages/help.py:1074
 msgid "Setup"
 msgstr "Einrichten"
 
-#: pages/help.py:1064
+#: pages/help.py:1080
 msgid "Help"
 msgstr "Hilfe"
 
-#: pages/index.py:27 pages/index.py:235
+#: pages/index.py:27 pages/index.py:257
 msgid "Share, Chat, Browse. Anonymously."
 msgstr "Teilen, Chatten, Browsen. Anonym."
 
@@ -3276,7 +3327,7 @@ msgid ""
 "Freenet](news.html#20150105)"
 msgstr ""
 
-#: pages/index.py:40 pages/index.py:193
+#: pages/index.py:40 pages/index.py:212
 msgid "Share Files"
 msgstr "Dateien teilen"
 
@@ -3352,106 +3403,123 @@ msgid ""
 "— [The forgotten Cryptopunk Paradise](http://draketo.de/english/freenet/forgotten-cryptopunk-paradise)"
 msgstr ""
 
-#: pages/index.py:140 pages/index.py:236
+#: pages/index.py:149
+msgid ""
+"Leap over censorship<br>\n"
+"Escape total surveillance"
+msgstr ""
+
+#: pages/index.py:153
+msgid ""
+"Freenet re-establishes freedom of speech on the Internet.<br>\n"
+"Install Freenet and join the peer-to-peer network today!"
+msgstr ""
+
+#: pages/index.py:157 pages/index.py:258
 msgid "Download Freenet"
 msgstr "Freenet herunterladen"
 
-#: pages/index.py:141
+#: pages/index.py:158
 msgid "read more…"
 msgstr "Weiterlesen..."
 
-#: pages/index.py:142
+#: pages/index.py:159
 msgid ""
 "Help keep Internet freedom alive and expand human liberty! Support another "
 "year of paid development. [Learn more about our fundraiser.][url_fundraiser]"
 msgstr ""
 
-#: pages/index.py:143
+#: pages/index.py:160
 msgid "Donate!"
 msgstr "Spenden!"
 
-#: pages/index.py:145
+#: pages/index.py:162
 msgid "The Freenet Project Inc is a non-profit 501(c)(3) organization."
 msgstr "Das Freenet Projekt ist eine non-profit 501(c)(3) Organisation"
 
-#: pages/index.py:146
+#: pages/index.py:163
 msgid "Donations are tax-deductible."
 msgstr "Spenden sind steuerlich absetzbar"
 
-#: pages/index.py:181
+#: pages/index.py:200
 msgid "Secret Identity"
 msgstr "Geheime Identität"
 
-#: pages/index.py:182
+#: pages/index.py:201
 msgid "Create a secret identity so nobody knows who you are."
 msgstr "Erstelle eine geheime Identität damit niemand weis wer Du bist."
 
-#: pages/index.py:184
+#: pages/index.py:203
 msgid "Browse Websites"
 msgstr "Durch Websites surfen"
 
-#: pages/index.py:185
+#: pages/index.py:204
 msgid ""
 "Freenet is home to sites ranging from programming to sustainable living."
 msgstr ""
 
-#: pages/index.py:187
+#: pages/index.py:206
 msgid "Forums"
 msgstr "Foren"
 
-#: pages/index.py:188
+#: pages/index.py:207
 msgid "Ask questions and exchange ideas."
 msgstr "Stellen Sie Fragen und tauschen Sie Ideen aus."
 
-#: pages/index.py:190
+#: pages/index.py:209
 msgid "Publish"
 msgstr "Publizieren"
 
-#: pages/index.py:191
+#: pages/index.py:210
 msgid "Publish anonymously without need for a server."
 msgstr "Anonym veröffentlichen ohne eigenen Server."
 
-#: pages/index.py:194
+#: pages/index.py:213
 msgid "Easy upload & download."
 msgstr "Einfaches Hochladen und herunterladen."
 
-#: pages/index.py:196
+#: pages/index.py:215
 msgid "Platform"
 msgstr "Plattform"
 
-#: pages/index.py:197
+#: pages/index.py:216
 msgid "Write your own applications on the Freenet platform."
 msgstr "Schreibe deine eigenen Anwendung für Freenet."
 
-#: pages/index.py:199
+#: pages/index.py:218
 msgid "Resistant"
 msgstr "Robust"
 
-#: pages/index.py:200
+#: pages/index.py:219
 msgid "Freenet has been designed to be resistant to attacks and censorship."
 msgstr "Freenet ist entworfen worden, um resistent gegen Angriffe und Zensur zu sein."
 
-#: pages/index.py:202
+#: pages/index.py:221
 msgid "Distributed"
 msgstr "Verteilt"
 
-#: pages/index.py:203
+#: pages/index.py:222
 msgid "No central points of failure, efficient caching of popular content."
 msgstr ""
 
-#: pages/index.py:205
+#: pages/index.py:224
 msgid "Proven"
 msgstr "Bewährt"
 
-#: pages/index.py:206
+#: pages/index.py:225
 msgid "Based on solid research and in practical use for 15 years."
 msgstr ""
 
-#: pages/index.py:245
+#: pages/index.py:260
+msgid ""
+"Freenet is a peer-to-peer network for censorship-resistant communication."
+msgstr ""
+
+#: pages/index.py:268
 msgid "Latest News"
 msgstr "Neuste Nachrichten"
 
-#: pages/index.py:257
+#: pages/index.py:280
 msgid "Overview"
 msgstr "Übersicht"
 
@@ -3460,10 +3528,75 @@ msgid "Donate today."
 msgstr "Spenden Heute"
 
 #: pages/news.py:19
-msgid "2016-01-03 - Testing release build 1471-pre3"
+msgid "2016-04-10 - Freenet testing build 1473-pre1 released"
 msgstr ""
 
 #: pages/news.py:20
+msgid ""
+"Freenet unstable testing prerelease build 1473-pre1 is now available.\n"
+"It's the first build to require Java 7.\n"
+"\n"
+"Highlights:\n"
+"\n"
+"* Add The Filtered Index to the default bookmark list\n"
+"* Improve MP3 filter stability\n"
+"* Fix binary blob download over FCP\n"
+"* Fix handling of filenames with non-ASCII spaces\n"
+"\n"
+"For more details and information on how to test this release see the [development mailing list thread][devl_thread]."
+msgstr ""
+
+#: pages/news.py:36
+msgid "2016-03-19 - Freenet 0.7.5 build 1472 released"
+msgstr ""
+
+#: pages/news.py:37
+msgid ""
+"This is the last build to support Java 6! The next build will require Java 7 or higher. Nodes running Java 7 or higher and using the official update key will now use a new update key. Nodes on Java 6 remain using the old update key and will not be updated to further builds. Thanks to yadevel for fixing the regression this release was blocking on!\n"
+"\n"
+"This version was initially partially released as build 1471 - it was released on GitHub but not offered from the website or auto-update. Build 1472 fixes a bug which when using Java 6 prevented nodes from starting for the first time. It did not break existing installations.\n"
+"\n"
+"Highlights:\n"
+"\n"
+"- Fix uploads stalling when using MAXIMUM physical security.\n"
+"- Fix lots of \"setNativePriority(X) has failed!\", which was caused by a serious thread priority problem. This might fix nodes unexpectedly losing peers.\n"
+"- Order alerts within a category by time: if you have lots of messages from darknet peers they will remain nicely sorted.\n"
+"- There is now a [caching layer][caching] which should significantly reduce I/O load.\n"
+"- Update WebOfTrust from build 15 to build 18. [Its][wot16] [changelogs][wot17] [are][wot18] separate, but the changes reduce CPU load. Incremental score recomputation requires roughly 3 percent of the time of full recomputation, and queuing trust lists to disk lowers thread usage.\n"
+"\n"
+"Translations:\n"
+"\n"
+"- Add partial Greek translation.\n"
+"- Update German, Bokmål, Brazilian Portuguese, Simplified Chinese, and  Traditional Chinese translations.\n"
+"- Fix Bokmål localization loading.\n"
+"\n"
+"Also:\n"
+"\n"
+"- Remove Gantros Index from the default bookmark list because it stopped updating.\n"
+"- Remove Linkageddon from the default bookmark list because it stopped updating.\n"
+"- New version of UPnP to fix some instability and compatibility problems. Thanks to 007pig we have a [new UPnP plugin][upnp2] in development which supports UPnP2, but it is not yet included.\n"
+"- New version of KeyUtils.\n"
+"\n"
+"WebOfTrust now has an updatable testing version built and maintained by xor. To use it, unload WebOfTrust, then load \"WebOfTrust Testing Versions\" on the Plugins page. Versions built by xor will not work with Java 6.\n"
+"\n"
+"Sites can set favicons with `<link rel=\"icon\" type=... href=...>`. (`type` could be `\"image/x-icon\"`)\n"
+"\n"
+"Extensive review and improvement of English source strings and French and Spanish translations. Tests for and fixes of value substitution in translations. Thanks Vaughan Woodzell!\n"
+"\n"
+"The default theme is now sky-static instead of clean-dropdown. This looks less outdated, though not modern.\n"
+"\n"
+"Fix default bookmarks missing the \"software\" category since build 1470. If you don't see this category please re-add the default bookmark set from the bookmark editing page.\n"
+"\n"
+"IpToCountry database is updated. (This allows providing the country flags on the peers pages. It is local to each instance and does not contact an external service.)\n"
+"\n"
+"Add partial CSS3 support, including viewport lengths. Thanks, Ben Green!"
+msgstr ""
+
+#: pages/news.py:84
+msgid "2016-01-03 - Testing release build 1471-pre3"
+msgstr ""
+
+#: pages/news.py:85
 msgid ""
 "Freenet unstable testing prerelease 1471-pre3 is now available.\n"
 "\n"
@@ -3479,11 +3612,11 @@ msgid ""
 "For more information and how to help test see the [developer mailing list][devl_1471]."
 msgstr ""
 
-#: pages/news.py:37
+#: pages/news.py:102
 msgid "2015-12-20 - \"Weekend of Code\" hackathon results"
 msgstr "2015-12-20 - \"Weekend of Code\" hackathon Ergebnisse"
 
-#: pages/news.py:38
+#: pages/news.py:103
 msgid ""
 "During the hackathon we got some changes done:\n"
 "\n"
@@ -3503,11 +3636,11 @@ msgid ""
 "If we're able to get final changes ready build 1471-pre3 will be released the weekend of January 2nd."
 msgstr ""
 
-#: pages/news.py:71
+#: pages/news.py:136
 msgid "2015-12-12 - New OS X installer and tray app"
 msgstr ""
 
-#: pages/news.py:72
+#: pages/news.py:137
 msgid ""
 "The [Freenet installer][downloads_url] for OS X is now a native application. It should fix several major installation problems OS X users have encountered in the past.\n"
 "\n"
@@ -3518,11 +3651,11 @@ msgid ""
 "![][tray_screenshot_url]"
 msgstr ""
 
-#: pages/news.py:86
+#: pages/news.py:151
 msgid "2015-12-12 - Appeal for donations"
 msgstr ""
 
-#: pages/news.py:87
+#: pages/news.py:152
 #, python-brace-format
 msgid ""
 "Freenet is a platform for censorship-resistant communication and publishing. For the past 15 years the project has built tools to fight for freedom of speech and information.\n"
@@ -3543,11 +3676,11 @@ msgid ""
 "Freenet Project volunteers"
 msgstr ""
 
-#: pages/news.py:109
+#: pages/news.py:174
 msgid "2015-11-20 - \"Weekend of Code\" hackathon announcement"
 msgstr ""
 
-#: pages/news.py:110
+#: pages/news.py:175
 msgid ""
 "## Who?\n"
 "\n"
@@ -3576,11 +3709,11 @@ msgid ""
 "Happy hacking!"
 msgstr ""
 
-#: pages/news.py:142
+#: pages/news.py:207
 msgid "2015-10-25 - Prerelease and Windows installer"
 msgstr ""
 
-#: pages/news.py:143
+#: pages/news.py:208
 msgid ""
 "The Windows installer has updated translations for French, Indonesian, and\n"
 "Simplified Chinese, and is newly translated into Bulgarian, Croatian,\n"
@@ -3591,11 +3724,11 @@ msgid ""
 "[release announcement][announcement]."
 msgstr ""
 
-#: pages/news.py:154
+#: pages/news.py:219
 msgid "2015-10-21 - Website redesign is live"
 msgstr ""
 
-#: pages/news.py:155
+#: pages/news.py:220
 msgid ""
 "The redesigned website is now live!\n"
 "Existing URLs [redirect](http://www.w3.org/Provider/Style/URI.html)\n"
@@ -3605,11 +3738,11 @@ msgid ""
 "If we missed something, please tell us in our [support chat](help.html#irc)!"
 msgstr ""
 
-#: pages/news.py:164
+#: pages/news.py:229
 msgid "2015-10-11 - Upcoming website redesign"
 msgstr ""
 
-#: pages/news.py:165
+#: pages/news.py:230
 msgid ""
 "In the next few weeks we will transition to a redesigned website. This will be\n"
 "the first major change since 2009. In addition to looking more modern, this new\n"
@@ -3628,12 +3761,12 @@ msgid ""
 "[url_chat]: irc.html"
 msgstr ""
 
-#: pages/news.py:180
+#: pages/news.py:245
 msgid ""
 "2015-09-17 - elliptic curves: using safe Bouncy Castle since November 2014"
 msgstr ""
 
-#: pages/news.py:181
+#: pages/news.py:246
 msgid ""
 "<p>\n"
 "A recent article outlines\n"
@@ -3659,11 +3792,11 @@ msgid ""
 "\n"
 msgstr ""
 
-#: pages/news.py:206
+#: pages/news.py:271
 msgid "2015-08-16 - Freenet 0.7.5 build 1470 released"
 msgstr "2015-08-16 - Freenet 0.7.5 build 1470 veröffentlicht"
 
-#: pages/news.py:207
+#: pages/news.py:272
 msgid ""
 "\n"
 "<p>\n"
@@ -3695,11 +3828,11 @@ msgid ""
 "</p>\n"
 msgstr ""
 
-#: pages/news.py:238
+#: pages/news.py:303
 msgid "2015-08-07 - Windows translation update"
 msgstr ""
 
-#: pages/news.py:239
+#: pages/news.py:304
 msgid ""
 "\n"
 "<p>\n"
@@ -3711,11 +3844,11 @@ msgid ""
 "</p>\n"
 msgstr ""
 
-#: pages/news.py:250
+#: pages/news.py:315
 msgid "2015-07-19 - Freenet 0.7.5 build 1469 released"
 msgstr "2015-07-19 - Freenet 0.7.5 build 1469 veröffentlicht"
 
-#: pages/news.py:251
+#: pages/news.py:316
 msgid ""
 "\n"
 "<p>\n"
@@ -3727,11 +3860,11 @@ msgid ""
 "</p>\n"
 msgstr ""
 
-#: pages/news.py:262
+#: pages/news.py:327
 msgid "2015-07-13 - Build 1468 known issues"
 msgstr ""
 
-#: pages/news.py:263
+#: pages/news.py:328
 msgid ""
 "\n"
 "<p>\n"
@@ -3767,11 +3900,11 @@ msgid ""
 "</p>\n"
 msgstr ""
 
-#: pages/news.py:298
+#: pages/news.py:363
 msgid "2015-07-11 - Freenet 0.7.5 build 1468 released"
 msgstr "2015-07-11 - Freenet 0.7.5 build 1468 veröffentlicht"
 
-#: pages/news.py:299
+#: pages/news.py:364
 msgid ""
 "\n"
 "<p>\n"
@@ -3830,11 +3963,11 @@ msgid ""
 "</p>\n"
 msgstr ""
 
-#: pages/news.py:357
+#: pages/news.py:422
 msgid "2015-06-27 - New Windows installer and tray app"
 msgstr ""
 
-#: pages/news.py:358
+#: pages/news.py:423
 msgid ""
 "\n"
 "<p>\n"
@@ -3853,11 +3986,11 @@ msgid ""
 "</ul>\n"
 msgstr ""
 
-#: pages/news.py:376
+#: pages/news.py:441
 msgid "2015-06-24 - Upcoming installer and testing releases"
 msgstr ""
 
-#: pages/news.py:377
+#: pages/news.py:442
 msgid ""
 "\n"
 "<p>\n"
@@ -3884,12 +4017,12 @@ msgid ""
 "</p>"
 msgstr ""
 
-#: pages/news.py:402
+#: pages/news.py:467
 msgid ""
 "2015-05-22 - UN Report: Encryption and Anonymity Deserve Strong Protection"
 msgstr ""
 
-#: pages/news.py:403
+#: pages/news.py:468
 msgid ""
 "The UN Special Rapporteur published [a report on encryption, anonymity,\n"
 "and the human rights framework](http://www.ohchr.org/EN/Issues/FreedomOpinion/Pages/CallForSubmission.aspx)\n"
@@ -3916,11 +4049,11 @@ msgid ""
 "Freenet and its communication tools to provide a point of contact for users at risk."
 msgstr ""
 
-#: pages/news.py:428
+#: pages/news.py:493
 msgid "2015-04-14 - SUMA Award Acceptance Speech (video)"
 msgstr ""
 
-#: pages/news.py:429
+#: pages/news.py:494
 #, python-brace-format
 msgid ""
 "The video from the talk given when Freenet [received the SUMA Award 2015](#20150211)\n"
@@ -3936,21 +4069,21 @@ msgid ""
 "to contact journalists without spilling their identity."
 msgstr ""
 
-#: pages/news.py:448
+#: pages/news.py:513
 msgid "2015-03-29 - New Linux/Unix/OS X installer"
 msgstr ""
 
-#: pages/news.py:449
+#: pages/news.py:514
 msgid ""
 "The installer for Linux, Unix, and Mac OS X is updated to better detect "
 "Java."
 msgstr ""
 
-#: pages/news.py:452
+#: pages/news.py:517
 msgid "2015-03-15 - Progress toward build 1468"
 msgstr ""
 
-#: pages/news.py:453
+#: pages/news.py:518
 msgid ""
 "Build 1468 continues to make progress toward release.\n"
 "\n"
@@ -3973,22 +4106,22 @@ msgid ""
 "Because this is such a large release new installers for build 1467 will be released shortly to test those changes. Once everything on this list is complete, there will be a release candidate, then finally the stable release."
 msgstr ""
 
-#: pages/news.py:474
+#: pages/news.py:539
 msgid "2015-03-14 - Freenet translation joins Localization Lab"
 msgstr ""
 
-#: pages/news.py:475
+#: pages/news.py:540
 msgid ""
 "The Freenet project has joined the [Localization Lab](http://www.localizationlab.org) organization on Transifex. This allows a larger team of translators, translating into more languages, and access to paid support.\n"
 "\n"
 "If this transition has caused any problems please let us know!"
 msgstr ""
 
-#: pages/news.py:480
+#: pages/news.py:545
 msgid "2015-02-15 - New Windows tray app for testing"
 msgstr ""
 
-#: pages/news.py:481
+#: pages/news.py:546
 msgid ""
 "The Windows tray application distributed as of build 1467 is written in the automation scripting language AutoHotKey. It has not been well-maintained and is also often falsely detected by antivirus by virtue of the language it uses. We are pleased to announce a new Windows tray application written in C# which has some additional features:\n"
 "\n"
@@ -4002,11 +4135,11 @@ msgid ""
 "If all goes well we plan for this tray app to be distributed with build 1468. Testing is appreciated! If you'd like to try it for yourself you can find it [here](https://downloads.freenetproject.org/FreenetTray-testing-eaf31ea.exe). Please let us know how it goes and if you'd like to see any changes."
 msgstr ""
 
-#: pages/news.py:493
+#: pages/news.py:558
 msgid "2015-02-11 - Freenet received the SUMA Award 2014/15"
 msgstr ""
 
-#: pages/news.py:494
+#: pages/news.py:559
 msgid ""
 "<div style=\"float: right\"><img src=\"assets/img/suma2015_badge_transparent_3.png\" alt=\"SUMA Award 2014/15\"/></div>\n"
 "\n"
@@ -4024,11 +4157,11 @@ msgid ""
 "> Wolfgang Sander-Beuermann with Arne Babenhauserheide, long-term Freenet contributor, as representative of the award winner. Photo: Michael Christen in Hamburg, Lizenz: CC0."
 msgstr ""
 
-#: pages/news.py:510
+#: pages/news.py:575
 msgid "1st January 2015 - apt-get over Freenet"
 msgstr ""
 
-#: pages/news.py:511
+#: pages/news.py:576
 msgid ""
 "Developers of the privacy-focused Debian derivative Mempo report that it can download updates over Freenet! For details, see their page on [Apt over Freenet](http://deb.mempo.org/#install_apt_freenet).\n"
 "\n"
@@ -4042,11 +4175,11 @@ msgid ""
 "> The practical cool result now, is that Mempo repository can not be censored, DDoSed or taken offline, despite having just 1 tiny server (or no server at all) - rfreeman (one of the mempo developers)"
 msgstr ""
 
-#: pages/news.py:523
+#: pages/news.py:588
 msgid "2014-11-23 - Freenet 0.7.5 build 1467 released"
 msgstr "2014-11-23 - Freenet 0.7.5 build 1467 veröffentlicht"
 
-#: pages/news.py:524
+#: pages/news.py:589
 msgid ""
 "This release fixes a bug introduced in build 1466 which can erase the list of plugins to load when Freenet starts if it crashes. If you are affected by this bug and can no longer connect, try adding the UPnP or JSTUN plugins again.\n"
 "\n"
@@ -4062,11 +4195,11 @@ msgid ""
 "- Steve Dougherty"
 msgstr ""
 
-#: pages/news.py:540
+#: pages/news.py:605
 msgid "2014-11-09 - Freenet 0.7.5 build 1466 released"
 msgstr "2014-11-09 - Freenet 0.7.5 build 1466 veröffentlicht"
 
-#: pages/news.py:541
+#: pages/news.py:606
 msgid ""
 "This release is planned to be the second-to-last version of Freenet to support Java 6\\. The version after this one will refuse to upgrade unless running on Java 7 or later. Support for this behavior is part of a larger effort to allow separate official update channels - stable, testing, and unstable - as well as make it easier to publish unofficial update channels and further improve deployment security.\n"
 "\n"
@@ -4089,11 +4222,11 @@ msgid ""
 "The link to http://127.0.0.1:8888 works for default Freenet nodes, but will not work for some setups. If you have a nonstandard setup, you should know the correct URL to use."
 msgstr ""
 
-#: pages/news.py:568
+#: pages/news.py:633
 msgid "2013-08-05 - Statement on the recent Freedom Hosting (Tor) bust"
 msgstr ""
 
-#: pages/news.py:569
+#: pages/news.py:634
 msgid ""
 "According to [the press](http://arstechnica.com/tech-policy/2013/08/alleged-tor-hidden-service-operator-busted-for-child-porn-distribution/), half of the hidden sites on Tor are now down, apparently connected to the arrest of a man allegedly behind Freedom Hosting, a hosting service for Tor hidden services. Some of these sites were said to offer illegal content and were apparently run by the FBI for two weeks, using a Javascript-based browser exploit to try to find their users.\n"
 "\n"
@@ -4116,12 +4249,12 @@ msgid ""
 "For press enquiries please contact [Ian Clarke](mailto:ian@freenetproject.org)."
 msgstr ""
 
-#: pages/news.py:590
+#: pages/news.py:655
 msgid ""
 "2013-06-26 - Freenet gets a second paid developer to fix the Web of Trust!"
 msgstr ""
 
-#: pages/news.py:591
+#: pages/news.py:656
 msgid ""
 "Long time coder xor (also known as p0s) has agreed to work, in a paid role, for us on fixing the Web of Trust plugin. This is a crucial component of many Freenet plugins:\n"
 "\n"
@@ -4139,13 +4272,13 @@ msgid ""
 "Improving the Web of Trust should substantially improve the performance of the key tools mentioned above and may be used by more in the future. Thanks to all our developers and donors!"
 msgstr ""
 
-#: pages/news.py:607
+#: pages/news.py:672
 msgid ""
 "2012-09-11 - Response to the University of Hawaii's \"Experimental Study of "
 "Accountability in Existing Anonymous Networks\""
 msgstr ""
 
-#: pages/news.py:608
+#: pages/news.py:673
 msgid ""
 "Some academics [have published](http://www.ee.hawaii.edu/~dong/traceback/index.htm) a couple of attacks against Freenet, and they appear to be working on more as part of a project to unmask anonymous Freenet users. Build 1411, which was released on the 3rd of September, makes their main attack largely impractical. Nonetheless, we are working on improvements to both make this attack harder and to solve some of the [other known attacks](https://freenetproject.org/faq.html#attack). You can learn more about the attacks and our solution to them on our chief developer's [personal blog](http://amphibian.dyndns.org/flogmirror/#20120911-security).\n"
 "\n"
@@ -4154,12 +4287,12 @@ msgid ""
 "Finally, the long term solution is to build a darknet, a Freenet network where people only connect directly to people they trust. That means, get your friends using Freenet, and then add them as Friends on your node. When enough people use Freenet and form darknet connections, we won't need opennet, and this makes all attacks dramatically harder. We will work on making this easier and faster in the near future, as well as fixing the Pitch Black attack."
 msgstr ""
 
-#: pages/news.py:615
+#: pages/news.py:680
 msgid ""
 "2011-04-13 - Freenet top anti-censorship tool in survey of Chinese users!"
 msgstr ""
 
-#: pages/news.py:616
+#: pages/news.py:681
 msgid ""
 "A "
 "[report](http://www.freedomhouse.org/sites/default/files/inline_images/Censorship.pdf)"
@@ -4171,7 +4304,7 @@ msgid ""
 "to achieve 5 stars, and the third most widely used overall."
 msgstr ""
 
-#: pages/news.py:624
+#: pages/news.py:689
 msgid "News"
 msgstr "Neuigkeiten"
 

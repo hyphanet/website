@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Freenet\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-13 07:11-0400\n"
-"PO-Revision-Date: 2016-04-26 05:13+0000\n"
+"POT-Creation-Date: 2016-04-26 23:59-0400\n"
+"PO-Revision-Date: 2016-05-01 04:09+0000\n"
 "Last-Translator: strel\n"
 "Language-Team: Spanish (http://www.transifex.com/otf/freenet/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -1437,7 +1437,7 @@ msgid ""
 "* You can donate using PayPal. For a recurring payment of $5 or more per month you can become a Freenet \"member\" (this requires a [PayPal][url_paypal] account).\n"
 "Recurring donations give the project a more stable and dependable income which makes it easier to make long-term commitments to potential developers.\n"
 "Alternatively you can make a one-time donation."
-msgstr "#### ¿Cómo puedo donar?\n\n* Puede donar usando PayPal. Para un pago recurrente de 5 $/mes o más puede convertirse en \"miembro\" de Freenet (esto requiere una cuenta de [PayPal][url_paypal]).\nLas donaciones recurrentes dan al proyecto unos ingresos estables y consistentes que facilitan realizar compromisos a largo plazo con desarrolladores potenciales.\nComo alternativa puede hacer una donación de una vez."
+msgstr "#### ¿Cómo puedo donar?\n\n* Puede donar usando PayPal. Por un pago recurrente de 5 $ al mes o más, puede convertirse en un \"miembro\" de Freenet (esto requiere una cuenta de [PayPal][url_paypal]).\nLas donaciones recurrentes dan al proyecto unos ingresos más estables y consistentes que facilitan establecer compromisos a largo plazo con desarrolladores potenciales.\nComo alternativa puede hacer una donación de una vez."
 
 #: pages/donate.py:169
 #, python-brace-format
@@ -1451,7 +1451,7 @@ msgid ""
 "* Or support us via [Salt at Bountysource][url_salt_bountysource].\n"
 "\n"
 "* Alternatively, please contact us at {donate_email} if you cannot use any of these payment methods.\n"
-msgstr "* ![][logo_bitcoin]\nPuede donar usando [Bitcoin][url_bitcoin].\nEnvíe sus donaciones a {bitcoin_address}.\n\n* Puede además donar al comprar artículos en la [tienda][url_zazzle_store] de Freenet.\n\n* O apoyarnos vía [Salt en Bountysource][url_salt_bountysource].\n\n* Como alternativa, por favor, contacte con nostros en {donate_email} si no puede usar ninguno de estos métodos de pago.\n"
+msgstr "* ![][logo_bitcoin]\nPuede donar usando [Bitcoin][url_bitcoin].\nEnvíe sus donaciones a {bitcoin_address}.\n\n* También puede donar comprando artículos en la [tienda][url_zazzle_store] de Freenet.\n\n* O darnos apoyo económico vía [Salt en Bountysource][url_salt_bountysource].\n\n* Como alternativa, por favor, contacte con nostros en {donate_email} si no puede usar ninguno de estos métodos de pago.\n"
 
 #: pages/donate.py:190
 msgid "The Freenet Non-Profit"
@@ -1498,7 +1498,7 @@ msgid ""
 "for those living in oppressive political regimes.\n"
 "\n"
 "While development is primarily driven by volunteers, \n"
-"the project has also employed paid developers to provide more-focused work. \n"
+"the project has also employed paid developers to provide more focused work. \n"
 "Over the past 2 years, the project's paid developer has made great progress \n"
 "improving “Web of Trust” functionality to combat spam,\n"
 "which is a central problem in any anonymous system. \n"
@@ -1512,7 +1512,7 @@ msgid ""
 "[Learn more about our fundraiser.][url_fundraiser]\n"
 "\n"
 "All support is very much appreciated."
-msgstr "Aunque incontables personas han cedido su tiempo y habilidades para el proyecto desde su origen, The Freenet Project (el proyecto Freenet) se apoya en sus donaciones para cubrir los costes de alojamiento y administrativos (ej. registros de dominio y certificados).\nSi tenemos suficientes fondos, podemos contratar desarrolladores para trabajen sobre Freenet.\n\nFreenet es una plataforma para la comunicación y publicación resistentes a la censura.\nDurante los pasados 15 años el proyecto ha desarrollado herramientas para luchar por la libertad de expresión e información.\nNuestro software proporciona una red entre pares (P2P) descentralizada\ndiseñada para ocultar quien publica o accede a información potencialmente\ncontrovertida - o incluso si esta existe - lo cual es especialmente útil\npara aquellos que viven en regímenes políticos opresivos.\n\nAunque el desarrollo es llevado principalmente por voluntarios, el proyecto también\nha empleado desarrolladores pagados para proveer un desarrollo más-focalizado.\nDurante los últimos 2 años, el desarrollador pagado del proyecto ha hecho grandes\nprogresos mejorando la funcionalidad \"Web of Trust\" para combatir el spam, \nque es un problema central en un sistema anónimo,\nDesafortunadamente, el proyecto Freenet ya no tiene suficiente dinero para retener\nsus servicios, así que ahora él es un voluntario. Esto reduce enormemente su\ncapacidad para continuar con este importante trabajo.\n\nEstamos entusiasmados por el futuro de Freenet y los proyectos desarrollados sobre él.\nHay mucho más trabajo que hacer, y los desarrolladores a tiempo-completo benefician\ntremendamente al proyecto.\n\nAyúdenos a mantener viva la libertad en Internet y expandir la libertad humana.  \n[Conozca más sobre nuestro colector de fondos (fundraiser).][url_fundraiser]\n\nTodo apoyo es apreciado muchísimo."
+msgstr "Aunque incontables personas han cedido su tiempo y destrezas para el proyecto desde su origen,\n\nThe Freenet Project (el proyecto Freenet) se apoya en sus donaciones para cubrir los costes de alojamiento y administrativos (ej. registros de dominio y certificados).\nSi tenemos suficientes fondos, podremos contratar desarrolladores para que trabajen sobre Freenet.\n\nFreenet es una plataforma para la comunicación y publicación resistente a la censura. Durante los pasados 15 años el proyecto ha desarrollado herramientas para luchar por la libertad de expresión e información. \nNuestro software proporciona una red entre pares (P2P) descentralizada \ndiseñada para ocultar quien publica o accede a información potencialmente \ncontrovertida - o incluso la existencia de esta - lo cual es especialmente útil \npara aquellos que viven en regímenes políticos opresivos.\n\nAunque el desarrollo es llevado principalmente por voluntarios, \nel proyecto también ha empleado desarrolladores pagados para proveer un desarrollo más-focalizado.\nDurante los últimos 2 años, el desarrollador pagado del proyecto ha hecho grandes progresos \nmejorando la funcionalidad \"Web of Trust\" para combatir el spam, \nque es un problema central en un sistema anónimo.\nDesafortunadamente, el proyecto Freenet ya no tiene suficiente dinero para retener sus servicios,\nasí que él ahora es voluntario. Esto reduce enormemente su capacidad para continuar con este importante trabajo.\n\nEstamos entusiasmados por el futuro de Freenet y los proyectos desarrollados sobre este. \nHay mucho más trabajo que hacer, y los desarrolladores a tiempo-completo benefician tremendamente al proyecto.\n\nAyúdenos a mantener viva la libertad en Internet y expandir la libertad humana. \n[Conozca más sobre nuestro colector de fondos (fundraiser).][url_fundraiser]\n\nTodo apoyo es enormemente apreciado."
 
 #: pages/donate.py:258
 msgid "Sponsors"
@@ -1658,7 +1658,7 @@ msgid ""
 "* [Download and install Freenet][autostart]\n"
 "* [Add friends (or connect to strangers)][add_friends]\n"
 "* [Start using Freenet!][usage]"
-msgstr "Para acceder a Freenet, primero necesita instalar la aplicación principal.\nFreenet se ejecutará en segundo plano y puede usar su navegador para cambiar la configuración y el contenido de acceso.\nHay otras aplicaciones que puede instalar en un momento posterior para añadir más funcionalidades.\n\nPasos \n.\n* [Descargue e instale Freenet][autostart]\n* [Añada amigos (o conecte con extraños)][add_friends]\n* [¡Comience a usar Freenet!][usage]"
+msgstr "Para acceder a Freenet, primero necesita instalar la aplicación principal.\nFreenet se ejecutará en segundo plano y puede usar su navegador para cambiar la configuración y acceder al contenido.\nHay otras aplicaciones que puede instalar con posterioridad para añadir más funcionalidades.\n\nPasos \n.\n* [Descargue e instale Freenet][autostart]\n* [Añada amigos (o conecte con extraños)][add_friends]\n* [¡Comience a usar Freenet!][usage]"
 
 #: pages/download.py:106
 msgid "Show installation instructions for:"
@@ -1682,7 +1682,7 @@ msgid ""
 "web-based user interface.\n"
 "\n"
 "Freenet requires Windows XP or later."
-msgstr "### Windows\n\nDescargue y ejecute [el instalador](assets/jnlp/FreenetInstaller.exe)\n([pruebe con este si el primer enlace está bloqueado](https://downloads.freenetproject.org/latest/FreenetInstaller.exe))\n\nEste instalará Freenet y otros componentes requeridos automáticamente para usted.\nCuando acabe, su navegador predeterminado se abrirá automáticamente en la interfaz\nde usuario web de Freenet.\n\nFreenet requiere Windows XP o superior."
+msgstr "### Windows\n\nDescargue y ejecute [el instalador](assets/jnlp/FreenetInstaller.exe)\n([pruebe con este si el primer enlace está bloqueado](https://downloads.freenetproject.org/latest/FreenetInstaller.exe))\n\nEsto instalará Freenet y otros componentes necesarios automáticamente para usted.\nCuando acabe, su navegador predeterminado se abrirá automáticamente en la interfaz web de usuario de Freenet.\n\nFreenet requiere Windows XP o superior."
 
 #: pages/download.py:126
 msgid ""
@@ -1866,7 +1866,7 @@ msgid ""
 "system tray menu, or by running \"update.cmd\" in the Freenet directory.\n"
 "* OS X, GNU/Linux, or other POSIX users may upgrade by running the update.sh\n"
 "shell script in the Freenet directory."
-msgstr "### Actualizar\n\nFreenet proporciona un mecanismo de actualización sobre el propio Freenet:\nSe mantendrá a si mismo actualizado desde otros nodos de Freenet, y esto\nhabitualmente funcionará incluso si no es capaz de enrutar tales nodos debido\na que sean demasiado recientes. Esto es anónimo y seguro, y recomendamos\na la gente que lo use. Sin embargo, si hay algo gravemente estropeado puede\nactualizar su nodo manualmente desde nuestros servidores.\n\n* Los usuarios de Windows pueden actualizar a la última versión estable de\nFreenet desde el menú de la bandeja del sistema, o ejecutando \"update.cmd\"\nen el directorio de Freenet.\n* OS X, GNU/Linux, u otros usuarios POSIX pueden actualizar ejecutando el\nscript de consola \"update.sh\" en el directorio de Freenet."
+msgstr "### Actualizar\n\nFreenet proporciona un mecanismo de actualización sobre la propia red\nFreenet: Se mantendrá a si mismo actualizado desde otros nodos Freenet,\ny esto habitualmente funcionará incluso si no es capaz de enrutar tales nodos\ndebido a que sean demasiado recientes. Esto es anónimo y seguro, y\nrecomendamos a la gente que lo use. Sin embargo, si hubiera algo gravemente\nestropeado, puede actualizar su nodo manualmente desde nuestros servidores.\n\n* Los usuarios de Windows pueden actualizar a la última versión estable de\nFreenet desde el menú de la bandeja del sistema, o ejecutando \"update.cmd\"\nen la carpeta de Freenet.\n* Los usuarios de OS X, GNU/Linux, u otros sistemas POSIX, pueden actualizar\nejecutando el script de consola \"update.sh\" en el directorio de Freenet."
 
 #: pages/download.py:307
 msgid "Add friends (or connect to strangers)"
@@ -1885,14 +1885,14 @@ msgid ""
 "In high security mode Freenet will only connect to your friends.\n"
 "This makes your usage of Freenet almost undetectable,\n"
 "but you are still able to access the rest of the network through your friends' friends friends ...."
-msgstr "Una vez esté conectado con 5 o más amigos, puede habilitar el **modo de seguridad alta**.\nEn el modo de seguridad alta Freenet sólo se conectará a sus amigos.\nEsto hace su uso de Freenet casi indetectable, pero todavía puede acceder al resto de la red a través de amigos de los amigos de sus amgos."
+msgstr "Una vez esté conectado a 5 o más amigos, puede habilitar el **modo de alta seguridad**.\nEn el modo de alta seguridad Freenet sólo se conectará a sus amigos.\nEsto hace su uso de Freenet casi indetectable, pero todavía puede acceder al resto de la red a través de amigos de los amigos de sus amigos."
 
 #: pages/download.py:319
 msgid ""
 "You don't have to add friends right now.\n"
 "If you use a \"low\" or \"normal\" security level Freenet will automatically connect to strangers and will work just fine.\n"
 "However, your (or someone else's) government may be able to find out who you are with enough effort. Be careful!"
-msgstr "No tiene que añadir amigos ahora mismo.\nSi usa un nivel de seguridad \"bajo\" o \"normal\" Freenet se conectará automáticamente con extraños y funcionará simplemente bien.\nSin embargo, su Gobierno (o el de algún otro) puede que sea capaz de averiguar quién es usted esforzándose lo suficiente. ¡Tenga cuidado! "
+msgstr "No tiene que añadir amigos ahora mismo.\nSi usa un nivel de seguridad \"bajo\" o \"normal\" Freenet se conectará automáticamente con extraños y simplemente funcionará bien.\nSin embargo, su Gobierno (o el de algún otro) puede que sea capaz de averiguar quién es usted con el esfuerzo suficiente. ¡Tenga cuidado! "
 
 #: pages/help.py:47
 msgid "FAQ"
@@ -2113,9 +2113,8 @@ msgstr "¿Consigue hacer eso de forma anónima? Freenet está diseñado con el\n
 
 #: pages/help.py:200
 msgid ""
-"All my friends donate very little space and bandwidth. Why should I donate "
-"more?"
-msgstr "Todos mis amigos ceden muy poco espacio y ancho de banda. ¿Por qué debo donar más?"
+"All my friends donate very little space and bandwidth. Should I donate more?"
+msgstr "Todos mis amigos conceden muy poco espacio y ancho de banda. ¿Debería conceder más?"
 
 #: pages/help.py:200
 msgid ""
@@ -2301,15 +2300,15 @@ msgstr "No tengo nada que ocultar y no necesito anonimato. ¿Hay algo más que F
 #: pages/help.py:320
 msgid ""
 "Yes, in fact even without the anonymity feature Freenet is very useful\n"
-"because of its unique way it handles content distribution and information\n"
+"because of the unique way it handles content distribution and information\n"
 "load. In simple terms that means you can publish a website without worrying\n"
-"about how big the site will be and without having to put someone elses ad\n"
-"banners on it. While it is unlikely that Freenet sites will ever load faster\n"
-"than regular websites, it does adapt to sudden surges of visitors better (\n"
+"about how big the site will be and without having to put someone else's ad\n"
+"banners on it. While it is unlikely that freesites will ever load faster\n"
+"than regular websites, they do adapt to sudden surges of visitors better (\n"
 "which often happen when relatively unknown sites get linked to from a big\n"
 "site), and reasonable download speeds for big files are feasible too. Just\n"
 "don't expect very low latency."
-msgstr "Sí, de hecho, incluso sin la característica de anonimato Freenet es muy\nútil a causa de la forma única en que maneja la distribución de contenido\ny la carga de información. En términos sencillos eso significa que puede\npublicar un sitio web sin preocuparse acerca de cómo de grande será el\nsitio y sin tener que poner rótulos de publicidad de algún otro en él.\nAunque es improbable que los sitios de Freenet carguen alguna vez\nmás rápido que los sitios web corrientes, se adaptan mejor a las\noleadas repentinas de visitantes (lo que a menudo ocurre cuando sitios\nrelativamente desconocidos son enlazados desde un gran sitio), y\ntambién son factibles velocidades de descarga razonables para \ngrandes ficheros. Simplemente no espere una latencia muy baja."
+msgstr "Sí, de hecho, incluso sin la característica de anonimato, Freenet es muy\nútil a causa de la manera única en que maneja la distribución de contenido\ny la carga de información. En términos simples eso significa que puede\npublicar un sitio web sin preocuparse de lo grande que será el sitio y sin\ntener que colocar rótulos de publicidad de algún otro en él. Aunque es\nimprobable que los freesites lleguen alguna vez a cargar más rápido que\nlos sitios web regulares, se adaptan mejor a cambios repentinos del flujo\nde visitantes (lo que a menudo ocurre cuando sitios relativamente\ndesconocidos se enlazan desde un gran sitio), y también son factibles\nvelocidades razonables de descarga para grandes ficheros. Simplemente\nno espere una latencia muy baja."
 
 #: pages/help.py:332
 msgid "Technical"
@@ -2370,7 +2369,7 @@ msgid ""
 "Frost and Thaw also provide searching for messages and files. Note that\n"
 "searching on Freenet is a good deal more difficult than on other networks\n"
 "because of Freenet's different architecture and design goals."
-msgstr "Sí, hay unos pocos mecanismos de búsqueda distintos. Para buscar sitios\nweb de Freenet (freesites), debería poder simplemente usar el recuadro de\nbúsqueda en la página principal, o ir a 'Buscar en Freenet' en el submenú\nNavegar. Si no está allí, vaya a la página Complementos bajo Configuración,\ny cargue el complemento Biblioteca. Como alternativa Frost y Thaw también\nproporcionan la búsqueda por mensajes y ficheros. Observe que buscar en\nFreenet es bastante más difícil que en otras redes a causa de la \narquitectura y los objetivos de diseño diferentes de Freenet."
+msgstr "Sí, hay unos pocos mecanismos de búsqueda distintos. Para buscar la\nweb de Freenet (freesites), debería simplemente poder usar el recuadro de\nbúsqueda en la página principal, o ir a Buscar en Freenet en el submenú\nNavegar. Si no está allí, vaya a la página Complementos bajo Configuración,\ny cargue el complemento Library (biblioteca). Como alternativa Frost y Thaw\ntambién proporcionan búsqueda por mensajes y ficheros. Observe que\nbuscar en Freenet es bastante más difícil que en otras redes a causa de la\ndiferente arquitectura y objetivos de diseño de Freenet."
 
 #: pages/help.py:370
 msgid "How do I get Freenet working with a Firewall/NAT?"
@@ -2471,7 +2470,7 @@ msgid ""
 "the language choice aren't welcome, people willing to implement Freenet in\n"
 "other languages however are very much encouraged to try. Don't underestimate\n"
 "the amount of work however."
-msgstr "Las opiniones difieren acerca de la elección de Java para la implementación de\nreferencia de Freenet (incluso entre los desarrolladores principales).\n[Ian Clarke](about.html#people) y varios otros desarrolladores son proponentes\nde Java, y se tomó esta opción. Incluso si todos y cada uno pudieran ser\nconvencidos de cambiar a un lenguaje distinto, reimplementar el protocolo\nactual de Freenet sería una tarea bastante grande, y llevaría una cantidad de\ntiempo significativa, mientras que sólo se dispone de una cantidad limitada de\ntiempo de desarrollador. Los disputas inflamadas (flame wars) en la lista de\ndesarrollo acerca de la elección de lenguaje no son bienvenidas, sin embargo\nlas personas con voluntad de implementar Freenet en otros lenguajes son \nefusivamente animadas a intentarlo. No obstante, no minusvalore la cantidad\nde trabajo necesaria."
+msgstr "Las opiniones difieren acerca de la elección de Java para la implementación\nde referencia de Freenet (incluso entre los desarrolladores principales).\n[Ian Clarke](about.html#people) y varios otros desarrolladores son proponentes\nde Java, y se tomó esta opción. Incluso si todos y cada uno pudieran ser\nconvencidos de cambiar a un lenguaje distinto, reimplementar el protocolo\nactual de Freenet sería una tarea bastante grande, y llevaría una cantidad de\ntiempo significativa, mientras que sólo se dispone de una cantidad limitada de\ntiempo de desarrollador. Las disputas enconadas en la lista de desarrollo\nacerca de la elección del lenguaje no son bienvenidas, sin embargo las\npersonas con voluntad de implementar Freenet en otros lenguajes son \nefusivamente animadas a intentarlo. No obstante, no minusvalore la cantidad\nde trabajo necesaria."
 
 #: pages/help.py:445
 msgid "How do I allow connections to FProxy from other computers?"
@@ -2582,7 +2581,7 @@ msgid ""
 "can also happen on Windows sometimes, let us know how you managed to fix it\n"
 "... generally it's not all that serious though, especially if big jumps in\n"
 "the clock are only once a day."
-msgstr "Freenet tendrá problemas si su reloj está siendo regulado retrasado.\nHabitualmente esto ocurre cuando algo está reajustando su reloj con\nregularidad en grandes saltos. En Linux, debe ejecutar ntpd para asegurarse\nde que su reloj no está demasiado descompensado (esto no es vital pero es\nútil), aunque si ve errores de desfase de reloj, pruebe a añadiir la opción -x\npara que este evite grandes saltos hacia atrás. Además, ejecutar ntpdate en\nel arranque para que haya un gran salto antes de que se inicie Freenet, es\nuna buena idea. Todo esto también puede ocurrir a veces sobre Windows,\nháganos saber cómo consiguió corregirlo... no obstante habitualmente esto\nno es tan serio, especialmente si los grandes saltos en el reloj sólo se\nproducen una vez al día."
+msgstr "Freenet tendrá problemas si su reloj se está retrasando constantemente.\nHabitualmente esto ocurre cuando algo está reajustando su reloj con\nregularidad en grandes saltos. En Linux, debe ejecutar ntpd para asegurarse\nde que su reloj no está demasiado desincronizado (esto no es vital pero es\nútil), aunque si ve errores de desfase de reloj, pruebe a añadirle la opción -x\npara evitar grandes saltos hacia atrás. Además, es una buena idea ejecutar\nntpdate en el arranque para que haya un gran salto antes de que se inicie\nFreenet. Todo esto también puede ocurrir a veces sobre Windows, háganos\nsaber cómo consiguió corregirlo... no obstante esto habitualmente no es tan\nserio, especialmente si los grandes saltos en el reloj sólo se producen una\nvez al día."
 
 #: pages/help.py:519
 msgid "Publishing"
@@ -3253,7 +3252,7 @@ msgid ""
 "\n"
 "_**Third party tools**: We are hosting some other mailing lists on our server\n"
 "here is the [full list][url_listinfo]._"
-msgstr "### Las listas\n\n* [Soporte](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/support/) ([archivo](https://emu.freenetproject.org/pipermail/support/))<br/>\nPedir o proporcionar consejo en relación a conseguir poner Freenet en\nfuncionamiento, informes de fallos, y sugerencias sobre cómo mejorar la\nexperiencia del usuario. Las peticiones de ayuda es más probable que sean\nescuchadas aquí que en las demás listas de correo. \n**Nota:** Los correos electrónicos enviados a esta lista de correo de quienes\nno estén suscritos a la lista, se deben aprobar manualmente, y esto\npuede imponer un retardo de varios días. Para evitar este retardo, por favor,\n[subscríbase](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/support/).\n* [Desarrollo](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/devl/) ([archivo](https://emu.freenetproject.org/pipermail/devl/))<br/>\nEsta lista de correo es para que los desarrolladores en activo discutan fallos,\ny para la implementación de nuevas características a corto-plazo.\n\n_**Herramientas de terceros**: Estamos alojando algunas otras listas de\ncorreo en nuestro servidor, aquí tiene la [lista completa][url_listinfo]._"
+msgstr "### Las listas\n\n* [Soporte](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/support/) ([archivo](https://emu.freenetproject.org/pipermail/support/))<br/>\nPara pedir o proporcionar consejo en relación a lograr poner Freenet en\nfuncionamiento, informar de fallos, y hacer sugerencias sobre cómo mejorar la\nexperiencia del usuario. Las solicitudes de ayuda es más probable que sean\nescuchadas aquí que en las demás listas de correo. \n**Nota:** Los correos electrónicos enviados a esta lista de correo de quienes\nno estén suscritos a ella, se deben aprobar manualmente, y esto\npuede suponer un retardo de varios días. Para evitar este retardo, por favor,\n[subscríbase](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/support/).\n* [Desarrollo](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/devl/) ([archivo](https://emu.freenetproject.org/pipermail/devl/))<br/>\nEsta lista de correo es para que los desarrolladores en activo discutan fallos,\ny para la implementación de nuevas características a corto-plazo.\n\n_**Herramientas de terceros**: Estamos alojando algunas otras listas de\ncorreo en nuestro servidor, aquí tiene la [lista completa][url_listinfo]._"
 
 #: pages/help.py:1039
 msgid "Suggestions"
@@ -3527,7 +3526,7 @@ msgstr "Done hoy."
 
 #: pages/news.py:19
 msgid "2016-04-10 - Freenet testing build 1473-pre1 released"
-msgstr "2016-04-10 - Freenet testing build 1473-pre1 ha sido publicada"
+msgstr "2016-04-10 - La versión de prueba de Freenet build 1473-pre1 ha sido publicada"
 
 #: pages/news.py:20
 msgid ""
@@ -3542,7 +3541,7 @@ msgid ""
 "* Fix handling of filenames with non-ASCII spaces\n"
 "\n"
 "For more details and information on how to test this release see the [development mailing list thread][devl_thread]."
-msgstr "La pre-versión de prueba inestable de Freenet build 1473-pre1 está ahora disponible.\nEsta es la primera versión que requiere Java 7.\n\nDestacados:\n\n* Añade The Filtered Index (el índice filtrado) a la lista de marcadores predeterminada\n* Mejora la estabilidad del filtro MP3\n* Corrige la descarga de blob (gran objeto) binario sobre FCP (protocolo de cliente de Freenet)\n* Corrige el manejo de nombres de fichero con espacios no-ASCII\n\nPara más detalles e información sobre cómo probar esta versión, vea el [hilo de la lista de correo de desarrollo][devl_thread]."
+msgstr "La pre-versión de prueba inestable de Freenet build 1473-pre1 está ahora disponible.\nEsta es la primera versión que requiere Java 7.\n\nDestacados:\n\n* Añade The Filtered Index (el índice filtrado) a la lista de marcadores predeterminada\n* Mejora la estabilidad del filtro MP3\n* Corrige la descarga de blobs binarios (grandes objetos) sobre FCP (protocolo de cliente de Freenet)\n* Corrige el manejo de nombres de fichero con espacios no-ASCII\n\nPara más detalles e información sobre cómo probar esta versión, vea el [hilo de la lista de correo de desarrollo][devl_thread]."
 
 #: pages/news.py:36
 msgid "2016-03-19 - Freenet 0.7.5 build 1472 released"
@@ -3588,7 +3587,7 @@ msgid ""
 "IpToCountry database is updated. (This allows providing the country flags on the peers pages. It is local to each instance and does not contact an external service.)\n"
 "\n"
 "Add partial CSS3 support, including viewport lengths. Thanks, Ben Green!"
-msgstr "¡Esta es la última versión (build) que soporta Java 6! La próxima versión (build) requerirá Java 7 o superior. Los nodos que ejecuten Java 7 o superior y usen la clave Freenet de actualización oficial, ahora usarán una nueva clave Freenet de actualización. Los nodos sobre Java 6 continuarán usando la antigua clave Freenet de actualización y no serán actualizados a versiones (build) posteriores. ¡Gracias a yadevel por corregir la regresión sobre la que se estaba bloqueando esta versión!\n\nEsta versión fue inicialmente publicada parcialmente como build 1471 - fue publicada en GitHub pero no ofrecida desde el sitio web de Freenet o el sistema de auto-actualización. La build 1472 corrige un fallo por el que al usar Java 6 se evitaba que los nodos se iniciaran por primera vez (se inicializaran). No estropeaba instalaciones existentes.\n\nDestacados:\n\n- Corrige subidas que encallaban al usar el nivel de seguridad física MÁXIMO.\n- Corrige muchos fallos \"¡setNativePriority(X) ha fallado!\", que estaban causados por un grave problema de prioridad de hilo (subproceso). Esto podría corregir el problema de los nodos que pierden pares (peers) de forma inesperada.\n- Ordena por tiempo las alertas dentro de una categoría: Si tiene muchos mensajes de pares de la darknet permanecerán convenientemente ordenados.\n- Ahora hay una [capa de caché][caching] que debería reducir significativamente la carga de E/S.\n- Actualiza WebOfTrust desde la build 15 a la build 18. [Sus][wot16] [registros de cambios][wot17] [están][wot18] separados, pero los cambios reducen la carga de la CPU. El recalculado incremental de la puntuación apenas requiere el 3 por ciento del tiempo que ocuparía el recalculado completo, y formar las colas de listas de confianza en disco reduce el uso de hilos (subprocesos).\n\nTraducciones:\n\n- Añade una traducción parcial al griego.\n- Actualiza las traducciones al alemán, noruego bokmål, portugués de Brasil, chino simplificado, y chino tradicional.\n- Repara la carga de la localización noruego bokmål.\n\nAdemás:\n\n- Elimina el índice Gantros de la lista de marcadores predeterminada a causa de que dejó de actualizarse.\n- Elimina Linkageddon de la lista de marcadores predeterminada a causa de que dejó de actualizarse.\n- Nueva versión de UPnP para corregir algunos problemas de inestabilidad y compatibilidad. Gracias a 007pig tenemos un [nuevo complemento UPnP][upnp2] en desarrollo que soporta UPnP2, pero aún no está incluído.\n- Nueva versión de KeyUtils.\n\nWebOfTrust ahora tiene una versión de prueba actualizable compilada y mantenida por xor. Para usarla, cierre WebOfTrust, y luego cargue las \"Versiones de prueba de WebOfTrust\" en la página de Complementos. Las versiones compiladas por xor no funcionarán con Java 6.\n\nLos sitios puede establecer favicons con `<link rel=\"icon\" type=... href=...>`. (el tipo `type` podría ser `\"image/x-icon\"`)\n\nRevisión y mejora extensiva de las cadenas de texto fuente en inglés, y las traducciones al francés y español. Pruebas y correcciones de sustitución de valores en traducciones. ¡Gracias a Vaughan Woodzell!\n\nEl tema decorativo principal ahora es sky-static en lugar de clean-dropdown. Este tiene un aspecto menos desfasado aunque no moderno.\n\nCorrige los marcadores predeterminados carentes de la categoría \"software\" desde la build 1470. Si no ve esta categoría, por favor, vuelva a añadir el juego de marcadores predeterminado desde la página de edición de marcadores. \n\nLa base de datos IpToCountry se ha actualizado. (Esto permite proporcionar las banderas de los países en las páginas de los pares (peers). Es una consulta local para cada instancia y no contacta con ningún servicio externo).\n\nAñade soporte parcial para CSS3, incluyendo los tamaños viewport (vano útil de ventana). ¡Gracias, Ben Green!"
+msgstr "¡Esta es la última versión (build) que soporta Java 6! La próxima requerirá Java 7 o superior. Los nodos que ejecuten Java 7 o superior y usen la clave Freenet de actualización oficial, ahora usarán una nueva clave Freenet de actualización. Los nodos sobre Java 6 continuarán usando la antigua clave Freenet de actualización y no serán actualizados a versiones posteriores. ¡Gracias a yadevel por corregir la regresión sobre la que se estaba bloqueando esta versión!\n\nEsta versión al principio fue parcialmente publicada como build 1471 - se publico en GitHub pero no se ofrecio desde el sitio web de Freenet o el sistema de auto-actualización. La build 1472 corrige un fallo por el que al usar Java 6 se evitaba que los nodos se iniciaran por primera vez. No estropeaba instalaciones existentes.\n\nDestacados:\n\n- Corrige subidas que encallaban al usar el nivel de seguridad física MÁXIMO.\n- Corrige muchos fallos \"¡setNativePriority(X) ha fallado!\", que estaban causados por un grave problema de prioridad del hilo (subproceso). Esto podría corregir el problema de los nodos que pierden pares (peers) de forma inesperada.\n- Ordena por tiempo las alertas dentro de una categoría: Si tiene muchos mensajes de pares de la darknet permanecerán convenientemente ordenados.\n- Ahora hay una [capa de caché][caching] que debería reducir significativamente la carga de E/S.\n- Actualiza WebOfTrust desde la build 15 a la build 18. [Sus][wot16] [registros de cambios][wot17] [están][wot18] separados, pero los cambios reducen la carga de la CPU. El recalculado incremental de la puntuación apenas requiere el 3 por ciento del tiempo que ocuparía el recalculado completo, y formar las colas de listas de confianza en el disco reduce el uso de hilos.\n\nTraducciones:\n\n- Añade una traducción parcial al griego.\n- Actualiza las traducciones al alemán, noruego bokmål, portugués de Brasil, chino simplificado, y chino tradicional.\n- Repara la carga de la localización noruego bokmål.\n\nAdemás:\n\n- Elimina el índice Gantros de la lista de marcadores predeterminada a causa de que dejó de actualizarse.\n- Elimina Linkageddon de la lista de marcadores predeterminada a causa de que dejó de actualizarse.\n- Nueva versión de UPnP para corregir algunos problemas de inestabilidad y compatibilidad. Gracias a 007pig tenemos un [nuevo complemento UPnP][upnp2] en desarrollo que soporta UPnP2, pero aún no está incluido.\n- Nueva versión de KeyUtils.\n\nWebOfTrust ahora tiene una versión de prueba actualizable compilada y mantenida por xor (desarrollador). Para usarla, cierre WebOfTrust, y luego cargue las \"Versiones de prueba de WebOfTrust\" en la página de Complementos. Las versiones compiladas por xor no funcionarán con Java 6.\n\nLos sitios pueden establecer favicons con `<link rel=\"icon\" type=... href=...>`. (el tipo `type` podría ser `\"image/x-icon\"`)\n\nRevisión y mejora extensiva de las cadenas de texto fuente en inglés, y las traducciones al francés y español. Pruebas y correcciones de sustitución de valores en traducciones. ¡Gracias a Vaughan Woodzell!\n\nEl tema decorativo principal ahora es sky-static en lugar de clean-dropdown. Este tiene un aspecto menos anticuado aunque no moderno.\n\nCorrige los marcadores predeterminados carentes de la categoría \"software\" desde la build 1470. Si no ve esta categoría, por favor, vuelva a añadir el juego de marcadores predeterminado desde la página de edición de marcadores. \n\nLa base de datos IpToCountry se ha actualizado. (Esto permite proporcionar las banderas de los países en las páginas de los pares (peers). Es una consulta local para cada instancia y no contacta con ningún servicio externo).\n\nAñade soporte parcial para CSS3, incluyendo los tamaños viewport (vano útil de ventana). ¡Gracias, Ben Green!"
 
 #: pages/news.py:84
 msgid "2016-01-03 - Testing release build 1471-pre3"
