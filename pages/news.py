@@ -28,7 +28,7 @@ In reality, the false positive rate of their method is at least 83%,
 and close to 100% in real world scenarios.
 
 The claimed effectiveness of their attack is based on a false
-assumption the distribution of the HTL of incoming requests.  HTL (Hops
+assumption about the distribution of the HTL of incoming requests.  HTL (Hops
 to Live) is a number embedded in each request that is usually
 decremented when the request is forwarded, starting at a value of 18
 at the originator of the request, and serves to limit the number of
