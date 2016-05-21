@@ -96,7 +96,7 @@ However the method used by the Missouri police department is using
 false statistics: despite its flaws, Freenet's Opennet is much harder to
 track than they claim.
 
-The Freenet developers do not condem these attacks. Police departments
+The Freenet developers do not condemn these attacks. Police departments
 try to use every legal venue to catch criminals, this is their job and
 vocation, and any way they find is a way which could also be used by
 oppressive governments to suppress dissenting opinions.
@@ -115,14 +115,14 @@ The mission of the Freenet Project is to safeguard freedom of the
 press by providing censorship resistant communication. This requires
 protecting people against being targeted for what they write or
 read. To achieve this, Freenet enables users to publish anonymous
-websites and offers chat, forums and filesharing, as well as
+websites and offers chat, forums and file-sharing, as well as
 confidential communication among friends and methods to leverage the
 capabilities of Freenet from other tools.
 
 When the police spreads lies about the security of Freenet, it
 directly undermines our mission by driving users to networks which by
 design cannot provide a comparable level of security for
-whistleblowers and those wishing to publish anonymously.
+whistle-blowers and those wishing to publish anonymously.
 """) + """
 
 [commithtl18]: https://github.com/freenet/fred/commit/4aaa08f11656af1dd857e45612763c9bd2d89fc2
