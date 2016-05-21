@@ -109,7 +109,7 @@ positives rate, that’s eroding the trust of citizens in the legal
 system.
 
 Additional information on this attack is available from the 
-[mailnig list discussion][mlhtl18].
+[mailing list discussion][mlhtl18].
 
 The mission of the Freenet Project is to safeguard freedom of the
 press by providing censorship resistant communication. This requires
