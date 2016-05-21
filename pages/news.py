@@ -16,6 +16,119 @@ class NewsItem(object):
 def news_items():
     donate_button = """<a class="btn button-custom btn-custom-two donate-button" href="donate.html">""" + _("Donate today.") + """</a>"""
     return [
+        NewsItem("20160522-htl18attack", _("2016-05-22 - Police department's tracking efforts based on false statistics"),
+_("""
+Documents initially made public by the the Missouri police department
+describe their efforts on tracking Freenet usage.  Using a simple
+scheme, they claim achieving a near zero false positive rate for
+tracking the originator of a download.  While we applaud all public
+documentation on attacks, we have to point out that the claimed
+effectiveness of their attacks is based solely on flawed mathematics.
+In reality, the false positive rate of their method is at least 83%,
+and close to 100% in real world scenarios.
+
+The claimed effectiveness of their attack is based on a false
+assumption the distribution of the HT of incoming requests.  HTL (Hops
+to Live) is a number embedded in each request that is usually
+decremented when the request is forwarded, starting at a value of 18
+at the originator of the request, and serves to limit the number of
+hops a request can survive on the network.  As a security precaution,
+the HTL is decremented probabilistically on the first few hops.  In
+their tracking efforts, the Missouri police department assumes that
+when multiple requests for pieces of a file arrive from a single node,
+and all these requests have HTL 18 with no requests at HTL 17 or 16,
+this node must be the originator of the requests, with a false
+positive probability decreasing with the number of requests received
+on from the node.  This would be true if whether the HTL is
+decremented is decided per request, which has historically been the
+case in the early days of Freenet.  The vulnerability they claim to
+exploit has however been addressed in 2008 (last touched in [this
+commit][commithtl18]).  Whether the HTL is decremented is since
+decided per connection, so any probability they claim using the
+aforementioned method is false.
+
+For every connection there is a 50% chance that all the HTL18 requests
+(not only a single one, as would be the case with per-request
+probabilistic decrementing) did not originate from the node from which
+we received them but were forwarded one step. So for 10 connections
+(the lowest number of peers Freenet uses), there are on average 5
+other nodes whose HTL18 requests are forwarded with HTL18, so the
+probability that a given HTL18 request originated at the node from
+which we received it is only about 17% (1 in 6). If the node has more
+connections (normal are about 30), this probability is even lower. And
+this probability does not get higher when gathering more requests of
+chunks from a specific file or a specific kind of files, because they
+can reasonably all be forwarded from a different node — the one which
+really sent them.
+
+To get good statistics, an attacker would have to connect to the node
+under investigation over and over again at different times when the
+peers of the node changed.  This requires waiting at least 2 hours to
+change a significant number of peers — the only way to be sure would
+be to wait for the other node to go offline for more than 5 minutes
+and then to connect to it again. Then they would have to show that the
+node keeps requesting chunks from the same set of files. This could
+prove pretty hard, since downloading a 100MiB file on Freenet takes
+roughly 2 hours on a DSL connection. Screening out every node which
+ever sent a HTL17 or HTL16 request to the files they track could
+improve the reliability a lot, but with significant cost — and a
+significant rate of false negatives.
+
+If the node they track has friend-to-friend connections, even waiting
+will not allow them to find out whether the requests came from the
+node they are connected to or from the nodes connected over
+friend-to-friend connections.
+
+For details, see [the code][codehtl18].
+
+This does not make it impossible to track Freenet users who use pure
+Opennet mode (connecting to strangers), since a network where nodes
+connect to strangers is inherently susceptible to Sybil attacks.
+
+The only way to defend against serious attacks is to *use Freenet in
+Friend-to-Friend mode*, where the precondition to tracking a user is
+social engineering to get the people to whom he/she is connected to
+betray the user. The need to defend against this type of attacks is
+the reason why the core of Freenet was rewritten in 2007 to add a this
+Friend-to-Friend mode (called Darknet mode).
+
+However the method used by the Missouri police department is using
+false statistics: despite its flaws, Freenet's Opennet is much harder to
+track than they claim.
+
+The Freenet developers do not condem these attacks. Police departments
+try to use every legal venue to catch criminals, this is their job and
+vocation, and any way they find is a way which could also be used by
+oppressive governments to suppress dissenting opinions.
+
+
+However we expect them to get their math right, especially when using
+it in court. If they can get a warrant with a 83% false positives
+rate, that’s a problem for lawmakers. If they falsely claim a 0% false
+positives rate, that’s eroding the trust of citizens in the legal
+system.
+
+Additional information on this attack is available from the 
+[mailnig list discussion][mlhtl18].
+
+The mission of the Freenet Project is to safeguard freedom of the
+press by providing censorship resistant communication. This requires
+protecting people against being targeted for what they write or
+read. To achieve this, Freenet enables users to publish anonymous
+websites and offers chat, forums and filesharing, as well as
+confidential communication among friends and methods to leverage the
+capabilities of Freenet from other tools.
+
+When the police spreads lies about the security of Freenet, it
+directly undermines our mission by driving users to networks which by
+design cannot provide a comparable level of security for
+whistleblowers and those wishing to publish anonymously.
+""") + """
+
+[commithtl18]: https://github.com/freenet/fred/commit/4aaa08f11656af1dd857e45612763c9bd2d89fc2
+[codehtl18]: https://github.com/freenet/fred/blob/next/src/freenet/node/PeerNode.java#L1603
+[mlhtl18]: https://emu.freenetproject.org/pipermail/devl/2016-May/038923.html
+"""),
         NewsItem("20160503-ddg", _("2016-05-03 - DuckDuckGo donated $25,000"),
 _("""
 The Freenet Project is very excited to announce that [DuckDuckGo have donated][ddg_url] $25,000 to our project.
