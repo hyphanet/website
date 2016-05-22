@@ -292,14 +292,14 @@ http://wrapper.tanukisoftware.org/doc/english/download.jsp).
 """) + "\n\n" + _("""
 ### Upgrading
 
-Freenet provides an update-over-Freenet mechanism: It will keep itself up to
+Freenet provides an upgrade-over-Freenet mechanism: It will keep itself up to
 date automatically from other Freenet nodes, and this will normally work even
 if it is unable to route to them due to them being too new. This is anonymous
 and secure, and we recommend people use it. However, if something is severely
-broken, you can update your node manually from our servers:
+broken, you can upgrade your node manually from our servers:
 
-* Windows users can upgrade to the latest-stable Freenet release from the
-  system tray menu, or by running "update.cmd" in the Freenet directory.
+* Windows users can upgrade to the latest-stable Freenet release
+  by running "update.cmd" in the Freenet directory.
 * OS X, GNU/Linux, or other POSIX users may upgrade by running the update.sh
   shell script in the Freenet directory.
 """) + """

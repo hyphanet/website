@@ -254,7 +254,7 @@ his/her side, the connection **does not work**.
 """) + "\n\n" + _("""
 ### Darknet peers
 
-When you have a number of connections, you can visit the Darknet-page. It
+When you have a number of connections, you can visit the Darknet page. It
 should look something like this:
 
 ![](assets/img/Freenet-darknet_peers.png)
@@ -266,11 +266,11 @@ There are a number of status messages that can be seen here:
 * DISCONNECTED - the node is not connected to your node, and probably turned off
 * NEVER CONNECTED - the connection between the nodes has not been established.
   This can be because of firewall problems/restrictions, one side not adding
-  the other sides node reference or that the nodes has not been online at the
+  the other sides node reference or that the nodes have not been online at the
   same time yet in order to confirm the connection. If the problem persists over
   a long time and both sides have added each other, try to redo the connection.
 
-In the Idle-column, you can see how much time has passed since the last status
+In the Idle column, you can see how much time has passed since the last status
 message.
 """)))
 
@@ -302,8 +302,8 @@ Freenet has the following strengths:
      also allows content integrity to be guaranteed, but is more flexible than
      CHKs.
 *   **Forward Error Correction**  
-     In-common with some other CDN architectures, Freenet employs "Forward Error
-     Correction", which allows files to be reconstructed even if some of the
+     In common with some other CDN architectures, Freenet employs "Forward Error
+     Correction", which allows a file to be reconstructed even if some of the
      parts of that file can't be retrieved. Uniquely, Freenet also supports
      "healing", which involves the reconstruction and reinsertion of missing
      file components.
@@ -399,7 +399,7 @@ There are four types of keys in Freenet:
 
 *   **CHK** - Content Hash Keys
 *   **SSK** - Signed Subspace Keys
-*   **USK** - Updateable Subspace Keys
+*   **USK** - Updatable Subspace Keys
 *   **KSK** - Keyword Signed Keys
 """) + "\n\n" + _("""
 CHKs are the most fundamental. All files over 1kB are ultimately divided into
@@ -411,7 +411,7 @@ e.g. =KSK@sample.txt). These are spammable but convenient in some cases. And
 USKs are a form of updatable keys especially useful for freesites and
 **Address Resolution Keys**.
 """) + "\n\n" + _("""
-An Address Resolution Key (ARK) is an Updateable Subspace Key (USK) inserted
+An Address Resolution Key (ARK) is an Updatable Subspace Key (USK) inserted
 by the node whenever its IP address changes. It contains the reference for
 the node - its cryptographic details, and in particular its IP address(es).
 ARKs are a way to help people connect to Freenet if they have problems caused
