@@ -16,6 +16,33 @@ class NewsItem(object):
 def news_items():
     donate_button = """<a class="btn button-custom btn-custom-two donate-button" href="donate.html">""" + _("Donate today.") + """</a>"""
     return [
+        NewsItem("20160522-1473", _("2016-05-22 - Freenet build 1473 released"),
+_("""
+Freenet 0.7.5 build 1473 is now available. This is the first build to require
+Java 7! It upgrades Bouncy Castle to version 1.54, and adds a Traditional
+Chinese translation to the Windows installer.
+
+Plugin updates:
+
+* Add Sharesite - a fork of ShareWiki - as an official plugin. Thanks to
+  ArneBab for getting it ready! It includes an earlier version of TextileJ to
+  avoid license problems, and adds syntax help, external activelink support, and
+  a template with div IDs for easier CSS.
+* Update Freereader with the ability to configure the site title and subtitle,
+  and fix the translation support.
+
+User-facing core change highlights:
+
+* Improve MP3 filtering.
+* Add The Filtered Index to the default bookmark list.
+* Fix handling of filenames with non-ASCII spaces.
+* Alphabetize language configuration dropdown.
+* Add Hungarian translation support. The translation was added previously but not
+  actually available.
+* Fix dropping low-traffic connections. This helps with simulations.
+* Optimize FProxy CSS load order, and fix bugs which prevented caching static
+  assets. This improves web interface responsiveness.
+""")),
         NewsItem("20160503-ddg", _("2016-05-03 - DuckDuckGo donated $25,000"),
 _("""
 The Freenet Project is very excited to announce that [DuckDuckGo have donated][ddg_url] $25,000 to our project.
