@@ -37,8 +37,8 @@ def run_show_hide_script():
     # License: GFDL (from old freenetproject.org website)
     return """
       <script type="text/javascript">
-         // Try to detect if Java 1.6.0 or higher is installed
-         //var Java = PluginDetect.isMinVersion('Java', '1,6,0');
+         // Try to detect if Java 1.7.0 or higher is installed
+         //var Java = PluginDetect.isMinVersion('Java', '1,7,0');
          
          // Os detection
          var OSName="";
@@ -116,17 +116,21 @@ Steps:
 ### Windows
 
 Download and run [the installer](assets/jnlp/FreenetInstaller.exe)
-([try this if the first link is blocked](https://downloads.freenetproject.org/latest/FreenetInstaller.exe))
+([try this if the first link is blocked](https://downloads.freenetproject.org/latest/FreenetInstaller.exe)) ([gpg signature][url_gpg_sig]; [keyring][url_keyring])
 
 It will automatically install Freenet and other required components for you.
 When done, your default browser will automatically open up to Freenet's
 web-based user interface.
 
 Freenet requires Windows XP or later.
-""")))+div("macos",md(_("""
+""") + """
+
+[url_gpg_sig]: FREENET_WINDOWS_INSTALLER_SIG_URL
+[url_keyring]: #keyring
+"""))+div("macos",md(_("""
 ### OS X
 
-Download and run [the installer][url_mac_installer] ([gpg signature][url_gpg_sig]).
+Download and run [the installer][url_mac_installer] ([gpg signature][url_gpg_sig]; [keyring][url_keyring]).
 
 It will automatically install Freenet and other required components for you.
 When done, your default browser will automatically open up to Freenet's web-based user interface.
@@ -135,6 +139,7 @@ Freenet requires OS X 10.8 or later.
 """) + "\n\n" + """
 [url_mac_installer]: https://github.com/freenet/mactray/releases/download/v2.0.3/FreenetTray_2.0.3.zip
 [url_gpg_sig]: https://downloads.freenetproject.org/alpha/mactray/FreenetTray_2.0.3.zip.sig
+[url_keyring]: #keyring
 """))+div("unix",md(_("""
 ### GNU/Linux & POSIX
 
@@ -147,17 +152,17 @@ obtained via your [package manager](
 https://en.wikipedia.org/wiki/Package_manager) or from [
 http://www.java.com/](http://www.java.com/).
 
-Java version 1.6 or higher is required, and 1.7 or higher is strongly
+Java version {java_required} or higher is required, and version {java_recommended} or higher is strongly
 recommended. You should keep Java up to date to avoid problems and for better
 performance.
 
 Open a terminal and run:
-""") + "\n\n" + """
+""").format(java_required=7, java_recommended=8) + "\n\n" + """
     wget 'https://freenetproject.org/assets/jnlp/freenet_installer.jar' -O new_installer_offline.jar
     java -jar new_installer_offline.jar
 """ + "\n\n" + _("""
 Alternatively, downloading [the installer](assets/jnlp/freenet_installer.jar)
-([gpg signature][jar_sig])
+([gpg signature][jar_sig]; [keyring][url_keyring])
 and then clicking on the file may work on some systems, but if there are
 problems we recommend the above command lines. If wget is not installed,
 it can be installed with a package manager, such as sudo apt-get install wget
@@ -180,6 +185,7 @@ tell it where to install Freenet etc.
 """) + """
 
 [jar_sig]: FREENET_INSTALLER_SIG_URL
+[url_keyring]: #keyring
 
 """ + """
 <a id="mirrored"></a>""" + "\n\n" + _("""
@@ -286,14 +292,14 @@ http://wrapper.tanukisoftware.org/doc/english/download.jsp).
 """) + "\n\n" + _("""
 ### Upgrading
 
-Freenet provides an update-over-Freenet mechanism: It will keep itself up to
+Freenet provides an upgrade-over-Freenet mechanism: It will keep itself up to
 date automatically from other Freenet nodes, and this will normally work even
 if it is unable to route to them due to them being too new. This is anonymous
 and secure, and we recommend people use it. However, if something is severely
-broken, you can update your node manually from our servers:
+broken, you can upgrade your node manually from our servers:
 
-* Windows users can upgrade to the latest-stable Freenet release from the
-  system tray menu, or by running "update.cmd" in the Freenet directory.
+* Windows users can upgrade to the latest-stable Freenet release
+  by running "update.cmd" in the Freenet directory.
 * OS X, GNU/Linux, or other POSIX users may upgrade by running the update.sh
   shell script in the Freenet directory.
 """) + """
@@ -326,6 +332,29 @@ However, your (or someone else's) government may be able to find out who you are
 [url_seednode_info]: https://wiki.freenetproject.org/Seed_nodes#Seed_node
 """))
 
+class KeyringSection(Section):
+    def __init__(self):
+        self.slug = "keyring"
+        self.title = _("Verifying Signatures")
+    def get_content(self):
+        return text(md(_("""Download the [Freenet project signing keys][url_keyring] and import them into your keyring:""") + """
+
+        pub   rsa4096/00100D897EDBA5E0 2013-09-21 [SC] [expires: 2016-09-08]
+              Key fingerprint = 0046 195B 2DCA B176 D394  09CD 0010 0D89 7EDB A5E0
+        uid                 [  full  ] Steve Dougherty (operhiem1 Release Signing Key) <steve@asksteved.com>
+        sub   rsa4096/7BF0F7B36AC8B380 2013-09-21 [E] [expires: 2016-09-15]
+
+        pub   rsa4096/B67C19E817A8D846 2016-01-02 [C] [expires: 2017-01-01]
+              Key fingerprint = 5D77 D9A4 2E28 0F5A FF8F  2EBF B67C 19E8 17A8 D846
+        uid                 [ unknown] Stephen Oliver <steve@infincia.com>
+        sub   rsa4096/9BCDD1614041F59E 2016-01-02 [S] [expires: 2017-01-01]
+        sub   rsa4096/1652EBA5AC1BB386 2016-01-02 [E] [expires: 2017-01-01]
+        sub   rsa4096/38A62E479684F2F2 2016-01-02 [A] [expires: 2017-01-01]
+
+[url_keyring]: assets/keyring.gpg
+"""))
+
+
 class DownloadPage(Page):
     def __init__(self):
         self.slug = "download"
@@ -334,4 +363,5 @@ class DownloadPage(Page):
             DownloadSection(),
             NoteSection(),
             UsingSection(),
+            KeyringSection(),
             ]

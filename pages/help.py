@@ -335,7 +335,7 @@ Fred (the Freenet REference Daemon) runs as a daemon, or service, in the
 background. You normally talk to it through a Freenet client. One built-in
 client is fproxy, which lets you talk to Freenet with a web browser. Freenet
 should have installed a Browse Freenet shortcut on the desktop and/or the
-start menu, or a system tray icon (rabbit) with a Launch Freenet menu item.
+start menu, or a system tray icon (rabbit) with an Open Freenet menu item.
 Failing that, point your web browser to [http://127.0.0.1:8888/](
 http://127.0.0.1:8888/) for the gateway page. Try clicking the various links
 in the "Freesite subscriptions" panel to reach some of the popular Freenet
