@@ -116,13 +116,16 @@ Steps:
 ### Windows
 
 Download and run [the installer](assets/jnlp/FreenetInstaller.exe)
-([try this if the first link is blocked](https://downloads.freenetproject.org/latest/FreenetInstaller.exe))
+([try this if the first link is blocked](https://downloads.freenetproject.org/latest/FreenetInstaller.exe)) ([gpg signature][url_gpg_sig])
 
 It will automatically install Freenet and other required components for you.
 When done, your default browser will automatically open up to Freenet's
 web-based user interface.
 
 Freenet requires Windows XP or later.
+""") + """
+
+[url_gpg_sig]: FREENET_WINDOWS_INSTALLER_SIG_URL
 """)))+div("macos",md(_("""
 ### OS X
 
