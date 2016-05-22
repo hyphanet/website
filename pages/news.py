@@ -155,6 +155,12 @@ User-facing core change highlights:
 * Fix dropping low-traffic connections. This helps with simulations.
 * Optimize FProxy CSS load order, and fix bugs which prevented caching static
   assets. This improves web interface responsiveness.
+
+**Note**: If Freenet should fail to start with **Bandwidth limits
+must be at least 10240 bytes/second**, edit FREENET_FOLDER/freenet.ini
+and set node.outputBandwidthLimit and node.inputBandwidthLimit to both
+be at least 10240. We are sorry that this slipped through review. It
+is already fixed for future releases.
 """)),
         NewsItem("20160503-ddg", _("2016-05-03 - DuckDuckGo donated $25,000"),
 _("""
