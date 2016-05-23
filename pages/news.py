@@ -66,7 +66,7 @@ connections taken into account does not easily yield robust
 statistical claims without knowing the peers of peers of the node
 under investigation. Staying connected for a long time might allow for
 distinguishing between the changing peers of the node and requests
-originating at the node itself.
+originating at the node itself, but with significant cost.
 
 If the node which is tracked has friend-to-friend peers
 (which different from automatically added peers do not change regularly), even waiting
