@@ -63,27 +63,27 @@ really sent them.
 
 To get good statistics, an attacker would have to connect to the node
 under investigation over and over again at different times when the
-peers of the node changed.  This requires waiting at least 2 hours to
-change a significant number of peers — the only way to be sure would
-be to wait for the other node to go offline for more than 5 minutes
-and then to connect to it again. Then they would have to show that the
-node keeps requesting chunks from the same set of files. This could
-prove pretty hard, since downloading a 100MiB file on Freenet takes
-roughly 2 hours on a DSL connection. Screening out every node which
+peers of the node changed.  This requires waiting for the node to
+change a significant number of peers.
+Then they would have to show that the
+node keeps requesting chunks from the same set of files.
+Screening out every node which
 ever sent a HTL17 or HTL16 request to the files they track could
 improve the reliability a lot, but with significant cost — and a
 significant rate of false negatives.
 
-If the node they track has friend-to-friend connections, even waiting
+If the node they track has friend-to-friend peers,
+which do not change regularly, even waiting
 will not allow them to find out whether the requests came from the
-node they are connected to or from the nodes connected over
+node they are connected to or from the peers connected over
 friend-to-friend connections.
 
 For details, see [the code][codehtl18].
 
 This does not make it impossible to track Freenet users who use pure
 Opennet mode (connecting to strangers), since a network where nodes
-connect to strangers is inherently susceptible to Sybil attacks.
+connect to strangers is inherently susceptible to Sybil attacks,
+where nodes of typical users are outnumbered by malicious, colluding nodes.
 
 The only way to defend against serious attacks is to *use Freenet in
 Friend-to-Friend mode*, where the precondition to tracking a user is
@@ -100,15 +100,13 @@ The Freenet developers do not condemn these attacks. Police departments
 try to use every legal venue to catch criminals, this is their job and
 vocation, and any way they find is a way which could also be used by
 oppressive governments to suppress dissenting opinions.
-
-
 However we expect them to get their math right, especially when using
 it in court. If they can get a warrant with a 83% false positives
 rate, that’s a problem for lawmakers. If they falsely claim a 0% false
 positives rate, that’s eroding the trust of citizens in the legal
 system.
 
-Additional information on this attack is available from the 
+Additional information on this attack is available from the
 [mailing list discussion][mlhtl18].
 
 The mission of the Freenet Project is to safeguard freedom of the
@@ -119,7 +117,7 @@ websites and offers chat, forums and file-sharing, as well as
 confidential communication among friends and methods to leverage the
 capabilities of Freenet from other tools.
 
-When the police spreads lies about the security of Freenet, it
+When the police spread misinformation about the security of Freenet, it
 directly undermines our mission by driving users to networks which by
 design cannot provide a comparable level of security for
 whistle-blowers and those wishing to publish anonymously.
