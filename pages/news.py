@@ -61,21 +61,17 @@ chunks from a specific file or a specific kind of files, because they
 can reasonably all be forwarded from a different node — the one which
 really sent them.
 
-To get good statistics, an attacker would have to connect to the node
-under investigation over and over again at different times when the
-peers of the node changed.  This requires waiting for the node to
-change a significant number of peers.
-Then they would have to show that the
-node keeps requesting chunks from the same set of files.
-Screening out every node which
-ever sent a HTL17 or HTL16 request to the files they track could
-improve the reliability a lot, but with significant cost — and a
-significant rate of false negatives.
+The heterogenity of the network and routing with second-level
+connections taken into account does not easily yield robust
+statistical claims without knowing the peers of peers of the node
+under investigation. Staying connected for a long time might allow for
+distinguishing between the changing peers of the node and requests
+originating at the node itself.
 
-If the node they track has friend-to-friend peers,
-which do not change regularly, even waiting
-will not allow them to find out whether the requests came from the
-node they are connected to or from the peers connected over
+If the node which is tracked has friend-to-friend peers
+(which different from automatically added peers do not change regularly), even waiting
+will not allow finding out with the described method whether HTL18 requests came from the
+node itself or from the peers connected over
 friend-to-friend connections.
 
 For details, see [the code][codehtl18].
