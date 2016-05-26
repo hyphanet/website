@@ -16,7 +16,7 @@ class NewsItem(object):
 def news_items():
     donate_button = """<a class="btn button-custom btn-custom-two donate-button" href="donate.html">""" + _("Donate today.") + """</a>"""
     return [
-        NewsItem("20160523-htl18attack", _("2016-05-23 - Police department's tracking efforts based on false statistics"),
+        NewsItem("20160526-htl18attack", _("2016-05-26 - Police department's tracking efforts based on false statistics"),
 _("""
 Documents initially made public by the Missouri police department
 describe their efforts on tracking Freenet usage.  Using a simple
