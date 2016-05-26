@@ -18,7 +18,7 @@ def news_items():
     return [
         NewsItem("20160523-htl18attack", _("2016-05-23 - Police department's tracking efforts based on false statistics"),
 _("""
-Documents initially made public by the the Missouri police department
+Documents initially made public by the Missouri police department
 describe their efforts on tracking Freenet usage.  Using a simple
 scheme, they claim achieving a near zero false positive rate for
 tracking the originator of a download.  While we applaud all public
