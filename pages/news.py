@@ -55,7 +55,7 @@ we received them but were forwarded one step. So for 10 connections
 other nodes whose HTL18 requests are forwarded with HTL18, so the
 probability that a given HTL18 request originated at the node from
 which we received it is only about 17% (1 in 6). If the node has more
-connections (normal are about 30), this probability is even lower. And
+connections (close to 30 is common), this probability is even lower. And
 this probability does not get higher when gathering more requests of
 chunks from a specific file or a specific kind of files, because they
 can reasonably all be forwarded from a different node — the one which
