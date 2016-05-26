@@ -93,13 +93,14 @@ false statistics: despite its flaws, Freenet's Opennet is much harder to
 track than they claim.
 
 The Freenet developers do not condemn these attacks. Police departments
-try to use every legal venue to catch criminals, this is their job and
-vocation, and any way they find is a way which could also be used by
-oppressive governments to suppress dissenting opinions.
-However we expect them to get their math right, especially when using
-it in court. If they can get a warrant with a 83% false positives
+try to use every legal venue to catch criminals. This is their job and
+vocation, but any attack they find could also be used by oppressive
+governments to suppress dissenting opinions, so we will work to fix attacks
+as they come to light.
+We expect law enforcement to get their math right, especially when using
+it in court. If they can get a warrant with an 83% false positive
 rate, that’s a problem for lawmakers. If they falsely claim a 0% false
-positives rate, that’s eroding the trust of citizens in the legal
+positive rate, that’s eroding the trust of citizens in the legal
 system.
 
 Additional information on this attack is available from the
@@ -114,8 +115,8 @@ confidential communication among friends and methods to leverage the
 capabilities of Freenet from other tools.
 
 When the police spread misinformation about the security of Freenet, it
-directly undermines our mission by driving users to networks which by
-design cannot provide a comparable level of security for
+directly undermines our mission by driving users to networks which
+cannot provide a comparable level of security for
 whistle-blowers and those wishing to publish anonymously.
 """) + """
 
