@@ -20,7 +20,7 @@ def news_items():
 _("""
 Documents initially made public by the Missouri police department
 describe their efforts on tracking Freenet usage.  Using a simple
-scheme, they claim achieving a near zero false positive rate for
+scheme, they claim a near zero false positive rate for
 tracking the originator of a download.  While we applaud all public
 documentation on attacks, we have to point out that the claimed
 effectiveness of their attacks is based solely on flawed mathematics.
