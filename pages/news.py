@@ -39,10 +39,10 @@ when multiple requests for pieces of a file arrive from a single node,
 and all these requests have HTL 18 with no requests at HTL 17 or 16,
 this node must be the originator of the requests, with a false
 positive probability decreasing with the number of requests received
-on from the node.  This would be true if whether the HTL is
+from the node.  This would be true if whether the HTL is
 decremented is decided per request, which has historically been the
 case in the early days of Freenet.  The vulnerability they claim to
-exploit has however been addressed in 2008 (last touched in [this
+exploit was however addressed in 2008 (last touched in [this
 commit][commithtl18]).  Whether the HTL is decremented is since
 decided per connection, so any probability they claim using the
 aforementioned method is false.
@@ -69,14 +69,14 @@ distinguishing between the changing peers of the node and requests
 originating at the node itself, but with significant cost.
 
 If the node which is tracked has friend-to-friend peers
-(which different from automatically added peers do not change regularly), even waiting
+(which unlike automatically added peers do not change regularly), even waiting
 will not allow finding out with the described method whether HTL18 requests came from the
 node itself or from the peers connected over
 friend-to-friend connections.
 
 For details, see [the code][codehtl18].
 
-This does not make it impossible to track Freenet users who use pure
+This does not make it impossible to track Freenet users who use only
 Opennet mode (connecting to strangers), since a network where nodes
 connect to strangers is inherently susceptible to Sybil attacks,
 where nodes of typical users are outnumbered by malicious, colluding nodes.
