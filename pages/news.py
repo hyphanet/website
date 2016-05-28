@@ -47,13 +47,13 @@ commit][commithtl18]).  Whether the HTL is decremented is since
 decided per connection, so any probability they claim using the
 aforementioned method is false.
 
-For every connection there is a 50% chance that all the HTL18 requests
+For every connection there is a 50% chance that all the HTL 18 requests
 (not only a single one, as would be the case with per-request
 probabilistic decrementing) did not originate from the node from which
 we received them but were forwarded one step. So for 10 connections
 (the lowest number of peers Freenet uses), there are on average 5
-other nodes whose HTL18 requests are forwarded with HTL18, so the
-probability that a given HTL18 request originated at the node from
+other nodes whose HTL 18 requests are forwarded with HTL 18, so the
+probability that a given HTL 18 request originated at the node from
 which we received it is only about 17% (1 in 6). If the node has more
 connections (close to 30 is common), this probability is even lower. And
 this probability does not get higher when gathering more requests of
@@ -70,7 +70,7 @@ originating at the node itself, but with significant cost.
 
 If the node which is tracked has friend-to-friend peers
 (which unlike automatically added peers do not change regularly), even waiting
-will not allow finding out with the described method whether HTL18 requests came from the
+will not allow finding out with the described method whether HTL 18 requests came from the
 node itself or from the peers connected over
 friend-to-friend connections.
 
