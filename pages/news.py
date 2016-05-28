@@ -84,7 +84,7 @@ where nodes of typical users are outnumbered by malicious, colluding nodes.
 The only way to defend against serious attacks is to *use Freenet in
 Friend-to-Friend mode*, where the precondition to tracking a user is
 social engineering to get the people to whom he/she is connected to
-betray the user. The need to defend against this type of attacks is
+betray the user. The need to defend against this type of attack is
 the reason why the core of Freenet was rewritten in 2007 to add this
 Friend-to-Friend mode (called Darknet mode).
 
