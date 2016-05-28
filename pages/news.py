@@ -110,7 +110,7 @@ The mission of the Freenet Project is to safeguard freedom of the
 press by providing censorship resistant communication. This requires
 protecting people against being targeted for what they write or
 read. To achieve this, Freenet enables users to publish anonymous
-websites and offers chat, forums and file-sharing, as well as
+websites and offers chat, forums, and file-sharing, as well as
 confidential communication among friends and methods to leverage the
 capabilities of Freenet from other tools.
 
