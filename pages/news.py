@@ -99,8 +99,8 @@ governments to suppress dissenting opinions, so we will work to fix attacks
 as they come to light.
 We expect law enforcement to get their math right, especially when using
 it in court. If they can get a warrant with an 83% false positive
-rate, that’s a problem for lawmakers. If they falsely claim a 0% false
-positive rate, that’s eroding the trust of citizens in the legal
+rate, that's a problem for lawmakers. If they falsely claim a 0% false
+positive rate, that's eroding the trust of citizens in the legal
 system.
 
 Additional information on this attack is available from the
