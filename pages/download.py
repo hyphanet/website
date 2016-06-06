@@ -339,17 +339,31 @@ class KeyringSection(Section):
     def get_content(self):
         return text(md(_("""Download the [Freenet project signing keys][url_keyring] and import them into your keyring:""") + """
 
-        pub   rsa4096/00100D897EDBA5E0 2013-09-21 [SC] [expires: 2016-09-08]
-              Key fingerprint = 0046 195B 2DCA B176 D394  09CD 0010 0D89 7EDB A5E0
-        uid                 [  full  ] Steve Dougherty (operhiem1 Release Signing Key) <steve@asksteved.com>
-        sub   rsa4096/7BF0F7B36AC8B380 2013-09-21 [E] [expires: 2016-09-15]
+        pub   2048R/7AA9C2A3 2013-04-29
+              Key fingerprint = DBB7 7338 3BC3 49C9 5203  ED91 EAC5 EBF0 7AA9 C2A3
+        uid                  Florent Daigniere <florent.daigniere@trustmatta.com>
+        uid                  Florent Daigniere (NextGen$) <nextgens+gpg@freenetproject.org>
+        uid                  Florent Daigniere (Personal address) <florent-gpg@daigniere.com>
+        sub   2048R/75AB23F2 2013-04-29
+        sub   2048R/7FA16469 2013-04-29
 
-        pub   rsa4096/B67C19E817A8D846 2016-01-02 [C] [expires: 2017-01-01]
+        pub   4096R/7EDBA5E0 2013-09-21 [expires: 2016-09-08]
+              Key fingerprint = 0046 195B 2DCA B176 D394  09CD 0010 0D89 7EDB A5E0
+        uid                  Steve Dougherty (operhiem1 Release Signing Key) <steve@asksteved.com>
+        sub   4096R/6AC8B380 2013-09-21 [expires: 2016-09-15]
+
+        pub   4096R/1946AA94 2013-09-24 [expires: 2018-09-23]
+              Key fingerprint = B76D 4AA7 96D8 403E ED78  C9F9 FF24 CA42 1946 AA94
+        uid                  Matthew Toseland (2013-2018 key, higher key length) <matthew@toselandcs.co.uk>
+        uid                  Matthew Toseland (2013-2018 key, higher key length) <toad@amphibian.dyndns.org>
+        sub   4096R/95C42009 2013-09-24 [expires: 2018-09-23]
+
+        pub   4096R/17A8D846 2016-01-02 [expires: 2017-01-01]
               Key fingerprint = 5D77 D9A4 2E28 0F5A FF8F  2EBF B67C 19E8 17A8 D846
-        uid                 [ unknown] Stephen Oliver <steve@infincia.com>
-        sub   rsa4096/9BCDD1614041F59E 2016-01-02 [S] [expires: 2017-01-01]
-        sub   rsa4096/1652EBA5AC1BB386 2016-01-02 [E] [expires: 2017-01-01]
-        sub   rsa4096/38A62E479684F2F2 2016-01-02 [A] [expires: 2017-01-01]
+        uid                  Stephen Oliver <steve@infincia.com>
+        sub   4096R/4041F59E 2016-01-02 [expires: 2017-01-01]
+        sub   4096R/AC1BB386 2016-01-02 [expires: 2017-01-01]
+        sub   4096R/9684F2F2 2016-01-02 [expires: 2017-01-01]
 
 [url_keyring]: assets/keyring.gpg
 """))
