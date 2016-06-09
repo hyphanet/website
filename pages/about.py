@@ -259,9 +259,6 @@ class PeopleSection(Section):
     def get_content(self):
         # License: GFDL (from old freenetproject.org website)
         return text(md(_("""
-**Note:** This is an incomplete list, a large number of people have contributed
-to the project.
-""") + "\n\n" + _("""
 
 ## Current Contributors
 
@@ -345,6 +342,18 @@ The current maintainer of pyFreenet and infocalypse. He also writes
 articles and tutorials for Freenet.
 
 """) + "\n\n" + _("""
+### The translators
+
+A dilligent team of people from various backgrounds who make it
+possible to ship Freenet and this website in many different languages.
+
+""") + "\n\n" + _("""
+### Many more great hackers
+
+This list is missing many freesite authors, plugin writers, and a host
+of other people who contributed in various ways.
+
+""") + "\n\n" + _("""
 ## Anonymous Contributors
 
 """) + "\n\n" + _("""
@@ -374,7 +383,7 @@ in Freenet development.
 """) + "\n\n" + _("""
 ### Thomas Markus
 
-A dutch developer and statistic-enthusiast. He now works at Topicus.Education..
+A dutch developer and statistic-enthusiast. He now works at Topicus.Education.
 
 """) + "\n\n" + _("""
 ### Scott Miller
