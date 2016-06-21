@@ -364,11 +364,6 @@ class KeyringSection(Section):
 
         pub   2048R/7AA9C2A3 2013-04-29
               Key fingerprint = DBB7 7338 3BC3 49C9 5203  ED91 EAC5 EBF0 7AA9 C2A3
-        uid                  Florent Daigniere <florent.daigniere@trustmatta.com>
-        uid                  Florent Daigniere (NextGen$) <nextgens+gpg@freenetproject.org>
-        uid                  Florent Daigniere (Personal address) <florent-gpg@daigniere.com>
-        sub   2048R/75AB23F2 2013-04-29
-        sub   2048R/7FA16469 2013-04-29
 
         pub   4096R/7EDBA5E0 2013-09-21 [expires: 2016-09-08]
               Key fingerprint = 0046 195B 2DCA B176 D394  09CD 0010 0D89 7EDB A5E0
