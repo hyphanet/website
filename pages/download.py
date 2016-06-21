@@ -86,6 +86,7 @@ class DownloadSection(Section):
     def __init__(self):
         self.title = _("Download")
         self.slug = "download"
+        self.url_mac_installer = "https://github.com/freenet/mactray/releases/download/v2.0.5/FreenetTray_2.0.5.zip"
     def get_content(self):
         download_intro = md(_("""
 To access Freenet, you first need to install the main application.
@@ -116,11 +117,18 @@ Steps:
 ### Windows
 
 Download and run [the installer](assets/jnlp/FreenetInstaller.exe)
+
+""") + """
+<p><a class=" btn button-custom btn-custom-two" href="assets/jnlp/FreenetInstaller.exe"><i class="icon ion-arrow-down-a"></i> {download_text}</a></p>
+""".format(download_text=_("Download Freenet")) + _("""
+
 ([try this if the first link is blocked](https://downloads.freenetproject.org/latest/FreenetInstaller.exe)) ([gpg signature][url_gpg_sig]; [keyring][url_keyring])
 
 It will automatically install Freenet and other required components for you.
 When done, your default browser will automatically open up to Freenet's
 web-based user interface.
+
+![](assets/img/install/1-langselect-windows.png)
 
 Freenet requires Windows XP or later.
 """) + """
@@ -132,19 +140,34 @@ Freenet requires Windows XP or later.
 
 Download and run [the installer][url_mac_installer] ([gpg signature][url_gpg_sig]; [keyring][url_keyring]).
 
+""") + """
+<p><a class=" btn button-custom btn-custom-two" href="{url_mac_installer}"><i class="icon ion-arrow-down-a"></i> {download_text}</a></p>
+""".format(download_text=_("Download Freenet for OSX"),
+url_mac_installer=self.url_mac_installer) + _("""
+
 It will automatically install Freenet and other required components for you.
 When done, your default browser will automatically open up to Freenet's web-based user interface.
 
+![](assets/img/mactray/osx_installer_step2_transparent.png)
+
 Freenet requires OS X 10.8 or later.
 """) + "\n\n" + """
-[url_mac_installer]: https://github.com/freenet/mactray/releases/download/v2.0.5/FreenetTray_2.0.5.zip
+[url_mac_installer]: {url_mac_installer}
 [url_gpg_sig]: https://github.com/freenet/mactray/releases/download/v2.0.5/FreenetTray_2.0.5.zip.sig
 [url_keyring]: #keyring
-"""))+div("unix",md(_("""
+""".format(url_mac_installer=self.url_mac_installer)))+div("unix",md(_("""
 ### GNU/Linux & POSIX
 
-Try the [Java Web Start installer](assets/jnlp/freenet.jnlp). If it doesn't
-work:
+Try the [Java Web Start installer](assets/jnlp/freenet.jnlp).
+""") + """
+<p><a class=" btn button-custom btn-custom-two" href="assets/jnlp/freenet.jnlp"><i class="icon ion-arrow-down-a"></i> {download_text}</a></p>
+""".format(download_text=_("Install Freenet")) + _("""
+
+Now follow the installer:
+
+![](assets/img/install/1-langselect.png)
+
+If it doesn't work:
 
 You need to have a recent **Java Runtime Environment** (JRE). We have
 experienced best results with Oracle's Java Runtime Environment which can be
