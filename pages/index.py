@@ -119,13 +119,6 @@ If one percent of people used Freenet, everyone could safely be a whistleblower.
             </div>
         </div>
         <div class="row">
-            <!--ACTION SUBSECTION -->
-            <div class="col-sm-12 col-md-12 col-lg-12">
-        <a href="https://noglobalwarrants.org"><img alt="No global Warrants: Reject the Rule 41 proposal" src="assets/img/rule-41-banner4.png" /></a>
-            </div>
-            <!-- ACTION SUBSECTION END -->
-        </div>
-        <div class="row">
             <!--DONATE SUBSECTION -->
             <div class="col-sm-12 col-md-12 col-lg-12">
                 <div class="item active donate" id="donate_button">
