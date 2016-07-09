@@ -9,7 +9,7 @@ from pages.documentation import *
 from pages.donate import *
 from pages.contribute import *
 
-languages = ["de", "en", "es", "ja", "nl", "pt-br", "zh-cn"]
+languages = ["de", "en", "es", "fr", "ja", "nl", "pt-br", "zh-cn"]
 title = "Freenet"
 def create_menu():
     return [
