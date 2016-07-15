@@ -42,6 +42,8 @@ Further user-visible changes:
 - Fix a major bug that might explain the poor connectivity since 1473
 
 For details see the [announcement email][announcement1475].
+
+(this news item was only published on July 15th. Sorry for the delay)
 """) + """
 
 
