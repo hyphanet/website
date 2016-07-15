@@ -43,7 +43,7 @@ Further user-visible changes:
 
 For details see the [announcement email][announcement1475].
 
-(this news item was only published on July 15th. Sorry for the delay)
+(this news item was published on July 15th. Sorry for the delay)
 """) + """
 
 
