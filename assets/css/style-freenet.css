@@ -300,6 +300,10 @@ margin-right: 20px;
     margin-bottom: 1em;
 }
 
+#home-logo > img {
+    max-width: 90%;
+}
+
 #home-download {
     margin-top: 1em;
     margin-bottom: 2em;
