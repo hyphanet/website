@@ -55,8 +55,8 @@ Leap over censorship<br>
 Escape total surveillance
 """))
         mission = md(_("""
-Freenet re-establishes freedom of speech on the Internet.<br>
-Install Freenet and join the peer-to-peer network today!
+Freenet is a peer-to-peer platform for censorship-resistant communication and publishing.
+Browse websites, post on forums, and publish files within Freenet with strong privacy protections.
 """))
         download_text = _("Download Freenet")
         read_more = """<a href="{}" class="readmore">""" + _("""read more…""") + """</a>"""
