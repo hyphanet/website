@@ -108,30 +108,6 @@ If one percent of people used Freenet, everyone could safely be a whistleblower.
                 </div>
             </div>
         </div>
-        <div class="row">
-            <!--DONATE SUBSECTION -->
-            <div class="col-sm-12 col-md-12 col-lg-12">
-                <div class="item active donate" id="donate_button">
-                     $md__donate_text
-                     <div class="meter blue" id="donate_bar_small">
-                         <div class="quantity" style="left: 15px;">$$MONEYBALANCE</div>
-                         <div class="quantity" style="right: 15px;">$$$str__donation_target</div>
-                         <span style="width: 100%)">
-                         </span>
-                     </div>
-                     <script type="text/javascript">
-                         fund_percentage = (MONEYBALANCE / $str__donation_target);
-                         if(fund_percentage <= 1/3) {
-                             donate_bar = document.getElementById("donate_bar_small");
-                             donate_bar.className = "meter red";
-                         }
-                     </script>
-                     <a class="btn button-custom btn-custom-two donate-button" href="donate.html">$str__donate_button_text</a>
-                     <p id="donate_fineprint">$str__nonprofit $str__tax_deductable $str__503_read_more</p>
-                </div>
-            </div>
-            <!-- DONATE SUBSECTION END -->
-        </div>
                         <div class="social">
                         <a href="https://twitter.com/freenetproject" class="btn button-custom btn-custom-one" ><i class="fa fa-twitter"></i></a>
                         <a href="https://github.com/freenet/fred" class="btn button-custom btn-custom-one" ><i class="fa fa-github "></i></a>
