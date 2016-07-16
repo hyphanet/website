@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: Freenet\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-05-28 04:19-0400\n"
-"PO-Revision-Date: 2016-07-08 17:51+0000\n"
+"PO-Revision-Date: 2016-07-13 20:14+0000\n"
 "Last-Translator: French language coordinator <yahoe.001@gmail.com>\n"
 "Language-Team: French (http://www.transifex.com/otf/freenet/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -1323,7 +1323,7 @@ msgid ""
 "In the pane to the left, already created projects can be selected for\n"
 "updating, deleting or cloning. Since this is the first start, no such\n"
 "projects exist."
-msgstr ""
+msgstr "### Démarrer jSite\n\nPour démarrer JSite, taper la commande suivante dans un terminal :\n\n<pre>\tjava -jar jSite.jar</pre>\n\nVoici la première fenêtre affichée :\n\n![](assets/img/jsite/select-project.png)\n\nDans le volet de gauche, des objets déjà créés peuvent être sélectionnés\nafin de les mettre à jour, de les supprimer ou de les cloner. Pour un\npremier démarrage, aucun projet n'existe encore."
 
 #: pages/documentation.py:641
 msgid ""
@@ -1339,7 +1339,7 @@ msgid ""
 "* **Local Path** - This is a directory where you will store all the pages of the\n"
 "freesite you are creating. Put in the full path. You can click the Browse\n"
 "button to select a directory graphically or just type it in."
-msgstr ""
+msgstr "### La création d'un siteFree\n\nAfin de créer un nouveau siteFree, il vous suffit de cliquer sur le bouton **Ajouter un projet**.\nVous devez ensuite saisir les détails du projet. Sous la section Informations du projet :\n\n* **Nom ** - juste un nom afin que vous reconnaissiez le projet, et\nn'importe quel nom fera l’affaire. Il peut contenir des espaces.\n* **Description** - juste une description légèrement plus longue du projet,\npour vos besoins.\n* **Chemin local** - le répertoire où vous stockerez toutes les pages du siteFree\nque vous créez. Vous pouvez cliquer sur le bouton\nParcourir pour choisir graphiquement un répertoire, ou vous pouvez juste\nsaisir le chemin complet."
 
 #: pages/documentation.py:654
 msgid ""
@@ -1378,7 +1378,7 @@ msgid ""
 "index.html might be a good choice) and check the **Default file** checkbox.\n"
 "It should recognise the MIME type as text/html, so leave everything else as\n"
 "they are and click the **Insert now** button."
-msgstr ""
+msgstr "La prochaine étape consiste à ajouter des fichiers au site Freenet (ou siteFree).\nVous pouvez le faire grâce à la fenêtre de dialogue intitulée **Fichiers du projet**.\nDans la mesure où il n'y a pas encore de fichier dans le répertoire\nactuel, la fenêtre de dialogue est vide.\n\n![](assets/img/jsite/project-files.png)\n\nPour ajouter des fichiers, placez-en dans le répertoire local que vous\navez spécifié plus tôt, **/home/test**, et cliquez sur\n**Analyser de nouveau**, puis les fichiers apparaîtront instantanément.\n\n![](assets/img/jsite/default-file.png)\n\nEnsuite, mettez en surbrillance un de ces fichiers afin qu'il devienne la page\npar défaut, (p. ex. index.html pourrait être un bon choix), et cochez la case\n**Fichier par défaut**. Le type MIME devrait être reconnu comme text/html,\net laissez donc le reste ainsi et cliquez sur le bouton **Insérer maintenant**."
 
 #: pages/documentation.py:687
 msgid ""
@@ -1390,7 +1390,7 @@ msgid ""
 "When all is finished, you will get a message pop-up that tells you that the\n"
 "site has been inserted successfully. You can copy the URI to the clip-board\n"
 "by clicking the **Copy URI to Clipboard** -button."
-msgstr ""
+msgstr "Si tout va bien, un fenêtre comme celle ci-dessous devrait apparaître. L'insertion\ndu siteFree pourrait prendre un certain temps, plusieurs minutes en fait.\n\n![](assets/img/jsite/project-insert.png)\n\nQuand tout sera terminé, vous verrez un message vous informant que le site\na été inséré avec succès. Vous pourrez alors copier l'URI dans le presse-papiers\nen cliquant sur le bouton **Copier l'URI dans le presse-papiers**."
 
 #: pages/documentation.py:696
 msgid ""
@@ -1404,7 +1404,7 @@ msgid ""
 "<pre>\thttp://localhost:8888/freenet:USK@cJNO6G0[..]joM,AQACAAE/watergate2/1/</pre>\n"
 "\n"
 "If it works, congratulations, you have just created your first Freesite!"
-msgstr ""
+msgstr "Vous pouvez alors utiliser FProxy pour surfer vers votre siteFree nouvellement\ncréé. Il vous suffit de coller l'URI après\n\n[http://localhost:8888/](http://localhost:8888/)\n\ndans la barre d'adresse du navigateur, comme suit (coupé pour affichage à l'écran) :\n\n<pre>\thttp://localhost:8888/freenet:USK@cJNO6G0[..]joM,AQACAAE/watergate2/1/</pre>\n\nSi ça fonctionne, félicitations, vous venez juste de créer votre premier siteFree !"
 
 #: pages/documentation.py:712
 msgid "Wiki"
@@ -1790,7 +1790,7 @@ msgid ""
 "Freenet should work fine with most routers, but if you are having problems\n"
 "and you have a firewall or router, click [**here**](help.html#firewall) for\n"
 "some info."
-msgstr ""
+msgstr "### Pare-feu et routeurs\n\nFreenet devrait fonctionner sans problème avec la plupart des routeurs, mais\nsi vous éprouvez des problèmes et si vous avez un pare-feu ou un routeur,\ncliquez [**ici**](help.html#firewall) pour obtenir infos."
 
 #: pages/download.py:228
 msgid ""
