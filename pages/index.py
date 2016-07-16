@@ -93,16 +93,6 @@ If one percent of people used Freenet, everyone could safely be a whistleblower.
                         $md__mission
                     </div>
                     <div id="home-download" class="download">
-                        <!-- FIXME: become social
-                        <div class="social">
-                        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-facebook "></i></a>
-                        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-google-plus "></i></a>
-                        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-linkedin "></i></a>
-                        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-pinterest "></i></a>
-                        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-github "></i></a>
-                        </div>
-                        -->
                         <a href="download.html#autostart" class=" btn button-custom btn-custom-two">
                             <i class="icon ion-arrow-down-a"></i>
                             $str__download_text
@@ -142,6 +132,11 @@ If one percent of people used Freenet, everyone could safely be a whistleblower.
             </div>
             <!-- DONATE SUBSECTION END -->
         </div>
+                        <div class="social">
+                        <a href="https://twitter.com/freenetproject" class="btn button-custom btn-custom-one" ><i class="fa fa-twitter"></i></a>
+                        <a href="https://github.com/freenet/fred" class="btn button-custom btn-custom-one" ><i class="fa fa-github "></i></a>
+                        </div>
+
     </div>
 </section>
 <!--HOME SECTION END-->
