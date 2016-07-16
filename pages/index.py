@@ -138,16 +138,6 @@ class ServiceSection(Section):
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="text-align: center">
         <div class="download">
         <p>$str__tagline</p>
-        <!-- FIXME: become social
-        <div class="social">
-        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-facebook "></i></a>
-        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-twitter"></i></a>
-        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-google-plus "></i></a>
-        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-linkedin "></i></a>
-        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-pinterest "></i></a>
-        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-github "></i></a>
-        </div>
-        -->
         <a href="download.html#autostart" class=" btn button-custom btn-custom-two">
             <i class="icon ion-arrow-down-a"></i>
             $str__download_text
