@@ -131,9 +131,6 @@ class ServiceSection(Section):
         content = """
 <!-- service start -->
 <div class="row">
-    <div class="col-sm-12 col-md-12 col-lg-12" style="text-align: center">
-        $md__whatis_text
-    </div>
     $html__services
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="text-align: center">
         <div class="download">
@@ -150,7 +147,6 @@ class ServiceSection(Section):
         tagline = _("Share, Chat, Browse. Anonymously.")
         download_text = _("Download Freenet")
         return substitute_html(content,
-            md__whatis_text=md(_("Freenet is a peer-to-peer network for censorship-resistant communication.")),
             html__services=concat_html(services),
             str__tagline=tagline,
             str__download_text=download_text)
