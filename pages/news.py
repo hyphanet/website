@@ -18,35 +18,25 @@ def news_items():
     return [
         NewsItem("20160625-1475", _("2016-06-25 - Freenet build 1475 released"),
 _("""
-Freenet 0.7.5 build 1475 is now available. Along with 1474 this fixes
-a vulnerability in the package handler which could block the
-node. Also it fixes an announcement loop which could slow down some
-nodes. It will become mandatory on July 15th.
+(This news item was not published until July 16th. Sorry for the delay.)
 
-Bugfixes:
+Freenet 0.7.5 build 1475 is now available.
+Build 1474 was an emergency release which [fixed a denial of service attack][announcement1474] which prevented the node from processing other requests after processing a malicious request.
+This build contains the months of work which were not included in the emergency release.
+It will become mandatory on July 15th.
 
-- 0006745: Disk crypto: Should type password twice when setting it
-- 0006344: Change default compatibility mode to COMPAT_1466
-- 0006488: using “visit freesite” to visit a freesite with a hash (#)
-fails instead of opening it and jumping to the anchor.
+Highlights:
 
-Further user-visible changes:
+- Warn that Java 7 is End of Life. (Please update!)
+- Improve load balancing.
+- Add support for HTML5 audio tags.
+- Fix a major bug that might explain the poor connectivity since 1473.
 
-- fix a critical bug: prevent announcement loops
-- start to warn user that java7 is End of Life (please update)
-- Don't use FOAF if the HTL isn't high enough
-- update.sh should no longer require multiple runs to work.
-- load balancing improvements
-- relax the CSS parser (see https://github.com/freenet/fred/pull/446)
-- support for HTML Audio tags
-- Fix a major bug that might explain the poor connectivity since 1473
-
-For details see the [announcement email][announcement1475].
-
-(this news item was published on July 15th. Sorry for the delay)
+For more details see the [announcement email][announcement1475].
 """) + """
 
 
+[announcement1474]: https://emu.freenetproject.org/pipermail/devl/2016-June/039037.html
 [announcement1475]: https://emu.freenetproject.org/pipermail/devl/2016-June/039072.html
 """),
         NewsItem("20160526-htl18attack", _("2016-05-26 - Police department's tracking efforts based on false statistics"),
