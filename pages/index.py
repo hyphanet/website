@@ -10,66 +10,6 @@ class HomeSection(Section):
         self.title = ""
 
     def generate(self):
-        def slider_item(title, text, active=""):
-            template = """
-    <div class="item $str__active">
-        <h3>$str__title</h3>
-        $md__text
-    </div>
-    """
-            return substitute_html(template,
-                str__title=title,
-                md__text=md(text),
-                str__active=active)
-
-        sliders = [
-            # Slider items copyright Gerard Krol, licensed GFDL/CC-BY-SA 4.0/GPLv2+
-            slider_item(_("Share, Chat, Browse. Anonymously."), _("""
-Freenet is a platform for censorship-resistant communication and publishing.
-It helps you to remain anonymous, and communicate without fear.
-""") + "\n\n" + """<span class="hidden-xs">""" + _("""
-*'Daddy, where were you when they took freedom of the press away from the Internet?'*
-— Mike Godwin ([read more](about.html))
-""") + """</span>""", "active"),
-            slider_item(_("Host a Website"), _("""
-Need a website nobody can take over? That is hosted for free? That is very
-resistant to attacks? Publish it on Freenet!
-""") + "\n\n" + """<br /><span class="hidden-xs hidden-sm">""" + _("""
-*'Now the Mempo repository can not be censored, DDoSed or taken offline, despite having just one tiny server.'* — rfree in [apt-get over Freenet](news.html#20150105)
-""") + """</span>"""),
-            slider_item(_("Share Files"), _("""
-Upload a file to Freenet and anyone with the secret URL can access it.
-""") + "\n\n" + _("""
-*[follow the blue rabbit
-through the looking glass](download.html#autostart)*
-""")),
-            slider_item(_("Meet New People"), _("""
-People from all over the world use Freenet to communicate. Some of them do so
-anonymously. You might never hear their voices in the open.
-""") + "\n\n" + """<span class="hidden-xs">""" + _("""
-*'The value of publishing is not me wanting you to watch. The value of publishing is you wanting to see what I provide.'* — A.B.
-""") + """</span>"""),
-            slider_item(_("Experiment with Exciting New Technology"), _("""
-Freenet is on the cutting edge of distributed routing research. The data
-storage provided by Freenet is a proving ground for a number of new
-distributed systems. ([Papers](about.html#papers))
-""") + "\n\n" + """<span class="hidden-xs hidden-sm">""" + _("""
-*'A decentralized anonymous datastore with real censorship resistance, no central authority and long lifetime only for information which people actually use.'* — [The forgotten Cryptopunk Paradise](http://draketo.de/english/freenet/forgotten-cryptopunk-paradise)
-""") + """</span>"""),
-            slider_item(_("Improve the World"), _("""
-By using Freenet from the "free world" you help people in oppressive regimes
-share information. The more people use Freenet the easier it will be to
-obtain.""") + "\n\n" + """<span class="hidden-xs hidden-sm">""" + _("""
-If one percent of people used Freenet, everyone could safely be a whistleblower.
-""") + """</span>"""),
-            slider_item(_("Join us in Freenet"), """<span class="visible-xs">""" + _("""
-*'Daddy, where were you when they took freedom of the press away from the Internet?'*
-— Mike Godwin ([read more](about.html))
-""") + """</span>""" + """<span class="hidden-xs">""" + _("""
-*'Many years passed, two towers fell, the empire expanded its hunt for rebels all over the globe, and now, as the empire’s grip has become so horrid that even the most loyal servants of the emperors turn and expose their dark secrets, Freenet is still moving forward.'*
-— [The forgotten Cryptopunk Paradise](http://draketo.de/english/freenet/forgotten-cryptopunk-paradise)
-""") + """</span>"""),
-        ]
         content = """
 <!--HOME SECTION START-->
 <section id="home">
@@ -97,13 +37,6 @@ If one percent of people used Freenet, everyone could safely be a whistleblower.
                             <i class="icon ion-arrow-down-a"></i>
                             $str__download_text
                         </a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div id="carousel-slider">
-                        <div class="carousel-inner">
-                            $html__sliders
-                        </div>
                     </div>
                 </div>
             </div>
@@ -135,7 +68,6 @@ Install Freenet and join the peer-to-peer network today!
         return substitute_html(content,
             md__slogan=slogan,
             md__mission=mission,
-            html__sliders=concat_html(sliders),
             str__download_text=download_text,
             md__donate_text=donate_text,
             str__donate_button_text=donate_button_text,
