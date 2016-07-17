@@ -726,6 +726,19 @@ color: rgb(40, 141, 203);
 }
 
 
+/*============================
+NEWS SECTION STYLES
+==============================*/
+#news .news-wrapper {
+background-color:rgba(255, 255, 255, 0.1);
+padding: 20px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+margin-bottom: 40px;
+min-height:200px;
+}
+
 
 /*============================
 CONTACT SECTION STYLES

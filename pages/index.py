@@ -157,11 +157,16 @@ class NewsSection(Section):
         self.title = _("Latest News")
     def get_content(self):
         # we show the most recent news items
+        content = """
+<div class="news-wrapper">
+$md__items
+</div>
+"""
         md_content = ""
         news_items = news.news_items()
         for item in news_items[:min(5, len(news_items))]:
             md_content += item.markdown_link() + "\n\n"
-        return text(md(md_content))
+        return substitute_html(content, md__items=md(md_content))
 
 class IndexPage(Page):
     def __init__(self):
