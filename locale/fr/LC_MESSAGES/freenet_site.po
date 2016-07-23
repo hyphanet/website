@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: Freenet\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-05-28 04:19-0400\n"
-"PO-Revision-Date: 2016-07-13 20:14+0000\n"
+"PO-Revision-Date: 2016-07-22 18:34+0000\n"
 "Last-Translator: French language coordinator <yahoe.001@gmail.com>\n"
 "Language-Team: French (http://www.transifex.com/otf/freenet/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -1819,7 +1819,7 @@ msgid ""
 "**you actually know**, whether online or offline, as adding total strangers\n"
 "harms performance and does not improve security much (they could be the bad\n"
 "guys!)."
-msgstr ""
+msgstr "### Ça tourne maintenant, que faire ?\n\nLors de sa fermeture, le programme d'installation devrait ouvrir une fenêtre\nde navigateur présentant l'assistant de première installation. Il vous permettra\nde configurer les paramètres de base, et vous pourrez ensuite commencer\nà utiliser Freenet. Vous pourrez accéder à Freenet par la suite grâce au menu\nde la zone de notification (en bas à droite de l'écran), ou en utilisant le raccourci\n« Parcourir Freenet » sur le bureau ou dans le menu Démarrer. Si cela ne fonctionne pas, accédez à [http://127.0.0.1:8888/](http://127.0.0.1:8888/)\ndans votre navigateur Web.\n\nPour une sécurité accrue, vous devriez utiliser un navigateur séparé pour\nFreenet, préférablement en mode privé. Dans Windows, le menu de la zone\nde notification essaiera si possible d'utiliser Chrome en navigation privée.\nInternet Explorer ne fonctionne pas bien avec Freenet, Firefox et Opera sont\nlargement utilisés.\n\nSi vous connaissez quelqu'un qui fait tourner Freenet, vous pouvez améliorer\nvotre sécurité tout en participant à la construction d'un réseau robuste en vous\nconnectant à son nœud. Ouvrez d'abord la [page Ajouter un ami](http://127.0.0.1:8888/addfriend/).\nVotre ami et votre devrez télécharger vos « références de nœud » respectives.\nEnvoyez-vous le fichier et ajoutez sa référence de nœud en utilisant le formulaire\nen bas de la page. Qu'en vous en aurez fait autant l'un et l'autre, le nœud\nde votre ami apparaîtra alors sur la page Amis, probablement comme\n« CONNECTÉ » ou « OCCUPÉ ». Vous pouvez définir un nom pour son\nnœud dans la page de configuration pour savoir plus facilement de\nqui\nil s'agit. N'ajoutez que des nœuds exploités par des personnes que\n« vous connaissez réellement », que cela soit en ligne ou hors ligne, car l'ajout\nde parfaits inconnus nuira aux performances et ne fera rien pour améliorer\nla sécurité (ce pourrait être des méchants !)."
 
 #: pages/download.py:254
 msgid ""
@@ -1832,7 +1832,7 @@ msgid ""
 "The [Freenet Social Networking Guide](http://freesocial.draketo.de/) explains\n"
 "how to set up the main third party tools, including email, forums and\n"
 "micro-blogging (Sone, a bit like twitter)."
-msgstr ""
+msgstr "### Je suis connecté, que faire ensuite ?\n\nFreenet lui-même inclut des sites Web anonymes (« sitesFree »), du partage\nde fichiers, une recherche et plus encore, mais vous pouvez aussi utiliser\ndes applications tierces pour le clavardage, le partage de fichiers, pour vous\naider à téléverser des sitesFree, etc.\n\nLe [Guide du réseautage social de Freenet](http://freesocial.draketo.de/) explique\ncomment mettre en place les principaux outils tiers, incluant le courriel, les\nforums et le microblogage (Sone, un peu comme Twitter)."
 
 #: pages/download.py:264
 msgid ""
@@ -1859,7 +1859,7 @@ msgid ""
 "On 64-bit Windows, we will install a 32-bit Java Virtual Machine because of\n"
 "limitations of the [Java Service Wrapper](\n"
 "http://wrapper.tanukisoftware.org/doc/english/download.jsp)."
-msgstr ""
+msgstr "### Exigences matérielles\n\nGénéralement, un processeur d'1 GHz et 1 Go de mémoire vive devrait suffire.\nFreenet pourrait fonctionner sur des systèmes plus petits, mais il utilise\nau moins 128 Mo de mémoire vive, et à moins que le système ne fasse rien\nd'autre, il éprouvera des difficultés avec moins de 512 Mo. Cependant, le\nprocesseur est un problème moindre, et des utilisateurs font tourner Freenet\nsur des Pentium II 400 MHz ou des ATOM, bien que les téléchargements\net la navigation seraient lents.\n\nFreenet utilisera une partie de votre disque afin d'y stocker des données.\nVous pouvez définir cette taille à partir de 100 Mo, mais nous recommandons au moins 1 G0. Freenet utilise aussi de l'espace disque pour\nvos téléchargements. L'utilisation de la mémoire par Freenet est approximativement\nde 256 Mo plus 400 Ko pour chaque tranche de 2 Go du magasin de données.\n\nSur Windows 64 bits, nous installerons une machine virtuelle Java 32 bits,\nà cause des restrictions de [l'enveloppeur de service](http://wrapper.tanukisoftware.org/doc/english/download.jsp)."
 
 #: pages/download.py:292
 msgid ""
@@ -1931,7 +1931,7 @@ msgid ""
 "is also very efficient in how it deals with information, adaptively\n"
 "replicating content in response to demand.  For more information,\n"
 "see [What is Freenet?](about.html#introduction)"
-msgstr ""
+msgstr "Freenet est une plateforme de communication et de publication qui\nrésiste\nà la censure. Elle est conçue pour garantir une réelle liberté de communication\npar Internet. Elle permet à quiconque de publier et de lire des informations\ndans l'anonymat le plus total. Personne ne contrôle Freenet, pas même ses\ncréateurs, ce qui signifie que le système n'est pas vulnérable aux manipulations\nni aux coupures de service. De plus, Freenet gère les informations avec une\ngrande efficacité, répliquant son contenu de manière autoadaptative afin\nde répondre à la demande. Pour plus d'informations, consulter [Qu'est-ce que Freenet ?](about.html#introduction)"
 
 #: pages/help.py:61
 msgid ""
@@ -2009,7 +2009,7 @@ msgid ""
 "online for your content to be available, you don't need to figure out how to\n"
 "configure it safely, and most important, if you go away your site will still\n"
 "be available."
-msgstr ""
+msgstr "Il n'est pas nécessairement facile d'utiliser Internet de manière « anonyme » :\nse connecter à Facebook avec Tor n'empêche pas à Facebook de presque\ntout savoir sur vous, et se connecter à son compte de courriel Web\n(non HTTPS) avec Tor signifie que la personne exécutant le mandataire (nœud de sortie)\npeut voler le mot de passe de votre compte de courriel Web.\n\nFreenet est un réseau séparé qui fait les choses différemment, car il n'y a\npas de serveurs centraux. C'est pourquoi nous ne prenons pas en charge\nJavaScript, les scripts côté serveur, etc. sur les sitesFree : tout doit être réécrit\nafin de fonctionner sur un réseau distribué. Mais l'avantage est qu'il n'existe\npas un seul serveur que l'on pourrait obliger à divulguer vos communications confidentielles,\nou qui pourrait être éteint.\n\nDes risques persistent cependant, par exemple, parler de la ville où vous\nhabitez ou de votre fournisseur de services Internet sur un forum anonyme,\nou télécharger des fichiers que Freenet ne peut pas assembler tels que\ndes PDF ou des documents de traitement de texte (Freenet vous avertira\nle cas échéant).\nDe plus, particulièrement pour du contenu Web, il pourrait être plus simple\nde le téléverser vers Freenet que de mettre en place un serveur caché sur\nTor ; votre nœud ne doit pas rester en ligne pour que votre contenu soit\ndisponible, vous n'avez pas à trouver comment le paramétrer de façon sécuritaire,\net par-dessus tout, si vous disparaissez, votre site sera encore disponible."
 
 #: pages/help.py:124
 msgid ""
