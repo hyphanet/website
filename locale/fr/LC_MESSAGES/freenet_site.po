@@ -19,8 +19,8 @@ msgstr ""
 "Project-Id-Version: Freenet\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-07-23 12:14-0400\n"
-"PO-Revision-Date: 2016-07-25 13:02+0000\n"
-"Last-Translator: Stéphanie Séguin <stephanie.seguin@yahoo.ca>\n"
+"PO-Revision-Date: 2016-07-28 18:48+0000\n"
+"Last-Translator: French language coordinator <yahoe.001@gmail.com>\n"
 "Language-Team: French (http://www.transifex.com/otf/freenet/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -55,7 +55,7 @@ msgid ""
 "Communications by Freenet nodes are encrypted and are routed through other\n"
 "nodes to make it extremely difficult to determine who is requesting the\n"
 "information and what its content is."
-msgstr "Les communications des nœuds Freenet sont chiffrées et acheminées par d'autres\nnœuds afin de rendre extrêmement difficile de déterminer qui demande\nl'information et quel en est le contenu."
+msgstr "Les communications des nœuds Freenet sont chiffrées et acheminées par d'autres\nnœuds afin qu'il soit extrêmement difficile de déterminer qui demande\nl'information et quel en est le contenu."
 
 #: pages/about.py:30
 msgid ""
@@ -81,7 +81,7 @@ msgid ""
 "philosophy. Ian Clarke, Freenet's creator and project coordinator,\n"
 "was selected as one of the top 100 innovators of 2003 by MIT's Technology\n"
 "Review magazine."
-msgstr "Freenet a été téléchargé plus de 2 millions de fois depuis le début du  projet\net a été utilisé pour la diffusion d'informations censurées partout dans le monde, incluant des pays comme la Chine et dans le Moyen-Orient. Les idées et concepts précurseurs\nde Freenet ont eu un impact significatif dans le milieu universitaire.\nNotre article de 2000 intitulé « Freenet: A Distributed Anonymous Information Storage and Retrieval System\n(Freenet : un système de stockage et de récupération d'informations anonyme et distribué) » a été l'article scientifique le plus cité de 2000 d'après Citeseer,\net Freenet a aussi inspiré des articles dans les milieux juridique et philosophique.\nIan Clarke, créateur de Freenet et coordinateur du projet,\na été choisi comme l'un des 100 premiers innovateurs de 2003 par le magazine « Technology Review » du MIT."
+msgstr "Freenet a été téléchargé plus de 2 millions de fois depuis le début du  projet\net a été utilisé pour la diffusion d'informations censurées partout dans le monde, incluant des pays comme la Chine et au Moyen-Orient. Les idées et concepts précurseurs\nde Freenet ont eu un impact significatif dans le milieu universitaire.\nNotre article de 2000 intitulé « Freenet: A Distributed Anonymous Information Storage and Retrieval System\n(Freenet : un système de stockage et de récupération d'informations anonyme et distribué) » a été l'article scientifique le plus cité de 2000 d'après Citeseer,\net Freenet a aussi inspiré des articles dans les milieux juridique et philosophique.\nIan Clarke, créateur de Freenet et coordinateur du projet,\na été choisi comme l'un des 100 premiers innovateurs de 2003 par le magazine « Technology Review » du MIT."
 
 #: pages/about.py:50
 msgid ""
@@ -164,7 +164,7 @@ msgid ""
 "lost over who was better-informed. This is because being better-informed allows\n"
 "us to make better decisions, and generally improve our ability to survive and be\n"
 "successful."
-msgstr "#### 3.2 La connaissance est bénéfique\n\nLa plupart des personnes auxquelles l'on donnera l'option de savoir quelque chose\nou de ne pas le savoir, choisira d'avoir plus d'informations que moins. Des guerres ont été gagnées\nou perdues, selon qui été le mieux informé. C'est parce qu'être mieux informé\nnous permet de prendre de meilleures décisions et d'améliorer de\nmanière générale notre aptitude à survivre et à réussir."
+msgstr "#### 3.2 La connaissance est bénéfique\n\nLa plupart des personnes auxquelles l'on donnera l'option de savoir quelque chose\nou de ne pas le savoir, choisira d'avoir plus d'informations que moins. Des guerres ont été gagnées\nou perdues, selon qui a été le mieux informé. C'est parce qu'être mieux informé\nnous permet de prendre de meilleures décisions et d'améliorer de\nmanière générale notre aptitude à survivre et à réussir."
 
 #: pages/about.py:130
 msgid ""
@@ -179,7 +179,7 @@ msgid ""
 "it must know what their government is doing, they must be well informed. It\n"
 "is a feedback loop, but this loop can be broken if the government has the\n"
 "power to control the information the population has access to."
-msgstr "#### 3.3 La démocratie implique une population bien informée\n\nDe nombreuses personnes vivent aujourd'hui sous des gouvernements démocratiques\net celles pour qui ce n'est pas le cas le voudraient probablement. La démocratie\nest une réponse à la question de comment créer des meneurs, tout en les empêchant\nd'abuser de ce pouvoir. Elle réalise cela en donnant à la population le pouvoir\nde réguler leur gouvernement par le vote, cependant la possibilité de voter\nne signifie pas nécessairement que vous vivez dans un pays démocratique.\nAfin qu'une population puisse réguler son gouvernement de façon efficace,\nelle doit savoir ce que son gouvernement fait, elle doit être bien informée.\nC'est une boucle de rétroaction, mais cette boucle peut être brisée si le gouvernement\na le pouvoir de contrôler les informations auxquelles la population a accès."
+msgstr "#### 3.3 La démocratie implique une population bien informée\n\nDe nombreuses personnes vivent aujourd'hui sous le régime de gouvernements démocratiques\net celles pour qui ce n'est pas le cas le voudraient probablement. La démocratie\nest une réponse à la question de comment créer des meneurs, tout en les empêchant\nd'abuser de ce pouvoir. Elle réalise cela en donnant à la population le pouvoir\nde réguler leur gouvernement par le vote, cependant la possibilité de voter\nne signifie pas nécessairement que vous vivez dans un pays démocratique.\nAfin qu'une population puisse réguler son gouvernement de façon efficace,\nelle doit savoir ce que son gouvernement fait, elle doit être bien informée.\nC'est une boucle de rétroaction, mais cette boucle peut être brisée si le gouvernement\na le pouvoir de contrôler les informations auxquelles la population a accès."
 
 #: pages/about.py:143
 msgid ""
@@ -207,7 +207,7 @@ msgid ""
 "information, to communicate. So long as everything we see and hear is\n"
 "filtered, we are not truly free. Freenet's aim is to allow two or more people\n"
 "who wish to share information, to do so."
-msgstr "### 5\\. La solution\n\nLa seule manière de garantir qu'une démocratie restera efficace est de s'assurer\nque le gouvernement ne peut pas contrôler la capacité de sa population\nà partager des informations, à communiquer. Tant que tout ce que nous voyons\net entendons est filtré, nous ne sommes pas vraiment libres. Le but de Freenet\nest de permettre à deux personnes ou plus, qui souhaitent partager des informations, de le faire."
+msgstr "### 5\\. La solution\n\nLa seule manière de garantir qu'une démocratie restera efficace est de s'assurer\nque le gouvernement ne puisse contrôler la capacité de sa population\nà partager des informations, à communiquer. Tant que tout ce que nous voyons\net entendons est filtré, nous ne sommes pas vraiment libres. Le but de Freenet\nest de permettre à deux personnes ou plus, qui souhaitent partager des informations, de le faire."
 
 #: pages/about.py:167
 msgid ""
@@ -1945,7 +1945,7 @@ msgid ""
 "especially if installing on OS X.\n"
 "We are not responsible for unofficial third party apps it recommends (including FMS),\n"
 "but many Freenet users and developers use them."
-msgstr "Veuillez essayer le [guide pas à pas][url_freesocial] sur comment configurer Freenet\net diverses applis Freenet, particulièrement lors de l'installation sur OS X.\nNous me sommes pas responsables des applis tierces non officielles qu'il\nrecommande (incluant FMS), mais de nombreux utilisateurs et développeurs les utilisent. "
+msgstr "Veuillez essayer le [guide pas à pas][url_freesocial] sur comment configurer Freenet\net diverses applis Freenet, particulièrement lors de l'installation sur OS X.\nNous ne sommes pas responsables des applis tierces non officielles qu'il\nrecommande (incluant FMS), mais de nombreux utilisateurs et développeurs les utilisent. "
 
 #: pages/download.py:245
 msgid ""
@@ -1954,7 +1954,7 @@ msgid ""
 "Freenet should work fine with most routers, but if you are having problems\n"
 "and you have a firewall or router, click [**here**](help.html#firewall) for\n"
 "some info."
-msgstr "### Pare-feu et routeurs\n\nFreenet devrait fonctionner sans problème avec la plupart des routeurs, mais\nsi vous éprouvez des problèmes et si vous avez un pare-feu ou un routeur,\ncliquez [**ici**](help.html#firewall) pour obtenir infos."
+msgstr "### Pare-feu et routeurs\n\nFreenet devrait fonctionner sans problème avec la plupart des routeurs, mais\nsi vous éprouvez des problèmes et si vous avez un pare-feu ou un routeur,\ncliquez [**ici**](help.html#firewall) pour obtenir des infos."
 
 #: pages/download.py:251
 msgid ""
@@ -1983,7 +1983,7 @@ msgid ""
 "**you actually know**, whether online or offline, as adding total strangers\n"
 "harms performance and does not improve security much (they could be the bad\n"
 "guys!)."
-msgstr "### Ça tourne maintenant, que faire ?\n\nLors de sa fermeture, le programme d'installation devrait ouvrir une fenêtre\nde navigateur présentant l'assistant de première installation. Il vous permettra\nde configurer les paramètres de base, et vous pourrez ensuite commencer\nà utiliser Freenet. Vous pourrez accéder à Freenet par la suite grâce au menu\nde la zone de notification (en bas à droite de l'écran), ou en utilisant le raccourci\n« Parcourir Freenet » sur le bureau ou dans le menu Démarrer. Si cela ne fonctionne pas, accédez à [http://127.0.0.1:8888/](http://127.0.0.1:8888/)\ndans votre navigateur Web.\n\nPour une sécurité accrue, vous devriez utiliser un navigateur séparé pour\nFreenet, préférablement en mode privé. Dans Windows, le menu de la zone\nde notification essaiera si possible d'utiliser Chrome en navigation privée.\nInternet Explorer ne fonctionne pas bien avec Freenet, Firefox et Opera sont\nlargement utilisés.\n\nSi vous connaissez quelqu'un qui fait tourner Freenet, vous pouvez améliorer\nvotre sécurité tout en participant à la construction d'un réseau robuste en vous\nconnectant à son nœud. Ouvrez d'abord la [page Ajouter un ami](http://127.0.0.1:8888/addfriend/).\nVotre ami et votre devrez télécharger vos « références de nœud » respectives.\nEnvoyez-vous le fichier et ajoutez sa référence de nœud en utilisant le formulaire\nen bas de la page. Qu'en vous en aurez fait autant l'un et l'autre, le nœud\nde votre ami apparaîtra alors sur la page Amis, probablement comme\n« CONNECTÉ » ou « OCCUPÉ ». Vous pouvez définir un nom pour son\nnœud dans la page de configuration pour savoir plus facilement de\nqui\nil s'agit. N'ajoutez que des nœuds exploités par des personnes que\n« vous connaissez réellement », que cela soit en ligne ou hors ligne, car l'ajout\nde parfaits inconnus nuira aux performances et ne fera rien pour améliorer\nla sécurité (ce pourrait être des méchants !)."
+msgstr "### Ça tourne maintenant, que faire ?\n\nLors de sa fermeture, le programme d'installation devrait ouvrir une fenêtre\nde navigateur présentant l'assistant de première installation. Il vous permettra\nde configurer les paramètres de base, et vous pourrez ensuite commencer\nà utiliser Freenet. Vous pourrez accéder à Freenet par la suite grâce au menu\nde la zone de notification (en bas à droite de l'écran), ou en utilisant le raccourci\n« Parcourir Freenet » sur le bureau ou dans le menu Démarrer. Si cela ne fonctionne pas, accédez à [http://127.0.0.1:8888/](http://127.0.0.1:8888/)\ndans votre navigateur Web.\n\nPour une sécurité accrue, vous devriez utiliser un navigateur séparé pour\nFreenet, préférablement en mode privé. Dans Windows, le menu de la zone\nde notification essaiera si possible d'utiliser Chrome en navigation privée.\nInternet Explorer ne fonctionne pas bien avec Freenet, Firefox et Opera sont\nlargement utilisés.\n\nSi vous connaissez quelqu'un qui fait tourner Freenet, vous pouvez améliorer\nvotre sécurité tout en participant à la construction d'un réseau robuste en vous\nconnectant à son nœud. Ouvrez d'abord la [page Ajouter un ami](http://127.0.0.1:8888/addfriend/).\nVotre ami et vous devrez télécharger vos « références de nœud » respectives.\nEnvoyez-vous le fichier et ajoutez sa référence de nœud en utilisant le formulaire\nen bas de la page. Quand vous en aurez fait autant l'un et l'autre, le nœud\nde votre ami apparaîtra alors sur la page Amis, probablement comme\n« CONNECTÉ » ou « OCCUPÉ ». Vous pouvez définir un nom pour son\nnœud dans la page de configuration pour savoir plus facilement de\nqui\nil s'agit. N'ajoutez que des nœuds exploités par des personnes que\n« vous connaissez réellement », que cela soit en ligne ou hors ligne, car l'ajout\nde parfaits inconnus nuira aux performances et ne fera rien pour améliorer\nla sécurité (ce pourrait être des méchants !)."
 
 #: pages/download.py:277
 msgid ""
@@ -2023,7 +2023,7 @@ msgid ""
 "On 64-bit Windows, we will install a 32-bit Java Virtual Machine because of\n"
 "limitations of the [Java Service Wrapper](\n"
 "http://wrapper.tanukisoftware.org/doc/english/download.jsp)."
-msgstr "### Exigences matérielles\n\nGénéralement, un processeur d'1 GHz et 1 Go de mémoire vive devrait suffire.\nFreenet pourrait fonctionner sur des systèmes plus petits, mais il utilise\nau moins 128 Mo de mémoire vive, et à moins que le système ne fasse rien\nd'autre, il éprouvera des difficultés avec moins de 512 Mo. Cependant, le\nprocesseur est un problème moindre, et des utilisateurs font tourner Freenet\nsur des Pentium II 400 MHz ou des ATOM, bien que les téléchargements\net la navigation seraient lents.\n\nFreenet utilisera une partie de votre disque afin d'y stocker des données.\nVous pouvez définir cette taille à partir de 100 Mo, mais nous recommandons au moins 1 G0. Freenet utilise aussi de l'espace disque pour\nvos téléchargements. L'utilisation de la mémoire par Freenet est approximativement\nde 256 Mo plus 400 Ko pour chaque tranche de 2 Go du magasin de données.\n\nSur Windows 64 bits, nous installerons une machine virtuelle Java 32 bits,\nà cause des restrictions de [l'enveloppeur de service](http://wrapper.tanukisoftware.org/doc/english/download.jsp)."
+msgstr "### Exigences matérielles\n\nGénéralement, un processeur d'1 GHz et 1 Go de mémoire vive devrait suffire.\nFreenet pourrait fonctionner sur des systèmes plus petits, mais il utilise\nau moins 128 Mo de mémoire vive, et à moins que le système ne fasse rien\nd'autre, il éprouvera des difficultés avec moins de 512 Mo. Cependant, le\nprocesseur est un problème mineur, et des utilisateurs font tourner Freenet\nsur des Pentium II 400 MHz ou des ATOM, bien que les téléchargements\net la navigation seraient lents.\n\nFreenet utilisera une partie de votre disque afin d'y stocker des données.\nVous pouvez définir cette taille à partir de 100 Mo, mais nous recommandons au moins 1 G0. Freenet utilise aussi de l'espace disque pour\nvos téléchargements. L'utilisation de la mémoire par Freenet est approximativement\nde 256 Mo plus 400 Ko pour chaque tranche de 2 Go du magasin de données.\n\nSur Windows 64 bits, nous installerons une machine virtuelle Java 32 bits,\nà cause des restrictions de [l'enveloppeur de service](http://wrapper.tanukisoftware.org/doc/english/download.jsp)."
 
 #: pages/download.py:315
 msgid ""
@@ -2039,7 +2039,7 @@ msgid ""
 "by running \"update.cmd\" in the Freenet directory.\n"
 "* OS X, GNU/Linux, or other POSIX users may upgrade by running the update.sh\n"
 "shell script in the Freenet directory."
-msgstr "### La mise à niveau\n\nFreenet propose un mécanisme de mise à niveau qui utilise Freenet : il\ns'assurera d'être automatiquement à jour à partir d'autres nœuds Freenet,\net normalement, cela fonctionnera même s'il lui est impossible de les\natteindre, car ils sont trop nouveaux. Ce mécanisme est anonyme et sûr,\net nous en recommandons l'utilisation. Cependant, si quelque chose est\nsérieusement endommagé, vous pourrez mettre votre nœud à niveau manuellement\nà partir de nos serveurs :\n\n* Les utilisateurs de Windows peuvent mettre à niveau vers la version\nstable la plus récente en exécutant « update.cmd » dans le répertoire Freenet.\n* Les utilisateurs d'OS X, GNU/Linux, ou autres POSIX peuvent mettre à\nniveau en exécutant la procédure d'interpréteur de commandes « update.sh »\ndans le répertoire Freenet."
+msgstr "### La mise à niveau\n\nFreenet propose un mécanisme de mise à niveau qui utilise Freenet : il\ns'assurera d'être automatiquement à jour à partir d'autres nœuds Freenet,\net normalement, cela fonctionnera même s'il lui est impossible de les\natteindre, car ils sont trop nouveaux. Ce mécanisme est anonyme et sûr,\net nous en recommandons l'utilisation. Cependant, si quelque chose est\nsérieusement endommagé, vous pourrez mettre votre nœud à niveau manuellement\nà partir de nos serveurs :\n\n* Les utilisateurs de Windows peuvent effectuer la mise à niveau vers la version\nstable la plus récente en exécutant « update.cmd » dans le répertoire Freenet.\n* Les utilisateurs d'OS X, GNU/Linux, ou autres POSIX peuvent effectuer la mise à\nniveau en exécutant la procédure d'interpréteur de commandes « update.sh »\ndans le répertoire Freenet."
 
 #: pages/download.py:336
 msgid "Add friends (or connect to strangers)"
@@ -2173,7 +2173,7 @@ msgid ""
 "online for your content to be available, you don't need to figure out how to\n"
 "configure it safely, and most important, if you go away your site will still\n"
 "be available."
-msgstr "Il n'est pas nécessairement facile d'utiliser Internet de manière « anonyme » :\nse connecter à Facebook avec Tor n'empêche pas à Facebook de presque\ntout savoir sur vous, et se connecter à son compte de courriel Web\n(non HTTPS) avec Tor signifie que la personne exécutant le mandataire (nœud de sortie)\npeut voler le mot de passe de votre compte de courriel Web.\n\nFreenet est un réseau séparé qui fait les choses différemment, car il n'y a\npas de serveurs centraux. C'est pourquoi nous ne prenons pas en charge\nJavaScript, les scripts côté serveur, etc. sur les sitesFree : tout doit être réécrit\nafin de fonctionner sur un réseau distribué. Mais l'avantage est qu'il n'existe\npas un seul serveur que l'on pourrait obliger à divulguer vos communications confidentielles,\nou qui pourrait être éteint.\n\nDes risques persistent cependant, par exemple, parler de la ville où vous\nhabitez ou de votre fournisseur de services Internet sur un forum anonyme,\nou télécharger des fichiers que Freenet ne peut pas assembler tels que\ndes PDF ou des documents de traitement de texte (Freenet vous avertira\nle cas échéant).\nDe plus, particulièrement pour du contenu Web, il pourrait être plus simple\nde le téléverser vers Freenet que de mettre en place un serveur caché sur\nTor ; votre nœud ne doit pas rester en ligne pour que votre contenu soit\ndisponible, vous n'avez pas à trouver comment le paramétrer de façon sécuritaire,\net par-dessus tout, si vous disparaissez, votre site sera encore disponible."
+msgstr "Il n'est pas nécessairement facile d'utiliser Internet de manière « anonyme » :\nse connecter à Facebook avec Tor n'empêche pas à Facebook de presque\ntout savoir sur vous, et se connecter à son compte de courriel Web\n(non HTTPS) avec Tor signifie que la personne exécutant le mandataire (nœud de sortie)\npeut voler le mot de passe de votre compte de courriel Web.\n\nFreenet est un réseau séparé qui fait les choses différemment, car il n'y a\npas de serveurs centraux. C'est pourquoi nous ne prenons pas en charge\nJavaScript, les scripts côté serveur, etc. sur les sitesFree : tout doit être réécrit\nafin de fonctionner sur un réseau distribué. Mais l'avantage est qu'il n'existe\npas un seul serveur que l'on pourrait obliger à divulguer vos communications confidentielles,\nou qui pourrait être éteint.\n\nDes risques persistent cependant, par exemple, parler de la ville où vous\nhabitez ou de votre fournisseur d'accès Internet sur un forum anonyme,\nou télécharger des fichiers que Freenet ne peut pas assembler tels que\ndes PDF ou des documents de traitement de texte (Freenet vous avertira\nle cas échéant).\nDe plus, particulièrement pour du contenu Web, il pourrait être plus simple\nde le téléverser vers Freenet que de mettre en place un serveur caché sur\nTor ; votre nœud ne doit pas rester en ligne pour que votre contenu soit\ndisponible, vous n'avez pas à trouver comment le paramétrer de façon sécuritaire,\net par-dessus tout, si vous disparaissez, votre site sera encore disponible."
 
 #: pages/help.py:124
 msgid ""
@@ -2190,7 +2190,7 @@ msgid ""
 "bridges can be harvested and blocked with moderate effort.\n"
 "* Is somewhat centralised\n"
 "* Is more mature and has more users and developers"
-msgstr "### Résumé :\n\nTor (ou I2P):\n\n* Vous permet d'accéder à Internet (mais soyez prudent !)\n* Vous permet d'accéder à des serveurs Web anonymes et à d'autres services\n* Vous permet d'héberger des serveurs Web anonymes, qui doivent toujours\nêtre en ligne, peuvent subir des attaques par déni de service, et peuvent exécuter\nn'importe quel contenu dynamique ou coté serveur\n* Fournit un anonymat raisonnable\n* A été bloqué par plusieurs pays, avec plus ou moins de succès. Même ces\nponts cachés peuvent être récoltés et bloqués avec un effort modéré\n* Est centralisé dans une certaine mesure\n* Est plus mature, et a plus d'utilisateurs et de développeurs"
+msgstr "### Résumé :\n\nTor (ou I2P):\n\n* Vous permet d'accéder à Internet (mais soyez prudent !)\n* Vous permet d'accéder à des serveurs Web anonymes et à d'autres services\n* Vous permet d'héberger des serveurs Web anonymes, qui doivent toujours\nêtre en ligne, peuvent subir des attaques par déni de service, et peuvent exécuter\nn'importe quel contenu dynamique ou coté serveur\n* Fournit un anonymat raisonnable\n* A été bloqué par plusieurs pays, avec plus ou moins de succès. Même ces\nponts cachés peuvent être moissonnés et bloqués avec un effort modéré\n* Est centralisé dans une certaine mesure\n* Est plus mature, et a plus d'utilisateurs et de développeurs"
 
 #: pages/help.py:138
 msgid ""
@@ -2369,7 +2369,7 @@ msgid ""
 "block all peer to peer networks along with other content, and many corporate\n"
 "or academic networks may block Freenet (but even if they don't, see\n"
 "[you shouldn't run Freenet at work](#trouble) for non-work purposes!)."
-msgstr ""
+msgstr "Le pare-feu national chinois (bouclier d'or) bloque notre site Web depuis\ndes années, et il a été observé en 2005 qu'il bloquait aussi le protocole 0.5.\nCela laisse à penser que la Chine ne nous aime pas, et soyez donc prudent si vous utilisez Freenet en Chine. D'autres pays (p. ex. la France) sont\nreconnus pour leur hostilité envers le pair-à-pair, et pourraient un jour forcer\nles FAI à bloquer les réseaux pair-à-pair (mais pour l'instant, Freenet fonctionne\ntrès bien en France et nous avons de nombreux utilisateurs français !).\n\nTechniquement parlant, Freenet 0.7 n'incluait que des défenses minimes contre\nle blocage ; le protocole est assez difficile à identifier (nous travaillons sur\ndes [« greffons de transport »](https://wiki.freenetproject.org/Transport_plugins), qui devraient\n[rendre la détection de Freenet beaucoup plus difficile](https://fr.wikipedia.org/wiki/St%C3%A9ganographie).\nFreenet prend en charge un mode [réseau invisible](https://wiki.freenetproject.org/Darknet) (c.-à-d. ne se connectant qu'à\nvos amis) qui rend le moissonnage et le blocage des nœuds très difficiles.\nIl est à noter que de nombreux fournisseurs d'accès Internet mobile bloquent\ntous les réseaux pair-à-pair, ainsi que d'autres contenus, et que de nombreux\nréseaux d'entreprise et scolaires pourraient bloquer Freenet (et même s'ils\nne le font pas, consultez [vous ne devriez pas utiliser Freenet au travail](#trouble) pour des fins\nnon professionnelles !)."
 
 #: pages/help.py:251
 msgid ""
@@ -2390,7 +2390,7 @@ msgid ""
 "See [net neutrality](http://en.wikipedia.org/wiki/Network_neutrality) and\n"
 "[the EFF](https://www.eff.org/) or equivalent organisations in your country for\n"
 "the politics of all this and how you can stop such laws."
-msgstr ""
+msgstr "Il a été question aux États-Unis et au Royaume-Uni de lois exigeant des\nportes dérobées et apparemment de bloquer tout ce qui n'en a pas. Il y a\npeu de chance qu'elles soit adoptéeés, particulièrement aux É.-U.  où des lois\nsemblables ont été proposées régulièrement, lois qui seraient probablement\ninconstitutionnelles. Cependant, même si le gouvernement nous approchait\net nous demandait une porte dérobée, nous ne pourrions légalement\npas distribuer une version contenant un cheval de Troie, car Freenet est à\ncode source ouvert, que de nombreuses personnes ont contribué au code,\net que légalement nous devons vous remettre le code, incluant celui de toute\nporte dérobée rendue obligatoire par le gouvernement - ce qui ne resterait\npas secret pour longtemps ! Si cela arrivait, il est probable que [Freenet Project Incorporated](donate.html),\nl'organisme sans but lucratif qui dirige ce site Web et gère les dons, fermerait\nses portes. Mais le réseau Freenet même continuerait de vivre, la seule différence\nserait alors de ne pas pouvoir rémunérer les développeurs à temps plein aussi facilement.\n\nConsulter [neutralité du réseau](https://fr.wikipedia.org/wiki/Neutralit%C3%A9_du_r%C3%A9seau) et\n[l'EFF](https://www.eff.org/) ou tout organisme équivalent dans votre pays\nqui pourrait vous renseigner sur l'aspect politique de tout cela, et sur\ncomment\nbloquer de telles lois."
 
 #: pages/help.py:270
 msgid "Can I get trouble if I run a node?"
@@ -2457,7 +2457,7 @@ msgid ""
 "Your instance of Freenet will likely have very few encrypted pieces of a given file, if any.\n"
 "These pieces cannot be used as parts of the file they were made from without additional information.\n"
 "Reassembling a file requires knowing both what pieces to use and the key to decrypt them, neither of which is included with each piece."
-msgstr "C'est malheureusement un problème auquel n'importe quel outil de résistance à la censure est confronté. Si la possibilité de supprimer du contenu existait,  elle ne pourrait être utilisée que pour retirer des éléments que quelqu'un trouverait dérangeants, mais elle pourrait être utilisée pour retirer n'importe quoi.\nD'un point de vue technologique, il ne peut y avoir de résistance à la censure avec des exceptions.\nFreenet est tout simplement un outil qui, en lui même, ne fait rien pour promouvoir du contenu offensif.\nLes gens sont seuls responsables de la manière dont ils choisissent d'utiliser l'outil.\nEn tant que support de communication, Freenet ne peut pas être tenu responsable de l'utilisation qu'en font les gens, comme les fournisseurs de services Internet, les compagnies de télécommunication ou les services postaux ne peuvent pas non plus être tenus responsables.\n\nIl faut comprendre que les fichiers sont chiffrés et divisés en morceaux.\nIls ne sont pas entièrement stockés sur votre machine.\nVotre installation de Freenet ne détiendra en toute vraisemblance que très peu de morceaux chiffrés d'un fichier donné, si elle en détient.\nCes morceaux ne peuvent pas être utilisés comme parties du fichier dont ils proviennent, sans informations complémentaires.\nPour assembler un ficher de nouveau, il faut savoir quels morceaux utiliser et connaître la clé pour les déchiffrer. Aucune de ces informations n'est incluse dans chaque morceau."
+msgstr "C'est malheureusement un problème auquel n'importe quel outil de résistance à la censure est confronté. Si la possibilité de supprimer du contenu existait,  elle ne pourrait être utilisée que pour retirer des éléments que quelqu'un trouverait dérangeants, mais elle pourrait être utilisée pour retirer n'importe quoi.\nD'un point de vue technologique, il ne peut y avoir de résistance à la censure avec des exceptions.\nFreenet est tout simplement un outil qui, en lui même, ne fait rien pour promouvoir du contenu offensif.\nLes gens sont seuls responsables de la manière dont ils choisissent d'utiliser l'outil.\nEn tant que support de communication, Freenet ne peut pas être tenu responsable de l'utilisation qu'en font les gens, comme les fournisseurs d'accès Internet, les compagnies de télécommunication ou les services postaux ne peuvent pas non plus être tenus responsables.\n\nIl faut comprendre que les fichiers sont chiffrés et divisés en morceaux.\nIls ne sont pas entièrement stockés sur votre machine.\nVotre installation de Freenet ne détiendra en toute vraisemblance que très peu de morceaux chiffrés d'un fichier donné, si elle en détient.\nCes morceaux ne peuvent pas être utilisés comme parties du fichier dont ils proviennent, sans informations complémentaires.\nPour assembler un ficher de nouveau, il faut savoir quels morceaux utiliser et connaître la clé pour les déchiffrer. Aucune de ces informations n'est incluse dans chaque morceau."
 
 #: pages/help.py:311
 msgid "How about encryption export restrictions?"
@@ -2472,7 +2472,7 @@ msgid ""
 "available on the JVM that runs Freenet; you should install the Unlimited\n"
 "Strength Policy Files for Java if possible to improve performance. Freenet\n"
 "will however work even without this, by using its built-in encryption code."
-msgstr ""
+msgstr "Le projet Freenet a informé les autorités étatsuniennes qu'il exportera de\nla cryptographie. Tant que votre pays n'interdit pas l'utilisation du chiffrement,\nvous ne risquez rien. De plus, les lois d'exportation présentent maintenant\nune exception pour les logiciels qui font exactement ce que Freenet fait !\nCependant, Oracle limite la puissance de chiffrement proposée par la JVM\nqui exécute Freenet ; vous devriez si possible installer les fichiers de puissance illimitée\npour Java (Unlimited Strength Policy Files) afin d'améliorer les performances.\nFreenet fonctionnera malgré tout sans ces fichiers, en utilisant son propre\ncode de chiffrement."
 
 #: pages/help.py:320
 msgid ""
