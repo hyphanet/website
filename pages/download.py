@@ -291,7 +291,7 @@ If you have problems installing or running Freenet, please see the [knowledge ba
 """) + """
 
 [kb_url]: https://freenetproject.tenderapp.com/kb
-[faq_url]: help.html#faq
+[faq_url]: https://wiki.freenetproject.org/FAQ
 [chat_url]: help.html#irc
 [ml_url]: help.html#mailing-lists
 
