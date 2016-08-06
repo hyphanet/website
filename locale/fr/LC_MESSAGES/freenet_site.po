@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: Freenet\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-07-23 12:14-0400\n"
-"PO-Revision-Date: 2016-07-28 18:48+0000\n"
+"PO-Revision-Date: 2016-08-05 18:31+0000\n"
 "Last-Translator: French language coordinator <yahoe.001@gmail.com>\n"
 "Language-Team: French (http://www.transifex.com/otf/freenet/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -2556,7 +2556,7 @@ msgstr "Oui, il existe quelques mécanismes de recherche différents. Pour effec
 
 #: pages/help.py:370
 msgid "How do I get Freenet working with a Firewall/NAT?"
-msgstr "Comment puis-je faire fonctionner Freenet avec un pare-feu/une traduction d'adresse ?"
+msgstr "Comment puis-je faire fonctionner Freenet avec un pare-feu/une traduction d'adresses réseau ?"
 
 #: pages/help.py:370
 msgid ""
@@ -2576,7 +2576,7 @@ msgid ""
 "settings config page](http://127.0.0.1:8888/config/node?mode=2) (in advanced\n"
 "mode), and find the option \"IP address override\". Put your domain name in\n"
 "that box, and apply the settings."
-msgstr ""
+msgstr "Essentiellement, Freenet devrait juste fonctionner avec une traduction d'adresses réseau.\nCependant, vous devriez réacheminer les ports manuellement si vous le pouvez.\nCliquez sur la page [Connectivité](http://127.0.0.1:8888/connectivity/). En\nhaut, vous trouverez une liste des ports utilisés par le nœud. Vous devriez\nréacheminer (pour UDP) les ports FNP - réseau invisible et FNP - réseau ouvert.\nVous aurez peut-être à consulter la documentation de votre routeur pour\ntrouver comment faire. Freenet devrait les avoir réacheminés grâce au \n[« Universal Plug and Play »](\nhttps://fr.wikipedia.org/wiki/Universal_Plug_and_Play),\nmais cela ne fonctionne pas toujours (et ça ne fonctionne jamais si le greffon\nUPnP n'est pas chargé, ou si votre routeur est derrière un autre routeur).\n\nSi vous avez une adresse dyndns ou un nom de domaine qui renvoie vers\nl'ordinateur sur lequel vous exécutez votre nœud Freenet, informez-en le\nnœud.\nAllez à la [page de configuration des paramètres de base](\nhttp://127.0.0.1:8888/config/node?mode=2)\n(dans le mode avancé), et trouvez l'option « Adresse IP forcée ». Saisissez\nvotre adresse IP dans cette boîte et appliquez les paramètres."
 
 #: pages/help.py:388
 msgid "Do I need a permanent Internet connection to run a node?"
@@ -2589,7 +2589,7 @@ msgid ""
 "whole to be most useful, we will need as many permanent nodes as possible (\n"
 "most cable modem or DSL setups are sufficiently \"permanent\" for this). A\n"
 "later version of Freenet may take better advantage of transient nodes."
-msgstr ""
+msgstr "Non, mais cela est préférable. Vous pouvez exécuter le logiciel et le tester\nà partir d'une connexion « transitoire » (p. ex. liaison commutée/modem mobile),\nmais pour que le réseau dans son ensemble soit le plus utile, nous aurons\nbesoin d'autant de nœuds permanents que possible (la plupart des modems câble\nou des configurations xDSL sont suffisamment « permanents » pour cela.)\nUne version ultérieure de Freenet tirera peut-être meilleur parti des nœuds transitoires."
 
 #: pages/help.py:395
 msgid "Why does Freenet only download 1 or 2 files at a time?"
@@ -2635,7 +2635,7 @@ msgid ""
 "didn't upload the file/site in the first place. Improvements are planned,\n"
 "such as a special kind of request that allows us to probe whether a file is\n"
 "available from a random point on the network."
-msgstr ""
+msgstr "Parce que nous ne trouvons pas de façon de le faire sans compromettre\nles autres objectifs de Freenet. Par exemple, on nous suggère souvent que\nle nœud de quelqu'un pourrait juste ne jamais abandonner les données que\ncet utilisateur voudrait mettre en cache de façon permanente. Cela ne fonctionnerait\ncependant pas, car même si les données sont encore accessibles sur le nœud en question, il est impossible de garantir que si ces données étaient\ndemandées, ces requêtes seraient acheminées vers ce nœud. Nous avons étudié bien d'autres possibilités qui permettraient à Freenet de stocker\ndes données de manière permanente, mais soit elles ne fonctionneraient pas,\nsoit elles compromettraient les objectifs de base de Freenet, à savoir l'anonymat\net l'extensibilité.\n\nUn contenu populaire devrait persister indéfiniment. Par exemple, la plupart\ndes sitesFree accessibles à partir des index principaux sont encore récupérables\ndes années plus tard (du moins, leur page d'accueil l'est). Si le contenu n'est\npas très populaire, la meilleure façon de le garder accessible est de le réinsérer\n(retéléverser). Une option intéressante est le greffon « keepalive » qui le fera\npour vous, même si vous n'avez pas téléversé le fichier/site en premier lieu.\nDes améliorations sont prévues, telles qu'un type spécial de requête qui\nnous permettrait de vérifier si un fichier est accessible d'un point aléatoire\nsur le réseau."
 
 #: pages/help.py:433
 msgid "Why is Freenet implemented in Java?"
@@ -2693,7 +2693,7 @@ msgid ""
 "\n"
 "`fproxy.allowedHostsFullAccess=127.0.0.1,192.168.1.0/24  \n"
 "`"
-msgstr ""
+msgstr "Si vous voulez que tout le monde puisse utiliser votre nœud, les options suivantes\ns'offrent à vous :\n\n\n*   Aller sur le [page de configuration de l'interface Web](http://127.0.0.1:8888/config/fproxy) et activer le mode avancé\n*   Stopper votre nœud et modifier manuellement freenet.ini\n\nDans les deux cas, les paramètres suivants seront à modifier :\n\n`fproxy.bindTo=0.0.0.0  \nfproxy.allowedHosts=*  \n`\n\nBien sûr, cela ouvrira complètement votre nœud, à moins que nous ne contrôliez\nl'accès par le biais de quelque pare-feu. Si vous préférez utiliser le contrôle d'accès\nintégré de Freenet, vous pouvez alors utiliser des lignes telles que :\n\n`fproxy.bindTo=0.0.0.0  \nfproxy.allowedHosts=127.0.0.1,192.168.1.0/24  \n`\n\nOu même (trouvez votre adresse IP avec ipconfig/ifconfig/winipcfg et substituez-la\nà 192.168.1.1) :\n\n`fproxy.bindTo=127.0.0.1,192.168.1.1  \nfproxy.allowedHosts=127.0.0.1,192.168.1.0/24  \n`\n\nEt si vous voulez octroyer un accès complet (c.-à-d. modifier les paramètres\nde configuration, redémarrer, etc.) au nœud (AVERTISSEMENT : faites très\nattention à qui vous donner un accès complet à fproxy !) :\n\n`fproxy.allowedHostsFullAccess=127.0.0.1,192.168.1.0/24 \n `"
 
 #: pages/help.py:478
 msgid "What's new? Is there a changelog?"
@@ -2709,7 +2709,7 @@ msgid ""
 "web, e.g. [toad](http://amphibian.dyndns.org/flogmirror/)), but be warned\n"
 "they are often not regularly updated and frequently go off on rants on\n"
 "unrelated topics!"
-msgstr ""
+msgstr "Pour chaque nouvelle version, un résumé de tous les changements\nprincipaux est publié dans les listes support et devl, et sur le tableau eng.freenet\nde Freetalk. Il est habituellement aussi relayé vers FMS et Frost. Autrement,\npour un portrait beaucoup plus détaillé, rendez-vous sur les [dépôt Git](\nhttps://github.com/freenet/). Vous devriez aussi consulter les blogues des\ndéveloppeurs (à partir des signets par défaut, ou par le Web, p. ex. [toad](\nhttp://amphibian.dyndns.org/flogmirror/)), mais soyez averti que souvent ils\nne sont pas mis à jour régulièrement et qu'ils présentent fréquemment de\nlongues diatribes sur des sujets sans rapport !"
 
 #: pages/help.py:488
 msgid ""
@@ -2747,7 +2747,7 @@ msgid ""
 "you can wipe your downloads and uploads and the client cache by securely\n"
 "deleting the file master.keys. See [the question on private data and local\n"
 "security](#privatedata) for more information."
-msgstr ""
+msgstr "Le mot de passe protège vos téléchargements, vos téléversements et le\ncache du client (mise en cache de vos navigations récentes sur Freenet). Il\nest stocké dans le fichier master.keys. Il est impossible de récupérer le\nmot de passe, mais si vous l'oubliez, vous pouvez purger vos téléchargements,\nvos téléversements et le cache du client en supprimant de façon sécuritaire\nle fichier master.keys. Consulter [la question sur les données personnelles et la sécurité locale](\n#privatedata) pour plus de détails."
 
 #: pages/help.py:507
 msgid "Freenet keeps complaining about clock skew"
