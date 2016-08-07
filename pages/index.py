@@ -41,11 +41,6 @@ class HomeSection(Section):
                 </div>
             </div>
         </div>
-                        <div class="social">
-                        <a href="https://twitter.com/freenetproject" class="btn button-custom btn-custom-one" ><i class="fa fa-twitter"></i></a>
-                        <a href="https://github.com/freenet/fred" class="btn button-custom btn-custom-one" ><i class="fa fa-github "></i></a>
-                        </div>
-
     </div>
 </section>
 <!--HOME SECTION END-->
