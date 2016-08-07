@@ -10,66 +10,6 @@ class HomeSection(Section):
         self.title = ""
 
     def generate(self):
-        def slider_item(title, text, active=""):
-            template = """
-    <div class="item $str__active">
-        <h3>$str__title</h3>
-        $md__text
-    </div>
-    """
-            return substitute_html(template,
-                str__title=title,
-                md__text=md(text),
-                str__active=active)
-
-        sliders = [
-            # Slider items copyright Gerard Krol, licensed GFDL/CC-BY-SA 4.0/GPLv2+
-            slider_item(_("Share, Chat, Browse. Anonymously."), _("""
-Freenet is a platform for censorship-resistant communication and publishing.
-It helps you to remain anonymous, and communicate without fear.
-""") + "\n\n" + """<span class="hidden-xs">""" + _("""
-*'Daddy, where were you when they took freedom of the press away from the Internet?'*
-— Mike Godwin ([read more](about.html))
-""") + """</span>""", "active"),
-            slider_item(_("Host a Website"), _("""
-Need a website nobody can take over? That is hosted for free? That is very
-resistant to attacks? Publish it on Freenet!
-""") + "\n\n" + """<br /><span class="hidden-xs hidden-sm">""" + _("""
-*'Now the Mempo repository can not be censored, DDoSed or taken offline, despite having just one tiny server.'* — rfree in [apt-get over Freenet](news.html#20150105)
-""") + """</span>"""),
-            slider_item(_("Share Files"), _("""
-Upload a file to Freenet and anyone with the secret URL can access it.
-""") + "\n\n" + _("""
-*[follow the blue rabbit
-through the looking glass](download.html#autostart)*
-""")),
-            slider_item(_("Meet New People"), _("""
-People from all over the world use Freenet to communicate. Some of them do so
-anonymously. You might never hear their voices in the open.
-""") + "\n\n" + """<span class="hidden-xs">""" + _("""
-*'The value of publishing is not me wanting you to watch. The value of publishing is you wanting to see what I provide.'* — A.B.
-""") + """</span>"""),
-            slider_item(_("Experiment with Exciting New Technology"), _("""
-Freenet is on the cutting edge of distributed routing research. The data
-storage provided by Freenet is a proving ground for a number of new
-distributed systems. ([Papers](about.html#papers))
-""") + "\n\n" + """<span class="hidden-xs hidden-sm">""" + _("""
-*'A decentralized anonymous datastore with real censorship resistance, no central authority and long lifetime only for information which people actually use.'* — [The forgotten Cryptopunk Paradise](http://draketo.de/english/freenet/forgotten-cryptopunk-paradise)
-""") + """</span>"""),
-            slider_item(_("Improve the World"), _("""
-By using Freenet from the "free world" you help people in oppressive regimes
-share information. The more people use Freenet the easier it will be to
-obtain.""") + "\n\n" + """<span class="hidden-xs hidden-sm">""" + _("""
-If one percent of people used Freenet, everyone could safely be a whistleblower.
-""") + """</span>"""),
-            slider_item(_("Join us in Freenet"), """<span class="visible-xs">""" + _("""
-*'Daddy, where were you when they took freedom of the press away from the Internet?'*
-— Mike Godwin ([read more](about.html))
-""") + """</span>""" + """<span class="hidden-xs">""" + _("""
-*'Many years passed, two towers fell, the empire expanded its hunt for rebels all over the globe, and now, as the empire’s grip has become so horrid that even the most loyal servants of the emperors turn and expose their dark secrets, Freenet is still moving forward.'*
-— [The forgotten Cryptopunk Paradise](http://draketo.de/english/freenet/forgotten-cryptopunk-paradise)
-""") + """</span>"""),
-        ]
         content = """
 <!--HOME SECTION START-->
 <section id="home">
@@ -93,55 +33,19 @@ If one percent of people used Freenet, everyone could safely be a whistleblower.
                         $md__mission
                     </div>
                     <div id="home-download" class="download">
-                        <!-- FIXME: become social
-                        <div class="social">
-                        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-facebook "></i></a>
-                        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-google-plus "></i></a>
-                        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-linkedin "></i></a>
-                        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-pinterest "></i></a>
-                        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-github "></i></a>
-                        </div>
-                        -->
                         <a href="download.html#autostart" class=" btn button-custom btn-custom-two">
                             <i class="icon ion-arrow-down-a"></i>
                             $str__download_text
                         </a>
                     </div>
                 </div>
-                <div class="row">
-                    <div id="carousel-slider">
-                        <div class="carousel-inner">
-                            $html__sliders
+            </div>
+        </div>
+                        <div class="social">
+                        <a href="https://twitter.com/freenetproject" class="btn button-custom btn-custom-one" ><i class="fa fa-twitter"></i></a>
+                        <a href="https://github.com/freenet/fred" class="btn button-custom btn-custom-one" ><i class="fa fa-github "></i></a>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <!--DONATE SUBSECTION -->
-            <div class="col-sm-12 col-md-12 col-lg-12">
-                <div class="item active donate" id="donate_button">
-                     $md__donate_text
-                     <div class="meter blue" id="donate_bar_small">
-                         <div class="quantity" style="left: 15px;">$$MONEYBALANCE</div>
-                         <div class="quantity" style="right: 15px;">$$$str__donation_target</div>
-                         <span style="width: 100%)">
-                         </span>
-                     </div>
-                     <script type="text/javascript">
-                         fund_percentage = (MONEYBALANCE / $str__donation_target);
-                         if(fund_percentage <= 1/3) {
-                             donate_bar = document.getElementById("donate_bar_small");
-                             donate_bar.className = "meter red";
-                         }
-                     </script>
-                     <a class="btn button-custom btn-custom-two donate-button" href="donate.html">$str__donate_button_text</a>
-                     <p id="donate_fineprint">$str__nonprofit $str__tax_deductable $str__503_read_more</p>
-                </div>
-            </div>
-            <!-- DONATE SUBSECTION END -->
-        </div>
+
     </div>
 </section>
 <!--HOME SECTION END-->
@@ -151,8 +55,8 @@ Leap over censorship<br>
 Escape total surveillance
 """))
         mission = md(_("""
-Freenet re-establishes freedom of speech on the Internet.<br>
-Install Freenet and join the peer-to-peer network today!
+Freenet is a peer-to-peer platform for censorship-resistant communication and publishing.
+Browse websites, post on forums, and publish files within Freenet with strong privacy protections.
 """))
         download_text = _("Download Freenet")
         read_more = """<a href="{}" class="readmore">""" + _("""read more…""") + """</a>"""
@@ -164,7 +68,6 @@ Install Freenet and join the peer-to-peer network today!
         return substitute_html(content,
             md__slogan=slogan,
             md__mission=mission,
-            html__sliders=concat_html(sliders),
             str__download_text=download_text,
             md__donate_text=donate_text,
             str__donate_button_text=donate_button_text,
@@ -228,23 +131,10 @@ class ServiceSection(Section):
         content = """
 <!-- service start -->
 <div class="row">
-    <div class="col-sm-12 col-md-12 col-lg-12" style="text-align: center">
-        $md__whatis_text
-    </div>
     $html__services
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="text-align: center">
         <div class="download">
         <p>$str__tagline</p>
-        <!-- FIXME: become social
-        <div class="social">
-        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-facebook "></i></a>
-        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-twitter"></i></a>
-        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-google-plus "></i></a>
-        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-linkedin "></i></a>
-        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-pinterest "></i></a>
-        <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-github "></i></a>
-        </div>
-        -->
         <a href="download.html#autostart" class=" btn button-custom btn-custom-two">
             <i class="icon ion-arrow-down-a"></i>
             $str__download_text
@@ -257,7 +147,6 @@ class ServiceSection(Section):
         tagline = _("Share, Chat, Browse. Anonymously.")
         download_text = _("Download Freenet")
         return substitute_html(content,
-            md__whatis_text=md(_("Freenet is a peer-to-peer network for censorship-resistant communication.")),
             html__services=concat_html(services),
             str__tagline=tagline,
             str__download_text=download_text)
@@ -268,11 +157,16 @@ class NewsSection(Section):
         self.title = _("Latest News")
     def get_content(self):
         # we show the most recent news items
+        content = """
+<div class="news-wrapper">
+$md__items
+</div>
+"""
         md_content = ""
         news_items = news.news_items()
         for item in news_items[:min(5, len(news_items))]:
             md_content += item.markdown_link() + "\n\n"
-        return text(md(md_content))
+        return substitute_html(content, md__items=md(md_content))
 
 class IndexPage(Page):
     def __init__(self):
