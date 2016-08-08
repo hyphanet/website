@@ -15,13 +15,7 @@ class HomeSection(Section):
 <section id="home">
     <div class="container">
         <div class="row text-center">
-            <div class="col-sm-2 col-md-2 col-lg-2 hidden-xs">
-                <div class="item active sidebar" id="suma_award_notice">
-                    <p><a href="news.html#20150211"><img src="assets/img/suma2015_badge_transparent_3.png" alt="SUMA Award 2014/15" /></a></p>
-                </div>
-            </div>
-
-            <div class="col-sm-8 col-md-8 col-lg-8">
+            <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
                 <div class="row">
                     <div id="home-logo">
                         <img src="assets/img/rabbit/freenet-bunny-with-name-flying.png" alt="Freenet Logo, leap over censorship"/><br />
