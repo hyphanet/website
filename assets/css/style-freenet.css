@@ -142,6 +142,10 @@ color: #fff;
 background-color: transparent;
 }
 
+.btn-custom-large {
+font-size: 130%;
+}
+
 
 /* =============================================================
 MENU SECTION STYLES
