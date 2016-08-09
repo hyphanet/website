@@ -286,14 +286,6 @@ margin-left: 20px;
 margin-right: 20px;
 }
 
-/*Hide Suma-award notice on small screens*/
-@media screen and (max-width: 767px) {
-  #suma_award_notice {
-          visibility: hidden;
-          height: 0px;
-  }
-}
-
 /*Main Logo*/
 #home-logo {
     margin-top: 2em;
