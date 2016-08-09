@@ -27,7 +27,7 @@ class HomeSection(Section):
                         $md__mission
                     </div>
                     <div id="home-download" class="download">
-                        <a href="download.html#autostart" class=" btn button-custom btn-custom-two">
+                        <a href="download.html#autostart" class=" btn button-custom btn-custom-two btn-custom-large">
                             <i class="icon ion-arrow-down-a"></i>
                             $str__download_text
                         </a>
@@ -124,7 +124,7 @@ class ServiceSection(Section):
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="text-align: center">
         <div class="download">
         <p>$str__tagline</p>
-        <a href="download.html#autostart" class=" btn button-custom btn-custom-two">
+        <a href="download.html#autostart" class=" btn button-custom btn-custom-two btn-custom-large">
             <i class="icon ion-arrow-down-a"></i>
             $str__download_text
         </a>
