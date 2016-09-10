@@ -431,9 +431,9 @@ such as a special kind of request that allows us to probe whether a file is
 available from a random point on the network.
 """)),
                     FaqItem("why-java", _("Why is Freenet implemented in Java?"), _("""
-Opinions differ about the choice of java for the reference implementation of
+Opinions differ about the choice of Java for the reference implementation of
 Freenet (even among the core developers). [Ian Clarke](about.html#people) and
-several other developers are java proponents and the choice for java was
+several other developers are Java proponents and the choice for Java was
 made. Even if everybody could be convinced to switch to a different language
 reimplementing the current Freenet protocol would be quite a big task,
 and take up a significant amount of time, while there is only a limited
