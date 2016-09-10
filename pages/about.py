@@ -93,7 +93,7 @@ share the views outlined in this document; some share variations of these views,
 which are also served by what we are trying to achieve; and some just enjoy the
 technical challenge. These are the ideas which motivated me to architect the
 system in the first place, but not necessarily the views that everyone involved
-in the Freenet project holds.
+in the Freenet Project holds.
 """)),
 paragraph("prior_reading", _("""
 ### 2\. Suggested prior reading
@@ -278,7 +278,7 @@ and stability of the network.
 """) + "\n\n" + _("""
 ### Oskar Sandberg
 
-Oskar was also one of the earliest contributors to the Freenet project,
+Oskar was also one of the earliest contributors to the Freenet Project,
 and has made some important theoretical breakthroughs that lead to the
 beginning of Freenet 0.7, see the papers page.
 """) + "\n\n" + _("""
@@ -409,7 +409,7 @@ Robert has helped improve the speed and security of Freenet by finding two
 """) + "\n\n" + _("""
 ### David Sowder
 
-David (Zothar) has helped the Freenet project as time permits and interest
+David (Zothar) has helped the Freenet Project as time permits and interest
 directs, including configuration, statistics and peer management via FCP,
 the FProxy stats page and Node 2 Node Messages (N2NM/N2NTMs).
 

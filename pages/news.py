@@ -706,7 +706,7 @@ Because this is such a large release new installers for build 1467 will be relea
 """)),
         NewsItem("20150314", _("2015-03-14 - Freenet translation joins Localization Lab"),
                  _("""
-The Freenet project has joined the [Localization Lab](http://www.localizationlab.org) organization on Transifex. This allows a larger team of translators, translating into more languages, and access to paid support.
+The Freenet Project has joined the [Localization Lab](http://www.localizationlab.org) organization on Transifex. This allows a larger team of translators, translating into more languages, and access to paid support.
 
 If this transition has caused any problems please let us know!
 """)),

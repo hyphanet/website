@@ -360,7 +360,7 @@ class KeyringSection(Section):
         self.slug = "keyring"
         self.title = _("Verifying Signatures")
     def get_content(self):
-        return text(md(_("""Download the [Freenet project signing keys][url_keyring] and import them into your keyring:""") + """
+        return text(md(_("""Download the [Freenet Project signing keys][url_keyring] and import them into your keyring:""") + """
 
         pub   2048R/7AA9C2A3 2013-04-29
               Key fingerprint = DBB7 7338 3BC3 49C9 5203  ED91 EAC5 EBF0 7AA9 C2A3
