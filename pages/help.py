@@ -1028,8 +1028,8 @@ forgot it.)_
   This list is for active developers to discuss bugs, and the implementation
   of near-term new features.
 
-_**Third party tools**: We are hosting some other mailing lists on our server
-here is the [full list][url_listinfo]._
+_**Third party tools**: We are hosting some other mailing lists on our server.
+Here is the [full list][url_listinfo]._
 """) + "\n\n" + """
 [url_listinfo]: https://emu.freenetproject.org/cgi-bin/mailman/listinfo/
 """))
