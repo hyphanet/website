@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Freenet\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-23 12:14-0400\n"
-"PO-Revision-Date: 2016-07-23 22:48+0000\n"
+"POT-Creation-Date: 2016-08-09 07:08-0400\n"
+"PO-Revision-Date: 2016-08-09 20:36+0000\n"
 "Last-Translator: strel\n"
 "Language-Team: Spanish (http://www.transifex.com/otf/freenet/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: pages/about.py:11 pages/help.py:52 pages/index.py:181
+#: pages/about.py:11 pages/help.py:52 pages/index.py:73
 msgid "What is Freenet?"
 msgstr "¿Qué es Freenet?"
 
@@ -1806,7 +1806,7 @@ msgid ""
 "Download and run [the installer](assets/jnlp/FreenetInstaller.exe)\n"
 msgstr "### Windows\n\nDescargue e instale [el instalador](assets/jnlp/FreenetInstaller.exe)\n"
 
-#: pages/download.py:123 pages/index.py:157 pages/index.py:258
+#: pages/download.py:123 pages/index.py:50 pages/index.py:137
 msgid "Download Freenet"
 msgstr "Descargar Freenet"
 
@@ -3465,228 +3465,122 @@ msgstr "Instalar"
 msgid "Help"
 msgstr "Ayuda"
 
-#: pages/index.py:27 pages/index.py:257
-msgid "Share, Chat, Browse. Anonymously."
-msgstr "Comparta, Converse, Navegue. Anonimamente."
-
-#: pages/index.py:27
-msgid ""
-"Freenet is a platform for censorship-resistant communication and publishing.\n"
-"It helps you to remain anonymous, and communicate without fear."
-msgstr "Freenet es una plataforma para comunicación y publicación resistente a la censura.\nEsta ayuda a mantenerse anonimo, y comunicarse sin miedo."
-
-#: pages/index.py:30 pages/index.py:65
-msgid ""
-"*'Daddy, where were you when they took freedom of the press away from the Internet?'*\n"
-"— Mike Godwin ([read more](about.html))"
-msgstr "*'Papi, ¿dónde estabas tú cuando arrebataron la libertad de prensa de Internet?'*\n— Mike Godwin ([leer más](about.html))"
-
-#: pages/index.py:34
-msgid "Host a Website"
-msgstr "Publicar una página"
-
-#: pages/index.py:34
-msgid ""
-"Need a website nobody can take over? That is hosted for free? That is very\n"
-"resistant to attacks? Publish it on Freenet!"
-msgstr "¿Necesita un sitio web del que nadie pueda apoderarse, que esté alojado de forma gratuita, y que sea resistente a los ataques? ¡Publíquelo en Freenet!"
-
-#: pages/index.py:37
-msgid ""
-"*'Now the Mempo repository can not be censored, DDoSed or taken offline, "
-"despite having just one tiny server.'* — rfree in [apt-get over "
-"Freenet](news.html#20150105)"
-msgstr "*'El repositorio Mempo ahora no puede ser censurado, saturado por un ataque DDoS o desconectado, a pesar de tener sólo un pequeño servidor.'* — rfree en [apt-get sobre Freenet](news.html#20150105)"
-
-#: pages/index.py:40 pages/index.py:212
-msgid "Share Files"
-msgstr "Compartir Archivos"
-
-#: pages/index.py:40
-msgid "Upload a file to Freenet and anyone with the secret URL can access it."
-msgstr "Suba un fichero a Freenet y cualquiera con la URL secreta podrá acceder a él."
-
 #: pages/index.py:42
-msgid ""
-"*[follow the blue rabbit\n"
-"through the looking glass](download.html#autostart)*"
-msgstr "*[siga al conejo azul\na través del espejo](download.html#autostart)*"
-
-#: pages/index.py:46
-msgid "Meet New People"
-msgstr "Conocer gente nueva"
-
-#: pages/index.py:46
-msgid ""
-"People from all over the world use Freenet to communicate. Some of them do so\n"
-"anonymously. You might never hear their voices in the open."
-msgstr "Personas de todo el mundo usan Freenet para comunicarse. Algunas de ellas lo hacen de forma anónima. Nunca podría escuchar sus voces en el Internet abierto."
-
-#: pages/index.py:49
-msgid ""
-"*'The value of publishing is not me wanting you to watch. The value of "
-"publishing is you wanting to see what I provide.'* — A.B."
-msgstr "*'El valor de publicar no soy yo queriendo que usted lo vea. El valor de publicar es que usted quiera ver lo que yo proveo.'* — A.B."
-
-#: pages/index.py:52
-msgid "Experiment with Exciting New Technology"
-msgstr "Experimentar con exitante tecnología nueva"
-
-#: pages/index.py:52
-msgid ""
-"Freenet is on the cutting edge of distributed routing research. The data\n"
-"storage provided by Freenet is a proving ground for a number of new\n"
-"distributed systems. ([Papers](about.html#papers))"
-msgstr "Freenet está en la primerísima vanguardia de la investigación en\nenrutamiento distribuido. El almacenamiento de datos proporcionado\npor Freenet es un campo de pruebas para varios sistemas\ndistribuidos nuevos ([Trabajos](about.html#papers))"
-
-#: pages/index.py:56
-msgid ""
-"*'A decentralized anonymous datastore with real censorship resistance, no "
-"central authority and long lifetime only for information which people "
-"actually use.'* — [The forgotten Cryptopunk "
-"Paradise](http://draketo.de/english/freenet/forgotten-cryptopunk-paradise)"
-msgstr "*'Un almacenamiento de datos descentralizado y anónimo con resistencia real a la censura, sin autoridad central, y un tiempo de vida largo sólo para la información que realmente usa la gente.'* — [The forgotten Cryptopunk Paradise (El paraíso criptopunk olvidado)](http://draketo.de/english/freenet/forgotten-cryptopunk-paradise)"
-
-#: pages/index.py:59
-msgid "Improve the World"
-msgstr "Mejorar el Mundo"
-
-#: pages/index.py:59
-msgid ""
-"By using Freenet from the \"free world\" you help people in oppressive regimes\n"
-"share information. The more people use Freenet the easier it will be to\n"
-"obtain."
-msgstr "Al usar Freenet desde el \"mundo libre\" ayuda a las personas bajo regímenes\nopresivos a compartir información. Cuanta más gente use Freenet será más\nfácil de obtener."
-
-#: pages/index.py:62
-msgid ""
-"If one percent of people used Freenet, everyone could safely be a "
-"whistleblower."
-msgstr "Si el uno por ciento de la gente usara Freenet, todos podríamos ser informantes de forma segura."
-
-#: pages/index.py:65
-msgid "Join us in Freenet"
-msgstr "Únase a nosotros en Freenet"
-
-#: pages/index.py:68
-msgid ""
-"*'Many years passed, two towers fell, the empire expanded its hunt for rebels all over the globe, and now, as the empire’s grip has become so horrid that even the most loyal servants of the emperors turn and expose their dark secrets, Freenet is still moving forward.'*\n"
-"— [The forgotten Cryptopunk Paradise](http://draketo.de/english/freenet/forgotten-cryptopunk-paradise)"
-msgstr "*'Pasaron muchos años, dos torres cayeron, el imperio expandió su caza de los rebeldes por todo el globo, y ahora, mientras la garra del imperio ha llegado a ser tan horrible que incluso los sirvientes más leales del emperador le dan la espalda y revelan sus secretos más oscuros, Freenet aún sigue avanzando.'*\n— [The forgotten Cryptopunk Paradise (El paraíso criptopunk olvidado)](http://draketo.de/english/freenet/forgotten-cryptopunk-paradise)"
-
-#: pages/index.py:149
 msgid ""
 "Leap over censorship<br>\n"
 "Escape total surveillance"
 msgstr "Supere la censura<br>\nEscape a la vigilancia total"
 
-#: pages/index.py:153
+#: pages/index.py:46
 msgid ""
-"Freenet re-establishes freedom of speech on the Internet.<br>\n"
-"Install Freenet and join the peer-to-peer network today!"
-msgstr "Freenet restablece la libertad de expresión en Internet.<br>\n¡Instale Freenet y únase hoy a la red entre pares (P2P)!"
+"Freenet is a peer-to-peer platform for censorship-resistant communication and publishing.\n"
+"Browse websites, post on forums, and publish files within Freenet with strong privacy protections."
+msgstr "Freenet es una plataforma entre pares (P2P) para comunicación y publicación resistente a la censura. Navegue por sitios web, converse en foros, y publique ficheros dentro de Freenet con protecciones de privacidad fuertes."
 
-#: pages/index.py:158
+#: pages/index.py:51
 msgid "read more…"
 msgstr "lea más..."
 
-#: pages/index.py:159
+#: pages/index.py:52
 msgid ""
 "Help keep Internet freedom alive and expand human liberty! Support another "
 "year of paid development. [Learn more about our fundraiser.][url_fundraiser]"
 msgstr "¡Ayude a mantener viva la libertad en Internet y expanda la libertad humana! Apoye otro año de desarrollo pagado. [Conozca más acerca de nuestro sistema de recogida de fondos.][url_fundraiser]"
 
-#: pages/index.py:160
+#: pages/index.py:53
 msgid "Donate!"
 msgstr "Donar!"
 
-#: pages/index.py:162
+#: pages/index.py:55
 msgid "The Freenet Project Inc is a non-profit 501(c)(3) organization."
 msgstr "The Freenet Project Inc es una organización sin animo de lucro 501(c)(3)."
 
-#: pages/index.py:163
+#: pages/index.py:56
 msgid "Donations are tax-deductible."
 msgstr "Las donaciones (generalmente) son deducibles fiscalmente."
 
-#: pages/index.py:200
+#: pages/index.py:92
 msgid "Secret Identity"
 msgstr "Identidad secreta"
 
-#: pages/index.py:201
+#: pages/index.py:93
 msgid "Create a secret identity so nobody knows who you are."
 msgstr "Cree una identidad secreta para que nadie sepa quien es usted."
 
-#: pages/index.py:203
+#: pages/index.py:95
 msgid "Browse Websites"
 msgstr "Navegación por sitios web"
 
-#: pages/index.py:204
+#: pages/index.py:96
 msgid ""
 "Freenet is home to sites ranging from programming to sustainable living."
 msgstr "Freenet es el hogar de sitios que van desde programación hasta vida sostenible."
 
-#: pages/index.py:206
+#: pages/index.py:98
 msgid "Forums"
 msgstr "Foros"
 
-#: pages/index.py:207
+#: pages/index.py:99
 msgid "Ask questions and exchange ideas."
 msgstr "Haga preguntas e intercambie ideas."
 
-#: pages/index.py:209
+#: pages/index.py:101
 msgid "Publish"
 msgstr "Publicación"
 
-#: pages/index.py:210
+#: pages/index.py:102
 msgid "Publish anonymously without need for a server."
 msgstr "Publíque anónimamente sin necesidad de un servidor."
 
-#: pages/index.py:213
+#: pages/index.py:104
+msgid "Share Files"
+msgstr "Compartir Archivos"
+
+#: pages/index.py:105
 msgid "Easy upload & download."
 msgstr "Fácil carga & descarga."
 
-#: pages/index.py:215
+#: pages/index.py:107
 msgid "Platform"
 msgstr "Plataforma"
 
-#: pages/index.py:216
+#: pages/index.py:108
 msgid "Write your own applications on the Freenet platform."
 msgstr "Escriba sus propias aplicaciones en la platafrma Freenet."
 
-#: pages/index.py:218
+#: pages/index.py:110
 msgid "Resistant"
 msgstr "Resistente"
 
-#: pages/index.py:219
+#: pages/index.py:111
 msgid "Freenet has been designed to be resistant to attacks and censorship."
 msgstr "Freenet ha sido diseñada para ser resistente a ataques y cesura."
 
-#: pages/index.py:221
+#: pages/index.py:113
 msgid "Distributed"
 msgstr "Distribuida"
 
-#: pages/index.py:222
+#: pages/index.py:114
 msgid "No central points of failure, efficient caching of popular content."
 msgstr "No hay puntos centrales de falla, eficiente almacenamiento en caché del contenido popular."
 
-#: pages/index.py:224
+#: pages/index.py:116
 msgid "Proven"
 msgstr "Probado"
 
-#: pages/index.py:225
+#: pages/index.py:117
 msgid "Based on solid research and in practical use for 15 years."
 msgstr "Basado en una investigación solida y en un uso práctico por 15 años."
 
-#: pages/index.py:260
-msgid ""
-"Freenet is a peer-to-peer network for censorship-resistant communication."
-msgstr "Freenet es una red entre pares (P2P) para la comunicación resistente a la censura."
+#: pages/index.py:136
+msgid "Share, Chat, Browse. Anonymously."
+msgstr "Comparta, Converse, Navegue. Anonimamente."
 
-#: pages/index.py:268
+#: pages/index.py:146
 msgid "Latest News"
 msgstr "Últimas noticias"
 
-#: pages/index.py:280
+#: pages/index.py:163
 msgid "Overview"
 msgstr "Información general"
 
