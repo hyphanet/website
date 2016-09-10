@@ -195,7 +195,7 @@ If the link above is blocked, you could download it from our server
 [here](https://downloads.freenetproject.org/latest/new_installer_offline.jar).
 But please use the other link if you can.
 
-**Note:** Many GNU/Linux distributions no longer ship with Java Web Start
+**Note**: Many GNU/Linux distributions no longer ship with Java Web Start
 enabled. We would like to make distribution packages for easier installation,
 and have an in-development (and not maintained) [Debian package](
 https://github.com/freenet/debian), but haven't gotten it stable or made

@@ -644,9 +644,9 @@ Privacy/incognito mode may be sufficient, and Windows tray app will start a
 browser running in this mode.
 """)),
                     FaqItem("attack", _("Won't attack X break Freenet's anonymity?"), _("""
-**Short answer:** Probably, on opennet. Maybe, on darknet.
+**Short answer**: Probably, on opennet. Maybe, on darknet.
 
-**Long answer:**
+**Long answer**:
 
 Freenet has a different threat model to Tor and the Mixmaster remailers.
 Freenet is designed to resist censorship: The network must therefore be
@@ -695,7 +695,7 @@ possibility, which would greatly reduce the impact of many of the below
 attacks, but there are several other enhancements planned, both to anonymity
 and to network robustness/undetectability.
 """) + "\n\n" + _("""
-**Major known attacks:**  
+**Major known attacks**:
 
 In the interests of giving would-be users as much information as possible,
 and on the assumption that any serious attacker would do their homework,
@@ -1020,7 +1020,7 @@ forgot it.)_
   Asking for or giving advice relating to getting Freenet working,
   bug reports, and suggestions on improving the user experience. Requests for
   help are more likely to be heard here than in the other mailing lists.
-  **Note:** Emails sent to this mailing list from those not subscribed to the
+  **Note**: Emails sent to this mailing list from those not subscribed to the
   list must be manually approved, and this can impose a delay of several days.
   To avoid this delay, please [subscribe](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/support/).
 * [Development](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/devl/) ([archive](https://emu.freenetproject.org/pipermail/devl/))<br/>
