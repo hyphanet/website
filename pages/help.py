@@ -338,8 +338,7 @@ should have installed a Browse Freenet shortcut on the desktop and/or the
 start menu, or a system tray icon (rabbit) with an Open Freenet menu item.
 Failing that, point your web browser to [http://127.0.0.1:8888/](
 http://127.0.0.1:8888/) for the gateway page. Try clicking the various links
-in the "Freesite subscriptions" panel to reach some of the popular Freenet
-index sites.
+in the bookmark list to reach an initial set of sites.
 """)),
                     FaqItem("slow", _("Why is Freenet so slow?"), _("""
 When you first install Freenet, it will be slow, and you may see Data Not
