@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Freenet\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-23 12:14-0400\n"
-"PO-Revision-Date: 2016-08-05 09:52+0000\n"
+"POT-Creation-Date: 2016-09-10 19:48-0400\n"
+"PO-Revision-Date: 2016-10-05 08:22+0000\n"
 "Last-Translator: Igor <lyricaltumor@gmail.com>\n"
 "Language-Team: Croatian (http://www.transifex.com/otf/freenet/language/hr/)\n"
 "MIME-Version: 1.0\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Language: hr\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 
-#: pages/about.py:11 pages/help.py:52 pages/index.py:181
+#: pages/about.py:11 pages/help.py:52 pages/index.py:73
 msgid "What is Freenet?"
 msgstr "Što je Freenet?"
 
@@ -114,8 +114,8 @@ msgid ""
 "which are also served by what we are trying to achieve; and some just enjoy the\n"
 "technical challenge. These are the ideas which motivated me to architect the\n"
 "system in the first place, but not necessarily the views that everyone involved\n"
-"in the Freenet project holds."
-msgstr "### 1\\. Odricanje od odgovornosti\n\nPostoji mnogo razloga zbog kojih se ljudi uključe u Freenet projekt. Neki\ndijele svjetonazore ocrtane u ovom dokumentu; neki dijele varijacije tih pogleda,\nkoji su također posluženi onime što pokušavamo postići; a neki samo uživaju\ntehnički izazov. Ovo su ideje koje su me motivirale da arhitektiram sustav\nali ne nužno i pogledi svakog uključenog u Freenet projekt."
+"in the Freenet Project holds."
+msgstr "### 1\\. Odricanje od odgovornosti\n\nPostoji mnogo razloga zbog kojih se ljudi uključe u Freenet projekt. Neki\ndijele svjetonazore ocrtane u ovom dokumentu; neki dijele varijacije tih pogleda,\nkoji su također posluženi onime što pokušavamo postići; a neki samo uživaju u\ntehničkom izazovu. Ovo su ideje koje su me motivirale da arhitektiram sustav,\nali nisu nužno i pogledi svakog uključenog u Freenet projekt."
 
 #: pages/about.py:98
 msgid ""
@@ -329,7 +329,7 @@ msgstr "### Matthew Toseland\n\nMatthew radi na Freenet-u još od prije verzije 
 msgid ""
 "### Oskar Sandberg\n"
 "\n"
-"Oskar was also one of the earliest contributors to the Freenet project,\n"
+"Oskar was also one of the earliest contributors to the Freenet Project,\n"
 "and has made some important theoretical breakthroughs that lead to the\n"
 "beginning of Freenet 0.7, see the papers page."
 msgstr "### Oskar Sandberg\n\nOskar je također jedan od najranijih kontributora Freenet projekta, te je\nnapravio neke bitne teoretske proboje koji su doveli do početka Freenet\nverzije 0.7. Pogledajte stranicu s radovima."
@@ -512,14 +512,14 @@ msgstr "### Robert Hailey\n\nRobert je pomogao poboljšati brzinu i sigurnost Fr
 msgid ""
 "### David Sowder\n"
 "\n"
-"David (Zothar) has helped the Freenet project as time permits and interest\n"
+"David (Zothar) has helped the Freenet Project as time permits and interest\n"
 "directs, including configuration, statistics and peer management via FCP,\n"
 "the FProxy stats page and Node 2 Node Messages (N2NM/N2NTMs).\n"
 "\n"
 "And **hundreds of others**, who either haven't asked to be added here, who\n"
 "prefer to remain nameless, or who we just haven't got around to thanking. Not to\n"
 "mention thousands of users, testers, and [donors](donate.html#sponsors)!"
-msgstr "### David Sowder\n\nDavid (Zothar) je pomogao Freenet projektu kako vrijeme dopušta i ineres\ndiktira, uključujući konfiguraciju, statistiku i upravljanje premcima preko FCP-a,\nFProxy stranicu statistike i Node 2 Node Messages (N2NM/N2NTMs).\n\nI **stotine drugih** koji ili nisu tražili da ih se stavi ovdje, koji radije ostaju bezimeni,\nili kojima jednostavno nismo stigli zahvaliti, a da ne spominjemo tisuće korisnika,\ntestera i [donatora](donate.html#sponsors)!"
+msgstr "### David Sowder\n\nDavid (Zothar) je pomogao Freenet projektu kako vrijeme dopušta i itneres\ndiktira, uključujući konfiguraciju, statistiku i upravljanje premcima preko FCP-a,\nFProxy stranicu statistike i Node 2 Node Messages (N2NM/N2NTMs).\n\nI **stotine drugih** koji nisu tražili da ih se stavi ovdje, koji radije ostaju bezimeni,\nili kojima jednostavno nismo stigli zahvaliti, a da ne spominjemo tisuće korisnika,\ntestera i [donatora](donate.html#sponsors)!"
 
 #: pages/about.py:424
 msgid "Papers"
@@ -869,7 +869,7 @@ msgid ""
 "If all has gone well, a browser window should have opened in the background.\n"
 "This will ask you a bunch of questions to configure Freenet, and then you\n"
 "should be able to use it."
-msgstr ""
+msgstr "Kako bi pokrenuli instalaciju, otvorite sučelje naredbenog retka/prozor\nterminala. Zamjenite **/putanja/do** sa stvarnom putanjom (npr.:\n/home/username/downlad/new_installer.jar) do new_installer.jar-file i\nutpikajte:\n\n<pre>\t$ java -jar /putanja/do/new_installer_offline.jar</pre>\n\nPrvi prozor kojeg bi trebali vidjeti je ovaj ispod, koji Vam omogućuje\nodabir željenog jezika za instalacijski program.\n\n![](assets/img/install/1-langselect.png)\n\nSljedeće se prikazuje prozor s informacijama o verziji i autorima Freeneta.\nSamo kliknite **Sljedeće** kako bi nastavili.\n\n![](assets/img/install/2-about.png)\n\nSljedeći korak je odabir direktorija u koji želite instalirati Freenet.\nZadana lokacija na GNU/Linux i POSIX operativnim sustavima je\n**/home/username/Freenet** kao što je prikazano ispod. Promjenite ju u\nnešto po svojoj želji ili ostavite kako je. Kliknite **Sljedeće** kad ste gotovi.\n\n![](assets/img/install/4-Install_directory.png)\n\nOdaberite pakete koje želite instalirati uz Vaš Freenet software.\nKako ne zauzimaju gotovo ništa dodatnog prostora, preporučamo Vam da\nostavite sve pakete označenima i kliknite **Sljedeće**.\n\n![](assets/img/install/5-select_packages.png)\n\nU sljedećem koraku se instaliraju paketi, a traka progresa se pomiče preko\nekrana. Kad je proces gotov, kliknite **Sljedeće** kako bi nastavili na\nsljedeći korak.\n\n![](assets/img/install/6-Install_packages.png)\n\nNakon toga, Freenet software je insatliran i/ili nadograđen, priključci su\nomogućeni i okruženje je pokrenuto. Nakon što je gotovo, kliknite **Sljedeće**\nkako bi nastavili.\n\n![](assets/img/install/7-install_progress.png)\n\nZa neka grafička sučelja, moguće je stvaranje prečaca na radnu površinu.\nTo nije slučaj za sve platforme na kojima Freenet radi. Kako bilo,\nu svim podržanim okruženjima, prečaci bi trebali biti automatski stvoreni.\nPromjenite aplikacijsku grupu sukladno svojim potrebama, te kliknite\n**Sljedeće** kad ste gotovi.\n\n![](assets/img/install/8-create_shortcuts.png)\n\nInstalacija je završena nakon toga. Kliknite **Gotovo** kako bi zatvorili prozor.\n\n![](assets/img/install/9-Install_finished.png)\n\nAko je sve prošlo kako treba, prozor preglednika bi se trebo otvoriti u pozadini.\nTamo će Vas pitati hrpu pitanja kako bi konfigurirali Freenet, a nakon toga\nbi trebali biti u mogućnosti koristiti ga."
 
 #: pages/documentation.py:136
 msgid ""
@@ -879,11 +879,11 @@ msgid ""
 "Freenet will need you to add friends before you can use it. These must be\n"
 "people you personally know. Adding people you don't know will not improve\n"
 "security."
-msgstr ""
+msgstr "Pitat će Vas od razini mrežne sigurnosti - \"zaštita od stranaca koji\nVas napadaju preko interneta\". Ako odaberete NISKO ili NORMALNO, Freenet bi trebao\n\"samo raditi\", spajajući se kroz par minuta. Ako odaberete VISOKO ili MAKSIMALNO,\nFreenet će od Vas tražiti da dodate prijatelje prije korištenja. To mogu biti\nljudi koje osobno znate. Dodavanje nepoznatih ljudi neće poboljšati\nsigurnost."
 
 #: pages/documentation.py:148
 msgid "Connect"
-msgstr ""
+msgstr "Spoji se"
 
 #: pages/documentation.py:151
 msgid ""
@@ -903,7 +903,7 @@ msgid ""
 "To connect to your friends' nodes, you have to exchange Node references with\n"
 "them. The references must be added on **both sides** to be established. That\n"
 "is, you need to add his/hers, and he/she needs to add yours."
-msgstr ""
+msgstr "Postoje dva načina za spajanje na Freenet:\n\n* Možeteomogućiti nesigurni način rada (pitat će Vas tokom instalacije) i\nFreenet će automatski pronaći čvorove na koje će se spojiti - Strance.\n* Možete se spojiti na čvorove koje pokreću ljudi koje znate - Prijatelji.\nOvo bi trebali biti ljudi koje znate na nekoj razini, a kako bi održali\ndobru mrežnu topologiju i maksimlnu sigurnost.\n\nU praksi, trebali bi koristiti obje opcije, osim ako ste stvarno paranoični,\nu tom slučaju bi se trebali, naravno, spajati samo sa ljudima kojima\nvjerujete. Nesigurni način rada bi trebao raditi automatski nakon što je \nomogućen, tako da je ostatak ove stranice o spajanju sa Prijateljima.\n\nKako bi se spojili na čvorove svojih prijatelja morate razmjeniti reference\nčvorova s njima. Reference moraju biti dodane na **obadvije strane** kako bi\nbile uspostalvjene. Vi morate dodati njihove, oni moraju dodati Vaše."
 
 #: pages/documentation.py:168
 msgid ""
@@ -923,7 +923,7 @@ msgid ""
 "your friends. In practice most people start off with insecure mode and\n"
 "gradually add friends, and hopefully turn off insecure mode once they have at\n"
 "least 10 friends."
-msgstr ""
+msgstr "*Kad pokrenete svježe spojen čvor, nemate podataka pohranjenih u bazama,\nte imate vrlo malo veza čak i ako je nesigurni način rada omogućen.\nZahtjevi se šalju nasumično. **Zbog toga neki (ili svi) zahtjevi mogu\nprestati prije nego uspiju dohvatiti išta.** Treba nekoliko dana kako bi\nse Vaš Freenet čvor uspostavio u potpunosti, nemojte biti obeshrabreni.*\n\nU bilo koje vrijeme, na Vas bi trebala biti spojena najmanje tri čvora,\nidealno između pet i sedam. Kako su neki čvorovi povremeno nedostupni,\ntrebate se spojiti na više čvorova kako bi dobili očekivani broj. Čvorovi\nspojeni izravno na Vas su jedini čvorovi na Freenetu koji bi mogli vidjeti\nkakav promet prolazi kroz Vaš Freenet čvor. Ako je nesigurni način rada\nomogućen, svaki čvor može naći Vaš čvor. Velika prednost **ne omogućivanja**\nnesigurnong načina rada: efektivno ste nevidljivi svima osim svojim\nprijateljima. U praksi, većina ljudi počinje u nesigurnom načinu rada i\npostepeno dodaje prijatelje, a zatim usključe nesigurni način rada kad\nimaju najmanje 10 prijatelja."
 
 #: pages/documentation.py:185
 msgid ""
@@ -942,7 +942,7 @@ msgid ""
 "know. If that is not possible, then at least people you've talked to.\n"
 "\n"
 "There are a number of ways to add peer node references."
-msgstr ""
+msgstr "![](assets/img/Freenet-architecture-small.png)\n\n*Slika 1: Vidljive Freenet veze*\n\n**Čvor A** na slici ima neki broj čvorova spojenih na sebe, ali su oni\nVama nevidljivi (osim Vašeg čvora). Algoritam za preusmjeravanje\nprometa može preumsjeriti promet jedino na par čvorova za koje\nznate, a za koje on misli da će najvjerovatnije naći ono što tražite.\n\nPromet je enkriptiran, tako da je čvorovima na koje se spajate\npoprilično teško vidjeti od čega se sastoji Vaš Freenet promet, ali ne\ni nemoguće. Zbog toga je bitno da se spajate samo na ljude koje znate.\nAko to nije moguće, onda barem na ljude s kojima ste razgovarali.\n\nPostoji nekoliko načina za dodavanje referenci čvorova."
 
 #: pages/documentation.py:201
 msgid ""
@@ -975,7 +975,7 @@ msgid ""
 "http://127.0.0.1:8888/friends/](http://127.0.0.1:8888/friends/) page,\n"
 "under the caption **My Node Reference**. It might look something like this (cut\n"
 "to fit on the screen):"
-msgstr ""
+msgstr "### FProxy\n\nSpajanje čvorova s FProxyem se može izvesti na nekoliko načina. Zajedničko im\nje svima što se izvode pod **Darknet** izbornikom ili koristeći poveznicu\n[http://127.0.0.1:8888/friends/](http://127.0.0.1:8888/friends/). Ispod se\nnalazi uzrok svega:\n\n![](assets/img/add_peers.png)\n\nKao što možete vidjeti, postoje tri načina dobavljanja reference čvora od nekog\ndrugog:\n\n* Ljepljenje \"takve kakva jest\", u gornje polje,\n* URL koji pokazuje na referencu, ili\n* datoteka koja sadržava referencu.\n\n[http://dark-code.bulix.org/](http://dark-code.bulix.org/) je takozvani\n**paste-bin**, mjesto gdje možete dodati reference svog čvora, osigurajte da \nje **privatno** označeno i stisnite **Zalijepi**.\n\nPaste-bin zatim vraće URL (na primjer:\nhttp://dark-code.bulix.org/yuf01h-34676?raw) koji može biti podjeljen s\ndrugima. Osigurajte da dodate **?raw** poveznici. Taj dodataka čini da\npoveznica upućuje samo na zaljepljene podatke, bez dodatnih elemenata.\n\nVaša Freenet referenca može biti pronađena na stranici\n[http://127.0.0.1:8888/friends/](http://127.0.0.1:8888/friends/),\npod naslovom **Referenca mog čvora**. Može izgledati slično ovome (izrezano\nda stane na ekran):"
 
 #: pages/documentation.py:249
 msgid ""
@@ -983,7 +983,7 @@ msgid ""
 "to make the connection work. This means that if you add a persons node\n"
 "reference on your side, but that person does not add your reference on\n"
 "his/her side, the connection **does not work**."
-msgstr ""
+msgstr "Zapamtite da i Vi i čvor na koji se spajate morate dodati reference\nkako bi veza radila. To znači da ako Vi dodate reference čvora\nna svojoj strani, ali druga osoba ne doda Vaše na svojoj strani\nveza **neće raditi**."
 
 #: pages/documentation.py:254
 msgid ""
@@ -1007,11 +1007,11 @@ msgid ""
 "\n"
 "In the Idle column, you can see how much time has passed since the last status\n"
 "message."
-msgstr ""
+msgstr "### Darknet premci\n\nKad imate neki broj veza, možete posjetiti Darknet stranicu. Trebala\nbi izgledati nekako ovako:\n\n![](assets/img/Freenet-darknet_peers.png)\n\nPostoji nekoliko poruka statusa koje mogu biti viđene ovdje:\n\n* SPOJENO - čvor je spojen i spreman za primanje Vašeg zahtjeva\n* ODBAČENO - čvor je zagušen prometom i nije u mogućnosti odgovoriti\n* ODSPOJENO - čvor nije spojen s Vašim čvorom, vjerovatno je ugašen\n* NIKAD SPOJENO - veza između čvorova nije uspostavljena.\nDo toga može doći zbog problema i ograničenja u vatrozidu, zbog tog\njer jedna strana nije dodala reference čvora ili zato jer čvorovi nisu\nbili online u isto vrijeme da potvrde vezu. Ako problem ustraje kroz\ndulji period, a obje strane su se dodale, pokušajte se ponovno povezati.\n\nU stupcu Čeka možete vidjeti koliko vremena je prošlo od posljednje\nporuke statusa."
 
 #: pages/documentation.py:280
 msgid "Content"
-msgstr ""
+msgstr "Sadržaj"
 
 #: pages/documentation.py:283
 msgid ""
@@ -1806,7 +1806,7 @@ msgid ""
 "Download and run [the installer](assets/jnlp/FreenetInstaller.exe)\n"
 msgstr ""
 
-#: pages/download.py:123 pages/index.py:157 pages/index.py:258
+#: pages/download.py:123 pages/index.py:50 pages/index.py:137
 msgid "Download Freenet"
 msgstr ""
 
@@ -1893,7 +1893,7 @@ msgid ""
 "[here](https://downloads.freenetproject.org/latest/new_installer_offline.jar).\n"
 "But please use the other link if you can.\n"
 "\n"
-"**Note:** Many GNU/Linux distributions no longer ship with Java Web Start\n"
+"**Note**: Many GNU/Linux distributions no longer ship with Java Web Start\n"
 "enabled. We would like to make distribution packages for easier installation,\n"
 "and have an in-development (and not maintained) [Debian package](\n"
 "https://github.com/freenet/debian), but haven't gotten it stable or made\n"
@@ -2064,7 +2064,7 @@ msgstr ""
 
 #: pages/download.py:363
 msgid ""
-"Download the [Freenet project signing keys][url_keyring] and import them "
+"Download the [Freenet Project signing keys][url_keyring] and import them "
 "into your keyring:"
 msgstr ""
 
@@ -2503,15 +2503,14 @@ msgid ""
 "start menu, or a system tray icon (rabbit) with an Open Freenet menu item.\n"
 "Failing that, point your web browser to [http://127.0.0.1:8888/](\n"
 "http://127.0.0.1:8888/) for the gateway page. Try clicking the various links\n"
-"in the \"Freesite subscriptions\" panel to reach some of the popular Freenet\n"
-"index sites."
+"in the bookmark list to reach an initial set of sites."
 msgstr ""
 
-#: pages/help.py:344
+#: pages/help.py:343
 msgid "Why is Freenet so slow?"
 msgstr ""
 
-#: pages/help.py:344
+#: pages/help.py:343
 msgid ""
 "When you first install Freenet, it will be slow, and you may see Data Not\n"
 "Found or Route Not Found errors for freesites. This is normal, and Freenet\n"
@@ -2530,11 +2529,11 @@ msgid ""
 "under Configuration."
 msgstr ""
 
-#: pages/help.py:361
+#: pages/help.py:360
 msgid "Is Freenet searchable?"
 msgstr ""
 
-#: pages/help.py:361
+#: pages/help.py:360
 msgid ""
 "Yes, there are a few different search mechanisms. To search the Freenet web\n"
 "(freesites), you should be able to just use the search box on the homepage,\n"
@@ -2545,11 +2544,11 @@ msgid ""
 "because of Freenet's different architecture and design goals."
 msgstr ""
 
-#: pages/help.py:370
+#: pages/help.py:369
 msgid "How do I get Freenet working with a Firewall/NAT?"
 msgstr ""
 
-#: pages/help.py:370
+#: pages/help.py:369
 msgid ""
 "Mostly, Freenet should just work with a NAT. However, you should forward the\n"
 "ports manually if you can. Click on the [Connectivity](\n"
@@ -2569,11 +2568,11 @@ msgid ""
 "that box, and apply the settings."
 msgstr ""
 
-#: pages/help.py:388
+#: pages/help.py:387
 msgid "Do I need a permanent Internet connection to run a node?"
 msgstr ""
 
-#: pages/help.py:388
+#: pages/help.py:387
 msgid ""
 "No, but it is preferred. You can run the software and test it from a\n"
 "\"transient\" connection (e.g. dial up/mobile modem), but for the network as a\n"
@@ -2582,11 +2581,11 @@ msgid ""
 "later version of Freenet may take better advantage of transient nodes."
 msgstr ""
 
-#: pages/help.py:395
+#: pages/help.py:394
 msgid "Why does Freenet only download 1 or 2 files at a time?"
 msgstr ""
 
-#: pages/help.py:395
+#: pages/help.py:394
 msgid ""
 "Many browsers limit the number of simultaneous connections to something far\n"
 "too low for efficiently browsing Freenet (since Freenet pages often have much\n"
@@ -2596,7 +2595,7 @@ msgid ""
 "stated. Filter on **\"connections\"** to get only the relevant settings:"
 msgstr ""
 
-#: pages/help.py:409
+#: pages/help.py:408
 msgid ""
 "Note that these settings will cause mozilla to use more connections for all\n"
 "your browsing, which may not be desirable from a network congestion point of\n"
@@ -2604,11 +2603,11 @@ msgid ""
 "for best security."
 msgstr ""
 
-#: pages/help.py:415
+#: pages/help.py:414
 msgid "Why can't Freenet store data permanently?"
 msgstr ""
 
-#: pages/help.py:415
+#: pages/help.py:414
 msgid ""
 "Because we can't find a way to do this without compromising Freenet's other\n"
 "goals. For example, people often suggest that someone's node could just never\n"
@@ -2628,15 +2627,15 @@ msgid ""
 "available from a random point on the network."
 msgstr ""
 
-#: pages/help.py:433
+#: pages/help.py:432
 msgid "Why is Freenet implemented in Java?"
 msgstr ""
 
-#: pages/help.py:433
+#: pages/help.py:432
 msgid ""
-"Opinions differ about the choice of java for the reference implementation of\n"
+"Opinions differ about the choice of Java for the reference implementation of\n"
 "Freenet (even among the core developers). [Ian Clarke](about.html#people) and\n"
-"several other developers are java proponents and the choice for java was\n"
+"several other developers are Java proponents and the choice for Java was\n"
 "made. Even if everybody could be convinced to switch to a different language\n"
 "reimplementing the current Freenet protocol would be quite a big task,\n"
 "and take up a significant amount of time, while there is only a limited\n"
@@ -2646,11 +2645,11 @@ msgid ""
 "the amount of work however."
 msgstr ""
 
-#: pages/help.py:445
+#: pages/help.py:444
 msgid "How do I allow connections to FProxy from other computers?"
 msgstr ""
 
-#: pages/help.py:445
+#: pages/help.py:444
 msgid ""
 "If you want everyone to be able to use your node you have the following options:  \n"
 "\n"
@@ -2686,11 +2685,11 @@ msgid ""
 "`"
 msgstr ""
 
-#: pages/help.py:478
+#: pages/help.py:477
 msgid "What's new? Is there a changelog?"
 msgstr ""
 
-#: pages/help.py:478
+#: pages/help.py:477
 msgid ""
 "On every new build, a brief summary of all the main changes is posted to the\n"
 "support and devl lists and the eng.freenet board on Freetalk. This is usually\n"
@@ -2702,35 +2701,35 @@ msgid ""
 "unrelated topics!"
 msgstr ""
 
-#: pages/help.py:488
+#: pages/help.py:487
 msgid ""
 "Why are there so many messages in my logfile with a backtrace attached?"
 msgstr ""
 
-#: pages/help.py:488
+#: pages/help.py:487
 msgid ""
 "Freenet logs messages excessively during normal operation. It's something we're\n"
 "aware of and are working on."
 msgstr ""
 
-#: pages/help.py:492
+#: pages/help.py:491
 msgid ""
 "I have Kaspersky anti-virus, and Freenet doesn't install, or shows "
 "\"Download/upload queue database corrupted!\""
 msgstr ""
 
-#: pages/help.py:492
+#: pages/help.py:491
 #, python-brace-format
 msgid ""
 "Kaspersky can be a problem with Freenet. See [here][url_kaspersky].\n"
 "We recommend you turn off Kaspersky during install and during node startup, and exclude the directory you installed Freenet in (most likely {freenet_install_dir_1} or {freenet_install_dir_2})."
 msgstr ""
 
-#: pages/help.py:499
+#: pages/help.py:498
 msgid "I set a password and now I forgot it, what can I do?"
 msgstr ""
 
-#: pages/help.py:499
+#: pages/help.py:498
 msgid ""
 "The password protects your downloads and uploads and the client-cache (cache\n"
 "of what you've recently browsed on Freenet). It is stored in the file\n"
@@ -2740,15 +2739,15 @@ msgid ""
 "security](#privatedata) for more information."
 msgstr ""
 
-#: pages/help.py:507
+#: pages/help.py:506
 msgid "Freenet keeps complaining about clock skew"
 msgstr ""
 
-#: pages/help.py:507
+#: pages/help.py:506
 msgid ""
 "Freenet will have problems if your clock is constantly being rewound. Usually\n"
 "this happens when something is resetting your clock regularly in big jumps.\n"
-"On linux, you should run ntpd to make sure your clock isn't too far off (this\n"
+"On Linux, you should run ntpd to make sure your clock isn't too far off (this\n"
 "isn't vital but it's helpful), but if you see clock skew errors, try adding\n"
 "the -x option to it to avoid big backwards jumps. Also, running ntpdate on\n"
 "startup so there is one big jump before Freenet starts is a good idea. This\n"
@@ -2757,17 +2756,17 @@ msgid ""
 "the clock are only once a day."
 msgstr ""
 
-#: pages/help.py:519
+#: pages/help.py:518
 msgid "Publishing"
 msgstr ""
 
-#: pages/help.py:520
+#: pages/help.py:519
 msgid ""
 "If I publish something in Freenet, how will people find it? Don't they have "
 "to know the key I used?"
 msgstr ""
 
-#: pages/help.py:520
+#: pages/help.py:519
 msgid ""
 "Yes, people will have to know what key you used to publish your information.\n"
 "This means you will have to announce your key in some way.\n"
@@ -2784,11 +2783,11 @@ msgid ""
 "(Graffiti is not recommended, for legal reasons.)"
 msgstr ""
 
-#: pages/help.py:535
+#: pages/help.py:534
 msgid "How do I publish a Content Hash Key (CHK)?"
 msgstr ""
 
-#: pages/help.py:535
+#: pages/help.py:534
 msgid ""
 "A Content Hash Key is based on the actual content contained within it - and\n"
 "as such, the key will only be known after it has been inserted into Freenet.\n"
@@ -2796,11 +2795,11 @@ msgid ""
 "actual CHK is once the insertion completes."
 msgstr ""
 
-#: pages/help.py:541
+#: pages/help.py:540
 msgid "Can Freenet documents be updated / deleted?"
 msgstr ""
 
-#: pages/help.py:541
+#: pages/help.py:540
 msgid ""
 "Currently, a document posted to Freenet with the same name as one already\n"
 "present may actually serve to propagate the existing document. There is also\n"
@@ -2815,15 +2814,15 @@ msgid ""
 "end of the key to negative."
 msgstr ""
 
-#: pages/help.py:555
+#: pages/help.py:554
 msgid "Contributing"
 msgstr ""
 
-#: pages/help.py:556
+#: pages/help.py:555
 msgid "I have this great idea...."
 msgstr ""
 
-#: pages/help.py:556
+#: pages/help.py:555
 msgid ""
 "Good! First step: read the [mailing list archives](help.html#mailing-lists).\n"
 "Odds are good that someone else had the same idea and discussed it with the\n"
@@ -2835,11 +2834,11 @@ msgid ""
 "bring it up in the appropriate [mailing list](help.html#mailing-lists)."
 msgstr ""
 
-#: pages/help.py:566
+#: pages/help.py:565
 msgid "Can I contribute to the Freenet Project?"
 msgstr ""
 
-#: pages/help.py:566
+#: pages/help.py:565
 msgid ""
 "Absolutely. Even if you don't have the time or skills to become a\n"
 "co-developer of the project, you can contribute in other ways:\n"
@@ -2854,7 +2853,7 @@ msgid ""
 "into another language."
 msgstr ""
 
-#: pages/help.py:578
+#: pages/help.py:577
 msgid ""
 "If you are a developer, you can help by working on Freenet itself,\n"
 "or by creating other applications to run on Freenet. External applications\n"
@@ -2875,7 +2874,7 @@ msgid ""
 "https://wiki.freenetproject.org/Main_Page) helpful."
 msgstr ""
 
-#: pages/help.py:596
+#: pages/help.py:595
 msgid ""
 "If you have any questions about contributing, please contact us, via [the developers mailing list][url_devlist], [the chat channel][url_chat], [the support mailing list][url_supportlist] or anonymously via the freenet board on FMS.\n"
 "\n"
@@ -2883,19 +2882,19 @@ msgid ""
 "developer(s) and cover server costs."
 msgstr ""
 
-#: pages/help.py:607
+#: pages/help.py:606
 msgid "How can I access the code and website?"
 msgstr ""
 
-#: pages/help.py:607
+#: pages/help.py:606
 msgid "See our [GitHub repository](https://github.com/freenet/)."
 msgstr ""
 
-#: pages/help.py:610
+#: pages/help.py:609
 msgid "What tools do I need to help develop?"
 msgstr ""
 
-#: pages/help.py:610
+#: pages/help.py:609
 msgid ""
 "Building Freenet requires JDK 1.6 or later.  You can download the source tarballs on the\n"
 "download page for a specific build, or use git to get an up to date copy of\n"
@@ -2905,13 +2904,13 @@ msgid ""
 "on chat.freenode.net](irc://chat.freenode.net/freenet)"
 msgstr ""
 
-#: pages/help.py:618
+#: pages/help.py:617
 msgid ""
 "Is there a Help Site that goes deeper into the questions newbies may have "
 "about Freenet, and where people can contribute too?"
 msgstr ""
 
-#: pages/help.py:618
+#: pages/help.py:617
 msgid ""
 "Have a look at [our wiki](https://wiki.freenetproject.org/). An older wiki,\n"
 "which is now read-only, but has a fair amount of content so is sometimes\n"
@@ -2921,33 +2920,33 @@ msgid ""
 "after you install Freenet."
 msgstr ""
 
-#: pages/help.py:626
+#: pages/help.py:625
 msgid "Where can I report bugs?"
 msgstr ""
 
-#: pages/help.py:626
+#: pages/help.py:625
 msgid ""
 "You can use our [bug tracking system](https://bugs.freenetproject.org/) or\n"
 "send a mail to our [support mailing list](help.html#mailing-lists)."
 msgstr ""
 
-#: pages/help.py:630
+#: pages/help.py:629
 msgid "I'm a theoretical computer scientist/mathematician, how can I help?"
 msgstr ""
 
-#: pages/help.py:630
+#: pages/help.py:629
 msgid "See [here](https://wiki.freenetproject.org/Research_challenges)."
 msgstr ""
 
-#: pages/help.py:633
+#: pages/help.py:632
 msgid "Security"
 msgstr ""
 
-#: pages/help.py:634
+#: pages/help.py:633
 msgid "Can I use my regular browser to browse Freenet?"
 msgstr ""
 
-#: pages/help.py:634
+#: pages/help.py:633
 msgid ""
 "Freenet has a web interface: much of the content on Freenet is in the form of\n"
 "\"freesites\", and downloads, configuration and friend connections can be\n"
@@ -2962,15 +2961,15 @@ msgid ""
 "browser running in this mode."
 msgstr ""
 
-#: pages/help.py:647
+#: pages/help.py:646
 msgid "Won't attack X break Freenet's anonymity?"
 msgstr ""
 
-#: pages/help.py:647
+#: pages/help.py:646
 msgid ""
-"**Short answer:** Probably, on opennet. Maybe, on darknet.\n"
+"**Short answer**: Probably, on opennet. Maybe, on darknet.\n"
 "\n"
-"**Long answer:**\n"
+"**Long answer**:\n"
 "\n"
 "Freenet has a different threat model to Tor and the Mixmaster remailers.\n"
 "Freenet is designed to resist censorship: The network must therefore be\n"
@@ -3004,7 +3003,7 @@ msgid ""
 "real-time performance."
 msgstr ""
 
-#: pages/help.py:682
+#: pages/help.py:681
 msgid ""
 "If you can use the darknet, trust your friends, don't reinsert files, always\n"
 "use the \"Insert a random, safe key\" option, and change your anonymous\n"
@@ -3023,16 +3022,16 @@ msgid ""
 "and to network robustness/undetectability."
 msgstr ""
 
-#: pages/help.py:698
+#: pages/help.py:697
 msgid ""
-"**Major known attacks:**  \n"
+"**Major known attacks**:\n"
 "\n"
 "In the interests of giving would-be users as much information as possible,\n"
 "and on the assumption that any serious attacker would do their homework,\n"
 "here are the major classes of attack on Freenet we are presently aware of:"
 msgstr ""
 
-#: pages/help.py:704
+#: pages/help.py:703
 msgid ""
 "* **Harvesting**: Simply by running some powerful Freenet nodes, an attacker can\n"
 "identify most of the opennet (Strangers network) relatively easily. These\n"
@@ -3048,7 +3047,7 @@ msgid ""
 "some time."
 msgstr ""
 
-#: pages/help.py:717
+#: pages/help.py:716
 msgid ""
 "* **Bootstrapping attacks**: Unless a node only connects to friends, it will\n"
 "have to connect to the opennet \"seednodes\" to announce itself and get\n"
@@ -3075,7 +3074,7 @@ msgid ""
 "connect to may be malicious."
 msgstr ""
 
-#: pages/help.py:741
+#: pages/help.py:740
 msgid ""
 "* **Correlation attacks**: If you are connected to a node, and can recognise the\n"
 "keys being requested (probably because it was posted publicly), you can show\n"
@@ -3092,7 +3091,7 @@ msgid ""
 "to connect to your Freenet node!"
 msgstr ""
 
-#: pages/help.py:755
+#: pages/help.py:754
 msgid ""
 "* **Adaptive search**: If you want to find the author of some content, and you\n"
 "can predict the exact keys which will be inserted, and you are able to\n"
@@ -3132,7 +3131,7 @@ msgid ""
 "section above on bootstrapping attacks."
 msgstr ""
 
-#: pages/help.py:792
+#: pages/help.py:791
 msgid ""
 "* **Traffic analysis**: Freenet provides minimal protection against global\n"
 "traffic analysis (basic message padding etc); if the attacker also has\n"
@@ -3145,7 +3144,7 @@ msgid ""
 "completely: all that is needed is to observe both the entry and exit points."
 msgstr ""
 
-#: pages/help.py:802
+#: pages/help.py:801
 msgid ""
 "* **Swapping attacks**: It is possible to attack the location swapping\n"
 "algorithm, and thereby disrupt routing on friend-to-friend networks. This has\n"
@@ -3153,17 +3152,17 @@ msgid ""
 "solution, but sadly at the moment most users use opennet."
 msgstr ""
 
-#: pages/help.py:807
+#: pages/help.py:806
 msgid ""
 "More information on the current practical state of Freenet security is available\n"
 "[here](https://wiki.freenetproject.org/Security_summary)."
 msgstr ""
 
-#: pages/help.py:811
+#: pages/help.py:810
 msgid "Is Freenet vulnerable to flooding attacks?"
 msgstr ""
 
-#: pages/help.py:811
+#: pages/help.py:810
 msgid ""
 "Short answer: no.\n"
 "\n"
@@ -3196,13 +3195,13 @@ msgid ""
 "low on a darknet."
 msgstr ""
 
-#: pages/help.py:842
+#: pages/help.py:841
 msgid ""
 "Why hash keys and encrypt data when a node operator could identify them (the"
 " data) anyway if he tried?"
 msgstr ""
 
-#: pages/help.py:842
+#: pages/help.py:841
 msgid ""
 "Hashing the key and encrypting the data is not meant a method to keep Freenet\n"
 "Node operators from being able to figure out what type of information is in\n"
@@ -3217,11 +3216,11 @@ msgid ""
 "information on the network."
 msgstr ""
 
-#: pages/help.py:855
+#: pages/help.py:854
 msgid "What about hostile \"cancer\" nodes within the network?"
 msgstr ""
 
-#: pages/help.py:855
+#: pages/help.py:854
 msgid ""
 "The existence of malicious nodes within the network is the most difficult\n"
 "problem that a distributed network must face, and has been the bane of many\n"
@@ -3242,11 +3241,11 @@ msgid ""
 "that causes timeouts ...)"
 msgstr ""
 
-#: pages/help.py:874
+#: pages/help.py:873
 msgid "What about attack Y?"
 msgstr ""
 
-#: pages/help.py:874
+#: pages/help.py:873
 msgid ""
 "Freenet is still in testing and there are bound to be attacks found that we\n"
 "have not dealt with yet. So if you do manage to figure out a truly new kind\n"
@@ -3258,13 +3257,13 @@ msgid ""
 "and write your own distributed network that suits your desires."
 msgstr ""
 
-#: pages/help.py:884
+#: pages/help.py:883
 msgid ""
 "What private data does Freenet store? How do I get rid of it? How can I "
 "secure my computer so I am safe when running Freenet?"
 msgstr ""
 
-#: pages/help.py:884
+#: pages/help.py:883
 msgid ""
 "First of all, we **strongly** suggest that you install Freenet inside an\n"
 "encrypted drive using, for example, [Truecrypt](http://www.truecrypt.org/).\n"
@@ -3300,7 +3299,7 @@ msgid ""
 "http://www.truecrypt.org/)"
 msgstr ""
 
-#: pages/help.py:917
+#: pages/help.py:916
 msgid ""
 "The main datastore does not store data you request or insert (or that is\n"
 "requested or inserted by nearby nodes), because it can be probed by other\n"
@@ -3330,25 +3329,25 @@ msgid ""
 "files."
 msgstr ""
 
-#: pages/help.py:945
+#: pages/help.py:944
 msgid ""
 "Windows SmartScreen filter warns the Freenet installer might put my PC at "
 "risk. What's going on?"
 msgstr ""
 
-#: pages/help.py:945
+#: pages/help.py:944
 msgid ""
 "[SmartScreen][url_smartscreen] is sometimes incorrect in classifying a file as dangerous.\n"
 "We believe our installer is not infected with malicious software, and if you are a developer you can check the installer source code [here][url_installer]."
 msgstr ""
 
-#: pages/help.py:952
+#: pages/help.py:951
 msgid ""
 "Has anyone ever faced legal trouble for their anonymous activities conducted"
 " on Freenet?"
 msgstr ""
 
-#: pages/help.py:953
+#: pages/help.py:952
 msgid ""
 "Yes.\n"
 "There is one such instance that we know of.\n"
@@ -3362,7 +3361,7 @@ msgid ""
 "Therefore we hope to discover and fix these flaws to protect those who fight for human rights, against corruption, for a peaceful future, and for other legitimate goals."
 msgstr ""
 
-#: pages/help.py:974
+#: pages/help.py:973
 msgid ""
 "### Additional information sources\n"
 "\n"
@@ -3371,17 +3370,17 @@ msgid ""
 "*   [High quality copy of the rabbit icon][url_rabbit_icon]"
 msgstr ""
 
-#: pages/help.py:989
+#: pages/help.py:988
 msgid "Mailing lists"
 msgstr ""
 
-#: pages/help.py:992
+#: pages/help.py:991
 msgid ""
 "These are the mailing lists that can be used for support or general\n"
 "information about Freenet."
 msgstr ""
 
-#: pages/help.py:995
+#: pages/help.py:994
 msgid ""
 "### Subscribing\n"
 "\n"
@@ -3393,7 +3392,7 @@ msgid ""
 "receive mails from the list."
 msgstr ""
 
-#: pages/help.py:1004
+#: pages/help.py:1003
 msgid ""
 "### Unsubscribing\n"
 "\n"
@@ -3409,7 +3408,7 @@ msgid ""
 "forgot it.)_"
 msgstr ""
 
-#: pages/help.py:1017
+#: pages/help.py:1016
 msgid ""
 "### The lists\n"
 "\n"
@@ -3417,276 +3416,170 @@ msgid ""
 "Asking for or giving advice relating to getting Freenet working,\n"
 "bug reports, and suggestions on improving the user experience. Requests for\n"
 "help are more likely to be heard here than in the other mailing lists.\n"
-"**Note:** Emails sent to this mailing list from those not subscribed to the\n"
+"**Note**: Emails sent to this mailing list from those not subscribed to the\n"
 "list must be manually approved, and this can impose a delay of several days.\n"
 "To avoid this delay, please [subscribe](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/support/).\n"
 "* [Development](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/devl/) ([archive](https://emu.freenetproject.org/pipermail/devl/))<br/>\n"
 "This list is for active developers to discuss bugs, and the implementation\n"
 "of near-term new features.\n"
 "\n"
-"_**Third party tools**: We are hosting some other mailing lists on our server\n"
-"here is the [full list][url_listinfo]._"
+"_**Third party tools**: We are hosting some other mailing lists on our server.\n"
+"Here is the [full list][url_listinfo]._"
 msgstr ""
 
-#: pages/help.py:1039
+#: pages/help.py:1038
 msgid "Suggestions"
 msgstr ""
 
-#: pages/help.py:1045
+#: pages/help.py:1044
 msgid "Get Support"
 msgstr ""
 
-#: pages/help.py:1048
+#: pages/help.py:1047
 msgid ""
 "If you need help installing Freenet for the first time, or have trouble using Freenet and can't find an answer to your problem in the [FAQ][faq_link] above or in the [Knowledge Base][kb_link], please create a new discussion on our support forum.\n"
 "\n"
 "When writing your support request, please make sure you include a full description of the problem, your current version of Java, your operating system and current Freenet version."
 msgstr ""
 
-#: pages/help.py:1057
+#: pages/help.py:1056
 msgid "Create a support discussion"
 msgstr ""
 
-#: pages/help.py:1062 pages/help.py:1070
+#: pages/help.py:1061 pages/help.py:1069
 msgid "Chat with us"
 msgstr ""
 
-#: pages/help.py:1065
+#: pages/help.py:1064
 msgid ""
 "Many of the developers and users of Freenet are on the [IRC](\n"
 "https://en.wikipedia.org/wiki/IRC) channel #freenet on chat.freenode.net."
 msgstr ""
 
-#: pages/help.py:1074
+#: pages/help.py:1073
 msgid "Setup"
 msgstr ""
 
-#: pages/help.py:1080
+#: pages/help.py:1079
 msgid "Help"
 msgstr ""
 
-#: pages/index.py:27 pages/index.py:257
-msgid "Share, Chat, Browse. Anonymously."
-msgstr ""
-
-#: pages/index.py:27
-msgid ""
-"Freenet is a platform for censorship-resistant communication and publishing.\n"
-"It helps you to remain anonymous, and communicate without fear."
-msgstr ""
-
-#: pages/index.py:30 pages/index.py:65
-msgid ""
-"*'Daddy, where were you when they took freedom of the press away from the Internet?'*\n"
-"— Mike Godwin ([read more](about.html))"
-msgstr ""
-
-#: pages/index.py:34
-msgid "Host a Website"
-msgstr ""
-
-#: pages/index.py:34
-msgid ""
-"Need a website nobody can take over? That is hosted for free? That is very\n"
-"resistant to attacks? Publish it on Freenet!"
-msgstr ""
-
-#: pages/index.py:37
-msgid ""
-"*'Now the Mempo repository can not be censored, DDoSed or taken offline, "
-"despite having just one tiny server.'* — rfree in [apt-get over "
-"Freenet](news.html#20150105)"
-msgstr ""
-
-#: pages/index.py:40 pages/index.py:212
-msgid "Share Files"
-msgstr ""
-
-#: pages/index.py:40
-msgid "Upload a file to Freenet and anyone with the secret URL can access it."
-msgstr ""
-
 #: pages/index.py:42
-msgid ""
-"*[follow the blue rabbit\n"
-"through the looking glass](download.html#autostart)*"
-msgstr ""
-
-#: pages/index.py:46
-msgid "Meet New People"
-msgstr ""
-
-#: pages/index.py:46
-msgid ""
-"People from all over the world use Freenet to communicate. Some of them do so\n"
-"anonymously. You might never hear their voices in the open."
-msgstr ""
-
-#: pages/index.py:49
-msgid ""
-"*'The value of publishing is not me wanting you to watch. The value of "
-"publishing is you wanting to see what I provide.'* — A.B."
-msgstr ""
-
-#: pages/index.py:52
-msgid "Experiment with Exciting New Technology"
-msgstr ""
-
-#: pages/index.py:52
-msgid ""
-"Freenet is on the cutting edge of distributed routing research. The data\n"
-"storage provided by Freenet is a proving ground for a number of new\n"
-"distributed systems. ([Papers](about.html#papers))"
-msgstr ""
-
-#: pages/index.py:56
-msgid ""
-"*'A decentralized anonymous datastore with real censorship resistance, no "
-"central authority and long lifetime only for information which people "
-"actually use.'* — [The forgotten Cryptopunk "
-"Paradise](http://draketo.de/english/freenet/forgotten-cryptopunk-paradise)"
-msgstr ""
-
-#: pages/index.py:59
-msgid "Improve the World"
-msgstr ""
-
-#: pages/index.py:59
-msgid ""
-"By using Freenet from the \"free world\" you help people in oppressive regimes\n"
-"share information. The more people use Freenet the easier it will be to\n"
-"obtain."
-msgstr ""
-
-#: pages/index.py:62
-msgid ""
-"If one percent of people used Freenet, everyone could safely be a "
-"whistleblower."
-msgstr ""
-
-#: pages/index.py:65
-msgid "Join us in Freenet"
-msgstr ""
-
-#: pages/index.py:68
-msgid ""
-"*'Many years passed, two towers fell, the empire expanded its hunt for rebels all over the globe, and now, as the empire’s grip has become so horrid that even the most loyal servants of the emperors turn and expose their dark secrets, Freenet is still moving forward.'*\n"
-"— [The forgotten Cryptopunk Paradise](http://draketo.de/english/freenet/forgotten-cryptopunk-paradise)"
-msgstr ""
-
-#: pages/index.py:149
 msgid ""
 "Leap over censorship<br>\n"
 "Escape total surveillance"
 msgstr ""
 
-#: pages/index.py:153
+#: pages/index.py:46
 msgid ""
-"Freenet re-establishes freedom of speech on the Internet.<br>\n"
-"Install Freenet and join the peer-to-peer network today!"
+"Freenet is a peer-to-peer platform for censorship-resistant communication and publishing.\n"
+"Browse websites, post on forums, and publish files within Freenet with strong privacy protections."
 msgstr ""
 
-#: pages/index.py:158
+#: pages/index.py:51
 msgid "read more…"
 msgstr ""
 
-#: pages/index.py:159
+#: pages/index.py:52
 msgid ""
 "Help keep Internet freedom alive and expand human liberty! Support another "
 "year of paid development. [Learn more about our fundraiser.][url_fundraiser]"
 msgstr ""
 
-#: pages/index.py:160
+#: pages/index.py:53
 msgid "Donate!"
 msgstr ""
 
-#: pages/index.py:162
+#: pages/index.py:55
 msgid "The Freenet Project Inc is a non-profit 501(c)(3) organization."
 msgstr ""
 
-#: pages/index.py:163
+#: pages/index.py:56
 msgid "Donations are tax-deductible."
 msgstr ""
 
-#: pages/index.py:200
+#: pages/index.py:92
 msgid "Secret Identity"
 msgstr ""
 
-#: pages/index.py:201
+#: pages/index.py:93
 msgid "Create a secret identity so nobody knows who you are."
 msgstr ""
 
-#: pages/index.py:203
+#: pages/index.py:95
 msgid "Browse Websites"
 msgstr ""
 
-#: pages/index.py:204
+#: pages/index.py:96
 msgid ""
 "Freenet is home to sites ranging from programming to sustainable living."
 msgstr ""
 
-#: pages/index.py:206
+#: pages/index.py:98
 msgid "Forums"
 msgstr ""
 
-#: pages/index.py:207
+#: pages/index.py:99
 msgid "Ask questions and exchange ideas."
 msgstr ""
 
-#: pages/index.py:209
+#: pages/index.py:101
 msgid "Publish"
 msgstr ""
 
-#: pages/index.py:210
+#: pages/index.py:102
 msgid "Publish anonymously without need for a server."
 msgstr ""
 
-#: pages/index.py:213
+#: pages/index.py:104
+msgid "Share Files"
+msgstr ""
+
+#: pages/index.py:105
 msgid "Easy upload & download."
 msgstr ""
 
-#: pages/index.py:215
+#: pages/index.py:107
 msgid "Platform"
 msgstr ""
 
-#: pages/index.py:216
+#: pages/index.py:108
 msgid "Write your own applications on the Freenet platform."
 msgstr ""
 
-#: pages/index.py:218
+#: pages/index.py:110
 msgid "Resistant"
 msgstr ""
 
-#: pages/index.py:219
+#: pages/index.py:111
 msgid "Freenet has been designed to be resistant to attacks and censorship."
 msgstr ""
 
-#: pages/index.py:221
+#: pages/index.py:113
 msgid "Distributed"
 msgstr ""
 
-#: pages/index.py:222
+#: pages/index.py:114
 msgid "No central points of failure, efficient caching of popular content."
 msgstr ""
 
-#: pages/index.py:224
+#: pages/index.py:116
 msgid "Proven"
 msgstr ""
 
-#: pages/index.py:225
+#: pages/index.py:117
 msgid "Based on solid research and in practical use for 15 years."
 msgstr ""
 
-#: pages/index.py:260
-msgid ""
-"Freenet is a peer-to-peer network for censorship-resistant communication."
+#: pages/index.py:136
+msgid "Share, Chat, Browse. Anonymously."
 msgstr ""
 
-#: pages/index.py:268
+#: pages/index.py:146
 msgid "Latest News"
 msgstr ""
 
-#: pages/index.py:280
+#: pages/index.py:163
 msgid "Overview"
 msgstr ""
 
@@ -4455,7 +4348,7 @@ msgstr ""
 
 #: pages/news.py:708
 msgid ""
-"The Freenet project has joined the [Localization Lab](http://www.localizationlab.org) organization on Transifex. This allows a larger team of translators, translating into more languages, and access to paid support.\n"
+"The Freenet Project has joined the [Localization Lab](http://www.localizationlab.org) organization on Transifex. This allows a larger team of translators, translating into more languages, and access to paid support.\n"
 "\n"
 "If this transition has caused any problems please let us know!"
 msgstr ""

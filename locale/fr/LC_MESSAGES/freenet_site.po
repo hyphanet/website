@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: Freenet\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-09-10 19:48-0400\n"
-"PO-Revision-Date: 2016-09-21 21:49+0000\n"
+"PO-Revision-Date: 2016-09-27 16:20+0000\n"
 "Last-Translator: French language coordinator <yahoe.001@gmail.com>\n"
 "Language-Team: French (http://www.transifex.com/otf/freenet/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -685,7 +685,7 @@ msgstr "Presse :"
 
 #: pages/common.py:429
 msgid "Support:"
-msgstr "Soutien :"
+msgstr "Assistance :"
 
 #: pages/common.py:430
 msgid "IRC:"
@@ -3081,7 +3081,7 @@ msgid ""
 "and run inserts are possible, and can be relatively safe in terms of many of\n"
 "the other attacks, but you are taking the risk that the opennet seednode you\n"
 "connect to may be malicious."
-msgstr "* **Les attaques d'amorçage ** : à moins qu'un noeud ne se connecte qu'à\ndes amis, il devra se connecter à des « nœuds de propagation » du réseau ouvert\nafin de s'annoncer et d'obtenir les premiers pairs à qui se connecter. Pour l'instant, les nœuds de propagation sont assez peu nombreux, et la liste\nest tenue à jour manuellement. Les nœuds de propagation pourraient facilement\nêtre bloqués par un pare-feu national, etc., mais les attaquants auraient la possibilité\nde mettre en place leurs propres nœuds de propagation sans trop de difficulté,\nde les faire accepter, et ensuite de « capturer » les utilisateurs de Freenet\nqui s'y connecteraient afin d'observer leur trafic, etc. Freenet tentera d'annoncer\nà plusieurs nœuds de propagation. Consulter la section ci-dessous sur les\n« attaques par corrélation », qui sont habituellement possibles avec une seule\nconnexion vers la cible. C'est donc une question de ressources - si l'attaquant\npossède les ressources nécessaires pour surveiller tous les nœuds Freenet,\nil a de bonnes chances d'arriver à ses fins. Il se peut que nous ayons plus\nde nœuds de propagation à l'avenir, et que nous n'en révélions qu'une petite partie\nà chaque nœud, comme Tor le fait avec ses ponts cachés, mais cela n'empêchera\npas les attaquants de créer de nombreux nœuds de propagation malveillants\net de les faire ajouter aux listes officielles. Il sera ensuite encore possible\nde\nbloquer tous les nœuds de propagation avec un peu d'effort (quelque chose\nde semblable est déjà arrivé aux ponts cachés de Tor en Chine). En les\ncombinant au moissonnage et aux attaques par recherche adaptative,\ncertains développeurs principaux pensent que ces attaques rendent le réseau ouvert\ntotalement vulnérable. Si une bonne sécurité est importante à vos yeux, vous\ndevez seulement vous connecter à des amis. Des insertions éclair sont possibles,\net peuvent être relativement à l'abri de plusieurs autres attaques, mais vous\nprenez le risque que le nœud de propagation auquel vous vous connectez\nsur le réseau ouvert puisse être malveillant."
+msgstr "* **Les attaques d'amorçage ** : à moins qu'un nœud ne se connecte qu'à\ndes amis, il devra se connecter à des « nœuds de propagation » du réseau ouvert\nafin de s'annoncer et d'obtenir les premiers pairs à qui se connecter. Pour l'instant, les nœuds de propagation sont assez peu nombreux, et la liste\nest tenue à jour manuellement. Les nœuds de propagation pourraient facilement\nêtre bloqués par un pare-feu national, etc., mais les attaquants auraient la possibilité\nde mettre en place leurs propres nœuds de propagation sans trop de difficulté,\nde les faire accepter, et ensuite de « capturer » les utilisateurs de Freenet\nqui s'y connecteraient afin d'observer leur trafic, etc. Freenet tentera d'annoncer\nà plusieurs nœuds de propagation. Consulter la section ci-dessous sur les\n« attaques par corrélation », qui sont habituellement possibles avec une seule\nconnexion vers la cible. C'est donc une question de ressources - si l'attaquant\npossède les ressources nécessaires pour surveiller tous les nœuds Freenet,\nil a de bonnes chances d'arriver à ses fins. Il se peut que nous ayons plus\nde nœuds de propagation à l'avenir, et que nous n'en révélions qu'une petite partie\nà chaque nœud, comme Tor le fait avec ses ponts cachés, mais cela n'empêchera\npas les attaquants de créer de nombreux nœuds de propagation malveillants\net de les faire ajouter aux listes officielles. Il sera ensuite encore possible\nde\nbloquer tous les nœuds de propagation avec un peu d'effort (quelque chose\nde semblable est déjà arrivé aux ponts cachés de Tor en Chine). En les\ncombinant au moissonnage et aux attaques par recherche adaptative,\ncertains développeurs principaux pensent que ces attaques rendent le réseau ouvert\ntotalement vulnérable. Si une bonne sécurité est importante à vos yeux, vous\ndevez seulement vous connecter à des amis. Des insertions éclair sont possibles,\net peuvent être relativement à l'abri de plusieurs autres attaques, mais vous\nprenez le risque que le nœud de propagation auquel vous vous connectez\nsur le réseau ouvert puisse être malveillant."
 
 #: pages/help.py:740
 msgid ""
@@ -4559,7 +4559,7 @@ msgstr "Titre de la section"
 
 #: pages/template.py:11
 msgid "Markdown text"
-msgstr "Texte markdown"
+msgstr "Texte Markdown"
 
 #: pages/template.py:17
 msgid "Title"
