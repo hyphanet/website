@@ -1,0 +1,10 @@
+@font-face {
+	font-family: "PT Sans";
+	src: url("../fonts/PT_Sans-Web-Regular.ttf");
+}
+
+@font-face {
+	font-family: "PT Sans";
+	font-weight: 700; /* FIXME does this actually work as expected? I think it is...*/
+	src: url("../fonts/PT_Sans-Web-Bold.ttf");
+}

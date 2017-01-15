@@ -1,0 +1,92 @@
+#markdown-toc {
+	width: 240px;
+	/*height: 9999px;
+	float: left;
+	overflow: hidden;*/
+	list-style-type: none;
+	box-sizing: border-box;
+	font-weight: 600;
+	/*padding-left: 5em;*/
+	padding-left: 4em;
+	position: fixed;
+	margin-left: -240px;
+	margin-top: 0px;
+	z-index: 1;
+	/*margin-top: -0.5em;*/
+	/*margin-top: -5em;*/
+	max-height: 100%;
+}
+
+ul#markdown-toc > li a {
+	font-family: bebasneuebold, "bebas-neue", sans-serif;
+	font-size: 150%;
+	color: #416ab3;
+	/*white-space: nowrap;
+	overflow: hidden;*/
+	text-overflow: ellipsis;
+}
+
+ul#markdown-toc li {
+	text-overflow: ellipsis;
+}
+
+ul#markdown-toc li {
+	margin-bottom: 2em;
+}
+
+ul#markdown-toc li ul li {
+	margin-bottom: 0px;
+}
+
+ul#markdown-toc > li > ul > li a {
+	/* font-size: 120%;*/
+	font-size: 100%;
+	font-family: 'PT Sans', 'Lucida Sans', 'Segoe UI', 'Calibri',  sans-serif;
+	color:  #515862;
+}
+
+ul#markdown-toc > li > ul > li > ul > li a {
+	color:  #515862;
+	font-size: 11px;
+	font-family: 'PT Sans', 'Lucida Sans', 'Segoe UI', 'Calibri',  sans-serif;
+	display: none;
+}
+
+ul#markdown-toc ul {
+	padding-left: 0px;
+	list-style-type: none;
+}
+
+/*ul#markdown-toc a {
+	position: relative;
+}*/
+
+/*ul#markdown-toc a:hover:before {
+	display: inline-block;
+	content: url('../images/toc-cursor-blue.png');
+	position: absolute;
+	left: -60px;*/
+	/*margin-left: 3em;*/
+/*}*/
+
+ul#markdown-toc a:hover {
+	list-style-image: url('../images/toc-cursor-blue.png');
+}
+
+/*ul#markdown-toc a:hover:before,
+ul#markdown-toc li ul li a:hover:before {*/
+/*ul#markdown-toc a:hover {
+	color: #416ab3;
+}*/
+
+/*h1 {
+	margin-left: 240px;
+}*/
+
+main {
+	margin-left: 240px;
+}
+
+footer {
+	z-index: 1;
+}

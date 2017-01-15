@@ -1,0 +1,25 @@
+a {
+	color: white;
+}
+
+ul, ol {
+	padding: 0 0 0 0;
+}
+
+ol li,
+ul li {
+	display: block;
+}
+
+#features li,
+ol li,
+ul li,
+ol, ul {
+    list-style-type: none;
+}
+
+nav:after {
+	display: block;
+	margin-left: 2em;
+	content: url('../images/greeble-white.png');
+}

@@ -1,0 +1,11 @@
+main h1 {
+	margin-left: 240px;
+}
+
+#markdown-toc {
+	width: 240px;
+	height: 9999px;
+	float: left;
+	overflow: hidden;
+}
+

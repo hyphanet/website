@@ -1,0 +1,100 @@
+/*
+
+Colors:
+
+Blue
+rgb(65, 106, 179)
+rgb(64, 102, 171) << eyedropper
+
+Dark Blue
+rgb(27, 62, 125)
+rgb(34, 60, 109) << eyedropper
+
+Light Blue
+rgb(33, 144, 193)
+
+Light blue desaturated
+rgb(120, 148, 199)
+
+Light Grey 
+1
+rgb(183, 185, 190)
+2 bluer
+rgb(163, 175, 178)
+
+Dark Grej
+rgb(81, 88, 98)
+
+Bluish off-white
+rgb(243, 246, 246)
+
+Orange...
+rgb(249, 133, 97)
+ 
+ */
+
+
+/*
+ * old header
+gradient top #223c6d
+gradient bottom #4066ab
+ *
+ */
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+/*
+font-family: ArialNarrow;
+color:  #416ab3;
+font-size: 25px;
+font-weight: 400;
+text-align: left;
+
+font-family: ArialNarrow;
+color:  #7c7c7e;
+font-size: 18px;
+font-weight: 400;
+text-align: left;
+
+font-family: ArialNarrow;
+color:  #1f2022;
+font-size: 20px;
+font-weight: 400;
+text-align: left;
+
+font-family: ArialNarrow;
+color:  #212225;
+font-size: 20px;
+font-weight: 400;
+text-align: left;
+
+font-family: ArialNarrow;
+color:  #29292a;
+font-size: 18px;
+font-weight: 400;
+text-align: left;
+*/
+
+/*font-family: 'Myriad Pro', "myriad-pro", 'PT Sans', 'Lucida Sans', 'Segoe UI', 'Calibri',  sans-serif;*/

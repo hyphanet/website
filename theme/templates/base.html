@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+<head>
+	<link rel="stylesheet" type="text/css" href="{{ BASE_URL }}/theme/style/bebas.css">
+	<link rel="stylesheet" type="text/css" href="{{ BASE_URL }}/theme/style/ptsans.css">
+	<link rel="stylesheet" type="text/css" href="{{ BASE_URL }}/theme/style/social.css" />
+	<link rel="stylesheet" type="text/css" href="{{ BASE_URL }}/theme/style/content.css" />
+	<link rel="stylesheet" type="text/css" href="{{ BASE_URL }}/theme/style/toc.css" />
+        {% block head %}
+        <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+        <meta charset="utf-8" />
+        {% if FEED_ALL_ATOM %}
+        <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
+        {% endif %}
+        {% if FEED_ALL_RSS %}
+        <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Full RSS Feed" />
+        {% endif %}
+        {% if FEED_ATOM %}
+        <link href="{{ FEED_DOMAIN }}/{{ FEED_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed" />
+        {% endif %}
+        {% if FEED_RSS %}
+        <link href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
+        {% endif %}
+        {% if CATEGORY_FEED_ATOM and category %}
+        <link href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_ATOM|format(category.slug) }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Categories Atom Feed" />
+        {% endif %}
+        {% if CATEGORY_FEED_RSS and category %}
+        <link href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_RSS|format(category.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Categories RSS Feed" />
+        {% endif %}
+        {% if TAG_FEED_ATOM and tag %}
+        <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_ATOM|format(tag.slug) }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Tags Atom Feed" />
+        {% endif %}
+        {% if TAG_FEED_RSS and tag %}
+        <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(tag.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Tags RSS Feed" />
+        {% endif %}
+        {% endblock head %}
+</head>
+
+<body id="index" class="home">
+	<div>
+        <nav id="menu">
+	<a href="{{ BASE_URL }}/">Freenet</a>
+        {% for title, link in MENUITEMS %}
+            <li><a href="{{ link }}">{{ title }}</a></li>
+        {% endfor %}
+        {% for p in pages %}
+          <a {% if p == page %} class="active"{% endif %} href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a>
+        {% endfor %}
+        </nav><!-- /#menu -->
+	</div>
+	<main>
+        <header id="banner" class="body">
+                <h1>{{ SITENAME }} {{ SITESUBTITLE }}</h1>
+        </header><!-- /#banner -->
+        {% block content %}
+        {% endblock %}
+	</main>
+	<footer>
+		<header>
+		<h2>Freenet</h2>
+		<p>Navigate with Freedom</p>
+		</header>
+
+		<ul class="social">
+			<a href="https://facebook.com">Facebook</a>
+			<a href="https://twitter.com">Twitter</a>
+			<a href="https://instagram.com">Instagram</a>
+			<a href="https://youtube.com">Youtube</a>
+			<a href="https://pinterest.com">Pinterest</a>
+			<a href="https://plus.google.com">Google+</a>
+			<!-- FIXME -->
+			<ul class="stats">
+				<li>1290 Followers</li>
+				<li>26900 Visitors</li>
+				<li>5900 Likes</li>
+			</ul>
+		</ul>
+
+		<form id="newsletter">
+			<input name="email"></input>
+			<input type="submit" value="Subscribe">
+		</form>
+
+		<div id="contact">
+			<a href="mailto:press@freenetproject.org">press@freenetproject.org</a>
+			<a href="mailto:support@freenetproject.org">support@freenetproject.org</a>
+			<span>IRC: <a href="http://webchat.freenode.net/?randomnick=1&channels=%23freenet&uio=d4">#freenet</a> on chat.freenode.net</span>
+		</div>
+
+		<p id="copyright">&copy; Copyright The Freenet Project Inc. | All Rights Reserved</p>
+	</footer>
+</body>
+</html>

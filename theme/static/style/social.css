@@ -1,0 +1,39 @@
+.social a {
+	display: inline-block;
+	/*background-color: white;*/
+	width: 12px;
+	height: 12px;
+	text-indent: -9999px;
+	line-height: 29px;
+	vertical-align: bottom;
+	/*content: " ";*/
+}
+
+.social a[href*="facebook.com"] {
+	background: url('../images/social-white.png') no-repeat;
+}
+
+.social a[href*="twitter.com"] {
+	background: url('../images/social-white.png') no-repeat 20%;
+}
+
+.social a[href*="pinterest.com"] {
+	background: url('../images/social-white.png') no-repeat 80%;
+}
+
+.social a[href*="instagram.com"] {
+	background: url('../images/social-white.png') no-repeat 40%;
+}
+
+.social a[href*="youtube.com"] {
+	background: url('../images/social-white.png') no-repeat 60%;
+}
+
+.social a[href*="plus.google.com"] {
+	background: url('../images/social-white.png') no-repeat 100%;
+	width: 15px;
+}
+
+footer .social {
+	margin-top: 0px;
+}
