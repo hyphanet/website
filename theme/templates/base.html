@@ -50,7 +50,7 @@
 	</div>
 	<main>
         <header id="banner" class="body">
-                <h1>{{ SITENAME }} {{ SITESUBTITLE }}</h1>
+                <h1>{% block heading %}{{ SITENAME }}{% endblock heading %}</h1>
         </header><!-- /#banner -->
         {% block content %}
         {% endblock %}

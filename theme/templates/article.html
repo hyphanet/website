@@ -10,16 +10,9 @@
   {% endfor %}
 
 {% endblock %}
-
+{% block heading %}{{ article.title }}{%endblock%}
 {% block content %}
 <section id="content" class="body">
-  <header>
-    <h2 class="entry-title">
-      <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
-         title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
- {% import 'translations.html' as translations with context %}
- {{ translations.translations_for(article) }}
-  </header>
   <footer class="post-info">
     <time class="published" datetime="{{ article.date.isoformat() }}">
       {{ article.locale_date }}
