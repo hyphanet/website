@@ -19,7 +19,7 @@ Help us keep Internet freedom alive and expand human liberty.
 
 <a class="btn button-custom btn-custom-two donate-button" href="donate.html">Donate today.</a>
 
-[Donate today.](/donate/)
+[Donate today.](/pages/donate.html)
 
 Thank you,
 

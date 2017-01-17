@@ -30,6 +30,6 @@ See the [wiki Hackathon page][hackathon_url] for details.
 
 Happy hacking!
 
-[irc_url]: help.html#irc
+[irc_url]: /pages/help.html#irc
 [flip_url]: https://wiki.freenetproject.org/FLIP
 [hackathon_url]: https://wiki.freenetproject.org/Wiki/Hackathon

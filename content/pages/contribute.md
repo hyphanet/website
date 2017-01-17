@@ -9,8 +9,8 @@ permalink: /volunteer/
 If you already have a contribution in mind you can find the project repositories
 [on GitHub](https://github.com/freenet/).
 
-- Get in contact in the [mailing lists](help.html#mailing-lists)
-- Join us on IRC: [#freenet on chat.freenode.net](help.html#irc)
+- Get in contact in the [mailing lists](/pages/help.html#mailing-lists)
+- Join us on IRC: [#freenet on chat.freenode.net](/pages/help.html#irc)
 - Report issues in the [bug tracker](https://bugs.freenetproject.org/)
 
 The Wiki contains a list of 

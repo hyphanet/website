@@ -22,7 +22,7 @@ Send your donations to **1966U1pjj15tLxPXZ19U48c99EJDkdXeqb**.
 * Alternatively, please contact us at {{site.donate_email}} if you cannot use any of these payment methods.
 
 [url_bitcoin]: http://www.bitcoin.org/
-[logo_bitcoin]: assets/img/BC_nBG_48px.png
+[logo_bitcoin]: /assets/img/BC_nBG_48px.png
 [url_zazzle_store]: http://www.zazzle.com/freenetproject
 [url_salt_bountysource]: https://salt.bountysource.com/teams/freenet
 
@@ -156,7 +156,7 @@ Donation inquiries please contact Ian Clarke: <span class="e-mail" data-user="et
 [url_gartenheinz]: http://www.gartenheinz.de
 [url_simple_carrentals]: http://www.simple-carrentals.com/
 [url_sportsden]: http://www.sportsden.ie/
-[logo_intellij_idea]: assets/img/logo_intellij_idea.png
+[logo_intellij_idea]: /assets/img/logo_intellij_idea.png
 [url_jetbrains]: https://www.jetbrains.com
 [url_intellij_idea]: https://www.jetbrains.com/idea
 

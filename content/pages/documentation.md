@@ -39,22 +39,22 @@ three ways to install Freenet:
 *   Enabling a mirror copy of a Freenet installation
 
 If you want to install the Freenet software on a computer which lacks a GUI,
-see the [Headless install](download.html#unix) instructions. If you have
+see the [Headless install](/pages/download.html#unix) instructions. If you have
 mirrored a working Freenet installation to a machine without explicitly
-installing it, see [Mirrored install](download.html#mirrored). Otherwise,
+installing it, see [Mirrored install](/pages/download.html#mirrored). Otherwise,
 continue reading.
 
 #### Graphical install
 
 **The information below does not apply to Windows systems**. For Windows you should use
-[the installer for Windows](assets/jnlp/FreenetInstaller.exe) as described on
-[the download page](download.html). You can also get the installer for Windows
+[the installer for Windows](/assets/jnlp/FreenetInstaller.exe) as described on
+[the download page](/pages/download.html). You can also get the installer for Windows
 from [here](https://downloads.freenetproject.org/latest/FreenetInstaller.exe).
 
 For a graphical installation you have to have:
 
 *   a working Java Runtime Environment
-*   a downloaded copy of [new_installer_offline.jar](assets/jnlp/freenet_installer.jar)
+*   a downloaded copy of [new_installer_offline.jar](/assets/jnlp/freenet_installer.jar)
     (if this does not work try [here](https://downloads.freenetproject.org/latest/new_installer_offline.jar))
 *   a working graphical user interface (GUI)
 
@@ -360,7 +360,7 @@ To access a particular piece of data on Freenet, you can use FProxy. You need
 to know the key to the data, and enter it like this (or click a link
 containing the key):
 
-<pre>	http://localhost:8888/[Freenet Key]</pre>
+<pre>http://localhost:8888/[Freenet Key]</pre>
 
 There are four types of keys in Freenet:
 

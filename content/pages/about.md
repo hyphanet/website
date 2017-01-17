@@ -4,10 +4,6 @@ title: About
 permalink: /about/
 ---
 
-* TOC
-{:toc}
-
-
 ## What is Freenet?
 
 > I worry about my child and the Internet all the time, even though she's too
@@ -360,7 +356,7 @@ the project on business and publicity matters.
 
 Dave Baker
 
-: Dave's main contribution has been [Freemail](documentation.html#freemail),
+: Dave's main contribution has been [Freemail](/pages/documentation.html#freemail),
 his Summer of Code project to build a working email-over-Freenet system,
 as well as some debugging and core work in various places.
 
@@ -377,15 +373,15 @@ the FProxy stats page and Node 2 Node Messages (N2NM/N2NTMs).
 
 And **hundreds of others**, who either haven't asked to be added here, who
 prefer to remain nameless, or who we just haven't got around to thanking. Not to
-mention thousands of users, testers, and [donors](donate.html#sponsors)!
+mention thousands of users, testers, and [donors](/pages/donate.html#sponsors)!
 
 ### Papers
 
-![][icon_pdf] [Measuring Freenet in the Wild: Censorship-resilience under Observation](assets/papers/roos-pets2014.pdf) (PDF)  
+![][icon_pdf] [Measuring Freenet in the Wild: Censorship-resilience under Observation](/assets/papers/roos-pets2014.pdf) (PDF)  
 Observations and measurements on the live Freenet network. Includes suggestions
 for improvement. This was submitted to PETS 2014.
 
-![][icon_pdf] [The Dark Freenet](assets/papers/freenet-0.7.5-paper.pdf) (PDF)  
+![][icon_pdf] [The Dark Freenet](/assets/papers/freenet-0.7.5-paper.pdf) (PDF)  
 Detailed paper about the Freenet 0.7.5 network, as opposed to its routing
 algorithm, which is detailed in the below papers. Includes some new
 simulations. This has been submitted to PET 2010.
@@ -394,34 +390,34 @@ simulations. This has been submitted to PET 2010.
 This is a video of a talk given by Ian Clarke and Oskar Sandberg at the Chaos
 Computer Congress in Berlin, December 2005, describing the (then) new
 architecture for Freenet 0.7\. You can also download the [slideshow](
-assets/papers/ccc-slideshow.pdf.bz2), and the source for the Java [demo](
-assets/papers/ccc-freenet-demo.tar.bz2) (requires Java 1.5).
+/assets/papers/ccc-slideshow.pdf.bz2), and the source for the Java [demo](
+/assets/papers/ccc-freenet-demo.tar.bz2) (requires Java 1.5).
 
-![][icon_pdf] [Searching in a Small World](assets/papers/lic.pdf) (PDF)  
+![][icon_pdf] [Searching in a Small World](/assets/papers/lic.pdf) (PDF)  
 Oskar Sandberg's licentiate thesis describing a simple decentralized
 mechanism for constructing small world networks that is inspired by Freenet's
 original design. Part II of the thesis describes the basis for the new
 Darknet architecture.
 
-![][icon_pdf] [Distributed routing in Small World Networks](assets/papers/swroute.pdf) (PDF)  
+![][icon_pdf] [Distributed routing in Small World Networks](/assets/papers/swroute.pdf) (PDF)  
 A paper by Oskar Sandberg describing the theoretical basis for the new
 "Darknet" routing mechanism employed by Freenet 0.7.
 
 ![][icon_pdf] Chaos Computer Congress Talk (slideshow)  
-This is a [slideshow](assets/papers/ccc-slideshow.pdf.bz2) for a talk given
+This is a [slideshow](/assets/papers/ccc-slideshow.pdf.bz2) for a talk given
 at the Chaos Computer Congress on 30th Dec 2005 in Berlin, Germany by Ian
 Clarke and Oskar Sandberg. It described the new "darknet" approach to be
 employed in Freenet 0.7\. A Java demonstration to accompany the talk is [
-also](assets/papers/ccc-freenet-demo.tar.bz2) available.
+also](/assets/papers/ccc-freenet-demo.tar.bz2) available.
 
-![][icon_pdf] [Switching for a small world](assets/papers/vilhelm_thesis.pdf) (PDF)  
+![][icon_pdf] [Switching for a small world](/assets/papers/vilhelm_thesis.pdf) (PDF)  
 A thesis by Vilhelm Verendel exploring ways to optimise the swapping algorithm.
 
-![][icon_pdf] [Protecting Freedom of Information Online with Freenet](assets/papers/freenet-ieee.pdf) (PDF)  
+![][icon_pdf] [Protecting Freedom of Information Online with Freenet](/assets/papers/freenet-ieee.pdf) (PDF)  
 An IEEE Internet Computing article describing the Freenet architecture circa
 2002 - probably the best introduction to the theory behind Freenet.
 
-![][icon_pdf] [FreeNet White Paper](assets/papers/ddisrs.pdf) (PDF)  
+![][icon_pdf] [FreeNet White Paper](/assets/papers/ddisrs.pdf) (PDF)  
 Original white paper by Ian Clarke, Division of Informatics, University of
 Edinburgh 1999.
 
@@ -455,5 +451,5 @@ and most implemented ideas have been discussed in detail on [the mailing
 lists](help.html#mailing-lists) at some point, more recently often in-Freenet
 forums such as FMS, or [the bug tracker](https://bugs.freenetproject.org/).
 
-[icon_pdf]: {{ site.baseurl }}/assets/img/small-n-flat/file-pdf.png
-[icon_video]: {{ site.baseurl }}/assets/img/small-n-flat/file-video.png
+[icon_pdf]: /assets/img/small-n-flat/file-pdf.png
+[icon_video]: /assets/img/small-n-flat/file-video.png
