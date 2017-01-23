@@ -429,30 +429,28 @@ If you want everyone to be able to use your node you have the following options:
 
 In both cases change the following parameters:
 
-`fproxy.bindTo=0.0.0.0  
- fproxy.allowedHosts=*  
-`
+    fproxy.bindTo=0.0.0.0  
+    fproxy.allowedHosts=*  
+
 
 Of course, this leaves your node wide open, unless you control access with a
 firewall of some sort. If you'd prefer to use access controls within Freenet,
 then you can use lines like this:
 
-`fproxy.bindTo=0.0.0.0  
- fproxy.allowedHosts=127.0.0.1,192.168.1.0/24  
-`
+    fproxy.bindTo=0.0.0.0  
+    fproxy.allowedHosts=127.0.0.1,192.168.1.0/24  
 
 Or even (find your IP address from ipconfig/ifconfig/winipcfg and substitute
 it for 192.168.1.1):
 
-`fproxy.bindTo=127.0.0.1,192.168.1.1  
- fproxy.allowedHosts=127.0.0.1,192.168.1.0/24  
-`
+    fproxy.bindTo=127.0.0.1,192.168.1.1  
+    fproxy.allowedHosts=127.0.0.1,192.168.1.0/24  
 
 And if you want to grant full access (i.e. change config settings, restart,
 etc) to the node (WARNING: Be very careful who you give full fproxy access
 to!):
 
-`fproxy.allowedHostsFullAccess=127.0.0.1,192.168.1.0/24  
+    fproxy.allowedHostsFullAccess=127.0.0.1,192.168.1.0/24  
 
 ### What's new? Is there a changelog?
 
