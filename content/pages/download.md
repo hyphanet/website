@@ -22,9 +22,9 @@ Steps:
 
 ## Windows
 
-Download and run [the installer](assets/jnlp/FreenetInstaller.exe)
+Download and run [the installer](/assets/jnlp/FreenetInstaller.exe)
 
-<p><a class=" btn button-custom btn-custom-two" href="assets/jnlp/FreenetInstaller.exe"><i class="icon ion-arrow-down-a"></i> Download Freenet</a></p>
+<p><a class=" btn button-custom btn-custom-two" href="/assets/jnlp/FreenetInstaller.exe"><i class="icon ion-arrow-down-a"></i> Download Freenet</a></p>
 
 ([try this if the first link is blocked](https://downloads.freenetproject.org/latest/FreenetInstaller.exe)) ([gpg signature][url_gpg_sig]; [keyring][url_keyring])
 
@@ -32,7 +32,7 @@ It will automatically install Freenet and other required components for you.
 When done, your default browser will automatically open up to Freenet's
 web-based user interface.
 
-![](assets/img/install/1-langselect-windows.png)
+![](/assets/img/install/1-langselect-windows.png)
 
 Freenet requires Windows XP or later.
 
@@ -48,7 +48,7 @@ Download and run [the installer](https://github.com/freenet/mactray/releases/dow
 It will automatically install Freenet and other required components for you.
 When done, your default browser will automatically open up to Freenet's web-based user interface.
 
-![](assets/img/mactray/osx_installer_step2_transparent.png)
+![](/assets/img/mactray/osx_installer_step2_transparent.png)
 
 Freenet requires OS X 10.8 or later.
 
@@ -58,13 +58,13 @@ Freenet requires OS X 10.8 or later.
 
 ## GNU/Linux & POSIX
 
-Try the [Java Web Start installer](assets/jnlp/freenet.jnlp).
+Try the [Java Web Start installer](/assets/jnlp/freenet.jnlp).
 
-<p><a class=" btn button-custom btn-custom-two" href="assets/jnlp/freenet.jnlp"><i class="icon ion-arrow-down-a"></i>Install Freenet</a></p>
+<p><a class=" btn button-custom btn-custom-two" href="/assets/jnlp/freenet.jnlp"><i class="icon ion-arrow-down-a"></i>Install Freenet</a></p>
 
 Now follow the installer:
 
-![](assets/img/install/1-langselect.png)
+![](/assets/img/install/1-langselect.png)
 
 If it doesn't work:
 
@@ -83,7 +83,7 @@ Open a terminal and run:
     wget 'https://freenetproject.org/assets/jnlp/freenet_installer.jar' -O new_installer_offline.jar
     java -jar new_installer_offline.jar
 
-Alternatively, downloading [the installer](assets/jnlp/freenet_installer.jar)
+Alternatively, downloading [the installer](/assets/jnlp/freenet_installer.jar)
 ([gpg signature][jar_sig]; [keyring][url_keyring])
 and then clicking on the file may work on some systems, but if there are
 problems we recommend the above command lines. If wget is not installed,
@@ -259,4 +259,4 @@ However, your (or someone else's) government may be able to find out who you are
         sub   4096R/AC1BB386 2016-01-02 [expires: 2017-01-01]
         sub   4096R/9684F2F2 2016-01-02 [expires: 2017-01-01]
 
-[url_keyring]: assets/keyring.gpg
+[url_keyring]: /assets/keyring.gpg
