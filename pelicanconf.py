@@ -50,7 +50,7 @@ I18N_GETTEXT_LOCALEDIR = 'locales'
 I18N_GETTEXT_DOMAIN = 'messages'
 
 MARKDOWN = {
-    'extensions': ["markdown_i18n"],
+    'extensions': ["markdown_i18n", "markdown.extensions.def_list",],
     'extension_configs': {
         'markdown_i18n': {
             'i18n_dir': 'locales',
