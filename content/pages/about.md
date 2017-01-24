@@ -50,9 +50,6 @@ friends' friends' friends and so on. This enables people to use Freenet even
 in places where Freenet may be illegal, makes it very difficult for
 governments to block it, and does not rely on tunneling to the "free world".
 
-
-[comment]: # Translators: do not translate the anchors such as "#prior_reading"
-
 *Written by Ian Clarke*
 
 1.  [A Disclaimer](#disclaimer)
@@ -330,7 +327,7 @@ of FLIP, chat over Freenet.
 
 The folks from Frost
 
-:A group of users and programmers who use an old spammable
+: A group of users and programmers who use an old spammable
 Freenet-based forum system which has been abandoned by most of the
 core developers. They are active, however, and though it takes time
 for their contributions to reach to core development, they take part
