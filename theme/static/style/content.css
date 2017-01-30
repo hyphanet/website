@@ -61,6 +61,12 @@ nav {
 	/*line-height: 26px;*/
 	padding: 1em 1em 1em 6em;
 	/*text-align: center;*/
+	display: inline-block;
+}
+
+aside {
+	box-shadow: 0px 0px 16px 16px #1B3E7D;
+	background-color: #1B3E7D;
 }
 
 nav:before {
