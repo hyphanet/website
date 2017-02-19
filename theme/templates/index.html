@@ -7,13 +7,13 @@
 		<link rel="stylesheet" type="text/css" href="{{ BASE_URL }}/theme/style/social.css" />
 		<link rel="stylesheet" type="text/css" href="{{ BASE_URL }}/theme/style/content.css" />
 		<link rel="stylesheet" type="text/css" href="{{ BASE_URL }}/theme/style/landing.css" />
-		<link rel="stylesheet" type="text/css" href="{{ BASE_URL }}/theme/style/toc.css" />
+		<link rel="stylesheet" type="text/css" href="{{ BASE_URL }}/theme/style/menu.css" />
 	</head>
 	<body>
 	<div>
 		<aside class="social">
-			<a href="https://facebook.com">Facebook</a>
-			<a href="https://twitter.com">Twitter</a>
+			<a href="https://www.facebook.com/freenetp2p">Facebook</a>
+			<a href="https://twitter.com/freenetproject">Twitter</a>
 			<a href="https://instagram.com">Instagram</a>
 			<a href="https://youtube.com">Youtube</a>
 			<a href="https://pinterest.com">Pinterest</a>
@@ -25,7 +25,9 @@
 			    <a href="{{ link }}">{{ title }}</a>
 			{% endfor %}
 			{% for p in pages %}
-			  <a {% if p == page %} class="active"{% endif %} href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a>
+			  <a {% if p == page %} class="active"{% endif %} href="{{ SITEURL }}/{{ p.url }}">
+				  {% trans title=p.title %}{{ title }}{% endtrans %}
+			  </a>
 			{% endfor %}
 			<!--<a href="{{ BASE_URL }}/pages/about/">About</a>
 			<a href="{{ BASE_URL }}/pages/download/">Download</a>
@@ -35,69 +37,69 @@
 		</nav>
 		<header>
 			<h1>Freenet</h1>
-			<p>Browse websites, post on forums, and publish files within Freenet with strong privacy protections.</p>
+			<p>{% trans %}Browse websites, post on forums, and publish files within Freenet with strong privacy protections.{% endtrans %}</p>
 		</header>
 		<section id="actions">
 			<div>
-				<h2>Download</h2>
-				<p>Get the software</p>
-				<a href="{{ BASE_URL }}/pages/download.html">Learn More</a>
+				<h2>{% trans %}Download{% endtrans %}</h2>
+				<p>{% trans %}Get the software{% endtrans %}</p>
+				<a href="{{ BASE_URL }}/pages/download.html">{% trans %}Learn More{% endtrans %}</a>
 			</div>
 			<div>
-				<h2>Learn</h2>
-				<p>Learn to protect your privacy</p>
-				<a href="{{ BASE_URL }}/pages/documentation.html">Learn More</a>
+				<h2>{% trans %}Learn{% endtrans %}</h2>
+				<p>{% trans %}Learn to protect your privacy{% endtrans %}</p>
+				<a href="{{ BASE_URL }}/pages/documentation.html">{% trans %}Learn More{% endtrans %}</a>
 			</div>
 			<div>
-				<h2>Donate</h2>
-				<p>Give to protect online privacy and internet freedom</p>
-				<a href="{{ BASE_URL }}/pages/donate.html">Learn More</a>
+				<h2>{% trans %}Donate{% endtrans %}</h2>
+				<p>{% trans %}Give to protect online privacy and internet freedom{% endtrans %}</p>
+				<a href="{{ BASE_URL }}/pages/donate.html">{% trans %}Learn More{% endtrans %}</a>
 			</div>
 			<div>
-				<h2>Contribute</h2>
-				<p>Work to protect online privacy and internet freedom</p>
-				<a href="{{ BASE_URL }}/pages/volunteer.html">Learn More</a>
+				<h2>{% trans %}Contribute{% endtrans %}</h2>
+				<p>{% trans %}Work to protect online privacy and internet freedom{% endtrans %}</p>
+				<a href="{{ BASE_URL }}/pages/volunteer.html">{% trans %}Learn More{% endtrans %}</a>
 			</div>
 		</section>
 
-		<a href="#" id="more">More</a>
+		<a href="#" id="more">{% trans %}More{% endtrans %}</a>
 	</div>
 	<div>
 	<section id="whatsfreenet">
-		<h2>What's Freenet</h2>
-		<p>Freenet is a peer-to-peer platform for censorship-resistant communication and publishing.</p>
+		<h2>{% trans %}What's Freenet{% endtrans %}</h2>
+		<p>{% trans %}Freenet is a peer-to-peer platform for censorship-resistant communication and publishing.{% endtrans %}</p>
 
-		<a href="{{ BASE_URL }}/pages/download.html">Download</a>
+		<a href="{{ BASE_URL }}/pages/download.html">{% trans %}Download{% endtrans %}</a>
 		<!-- TODO: "Use your freenet platform" -->
 	</section>
 
 	<section id="features">
-		<h2>Freenet Features</h2>
-		<p>Browse websites, post on forums, and publish files within Freenet with strong privacy protections.</p>
+		<h2>{% trans %}Freenet Features{% endtrans %}</h2>
+		<p>{% trans %}Browse websites, post on forums, and publish files within Freenet with strong privacy protections.{% endtrans %}</p>
 
 		<ul>
 			<li>
-			        <h3>Secret Identity</h3>
-			        <p>Create yours so nobody knows who you are</p>
+				<h3>{% trans %}Secret Identity{% endtrans %}</h3>
+				<p>{% trans %}Create yours so nobody knows who you are{% endtrans %}</p>
 			</li>
 			<li>
-			        <h3>Browse Websites</h3>
-			        <p>Freenet is home to sites ranging from programming to sustainable living</p>
+				<h3>{% trans %}Browse Websites{% endtrans %}</h3>
+				<p>{% trans %}Freenet is home to sites ranging from programming to sustainable living{% endtrans %}</p>
 			</li>
 			<li>
-			        <h3>Forums</h3>
-			        <p>Ask questions and exchange ideas</p>
+				<h3>{% trans %}Forums{% endtrans %}</h3>
+				<p>{% trans %}Ask questions and exchange ideas{% endtrans %}</p>
 			</li>
 			<li>
-			        <h3>Platform</h3>
-			        <p>Build your own decentralized application on the Freenet platform</p>
+				<h3>{% trans %}Platform{% endtrans %}</h3>
+				<p>{% trans %}Build your own decentralized application on the Freenet platform{% endtrans %}</p>
 			</li>
 		</ul>
 	</section>
 
 	<section id="news">
-		<h2>What's New</h2>
-		<p>News about Freenet, internet freedom and privacy rights.</p>
+		<h2>{% trans %}What's New{% endtrans %}</h2>
+		<p>{% trans %}News about Freenet, internet freedom and privacy rights.{% endtrans %}</p>
 
 		<ol>
                     {% for post in articles_page.object_list %}
@@ -112,9 +114,9 @@
 		</ol>
 	</section>
 	<section id="testimonials">
-		<h2>Testimonials</h2>
+		<h2>{% trans %}Testimonials{% endtrans %}</h2>
 		<blockquote>
-			I worry about my child and the Internet all the time, even though she's too young to have logged on yet. Here's what I worry about. I worry that 10 or 15 years from now, she will come to me and say <q>Daddy, where were you when they took  freedom of the press away from the Internet</q>
+			{% trans %}I worry about my child and the Internet all the time, even though she's too young to have logged on yet. Here's what I worry about. I worry that 10 or 15 years from now, she will come to me and say {% endtrans %}<q>{% trans %}Daddy, where were you when they took  freedom of the press away from the Internet{% endtrans %}</q>
 		</blockquote>
 		<cite><a href="https://twitter.com/sfmnemonic" class="author" rel="author">Mike Godwin</a> / <a href="https://eff.org" class="organization">Electronic Freedom Foundation</a></cite>
 	</section>

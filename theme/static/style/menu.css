@@ -1,0 +1,27 @@
+@media only screen and (max-width: 640px) {
+	nav {
+		border-radius: 0.25em;
+		background-color: #1B3E7D;
+		background-color: #8595B3;
+		background: linear-gradient(to right, #8595B3 12em, rgba(133, 149, 179, 0) 100%), url('../images/graph-white.png'), #8595B3;
+		background-repeat: no-repeat;
+		background-position: top right;
+		display: block;
+	}
+	nav a:first-of-type {
+		display: inline-block;
+		margin-left: 0;
+	}
+	nav a {
+		display: block;
+		margin-left: 42px; /* Matching small white logo width */
+	}	
+
+	nav a:hover {
+		color: #5F6B81;
+	}	
+	nav:before {
+		display: block;
+		float: left;
+	}
+}

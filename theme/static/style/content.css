@@ -26,6 +26,7 @@ body > div:first-of-type {
 	/*background-color: rgb(65, 106, 179);*/
 	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b3e7d', endColorstr='#416ab3',GradientType=0 ); */
 	padding-bottom: 1em;
+	overflow-y: hidden;
 }
 
 /*
@@ -62,11 +63,6 @@ nav {
 	padding: 1em 1em 1em 6em;
 	/*text-align: center;*/
 	display: inline-block;
-}
-
-aside {
-	box-shadow: 0px 0px 16px 16px #1B3E7D;
-	background-color: #1B3E7D;
 }
 
 nav:before {
@@ -621,6 +617,9 @@ footer .stats li:before {
 		width: 100%;
 		margin-left: 0;
 	}*/
+	main {
+		margin-left: 0;
+	}
 	body {
 		padding-bottom: 16em;
 	}
@@ -631,19 +630,25 @@ footer .stats li:before {
 }
 
 @media only screen and (max-width : 640px) {
-	/*footer #contact,
-	footer #copyright,
-	footer form {
-		float: none;
-		text-align: center;
-		width: 100%;
-		margin-left: none;
-	}*/
 	body {
 		padding-bottom: 20em;
 	}
 	footer {
 		max-height: 20em;
 		overflow: hidden;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	nav {
+		padding-left: 1em;
+	}
+}
+
+@media only screen and (max-width: 1280px) {
+	body > div {
+		background: linear-gradient(to right, #1b3e7d 800px, rgba(27, 62, 125, 0) 1024px), url('../images/graph-white.png'), linear-gradient(to bottom, #1b3e7d 0%,#416ab3 100%), #1b3e7d;
+		background-repeat: no-repeat;
+		background-position: top right;
 	}
 }
