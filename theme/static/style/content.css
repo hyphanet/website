@@ -54,6 +54,12 @@ h1, h2 {
 	font-weight: 700;
 }
 
+h2 a:after {
+	display: inline-block;
+	content: url('../images/link-h2-blue.png');
+	margin-left: 4px;
+}
+
 nav {
 	font-family: BebasNeueBold, "bebas-neue", sans-serif;
 	color:  #fafbfc;
