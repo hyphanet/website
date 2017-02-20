@@ -1,7 +1,5 @@
 ---
 title: Download
-permalink: /download/
-layout: content
 ---
 
 To access Freenet, you first need to install the main application.

@@ -1,7 +1,5 @@
 ---
-layout: content
 title: Documentation
-permalink: /learn/
 ---
 
 The documentation on Freenet is forever changing, since this is a project in

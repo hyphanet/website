@@ -1,7 +1,5 @@
 ---
-layout: content
 title: About
-permalink: /about/
 ---
 
 ## What is Freenet?

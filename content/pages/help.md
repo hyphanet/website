@@ -1,7 +1,5 @@
 ---
-layout: content
 title: Help
-permalink: /help/
 ---
 
 ## Philosophical
