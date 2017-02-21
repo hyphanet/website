@@ -20,7 +20,7 @@
 			<a href="https://plus.google.com">Google+</a>
 		</aside>
 		<nav>
-			<a href="{{ BASE_URL }}/">Freenet</a>
+			<a href="{{ SITEURL }}/">Freenet</a>
 			{% for title, link in MENUITEMS %}
 			    <a href="{{ link }}">{{ title }}</a>
 			{% endfor %}
@@ -29,11 +29,6 @@
 				  {% trans title=p.title %}{{ title }}{% endtrans %}
 			  </a>
 			{% endfor %}
-			<!--<a href="{{ BASE_URL }}/pages/about/">About</a>
-			<a href="{{ BASE_URL }}/pages/download/">Download</a>
-			<a href="{{ BASE_URL }}/pages/learn/">Learn</a>
-			<a href="{{ BASE_URL }}/pages/donate/">Donate</a>
-			<a href="{{ BASE_URL }}/pages/volunteer/">Volunteer</a>-->
 		</nav>
 		<header>
 			<h1>Freenet</h1>
