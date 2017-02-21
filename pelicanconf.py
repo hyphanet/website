@@ -58,7 +58,7 @@ I18N_GETTEXT_DOMAIN = 'messages'
 I18N_TEMPLATES_LANG = 'en'
 
 MARKDOWN = {
-    'extensions': ["markdown_i18n", "markdown.extensions.def_list",],
+    'extensions': ["markdown_i18n", "markdown.extensions.def_list", "markdown.extensions.toc", ],
     'extension_configs': {
         'markdown_i18n': {
             'i18n_dir': 'locales',

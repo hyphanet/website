@@ -52,20 +52,20 @@ governments to block it, and does not rely on tunneling to the "free world".
 
 *Written by Ian Clarke*
 
-1.  [A Disclaimer](#disclaimer)
-2.  [Suggested prior reading](#prior_reading)
-3.  [The importance of the Free flow of information](#free_flow_info)
-4.  [Censorship and freedom](#censor_freedom)
-5.  [The solution](#solution)
-6.  [Isn't censorship sometimes necessary?](#is_censorship_necessary)
-7.  [But why is anonymity necessary?](#why_anonymity)
-8.  [And what of copyright?](#copyright)
-9.  [But how will artists be rewarded for their work without copyright?](#reward)
-10.  [Alternatives to Copyright](#alternative)
+1.  [A Disclaimer](#a-disclaimer)
+2.  [Suggested prior reading](#suggested-prior-reading)
+3.  [The importance of the Free flow of information](#the-importance-of-the-free-flow-of-information)
+4.  [Censorship and freedom](#censorship-and-freedom)
+5.  [The solution](#the-solution)
+6.  [Isn't censorship sometimes necessary?](#isnt-censorship-sometimes-necessary)
+7.  [But why is anonymity necessary?](#but-why-is-anonymity-necessary)
+8.  [And what of copyright?](#and-what-of-copyright)
+9.  [But how will artists be rewarded for their work without copyright?](#but-how-will-artists-be-rewarded-for-their-work-without-copyright)
+10.  [Alternatives to Copyright](#alternatives-to-copyright)
 
 ## The Philosophy Behind Freenet
 
-1. A Disclaimer
+1. ### A Disclaimer
 
     There are many reasons why people get involved in the Freenet Project. Some
     share the views outlined in this document; some share variations of these views,
@@ -74,19 +74,19 @@ governments to block it, and does not rely on tunneling to the "free world".
     system in the first place, but not necessarily the views that everyone involved
     in the Freenet Project holds.
 
-2. Suggested prior reading
+2. ### Suggested prior reading
 
     For this document to make sense, you should probably know what Freenet is. You
     can get a good overview from [What is Freenet?](about.html#introduction).
 
-3. The importance of the Free flow of information
+3. ### The importance of the Free flow of information
 
     Freedom of speech, in most western cultures, is generally considered to be one
     of the most important rights any individual might have. Why is the freedom to
     share ideas and opinions so important? There are several ways to answer this
     question.
 
-    1. Communication is what makes us human
+    1. ### Communication is what makes us human
 
         One of the most obvious differences between mankind and the rest of the animal
         kingdom is our ability to communicate sophisticated and abstract concepts. While
@@ -94,7 +94,7 @@ governments to block it, and does not rely on tunneling to the "free world".
         than previously assumed, it is unlikely that any other animal approaches our own
         level of ability in this area.
 
-    2. Knowledge is good
+    2. ### Knowledge is good
 
         Most people, given the option of knowing something and not knowing something,
         will choose to have more information rather than less. Wars have been won and
@@ -102,7 +102,7 @@ governments to block it, and does not rely on tunneling to the "free world".
         us to make better decisions, and generally improve our ability to survive and be
         successful.
 
-    3. Democracy assumes a well informed population
+    3. ### Democracy assumes a well informed population
 
         Many people today live under democratic governments, and those who don't,
         probably want to. Democracy is an answer to the question of how to create
@@ -114,7 +114,7 @@ governments to block it, and does not rely on tunneling to the "free world".
         is a feedback loop, but this loop can be broken if the government has the
         power to control the information the population has access to.
 
-4. Censorship and freedom
+4. ### Censorship and freedom
 
     Everyone values their freedom, in fact, many consider it so important that
     they will die for it. People like to think that they are free to form and
@@ -128,7 +128,7 @@ governments to block it, and does not rely on tunneling to the "free world".
     undermines the very democratic principles which justify the government's
     existence in the first place.
 
-5. The solution
+5. ### The solution
 
     The only way to ensure that a democracy will remain effective is to ensure
     that the government cannot control its population's ability to share
@@ -136,7 +136,7 @@ governments to block it, and does not rely on tunneling to the "free world".
     filtered, we are not truly free. Freenet's aim is to allow two or more people
     who wish to share information, to do so.
 
-6. Isn't censorship sometimes necessary?
+6. ### Isn't censorship sometimes necessary?
 
     Of course no issue is black and white, and there are many who feel that
     censorship is a good thing in some circumstances. For example, in some
@@ -162,7 +162,7 @@ governments to block it, and does not rely on tunneling to the "free world".
     even if you didn't accept the second. Basically, you either have censorship,
     or you don't. There is no middle-ground.
 
-7. But why is anonymity necessary?
+7. ### But why is anonymity necessary?
 
     You cannot have freedom of speech without the option to remain anonymous.
     Most censorship is retrospective, it is generally much easier to curtail free
@@ -174,7 +174,7 @@ governments to block it, and does not rely on tunneling to the "free world".
     learn to trust. Freenet incorporates a mechanism called "subspaces" to
     facilitate this.
 
-8. And what of copyright?
+8. ### And what of copyright?
 
     Of course much of Freenet's publicity has centered around the issue of
     copyright, and thus I will speak to it briefly. The core problem with
@@ -188,7 +188,7 @@ governments to block it, and does not rely on tunneling to the "free world".
     It is for this reason that Freenet, a system designed to protect Freedom of
     Speech, must prevent enforcement of copyright.
 
-9. But how will artists be rewarded for their work without copyright?
+9. ### But how will artists be rewarded for their work without copyright?
 
     Firstly, even if copyright were the only way that artists could be rewarded
     for their work, then I would contend that freedom is more important than
@@ -203,7 +203,7 @@ governments to block it, and does not rely on tunneling to the "free world".
     middle-men to gain control over the mechanisms of distribution, to the
     detriment of both artists and the public.
 
-10. Alternatives to Copyright
+10. ### Alternatives to Copyright
 
     Fortunately it won't come to this. There are many alternative ways to reward
     artists. The simplest is voluntary payment. This is an extension of the
