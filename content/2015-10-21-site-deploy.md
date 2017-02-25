@@ -9,4 +9,4 @@ Existing URLs [redirect](http://www.w3.org/Provider/Style/URI.html)
 to their new equivalents. Thanks to everyone who contributed feedback,
 development, and translations.
 
-If we missed something, please tell us in our [support chat](/pages/help.html#irc)!
+If we missed something, please tell us in our [support chat](help.html#irc)!

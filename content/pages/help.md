@@ -13,7 +13,7 @@ complete anonymity. Nobody controls Freenet, not even its creators, meaning
 that the system is not vulnerable to manipulation or shutdown. Freenet
 is also very efficient in how it deals with information, adaptively
 replicating content in response to demand.  For more information,
-see [What is Freenet?](about.html#introduction)
+see [What is Freenet?](about.html#what-is-freenet)
 
 ### How is Freenet different to Tor? Can I access Google/Facebook/etc through Freenet?
 
@@ -212,7 +212,7 @@ only connecting to your friends) which makes automated harvesting and
 blocking of nodes very difficult. Note that many mobile internet providers
 block all peer to peer networks along with other content, and many corporate
 or academic networks may block Freenet (but even if they don't, see
-[you shouldn't run Freenet at work](#trouble) for non-work purposes!).
+[you shouldn't run Freenet at work](#can-i-get-in-trouble-if-i-run-a-node) for non-work purposes!).
 
 There has been discussion in the US and UK of legislation to require
 backdoors and presumably blocking of anything that can't be backdoored. This
@@ -253,8 +253,8 @@ work could get you into trouble too, unless it's for work purposes!
 
 There are some excellent thoughts on this subject on the [Philosophy](
 about.html#philosophy) page. Specific copyright-related laws may be a
-problem, please read [Is Freenet legal?](#legal) and [Is Freenet blocked by
-national firewalls?](#blocked).
+problem, please read [Is Freenet legal?](#is-freenet-legal) and [Is Freenet blocked by
+national firewalls?](#is-freenet-blocked-by-national-firewalls).
 
 ### What about child porn, offensive content or terrorism?
 

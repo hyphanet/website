@@ -17,9 +17,7 @@ There is so much more work to do, and full-time developers greatly benefit the p
 
 Help us keep Internet freedom alive and expand human liberty.
 
-<a class="btn button-custom btn-custom-two donate-button" href="donate.html">Donate today.</a>
-
-[Donate today.](/pages/donate.html)
+[Donate today.](donate.html)
 
 Thank you,
 

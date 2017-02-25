@@ -351,7 +351,7 @@ the project on business and publicity matters.
 
 Dave Baker
 
-: Dave's main contribution has been [Freemail](/pages/documentation.html#freemail),
+: Dave's main contribution has been [Freemail](documentation.html#freemail),
 his Summer of Code project to build a working email-over-Freenet system,
 as well as some debugging and core work in various places.
 
@@ -368,7 +368,7 @@ the FProxy stats page and Node 2 Node Messages (N2NM/N2NTMs).
 
 And **hundreds of others**, who either haven't asked to be added here, who
 prefer to remain nameless, or who we just haven't got around to thanking. Not to
-mention thousands of users, testers, and [donors](/pages/donate.html#sponsors)!
+mention thousands of users, testers, and [donors](donate.html#sponsors)!
 
 ### Papers
 
