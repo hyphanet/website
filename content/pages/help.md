@@ -846,7 +846,7 @@ node (even if such an attack is viable from a security perspective),
 so a sane society is less likely to hold an operator liable for such
 information on the network.
 
-### What about hostile \"cancer\" nodes within the network?
+### What about hostile "cancer" nodes within the network?
 
 The existence of malicious nodes within the network is the most difficult
 problem that a distributed network must face, and has been the bane of many
