@@ -120,14 +120,6 @@ body > div > header h1 {
 	height: 60px;*/
 }
 
-body > div > header h1:before {
-	display: block;
-	content: url('../images/logo-large.png');
-	max-width: 100%;
-	box-sizing: border-box;
-	margin-bottom: -88px;
-}
-
 /* TODO: medium logo? */
 
 body > div > .social {
