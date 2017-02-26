@@ -49,47 +49,32 @@
           <a {% if p == page %} class="active"{% endif %} href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a>
         {% endfor %}
         </nav><!-- /#menu -->
+
+	<aside class="social">
+		<a href="https://www.facebook.com/freenetp2p">Facebook</a>
+		<a href="https://twitter.com/freenetproject">Twitter</a>
+		<a href="https://plus.google.com">Google+</a>
+	</aside>
+
+	<nav id="language">
+	{% if extra_siteurls %}
+		<span>Select Language</span>
+		{% for lang, url in extra_siteurls.items() %}
+		<a href="{{ url }}">{{ lang }}</a>
+		{% endfor %}
+	{% endif %}
+	</nav>
+
 	</div>
 	<main>
+
         <header id="banner" class="body">
                 <h1>{% block heading %}{{ SITENAME }}{% endblock heading %}</h1>
         </header><!-- /#banner -->
         {% block content %}
         {% endblock %}
 	</main>
-	<footer>
-		<header>
-		<h2>Freenet</h2>
-		<p>Navigate with Freedom</p>
-		</header>
 
-		<ul class="social">
-			<a href="https://facebook.com">Facebook</a>
-			<a href="https://twitter.com">Twitter</a>
-			<a href="https://instagram.com">Instagram</a>
-			<a href="https://youtube.com">Youtube</a>
-			<a href="https://pinterest.com">Pinterest</a>
-			<a href="https://plus.google.com">Google+</a>
-			<!-- FIXME -->
-			<ul class="stats">
-				<li>1290 Followers</li>
-				<li>26900 Visitors</li>
-				<li>5900 Likes</li>
-			</ul>
-		</ul>
-
-		<form id="newsletter">
-			<input name="email"></input>
-			<input type="submit" value="Subscribe">
-		</form>
-
-		<div id="contact">
-			<a href="mailto:press@freenetproject.org">press@freenetproject.org</a>
-			<a href="mailto:support@freenetproject.org">support@freenetproject.org</a>
-			<span>IRC: <a href="http://webchat.freenode.net/?randomnick=1&channels=%23freenet&uio=d4">#freenet</a> on chat.freenode.net</span>
-		</div>
-
-		<p id="copyright">&copy; Copyright The Freenet Project Inc. | All Rights Reserved</p>
-	</footer>
+	{% include "footer.html" %}
 </body>
 </html>
