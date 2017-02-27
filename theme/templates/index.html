@@ -16,12 +16,9 @@
 		<aside class="social">
 			<a href="https://www.facebook.com/freenetp2p">Facebook</a>
 			<a href="https://twitter.com/freenetproject">Twitter</a>
-			<a href="https://instagram.com">Instagram</a>
-			<a href="https://youtube.com">Youtube</a>
-			<a href="https://pinterest.com">Pinterest</a>
 			<a href="https://plus.google.com">Google+</a>
 		</aside>
-		<nav>
+		<nav id="menu">
 			<a href="{{ SITEURL }}/">Freenet</a>
 			{% for title, link in MENUITEMS %}
 			    <a href="{{ link }}">{{ title }}</a>
@@ -31,6 +28,14 @@
 				  {% trans title=p.title %}{{ title }}{% endtrans %}
 			  </a>
 			{% endfor %}
+		</nav>
+		<nav id="language">
+		{% if extra_siteurls %}
+			<span>Language</span>
+			{% for lang, url in extra_siteurls.items() %}
+			<a href="{{ url }}">{{ lang }}</a>
+			{% endfor %}
+		{% endif %}
 		</nav>
 		<header>
 			<h1>Freenet</h1>

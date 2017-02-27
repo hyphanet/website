@@ -8,14 +8,22 @@
 		background-position: top right;
 		display: block;
 	}
-	nav a:first-of-type {
+	nav#menu a:first-of-type {
 		display: inline-block;
 		margin-left: 0;
 	}
-	nav a {
+	nav#menu a {
 		display: block;
 		margin-left: 42px; /* Matching small white logo width */
 	}	
+	nav#language {
+		margin-top: 0.25em;
+		padding-left: 1em;
+		background: none;
+	}
+	body > div:first-of-type {
+		padding-bottom: 0;
+	}
 
 	nav a:hover {
 		color: #5F6B81;

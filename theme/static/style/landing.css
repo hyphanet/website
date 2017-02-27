@@ -26,7 +26,7 @@ ol, ul {
     list-style-type: none;
 }
 
-nav:after {
+nav#menu:after {
 	display: block;
 	margin-left: 2em;
 	content: url('../images/greeble-white.png');

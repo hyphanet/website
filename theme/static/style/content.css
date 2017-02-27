@@ -64,10 +64,22 @@ nav {
 	display: inline-block;
 }
 
-nav:before {
+nav#menu:before {
 	display: inline-block;
 	vertical-align:middle;
 	content: url('../images/logo-small.png');
+}
+
+nav#language {
+	display: block;
+	padding: 0 0 0 9.25em;
+	box-shadow: none;
+	background: none;
+}
+
+nav#language a {
+	height: auto;
+	vertical-align: inherit;
 }
 
 nav a {
@@ -579,6 +591,10 @@ footer ul {
 	nav {
 		padding-left: 1em;
 	}
+	nav#language {
+		display: block;
+		padding-left: 1em;
+	}
 }
 
 @media only screen and (max-width: 900px) {
@@ -589,7 +605,7 @@ footer ul {
 
 @media only screen and (max-width: 1280px) {
 	body > div {
-		background: linear-gradient(to right, #1b3e7d 800px, rgba(27, 62, 125, 0) 1024px), url('../images/graph-white.png'), linear-gradient(to bottom, #1b3e7d 0%,#416ab3 100%), #1b3e7d;
+		background: linear-gradient(to right, #1b3e7d 800px, rgba(27, 62, 125, 0) 1024px), url('../images/graph-white.png'), linear-gradient(to bottom, #1b3e7d 0%,#416ab3 100%);
 		background-repeat: no-repeat;
 		background-position: top right;
 	}
