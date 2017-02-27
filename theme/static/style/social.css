@@ -1,12 +1,10 @@
 .social a {
 	display: inline-block;
-	/*background-color: white;*/
 	width: 12px;
 	height: 12px;
 	text-indent: -9999px;
 	line-height: 29px;
 	vertical-align: bottom;
-	/*content: " ";*/
 }
 
 .social a[href*="facebook.com"] {

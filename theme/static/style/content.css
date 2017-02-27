@@ -23,16 +23,10 @@ body {
 body > div:first-of-type {
 	color:  #fafbfc;
 	box-sizing: border-box;
-	/*background-color: rgb(65, 106, 179);*/
-	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b3e7d', endColorstr='#416ab3',GradientType=0 ); */
 	padding-bottom: 1em;
 	overflow-y: hidden;
 }
 
-/*
- * "What's freenet" margin is leaking because it's a block element. Inline block is a bad fix, what's the correct approach here?
- * padding this inside of the section would work but is hacky af
- */
 body > div:nth-of-type(2) {
 	background: url('../images/graph-grey.png');
 	background-repeat: no-repeat;
@@ -66,10 +60,7 @@ nav {
 	font-family: BebasNeueBold, "bebas-neue", sans-serif;
 	color:  #fafbfc;
 	font-size: 17.69px;/* Approximation due to font substitution */
-	/* font-weight: 400; */
-	/*line-height: 26px;*/
 	padding: 1em 1em 1em 6em;
-	/*text-align: center;*/
 	display: inline-block;
 }
 
@@ -101,23 +92,18 @@ nav a.current {
 
 body > div > header {
 	color:  #fafbfc;
-	/*min-height: 80px;*/
 }
 
 body > div:first-of-type {
 	min-height: 6em;
 	min-height: 5em;
 	min-height: 3em;
-	/*padding-bottom: 0px;*/
 }
 
 body > div > header h1 {
-	/*font-family: BebasNeueBold, "bebas-neue", sans-serif;*/
 	text-align: center;
 	font-size: 60px;
 	margin-bottom: 0px;
-	/*width: 200px;
-	height: 60px;*/
 }
 
 /* TODO: medium logo? */
@@ -126,17 +112,12 @@ body > div > .social {
 	float: right;
 	margin-top: 1em;
 	margin-right: 5em;
-	/*right: 3em;
-	top: 1em;*/
 }
 
 body > div > header p {
-	/*font-family: 'Myriad Pro', "myriad-pro", 'PT Sans', Helvetica, Arial, sans-serif;*/
-	/*font-family: 'Myriad Pro', "myriad-pro", 'PT Sans', 'Lucida Sans', 'Segoe UI', 'Calibri',  sans-serif;*/
 	margin-top: 0px;
 	color:  #f3f6f6;
 	font-size: 16px;
-	/*font-weight: 400;*/
 	text-align: center;
 }
 
@@ -174,17 +155,13 @@ section > cite {
 }
 
 .download .title {
-	/*font-family: BebasNeueRegular;*/
 	color:  #fcfafa;
 	font-size: 24.51px;/* Approximation due to font substitution */
-	/* font-weight: 400; */
 	text-align: center;
-	/*font-family: 'Myriad Pro', "myriad-pro", 'PT Sans', 'Lucida Sans', 'Segoe UI', 'Calibri',  sans-serif;*/
 	font-family: 'PT Sans', 'Lucida Sans', 'Segoe UI', 'Calibri',  sans-serif;
 }
 
 .download .description {
-/*font-family: 'Myriad Pro';*/
 color:  rgba(249, 250, 251, 0.5);
 font-size: 14.71px;
 font-weight: 400;
@@ -193,10 +170,8 @@ text-align: center;
 }
 
 section h2 {
-	/*font-family: BebasNeueBold, "bebas-neue", "sans-serif";*/
 	color:  #416ab3;
 	font-size: 40px;/* Approximation due to font substitution */
-	/*font-weight: 400;*/
 	text-align: center;
 	line-height: 39.901px;/* Approximation due to font substitution */
 }
@@ -229,10 +204,8 @@ section h2 {
 }
 
 #whatsfreenet h2 {
-/*font-family: BebasNeueBold;*/
 color:  #416ab3;
 font-size: 40px;/* Approximation due to font substitution */
-/* font-weight: 400; */
 line-height: 39.901px;/* Approximation due to font substitution */
 }
 
@@ -261,15 +234,12 @@ line-height: 39.901px;/* Approximation due to font substitution */
 }
 
 #features h3 {
-	/*font-family: BebasNeueBold;*/
 	color:  #1b3e7d;
 	font-size: 40px;/* Approximation due to font substitution */
-	/* font-weight: 400; */
 	line-height: 39.901px;/* Approximation due to font substitution */
 }
 
 #features p {
-	/* font-weight: 400; */
 	text-align: center;
 	max-width: 800px;
 	margin: auto;
@@ -343,7 +313,6 @@ width: 240px;
 #news ol li p {
 	color:  #515862;
 	font-size: 11px;
-	/* font-weight: 400; */
 	line-height: 15px;
 	width: auto;
 	margin-top: 1em;
@@ -388,22 +357,9 @@ width: 240px;
 #more {
 	display: block;
 	text-indent: -9999px;
-	/*text-align: center;*/
-/*	width: 24px;
-	height: 12px;
-	margin: 2em auto 2em auto;*/
-	/*margin-left: auto;
-	margin-right: auto;*/
 	background: transparent url("../images/arrow-down-white.png") no-repeat;
 	background-position: bottom center;
-	/*background-color: white;*/
 }
-
-/*#more:before {
-	display: block;
-	margin: 1em auto 1em auto;
-	content: url('../images/arrow-down-white.png');
-}*/
 
 #testimonials cite {
 	display: block;
@@ -431,14 +387,6 @@ body main a {
 	color:  #416ab3;
 }
 
-/*
-ol li p:first-of-type {
-	font-family: BebasNeueBold, "bebas-neue", sans-serif;
-	color:  #416ab3;
-	font-size: 17px;
-	font-weight: 700;
-}*/
-
 ol li p:only-of-type {
 	font-family: inherit;
 	color:  inherit;
@@ -452,13 +400,9 @@ dt {
 }
 
 footer {
-	/*display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;*/
 	width: 100%;
 	margin: 0px;
 	min-height: 252px;
-	/* background-color: rgb(27, 62, 125); */
 	background-color: #141f35; /* from eyedropper */
 	padding: 2em 5em 2em;
 	box-sizing: border-box;
@@ -507,7 +451,6 @@ footer #contact > * {
 
 footer #copyright:before {
 	display: block;
-	/* FIXME: height and width necessary? */
 	width: 1px;
 	height: 1px;
 	content: ' ';
@@ -518,9 +461,6 @@ footer #copyright:before {
 footer form,
 footer #copyright {
 	display: block;
-	/*position: absolute;
-	left: 30%;*/
-	/* FIXME: below a certain size this should be 100% */
 	margin-left: 30%;
 	width: 30%;
 }
@@ -613,14 +553,6 @@ footer ul {
 }
 
 @media only screen and (max-width : 800px) {
-	/*footer #contact,
-	footer #copyright,
-	footer form {
-		float: none;
-		text-align: center;
-		width: 100%;
-		margin-left: 0;
-	}*/
 	main {
 		margin-left: 0;
 	}
