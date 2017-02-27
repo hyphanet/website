@@ -41,6 +41,7 @@ I18N_SUBSITES = {}
 def subsite(language):
     I18N_SUBSITES[language] = {
         'MARKDOWN' : {
+            'extensions': ["markdown.extensions.def_list", "markdown.extensions.toc", "markdown_i18n", ],
             'extension_configs': {
                 'markdown_i18n': {
                     'i18n_dir': 'locales',
@@ -50,15 +51,17 @@ def subsite(language):
         },
     }
 
-subsite('de')
-subsite('fr')
+for language in os.listdir("locales"):
+    print(language)
+    if os.path.isdir(language):
+        subsite(language)
 
 I18N_GETTEXT_LOCALEDIR = 'locales'
 I18N_GETTEXT_DOMAIN = 'messages'
 I18N_TEMPLATES_LANG = 'en'
 
 MARKDOWN = {
-    'extensions': ["markdown_i18n", "markdown.extensions.def_list", "markdown.extensions.toc", ],
+    'extensions': ["markdown.extensions.def_list", "markdown.extensions.toc", "markdown_i18n", ],
     'extension_configs': {
         'markdown_i18n': {
             'i18n_dir': 'locales',
