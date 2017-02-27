@@ -55,7 +55,7 @@ def subsite(language):
     }
 
 for language in os.listdir("locales"):
-    if os.path.isdir(language):
+    if os.path.exists(os.path.join("locales", language, "LC_MESSAGES", "messages.mo")):
         subsite(language)
 
 I18N_GETTEXT_LOCALEDIR = 'locales'
