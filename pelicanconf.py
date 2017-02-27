@@ -2,6 +2,9 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
+import os
+import os.path
+
 AUTHOR = u'Freenet Project Inc.'
 SITENAME = u'Freenet Project'
 SITEURL = 'https://ademan-laptop.github.io/freenet-website-redesign-pelican/'
@@ -52,7 +55,6 @@ def subsite(language):
     }
 
 for language in os.listdir("locales"):
-    print(language)
     if os.path.isdir(language):
         subsite(language)
 
