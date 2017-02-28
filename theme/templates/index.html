@@ -33,7 +33,11 @@
 		{% if extra_siteurls %}
 			<span>Language</span>
 			{% for lang, url in extra_siteurls.items() %}
-			<a href="{{ url }}">{{ lang }}</a>
+				{% if url %}
+					<a href="{{ url }}">{{ lang }}</a>
+				{% else %}
+					<a href="/">{{ lang }}</a>
+				{% endif %}
 			{% endfor %}
 		{% endif %}
 		</nav>
