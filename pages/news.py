@@ -16,6 +16,26 @@ class NewsItem(object):
 def news_items():
     donate_button = """<a class="btn button-custom btn-custom-two donate-button" href="donate.html">""" + _("Donate today.") + """</a>"""
     return [
+        NewsItem("20170301-1476", _("2017-03-01 - Freenet build 1476 released"),
+_("""
+Freenet 0.7.5 build 1476 is now available.
+
+Highlights:
+
+- efficiency improvements: routing for fast nodes and spare bitmaps
+- a new gif filter with improved security
+- improved maintainability by replacing custom code with standard code
+- show update info alongside bookmarks
+- ssl fixes
+- update plugins: Sharesite 0.4.4, Library v37, Freereader 6
+
+Thank you to all involved!
+
+For more details see the [announcement email][announcement1476].
+""") + """
+
+[announcement1476]: TODO!
+"""),
         NewsItem("20160625-1475", _("2016-06-25 - Freenet build 1475 released"),
 _("""
 (This news item was not published until July 16th. Sorry for the delay.)
