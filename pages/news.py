@@ -34,7 +34,7 @@ Thank you to all involved!
 For more details see the [announcement email][announcement1476].
 """) + """
 
-[announcement1476]: TODO!
+[announcement1476]: https://emu.freenetproject.org/pipermail/devl/2017-March/039591.html
 """),
         NewsItem("20160625-1475", _("2016-06-25 - Freenet build 1475 released"),
 _("""
