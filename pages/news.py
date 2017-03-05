@@ -22,12 +22,19 @@ Freenet 0.7.5 build 1476 is now available.
 
 Highlights:
 
-- efficiency improvements: routing for fast nodes and spare bitmaps
-- a new gif filter with improved security
+- efficiency improvements, especially for fast nodes
+- a new gif filter with improved security against malicious files
+- show persistent update info alongside bookmarks
 - improved maintainability by replacing custom code with standard code
-- show update info alongside bookmarks
-- ssl fixes
 - update plugins: Sharesite 0.4.4, Library v37, Freereader 6
+
+Sharesite plugin highlights:
+
+- Provide default content
+- Mask the timezone
+- Allow setting the path
+
+Also Library and Freereader got bugfixes and cleanup.
 
 Thank you to all involved!
 
