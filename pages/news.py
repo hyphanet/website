@@ -30,9 +30,9 @@ Highlights:
 
 Sharesite plugin highlights:
 
-- Provide default content
 - Mask the timezone
 - Allow setting the path
+- Provide default content
 
 Also Library and Freereader got bugfixes and cleanup.
 
