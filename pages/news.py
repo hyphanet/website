@@ -16,6 +16,20 @@ class NewsItem(object):
 def news_items():
     donate_button = """<a class="btn button-custom btn-custom-two donate-button" href="donate.html">""" + _("Donate today.") + """</a>"""
     return [
+        NewsItem("20170309-1477", _("2017-03-09 - Freenet build 1477 released"),
+_("""
+Freenet 0.7.5 build 1477 is now available.
+
+This fixes two vulnerabilities, one reported by [beardog108][],
+the other accidentally introduced in 1476.
+For details, see the [release tag][releasetag1477].
+
+Thank you to all involved!
+""") + """
+
+[beardog108]: https://chaoswebs.net/
+[releasetag1477]: https://github.com/freenet/fred/releases/tag/build01477
+"""),
         NewsItem("20170301-1476", _("2017-03-01 - Freenet build 1476 released"),
 _("""
 Freenet 0.7.5 build 1476 is now available.
