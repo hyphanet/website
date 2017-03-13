@@ -3,7 +3,7 @@ body > div > header h1:before {
 	content: url('../images/logo-large.png');
 	max-width: 100%;
 	box-sizing: border-box;
-	margin-bottom: -88px;
+	margin-bottom: -1.25em;
 }
 
 a {
