@@ -25,6 +25,10 @@ Install pelican
 
     pip install pelican
 
+Install markdown_i18n
+
+    pip install markdown_i18n
+
 Get pelican plugins. Place in the same parent directory as this repository.
 
     $ pwd
