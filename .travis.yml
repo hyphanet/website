@@ -19,10 +19,12 @@ addons:
 cache:
   apt: true
   pip: true
+  directories:
+    - ../pelican-plugins
 
 before_script:
-    - pip install -r requirements.txt
-    - git clone https://github.com/getpelican/pelican-plugins ../pelican-plugins
+  - pip install -r requirements.txt
+  - git clone https://github.com/getpelican/pelican-plugins ../pelican-plugins
 
 script: make html
 
