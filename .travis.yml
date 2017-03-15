@@ -19,6 +19,9 @@ cache:
   apt: true
   pip: true
 
+before_script:
+    - pip install --user -r requirements.txt
+    - git clone https://github.com/getpelican/pelican-plugins ../pelican-plugins
 
 script: make html
 

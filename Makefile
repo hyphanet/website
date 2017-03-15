@@ -62,7 +62,7 @@ help:
 	@echo '                                                                          '
 
 html:
-	find $(BASEDIR) -name '$(BASEDIR)/freenet_site.po' -exec msgfmt {} -o $(BASEDIR)/messages.mo \;
+	find $(BASEDIR) -name 'freenet_site.po' -exec msgfmt {} -o $(BASEDIR)/messages.mo \;
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
 clean:
