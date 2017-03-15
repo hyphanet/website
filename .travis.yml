@@ -24,7 +24,7 @@ cache:
 
 before_script:
   - pip install -r requirements.txt
-  - git clone https://github.com/getpelican/pelican-plugins ../pelican-plugins
+  - if [[ ! -d ../pelican-plugins ]] ; then git clone https://github.com/getpelican/pelican-plugins ../pelican-plugins; fi
 
 script: make html
 
