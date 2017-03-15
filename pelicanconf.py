@@ -7,8 +7,8 @@ import os.path
 
 AUTHOR = u'Freenet Project Inc.'
 SITENAME = u'Freenet Project'
-SITEURL = 'https://ademan-laptop.github.io/freenet-website-redesign-pelican/'
-BASE_URL = 'https://ademan-laptop.github.io/freenet-website-redesign-pelican/'
+SITEURL = os.environ['SITEURL']
+BASE_URL = SITEURL
 
 PATH = 'content'
 
