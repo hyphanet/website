@@ -9,6 +9,7 @@ AUTHOR = u'Freenet Project Inc.'
 SITENAME = u'Freenet Project'
 SITEURL = os.environ['SITEURL']
 BASE_URL = os.environ['SITEURL']
+THEME = 'theme'
 
 PATH = 'content'
 
