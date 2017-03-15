@@ -1,0 +1,30 @@
+language: python
+
+python: "2.7"
+
+sudo: false
+
+env:
+  global:
+    - "AWS_ACCESS_KEY_ID=AKIAJQUIQIL3XTBHT3DA"
+    # our AWS_SECRET_ACCESS_KEY follows
+    - secure: "C5Y0miWN35KMpWNT/r3n31J/JjUJA6a9I/w5DUkm5xFLv1oStOvNL9KykRQIL4+9yW7hYUcGOI0iP9ZjtbxRouP5//PCjhlgzIGJ3WImVZq4fLNl3sq3DYtgZJT5rUeXn8r8cKE3/sloEbcbz7dFNXmbSACuaZ0/T3IZpgP/Yrs="
+
+addons:
+  apt:
+    packages:
+    - gettext
+
+cache:
+  apt: true
+  pip: true
+
+
+script: make html
+
+deploy:
+  provider: script
+  script: ~/.local/bin/aws s3 sync --region=us-east-1 --cache-control "public, max-age=86400" --content-encoding utf-8 --delete output/ s3://website-staging.freenetproject.org
+  skip_cleanup: true
+  on:
+    branch: 2016-redesign
