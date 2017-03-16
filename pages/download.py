@@ -73,7 +73,7 @@ def run_show_hide_script():
                 download('assets/jnlp/FreenetInstaller.exe');
             }
             if (OSName == "macos") {
-                download('https://github.com/freenet/mactray/releases/download/v2.0.6/FreenetTray_2.0.6.zip');
+                download('https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip');
             }
             if (OSName == "unix") {
                 download('assets/jnlp/freenet.jnlp');
@@ -86,7 +86,7 @@ class DownloadSection(Section):
     def __init__(self):
         self.title = _("Download")
         self.slug = "download"
-        self.url_mac_installer = "https://github.com/freenet/mactray/releases/download/v2.0.6/FreenetTray_2.0.6.zip"
+        self.url_mac_installer = "https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip"
     def get_content(self):
         download_intro = md(_("""
 To access Freenet, you first need to install the main application.
@@ -153,7 +153,7 @@ When done, your default browser will automatically open up to Freenet's web-base
 Freenet requires OS X 10.8 or later.
 """) + "\n\n" + """
 [url_mac_installer]: {url_mac_installer}
-[url_gpg_sig]: https://github.com/freenet/mactray/releases/download/v2.0.6/FreenetTray_2.0.6.zip.sig
+[url_gpg_sig]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip.sig
 [url_keyring]: #keyring
 """.format(url_mac_installer=self.url_mac_installer)))+div("unix",md(_("""
 ### GNU/Linux & POSIX
