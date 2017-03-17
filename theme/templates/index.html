@@ -4,12 +4,9 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
 		<title>Freenet</title>
-		<link rel="stylesheet" type="text/css" href="{{ BASE_URL }}/theme/style/bebas.css">
-		<link rel="stylesheet" type="text/css" href="{{ BASE_URL }}/theme/style/ptsans.css">
-		<link rel="stylesheet" type="text/css" href="{{ BASE_URL }}/theme/style/social.css" />
-		<link rel="stylesheet" type="text/css" href="{{ BASE_URL }}/theme/style/content.css" />
-		<link rel="stylesheet" type="text/css" href="{{ BASE_URL }}/theme/style/landing.css" />
-		<link rel="stylesheet" type="text/css" href="{{ BASE_URL }}/theme/style/menu.css" />
+{% assets filters="cssmin", output="css/style.min.css", "style/bebas.css", "style/ptsans.css", "style/social.css", "style/content.css", "style/landing.css", "style/menu.css" %}
+		<link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
+{% endassets %}
 	</head>
 	<body>
 	<div>
