@@ -32,5 +32,5 @@ If we're able to get final changes ready build 1471-pre3 will be released the we
 [9]: https://github.com/Dr-Tensor/plugin-Freemail/tree/master
 [10]: https://github.com/freenet/fred/tree/gradle
 [11]: https://github.com/ademan/winterface/tree/gradle-witness-1
-[12]: http://gradle.org/
+[12]: https://gradle.org/
 [13]: https://github.com/WhisperSystems/gradle-witness
