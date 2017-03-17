@@ -14,12 +14,8 @@ env:
 cache:
   pip: true
   directories:
-    - ../pelican-plugins
+    - pelican-plugins
     - output
-
-install:
-  - pip install -r requirements.txt
-  - if [[ ! -d ../pelican-plugins ]] ; then git clone https://github.com/getpelican/pelican-plugins ../pelican-plugins; fi
 
 script: make html
 
