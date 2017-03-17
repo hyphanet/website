@@ -2,3 +2,4 @@ awscli==1.11.56
 markdown-i18n==2.1.2
 pelican==3.7.1
 webassets==0.12.1
+cssmin==0.2.0
