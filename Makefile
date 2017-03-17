@@ -63,6 +63,10 @@ help:
 
 html:
 	find $(BASEDIR) -name 'freenet_site.po' -exec msgfmt {} -o $(BASEDIR)/messages.mo \;
+	# this is required, see https://github.com/getpelican/pelican-plugins/issues/773
+	mkdir -p $(OUTPUTDIR)/theme/
+	cp -ar $(BASEDIR)/theme/static/* $(OUTPUTDIR)/theme/
+	cp -ar $(BASEDIR)/content/assets/* $(OUTPUTDIR)
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
 clean:
