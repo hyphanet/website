@@ -13,9 +13,16 @@ env:
 
 cache:
   pip: true
+  apt: true
   directories:
     - pelican-plugins
     - output
+
+addons:
+  apt:
+    packages:
+    - optipng
+    - libjpeg-turbo-progs
 
 script: make html
 
