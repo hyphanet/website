@@ -31,7 +31,7 @@ script: make html
 
 deploy:
   - provider: script
-    script: bash upload_to_s3.sh s3://website-staging.freenetproject.org/
+    script: bash upload_to_s3.sh s3://website-staging.freenetproject.org/ 300
     skip_cleanup: true
     on:
       branch: 2016-redesign
