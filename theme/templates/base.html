@@ -1,13 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ DEFAULT_LANG }}">
 <head>
-	<link rel="stylesheet" type="text/css" href="{{ BASE_URL }}/theme/style/bebas.css">
-	<link rel="stylesheet" type="text/css" href="{{ BASE_URL }}/theme/style/ptsans.css">
-	<link rel="stylesheet" type="text/css" href="{{ BASE_URL }}/theme/style/social.css" />
-	<link rel="stylesheet" type="text/css" href="{{ BASE_URL }}/theme/style/toc.css" />
-	<link rel="stylesheet" type="text/css" href="{{ BASE_URL }}/theme/style/content.css" />
-	<link rel="stylesheet" type="text/css" href="{{ BASE_URL }}/theme/style/donate.css" />
-	<link rel="stylesheet" type="text/css" href="{{ BASE_URL }}/theme/style/menu.css" />
+{% assets filters="cssmin", output="style/base.min.css", "style/bebas.css", "style/ptsans.css", "style/social.css", "style/toc.css", "style/content.css", "style/donate.css", "style/menu.css" %}
+        <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
+{% endassets %}
         {% block head %}
         <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
         <meta charset="utf-8" />
