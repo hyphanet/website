@@ -35,4 +35,4 @@ deploy:
   script: upload_to_s3.sh
   skip_cleanup: true
   on:
-    condition: "$TRAVIS_EVENT_TYPE = push"
+    condition: "$TRAVIS_PULL_REQUEST = false"
