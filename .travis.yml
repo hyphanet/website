@@ -16,7 +16,6 @@ cache:
   pip: true
   apt: true
   directories:
-    - pelican-plugins
     - output
 
 addons:
