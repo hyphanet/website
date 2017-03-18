@@ -32,10 +32,7 @@ script: make html
 
 deploy:
   provider: script
-  script:
-    - aws s3 sync --exclude '*\.(bz2|gz|aac|flac|mp3|wma|gif|jpg|jpeg|png|avi|mov|mp4|webm|woff|woff2)$' --exclude='.webassets-cache' --metadata-directive  REPLACE --content-encoding=gzip --region=us-east-1 --cache-control "public, max-age=86400" --content-encoding utf-8 --delete output/ s3://website-staging.freenetproject.org/
-      # gzip_cache won't deal with these
-    - aws s3 sync --include '*\.(bz2|gz|aac|flac|mp3|wma|gif|jpg|jpeg|png|avi|mov|mp4|webm|woff|woff2)$' --exclude='.webassets-cache' --metadata-directive  REPLACE --region=us-east-1 --cache-control "public, max-age=86400" --content-encoding utf-8 --delete output/ s3://website-staging.freenetproject.org/
+  script: upload_to_s3.sh
   skip_cleanup: true
   on:
-    branch: 2016-redesign
+    condition: "$TRAVIS_EVENT_TYPE = push"
