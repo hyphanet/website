@@ -23,7 +23,7 @@ addons:
   apt:
     packages:
     - python-pip
-    - virtualenv
+    - python-virtualenv
     - gettext
     - optipng
     - libjpeg-turbo-progs

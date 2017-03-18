@@ -3,7 +3,7 @@ Environment
 
 Install the required packages
 
-    sudo apt-get install python-pip virtualenv gettext optipng libjpeg-turbo-progs
+    sudo apt-get install python-pip python-virtualenv gettext optipng libjpeg-turbo-progs
 
 Using a python virtualenv is recommended.
 
