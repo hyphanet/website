@@ -30,8 +30,8 @@ addons:
 script: make html
 
 deploy:
-  provider: script
-  script: upload_to_s3.sh
-  skip_cleanup: true
-  on:
-    condition: "$TRAVIS_PULL_REQUEST = false"
+  - provider: script
+    script: upload_to_s3.sh s3://website-staging.freenetproject.org/
+    skip_cleanup: true
+    on:
+      branch: 2016-redesign
