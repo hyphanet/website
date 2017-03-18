@@ -9,6 +9,7 @@ CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
 export SITEURL?=file://$(OUTPUTDIR)
+export SHOULD_COMPRESS?=False
 
 FTP_HOST=localhost
 FTP_USER=anonymous
