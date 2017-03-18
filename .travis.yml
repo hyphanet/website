@@ -21,6 +21,9 @@ cache:
 addons:
   apt:
     packages:
+    - python-pip
+    - virtualenv
+    - gettext
     - optipng
     - libjpeg-turbo-progs
 
