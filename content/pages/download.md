@@ -177,7 +177,7 @@ micro-blogging (Sone, a bit like twitter).
 
 If you have problems installing or running Freenet, please see the [knowledge base][kb_url], [FAQ][faq_url], [chat][chat_url], or [mailing list][ml_url].
 
-[kb_url]: https://freenetproject.tenderapp.com/kb
+[kb_url]: https://support.freenetproject.org/kb
 [faq_url]: help.html#faq
 [chat_url]: help.html#irc
 [ml_url]: help.html#mailing-lists

@@ -1026,9 +1026,9 @@ If you need help installing Freenet for the first time, or have trouble using Fr
 When writing your support request, please make sure you include a full description of the problem, your current version of Java, your operating system and current Freenet version.
 
 [faq_link]: #faq
-[kb_link]: https://freenetproject.tenderapp.com/kb
+[kb_link]: https://support.freenetproject.org/kb
 
-<a href="https://freenetproject.tenderapp.com/discussion/new" id="supportlink" class="btn button-custom btn-custom-two">Create a support discussion</a>
+<a href="https://support.freenetproject.org/discussion/new" id="supportlink" class="btn button-custom btn-custom-two">Create a support discussion</a>
 
 ## Chat with us
 
