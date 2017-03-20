@@ -8,6 +8,9 @@ env:
   global:
     - "SITEURL=https://staging.freenetproject.org"
     - "SHOULD_COMPRESS=True"
+    - "TRANSIFEX_USER=freenet_travis"
+    # our TRANSIFEX_PW follows
+    - secure: "Qc+M9pHbhcVS+K1GkC5bjAnIM58KgUQm4eZNrYujQvo1YabbmmKtjymsiHPa3rHDjERgcrExk5NDIqy9G+Av5M7SBGaofkv7rUsA2tcF/Hgl/9K0NsOtNMYlwduJ5wCgt4lkKsjFIaFi/LzuMYpYJcxq40Zl77K29OE4tWDlY0AFyT6W6t+9Pvkn7wq2Yq9wKfTg5hLKK31QBp2xtN5ETKy7mQZn2YMlOK7VUkaVDomhKON5T9U8L9QuJ2HhFbey0rrkwwxefrKhLnuYPXaheAthaqngHwlBDsZOQVBa/ejxOycToZuZMN6htV/MMz6Vz0HRzIjw/hmy+kVqrRrW99lM4T7p2XAkKIEWOIzlLlFvlp+DoiOYH0D1BepsV1oFZmJyrYxtUggkOK6/w5gRtdmVW6yuIN9pEYD0yIWi+5m1o1LhDkWYetE7UZmwzVVzMtpjGOIFYPX89niGKs7Kk24Q1xTn63MHLrC20A1mKs73dM4uJ+twVrME2Rv+uYIBiKjXzjHklm9wJ53bw2/bsBFDmA8H96m+ygzl89/5YK9+2xMJiuse9L7fWZiVoP+yN5fStcEizN/rRGP+hDqXTdjUBBCHDnWNDdHJxKsDT3F5cXEV9L5PTST0jXI9YWZCj4iw8aqjItQQQ8ijWvnxp8DcmNm0E6DrikRClT+u13o="
     - "AWS_ACCESS_KEY_ID=AKIAJQUIQIL3XTBHT3DA"
     # our AWS_SECRET_ACCESS_KEY follows
     - secure: "Q7jH10Hjul2kLwSRW09Q9vIaJTSZeolvHdHewT2nMwtRTWeINOHsOS61CaXg5t2VM4Ri2GbO0SjaNWqoyQyQSbQBPmOBG8bISd8LEdBErat5ZEiAIlgOSm/rnr6F7dq+zKtdy4v+jIMnnfkRpT62Rvx5fRzDEOc3PcJQWGQSQ05e7fSuvhWgS9T1OAsDwAPLyrEPhEwlkeDpfJt2FcZFCA1G9/3F/ej8OAvgfOEiZn1b9iy2FjSB7S969l0Nejs3c63cFWmC+CpzEqD6yXtkqN5A4VS3+P1xh+jBpoeCb/6MKM6QtxD7lE3ZvBevp5l01/H60Mgjd/g8JEKBMo+tk27bCd7X+9j7iPjdOrkPJTccu2s6UFE/VMJIYY44Kr2ugyKu6SGkAuNe6SzPP+LHFj5/OJLjKswsIxq1Vtxwvxx2PMNLQ4v6ZAwNG+x623EHQdbkmcI5lqxLgcQrWROOHxuA0aXY/CTW8V23VoDXQ8UJRimtOHXfHqC6Zwq84iRuyQf8SmycpShxA26QvjCFtMq/niDKuLWR20zzsTPII864bc99ZARqAhIQo56ZGRvvgnv2wLFqVHh9zc66MU9/nfMKPi2xEj9qYjFDkfwZH/sfpJFSC4gz7u3svrIE5rD5Z0dwILPtDAR5q46+hgFcjt8Q1jvteT6SS4nchSEZ/Bw="
@@ -21,13 +24,15 @@ cache:
 addons:
   apt:
     packages:
+    - gettext
+    - libjpeg-turbo-progs
+    - optipng
     - python-pip
     - python-virtualenv
-    - gettext
-    - optipng
-    - libjpeg-turbo-progs
+    - transifex-client
 
-script: make html
+before_script: echo -e "[https://www.transifex.com]\nhostname = https://www.transifex.com\nusername = ${TRANSIFEX_USER}\npassword = ${TRANSIFEX_PW}\ntoken = \n" > $HOME/.transifexrc
+script: make process_l10n html
 
 deploy:
   - provider: script
