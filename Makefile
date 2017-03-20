@@ -65,7 +65,7 @@ help:
 	@echo '                                                                          '
 
 html:
-	find $(BASEDIR) -name 'freenet_site.po' -exec msgfmt {} -o $(BASEDIR)/messages.mo \;
+	find $(BASEDIR) -name 'freenet_site.po' -execdir msgfmt freenet_site.po -o messages.mo \;
 	# this is required, see https://github.com/getpelican/pelican-plugins/issues/773
 	mkdir -p $(OUTPUTDIR)/theme/
 	cp -ar $(BASEDIR)/theme/static/* $(OUTPUTDIR)/theme/
