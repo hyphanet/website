@@ -1,0 +1,7 @@
+*.swp
+*.pyc
+.*
+*~
+\#*\#
+/output
+locales/**/*.mo
