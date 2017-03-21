@@ -32,7 +32,7 @@ addons:
     - transifex-client
 
 before_script: echo -e "[https://www.transifex.com]\nhostname = https://www.transifex.com\nusername = ${TRANSIFEX_USER}\npassword = ${TRANSIFEX_PW}\ntoken = \n" > $HOME/.transifexrc
-script: make process_l10n html
+script: make fetch_l10n html
 
 deploy:
   - provider: script
@@ -40,3 +40,9 @@ deploy:
     skip_cleanup: true
     on:
       branch: 2016-redesign
+# TODO: re-enable when we are happy with the content
+#  - provider: script
+#    script: tx push --source --no-interactive
+#    skip_cleanup: true
+#    on:
+#      branch: 2016-redesign
