@@ -65,7 +65,7 @@ help:
 	@echo '                                                                          '
 
 fetch_l10n:
-	tx pull --minimum-perc=70 -l en,fr,es,nl,it,de
+	tx pull --minimum-perc=70 -l fr,es,nl,it,de
 
 html:
 	# this is required, see https://github.com/getpelican/pelican-plugins/issues/773
