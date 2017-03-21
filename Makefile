@@ -64,15 +64,15 @@ help:
 	@echo 'Set the RELATIVE variable to 1 to enable relative urls                    '
 	@echo '                                                                          '
 
-process_l10n:
-	tx pull --minimum-perc=10 -a
-	PATH=/usr/bin:/bin find $(BASEDIR) -name 'freenet_site.po' -execdir msgfmt freenet_site.po -o messages.mo \;
+fetch_l10n:
+	tx pull --minimum-perc=70 -l en,fr,es,nl,it,de
 
 html:
 	# this is required, see https://github.com/getpelican/pelican-plugins/issues/773
 	mkdir -p $(OUTPUTDIR)/theme/ $(BASEDIR)/locales/
 	cp -ar $(BASEDIR)/theme/static/* $(OUTPUTDIR)/theme/
 	cp -ar $(BASEDIR)/content/assets/* $(OUTPUTDIR)
+	PATH=/usr/bin:/bin find $(BASEDIR) -name 'freenet_site.po' -execdir msgfmt freenet_site.po -o messages.mo \;
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
 clean:
