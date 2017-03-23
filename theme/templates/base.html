@@ -55,12 +55,12 @@
 
 	<nav id="language">
 	{% if extra_siteurls %}
-		<span>Select Language</span>
+		<span>Language</span>
 		{% for lang, url in extra_siteurls.items() %}
 			{% if url %}
-				<a href="{{ url }}">{{ lang }}</a>
+				<a href="{{ url }}/{{ output_file }}">{{ lang }}</a>
 			{% else %}
-				<a href="/">{{ lang }}</a>
+				<a href="/{{ output_file }}">{{ lang }}</a>
 			{% endif %}
 		{% endfor %}
 	{% endif %}
