@@ -978,45 +978,15 @@ Therefore we hope to discover and fix these flaws to protect those who fight for
 These are the mailing lists that can be used for support or general
 information about Freenet.
 
-### Subscribing
-
-To subscribe to one of the lists, click the list name and give your email
-address in the field below the **Subscribing to < mailinglist >** header. To
-enter a password is optional, and if you do not enter one, one will be
-automatically generated for you. Then press the **Subscribe** button. You
-will receive a confirmation email, and when that is answered, you will
-receive mails from the list.
-
-### Unsubscribing
-
-To unsubscribe to one of the lists you are subscribed to, click the list name
-and give your subscription email address under the heading **< mailinglist >
-Subscribers** and press the button **Unsubscribe or edit options**.
-
-_**Note**: We constantly get requests of people who want to become
-unsubscribed._ **YOU** _have to do that yourself! Just click on the www link
-provided at the bottom of every mail, enter your e-mail address in the text
-field in section "Subscribers" and provide your password under the
-unsubscribe option. (You can get your password there as well, in case you
-forgot it.)_
-
 ### The lists
 
-* [Support](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/support/) ([archive](https://emu.freenetproject.org/pipermail/support/))<br/>
+* [Support](https://ml.freenetproject.org/v1/) ([archive](https://www.mail-archive.com/support@freenetproject.org/))<br/>
   Asking for or giving advice relating to getting Freenet working,
   bug reports, and suggestions on improving the user experience. Requests for
   help are more likely to be heard here than in the other mailing lists.
-  **Note**: Emails sent to this mailing list from those not subscribed to the
-  list must be manually approved, and this can impose a delay of several days.
-  To avoid this delay, please [subscribe](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/support/).
-* [Development](https://emu.freenetproject.org/cgi-bin/mailman/listinfo/devl/) ([archive](https://emu.freenetproject.org/pipermail/devl/))<br/>
+* [Development](https://ml.freenetproject.org/v1/) ([archive](https://www.mail-archive.com/devl@freenetproject.org/))<br/>
   This list is for active developers to discuss bugs, and the implementation
   of near-term new features.
-
-_**Third party tools**: We are hosting some other mailing lists on our server.
-Here is the [full list][url_listinfo]._
-
-[url_listinfo]: https://emu.freenetproject.org/cgi-bin/mailman/listinfo/
 
 ## [Suggestions](https://freenet.uservoice.com/)
 
