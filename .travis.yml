@@ -26,7 +26,7 @@ addons:
     - python-pip
     - python-virtualenv
 
-script: make fetch_l10n html
+script: make html
 
 deploy:
   - provider: script
