@@ -20,11 +20,11 @@ Steps:
 
 ## Windows
 
-Download and run [the installer](/assets/jnlp/FreenetInstaller.exe)
+Download and run [the installer](https://github.com/freenet/fred/releases/download/build01477/FreenetInstaller-1477.exe)
 
 <p><a class=" btn button-custom btn-custom-two" href="/assets/jnlp/FreenetInstaller.exe"><i class="icon ion-arrow-down-a"></i> Download Freenet</a></p>
 
-([try this if the first link is blocked](https://downloads.freenetproject.org/latest/FreenetInstaller.exe)) ([gpg signature][url_gpg_sig]; [keyring][url_keyring])
+([try this if the first link is blocked](https://github.com/freenet/fred/releases/download/build01477/FreenetInstaller-1477.exe)) ([gpg signature][url_gpg_sig]; [keyring][url_keyring])
 
 It will automatically install Freenet and other required components for you.
 When done, your default browser will automatically open up to Freenet's
@@ -41,7 +41,7 @@ Freenet requires Windows XP or later.
 
 Download and run [the installer](https://github.com/freenet/mactray/releases/download/v2.0.6/FreenetTray_2.0.6.zip) ([gpg signature][url_gpg_sig]; [keyring][url_keyring]).
 
-<p><a class=" btn button-custom btn-custom-two" href="{url_mac_installer}"><i class="icon ion-arrow-down-a"></i>Download Freenet for OSX</a></p>
+<p><a class=" btn button-custom btn-custom-two" href="https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip"><i class="icon ion-arrow-down-a"></i>Download Freenet for OSX</a></p>
 
 It will automatically install Freenet and other required components for you.
 When done, your default browser will automatically open up to Freenet's web-based user interface.
@@ -89,7 +89,7 @@ it can be installed with a package manager, such as sudo apt-get install wget
 on Debian or Ubuntu.
 
 If the link above is blocked, you could download it from our server
-[here](https://downloads.freenetproject.org/latest/new_installer_offline.jar).
+[here](https://github.com/freenet/fred/releases/download/build01477/new_installer_offline_1477.jar).
 But please use the other link if you can.
 
 **Note**: Many GNU/Linux distributions no longer ship with Java Web Start
