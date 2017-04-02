@@ -9,7 +9,7 @@ If you already have a contribution in mind you can find the project repositories
 
 - Get in contact in the [mailing lists](/pages/help.html#mailing-lists)
 - Join us on IRC: [#freenet on chat.freenode.net](/pages/help.html#irc)
-- Report issues in the [bug tracker](https://bugs.freenetproject.org/)
+- Report issues in the [bug tracker](https://freenet.mantishub.io/) hosted by MantisHub
 
 The Wiki contains a list of 
 [freenet-related projects](https://wiki.freenetproject.org/Projects) 
@@ -22,4 +22,4 @@ pseudonym through Freenet forums such as [FMS](http://freesocial.draketo.de/fms_
 
 ## [Translation](https://wiki.freenetproject.org/Translation)
 
-## [Bug Tracker](https://bugs.freenetproject.org/)
+## [Bug Tracker](https://freenet.mantishub.io/) hosted by MantisHub

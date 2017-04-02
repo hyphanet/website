@@ -444,7 +444,7 @@ https://github.com/freenet/fred), but there is also some useful documentation on
 [the wiki](https://wiki.freenetproject.org/) (you may have to search a bit),
 and most implemented ideas have been discussed in detail on [the mailing
 lists](help.html#mailing-lists) at some point, more recently often in-Freenet
-forums such as FMS, or [the bug tracker](https://bugs.freenetproject.org/).
+forums such as FMS, or [the bug tracker](https://freenet.mantishub.io/) hosted by MantisHub.
 
 [icon_pdf]: /assets/img/small-n-flat/file-pdf.png
 [icon_video]: /assets/img/small-n-flat/file-video.png
