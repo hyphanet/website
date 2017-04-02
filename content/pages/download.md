@@ -20,11 +20,9 @@ Steps:
 
 ## Windows
 
-Download and run [the installer](https://github.com/freenet/fred/releases/download/build01477/FreenetInstaller-1477.exe)
+Download and run [the installer](https://github.com/freenet/fred/releases/download/build01477/FreenetInstaller-1477.exe) ([gpg signature][url_gpg_sig]; [keyring][url_keyring])
 
-<p><a class=" btn button-custom btn-custom-two" href="/assets/jnlp/FreenetInstaller.exe"><i class="icon ion-arrow-down-a"></i> Download Freenet</a></p>
-
-([try this if the first link is blocked](https://github.com/freenet/fred/releases/download/build01477/FreenetInstaller-1477.exe)) ([gpg signature][url_gpg_sig]; [keyring][url_keyring])
+<a class="download-button" href="https://github.com/freenet/fred/releases/download/build01477/FreenetInstaller-1477.exe">Download Freenet for Windows</a>
 
 It will automatically install Freenet and other required components for you.
 When done, your default browser will automatically open up to Freenet's
@@ -41,7 +39,7 @@ Freenet requires Windows XP or later.
 
 Download and run [the installer](https://github.com/freenet/mactray/releases/download/v2.0.6/FreenetTray_2.0.6.zip) ([gpg signature][url_gpg_sig]; [keyring][url_keyring]).
 
-<p><a class=" btn button-custom btn-custom-two" href="https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip"><i class="icon ion-arrow-down-a"></i>Download Freenet for OSX</a></p>
+<a class="download-button" href="https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip">Download Freenet for OSX</a>
 
 It will automatically install Freenet and other required components for you.
 When done, your default browser will automatically open up to Freenet's web-based user interface.
@@ -58,7 +56,7 @@ Freenet requires OS X 10.8 or later.
 
 Try the [Java Web Start installer](/assets/jnlp/freenet.jnlp).
 
-<p><a class=" btn button-custom btn-custom-two" href="/assets/jnlp/freenet.jnlp"><i class="icon ion-arrow-down-a"></i>Install Freenet</a></p>
+<a class="download-button" href="/assets/jnlp/freenet.jnlp">Download Freenet for GNU/Linux & POSIX</a>
 
 Now follow the installer:
 
