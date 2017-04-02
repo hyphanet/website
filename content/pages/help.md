@@ -612,7 +612,7 @@ after you install Freenet.
 
 ### Where can I report bugs?
 
-You can use our [bug tracking system](https://freenet.mantishub.io/) or
+You can use our [bug tracking system](https://freenet.mantishub.io/) hosted by MantisHub or
 send a mail to our [support mailing list](help.html#mailing-lists).
 
 ### I'm a theoretical computer scientist/mathematician, how can I help?
