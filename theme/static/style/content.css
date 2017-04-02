@@ -1,3 +1,8 @@
+@font-face {
+	font-family: "ionicons";
+	src: url("../fonts/ionicons.ttf");
+}
+
 blockquote {
 	font-style: italic;
 }
@@ -409,6 +414,21 @@ ol li p:only-of-type {
 
 dt {
 	font-weight: 700;
+}
+
+.download-button {
+	padding: 0.75em;
+	border-radius: 6px;
+	font-family: BebasNeueBold, "bebas-neue", sans-serif;
+	font-weight: 700;
+	background: #416AB3;
+	color: white;
+}
+
+.download-button::before {
+	display: inline;
+	content: "\f103\ ";
+	font-family: "ionicons";
 }
 
 footer {
