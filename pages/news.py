@@ -16,6 +16,10 @@ class NewsItem(object):
 def news_items():
     donate_button = """<a class="btn button-custom btn-custom-two donate-button" href="donate.html">""" + _("Donate today.") + """</a>"""
     return [
+        NewsItem("20170405-infra-changes", _("2017-04-05 - Freenet Infrastructure changes"),
+_("""
+We have to do infrastructure changes. This will bring some (hopefully short-term) breakage to the website. Please bear with us.
+""")),
         NewsItem("20170309-1477", _("2017-03-09 - Freenet build 1477 released"),
 _("""
 Freenet 0.7.5 build 1477 is now available.
