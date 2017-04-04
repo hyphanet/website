@@ -18,7 +18,7 @@ def news_items():
     return [
         NewsItem("20170405-infra-changes", _("2017-04-05 - Freenet Infrastructure changes"),
 _("""
-We have to do infrastructure changes. This will bring some (hopefully short-term) breakage to the website. Please bear with us.
+We have to do infrastructure changes. This will bring some (hopefully short-term) breakage to the website. Please bear with us. Freenet itself (the network) should be unaffected.
 """)),
         NewsItem("20170309-1477", _("2017-03-09 - Freenet build 1477 released"),
 _("""
