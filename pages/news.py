@@ -160,7 +160,7 @@ However the method used by the Missouri police department is using
 false statistics: despite its flaws, Freenet's Opennet is much harder to
 track than they claim.
 
-The Freenet developers do not condemn these attacks. Police departments
+The Freenet developers do not condone these attacks. Police departments
 try to use every legal venue to catch criminals. This is their job and
 vocation, but any attack they find could also be used by oppressive
 governments to suppress dissenting opinions, so we will work to fix attacks
