@@ -6,7 +6,7 @@ sudo: false
 
 env:
   global:
-    - "SITEURL=https://staging.freenetproject.org"
+    - "SITEURL=https://freenetproject.org"
     - "SHOULD_COMPRESS=True"
     - "AWS_ACCESS_KEY_ID=AKIAJQUIQIL3XTBHT3DA"
     # our AWS_SECRET_ACCESS_KEY follows
