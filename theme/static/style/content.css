@@ -6,6 +6,11 @@
 	src: url("../fonts/ionicons.ttf");
 }
 
+code {
+	white-space: pre-wrap;
+	overflow-x: scroll;
+}
+
 blockquote {
 	font-style: italic;
 }
@@ -401,6 +406,7 @@ width: 240px;
 
 main {
 	padding: 1em;
+	overflow: hidden;
 }
 
 body main a {
