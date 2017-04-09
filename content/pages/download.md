@@ -76,10 +76,10 @@ performance.
 
 Open a terminal and run:
 
-    wget 'https://freenetproject.org/assets/jnlp/freenet_installer.jar' -O new_installer_offline.jar
+    wget 'https://github.com/freenet/fred/releases/download/build01477/new_installer_offline_1477.jar' -O new_installer_offline.jar
     java -jar new_installer_offline.jar
 
-Alternatively, downloading [the installer](/assets/jnlp/freenet_installer.jar)
+Alternatively, downloading [the installer](https://github.com/freenet/fred/releases/download/build01477/new_installer_offline_1477.jar)
 ([gpg signature][jar_sig]; [keyring][url_keyring])
 and then clicking on the file may work on some systems, but if there are
 problems we recommend the above command lines. If wget is not installed,
