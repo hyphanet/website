@@ -13,10 +13,12 @@
 			<li>249 Likes</li>
 		</ul>
 	</ul>
+	<form id="MLform" method="POST" action="https://ml.freenetproject.org/v1/">
+		<input name="email" id="email" required="" type="email"></input>
+		<input name="action" value="subscription" type="hidden"></input>
+		<input name="list" value="announce" type="hidden"></input>
 
-	<form id="newsletter">
-		<input name="email"></input>
-		<input type="submit" value="Subscribe">
+		<button id="submit">Submit</button>
 	</form>
 
 	<div id="contact">

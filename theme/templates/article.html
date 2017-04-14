@@ -13,7 +13,7 @@
 {% block heading %}{{ article.title }}{%endblock%}
 {% block content %}
 <section id="content" class="body">
-  <footer class="post-info">
+  <div class="post-info">
     <time class="published" datetime="{{ article.date.isoformat() }}">
       {{ article.locale_date }}
     </time>
@@ -29,7 +29,7 @@
         {% endfor %}
     </address>
     {% endif %}
-  </footer><!-- /.post-info -->
+  </div><!-- /.post-info -->
   <div class="entry-content">
     {{ article.content }}
   </div><!-- /.entry-content -->
