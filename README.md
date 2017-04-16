@@ -15,9 +15,14 @@ Use virtualenv
 
     source pelican_env/bin/activate
 
-Install requirements
+Install Python modules
 
     pip install -r requirements.txt
+
+Enable Pelican plugins
+
+    git submodule init
+    git submodule update
 
 Building
 ========
