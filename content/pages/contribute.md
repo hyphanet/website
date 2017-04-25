@@ -9,7 +9,7 @@ If you already have a contribution in mind you can find the project repositories
 
 - Get in contact in the [mailing lists](/pages/help.html#mailing-lists)
 - Join us on IRC: [#freenet on chat.freenode.net](/pages/help.html#irc)
-- Report issues in the [bug tracker](https://freenet.mantishub.io/) hosted by MantisHub
+- Report issues in the [bug tracker](https://freenet.mantishub.io/) hosted by [MantisHub](https://www.mantishub.com)
 
 The Wiki contains a list of 
 [freenet-related projects](https://wiki.freenetproject.org/Projects) 
