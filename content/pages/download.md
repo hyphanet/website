@@ -232,7 +232,7 @@ However, your (or someone else's) government may be able to find out who you are
 
 ## Verifying Signatures
 
-        Download the [Freenet Project signing keys][url_keyring] and import them into your keyring:
+Download the [Freenet Project signing keys][url_keyring] and import them into your keyring:
 
         pub   2048R/0xEAC5EBF07AA9C2A3 2013-04-29
               Key fingerprint = DBB7 7338 3BC3 49C9 5203  ED91 EAC5 EBF0 7AA9 C2A3
