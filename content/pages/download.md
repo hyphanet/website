@@ -236,18 +236,18 @@ Download the [Freenet Project signing keys][url_keyring] and import them into yo
 
         pub   2048R/0xEAC5EBF07AA9C2A3 2013-04-29
               Key fingerprint = DBB7 7338 3BC3 49C9 5203  ED91 EAC5 EBF0 7AA9 C2A3
-              
+
         pub   4096R/0x00100D897EDBA5E0 2013-09-21 [expired: 2016-09-08]
               Key fingerprint = 0046 195B 2DCA B176 D394  09CD 0010 0D89 7EDB A5E0
         uid                  Steve Dougherty (operhiem1 Release Signing Key) <steve@asksteved.com>
         sub   4096R/0x7BF0F7B36AC8B380 2013-09-21 [expired: 2016-09-15]
-        
+
         pub   4096R/0xFF24CA421946AA94 2013-09-24 [expires: 2018-09-23]
               Key fingerprint = B76D 4AA7 96D8 403E ED78  C9F9 FF24 CA42 1946 AA94
         uid                  Matthew Toseland (2013-2018 key, higher key length) <matthew@toselandcs.co.uk>
         uid                  Matthew Toseland (2013-2018 key, higher key length) <toad@amphibian.dyndns.org>
         sub   4096R/0xF877E62895C42009 2013-09-24 [expires: 2018-09-23]
-        
+
         pub   4096R/0xB67C19E817A8D846 2016-01-02 [expires: 2018-01-03]
               Key fingerprint = 5D77 D9A4 2E28 0F5A FF8F  2EBF B67C 19E8 17A8 D846
         uid                  Stephen Oliver <steve@infincia.com>
