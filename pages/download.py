@@ -184,6 +184,10 @@ Open a terminal and run:
     wget 'https://freenetproject.org/assets/jnlp/freenet_installer.jar' -O new_installer_offline.jar
     java -jar new_installer_offline.jar
 """ + "\n\n" + _("""
+For a headless install use:
+""") + "\n\n" + """
+    java -jar new_installer_offline.jar -console
+""" + "\n\n" + _("""
 Alternatively, downloading [the installer](assets/jnlp/freenet_installer.jar)
 ([gpg signature][jar_sig]; [keyring][url_keyring])
 and then clicking on the file may work on some systems, but if there are
