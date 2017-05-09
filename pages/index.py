@@ -40,12 +40,11 @@ class HomeSection(Section):
 <!--HOME SECTION END-->
 """
         slogan = md(_("""
-Leap over censorship<br>
-Escape total surveillance
+Join the anonymous Darknet
 """))
         mission = md(_("""
-Freenet is a peer-to-peer platform for censorship-resistant communication and publishing.
-Browse websites, post on forums, and publish files within Freenet with strong privacy protections.
+Freenet allows you to speak, share and post without being watched.<br>
+Censorship is impossible: Nobody can delete anything on Freenet.
 """))
         download_text = _("Download Freenet")
         read_more = """<a href="{}" class="readmore">""" + _("""read more…""") + """</a>"""
