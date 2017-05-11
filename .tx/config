@@ -6,3 +6,4 @@ source_file = locales/messages.pot
 source_lang = en
 type = PO
 file_filter = locales/<lang>/LC_MESSAGES/freenet_site.po
+lang_map = id_ID:id-id, pt_BR:pt-br, pt_PT:pt-pt, mk_MK:mk-mk, nn_NO:nn-no, fa_IR:fa-ir, pl_PL:pl-pl, nb_NO:nb-no, zh_CN:zh-cn, zh_TW:zh-tw, uk_UA:uk-ua
