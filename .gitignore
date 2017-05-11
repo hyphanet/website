@@ -4,4 +4,5 @@
 *~
 \#*\#
 /output
-/locales
+/locales/messages.pot
+/locales/*/LC_MESSAGES/messages.mo
