@@ -76,8 +76,8 @@ performance.
 
 Open a terminal and run:
 
-    wget 'https://github.com/freenet/fred/releases/download/build01477/new_installer_offline_1477.jar' -O new_installer_offline.jar
-    java -jar new_installer_offline.jar
+    wget 'https://github.com/freenet/fred/releases/download/build01477/new_installer_offline_1477.jar' -O new_installer_offline.jar;
+    java -jar new_installer_offline.jar;
 
 Alternatively, downloading [the installer](https://github.com/freenet/fred/releases/download/build01477/new_installer_offline_1477.jar)
 ([gpg signature][jar_sig]; [keyring][url_keyring])
@@ -98,7 +98,7 @@ official ones for other distributions. If you are a developer and would like
 to join us and help it would be much appreciated!
 
 If this doesn't work on a headless server, try
-"java -jar new_installer_offline.jar -console", and follow the prompts to
+"java -jar new_installer_offline.jar -console;", and follow the prompts to
 tell it where to install Freenet etc.
 
 [jar_sig]: FREENET_INSTALLER_SIG_URL
