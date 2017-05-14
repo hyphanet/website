@@ -158,12 +158,6 @@ section > cite {
 	text-align: center;
 }
 
-#actions a:before {
-	display: inline;
-	color: white;
-	content: '\203A  ';
-}
-
 #actions div:nth-of-type(1) h2:before {
 	display: block;
 	content: url('../images/download-white.png');
