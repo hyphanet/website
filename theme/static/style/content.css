@@ -228,6 +228,11 @@ section h2 {
 	margin-left: 1em;
 }
 
+#actions a:hover {
+	background: rgba(255, 255, 255, 0.1);
+	transition: background 0.2s linear;
+}
+
 #whatsfreenet h2 {
 color:  #416ab3;
 font-size: 40px;/* Approximation due to font substitution */
