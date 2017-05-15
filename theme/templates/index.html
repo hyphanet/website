@@ -43,26 +43,31 @@
 			<p>{% trans %}Browse websites, post on forums, and publish files within Freenet with strong privacy protections.{% endtrans %}</p>
 		</header>
 		<section id="actions">
-			<div>
-				<h2>{% trans %}Download{% endtrans %}</h2>
-				<p>{% trans %}Get the software{% endtrans %}</p>
-				<a href="{{ BASE_URL }}/pages/download.html">{% trans %}Learn More{% endtrans %}</a>
-			</div>
-			<div>
-				<h2>{% trans %}Learn{% endtrans %}</h2>
-				<p>{% trans %}Learn to protect your privacy{% endtrans %}</p>
-				<a href="{{ BASE_URL }}/pages/documentation.html">{% trans %}Learn More{% endtrans %}</a>
-			</div>
-			<div>
-				<h2>{% trans %}Donate{% endtrans %}</h2>
-				<p>{% trans %}Give to protect online privacy and internet freedom{% endtrans %}</p>
-				<a href="{{ BASE_URL }}/pages/donate.html">{% trans %}Learn More{% endtrans %}</a>
-			</div>
-			<div>
-				<h2>{% trans %}Contribute{% endtrans %}</h2>
-				<p>{% trans %}Work to protect online privacy and internet freedom{% endtrans %}</p>
-				<a href="{{ BASE_URL }}/pages/volunteer.html">{% trans %}Learn More{% endtrans %}</a>
-			</div>
+			<a href="{{ BASE_URL }}/pages/download.html">
+				<div>
+					<h2>{% trans %}Download{% endtrans %}</h2>
+					<p>{% trans %}Get the software{% endtrans %}</p>
+				</div>
+			</a>
+
+			<a href="{{ BASE_URL }}/pages/documentation.html">
+				<div>
+					<h2>{% trans %}Learn{% endtrans %}</h2>
+					<p>{% trans %}Learn to protect your privacy{% endtrans %}</p>
+				</div>
+			</a>
+			<a href="{{ BASE_URL }}/pages/donate.html">
+				<div>
+					<h2>{% trans %}Donate{% endtrans %}</h2>
+					<p>{% trans %}Give to protect online privacy and internet freedom{% endtrans %}</p>
+				</div>
+			</a>
+			<a href="{{ BASE_URL }}/pages/volunteer.html">
+				<div>
+					<h2>{% trans %}Contribute{% endtrans %}</h2>
+					<p>{% trans %}Work to protect online privacy and internet freedom{% endtrans %}</p>
+				</div>
+			</a>
 		</section>
 
 		<a href="#whatsfreenet" id="more">{% trans %}More{% endtrans %}</a>
