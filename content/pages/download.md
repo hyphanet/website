@@ -20,9 +20,9 @@ Steps:
 
 ## Windows
 
-Download and run [the installer](https://github.com/freenet/fred/releases/download/build01477/FreenetInstaller-1477.exe) ([gpg signature][url_gpg_sig]; [keyring][url_keyring])
+Download and run [the installer](https://github.com/freenet/fred/releases/download/build01478/FreenetInstaller-1478.exe) ([gpg signature][url_gpg_sig]; [keyring][url_keyring])
 
-<a class="download-button" href="https://github.com/freenet/fred/releases/download/build01477/FreenetInstaller-1477.exe">Download Freenet for Windows</a>
+<a class="download-button" href="https://github.com/freenet/fred/releases/download/build01478/FreenetInstaller-1478.exe">Download Freenet for Windows</a>
 
 It will automatically install Freenet and other required components for you.
 When done, your default browser will automatically open up to Freenet's
@@ -76,10 +76,10 @@ performance.
 
 Open a terminal and run:
 
-    wget 'https://github.com/freenet/fred/releases/download/build01477/new_installer_offline_1477.jar' -O new_installer_offline.jar;
+    wget 'https://github.com/freenet/fred/releases/download/build01478/new_installer_offline_1478.jar' -O new_installer_offline.jar;
     java -jar new_installer_offline.jar;
 
-Alternatively, downloading [the installer](https://github.com/freenet/fred/releases/download/build01477/new_installer_offline_1477.jar)
+Alternatively, downloading [the installer](https://github.com/freenet/fred/releases/download/build01478/new_installer_offline_1478.jar)
 ([gpg signature][jar_sig]; [keyring][url_keyring])
 and then clicking on the file may work on some systems, but if there are
 problems we recommend the above command lines. If wget is not installed,
@@ -87,7 +87,7 @@ it can be installed with a package manager, such as sudo apt-get install wget
 on Debian or Ubuntu.
 
 If the link above is blocked, you could download it from our server
-[here](https://github.com/freenet/fred/releases/download/build01477/new_installer_offline_1477.jar).
+[here](https://github.com/freenet/fred/releases/download/build01478/new_installer_offline_1478.jar).
 But please use the other link if you can.
 
 **Note**: Many GNU/Linux distributions no longer ship with Java Web Start
