@@ -255,4 +255,9 @@ Download the [Freenet Project signing keys][url_keyring] and import them into yo
         sub   4096R/0x1652EBA5AC1BB386 2016-01-02 [expires: 2018-01-03]
         sub   4096R/0x38A62E479684F2F2 2016-01-02 [expires: 2018-01-03]
 
+        pub   4096R/0xB41A6047FD6C57F9 2017-02-23
+              Key fingerprint = B30C 3D91 069F 81EC FEFE  D0B1 B41A 6047 FD6C 57F9
+        uid                  Arne Babenhauserheide (freenet releases) <arne_bab@web.de>
+        uid                  Arne Babenhauserheide (ArneBab) <arne_bab@web.de>
+
 [url_keyring]: /assets/keyring.gpg
