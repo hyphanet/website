@@ -1005,7 +1005,7 @@ When writing your support request, please make sure you include a full descripti
 Many of the developers and users of Freenet are on the [IRC](
 https://en.wikipedia.org/wiki/IRC) channel #freenet on chat.freenode.net.
 
-<a href="#chatlink" id="chatlink" class="btn button-custom btn-custom-two">Chat with us</a>
+<a href="https://webchat.freenode.net/?randomnick=1&channels=%23freenet&uio=d4" id="chatlink" class="btn button-custom btn-custom-two">Chat with us</a>
 
 ## [Setup](http://freesocial.draketo.de/)
 
