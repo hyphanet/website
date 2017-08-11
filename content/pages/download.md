@@ -32,7 +32,7 @@ web-based user interface.
 
 Freenet requires Windows XP or later.
 
-[url_gpg_sig]: FREENET_WINDOWS_INSTALLER_SIG_URL
+[url_gpg_sig]: https://github.com/freenet/fred/releases/download/build01478/FreenetInstaller-1478.exe.sig
 [url_keyring]: #keyring
 
 ## OS X
@@ -101,7 +101,7 @@ If this doesn't work on a headless server, try
 "java -jar new_installer_offline.jar -console;", and follow the prompts to
 tell it where to install Freenet etc.
 
-[jar_sig]: FREENET_INSTALLER_SIG_URL
+[jar_sig]: https://github.com/freenet/fred/releases/download/build01478/new_installer_offline_1478.jar.sig
 [url_keyring]: #keyring
 
 ## Mirrored installation
