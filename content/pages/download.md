@@ -37,7 +37,7 @@ Freenet requires Windows XP or later.
 
 ## OS X
 
-Download and run [the installer](https://github.com/freenet/mactray/releases/download/v2.0.6/FreenetTray_2.0.6.zip) ([gpg signature][url_gpg_sig]; [keyring][url_keyring]).
+Download and run [the installer](url_mac_installer) ([gpg signature][url_gpg_sig]; [keyring][url_keyring]).
 
 <a class="download-button" href="https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip">Download Freenet for OSX</a>
 
@@ -48,8 +48,8 @@ When done, your default browser will automatically open up to Freenet's web-base
 
 Freenet requires OS X 10.8 or later.
 
-[url_mac_installer]: https://github.com/freenet/mactray/releases/download/v2.0.6/FreenetTray_2.0.6.zip
-[url_gpg_sig]: https://github.com/freenet/mactray/releases/download/v2.0.6/FreenetTray_2.0.6.zip.sig
+[url_mac_installer]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip
+[url_gpg_sig]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip.sig
 [url_keyring]: #keyring
 
 ## GNU/Linux & POSIX
