@@ -16,6 +16,7 @@ cache:
   apt: true
   directories:
     - output
+    - pelican-plugins
 
 addons:
   apt:
