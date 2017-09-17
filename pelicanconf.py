@@ -34,9 +34,6 @@ DEFAULT_PAGINATION = 10
 
 PLUGIN_PATHS = ['pelican-plugins']
 PLUGINS = ["i18n_subsites", "assets", "optimize_images"]
-if os.environ['SHOULD_COMPRESS'] == 'True':
-    PLUGINS += ["gzip_cache"]
-    GZIP_CACHE_OVERWRITE = os.environ['SHOULD_COMPRESS']
 JINJA_ENVIRONMENT = {
     'extensions' : ["jinja2.ext.i18n"],
 }
