@@ -8,7 +8,17 @@ OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
+ifndef TRAVIS
 export SITEURL?=file://$(OUTPUTDIR)
+else
+
+ifndef TRAVIS_TAG
+export SITEURL=https://staging.freenetproject.org
+else
+export SITEURL=https://freenetproject.org
+endif
+
+endif
 export SHOULD_COMPRESS?=False
 
 FTP_HOST=localhost
