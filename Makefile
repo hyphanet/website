@@ -9,7 +9,7 @@ CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
 ifndef TRAVIS
-export SITEURL?=file://$(OUTPUTDIR)
+export SITEURL?=$(OUTPUTDIR)
 else
 
 ifndef TRAVIS_TAG
@@ -78,11 +78,9 @@ fetch_l10n:
 	tx pull --minimum-perc=70 -l fr,es,nl,it,de
 
 html:
-	@echo 'Building $(SITEURL)'
+	@echo "Building $(SITEURL)"
 	# this is required, see https://github.com/getpelican/pelican-plugins/issues/773
-	mkdir -p $(OUTPUTDIR)/theme/ $(BASEDIR)/locales/
-	cp -ar $(BASEDIR)/theme/static/* $(OUTPUTDIR)/theme/
-	cp -ar $(BASEDIR)/content/assets/* $(OUTPUTDIR)
+	mkdir -p $(BASEDIR)/locales/
 	PATH=/usr/bin:/bin find $(BASEDIR) -name 'freenet_site.po' -execdir msgfmt freenet_site.po -o messages.mo \;
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 

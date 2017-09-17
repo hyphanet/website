@@ -33,11 +33,12 @@ SOCIAL = set()
 DEFAULT_PAGINATION = 10
 
 PLUGIN_PATHS = ['pelican-plugins']
-PLUGINS = ["i18n_subsites", "assets", "optimize_images"]
+PLUGINS = ["assets", "i18n_subsites", "optimize_images"]
 JINJA_ENVIRONMENT = {
     'extensions' : ["jinja2.ext.i18n"],
 }
 
+ASSET_SOURCE_PATHS = ['static']
 
 I18N_SUBSITES = {}
 
