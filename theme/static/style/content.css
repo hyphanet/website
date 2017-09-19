@@ -4,8 +4,8 @@
 @font-face {
 	font-family: "ionicons";
 	src: url("../fonts/ionicons.woff2") format("woff2"),
-	    ,url("../fonts/ionicons.woff") format("woff"),
-	    ,url("../fonts/ionicons.ttf") format("truetype");
+	     url("../fonts/ionicons.woff") format("woff"),
+	     url("../fonts/ionicons.ttf") format("truetype");
 }
 
 code {
