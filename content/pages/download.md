@@ -20,9 +20,9 @@ Steps:
 
 ## Windows
 
-Download and run [the installer](https://github.com/freenet/fred/releases/download/build01478/FreenetInstaller-1478.exe) ([gpg signature][url_gpg_sig]; [keyring][url_keyring])
+Download and run [the installer][url_win_installer] ([gpg signature][url_win_installer_sig]; [keyring][url_keyring])
 
-<a class="download-button" href="https://github.com/freenet/fred/releases/download/build01478/FreenetInstaller-1478.exe">Download Freenet for Windows</a>
+<a class="download-button" href="[url_win_installer]">Download Freenet for Windows</a>
 
 It will automatically install Freenet and other required components for you.
 When done, your default browser will automatically open up to Freenet's
@@ -32,14 +32,15 @@ web-based user interface.
 
 Freenet requires Windows XP or later.
 
-[url_gpg_sig]: https://github.com/freenet/fred/releases/download/build01478/FreenetInstaller-1478.exe.sig
+[url_win_installer]: https://github.com/freenet/fred/releases/download/build01478/FreenetInstaller-1478.exe
+[url_win_installer_sig]: https://github.com/freenet/fred/releases/download/build01478/FreenetInstaller-1478.exe.sig
 [url_keyring]: #keyring
 
 ## OS X
 
-Download and run [the installer](url_mac_installer) ([gpg signature][url_gpg_sig]; [keyring][url_keyring]).
+Download and run [the installer][url_mac_installer] ([gpg signature][url_mac_installer_sig]; [keyring][url_keyring]).
 
-<a class="download-button" href="https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip">Download Freenet for OSX</a>
+<a class="download-button" href="[url_mac_installer]">Download Freenet for OSX</a>
 
 It will automatically install Freenet and other required components for you.
 When done, your default browser will automatically open up to Freenet's web-based user interface.
@@ -49,7 +50,7 @@ When done, your default browser will automatically open up to Freenet's web-base
 Freenet requires OS X 10.8 or later.
 
 [url_mac_installer]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip
-[url_gpg_sig]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip.sig
+[url_mac_installer_sig]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip.sig
 [url_keyring]: #keyring
 
 ## GNU/Linux & POSIX
@@ -79,15 +80,15 @@ Open a terminal and run:
     wget 'https://github.com/freenet/fred/releases/download/build01478/new_installer_offline_1478.jar' -O new_installer_offline.jar;
     java -jar new_installer_offline.jar;
 
-Alternatively, downloading [the installer](https://github.com/freenet/fred/releases/download/build01478/new_installer_offline_1478.jar)
-([gpg signature][jar_sig]; [keyring][url_keyring])
+Alternatively, downloading [the installer][url_nix_installer]
+([gpg signature][url_nix_installer_sig]; [keyring][url_keyring])
 and then clicking on the file may work on some systems, but if there are
 problems we recommend the above command lines. If wget is not installed,
 it can be installed with a package manager, such as sudo apt-get install wget
 on Debian or Ubuntu.
 
 If the link above is blocked, you could download it from our server
-[here](https://github.com/freenet/fred/releases/download/build01478/new_installer_offline_1478.jar).
+[here][url_nix_installer].
 But please use the other link if you can.
 
 **Note**: Many GNU/Linux distributions no longer ship with Java Web Start
@@ -101,7 +102,8 @@ If this doesn't work on a headless server, try
 "java -jar new_installer_offline.jar -console;", and follow the prompts to
 tell it where to install Freenet etc.
 
-[jar_sig]: https://github.com/freenet/fred/releases/download/build01478/new_installer_offline_1478.jar.sig
+[url_nix_installer]: https://github.com/freenet/fred/releases/download/build01478/new_installer_offline_1478.jar
+[url_nix_installer_sig]: https://github.com/freenet/fred/releases/download/build01478/new_installer_offline_1478.jar.sig
 [url_keyring]: #keyring
 
 ## Mirrored installation
