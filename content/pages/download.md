@@ -85,10 +85,6 @@ problems we recommend the above command lines. If wget is not installed,
 it can be installed with a package manager, such as sudo apt-get install wget
 on Debian or Ubuntu.
 
-If the link above is blocked, you could download it from our server
-[here][url_nix_installer].
-But please use the other link if you can.
-
 **Note**: Many GNU/Linux distributions no longer ship with Java Web Start
 enabled. We would like to make distribution packages for easier installation,
 and have an in-development (and not maintained) [Debian package](
