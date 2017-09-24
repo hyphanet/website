@@ -1,6 +1,7 @@
 ---
 title: Thank you
 url: 
+status: hidden
 save_as: signup-thanks.html
 ---
 
