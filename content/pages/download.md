@@ -252,4 +252,4 @@ Download the [Freenet Project signing keys][url_keyring] and import them into yo
         uid                  Arne Babenhauserheide (freenet releases) <arne_bab@web.de>
         uid                  Arne Babenhauserheide (ArneBab) <arne_bab@web.de>
 
-[url_keyring]: /assets/keyring.gpg
+[url_keyring]: {filename}/assets/keyring.gpg
