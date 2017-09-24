@@ -1,6 +1,12 @@
 ---
 title: Download
----
+[url_win_installer]: https://github.com/freenet/fred/releases/download/build01478/FreenetInstaller-1478.exe
+[url_win_installer_sig]: https://github.com/freenet/fred/releases/download/build01478/FreenetInstaller-1478.exe.sig
+[url_mac_installer]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip
+[url_mac_installer_sig]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip.sig
+[url_nix_installer]: https://github.com/freenet/fred/releases/download/build01478/new_installer_offline_1478.jar
+[url_nix_installer_sig]: https://github.com/freenet/fred/releases/download/build01478/new_installer_offline_1478.jar.sig
+[url_keyring]: #keyring
 
 To access Freenet, you first need to install the main application.
 Freenet will run in the background and you can use your browser to change settings and access content.
@@ -22,7 +28,7 @@ Steps:
 
 Download and run [the installer][url_win_installer] ([gpg signature][url_win_installer_sig]; [keyring][url_keyring])
 
-<a class="download-button" href="[url_win_installer]">Download Freenet for Windows</a>
+[Download Freenet for Windows][url_win_installer]{: .download-button}
 
 It will automatically install Freenet and other required components for you.
 When done, your default browser will automatically open up to Freenet's
@@ -32,15 +38,11 @@ web-based user interface.
 
 Freenet requires Windows XP or later.
 
-[url_win_installer]: https://github.com/freenet/fred/releases/download/build01478/FreenetInstaller-1478.exe
-[url_win_installer_sig]: https://github.com/freenet/fred/releases/download/build01478/FreenetInstaller-1478.exe.sig
-[url_keyring]: #keyring
-
 ## OS X
 
 Download and run [the installer][url_mac_installer] ([gpg signature][url_mac_installer_sig]; [keyring][url_keyring]).
 
-<a class="download-button" href="[url_mac_installer]">Download Freenet for OSX</a>
+[Download Freenet for OSX][url_mac_installer]{: .download-button}
 
 It will automatically install Freenet and other required components for you.
 When done, your default browser will automatically open up to Freenet's web-based user interface.
@@ -48,10 +50,6 @@ When done, your default browser will automatically open up to Freenet's web-base
 ![](/assets/img/mactray/osx_installer_step2_transparent.png)
 
 Freenet requires OS X 10.8 or later.
-
-[url_mac_installer]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip
-[url_mac_installer_sig]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip.sig
-[url_keyring]: #keyring
 
 ## GNU/Linux & POSIX
 
@@ -101,10 +99,6 @@ to join us and help it would be much appreciated!
 If this doesn't work on a headless server, try
 "java -jar new_installer_offline.jar -console;", and follow the prompts to
 tell it where to install Freenet etc.
-
-[url_nix_installer]: https://github.com/freenet/fred/releases/download/build01478/new_installer_offline_1478.jar
-[url_nix_installer_sig]: https://github.com/freenet/fred/releases/download/build01478/new_installer_offline_1478.jar.sig
-[url_keyring]: #keyring
 
 ## Mirrored installation
 
