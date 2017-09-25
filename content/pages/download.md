@@ -6,6 +6,7 @@ title: Download
 [url_mac_installer_sig]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip.sig
 [url_nix_installer]: https://github.com/freenet/fred/releases/download/build01478/new_installer_offline_1478.jar
 [url_nix_installer_sig]: https://github.com/freenet/fred/releases/download/build01478/new_installer_offline_1478.jar.sig
+[url_jnlp_installer]: {filename}/assets/jnlp/freenet.jnlp?1478
 [url_keyring]: #keyring
 
 To access Freenet, you first need to install the main application.
@@ -53,9 +54,9 @@ Freenet requires OS X 10.8 or later.
 
 ## GNU/Linux & POSIX
 
-Try the [Java Web Start installer](/assets/jnlp/freenet.jnlp).
+Try the [Java Web Start installer][url_jnlp_installer].
 
-<a class="download-button" href="/assets/jnlp/freenet.jnlp">Download Freenet for GNU/Linux & POSIX</a>
+[Download Freenet for GNU/Linux & POSIX][url_jnlp_installer]{: .download-button}
 
 Now follow the installer:
 
