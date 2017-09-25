@@ -52,7 +52,6 @@ For a graphical installation you have to have:
 
 *   a working Java Runtime Environment
 *   a downloaded copy of `new_installer_offline.jar` from [the download page]({filename}/pages/download.html)
-    (if this does not work try [here](https://downloads.freenetproject.org/latest/new_installer_offline.jar))
 *   a working graphical user interface (GUI)
 
 You should save the new_installer.jar file somewhere where you can find it
