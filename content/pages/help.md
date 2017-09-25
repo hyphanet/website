@@ -583,9 +583,9 @@ If you have any questions about contributing, please contact us, via [the develo
 Last but not least you can [donate][url_donate] to support our paid
 developer(s) and cover server costs.
 
-[url_devlist]: https://emu.freenetproject.org/cgi-bin/mailman/listinfo/devl/
-[url_supportlist]: https://emu.freenetproject.org/cgi-bin/mailman/listinfo/support
-[url_chat]: help.html#irc
+[url_devlist]: #mailing-lists
+[url_supportlist]: #mailing-lists
+[url_chat]: #irc
 [url_donate]: donate.html
 
 ### How can I access the code and website?
@@ -974,11 +974,10 @@ Therefore we hope to discover and fix these flaws to protect those who fight for
 [url_rabbit_icon]: assets/img/rabbit/freenet-bunny.svg
 
 ## Mailing lists
+<a name="mailing-lists"></a>
 
 These are the mailing lists that can be used for support or general
 information about Freenet.
-
-### The lists
 
 * [Support](https://ml.freenetproject.org/v1/) ([archive](https://www.mail-archive.com/support@freenetproject.org/))<br/>
   Asking for or giving advice relating to getting Freenet working,
