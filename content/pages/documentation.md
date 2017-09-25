@@ -37,9 +37,9 @@ three ways to install Freenet:
 *   Enabling a mirror copy of a Freenet installation
 
 If you want to install the Freenet software on a computer which lacks a GUI,
-see the [Headless install](/pages/download.html#unix) instructions. If you have
+see the [Headless install]({filename}/pages/download.html#unix) instructions. If you have
 mirrored a working Freenet installation to a machine without explicitly
-installing it, see [Mirrored install](/pages/download.html#mirrored). Otherwise,
+installing it, see [Mirrored install]({filename}/pages/download.html#mirrored). Otherwise,
 continue reading.
 
 #### Graphical install
@@ -70,37 +70,37 @@ type:
 The first window you should see is the one below, which allows you to select
 your preferred language for the installation program.
 
-![Language Selection Screenshot](/assets/img/install/1-langselect.png)
+![Language Selection Screenshot]({filename}/assets/img/install/1-langselect.png)
 
 Next is shown an about-box, some information about the version of Freenet and
 authors. Just click **Next** to proceed.
 
-![About Freenet Dialog Screenshot](/assets/img/install/2-about.png)
+![About Freenet Dialog Screenshot]({filename}/assets/img/install/2-about.png)
 
 The next step is to choose the directory in which to install Freenet. The
 default location on GNU/Linux & POSIX operating systems is
 **/home/username/Freenet** as shown below. Change it to something appropriate or
 leave "as is". Click **Next** when you are finished.
 
-![Select Installation Directory Screenshot](/assets/img/install/4-Install_directory.png)
+![Select Installation Directory Screenshot]({filename}/assets/img/install/4-Install_directory.png)
 
 Select the packages that you want to install with your Freenet software.
 Since it takes up virtually no extra disk-space, it is recommended that you
 leave all packages selected and press **Next**.
 
-![Select Software Components Screenshot](/assets/img/install/5-select_packages.png)
+![Select Software Components Screenshot]({filename}/assets/img/install/5-select_packages.png)
 
 In the next stage, the packages are installed, and a progress meter runs
 across the window. When it is finished, press **Next** to continue to the
 next step.
 
-![Package Installation Progress Screenshot](/assets/img/install/6-Install_packages.png)
+![Package Installation Progress Screenshot]({filename}/assets/img/install/6-Install_packages.png)
 
 After that, the Freenet software is installed and/or upgraded, plugins are
 enabled and the environment is started. When completed, press **Next** to
 proceed.
 
-![Freenet Installation Progress Screenshot](/assets/img/install/7-install_progress.png)
+![Freenet Installation Progress Screenshot]({filename}/assets/img/install/7-install_progress.png)
 
 For some graphical environments, shortcuts in the menu-structure can be
 created. This is not the case for all of the platforms that Freenet run on.
@@ -108,11 +108,11 @@ However, there should be created shortcuts on the desktop in all supported
 environments. Change the application group according to your needs and press
 **Next** when finished.
 
-![](/assets/img/install/8-create_shortcuts.png)
+![]({filename}/assets/img/install/8-create_shortcuts.png)
 
 After that, the installation is finished. Click **Done** to close the window.
 
-![](/assets/img/install/9-Install_finished.png)
+![]({filename}/assets/img/install/9-Install_finished.png)
 
 If all has gone well, a browser window should have opened in the background.
 This will ask you a bunch of questions to configure Freenet, and then you
@@ -161,7 +161,7 @@ your friends. In practice most people start off with insecure mode and
 gradually add friends, and hopefully turn off insecure mode once they have at
 least 10 friends.
 
-![](/assets/img/Freenet-architecture-small.png)
+![]({filename}/assets/img/Freenet-architecture-small.png)
 
 *Figure 1: Visible Freenet connections*
 
@@ -184,7 +184,7 @@ these are that they are all done under the **Darknet** menu item or using the
 [http://127.0.0.1:8888/friends/](http://127.0.0.1:8888/friends/) link. Below
 is the thing that makes it all happen:
 
-![](/assets/img/add_peers.png)
+![]({filename}/assets/img/add_peers.png)
 
 As you can see, there are three ways of getting a node reference from someone
 else:
@@ -233,7 +233,7 @@ his/her side, the connection **does not work**.
 When you have a number of connections, you can visit the Darknet page. It
 should look something like this:
 
-![](/assets/img/Freenet-darknet_peers.png)
+![]({filename}/assets/img/Freenet-darknet_peers.png)
 
 There are a number of status messages that can be seen here:
 
@@ -583,7 +583,7 @@ To start jSite, type the following in a terminal:
 
 The first window you see is this:
 
-![](/assets/img/jsite/select-project.png)
+![]({filename}/assets/img/jsite/select-project.png)
 
 In the pane to the left, already created projects can be selected for
 updating, deleting or cloning. Since this is the first start, no such
@@ -615,7 +615,7 @@ browser:
 
 Below is an example of how it might look:
 
-![](/assets/img/jsite/project-details.png)
+![]({filename}/assets/img/jsite/project-details.png)
 
 When everything is filled in correctly, you may press **Next**.
 
@@ -623,12 +623,12 @@ The next step is to add files to your Freenet site (or Freesite). This is
 done in the dialog called **Project Files**. Since we have no files in the
 current directory, yet, the dialog is pretty much empty.
 
-![](/assets/img/jsite/project-files.png)
+![]({filename}/assets/img/jsite/project-files.png)
 
 To add files, we put some files in the local directory we specified earlier,
 **/home/test**, and press **Re-scan**. Then, presto, the files appear.
 
-![](/assets/img/jsite/default-file.png)
+![]({filename}/assets/img/jsite/default-file.png)
 
 We then highlight one of these files that will be the default page (e.g.
 index.html might be a good choice) and check the **Default file** checkbox.
@@ -638,7 +638,7 @@ they are and click the **Insert now** button.
 If all goes well, a window like the one below should appear. It may take
 quite a while to insert the Freesite, several minutes in fact.
 
-![](/assets/img/jsite/project-insert.png)
+![]({filename}/assets/img/jsite/project-insert.png)
 
 When all is finished, you will get a message pop-up that tells you that the
 site has been inserted successfully. You can copy the URI to the clip-board

@@ -35,7 +35,7 @@ It will automatically install Freenet and other required components for you.
 When done, your default browser will automatically open up to Freenet's
 web-based user interface.
 
-![](/assets/img/install/1-langselect-windows.png)
+![]({filename}/assets/img/install/1-langselect-windows.png)
 
 Freenet requires Windows XP or later.
 
@@ -48,7 +48,7 @@ Download and run [the installer][url_mac_installer] ([gpg signature][url_mac_ins
 It will automatically install Freenet and other required components for you.
 When done, your default browser will automatically open up to Freenet's web-based user interface.
 
-![](/assets/img/mactray/osx_installer_step2_transparent.png)
+![]({filename}/assets/img/mactray/osx_installer_step2_transparent.png)
 
 Freenet requires OS X 10.8 or later.
 
@@ -60,7 +60,7 @@ Try the [Java Web Start installer][url_jnlp_installer].
 
 Now follow the installer:
 
-![](/assets/img/install/1-langselect.png)
+![]({filename}/assets/img/install/1-langselect.png)
 
 If it doesn't work:
 
