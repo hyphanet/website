@@ -45,14 +45,13 @@ continue reading.
 #### Graphical install
 
 **The information below does not apply to Windows systems**. For Windows you should use
-[the installer for Windows](/assets/jnlp/FreenetInstaller.exe) as described on
-[the download page](/pages/download.html). You can also get the installer for Windows
-from [here](https://downloads.freenetproject.org/latest/FreenetInstaller.exe).
+the installer for Windows as described on
+[the download page]({filename}/pages/download.html).
 
 For a graphical installation you have to have:
 
 *   a working Java Runtime Environment
-*   a downloaded copy of [new_installer_offline.jar](/assets/jnlp/freenet_installer.jar)
+*   a downloaded copy of `new_installer_offline.jar` from [the download page]({filename}/pages/download.html)
     (if this does not work try [here](https://downloads.freenetproject.org/latest/new_installer_offline.jar))
 *   a working graphical user interface (GUI)
 
