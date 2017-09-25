@@ -37,21 +37,21 @@ three ways to install Freenet:
 *   Enabling a mirror copy of a Freenet installation
 
 If you want to install the Freenet software on a computer which lacks a GUI,
-see the [Headless install]({filename}/pages/download.html#unix) instructions. If you have
+see the [Headless install](download.html#gnulinux-posix) instructions. If you have
 mirrored a working Freenet installation to a machine without explicitly
-installing it, see [Mirrored install]({filename}/pages/download.html#mirrored). Otherwise,
+installing it, see [Mirrored install](download.html#mirrored). Otherwise,
 continue reading.
 
 #### Graphical install
 
 **The information below does not apply to Windows systems**. For Windows you should use
 the installer for Windows as described on
-[the download page]({filename}/pages/download.html).
+[the download page](download.html#windows).
 
 For a graphical installation you have to have:
 
 *   a working Java Runtime Environment
-*   a downloaded copy of `new_installer_offline.jar` from [the download page]({filename}/pages/download.html)
+*   a downloaded copy of `new_installer_offline.jar` from [the download page](download.html#gnulinux-posix)
 *   a working graphical user interface (GUI)
 
 You should save the new_installer.jar file somewhere where you can find it

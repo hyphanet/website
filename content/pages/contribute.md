@@ -7,8 +7,8 @@ title: Volunteer
 If you already have a contribution in mind you can find the project repositories
 [on GitHub](https://github.com/freenet/).
 
-- Get in contact in the [mailing lists]({filename}/pages/help.html#mailing-lists)
-- Join us on IRC: [#freenet on chat.freenode.net]({filename}/pages/help.html#chat-with-us)
+- Get in contact in the [mailing lists](help.html#mailing-lists)
+- Join us on IRC: [#freenet on chat.freenode.net](help.html#chat-with-us)
 - Report issues in the [bug tracker](https://freenet.mantishub.io/) hosted by [MantisHub](https://www.mantishub.com)
 
 The Wiki contains a list of 
