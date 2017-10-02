@@ -32,6 +32,16 @@
         {% if TAG_FEED_RSS and tag %}
         <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(tag.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Tags RSS Feed" />
         {% endif %}
+	{% if extra_siteurls %}
+		{% for lang,url in extra_siteurls.items() %}
+				{% if url %}
+	<link rel="alternate" hreflang="{{ lang }}" href="{{ url }}/{{ output_file }}" />
+				{% else %}
+	<link rel="alternate" hreflang="{{ lang }}" href="{{ output_file }}" />
+				{% endif %}
+		{% endfor %}
+        {% endif %}
+	<link rel="canonical" href="https://freenetproject.org/{{ output_file }}" />
         {% endblock head %}
 </head>
 

@@ -7,6 +7,16 @@
 {% assets filters="cssmin", output="style/index.min.css", "style/bebas.css", "style/ptsans.css", "style/social.css", "style/content.css", "style/landing.css", "style/menu.css" %}
 		<link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
 {% endassets %}
+		{% if extra_siteurls %}
+			{% for lang,url in extra_siteurls.items() %}
+				{% if url %}
+		<link rel="alternate" hreflang="{{ lang }}" href="{{ url }}/{{ output_file }}" />
+				{% else %}
+		<link rel="alternate" hreflang="{{ lang }}" href="{{ output_file }}" />
+				{% endif %}
+			{% endfor %}
+		{% endif %}
+		<link rel="canonical" href="https://freenetproject.org/{{ output_file }}" />
 	</head>
 	<body>
 	<div>
