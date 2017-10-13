@@ -41,9 +41,9 @@
 	<link rel="alternate" hreflang="{{ lang }}" href="{{ output_file }}" />
 				{% endif %}
 		{% endfor %}
-	<link rel="alternate" hreflang="x-default" href="{{ output_file }}" />
+	<link rel="alternate" hreflang="x-default" href="https://freenetproject.org/{{ output_file }}" />
         {% endif %}
-	<link rel="canonical" href="https://freenetproject.org/{{ output_file }}" />
+	<link rel="canonical" href="{{ SITEURL }}/{{ output_file }}" />
         {% endblock head %}
 </head>
 
