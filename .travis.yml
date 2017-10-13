@@ -4,6 +4,9 @@ python: "2.7"
 
 sudo: false
 
+git:
+  - submodules: false
+
 env:
   global:
     - "AWS_ACCESS_KEY_ID=AKIAJQUIQIL3XTBHT3DA"
