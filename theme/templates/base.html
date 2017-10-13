@@ -33,6 +33,7 @@
         <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(tag.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Tags RSS Feed" />
         {% endif %}
 	{% if extra_siteurls %}
+	<link rel="alternate" hreflang="{{ DEFAULT_LANG }}" href="{{ SITEURL }}/{{ output_file }}" />
 		{% for lang,url in extra_siteurls.items() %}
 				{% if url %}
 	<link rel="alternate" hreflang="{{ lang }}" href="{{ url }}/{{ output_file }}" />
