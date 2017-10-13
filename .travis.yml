@@ -5,7 +5,7 @@ python: "2.7"
 sudo: false
 
 git:
-  - submodules: false
+  submodules: false
 
 env:
   global:
