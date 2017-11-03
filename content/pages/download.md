@@ -13,6 +13,7 @@ To access Freenet, you first need to install the main application.
 Freenet will run in the background and you can use your browser to change settings and access content.
 There are other applications that you can install at a later time to add more functionality.
 
+<!--
 Steps:
 
 * [Download and install Freenet][autostart]
@@ -22,6 +23,13 @@ Steps:
 [autostart]: #autostart
 [add_friends]: #note
 [usage]: #usage
+-->
+
+Download and install Freenet:
+
+* [For Windows](#windows)
+* [For Mac OSX](#os-x)
+* [For GNU/Linux & POSIX](#gnulinux-posix)
 
 *Freenet is free and open source software available under GPLv2+. The source code is on [GitHub](https://github.com/freenet/fred).*
 
