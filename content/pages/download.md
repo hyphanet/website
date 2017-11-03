@@ -1,12 +1,12 @@
 ---
 title: Download
-[url_win_installer]: https://github.com/freenet/fred/releases/download/build01478/FreenetInstaller-1478.exe
-[url_win_installer_sig]: https://github.com/freenet/fred/releases/download/build01478/FreenetInstaller-1478.exe.sig
+[url_win_installer]: https://github.com/freenet/fred/releases/download/build01479/FreenetInstaller-1479.exe
+[url_win_installer_sig]: https://github.com/freenet/fred/releases/download/build01479/FreenetInstaller-1479.exe.sig
 [url_mac_installer]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip
 [url_mac_installer_sig]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip.sig
-[url_nix_installer]: https://github.com/freenet/fred/releases/download/build01478/new_installer_offline_1478.jar
-[url_nix_installer_sig]: https://github.com/freenet/fred/releases/download/build01478/new_installer_offline_1478.jar.sig
-[url_jnlp_installer]: {filename}/assets/jnlp/freenet.jnlp?1478
+[url_nix_installer]: https://github.com/freenet/fred/releases/download/build01479/new_installer_offline_1479.jar
+[url_nix_installer_sig]: https://github.com/freenet/fred/releases/download/build01479/new_installer_offline_1479.jar.sig
+[url_jnlp_installer]: {filename}/assets/jnlp/freenet.jnlp?1479
 [url_keyring]: #keyring
 
 To access Freenet, you first need to install the main application.
@@ -76,7 +76,7 @@ performance.
 
 Open a terminal and run:
 
-    wget 'https://github.com/freenet/fred/releases/download/build01478/new_installer_offline_1478.jar' -O new_installer_offline.jar;
+    wget 'https://github.com/freenet/fred/releases/download/build01479/new_installer_offline_1479.jar' -O new_installer_offline.jar;
     java -jar new_installer_offline.jar;
 
 Alternatively, downloading [the installer][url_nix_installer]
