@@ -16,7 +16,7 @@
 		<all-permissions/>
 	</security>
 	<resources>
-		<jar href="https://github.com/freenet/fred/releases/download/build01479/new_installer_offline_1479.jar" />
+		<jar href="https://github.com/freenet/fred/releases/download/build01480/new_installer_offline_1480.jar" />
 		<j2se version="1.7.0+" />
 	</resources>
 	<application-desc/>
