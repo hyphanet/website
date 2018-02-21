@@ -242,7 +242,8 @@ Florent Daignière
 : Since 2003, Florent has improved various aspects of the software and
 performed the project's system administration. In his day job, he is the
 Technical Director of [Matta Consulting](https://www.trustmatta.com),
-a boutique security consultancy firm.
+a boutique security consultancy firm and currently works on
+ [safepass.me](https://safepass.me), an Active Directory password filter.
 
 Michael Rogers
 
