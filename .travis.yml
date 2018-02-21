@@ -9,7 +9,7 @@ git:
 
 before_install:
     - rm -rf pelican-plugins
-    - git submodule init --recursive --depth 0
+    - git submodule update --init
 
 env:
   global:
