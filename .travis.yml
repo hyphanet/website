@@ -8,7 +8,8 @@ git:
   submodules: false
 
 before_install:
-    - git submodule sync --recursive
+    - rm -rf pelican-plugins
+    - git submodule init --recursive --depth 0
 
 env:
   global:
