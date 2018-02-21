@@ -8,8 +8,7 @@ git:
   submodules: false
 
 before_install:
-    - rm -rf pelican-plugins
-    - git submodule update --init
+    - svn co https://github.com/getpelican/pelican-plugins.git/trunk  pelican-plugins
 
 env:
   global:
@@ -32,6 +31,7 @@ addons:
     - optipng
     - python-pip
     - python-virtualenv
+    - subversion
 
 script: make html
 
