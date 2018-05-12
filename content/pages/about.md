@@ -11,6 +11,11 @@ title: About
 
 --Mike Godwin, [Electronic Frontier Foundation](https://www.eff.org/)
 
+<div class="video-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zu9gM3_gIfM"
+	frameborder="0" allowfullscreen></iframe>
+</div>
+
 Freenet is free software which lets you anonymously share files, browse and
 publish "freesites" (web sites accessible only through Freenet) and chat on
 forums, without fear of censorship. Freenet is decentralised to make it less
