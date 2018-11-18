@@ -46,3 +46,7 @@ deploy:
     skip_cleanup: true
     on:
       tags: true
+
+notifications:
+    irc: "chat.freenode.net#freenet"
+    use_notice: true
