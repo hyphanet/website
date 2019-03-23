@@ -1,7 +1,7 @@
 ---
 title: Download
-[url_win_installer]: https://github.com/freenet/fred/releases/download/build01483/FreenetInstaller-1483.exe
-[url_win_installer_sig]: https://github.com/freenet/fred/releases/download/build01483/FreenetInstaller-1483.exe.sig
+[url_win_installer]: https://github.com/freenet/fred/releases/download/build01484/FreenetInstaller-1484.exe
+[url_win_installer_sig]: https://github.com/freenet/fred/releases/download/build01484/FreenetInstaller-1484.exe.sig
 [url_mac_installer]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip
 [url_mac_installer_sig]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip.sig
 [url_nix_installer]: https://github.com/freenet/fred/releases/download/build01484/new_installer_offline_1484.jar
