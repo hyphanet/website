@@ -608,7 +608,7 @@ msgstr "![][icon_pdf] [FreeNet White Paper](assets/papers/ddisrs.pdf) (PDF) \nDo
 
 #: pages/about.py:475
 msgid ""
-"![][icon_pdf] [Attack Resistant Network Embeddings for Darknets](http://www.ukp.tu-darmstadt.de/fileadmin/user_upload/Group_P2P/share/publications/Attack_Resistant_Network_Embeddings_for_Darknets.pdf) (PDF)  \n"
+"![][icon_pdf] [Attack Resistant Network Embeddings for Darknets](https://web.archive.org/web/20171210222609/https://www.ukp.tu-darmstadt.de/fileadmin/user_upload/Group_P2P/share/publications/Attack_Resistant_Network_Embeddings_for_Darknets.pdf) (PDF)  \n"
 "A proposal for changing the darknet swapping algorithm which we are still\n"
 "considering (we have some doubts about long-term performance)."
 msgstr "![][icon_pdf] [Attack Resistant Network Embeddings for Darknets](http://www.ukp.tu-darmstadt.de/fileadmin/user_upload/Group_P2P/share/publications/Attack_Resistant_Network_Embeddings_for_Darknets.pdf) (PDF)  \nUne proposition de changement de l'algorithme de permutation du\nréseau invisible\nque nous examinons toujours (nous avons des doutes sur les performances\nà long terme)."
