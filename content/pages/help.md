@@ -570,8 +570,11 @@ plugin is Sone, which is a microblogging/social app over Freenet. You can see
 how to install FMS and Sone on e.g. the Freenet Social Networking Guide
 freesite.
 
-If you want to work on Freenet itself, see [here](contribute.html#developers)
-to get the source code.
+If you want to work on Freenet itself, see:
+
+* [Source code](https://github.com/freenet/fred)
+* [Roadmap](https://wiki.freenetproject.org/Roadmap)
+* [Development page](https://wiki.freenetproject.org/Development)
 
 Improvements to this website, fixes for
 spelling/grammar mistakes, new ideas (see [the previous answer](#idea)),
