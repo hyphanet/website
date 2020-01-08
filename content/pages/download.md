@@ -1,5 +1,8 @@
 ---
 title: Download
+[url_lysator]: http://www.lysator.liu.se/index_en.html
+[url_mirror_lysator]: http://ftp.lysator.liu.se/pub/freenet/
+[url_mirror_lysator_tor]: http://lysator7eknrfl47rlyxvgeamrv7ucefgrrlhk7rouv3sna25asetwid.onion/pub/freenet/
 [url_win_installer]: https://github.com/freenet/fred/releases/download/build01484/FreenetInstaller-1484.exe
 [url_win_installer_sig]: https://github.com/freenet/fred/releases/download/build01484/FreenetInstaller-1484.exe.sig
 [url_mac_installer]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip
@@ -104,6 +107,12 @@ to join us and help it would be much appreciated!
 If this doesn't work on a headless server, try
 "java -jar new_installer_offline.jar -console;", and follow the prompts to
 tell it where to install Freenet etc.
+
+## Release Mirror
+
+If you cannot access our official releases, you can try the
+[http mirror][url_mirror_lysator] or the [tor mirror][url_mirror_lysator] 
+provided by [Lysator][url_lysator].
 
 ## Mirrored installation
 
