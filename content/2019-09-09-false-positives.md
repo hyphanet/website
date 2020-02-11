@@ -180,6 +180,7 @@ two nodes with 15 peers each, and three nodes with 7 peers each.
 This is still a typical situation (not a rare one).
 
 Originator-connections:
+
 - node: 50 peers.
 - A: 30 peers.
 - B: 15 peers.
@@ -205,6 +206,7 @@ in three peers is backed off. Let’s assume the routable hosts during the
 request to be the node, A, C, D and E. B and F are backed off.
 
 Routable:
+
 - node: 50 peers.
 - A: 30 peers.
 - C: 15 peers.
@@ -223,6 +225,7 @@ with 50 or more peers, one of which is the observer node. As usual, 30%
 will be backed off.
 
 The routable connections (not backed off):
+
 - 1 Observer: 70 peers.
 - 6 with 60 peers.
 - 13 with 30 peers.
@@ -230,6 +233,7 @@ The routable connections (not backed off):
 - 10 with 7 peers.
 
 The backed off connections:
+
 - (3 with 60 but backed off).
 - (7 with 30 but backed off).
 - (2 with 15 but backed off).
@@ -303,15 +307,15 @@ Final note: The minimal information required for statistical claims
 about observations of node upload or download activity in Freenet:
 
 - The exact time and HTL of each watched chunk that was seen from the node
-  - per chunk: node-location of the observer at the time
-  - per chunk: node-location of the observed at the time
-  - per chunk: node-locations of all peers of the observer at the time
-  - per chunk: node-locations of all peers of the observed at the time
-  - per-chunk: the manifest it belongs to
-               (only size + index in some list + number of chunks in the
-                manifest)
-  - per chunk: routing part of the key of the chunk
-    (no decryption possible from this info => data not accessible)
+    - per chunk: node-location of the observer at the time
+    - per chunk: node-location of the observed at the time
+    - per chunk: node-locations of all peers of the observer at the time
+    - per chunk: node-locations of all peers of the observed at the time
+    - per-chunk: the manifest it belongs to
+                 (only size + index in some list + number of chunks in the
+                  manifest)
+    - per chunk: routing part of the key of the chunk
+      (no decryption possible from this info => data not accessible)
 
 - The exact formula of the probability that the observed is a valid
   target
@@ -321,10 +325,8 @@ about observations of node upload or download activity in Freenet:
   so they can be checked independently.
 
 - all chunks received at HTL <= 16 which would be a match if at HTL > 16
-
 - The peercounts they observed on that day in all nodes they connected to
   (a plain list of numbers)
-
 - Keys for chunks should be truncated by cutting or blacking at least
   4 letters, so they cannot easily be used to download the associated
   data, though the full keys must be provided on request to an
@@ -339,9 +341,9 @@ definition: watched chunks are those which are recorded if received from
             observer.
 
 
-If they cannot provide this, they cannot get a robust statistical
-result. If they do not want to provide this to the court, they prevent
-the court from checking their claims.
+If observers cannot provide this minimal information, they cannot get
+a robust statistical result. If they do not want to provide this to
+a court, they prevent the court from checking their claims.
 
 
 Yes, it is hard to correctly trace activity in Freenet to a
