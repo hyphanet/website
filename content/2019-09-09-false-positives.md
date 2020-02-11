@@ -294,7 +294,7 @@ as many requests as with even share.
 
 As a note: The peer-count can change from release to release when parameters are
 optimized. The argumentation here stays the same, but the numbers change
-a bit. Basically people will have to look at the peer count distribution
+a bit. People will have to look at the peer count distribution
 during the time of the measurement.
 
 
