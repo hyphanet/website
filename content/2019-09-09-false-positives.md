@@ -7,13 +7,12 @@ categories: release
 Like every other privacy network, Freenet is a target of
 statistical attacks to trace the activity of its users.
 
-Studies that investigated tracing of Freenet users used unrealistic
-idealized setups or simplistic routing, so their results don’t apply to
-the real network.
+Studies that investigated tracing Freenet users were built on
+unrealistic idealized setups or simplistic routing, so that their
+results don’t apply to the real network.
 
-Nontheless we received information about a case of seized equipment
-based on such statistical guessing which is very prone to yield false
-positives. To prevent future cases from targeting innocents based on
+Despite these shortcomings in the studies, there have been cases of
+seized equipment. To prevent future cases from targeting innocents based on
 these misleading statistics, we want to provide an example of a clean
 calculation of the probability that some observation is a false
 positive.
@@ -22,7 +21,7 @@ A short definition: False positives are results which look like a hit,
 e.g. finding the originator of a request, but which are wrong,
 e.g. pointing to the wrong persion.
 
-Second definition: A freenet node is Freenet running on a computer.
+Second definition: A Freenet node is Freenet running on a computer.
 
 When observing Freenet, false positives most likely happen because of
 misunderstanding how Freenet routing works, how file transfer works,
@@ -38,7 +37,7 @@ false idea about the actual structure of the Freenet network.
 
 [false-statistics]: /police-departments-tracking-efforts-based-on-false-statistics.html
 
-Firstoff: In an idealized structure each node has 6 connections, all
+Firstoff: In an idealized structure, each node has 6 connections, all
 nodes provide the same bandwidth, and all connections are usable all
 the time. Such an idealized lattice of nodes looks like the following:
 
