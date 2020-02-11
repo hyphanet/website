@@ -347,4 +347,4 @@ the court from checking their claims.
 Yes, it is hard to correctly trace activity in Freenet to a
 specific user. Without this property, Freenet could not protect
 Freedom of speech and of the press, both of which are under attack
-throughout the world.
+in many countries around the world.
