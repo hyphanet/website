@@ -36,6 +36,7 @@ body {
 }
 
 body > div {
+	background: #416ab3;
 	background: linear-gradient(to right, #1b3e7d 800px, rgba(27, 62, 125, 0) 1024px), url('../images/graph-white.png'), linear-gradient(to bottom, #1b3e7d 0%,#416ab3 100%);
 	background-repeat: no-repeat;
 	background-position: top right;
@@ -349,7 +350,7 @@ line-height: 39.901px;/* Approximation due to font substitution */
 	margin-top: 1em;
 }
 
-#news ol li time {
+#news ol li .time {
 	color:  #416ab3;
 	font-size: 12px;
 	font-weight: 600;
