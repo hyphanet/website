@@ -4,8 +4,8 @@ title:  Statistical results without false positives check are most likely wrong
 date:   2019-09-09
 categories: release
 ---
-Like every other anonymizing network, Freenet is a target of
-statistical attacks to de-anonymize users.
+Like every other privacy network, Freenet is a target of
+statistical attacks to identify its users.
 
 Studies investigating tracing Freenet users used unrealistic
 idealized setups or simplistic routing to that results don’t apply to
