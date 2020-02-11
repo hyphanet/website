@@ -408,7 +408,7 @@ available from a random point on the network.
 ### Why is Freenet implemented in Java?
 
 Opinions differ about the choice of Java for the reference implementation of
-Freenet (even among the core developers). [Ian Clarke](about.html#people) and
+Freenet (even among the core developers). [Ian Clarke](https://wiki.freenetproject.org/People#ian-clarke) and
 several other developers are Java proponents and the choice for Java was
 made. Even if everybody could be convinced to switch to a different language
 reimplementing the current Freenet protocol would be quite a big task,
@@ -570,8 +570,11 @@ plugin is Sone, which is a microblogging/social app over Freenet. You can see
 how to install FMS and Sone on e.g. the Freenet Social Networking Guide
 freesite.
 
-If you want to work on Freenet itself, see [here](contribute.html#developers)
-to get the source code.
+If you want to work on Freenet itself, see:
+
+* [Source code](https://github.com/freenet/fred)
+* [Roadmap](https://wiki.freenetproject.org/Roadmap)
+* [Development page](https://wiki.freenetproject.org/Development)
 
 Improvements to this website, fixes for
 spelling/grammar mistakes, new ideas (see [the previous answer](#idea)),
@@ -596,7 +599,7 @@ See our [GitHub repository](https://github.com/freenet/).
 
 Building Freenet requires JDK 1.6 or later.  You can download the source tarballs on the
 download page for a specific build, or use git to get an up to date copy of
-the source, see [here](contribute.html#developers) for details. Further
+the source, see [here](https://wiki.freenetproject.org/Development) for details. Further
 instructions for building and deploying the server are included with the code
 itself. Generally speaking, joining our IRC channel is a good idea: [#freenet
 on chat.freenode.net](irc://chat.freenode.net/freenet)
@@ -990,14 +993,17 @@ information about Freenet.
 ## [Suggestions](https://freenet.uservoice.com/)
 
 ## Get Support
-If you need help installing Freenet for the first time, or have trouble using Freenet and can't find an answer to your problem in the [FAQ][faq_link] above or in the [Knowledge Base][kb_link], please create a new discussion on our support forum.
+You can find information about installing Freenet in the [Wiki][wiki_link]
+especially in the [Installing Freenet][install_link] and [FAQ][faq_link].
+
+When Freenet is already installed you may get support in [FMS][fms_link] forum.
 
 When writing your support request, please make sure you include a full description of the problem, your current version of Java, your operating system and current Freenet version.
 
-[faq_link]: #faq
-[kb_link]: https://support.freenetproject.org/kb
-
-<a href="https://support.freenetproject.org/discussion/new" id="supportlink" class="btn button-custom btn-custom-two">Create a support discussion</a>
+[wiki_link]: https://wiki.freenetproject.org/Main_Page
+[install_link]: https://wiki.freenetproject.org/Installing-Freenet
+[faq_link]: https://wiki.freenetproject.org/FAQ
+[fms_link]: https://wiki.freenetproject.org/FMS
 
 ## Chat with us
 
