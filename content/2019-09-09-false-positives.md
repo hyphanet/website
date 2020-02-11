@@ -344,7 +344,7 @@ result. If they do not want to provide this to the court, they prevent
 the court from checking their claims.
 
 
-Yes, it is hard to correctly trace anonymous activity in Freenet to a
+Yes, it is hard to correctly trace activity in Freenet to a
 specific user. Without this property, Freenet could not protect
 Freedom of speech and of the press, both of which are under attack
 throughout the world.
