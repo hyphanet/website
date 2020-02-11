@@ -126,7 +126,7 @@
 		    	{%- if loop.index <= 4 %}
 			<li>
                         	<h3>{{ post.title | escape }}</h3>
-				<time>{{ post.date | strftime('%Y-%m-%d') }}</time>
+				<p class="time">{{ post.date | strftime('%Y-%m-%d') }}</p>
 				<p>{{ post.content | striptags | truncate }}</p>
 				<a href="{{ post.url }}">Details</a>
 			</li>{% endif %}
