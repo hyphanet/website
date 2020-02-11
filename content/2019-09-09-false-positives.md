@@ -11,11 +11,12 @@ Studies that investigated tracing of Freenet users used unrealistic
 idealized setups or simplistic routing, so their results don’t apply to
 the real network.
 
-Nontheless there have been cases of seized equipment based on such
-statistical guessing which is very prone to yield false positives. To
-prevent such cases from targeting innocents, we want to provide an
-example of a clean calculation of the probability that some
-observation is a false positive.
+Nontheless we received information about a case of seized equipment
+based on such statistical guessing which is very prone to yield false
+positives. To prevent future cases from targeting innocents based on
+these misleading statistics, we want to provide an example of a clean
+calculation of the probability that some observation is a false
+positive.
 
 A short definition: False positives are results which look like a hit,
 e.g. finding the originator of a request, but which are wrong,
