@@ -111,7 +111,7 @@ tell it where to install Freenet etc.
 ## Release Mirror
 
 If you cannot access our official releases, you can try the
-[http mirror][url_mirror_lysator] or the [tor mirror][url_mirror_lysator] 
+[http mirror][url_mirror_lysator] or the [tor mirror][url_mirror_lysator_tor] 
 provided by [Lysator][url_lysator].
 
 ## Mirrored installation
