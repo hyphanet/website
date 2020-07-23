@@ -75,7 +75,7 @@ help:
 	@echo '                                                                          '
 
 fetch_l10n:
-	tx pull --minimum-perc=70 -l fr,es,nl,it,de
+	tx pull --minimum-perc=70 -l fr,es,nl,it,de,zh_TW,zh_CN
 
 html:
 	@echo "Building $(SITEURL)"
