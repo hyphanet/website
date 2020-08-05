@@ -90,6 +90,10 @@ Open a terminal and run:
     wget 'https://github.com/freenet/fred/releases/download/build01485/new_installer_offline_1485.jar' -O new_installer_offline.jar;
     java -jar new_installer_offline.jar;
 
+To install on a headless system, or if you get fontconfig problems, use the `-console` option:
+
+    java -jar new_installer_offline.jar -console;
+
 Alternatively, downloading [the installer][url_nix_installer]
 ([gpg signature][url_nix_installer_sig]; [keyring][url_keyring])
 and then clicking on the file may work on some systems, but if there are
