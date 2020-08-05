@@ -34,13 +34,9 @@ three ways to install Freenet:
 
 *   Graphical install
 *   Headless install
-*   Enabling a mirror copy of a Freenet installation
 
 If you want to install the Freenet software on a computer which lacks a GUI,
-see the [Headless install](download.html#gnulinux-posix) instructions. If you have
-mirrored a working Freenet installation to a machine without explicitly
-installing it, see [Mirrored install](download.html#mirrored). Otherwise,
-continue reading.
+see the [Headless install](download.html#gnulinux-posix) instructions.
 
 #### Graphical install
 
