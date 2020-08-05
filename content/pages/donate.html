@@ -9,13 +9,16 @@
 	</head>
 
 	<body id="index" class="home">
-		<h2>How can I donate?</h2><ul>
+	  <ul><li><a href="#how">How can I donate?</a></li>
+	    <li><a href="#non-profit">The Freenet Non-Profit</a></li>
+	    <li><a href="#why">Why donate?</a></li><ul>
+		<h2 id="how">How can I donate?</h2><ul>
 			<li>
 				<p>You can donate using PayPal. For a recurring payment of $5 or more per month you can become a Freenet "member" (this requires a <a href="https://www.paypal.com/">PayPal</a> account).
 				Recurring donations give the project a more stable and dependable income which makes it easier to make long-term commitments to potential developers.
 				Alternatively you can make a one-time donation.
 				</p>
-				<div class="formgroup">
+				<div class="formgroup" style="width: 450px">
 					<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 						<h4 class="panel-title">Become a member</h4>
 						<h5 style="color:black">Choose your monthly donation:</h5>
@@ -57,7 +60,7 @@
 							<div class="col-xs-10 col-sm-10 col-md-9 col-lg-10">
 								<div class="input-group">
 									<span class="input-group-addon">$</span>
-									<input type="number" name="a3" class="form-control" aria-label="Custom amount" value="10.00" min="5" required>
+									<input style="width: 60px" type="number" name="a3" class="form-control" aria-label="Custom amount" value="10.00" min="5" required>
 								</div>
 							</div>
 							<div class="col-xs-2 col-sm-2 col-md-3 col-lg-2">
@@ -70,7 +73,7 @@
 						<input type="hidden" name="sra" value="1">
 					</form>
 				</div>
-				<div class="formgroup">
+				<div class="formgroup" style="width: 450px">
 					<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 						<h4 class="panel-title">Make a donation</h4>
 						<h5 style="color:black">Choose your one-time donation:</h5>
@@ -113,7 +116,7 @@
 							<div class="col-xs-10 col-sm-10 col-md-9 col-lg-10">
 								<div class="input-group">
 									<span class="input-group-addon">$</span>
-									<input type="number" name="amount" class="form-control" aria-label="Custom amount" value="10.00" required>
+									<input style="width: 60px" type="number" name="amount" class="form-control" aria-label="Custom amount" value="10.00" required>
 								</div>
 							</div>
 							<div class="col-xs-2 col-sm-2 col-md-3 col-lg-2">
@@ -143,7 +146,8 @@
 				<p>Alternatively, please contact us at <span class="e-mail" data-user="etanod" data-website="gro.tcejorpteneerf"></span>
 				if you cannot use any of these payment methods.</p>
 			</li>
-		</ul><h1>The Freenet Non-Profit</h1><p>All donations go to The Freenet Project Inc, a 501(c)(3) non-profit organization with the following mission statement:</p><blockquote>
+		</ul>
+		<h2 id="non-profit">The Freenet Non-Profit</h2><p>All donations go to The Freenet Project Inc, a 501(c)(3) non-profit organization with the following mission statement:</p><blockquote>
 			<p>The specific purpose of this corporation is to assist in developing and
 			disseminating technological solutions to further the open and democratic
 			distribution of information over the Internet or its successor electronic
@@ -159,7 +163,7 @@
 		<p>All funds received will only be utilized to advance our Mission Statement, and
 		are administered at the direction of the Freenet Project Board.</p>
 		<p>The Freenet Project Inc is registered under EIN <span>95-4864038</span></p>
-		<h1>Why donate</h1>
+		<h2 id="why">Why donate</h2>
 		<p>
 		Although countless people have given their time and skill to the project since its inception, 
 		The Freenet Project relies on your donations to cover hosting and administrative costs 
