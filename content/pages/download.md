@@ -98,7 +98,7 @@ Alternatively, downloading [the installer][url_nix_installer]
 ([gpg signature][url_nix_installer_sig]; [keyring][url_keyring])
 and then clicking on the file may work on some systems, but if there are
 problems we recommend the above command lines. If wget is not installed,
-it can be installed with a package manager, such as sudo apt-get install wget
+it can be installed with a package manager, such as `sudo apt-get install wget`
 on Debian or Ubuntu.
 
 **Note**: Many GNU/Linux distributions no longer ship with Java Web Start
