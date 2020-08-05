@@ -52,32 +52,32 @@
 		</nav>
 		<header>
 			<h1>Freenet</h1>
-			<p>{% trans %}Browse websites, post on forums, and publish files within Freenet with strong privacy protections.{% endtrans %}</p>
+			<p>{% trans %}Freenet is a peer-to-peer platform for censorship-resistant communication and publishing.{% endtrans %}</p>
 		</header>
 		<section id="actions">
 			<a href="{{ BASE_URL }}/pages/download.html">
 				<div>
 					<h2>{% trans %}Download{% endtrans %}</h2>
-					<p>{% trans %}Get the software{% endtrans %}</p>
+					<p>{% trans %}Install Freenet{% endtrans %}</p>
 				</div>
 			</a>
 
 			<a href="{{ BASE_URL }}/pages/documentation.html">
 				<div>
 					<h2>{% trans %}Learn{% endtrans %}</h2>
-					<p>{% trans %}Learn to protect your privacy{% endtrans %}</p>
+o					<p>{% trans %}Protect your privacy{% endtrans %}</p>
 				</div>
 			</a>
 			<a href="{{ BASE_URL }}/pages/donate.html">
 				<div>
 					<h2>{% trans %}Donate{% endtrans %}</h2>
-					<p>{% trans %}Give to protect online privacy and internet freedom{% endtrans %}</p>
+					<p>{% trans %}Support the Freenet Project{% endtrans %}</p>
 				</div>
 			</a>
 			<a href="{{ BASE_URL }}/pages/volunteer.html">
 				<div>
 					<h2>{% trans %}Contribute{% endtrans %}</h2>
-					<p>{% trans %}Work to protect online privacy and internet freedom{% endtrans %}</p>
+					<p>{% trans %}Protect internet privacy and freedom{% endtrans %}</p>
 				</div>
 			</a>
 		</section>
@@ -85,13 +85,6 @@
 		<a href="#whatsfreenet" id="more">{% trans %}More{% endtrans %}</a>
 	</div>
 	<div>
-	<section id="whatsfreenet">
-		<h2>{% trans %}What is Freenet{% endtrans %}</h2>
-		<p>{% trans %}Freenet is a peer-to-peer platform for censorship-resistant communication and publishing.{% endtrans %}</p>
-
-		<a href="{{ BASE_URL }}/pages/download.html">{% trans %}Download{% endtrans %}</a>
-		<!-- TODO: "Use your freenet platform" -->
-	</section>
 
 	<section id="features">
 		<h2>{% trans %}Freenet Features{% endtrans %}</h2>
@@ -99,20 +92,36 @@
 
 		<ul>
 			<li>
+			  <a href="http://freesocial.draketo.de/wot_en.html">
+			    <div>
 				<h3>{% trans %}Secret Identity{% endtrans %}</h3>
 				<p>{% trans %}Create yours so nobody knows who you are{% endtrans %}</p>
+			    </div>
+			  </a>
 			</li>
 			<li>
-				<h3>{% trans %}Browse Websites{% endtrans %}</h3>
-				<p>{% trans %}Freenet is home to sites ranging from programming to sustainable living{% endtrans %}</p>
+			  <a href="https://github.com/freenet/wiki/wiki/Using-Freenet#Participating_on_Freenet">
+			    <div>
+			      <h3>{% trans %}Browse Websites{% endtrans %}</h3>
+			      <p>{% trans %}Freenet is home to sites ranging from programming to sustainable living{% endtrans %}</p>
+			    </div>
+			  </a>
 			</li>
 			<li>
-				<h3>{% trans %}Forums{% endtrans %}</h3>
-				<p>{% trans %}Ask questions and exchange ideas{% endtrans %}</p>
+			  <a href="http://freesocial.draketo.de/wot_en.html">
+			    <div>
+			      <h3>{% trans %}Forums{% endtrans %}</h3>
+			      <p>{% trans %}Ask questions and exchange ideas{% endtrans %}</p>
+			    </div>
+			  </a>
 			</li>
 			<li>
-				<h3>{% trans %}Platform{% endtrans %}</h3>
-				<p>{% trans %}Build your own decentralized application on the Freenet platform{% endtrans %}</p>
+			  <a href="https://github.com/freenet/wiki/wiki/FCPv2">
+			    <div>
+			      <h3>{% trans %}Platform{% endtrans %}</h3>
+			      <p>{% trans %}Build your own decentralized application on the Freenet platform{% endtrans %}</p>
+			    </div>
+			  </a>
 			</li>
 		</ul>
 	</section>
