@@ -90,7 +90,7 @@ Open a terminal and run:
     wget 'https://github.com/freenet/fred/releases/download/build01485/new_installer_offline_1485.jar' -O new_installer_offline.jar;
     java -jar new_installer_offline.jar;
 
-To install on a headless system, or if you get fontconfig problems, use the `-console` option:
+To install on a headless system, or if you get fontconfig problems, use the `-console` option and follow the prompts:
 
     java -jar new_installer_offline.jar -console;
 
@@ -107,10 +107,6 @@ and have an in-development (and not maintained) [Debian package](
 https://github.com/freenet/debian), but haven't gotten it stable or made
 official ones for other distributions. If you are a developer and would like
 to join us and help it would be much appreciated!
-
-If this doesn't work on a headless server, try
-"java -jar new_installer_offline.jar -console;", and follow the prompts to
-tell it where to install Freenet etc.
 
 ## Release Mirror
 
