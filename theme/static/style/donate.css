@@ -60,7 +60,7 @@ fieldset {
 	/*border: 1px solid #204D74;*/
 }
 
-form label:first-of-type {
+form label:nth-of-type(1) {
 	border-radius: 4px 0px 0px 4px;
 }
 

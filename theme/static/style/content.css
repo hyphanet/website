@@ -42,7 +42,7 @@ body > div {
 	background-position: top right;
 }
 
-body > div:first-of-type {
+body > div:nth-of-type(1) {
 	color:  #fafbfc;
 	box-sizing: border-box;
 	padding-bottom: 1em;
@@ -128,7 +128,7 @@ body > div > header {
 	color:  #fafbfc;
 }
 
-body > div:first-of-type {
+body > div:nth-of-type(1) {
 	min-height: 6em;
 	min-height: 5em;
 	min-height: 3em;
