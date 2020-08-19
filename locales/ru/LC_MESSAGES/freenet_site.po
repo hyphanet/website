@@ -1,0 +1,87 @@
+# This file is distributed under the same license as the PROJECT project.
+# Translators:
+# Oleh Shklyar <oleh.shklyar@redwerk.com>, 2020
+msgid ""
+msgstr ""
+"Project-Id-Version: Freenet\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-19 18:54+0200\n"
+"PO-Revision-Date: 2020-08-19 18:54+0200\n"
+"Last-Translator: Oleh Shklyar <oleh.shklyar@redwerk.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+
+# index
+msgid "Freenet is a peer-to-peer platform for censorship-resistant communication and publishing."
+msgstr "Freenet - это одноранговая платформа, которая обеспечивает устойчивую к цензуре коммуникацию и публикацию."
+
+msgid "Download"
+msgstr "Загрузить"
+
+msgid "Install Freenet"
+msgstr "Установка Freenet"
+
+msgid "Learn"
+msgstr "Изучить"
+
+msgid "Protect your privacy"
+msgstr "Защитить свою конфиденциальность"
+
+msgid "Donate"
+msgstr "Пожертвование"
+
+msgid "Support the Freenet Project"
+msgstr "Поддержать Freenet Project"
+
+msgid "Contribute"
+msgstr "Вклад в проект"
+
+msgid "Protect internet privacy and freedom"
+msgstr "Защитить конфиденциальность и свободу в интернете"
+
+msgid "Freenet Features"
+msgstr "Особенности Freenet"
+
+msgid "Browse websites, post on forums, and publish files within Freenet with strong privacy protections."
+msgstr "Просматривайте веб-сайты, публикуйте сообщения на форумах и создавайте файлы в Freenet с надежной защитой конфиденциальности."
+
+msgid "Secret Identity"
+msgstr "Сокрытие личности"
+
+msgid "Create yours so nobody knows who you are"
+msgstr "Создайте свой аккаунт так, чтобы никто не знал, кто вы"
+
+msgid "Browse Websites"
+msgstr "Просмотр веб-сайтов"
+
+msgid "Freenet is home to sites ranging from programming to sustainable living"
+msgstr "Freenet является домом для сайтов, начиная от их программирования до поддержки"
+
+msgid "Forums"
+msgstr "Форумы"
+
+msgid "Ask questions and exchange ideas"
+msgstr "Задавайте вопросы и обменивайтесь идеями"
+
+msgid "Platform"
+msgstr "Платформа"
+
+msgid "Build your own decentralized application on the Freenet platform"
+msgstr "Создавайте свое собственное децентрализованное приложение на платформе Freenet"
+
+msgid "What's New"
+msgstr "Что нового?"
+
+msgid "News about Freenet, internet freedom and privacy rights."
+msgstr "Новости о Freenet, свободе в Интернете и правах на конфиденциальность"
+
+msgid "Why we do this"
+msgstr "Почему мы это делаем?"
+
+msgid "I worry about my child and the Internet all the time, even though she's too young to have logged on yet. Here's what I worry about. I worry that 10 or 15 years from now, she will come to me and say "
+msgstr "Я все время переживаю за своего ребенка и за интернет, хотя она еще слишком мала, чтобы войти в систему. Вот о чем я беспокоюсь. Я переживаю, что через 10 или 15 лет она придет ко мне и скажет "
+
+msgid "Daddy, where were you when they took  freedom of the press away from the Internet"
+msgstr "папочка, где ты был, когда они забрали свободу из прессы и Интернета?"
