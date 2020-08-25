@@ -35,6 +35,7 @@ msgstr ""
 msgid "What is Freenet?"
 msgstr "Qu’est-ce que Freenet ?"
 
+# TODO: fixme
 #: pages/about.py:14
 msgid ""
 "> _\"I worry about my child and the Internet all the time, even though she's too\n"
@@ -100,6 +101,7 @@ msgstr "Le « réseau invisible » est un développement important récent que
 msgid "The Philosophy behind Freenet"
 msgstr "La philosophie derrière Freenet"
 
+# TODO: fixme
 #. Translators: do not translate the anchors such as "#prior_reading"
 #: pages/about.py:74
 msgid ""
