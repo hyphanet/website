@@ -1,5 +1,6 @@
 ---
 title: About
+lang: en
 ---
 
 ## What is Freenet?

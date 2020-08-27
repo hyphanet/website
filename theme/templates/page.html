@@ -2,9 +2,6 @@
 {% block title %}{{ page.title }}{%endblock%}
 {% block heading %}{{ page.title }}{%endblock%}
 {% block content %}
-    {% import 'translations.html' as translations with context %}
-    {{ translations.translations_for(page) }}
-
     {{ page.content }}
 
     {% if page.modified %}
