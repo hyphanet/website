@@ -1,6 +1,6 @@
 ---
 title: Volunteer
-lang: en
+lang: fr
 ---
 
 ## Developers
