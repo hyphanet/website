@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    {% assets filters="cssmin", output="style/donate.min.css", "style/bebas.css", "style/ptsans.css",
+    "style/social.css", "style/content.css", "style/toc.css", "style/donate.css" %}
+        <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
+    {% endassets %}
+    <title>Поддержать проект</title>
+    <meta name="slug" content="donate"/>
+    <meta name="lang" content="ru"/>
+    <meta charset="utf-8"/>
+</head>
+
+<body id="index" class="home">
+<ul>
+    <li><a href="#how">Как я могу пожертвовать деньги?</a></li>
+    <li><a href="#non-profit">Некоммерческая организация Freenet</a></li>
+    <li><a href="#why">Зачем поддерживать проект?</a></li>
+    <li><a href="#sponsors">Спонсоры</a></li>
+</ul>
+<h2 id="how">Как я могу пожертвовать деньги?</h2>
+<ul>
+    <li>
+        <p>
+            Вы можете перевести деньги с помощью PayPal. При подключении регулярного платежа
+            в размере 5 или более долларов в месяц вы можете стать участником Freenet (для
+            этого необходим аккаунт <a href="https://www.paypal.com/">PayPal</a>).
+            Регулярные платежи дают проекту более стабильный и надежный доход, что облегчает
+            принятие долгосрочных обязательств перед потенциальными разработчиками. В качестве
+            альтернативы вы можете сделать одноразовое пожертвование.
+        </p>
+        <div class="formgroup" style="width: 380px; display: inline-block;">
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <h4 class="panel-title">Стать участником</h4>
+                <h5 style="color:black">Выберите размер ежемесячного платежа:</h5>
+                <input type="hidden" name="cmd" value="_xclick-subscriptions">
+                <input type="hidden" name="business" value="ian@freenetproject.org">
+                <input type="hidden" name="item_name" value="Freenet Project Membership">
+                <input type="hidden" name="return" value="https://freenetproject.org/donatethanks.html">
+                <input type="hidden" name="cancel_return" value="https://freenetproject.org/donate.html">
+                <input type="hidden" name="no_shipping" value="1">
+                <input type="hidden" name="no_note" value="1">
+                <input type="hidden" name="currency_code" value="USD">
+                <fieldset>
+                    <input id="usd50" type="radio" name="a3" value="50.00">
+                    <label for="usd50">$50
+                    </label><input id="usd20" type="radio" name="a3" value="20.00">
+                    <label for="usd20">$20
+                    </label><input id="usd10" type="radio" name="a3" value="10.00" checked>
+                    <label for="usd10">$10
+                    </label><input id="usd5" type="radio" name="a3" value="5.00">
+                    <label for="usd5">$5</label>
+                </fieldset>
+                <input type="image" src="/assets/img/paypal-subscribe.gif" name="submit" alt="PayPal Subscribe">
+                <input type="hidden" name="p3" value="1">
+                <input type="hidden" name="t3" value="M">
+                <input type="hidden" name="src" value="1">
+                <input type="hidden" name="sra" value="1">
+            </form>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <h5 style="color:black">Или сами установите сумму:</h5>
+                <input type="hidden" name="cmd" value="_xclick-subscriptions">
+                <input type="hidden" name="business" value="ian@freenetproject.org">
+                <input type="hidden" name="item_name" value="Freenet Project Membership">
+                <input type="hidden" name="return" value="https://freenetproject.org/donatethanks.html">
+                <input type="hidden" name="cancel_return" value="https://freenetproject.org/donate.html">
+                <input type="hidden" name="no_shipping" value="1">
+                <input type="hidden" name="no_note" value="1">
+                <input type="hidden" name="currency_code" value="USD">
+                <div class="row">
+                    <div class="col-xs-10 col-sm-10 col-md-9 col-lg-10">
+                        <div class="input-group" style="width: 100px">
+                            <span class="input-group-addon">$</span>
+                            <input style="width: 60px" type="number" name="a3" class="form-control"
+                                   aria-label="Custom amount" value="10.00" min="5" required>
+                        </div>
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-md-3 col-lg-2">
+                        <input type="image" src="/assets/img/paypal-subscribe.gif" name="submit" alt="PayPal Subscribe">
+                    </div>
+                </div>
+                <input type="hidden" name="p3" value="1">
+                <input type="hidden" name="t3" value="M">
+                <input type="hidden" name="src" value="1">
+                <input type="hidden" name="sra" value="1">
+            </form>
+        </div>
+        <div class="formgroup" style="width: 380px; display: inline-block;">
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <h4 class="panel-title">Сделать пожертвование</h4>
+                <h5 style="color:black">Выберите размер одноразового платежа:</h5>
+                <input type="hidden" name="cmd" value="_xclick">
+                <input type="hidden" name="business" value="ian@freenetproject.org">
+                <input type="hidden" name="item_name" value="Freenet Donation">
+                <input type="hidden" name="no_shipping" value="1">
+                <input type="hidden" name="return" value="https://freenetproject.org/donatethanks.html">
+                <input type="hidden" name="cancel_return" value="https://freenetproject.org/donate.html">
+                <input type="hidden" name="currency_code" value="USD">
+                <fieldset>
+                    <input id="usd500" type="radio" name="amount" value="500.00">
+                    <label for="usd500">$500
+                    </label><input id="usd100" type="radio" name="amount" value="100.00">
+                    <label for="usd100">$100
+                    </label><input id="usd50-2" type="radio" name="amount" value="50.00">
+                    <label for="usd50-2">$50
+                    </label><input id="usd20-2" type="radio" name="amount" value="20.00">
+                    <label for="usd20-2">$20
+                    </label><input id="usd10-2" type="radio" name="amount" value="10.00" checked>
+                    <label for="usd10-2">$10
+                    </label><input id="usd5-2" type="radio" name="amount" value="5.00">
+                    <label for="usd5-2">$5
+                    </label>
+                </fieldset>
+                <div class="col-xs-2 col-sm-2 col-md-3 col-lg-2">
+                    <input type="image" src="/assets/img/paypal-submit.gif" name="submit" alt="PayPal Donate">
+                </div>
+            </form>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <h5 style="color:black">Или сами установите сумму:</h5>
+                <input type="hidden" name="cmd" value="_xclick">
+                <input type="hidden" name="business" value="ian@freenetproject.org">
+                <input type="hidden" name="item_name" value="Freenet Donation">
+                <input type="hidden" name="no_shipping" value="1">
+                <input type="hidden" name="return" value="https://freenetproject.org/donatethanks.html">
+                <input type="hidden" name="cancel_return" value="https://freenetproject.org/donate.html">
+                <input type="hidden" name="currency_code" value="USD">
+                <div class="row">
+                    <div class="col-xs-10 col-sm-10 col-md-9 col-lg-10">
+                        <div class="input-group" style="width: 100px">
+                            <span class="input-group-addon">$</span>
+                            <input style="width: 60px" type="number" name="amount" class="form-control"
+                                   aria-label="Custom amount" value="10.00" required>
+                        </div>
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-md-3 col-lg-2">
+                        <input type="image" src="/assets/img/paypal-submit.gif" name="submit" alt="PayPal Donate">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </li>
+
+    <li>
+        <p>
+            <img alt="Bitcoin accepted here" src="/assets/img/BC_nBG_48px.png"/>
+            Вы можете пожертвовать, используя <a href="http://www.bitcoin.org/">Bitcoin</a>.
+            Отправить ваши пожертвования по адресу <strong>1966U1pjj15tLxPXZ19U48c99EJDkdXeqb</strong>.
+        </p>
+    </li>
+
+    <li>
+        <p>
+            Вы также можете сделать пожертвование, купив товары в
+            <a href="http://www.zazzle.com/freenetproject">магазине</a> Freenet.
+        </p>
+    </li>
+
+    <li>
+        <p>
+            Или поддержите нас через
+            <a href="https://salt.bountysource.com/teams/freenet">Salt в Bountysource</a>.
+        </p>
+    </li>
+
+    <li>
+        <p>
+            В качестве альтернативы, пожалуйста, свяжитесь с нами, если вы не можете
+            использовать никакой из этих способов оплаты.
+        </p>
+    </li>
+</ul>
+<h2 id="non-profit">Некоммерческая организация Freenet</h2>
+<p>
+    Все пожертвования поступают в некоммерческую организацию 501(c)(3) The Freenet Project Inc
+    со следующим <strong>заявлением о миссии</strong>:
+</p>
+<blockquote>
+    <p>
+        Конкретная цель этой организации заключается в оказании помощи в разработке и
+        распространении технологических решений для дальнейшего открытого и демократичного
+        распространения информации через Интернет или его последующие сети/организации
+        электронных коммуникаций. Также целью этой организации является гарантия согласия
+        лиц на свободный, непосредственный и беспрепятственный прием и распространение всех
+        интеллектуальных, научных, литературных, социальных, художественных, творческих,
+        правозащитных и культурных выражений, мнений и идей без вмешательства или
+        ограничение/служение государственным, частным или особым интересам. Кроме того, еще
+        одной целью этой организации является просвещение мирового сообщества и защита этих
+        целей.
+    </p>
+</blockquote>
+<p>
+    Все полученные средства будут использованы только для продвижения нашего Заявления о Миссии
+    и управляются по указанию Совета проекта Freenet.
+</p>
+<p>Freenet Project Inc зарегистрирована под EIN <span>95-4864038</span></p>
+<h2 id="why">Зачем поддерживать проект?</h2>
+<p>
+    Несмотря на то, что бесчисленное количество людей посвятили свое время и навыки проекту
+    с момента его создания, проект Freenet полагается на ваши пожертвования для покрытия
+    расходов на хостинг и администрирование (а именно доменные регистрации и сертификаты).
+    Если у нас достаточно средств, мы можем нанять разработчиков для работы на Freenet.
+</p>
+<p>
+    Freenet является платформой для цензуростойких коммуникаций и публикаций.
+    За последние 15 лет в рамках проекта были созданы инструменты для борьбы за свободу слова
+    и информации. Наше программное обеспечение предоставляет децентрализованную одноранговую
+    сеть, предназначенную для скрытия того, кто публикует или получает доступ к потенциально
+    противоречивой информации - или даже к тому, что она существует. Особенно полезной для тех,
+    кто живет в репрессивных политических режимах.
+</p>
+<p>
+    В то время как развитие Freenet в первую очередь двигается благодаря волонтерам, проект
+    также нанял платных разработчиков, чтобы обеспечить более целенаправленную работу.
+    За последние 2 года платный разработчик проекта добился значительных успехов в улучшении
+    функциональности Web of Trust для борьбы со спамом, что является одной из основных
+    проблем в любой анонимной системе. К сожалению, у проекта Freenet больше нет денег,
+    чтобы продлить оплату, поэтому он теперь волонтер. Это значительно снижает его способность
+    продолжать эту важную работу.
+</p>
+<p>
+    Мы с нетерпением ждем будущего Freenet и проектов, построенных на его основе.
+    Предстоит еще много работы и проект очень выигрывает от разработчиков, которые работают
+    полный рабочий день.
+</p>
+<p>
+    Помогите нам сохранить свободу Интернета и расширить свободу человека.
+    <br/>
+    <a href="../appeal-for-donations.html">Узнайте больше о нашем сборе средств.</a>
+</p>
+<p>
+    Вся поддержка очень ценится.
+</p>
+<h2 id="sponsors">Спонсоры</h2>
+<p>
+    Эти люди, организации и компании великодушно спонсировали этот проект за счет
+    пожертвований или скидок на оборудование и услуги:
+</p>
+<ul>
+    <li>
+        <p>
+            <a href="https://duck.co/blog/post/303/2016-foss-donations-announcement">DuckDuckGo</a>
+            <br/>
+            DuckDuckGo - это поисковая система, которая не отслеживает своих пользователей.
+            Они пожертвовали 25 000 долларов в рамках своей программы пожертвований 2016 года
+            на проекты с открытым исходным кодом.
+        </p>
+    </li>
+
+    <li>
+        <p>
+            <a href="http://onemansblog.com/">Джон Позадзизес</a>
+            <br/>
+            Джон является основателем HTMLHelp.com и бывшим вице-президентом по продажам
+            SAVVIS Communications. Джон пожертвовал 10 000 долларов США на проект Freenet
+            для финансирования текущей разработки программного обеспечения Freenet.
+        </p>
+    </li>
+
+    <li>
+        <p>
+            <a href="http://www.webhostingsearch.com/">Web Hosting Search</a>
+            <br/>
+            WebHostingSearch - это путеводитель с самым высоким рейтингом для различных
+            мировых хостинговых компаний. Мистер Крис Рейнольдс и дружная команда этой
+            компании стали одним из наших промоутеров, которыми мы очень гордимся.
+        </p>
+    </li>
+
+    <li>
+        <p>
+            <a href="http://www.toad.com/gnu/">Джон Гилмор</a>
+            <br/>
+            Джон Гилмор является одним из основателей Electronic Frontier Foundation,
+            списка рассылки Cypherpunks и компании Cygnus Solutions. Он создал иерархию
+            alt.* в сети Usenet и является одним из основных участников проекта GNU.
+            Он пожертвовал 10 000 долларов.
+        </p>
+    </li>
+
+    <li>
+        <p>
+            <a href="http://www.yourkit.com/">YourKit, LLC</a>
+            <br/>
+            YourKit любезно поддерживает Freenet, предоставляя нам бесплатную лицензию
+            на его полнофункциональный Java Profiler.
+            YourKit, LLC является создателем инновационных и интеллектуальных инструментов
+            для профилирования Java-приложений. Вы можете узнать больше о
+            <a href="http://www.yourkit.com/java/profiler/index.jsp">YourKit Java Profiler</a>,
+            перейдя по ссылке.
+        </p>
+    </li>
+
+    <li>
+        <p>
+            <a href="http://www.google.com/">Google</a>
+            <br/>
+            Google <a href="http://code.google.com/">open source</a> трижды пожертвовал
+            18 000 долларов, а также оплатил обучение студентов, которые будут работать
+            с нами в течение лета с 2006 года с помощью программы Google Summer of Code.
+        </p>
+    </li>
+
+    <li>
+        <p>
+            <a href="https://www.emailengine.io/">EmailEngine</a>
+            <br/>
+            Пересылка электронной почты для вашего домена.
+        </p>
+    </li>
+
+    <li>
+        <p>
+            <a href="http://www.sportsden.ie/">The Sports Den</a>
+            <br/>
+            Sports Den имеет широкий ассортимент спортивного инвентаря для активного отдыха,
+            он базируется в Ирландии, но может поставляться в Великобританию, Европу и
+            Соединенные Штаты.
+        </p>
+    </li>
+
+    <li>
+        <p>
+            <a href="https://www.jetbrains.com">JetBrains</a>
+            JetBrains добродушно предоставил лицензию на полную версию
+            <a href="https://www.jetbrains.com/idea">IntelliJ IDEA.<img alt="JetBrains IDEA logo" height="50px"
+                                                                        width="50px"
+                                                                        src="/assets/img/logo_intellij_idea2018.png"/></a>
+        </p>
+    </li>
+
+    <li>
+        <p>
+            <a href="https://www.mantishub.com/">MantisHub</a>
+        </p>
+        <p>
+            MantisHub дообродушно размещает наш баг-трекер и пожертвовал сервисы миграции
+            с нашего старого сервера с собственным хостингом.
+        </p>
+    </li>
+</ul>
+<p>
+    Freenet Project Inc не обязательно одобряет деятельность всех компаний,
+    перечисленных на этой странице.
+</p>
+<p>
+    С вопросами о пожертвованиях обращайтесь к Яну Кларку,
+    используя адрес электронной почты press@ в нижнем колонтитуле страницы.
+</p>
+<h1><a href="http://www.zazzle.com/freenetproject">Магазин</a></h1>
+</body>
+</html>
