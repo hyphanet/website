@@ -1,5 +1,6 @@
 ---
-title: About
+slug: about
+title: О проекте
 lang: ru
 ---
 
@@ -304,94 +305,96 @@ Tommy[D]
 людей, которые внесли свой вклад различными способами.
 
 
-### Anonymous Contributors
+### Анонимные Участники
 
 
 Eleriseth
 
-: Works on Freenet core and communicates via FMS.
+: Работает над основой проета Freenet и общается через FMS.
 
 
 Somedude
 
-: The developer of the Freenet-based Forum system FMS, of FreenetHG and
-of FLIP, chat over Freenet.
+: Разработчик форумной системы на базе Freenet, FMS, FreenetHG и FLIP, общается через Freenet.
 
 
-The folks from Frost
+Ребята из форума Frost
 
-: A group of users and programmers who use an old spammable
-Freenet-based forum system which has been abandoned by most of the
-core developers. They are active, however, and though it takes time
-for their contributions to reach to core development, they take part
-in Freenet development.
+: Группа пользователей и программистов, использующих старый не защищенный от спама форум на основе
+Freenet, от которого отказались большинство основных разработчиков. Они активно принимают участие
+в разработке проекта, хотя коммуникация с основными программистами Freenet для того, чтобы принять
+их наработки, требует много времени.
 
 
 
-### Previous Contributors
+### Предыдущие Участники
 
-Thomas Markus
+Томас Маркус
 
-: A dutch developer and statistic-enthusiast. He now works at Topicus.Education.
+: Голландский разработчик и энтузиаст в области статистики. Сейчас он работает в Topicus.Education.
 
-Scott Miller
+Скотт Миллер
 
-: Scott is responsible for the implementation of much of the cryptography
-elements within Freenet.
+: Скотт отвечает за реализацию многих элементов криптографии во Freenet.
 
-Steven Starr
+Стивен Старр
 
-: Steven helps with administration of Freenet Project Inc, and is an advisor to
-the project on business and publicity matters.
+: Стивен помогает в администрировании Freenet Project Inc, а также является советником проекта по
+вопросам бизнеса и рекламы.
 
-Dave Baker
+Дейв Бейкер
 
-: Dave's main contribution has been [Freemail](documentation.html#freemail),
-his Summer of Code project to build a working email-over-Freenet system,
-as well as some debugging and core work in various places.
+: Основным вкладом Дэйва был [Freemail](documentation.html#freemail),
+его проект Summer of Code по созданию работающей системы электронной почты через Freenet, а также
+некоторая отладка и ключевая работа в различных местах проекта.
 
-Robert Hailey
+Роберт Хайли
 
-: Robert has helped improve the speed and security of Freenet by finding two
-**major** bugs, and has recently contributed some code.
+: Роберт помог повысить скорость и безопасность Freenet, обнаружив две
+**основные** ошибки. Также вносил свой вклад в код проекта.
 
-David Sowder
+Девид Соудер
 
-: David (Zothar) has helped the Freenet Project as time permits and interest
-directs, including configuration, statistics and peer management via FCP,
-the FProxy stats page and Node 2 Node Messages (N2NM/N2NTMs).
+: Дэвид (Zothar) помогал проекту Freenet насколько ему позволяло время, включая настройку,
+статистику и управление нодами через FCP, страницей статистики FProxy и сообщениями от ноды к ноде
+(N2NM/N2NTMs).
 
 And **hundreds of others**, who either haven't asked to be added here, who
 prefer to remain nameless, or who we just haven't got around to thanking. Not to
 mention thousands of users, testers, and [donors](donate.html#sponsors)!
 
-### Papers
+И **сотни других**, которые либо не просили, чтобы их сюда добавили, кто предпочитает оставаться
+анонимным, либо которых мы просто не смогли поблагодарить. Не говоря уже о тысячах пользователей,
+тестировщиков и спонсоров!
+
+### Документы
 
 ![][icon_pdf] [Measuring Freenet in the Wild: Censorship-resilience under Observation]({filename}/assets/papers/roos-pets2014.pdf) (PDF)
-Observations and measurements on the live Freenet network. Includes suggestions
-for improvement. This was submitted to PETS 2014.
+Оценка Freenet: Устойчивость к цензуре под Наблюдением.
+Наблюдения и измерения сети Freenet в реальном времени.
+Включает предложения по улучшению. Было отправлено на PETS 2014.
 
 ![][icon_pdf] [The Dark Freenet]({filename}/assets/papers/freenet-0.7.5-paper.pdf) (PDF)
-Detailed paper about the Freenet 0.7.5 network, as opposed to its routing
-algorithm, which is detailed in the below papers. Includes some new
-simulations. This has been submitted to PET 2010.
+Подробный документ о сети Freenet 0.7.5 в отличие от алгоритма маршрутизации, который подробно
+описан в следующих статьях. Включает несколько новых симуляций. Был отправлено на PET 2010.
 
 ![][icon_video] [Video of Small World talk, Berlin, December 2005](http://player.vimeo.com/video/22488244?title=0&byline=0&portrait=0)  
-This is a video of a talk given by Ian Clarke and Oskar Sandberg at the Chaos
-Computer Congress in Berlin, December 2005, describing the (then) new
-architecture for Freenet 0.7\. You can also download the [slideshow](
-/assets/papers/ccc-slideshow.pdf.bz2), and the source for the Java [demo](
-/assets/papers/ccc-freenet-demo.tar.bz2) (requires Java 1.5).
+Видео с Разговора о Маленьком Мире, Берлин, декабрь 2005.
+Это видеозапись выступления Яна Кларка и Оскара Сандберга на компьютерном конгрессе Chaos Computer
+Congress в Берлине в декабре 2005 года. В нем описывается новая (на тот момент) архитектура для
+Freenet 0.7. Вы также можете загрузить [слайдшоу](/assets/papers/ccc-slideshow.pdf.bz2) и исходный код
+на Java [demo](/assets/papers/ccc-freenet-demo.tar.bz2) (требуется Java 1.5).
 
 ![][icon_pdf] [Searching in a Small World]({filename}/assets/papers/lic.pdf) (PDF)
-Oskar Sandberg's licentiate thesis describing a simple decentralized
-mechanism for constructing small world networks that is inspired by Freenet's
-original design. Part II of the thesis describes the basis for the new
-Darknet architecture.
+Поиск в Маленьком Мире.
+Лицензионная диссертация Оскара Сандберга, описывающая простой децентрализованный механизм для
+построения сетей малых миров, вдохновленная оригинальным дизайном Freenet. Часть II диссертации
+описывает основу новой архитектуры даркнета.
 
 ![][icon_pdf] [Distributed routing in Small World Networks]({filename}/assets/papers/swroute.pdf) (PDF)
-A paper by Oskar Sandberg describing the theoretical basis for the new
-"Darknet" routing mechanism employed by Freenet 0.7.
+Распределенная маршрутизация в Сетях Маленького Мира
+Статья Оскара Сандберга, описывающая теоретические основы нового механизма маршрутизации режима
+даркнет, который используется Freenet 0.7.
 
 ![][icon_pdf] Chaos Computer Congress Talk (slideshow)  
 This is a [slideshow]({filename}/assets/papers/ccc-slideshow.pdf.bz2) for a talk given
@@ -401,21 +404,24 @@ employed in Freenet 0.7\. A Java demonstration to accompany the talk is [
 also]({filename}/assets/papers/ccc-freenet-demo.tar.bz2) available.
 
 ![][icon_pdf] [Switching for a small world]({filename}/assets/papers/vilhelm_thesis.pdf) (PDF)
-A thesis by Vilhelm Verendel exploring ways to optimise the swapping algorithm.
+Обмен для маленького мира.
+Работа Вильгельма Веренделя о способах оптимизации алгоритма обмена (позициями).
 
 ![][icon_pdf] [Protecting Freedom of Information Online with Freenet]({filename}/assets/papers/freenet-ieee.pdf) (PDF)
-An IEEE Internet Computing article describing the Freenet architecture circa
-2002 - probably the best introduction to the theory behind Freenet.
+Защита свободы Информации Онлайн с помощью Freenet.
+Статья IEEE Internet Computing, описывающая архитектуру Freenet примерно в 2002 году - вероятно,
+лучшее введение в теорию, лежащую в основе Freenet.
 
 ![][icon_pdf] [FreeNet White Paper]({filename}/assets/papers/ddisrs.pdf) (PDF)
-Original white paper by Ian Clarke, Division of Informatics, University of
-Edinburgh 1999.
+Оригинальный технический документ Яна Кларка,
+факультет информатики, Эдинбургский университет, 1999 год.
 
 * * *
 
 ![][icon_pdf] [Attack Resistant Network Embeddings for Darknets](https://web.archive.org/web/20171210222609/https://www.ukp.tu-darmstadt.de/fileadmin/user_upload/Group_P2P/share/publications/Attack_Resistant_Network_Embeddings_for_Darknets.pdf) (PDF)  
-A proposal for changing the darknet swapping algorithm which we are still
-considering (we have some doubts about long-term performance).
+Встраивание устойчивых к атакам сетей для даркнетов.
+Предложение по изменению алгоритма обмена в даркнете, которое мы все еще рассматриваем
+(у нас есть некоторые сомнения относительно долгосрочной производительности).
 
 ![][icon_pdf] [A Contribution to Analyzing and Enhancing Darknet Routing](http://www.p2p.tu-darmstadt.de/publications/details/?no_cache=1&tx_bibtex_pi1%5Bpub_id%5D=TUD-CS-2013-0036) ([PDF](http://www.p2p.tu-darmstadt.de/fileadmin/user_upload/Group_P2P/share/INFOCOM.pdf))  
 A proposal for changing the routing algorithm which we are still considering
@@ -423,23 +429,25 @@ A proposal for changing the routing algorithm which we are still considering
 unacceptable).
 
 ![][icon_pdf] [Presentation: Towards "Dark" Social Networking Services (Strufe et al.)](https://www.icsi.berkeley.edu/icsi/sites/default/files/events/events_1303_strufe.pdf) (PDF)
-An interesting presentation by the group responsible for the two above papers.
+Презентация: На пути к "Темным" социальным сетевым службам (Струф и другие).
+Интересная презентация группы, ответственной за два вышеуказанных документа.
 
 ![][icon_pdf] [Pisces: Anonymous Communication Using Social Networks](http://arxiv.org/abs/1208.6326)  
-An algorithm for setting up onion-like tunnels on darknets. 
+Анонимное общение в социальных сетях.
+Алгоритм создания onion-подобных туннелей в даркнет.
 
 ![][icon_pdf] [Routing in the Dark: Pitch Black](http://grothoff.org/christian/pitchblack.pdf) ([citeseer](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.117.1543)) (PDF)  
-A paper describing some attacks on Freenet 0.7's location swapping algorithm.
-We have solutions for this but they are still being tested.
+Документ, описывающий некоторые атаки на алгоритм обмена местоположением Freenet 0.7.
+У нас есть решения для этого, но они все еще тестируются.
 
 * * *
 
-The most up to date reference is of course [the source code](
-https://github.com/freenet/fred), but there is also some useful documentation on
-[the wiki](https://wiki.freenetproject.org/) (you may have to search a bit),
-and most implemented ideas have been discussed in detail on [the mailing
-lists](help.html#mailing-lists) at some point, more recently often in-Freenet
-forums such as FMS, or [the bug tracker](https://freenet.mantishub.io/) hosted by MantisHub.
+Самая последняя ссылка, конечно же, [на исходный код](
+https://github.com/freenet/fred), но есть также некоторая полезная документация на
+[вики](https://wiki.freenetproject.org/) (возможно, вам придется немного поискать),
+и большинство реализованных идей подробно обсуждались в [списках рассылки](help.html#mailing-lists)
+в какой-то момент, в последнее время часто используются форумы Freenet, такие как FMS, или
+[система отслеживания ошибок](https://freenet.mantishub.io/) размещенная на MantisHub.
 
 [icon_pdf]: /assets/img/small-n-flat/file-pdf.png
 [icon_video]: /assets/img/small-n-flat/file-video.png
