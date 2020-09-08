@@ -1,6 +1,6 @@
 ---
 title: Download
-lang: en
+lang: fr
 [url_lysator]: http://www.lysator.liu.se/index_en.html
 [url_mirror_lysator]: http://ftp.lysator.liu.se/pub/freenet/
 [url_mirror_lysator_tor]: http://lysator7eknrfl47rlyxvgeamrv7ucefgrrlhk7rouv3sna25asetwid.onion/pub/freenet/
