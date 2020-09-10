@@ -1,6 +1,6 @@
 # This file is distributed under the same license as the PROJECT project.
 # Translators:
-# Oleh Shklyar <oleh.shklyar@redwerk.com>, 2020
+# Redwerk team <oleh.shklyar@redwerk.com>, 2020
 msgid ""
 msgstr ""
 "Project-Id-Version: Freenet\n"
