@@ -1,6 +1,6 @@
 ---
 title: Help
-lang: en
+lang: fr
 ---
 
 ## Philosophical
