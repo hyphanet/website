@@ -104,11 +104,11 @@ However, there should be created shortcuts on the desktop in all supported
 environments. Change the application group according to your needs and press
 **Next** when finished.
 
-![]({filename}/assets/img/install/8-create_shortcuts.png)
+![Create shortcuts Screenshot]({filename}/assets/img/install/8-create_shortcuts.png)
 
 After that, the installation is finished. Click **Done** to close the window.
 
-![]({filename}/assets/img/install/9-Install_finished.png)
+![Install finished Screenshot]({filename}/assets/img/install/9-Install_finished.png)
 
 If all has gone well, a browser window should have opened in the background.
 This will ask you a bunch of questions to configure Freenet, and then you
@@ -157,7 +157,7 @@ your friends. In practice most people start off with insecure mode and
 gradually add friends, and hopefully turn off insecure mode once they have at
 least 10 friends.
 
-![]({filename}/assets/img/Freenet-architecture-small.png)
+![Freenet network architecture]({filename}/assets/img/Freenet-architecture-small.png)
 
 *Figure 1: Visible Freenet connections*
 
@@ -180,7 +180,7 @@ these are that they are all done under the **Darknet** menu item or using the
 [http://127.0.0.1:8888/friends/](http://127.0.0.1:8888/friends/) link. Below
 is the thing that makes it all happen:
 
-![]({filename}/assets/img/add_peers.png)
+![Add peers Screenshot]({filename}/assets/img/add_peers.png)
 
 As you can see, there are three ways of getting a node reference from someone
 else:
@@ -229,7 +229,7 @@ his/her side, the connection **does not work**.
 When you have a number of connections, you can visit the Darknet page. It
 should look something like this:
 
-![]({filename}/assets/img/Freenet-darknet_peers.png)
+![Darknet peers Screenshot]({filename}/assets/img/Freenet-darknet_peers.png)
 
 There are a number of status messages that can be seen here:
 
@@ -579,7 +579,7 @@ To start jSite, type the following in a terminal:
 
 The first window you see is this:
 
-![]({filename}/assets/img/jsite/select-project.png)
+![jSite Select a project Screenshot]({filename}/assets/img/jsite/select-project.png)
 
 In the pane to the left, already created projects can be selected for
 updating, deleting or cloning. Since this is the first start, no such
@@ -611,7 +611,7 @@ browser:
 
 Below is an example of how it might look:
 
-![]({filename}/assets/img/jsite/project-details.png)
+![jSite Select a project with filled fields Screenshot]({filename}/assets/img/jsite/project-details.png)
 
 When everything is filled in correctly, you may press **Next**.
 
@@ -619,12 +619,12 @@ The next step is to add files to your Freenet site (or Freesite). This is
 done in the dialog called **Project Files**. Since we have no files in the
 current directory, yet, the dialog is pretty much empty.
 
-![]({filename}/assets/img/jsite/project-files.png)
+![jSite Project files Screenshot]({filename}/assets/img/jsite/project-files.png)
 
 To add files, we put some files in the local directory we specified earlier,
 **/home/test**, and press **Re-scan**. Then, presto, the files appear.
 
-![]({filename}/assets/img/jsite/default-file.png)
+![jSite Project files with files Screenshot]({filename}/assets/img/jsite/default-file.png)
 
 We then highlight one of these files that will be the default page (e.g.
 index.html might be a good choice) and check the **Default file** checkbox.
@@ -634,7 +634,7 @@ they are and click the **Insert now** button.
 If all goes well, a window like the one below should appear. It may take
 quite a while to insert the Freesite, several minutes in fact.
 
-![]({filename}/assets/img/jsite/project-insert.png)
+![jSite Project insert Screenshot]({filename}/assets/img/jsite/project-insert.png)
 
 When all is finished, you will get a message pop-up that tells you that the
 site has been inserted successfully. You can copy the URI to the clip-board
