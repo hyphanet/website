@@ -94,7 +94,8 @@ http://www.java.com/](http://www.java.com/).
     wget 'https://github.com/freenet/fred/releases/download/build01486/new_installer_offline_1486.jar' -O new_installer_offline.jar;
     java -jar new_installer_offline.jar;
 
-To install on a headless system, or if you get fontconfig problems, use the `-console` option and follow the prompts:
+Для установки в хедлесс системе или в случае возникновения проблем с fontconfig
+используйте параметр `-console` и следуйте инструкциям:
 
     java -jar new_installer_offline.jar -console;
 
@@ -119,7 +120,7 @@ To install on a headless system, or if you get fontconfig problems, use the `-co
 
 ## Зеркальная установка
 
-Если у вас есть рабочая папка установки Freenet, который вы скопировали с одной машины Unix
+Если у вас есть рабочая папка установки Freenet, которую вы скопировали с одной машины Unix
 на другую (например, через rsync или unison), включить зеркальную установку не сложно.
 Ничто в установке Freenet не заботится об IP-адресе хоста; это невозможно, иначе Freenet
 не сможет работать на машинах, которые получают IP-адреса из пула DHCP.

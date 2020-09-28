@@ -421,9 +421,9 @@ Freenet 0.7. Вы также можете загрузить [слайдшоу](
 (у нас есть некоторые сомнения относительно долгосрочной производительности).
 
 ![][icon_pdf] [A Contribution to Analyzing and Enhancing Darknet Routing](http://www.p2p.tu-darmstadt.de/publications/details/?no_cache=1&tx_bibtex_pi1%5Bpub_id%5D=TUD-CS-2013-0036) ([PDF](http://www.p2p.tu-darmstadt.de/fileadmin/user_upload/Group_P2P/share/INFOCOM.pdf))  
-A proposal for changing the routing algorithm which we are still considering
-(the worst case performance i.e. when a block has been lost may be
-unacceptable).
+Вклад в анализ и улучшение маршрутизации в даркнет.
+Предложение по изменению алгоритма маршрутизации, которое мы все еще рассматриваем
+(производительность в самом плохом случае, т.е. при потерянном блоке, когда его могут не принять).
 
 ![][icon_pdf] [Presentation: Towards "Dark" Social Networking Services (Strufe et al.)](https://www.icsi.berkeley.edu/icsi/sites/default/files/events/events_1303_strufe.pdf) (PDF)
 Презентация: На пути к "Темным" социальным сетевым службам (Струф и другие).
