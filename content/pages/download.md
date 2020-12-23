@@ -66,27 +66,25 @@ Freenet requires OS X 10.8 or later.
 
 ## GNU/Linux & POSIX
 
-Try the [Java Web Start installer][url_jnlp_installer].
+Get the installer [Java-based installer][url_nix_installer] ([gpg signature][url_nix_installer_sig]; [keyring][url_keyring]).
 
-[Download Freenet for GNU/Linux & POSIX][url_jnlp_installer]{: .download-button}
+[Download Freenet for GNU/Linux & POSIX][url_nix_installer]{: .download-button}
 
-Now follow the installer:
+Run the file with Java, then follow the installer:
 
 ![]({filename}/assets/img/install/1-langselect.png)
 
-If it doesn't work:
+You need to have a recent **Java Runtime Environment** (JRE), for
+example **OpenJDK** which can be obtained via your
+[package manager](https://en.wikipedia.org/wiki/Package_manager) or from
+[https://adoptopenjdk.net](https://adoptopenjdk.net).
 
-You need to have a recent **Java Runtime Environment** (JRE). We have
-experienced best results with Oracle's Java Runtime Environment which can be
-obtained via your [package manager](
-https://en.wikipedia.org/wiki/Package_manager) or from [
-http://www.java.com/](http://www.java.com/).
+Java version 8 or higher is required. You should keep Java up to date
+to avoid problems and for better performance.
 
-Java version 7 or higher is required, and version 8 or higher is strongly
-recommended. You should keep Java up to date to avoid problems and for better
-performance.
-
-Open a terminal and run:
+If there are problems we recommend the following command lines. They
+require wget which can be installed with a package manager, such as
+`sudo apt-get install wget` on Debian or Ubuntu.
 
     wget 'https://github.com/freenet/fred/releases/download/build01489/new_installer_offline_1489.jar' -O new_installer_offline.jar;
     java -jar new_installer_offline.jar;
@@ -95,12 +93,9 @@ To install on a headless system, or if you get fontconfig problems, use the `-co
 
     java -jar new_installer_offline.jar -console;
 
-Alternatively, downloading [the installer][url_nix_installer]
-([gpg signature][url_nix_installer_sig]; [keyring][url_keyring])
-and then clicking on the file may work on some systems, but if there are
-problems we recommend the above command lines. If wget is not installed,
-it can be installed with a package manager, such as `sudo apt-get install wget`
-on Debian or Ubuntu.
+
+There is also a [Java Web Start installer](url_jnlp_installer) which
+used to be more convenient but might not work on your distribution.
 
 **Note**: Many GNU/Linux distributions no longer ship with Java Web Start
 enabled. We would like to make distribution packages for easier installation,
