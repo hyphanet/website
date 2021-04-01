@@ -4,13 +4,13 @@ lang: en
 [url_lysator]: http://www.lysator.liu.se/index_en.html
 [url_mirror_lysator]: http://ftp.lysator.liu.se/pub/freenet/
 [url_mirror_lysator_tor]: http://lysator7eknrfl47rlyxvgeamrv7ucefgrrlhk7rouv3sna25asetwid.onion/pub/freenet/
-[url_win_installer]: https://github.com/freenet/fred/releases/download/build01489/FreenetInstaller-1489.exe
-[url_win_installer_sig]: https://github.com/freenet/fred/releases/download/build01489/FreenetInstaller-1489.exe.sig
+[url_win_installer]: https://github.com/freenet/fred/releases/download/build01490/FreenetInstaller-1490.exe
+[url_win_installer_sig]: https://github.com/freenet/fred/releases/download/build01490/FreenetInstaller-1490.exe.sig
 [url_mac_installer]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip
 [url_mac_installer_sig]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip.sig
-[url_nix_installer]: https://github.com/freenet/fred/releases/download/build01489/new_installer_offline_1489.jar
-[url_nix_installer_sig]: https://github.com/freenet/fred/releases/download/build01489/new_installer_offline_1489.jar.sig
-[url_jnlp_installer]: {filename}/assets/jnlp/freenet.jnlp?1489
+[url_nix_installer]: https://github.com/freenet/fred/releases/download/build01490/new_installer_offline_1490.jar
+[url_nix_installer_sig]: https://github.com/freenet/fred/releases/download/build01490/new_installer_offline_1490.jar.sig
+[url_jnlp_installer]: {filename}/assets/jnlp/freenet.jnlp?1490
 [url_keyring]: #keyring
 
 To access Freenet, you first need to install the main application.
@@ -86,7 +86,7 @@ If there are problems we recommend the following command lines. They
 require wget which can be installed with a package manager, such as
 `sudo apt-get install wget` on Debian or Ubuntu.
 
-    wget 'https://github.com/freenet/fred/releases/download/build01489/new_installer_offline_1489.jar' -O new_installer_offline.jar;
+    wget 'https://github.com/freenet/fred/releases/download/build01490/new_installer_offline_1490.jar' -O new_installer_offline.jar;
     java -jar new_installer_offline.jar;
 
 To install on a headless system, or if you get fontconfig problems, use the `-console` option and follow the prompts:
