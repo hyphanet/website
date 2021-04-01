@@ -54,6 +54,8 @@ Freenet requires Windows XP or later.
 
 Download and run [the installer][url_mac_installer] ([gpg signature][url_mac_installer_sig]; [keyring][url_keyring]).
 
+**The installer currently has some problems. If it fails, use the GNU/Linux installer below.**
+
 [Download Freenet for OSX][url_mac_installer]{: .download-button}
 
 It will automatically install Freenet and other required components for you.
