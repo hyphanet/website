@@ -48,7 +48,7 @@ web-based user interface.
 
 ![]({filename}/assets/img/install/1-langselect-windows.png)
 
-Freenet requires Windows XP or later.
+Freenet requires Windows 7 SP 1 or later.
 
 ## OS X
 
