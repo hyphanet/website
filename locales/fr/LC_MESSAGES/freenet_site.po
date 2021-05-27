@@ -1834,7 +1834,7 @@ msgid ""
 "![](assets/img/install/1-langselect-windows.png)\n"
 "\n"
 "Freenet requires Windows 7 SP1 or later."
-msgstr "\n([essayez ceci si le premier lien est bloqué](https://downloads.freenetproject.org/latest/FreenetInstaller.exe)) ([signature gpg][url_gpg_sig] ; [trousseau][url_keyring])\n\nIl installera automatiquement Freenet et les autres composants exigés.\nUne fois terminé, votre navigateur par défaut s’ouvrira automatiquement\nsur\nl’interface Web de Freenet.\n\n ![](assets/img/install/1-langselect-windows.png)\n\nFreenet exige Windows 7 SP 1 ou ultérieure."
+msgstr "\n([essayez ceci si le premier lien est bloqué](https://downloads.freenetproject.org/latest/FreenetInstaller.exe)) ([signature gpg][url_gpg_sig] ; [trousseau][url_keyring])\n\nIl installera automatiquement Freenet et les autres composants exigés.\nUne fois terminé, votre navigateur par défaut s’ouvrira automatiquement\nsur\nl’interface Web de Freenet.\n\n ![](assets/img/install/1-langselect-windows.png)\n\nFreenet exige Windows 7 SP1 ou ultérieure."
 
 #: pages/download.py:138
 msgid ""
