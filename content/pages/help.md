@@ -1011,7 +1011,7 @@ When writing your support request, please make sure you include a full descripti
 Many of the developers and users of Freenet are on the [IRC](
 https://en.wikipedia.org/wiki/IRC) channel #freenet on libera.chat.
 
-<a href="https://web.libera.chat/?nick=FollowingTheRabbit|?#freenet" id="chatlink" class="btn button-custom btn-custom-two">Chat with us</a>
+<a href="https://web.libera.chat/?nick=FollowTheRabbit|?#freenet" id="chatlink" class="btn button-custom btn-custom-two">Chat with us</a>
 
 ## [Setup](http://freesocial.draketo.de/)
 
