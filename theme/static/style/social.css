@@ -27,11 +27,6 @@
 	background: url('../images/social-white.png') no-repeat 60%;
 }
 
-.social a[href*="plus.google.com"] {
-	background: url('../images/social-white.png') no-repeat 100%;
-	width: 15px;
-}
-
 footer .social {
 	margin-top: 0px;
 }
