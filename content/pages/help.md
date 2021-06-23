@@ -602,7 +602,7 @@ download page for a specific build, or use git to get an up to date copy of
 the source, see [here](https://wiki.freenetproject.org/Development) for details. Further
 instructions for building and deploying the server are included with the code
 itself. Generally speaking, joining our IRC channel is a good idea: [#freenet
-on libera.chat](rcs://irc.libera.chat:6697/freenet)
+on libera.chat](ircs://irc.libera.chat:6697/freenet)
 
 ### Is there a Help Site that goes deeper into the questions newbies may have about Freenet, and where people can contribute too?
 
