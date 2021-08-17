@@ -24,7 +24,7 @@ jobs:
       - name: IRC notify
         uses: rectalogic/notify-irc@v1
         with:
-          channel: "#freenet-test"
+          channel: "#freenet"
           server: irc.libera.chat
           nickname: github-actions-notify
           message:
