@@ -1,0 +1,33 @@
+name: Website build
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+     - "AWS_ACCESS_KEY_ID=AKIAJQUIQIL3XTBHT3DA"
+    # our AWS_SECRET_ACCESS_KEY follows
+    - secure: "Q7jH10Hjul2kLwSRW09Q9vIaJTSZeolvHdHewT2nMwtRTWeINOHsOS61CaXg5t2VM4Ri2GbO0SjaNWqoyQyQSbQBPmOBG8bISd8LEdBErat5ZEiAIlgOSm/rnr6F7dq+zKtdy4v+jIMnnfkRpT62Rvx5fRzDEOc3PcJQWGQSQ05e7fSuvhWgS9T1OAsDwAPLyrEPhEwlkeDpfJt2FcZFCA1G9/3F/ej8OAvgfOEiZn1b9iy2FjSB7S969l0Nejs3c63cFWmC+CpzEqD6yXtkqN5A4VS3+P1xh+jBpoeCb/6MKM6QtxD7lE3ZvBevp5l01/H60Mgjd/g8JEKBMo+tk27bCd7X+9j7iPjdOrkPJTccu2s6UFE/VMJIYY44Kr2ugyKu6SGkAuNe6SzPP+LHFj5/OJLjKswsIxq1Vtxwvxx2PMNLQ4v6ZAwNG+x623EHQdbkmcI5lqxLgcQrWROOHxuA0aXY/CTW8V23VoDXQ8UJRimtOHXfHqC6Zwq84iRuyQf8SmycpShxA26QvjCFtMq/niDKuLWR20zzsTPII864bc99ZARqAhIQo56ZGRvvgnv2wLFqVHh9zc66MU9/nfMKPi2xEj9qYjFDkfwZH/sfpJFSC4gz7u3svrIE5rD5Z0dwILPtDAR5q46+hgFcjt8Q1jvteT6SS4nchSEZ/Bw="
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '2.7'
+      - name: Install packages
+        run: |
+          sudo apt-get -y install gettext libjpeg-turno-progs optipng python-pip python-virtualenv subversion
+      - name: Install pelican plugins
+        run: |
+          svn co https://github.com/getpelican/pelican-plugins.git/trunk  pelican-plugins
+      - name: Build
+        run: make html
+      - name: IRC notify
+        uses: rectalogic/notify-irc@v1
+        with:
+          channel: "#freenet-test"
+          server: irc.libera.chat
+          nickname: github-actions-notify
+          message:
+            ${{ github.actor }} built ${{ github.event.ref }} ${{ github.event.compare }} ${{ join(github.event.commits.*.message) }}
+
