@@ -14,7 +14,7 @@ jobs:
           python-version: '2.7'
       - name: Install packages
         run: |
-          sudo apt-get -y install gettext libjpeg-turbo-progs optipng python-pip python-virtualenv subversion
+          sudo apt-get -y install gettext libjpeg-turbo-progs optipng python3-pip python3-virtualenv subversion
       - name: Install pelican plugins
         run: |
           svn co https://github.com/getpelican/pelican-plugins.git/trunk  pelican-plugins
