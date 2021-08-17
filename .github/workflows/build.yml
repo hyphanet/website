@@ -15,8 +15,9 @@ jobs:
       - name: Install packages
         run: |
           sudo apt-get -y install gettext libjpeg-turbo-progs optipng python3-pip python3-virtualenv subversion
-      - name: Install pelican plugins
+      - name: Install pelican & pelican plugins
         run: |
+          python -m pip install pelican
           svn co https://github.com/getpelican/pelican-plugins.git/trunk  pelican-plugins
       - name: Build
         run: make html
