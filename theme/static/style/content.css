@@ -151,7 +151,7 @@ body > div > .social {
 body > div > header p {
 	margin-top: 0px;
 	color:  #f3f6f6;
-	font-size: 16px;
+	font-size: larger;
 	text-align: center;
 }
 
@@ -212,16 +212,15 @@ section h2 {
 
 #actions h2 {
 	color:  #fcfafa;
-	font-size: 24.51px;
+	font-size: 32px;
 	margin-bottom: 0px;
 }
 
 #actions p,
 #actions a {
 	color:  rgba(249, 250, 251, 0.5);
-	font-size: 14.71px;
+	font-size: larger;
 	/*font-weight: 400;*/
-	line-height: 15px;
 	text-align: center;
 	margin-top: 0px;
 	margin-bottom: 0.25em;
@@ -274,13 +273,13 @@ line-height: 39.901px;/* Approximation due to font substitution */
 
 #features p {
 	text-align: center;
-	max-width: 800px;
 	margin: auto;
+    font-size: larger;
 }
 
 #features h3 {
 	color:  #416ab3;
-	font-size: 17px;
+	font-size: 32px;
 	font-weight: 600;
 	text-align: center;
 }
@@ -308,7 +307,6 @@ line-height: 39.901px;/* Approximation due to font substitution */
 
 #features li p {
 	color:  #515862;
-	font-size: 11px;
 	line-height: 15px;
 	text-align: center;
 	width: 240px;
@@ -324,7 +322,8 @@ line-height: 39.901px;/* Approximation due to font substitution */
 }
 
 #news p {
-	max-width: 640px;
+    max-width: 640px;
+    font-size: larger;
 	margin: auto;
 }
 
