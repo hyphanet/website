@@ -18,7 +18,7 @@ The weekend of December 19th and 20th.
 
 ## Where?
 
-[chat.freenode.net #freenet][irc_url]
+[libera.chat #freenet][irc_url]
 
 [FLIP][flip_url] #freenet
 
