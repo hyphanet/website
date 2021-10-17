@@ -10,7 +10,7 @@ lang: ru
 [на GitHub](https://github.com/freenet/).
 
 - Связаться с другими можно с помощью [списков рассылки](help.html#mailing-lists)
-- Присоединяйтесь к нам в IRC: [#freenet on chat.freenode.net](help.html#chat-with-us)
+- Присоединяйтесь к нам в IRC: [#freenet on irc.libera.chat](help.html#chat-with-us)
 - Сообщайте о проблемах в [трекере ошибок](https://freenet.mantishub.io/), размещенном на [MantisHub](https://www.mantishub.com)
 
 Вики содержит
