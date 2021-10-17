@@ -50,9 +50,12 @@ jobs:
           then
             echo "deploying to staging"
             aws s3 sync output/ s3://website-staging.freenetproject.org
+            aws cloudfront create-invalidation --distribution-id E163US17FGFURH --paths '/*'
           else
             echo "deploying to prod"
             aws s3 sync output/ s3://website-freenetproject.org
+            aws cloudfront create-invalidation --distribution-id E27NPK5X62XM5M --paths '/*'
+
           fi
         env:
           GITHUB_REF: ${{ env.GITHUB_REF }}
