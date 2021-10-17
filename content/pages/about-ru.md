@@ -13,7 +13,7 @@ lang: ru
 --Майк Годвин, [Фонд электронных рубежей](https://www.eff.org/)
 
 <div class="video-container">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zu9gM3_gIfM"
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/zu9gM3_gIfM"
 	frameborder="0" allowfullscreen></iframe>
 </div>
 
