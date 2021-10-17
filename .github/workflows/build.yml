@@ -46,6 +46,7 @@ jobs:
 
       - name: Upload to bucket
         run: |
+          aws configure set preview.cloudfront true
           if [[ $GITHUB_REF == "refs/heads/2016-redesign" ]]
           then
             echo "deploying to staging"
