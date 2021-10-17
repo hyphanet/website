@@ -598,7 +598,7 @@ See our [GitHub repository](https://github.com/freenet/).
 
 ### What tools do I need to help develop?
 
-Building Freenet requires JDK 1.6 or later.  You can download the source tarballs on the
+Building Freenet requires JDK 1.8 or later.  You can download the source tarballs on the
 download page for a specific build, or use git to get an up to date copy of
 the source, see [here](https://wiki.freenetproject.org/Development) for details. Further
 instructions for building and deploying the server are included with the code

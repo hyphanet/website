@@ -2908,13 +2908,13 @@ msgstr "De quels outils ai-je besoin pour aider au développement ?"
 
 #: pages/help.py:609
 msgid ""
-"Building Freenet requires JDK 1.6 or later.  You can download the source tarballs on the\n"
+"Building Freenet requires JDK 1.8 or later.  You can download the source tarballs on the\n"
 "download page for a specific build, or use git to get an up to date copy of\n"
 "the source, see [here](contribute.html#developers) for details. Further\n"
 "instructions for building and deploying the server are included with the code\n"
 "itself. Generally speaking, joining our IRC channel is a good idea: [#freenet\n"
 "on irc.libera.chat](irc://irc.libera.chat/freenet)"
-msgstr "La construction de Freenet exige la trousse d’outils JDK 1.6 ou ultérieure.\nVous pouvez télécharger les tarballs source à partir de la page de téléchargement\npour une version particulière, ou utiliser git afin d’obtenir une version à jour\nde la source. Consulter [ceci](contribute.html#developers) pour plus de détails.\nDe plus amples instructions sur la construction et le déploiement du serveur\nsont incluses avec le code. Rejoindre notre canal IRC est généralement une bonne idée :\n[#freenet\nsur irc.libera.chat](irc://irc.libera.chat/freenet)"
+msgstr "La construction de Freenet exige la trousse d’outils JDK 1.8 ou ultérieure.\nVous pouvez télécharger les tarballs source à partir de la page de téléchargement\npour une version particulière, ou utiliser git afin d’obtenir une version à jour\nde la source. Consulter [ceci](contribute.html#developers) pour plus de détails.\nDe plus amples instructions sur la construction et le déploiement du serveur\nsont incluses avec le code. Rejoindre notre canal IRC est généralement une bonne idée :\n[#freenet\nsur irc.libera.chat](irc://irc.libera.chat/freenet)"
 
 #: pages/help.py:617
 msgid ""
