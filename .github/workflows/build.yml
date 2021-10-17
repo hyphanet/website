@@ -28,7 +28,9 @@ jobs:
           svn co https://github.com/getpelican/pelican-plugins.git/trunk  pelican-plugins
 
       - name: Build
-        run: make html
+        run: |
+          export SITEURL="/"
+          make html
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
