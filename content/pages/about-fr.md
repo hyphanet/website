@@ -1,16 +1,16 @@
 ---
 title: About
-lang: en
+lang: fr
 ---
 
 ## What is Freenet?
 
-> I worry about my child and the Internet all the time, even though she's too
-> young to have logged on yet. Here's what I worry about. I worry that 10 or
-> 15 years from now, she will come to me and say 'Daddy, where were you when
-> they took freedom of the press away from the Internet?
+> Je m’inquiète en permanence pour ma fille et Internet, bien qu’elle soit trop
+> jeune pour s’être déjà connectée. Voici ce qui m’inquiète. Je m’inquiète que dans
+> 10 ou 15 ans, elle viendrait me voir et me dirait «Papa, t’étais où quand ils
+> ont supprimé la liberté de la presse sur Internet?»
 
---Mike Godwin, [Electronic Frontier Foundation](https://www.eff.org/)
+--Mike Godwin, [Fondation Frontière électronique](https://www.eff.org/)
 
 <div class="video-container">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zu9gM3_gIfM"
@@ -54,18 +54,18 @@ friends' friends' friends and so on. This enables people to use Freenet even
 in places where Freenet may be illegal, makes it very difficult for
 governments to block it, and does not rely on tunneling to the "free world".
 
-*Written by Ian Clarke*
+*Écrit par Ian Clarke*
 
-1.  [A Disclaimer](#a-disclaimer)
-2.  [Suggested prior reading](#suggested-prior-reading)
-3.  [The importance of the Free flow of information](#the-importance-of-the-free-flow-of-information)
-4.  [Censorship and freedom](#censorship-and-freedom)
-5.  [The solution](#the-solution)
-6.  [Isn't censorship sometimes necessary?](#isnt-censorship-sometimes-necessary)
-7.  [But why is anonymity necessary?](#but-why-is-anonymity-necessary)
-8.  [And what of copyright?](#and-what-of-copyright)
-9.  [But how will artists be rewarded for their work without copyright?](#but-how-will-artists-be-rewarded-for-their-work-without-copyright)
-10.  [Alternatives to Copyright](#alternatives-to-copyright)
+1.  [Un avis de non-responsabilité](#a-disclaimer)
+2.  [Lecture préalable recommandée](#suggested-prior-reading)
+3.  [L’importance de la libre circulation des informations](#the-importance-of-the-free-flow-of-information)
+4.  [Censure et liberté](#censorship-and-freedom)
+5.  [La solution](#the-solution)
+6.  [La censure n’est-elle pas nécessaire parfois?](#isnt-censorship-sometimes-necessary)
+7.  [Mais pourquoi l’anonymat est-il nécessaire?](#but-why-is-anonymity-necessary)
+8.  [Et les droits d’auteur?](#and-what-of-copyright)
+9.  [Mais comment les artistes seront-ils récompensés pour leur travail sans les droits d’auteur?](#but-how-will-artists-be-rewarded-for-their-work-without-copyright)
+10.  [Solutions de remplacement des droits d’auteur](#alternatives-to-copyright)
 
 ## The Philosophy Behind Freenet
 

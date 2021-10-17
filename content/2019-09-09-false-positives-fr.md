@@ -3,7 +3,7 @@ layout: content
 title:  Statistical results without false positives check are most likely wrong
 date:   2019-09-09
 categories: release
-lang: en
+lang: fr
 ---
 Like every other privacy network, Freenet is a target of
 statistical attacks to trace the activity of its users.

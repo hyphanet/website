@@ -1,6 +1,6 @@
 ---
 title: Documentation
-lang: en
+lang: fr
 ---
 
 The documentation on Freenet is forever changing, since this is a project in
@@ -305,8 +305,8 @@ over what is stored in your datastore. Instead, files are kept or deleted
 depending on how popular they are. This allows Freenet to be censorship-resistant.
 There is no "delete file" operation.
 
-It is hard, but not impossible, to determine what the encrypted file pieces stored in your local Freenet datastore are part of.
-This allows plausible deniability.
+It is hard, but not impossible, to determine what the encrypted file pieces
+stored in your local Freenet datastore are part of. This allows plausible deniability.
 
 Freenet suggests an initial size based on how much space is available, and
 you can change the store size at any time. A larger store uses more RAM,
@@ -652,5 +652,3 @@ in the browser address bar, like this (cut for screen purposes):
 If it works, congratulations, you have just created your first Freesite!
 
 ## [Wiki](https://wiki.freenetproject.org/)
-
-

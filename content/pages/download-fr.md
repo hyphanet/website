@@ -1,16 +1,16 @@
 ---
 title: Download
-lang: en
+lang: fr
 [url_lysator]: http://www.lysator.liu.se/index_en.html
 [url_mirror_lysator]: http://ftp.lysator.liu.se/pub/freenet/
 [url_mirror_lysator_tor]: http://lysator7eknrfl47rlyxvgeamrv7ucefgrrlhk7rouv3sna25asetwid.onion/pub/freenet/
-[url_win_installer]: https://github.com/freenet/fred/releases/download/build01491/FreenetInstaller-1491.exe
-[url_win_installer_sig]: https://github.com/freenet/fred/releases/download/build01491/FreenetInstaller-1491.exe.sig
+[url_win_installer]: https://github.com/freenet/fred/releases/download/build01486/FreenetInstaller-1486.exe
+[url_win_installer_sig]: https://github.com/freenet/fred/releases/download/build01486/FreenetInstaller-1486.exe.sig
 [url_mac_installer]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip
 [url_mac_installer_sig]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip.sig
-[url_nix_installer]: https://github.com/freenet/fred/releases/download/build01491/new_installer_offline_1491.jar
-[url_nix_installer_sig]: https://github.com/freenet/fred/releases/download/build01491/new_installer_offline_1491.jar.sig
-[url_jnlp_installer]: {filename}/assets/jnlp/freenet.jnlp?1491
+[url_nix_installer]: https://github.com/freenet/fred/releases/download/build01486/new_installer_offline_1486.jar
+[url_nix_installer_sig]: https://github.com/freenet/fred/releases/download/build01486/new_installer_offline_1486.jar.sig
+[url_jnlp_installer]: {filename}/assets/jnlp/freenet.jnlp?1486
 [url_keyring]: #keyring
 
 To access Freenet, you first need to install the main application.
@@ -49,13 +49,11 @@ web-based user interface.
 
 ![]({filename}/assets/img/install/1-langselect-windows.png)
 
-Freenet requires Windows 7 SP1 or later.
+Freenet requires Windows XP or later.
 
 ## OS X
 
 Download and run [the installer][url_mac_installer] ([gpg signature][url_mac_installer_sig]; [keyring][url_keyring]).
-
-**The installer currently has some problems. If it fails, use the GNU/Linux installer below.**
 
 [Download Freenet for OSX][url_mac_installer]{: .download-button}
 
@@ -68,36 +66,41 @@ Freenet requires OS X 10.8 or later.
 
 ## GNU/Linux & POSIX
 
-Get the installer [Java-based installer][url_nix_installer] ([gpg signature][url_nix_installer_sig]; [keyring][url_keyring]).
+Try the [Java Web Start installer][url_jnlp_installer].
 
-[Download Freenet for GNU/Linux & POSIX][url_nix_installer]{: .download-button}
+[Download Freenet for GNU/Linux & POSIX][url_jnlp_installer]{: .download-button}
 
-Run the file with Java, then follow the installer:
+Now follow the installer:
 
 ![]({filename}/assets/img/install/1-langselect.png)
 
-You need to have a recent **Java Runtime Environment** (JRE), for
-example **OpenJDK** which can be obtained via your
-[package manager](https://en.wikipedia.org/wiki/Package_manager) or from
-[https://adoptopenjdk.net](https://adoptopenjdk.net).
+If it doesn't work:
 
-Java version 8 or higher is required. You should keep Java up to date
-to avoid problems and for better performance.
+You need to have a recent **Java Runtime Environment** (JRE). We have
+experienced best results with Oracle's Java Runtime Environment which can be
+obtained via your [package manager](
+https://en.wikipedia.org/wiki/Package_manager) or from [
+http://www.java.com/](http://www.java.com/).
 
-If there are problems we recommend the following command lines. They
-require wget which can be installed with a package manager, such as
-`sudo apt-get install wget` on Debian or Ubuntu.
+Java version 7 or higher is required, and version 8 or higher is strongly
+recommended. You should keep Java up to date to avoid problems and for better
+performance.
 
-    wget 'https://github.com/freenet/fred/releases/download/build01491/new_installer_offline_1491.jar' -O new_installer_offline.jar;
+Open a terminal and run:
+
+    wget 'https://github.com/freenet/fred/releases/download/build01486/new_installer_offline_1486.jar' -O new_installer_offline.jar;
     java -jar new_installer_offline.jar;
 
 To install on a headless system, or if you get fontconfig problems, use the `-console` option and follow the prompts:
 
     java -jar new_installer_offline.jar -console;
 
-
-There is also a [Java Web Start installer](url_jnlp_installer) which
-used to be more convenient but might not work on your distribution.
+Alternatively, downloading [the installer][url_nix_installer]
+([gpg signature][url_nix_installer_sig]; [keyring][url_keyring])
+and then clicking on the file may work on some systems, but if there are
+problems we recommend the above command lines. If wget is not installed,
+it can be installed with a package manager, such as `sudo apt-get install wget`
+on Debian or Ubuntu.
 
 **Note**: Many GNU/Linux distributions no longer ship with Java Web Start
 enabled. We would like to make distribution packages for easier installation,

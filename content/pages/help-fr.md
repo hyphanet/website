@@ -1,6 +1,6 @@
 ---
 title: Help
-lang: en
+lang: fr
 ---
 
 ## Philosophical
@@ -508,7 +508,7 @@ Freenet sites. Most of the "portal" sites which are linked from the Freenet
 web interface (fproxy) read the Freetalk or FMS forums, and there are boards
 specifically for announcing sites (usually the boards are called "sites"!).
 You could also send your key to people by using the Freenet [mailing lists](
-help.html#mailing-lists), in the IRC channel (libera.chat #freenet),
+help.html#mailing-lists), in the IRC channel (chat.freenode.net #freenet),
 by private e-mail, or by advertising your Freenet site on your World Wide Web
 site. If you're feeling extravagant, you could even try skywriting it.
 (Graffiti is not recommended, for legal reasons.)
@@ -603,7 +603,7 @@ download page for a specific build, or use git to get an up to date copy of
 the source, see [here](https://wiki.freenetproject.org/Development) for details. Further
 instructions for building and deploying the server are included with the code
 itself. Generally speaking, joining our IRC channel is a good idea: [#freenet
-on libera.chat](ircs://irc.libera.chat:6697/freenet)
+on chat.freenode.net](irc://chat.freenode.net/freenet)
 
 ### Is there a Help Site that goes deeper into the questions newbies may have about Freenet, and where people can contribute too?
 
@@ -1009,9 +1009,9 @@ When writing your support request, please make sure you include a full descripti
 ## Chat with us
 
 Many of the developers and users of Freenet are on the [IRC](
-https://en.wikipedia.org/wiki/IRC) channel #freenet on irc.libera.chat.
+https://en.wikipedia.org/wiki/IRC) channel #freenet on chat.freenode.net.
 
-<a href="https://web.libera.chat/?nick=FollowTheRabbit|?#freenet" id="chatlink" class="btn button-custom btn-custom-two">Chat with us</a>
+<a href="https://webchat.freenode.net/?randomnick=1&channels=%23freenet&uio=d4" id="chatlink" class="btn button-custom btn-custom-two">Chat with us</a>
 
 ## [Setup](http://freesocial.draketo.de/)
 
