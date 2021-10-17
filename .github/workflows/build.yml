@@ -1,0 +1,61 @@
+name: Website build
+on:
+  push:
+    branches:
+      - 2016-redesign
+    tags:
+      - '*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '2.7'
+
+      - name: Install packages
+        run: |
+          sudo apt-get -y install gettext libjpeg-turbo-progs optipng python3-pip python3-virtualenv subversion
+
+      - name: Install pelican & pelican plugins
+        run: |
+          pip install -r requirements.txt
+          svn co https://github.com/getpelican/pelican-plugins.git/trunk  pelican-plugins
+
+      - name: Build
+        run: make html
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+
+      - name: Upload to bucket
+        run: |
+          if [[ $GITHUB_REF == "refs/heads/2016-redesign" ]]
+          then
+            echo "deploying to staging"
+            aws s3 sync output/ s3://website-staging.freenetproject.org
+          else
+            echo "deploying to prod"
+            aws s3 sync output/ s3://website-freenetproject.org
+          fi
+        env:
+          GITHUB_REF: ${{ env.GITHUB_REF }}
+
+      - name: IRC notify
+        uses: rectalogic/notify-irc@v1
+        with:
+          channel: "#freenet"
+          server: irc.libera.chat
+          nickname: github-actions-notify
+          message:
+            ${{ github.actor }} deployed ${{ github.event.compare }} to the website (${{ env.GITHUB_REF }}).
+
