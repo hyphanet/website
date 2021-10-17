@@ -630,7 +630,7 @@ footer ul {
 @media only screen and (min-width: 1920px) {
   body > div {
 	background: #416ab3;
-	background: linear-gradient(to right, #1b3e7df0 1280px, rgba(27, 62, 125, 0) 1440px), url('../images/graph-white.png'), linear-gradient(to bottom, #000000 0%,#1051c8f0 100%);
+	background: linear-gradient(to right, #1b3e7df0 55%, rgba(27, 62, 125, 0) 65%), url('../images/graph-white.png'), linear-gradient(to bottom, #000000 0%,#1051c8f0 100%);
 	background-repeat: no-repeat;
 	background-position: top right;
   }
