@@ -22,6 +22,11 @@ jobs:
         run: |
           sudo apt-get -y install gettext libjpeg-turbo-progs optipng python3-pip python3-virtualenv subversion
 
+      - uses: actions/cache@v2
+        with:
+          path: ${{ env.pythonLocation }}
+          key: ${{ env.pythonLocation }}-${{ hashFiles('setup.py') }}-${{ hashFiles('requirements.txt') }}
+
       - name: Install pelican & pelican plugins
         run: |
           pip install -r requirements.txt
