@@ -57,5 +57,5 @@ jobs:
           server: irc.libera.chat
           nickname: github-actions-notify
           message:
-            ${{ github.actor }} deployed ${{ github.event.compare }} to the website (${{ env.GITHUB_REF }}).
+            ${{ github.actor }} deployed ${{ github.event.compare }} to the website (${{ github.event.ref }}).
 
