@@ -39,6 +39,7 @@ jobs:
             export SITEURL="https://freenetproject.org/"
           else
             export SITEURL="https://staging.freenetproject.org/"
+          fi
           make html
 
       - name: Configure AWS credentials
