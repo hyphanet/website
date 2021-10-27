@@ -36,9 +36,9 @@ jobs:
         run: |
           if [[ $GITHUB_REF == "refs/heads/2016-redesign" ]]
           then
-            export SITEURL="https://freenetproject.org/"
-          else
             export SITEURL="https://staging.freenetproject.org/"
+          else
+            export SITEURL="https://freenetproject.org/"
           fi
           make html
 
