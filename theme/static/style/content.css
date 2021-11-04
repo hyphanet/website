@@ -342,8 +342,7 @@ line-height: 39.901px;/* Approximation due to font substitution */
 
 #news ol li p {
 	color:  #515862;
-	font-size: 11px;
-	line-height: 15px;
+	font-size: initial;
 	width: auto;
 	margin-top: 1em;
 }

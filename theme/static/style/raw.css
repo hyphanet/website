@@ -396,9 +396,8 @@ transform: scaleY(1.0004);/* width and height properties ommitted due to transfo
 
 #news ol li p {
 	color:  #515862;
-	font-size: 11px;
+	font-size: initial;
 	font-weight: 400;
-	line-height: 15px;
 	width: auto;
 	transform: scaleY(1.0004);/* width and height properties ommitted due to transform */
 }
