@@ -52,7 +52,7 @@ Steps:
 
 ![]({filename}/assets/img/install/1-langselect-windows.png)
 
-Чтобы использовать Freenet необходима версия Windows XP или более новая.
+Чтобы использовать Freenet необходима версия Windows 7 SP 1 или более новая.
 
 ## OS X
 
