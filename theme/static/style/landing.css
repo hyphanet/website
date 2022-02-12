@@ -10,7 +10,7 @@ body > div > header h1:before {
 @media only screen and (max-width : 720px) {
 	body > div > header h1:before {
 		content: url('../images/logo-medium.png');
-		padding-bottom: -1.25em;
+		margin-bottom: -1.25em;
 	}
 }
 
