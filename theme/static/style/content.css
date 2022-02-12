@@ -126,6 +126,7 @@ nav a.current {
 
 body > div > header {
 	color:  #fafbfc;
+	margin-top: -40px; /* get the text closer to the top. */
 }
 
 body > div:nth-of-type(1) {
