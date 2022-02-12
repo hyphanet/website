@@ -914,6 +914,6 @@ master.keys. Freenet также создает временные файлы д�
 Многие из разработчиков и пользователей Freenet есть в IRC [IRC](
 https://en.wikipedia.org/wiki/IRC) канале #freenet on irc.libera.chat.
 
-<a href="https://web.libera.chat/?nick=FollowTheRabbit|?#freenet" id="chatlink" class="btn button-custom btn-custom-two">Пообщайтесь с нами</a>
+<a href="https://web.libera.chat/?nick=FollowRabbit|?#freenet" id="chatlink" class="btn button-custom btn-custom-two">Пообщайтесь с нами</a>
 
 ## [Установка](http://freesocial.draketo.de/)
