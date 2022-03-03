@@ -884,7 +884,7 @@ and write your own distributed network that suits your desires.
 ### What private data does Freenet store? How do I get rid of it? How can I secure my computer so I am safe when running Freenet?
 
 First of all, we **strongly** suggest that you install Freenet inside an
-encrypted drive using, for example, [Truecrypt](http://www.truecrypt.org/).
+encrypted drive using, for example, [Veracrypt](https://veracrypt.fr/).
 It is not possible for Freenet to prevent all leaks of private data,
 especially if you download media files etc. Even if you only browse freesites
 and use the chat plugins, there will still be potentially incriminating data
@@ -914,7 +914,7 @@ Because not all users will have installed encrypted drives at the time when
 they first install Freenet, Freenet itself attempts to encrypt all the
 potentially incriminating data that it stores on disk. Details are below but
 as explained, leaks are inevitable: you really should [encrypt your disks!](
-http://www.truecrypt.org/)
+https://veracrypt.fr/)
 
 The main datastore does not store data you request or insert (or that is
 requested or inserted by nearby nodes), because it can be probed by other
