@@ -77,8 +77,7 @@ example **OpenJDK** which can be obtained via your
 [package manager](https://en.wikipedia.org/wiki/Package_manager) or from
 [https://adoptopenjdk.net](https://adoptopenjdk.net).
 
-Java version 9 or higher is required. You should keep Java up to date
-to avoid problems and for better performance.
+Java version 9 or higher is required.
 
 If there are problems we recommend the following command lines. They
 require wget which can be installed with a package manager, such as
