@@ -4,16 +4,16 @@ lang: en
 [url_lysator]: http://www.lysator.liu.se/index_en.html
 [url_mirror_lysator]: http://ftp.lysator.liu.se/pub/freenet/
 [url_mirror_lysator_tor]: http://lysator7eknrfl47rlyxvgeamrv7ucefgrrlhk7rouv3sna25asetwid.onion/pub/freenet/
-[url_win_installer]: https://github.com/freenet/fred/releases/download/build01492/FreenetInstaller-1492.exe
-[url_win_installer_sig]: https://github.com/freenet/fred/releases/download/build01492/FreenetInstaller-1492.exe.sig
+[url_win_installer]: https://github.com/freenet/fred/releases/download/build01493/FreenetInstaller-1493.exe
+[url_win_installer_sig]: https://github.com/freenet/fred/releases/download/build01493/FreenetInstaller-1493.exe.sig
 [url_mac_installer]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip
 [url_mac_installer_sig]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip.sig
-[url_nix_installer]: https://github.com/freenet/fred/releases/download/build01492/new_installer_offline_1492.jar
-[url_nix_installer_sig]: https://github.com/freenet/fred/releases/download/build01492/new_installer_offline_1492.jar.sig
-[url_jnlp_installer]: {filename}/assets/jnlp/freenet.jnlp?1492
+[url_nix_installer]: https://github.com/freenet/fred/releases/download/build01493/new_installer_offline_1493.jar
+[url_nix_installer_sig]: https://github.com/freenet/fred/releases/download/build01493/new_installer_offline_1493.jar.sig
+[url_jnlp_installer]: {filename}/assets/jnlp/freenet.jnlp?1493
 [url_keyring]: #keyring
 
-To access Freenet, you first need to install the main application.
+To access Freenet, you need to install the main application.
 Freenet will run in the background and you can use your browser to change settings and access content.
 There are other applications that you can install at a later time to add more functionality.
 
@@ -88,7 +88,7 @@ If there are problems we recommend the following command lines. They
 require wget which can be installed with a package manager, such as
 `sudo apt-get install wget` on Debian or Ubuntu.
 
-    wget 'https://github.com/freenet/fred/releases/download/build01492/new_installer_offline_1492.jar' -O new_installer_offline.jar;
+    wget 'https://github.com/freenet/fred/releases/download/build01493/new_installer_offline_1493.jar' -O new_installer_offline.jar;
     java -jar new_installer_offline.jar;
 
 To install on a headless system, or if you get fontconfig problems, use the `-console` option and follow the prompts:
@@ -214,8 +214,8 @@ and secure, and we recommend people use it. However, if something is severely
 broken, you can upgrade your node manually from our servers:
 
 * Windows users can upgrade to the latest-stable Freenet release
-  by running "update.cmd" in the Freenet directory.
-* OS X, GNU/Linux, or other POSIX users may upgrade by running the update.sh
+  by running `update.cmd` in the Freenet directory.
+* OS X, GNU/Linux, or other POSIX users may upgrade by running the `update.sh`
   shell script in the Freenet directory.
 
 [url_freesocial]: http://freesocial.draketo.de/
