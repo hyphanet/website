@@ -64,7 +64,7 @@ Freenet requires OS X 10.8 or later.
 
 ## GNU/Linux & POSIX
 
-Get the installer [Java-based installer][url_nix_installer] ([gpg signature][url_nix_installer_sig]; [keyring][url_keyring]).
+Get the [Java-based installer][url_nix_installer] ([gpg signature][url_nix_installer_sig]; [keyring][url_keyring]).
 
 [Download Freenet for GNU/Linux & POSIX][url_nix_installer]{: .download-button}
 
