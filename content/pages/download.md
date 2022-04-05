@@ -13,10 +13,6 @@ lang: en
 [url_jnlp_installer]: {filename}/assets/jnlp/freenet.jnlp?1493
 [url_keyring]: #keyring
 
-To access Freenet, you need to install the main application.
-Freenet will run in the background and you can use your browser to change settings and access content.
-There are other applications that you can install at a later time to add more functionality.
-
 <!--
 Steps:
 
