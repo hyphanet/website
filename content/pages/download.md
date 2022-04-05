@@ -79,8 +79,8 @@ example **OpenJDK** which can be obtained via your
 
 Java version 9 or higher is required.
 
-If there are problems we recommend the following command lines. They
-require wget which can be installed with a package manager, such as
+If there are problems, use the command line. This requires
+wget which can be installed with a package manager, such as
 `sudo apt-get install wget` on Debian or Ubuntu.
 
     wget 'https://github.com/freenet/fred/releases/download/build01493/new_installer_offline_1493.jar' -O new_installer_offline.jar;
@@ -91,15 +91,11 @@ To install on a headless system, or if you get fontconfig problems, use the `-co
     java -jar new_installer_offline.jar -console;
 
 
-There is also a [Java Web Start installer](url_jnlp_installer) which
-used to be more convenient but might not work on your distribution.
+**Note**: We would love to have packages for most distributions.
+There is a [package for Gentoo](https://packages.gentoo.org/packages/net-p2p/freenet), and
+a preliminary but un-maintained [Debian package](https://github.com/freenet/debian).
 
-**Note**: Many GNU/Linux distributions no longer ship with Java Web Start
-enabled. We would like to make distribution packages for easier installation,
-and have an in-development (and not maintained) [Debian package](
-https://github.com/freenet/debian), but haven't gotten it stable or made
-official ones for other distributions. If you are a developer and would like
-to join us and help it would be much appreciated!
+If you would like to help, it would be much appreciated!
 
 ## Release Mirror
 
