@@ -96,6 +96,11 @@ There is a [package for Gentoo](https://packages.gentoo.org/packages/net-p2p/fre
 a preliminary but un-maintained [Debian package](https://github.com/freenet/debian).
 If you would like to help, it would be much appreciated!
 
+**Note**: On some systems (including OpenBSD) the wrapper does not
+work. You can start Freenet manually there, but you then don’t have
+auto-updates. After installation you find the relevant classpath
+arguments in wrapper.conf. Then call java directly with a command like `java -cp wrapper.jar:bcprov-jdk15on-1.59.jar:freenet-ext.jar:jna-4.2.2.jar:jna-platform-4.2.2.jar:freenet.jar.new -Dnetworkaddress.cache.ttl=0 -Dnetworkaddress.cache.negative.ttl=0 -Djava.net.preferIPv4Stack=true -Djava.io.tmpdir=./tmp/ -Xss512k freenet.node.NodeStarter`
+
 ## Release Mirror
 
 If you cannot access our official releases, you can try the
