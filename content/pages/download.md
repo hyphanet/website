@@ -4,13 +4,13 @@ lang: en
 [url_lysator]: http://www.lysator.liu.se/index_en.html
 [url_mirror_lysator]: http://ftp.lysator.liu.se/pub/freenet/
 [url_mirror_lysator_tor]: http://lysator7eknrfl47rlyxvgeamrv7ucefgrrlhk7rouv3sna25asetwid.onion/pub/freenet/
-[url_win_installer]: https://github.com/freenet/fred/releases/download/build01493/FreenetInstaller-1493.exe
-[url_win_installer_sig]: https://github.com/freenet/fred/releases/download/build01493/FreenetInstaller-1493.exe.sig
+[url_win_installer]: https://github.com/freenet/fred/releases/download/build01494/FreenetInstaller-1494.exe
+[url_win_installer_sig]: https://github.com/freenet/fred/releases/download/build01494/FreenetInstaller-1494.exe.sig
 [url_mac_installer]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip
 [url_mac_installer_sig]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip.sig
-[url_nix_installer]: https://github.com/freenet/fred/releases/download/build01493/new_installer_offline_1493.jar
-[url_nix_installer_sig]: https://github.com/freenet/fred/releases/download/build01493/new_installer_offline_1493.jar.sig
-[url_jnlp_installer]: {filename}/assets/jnlp/freenet.jnlp?1493
+[url_nix_installer]: https://github.com/freenet/fred/releases/download/build01494/new_installer_offline_1494.jar
+[url_nix_installer_sig]: https://github.com/freenet/fred/releases/download/build01494/new_installer_offline_1494.jar.sig
+[url_jnlp_installer]: {filename}/assets/jnlp/freenet.jnlp?1494
 [url_keyring]: #keyring
 
 <!--
@@ -83,7 +83,7 @@ If there are problems, use the command line. This requires
 wget which can be installed with a package manager, such as
 `sudo apt-get install wget` on Debian or Ubuntu.
 
-    wget 'https://github.com/freenet/fred/releases/download/build01493/new_installer_offline_1493.jar' -O new_installer_offline.jar;
+    wget 'https://github.com/freenet/fred/releases/download/build01494/new_installer_offline_1494.jar' -O new_installer_offline.jar;
     java -jar new_installer_offline.jar;
 
 To install on a headless system, or if you get fontconfig problems, use the `-console` option and follow the prompts:
