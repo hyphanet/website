@@ -300,8 +300,8 @@ packaged it cleanly in Gentoo.
 
 Arne Babenhauserheide
 
-: The current maintainer of pyFreenet and infocalypse. He also writes
-articles and tutorials for Freenet.
+: The current release manager of Freenet and maintainer of pyFreenet
+and infocalypse. He also writes articles and tutorials for Freenet.
 
 
 #### The translators
