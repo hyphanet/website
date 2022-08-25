@@ -280,6 +280,7 @@ line-height: 39.901px;/* Approximation due to font substitution */
     max-width: 42em;
     padding-left: 1em;
     padding-right: 0.5em; /* smaller that left, because the text is left-aligned. This improves the visual appearance of being in the middle. */
+    background-color: white;
 }
 
 #features h3 {
