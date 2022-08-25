@@ -26,4 +26,6 @@ pseudonym through Freenet forums such as [FMS](http://freesocial.draketo.de/fms_
 
 ## [Translation](https://wiki.freenetproject.org/Translation)
 
-## [Bug Tracker](https://freenet.mantishub.io/) hosted by [MantisHub](https://www.mantishub.com)
+## [Bug Tracker](https://freenet.mantishub.io/)
+
+hosted by [MantisHub](https://www.mantishub.com)
