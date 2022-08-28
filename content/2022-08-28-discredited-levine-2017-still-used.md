@@ -47,7 +47,7 @@ reach it through many **false assumptions**:
     
     -   the rate of **routing-changes** within Freenet (for example because a
         node on the path went offline). If a request from a given peer is
-        received both from HTL 17 and from HTL 16 then routing changed,
+        received both from HTL 17 and from HTL 16 (or 18 and 16) then routing changed,
         otherwise this should not happen.
     
     Their **false positives rate** when measuring with only one node is
