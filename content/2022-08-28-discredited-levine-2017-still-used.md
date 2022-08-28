@@ -34,7 +34,8 @@ reach it through many **false assumptions**:
     which is not the rare case but **the normal case**.
 
 -   They assume that they only get a false positive, if a request for a
-    given file reached them with both HTL 18/17 and HTL 16. But the
+    given file reached them with both HTL 18 and HTL 16 or with both HTL 17 and HTL 16.
+    But the
     routing algorithm within Freenet causes them to **almost always**
     receive requests from a given node **over the same route**. So they
     get the same HTL, regardless of the actual number of hops from the
