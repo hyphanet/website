@@ -5,16 +5,15 @@ date:   2022-08-28
 categories: news
 ---
 In april 2020 the approach [by Levine et al.](http://ceur-ws.org/Vol-1873/IWPE17_paper_12.pdf) to track downloaders was
-thoroughly debunked and proven to be wrong:
+proven to be wrong:
 *Their false positives rate is wrong, their math is wrong, and their model is wrong.
 Therefore results you get when using their method are false.* Yet this
 approach is still used two years later to get warrants against Freenet users.
 
-The Levine group themselves even changed their method in response
-(they posted this to conference proceedings, not peer-reviewed, and
-unlikely to pass peer-review because it contains claims that are
-obviously false), but they still use the 2017 method for arguments in
-court.
+The Levine group themselves changed their method in response (they
+posted this to conference proceedings, not peer-reviewed, and unlikely
+to pass peer-review because it contains claims that are obviously
+false), but they still use the 2017 method for arguments in court.
 
 Therefore we are now providing the arguments that disprove it directly
 on the Freenet Project website to ensure that they are found when
@@ -38,8 +37,8 @@ reach it through many **false assumptions**:
     But the
     routing algorithm within Freenet causes them to **almost always**
     receive requests from a given node **over the same route**. So they
-    get the same HTL, regardless of the actual number of hops from the
-    source. Therefore Their 2.3% false positives rate contains a mixture
+    will have the same HTL, regardless of the number of hops from the
+    source to an observer. Therefore Their 2.3% false positives rate contains a mixture
     of
     
     -   the probability of **two people** requesting the file in the same
@@ -70,13 +69,17 @@ They expect even share peer selection, but Freenet does not use even share.
 
 # Wrong model
 
-And their **model** of how measurement works **is wrong**:
+And their **model** of routing in Freenet, required to understand how
+their measurement works and what it observes, **is wrong**:
 
 > a simple expected fraction of 1/degree for the adjacent and
 > (1/degree)² for the two-hop case.
 
 This does not take the degree of the measuring node into account,
 therefore it is not a model of routing in Freenet.
+
+This is in addition to the wrong math, an error they repeat here:
+Freenet does not use even sare. Assuming scaling by inverse degree is wrong.
 
 
 # Summary (TLDR)
