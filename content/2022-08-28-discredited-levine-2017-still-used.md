@@ -105,7 +105,7 @@ positives rate in Freenet, read the article [Statistical results without false p
 
 While the Levine group has a false positives check, their check is
 wrong. They measured the wrong metric. We have explained patiently
-where the Levine group made mistakes. That they still claim in court
-that their 2017 method is robust even after they changed their
-approach themselves is hard to understand when assuming scientific
-integrity.
+where the Levine group made mistakes. It is hard to understand when
+assuming scientific integrity that they still claim in court that
+their 2017 method is robust even after they changed their approach
+themselves.
