@@ -98,7 +98,7 @@ at least they tried.
 That the Levine-team **did not contact Freenet developers** prior to
 publication is **inexcusable**, though. It’s like publishing a paper based
 on evaluations of particle beams from CERN without ever talking to
-someone from CERN. Can it be so hard to write an email to press -at-
+someone from CERN. The minimum of due dilligence would be to write an email to press -at-
 freenetproject.org saying 
 *“Hi, we found a method to track Freenet downloaders and drafted a paper based on that. Could you have a look to see whether we missed something?”*
 
