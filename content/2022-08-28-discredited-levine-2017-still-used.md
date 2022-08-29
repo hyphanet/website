@@ -79,7 +79,7 @@ This does not take the degree of the measuring node into account,
 therefore it is not a model of routing in Freenet.
 
 This is in addition to the wrong math, an error they repeat here:
-Freenet does not use even sare. Assuming scaling by inverse degree is wrong.
+Freenet does not use even share. Assuming scaling by inverse degree is wrong.
 
 
 # Summary (TLDR)
