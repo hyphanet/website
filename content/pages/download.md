@@ -12,7 +12,7 @@ lang: en
 [url_nix_installer_sig]: https://ftp.lysator.liu.se/pub/freenet/fred-releases/build01494/new_installer_offline_1494.jar.sig
 [url_jnlp_installer]: {filename}/assets/jnlp/freenet.jnlp?1494
 [url_keyring]: #keyring
-[github_release_url]: https://github.com/freenet/fred/releases/download/build01494/
+[github_release_url]: https://github.com/freenet/fred/releases/tag/build01494/
 
 <!--
 Steps:
