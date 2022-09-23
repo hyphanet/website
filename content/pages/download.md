@@ -1,17 +1,18 @@
 ---
 title: Download
 lang: en
-[url_lysator]: http://www.lysator.liu.se/index_en.html
-[url_mirror_lysator]: http://ftp.lysator.liu.se/pub/freenet/
+[url_lysator]: https://www.lysator.liu.se/index_en.html
+[url_mirror_lysator]: https://ftp.lysator.liu.se/pub/freenet/
 [url_mirror_lysator_tor]: http://lysator7eknrfl47rlyxvgeamrv7ucefgrrlhk7rouv3sna25asetwid.onion/pub/freenet/
-[url_win_installer]: https://github.com/freenet/fred/releases/download/build01494/FreenetInstaller-1494.exe
-[url_win_installer_sig]: https://github.com/freenet/fred/releases/download/build01494/FreenetInstaller-1494.exe.sig
+[url_win_installer]: https://ftp.lysator.liu.se/pub/freenet/fred-releases/build01494/FreenetInstaller-1494.exe
+[url_win_installer_sig]: https://ftp.lysator.liu.se/pub/freenet/fred-releases/build01494/FreenetInstaller-1494.exe.sig
 [url_mac_installer]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip
 [url_mac_installer_sig]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip.sig
-[url_nix_installer]: https://github.com/freenet/fred/releases/download/build01494/new_installer_offline_1494.jar
-[url_nix_installer_sig]: https://github.com/freenet/fred/releases/download/build01494/new_installer_offline_1494.jar.sig
+[url_nix_installer]: https://ftp.lysator.liu.se/pub/freenet/fred-releases/build01494/new_installer_offline_1494.jar
+[url_nix_installer_sig]: https://ftp.lysator.liu.se/pub/freenet/fred-releases/build01494/new_installer_offline_1494.jar.sig
 [url_jnlp_installer]: {filename}/assets/jnlp/freenet.jnlp?1494
 [url_keyring]: #keyring
+[github_release_url]: https://github.com/freenet/fred/releases/download/build01494/
 
 <!--
 Steps:
@@ -103,9 +104,11 @@ arguments in wrapper.conf. Then call java directly with a command like `java -cp
 
 ## Release Mirror
 
-If you cannot access our official releases, you can try the
+Our releases are provided via Lysator. You can try the
 [http mirror][url_mirror_lysator] or the [tor mirror][url_mirror_lysator_tor] 
 provided by [Lysator][url_lysator].
+
+Alternatively you can use the [github release][github_release_url].
 
 ## Mirrored installation
 
