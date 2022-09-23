@@ -84,7 +84,7 @@ If there are problems, use the command line. This requires
 wget which can be installed with a package manager, such as
 `sudo apt-get install wget` on Debian or Ubuntu.
 
-    wget 'https://github.com/freenet/fred/releases/download/build01494/new_installer_offline_1494.jar' -O new_installer_offline.jar;
+    wget 'https://ftp.lysator.liu.se/pub/freenet/fred-releases/build01494/new_installer_offline_1494.jar' -O new_installer_offline.jar;
     java -jar new_installer_offline.jar;
 
 To install on a headless system, or if you get fontconfig problems, use the `-console` option and follow the prompts:
