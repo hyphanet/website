@@ -27,6 +27,10 @@
 	background: url('../images/social-white.png') no-repeat 60%;
 }
 
+.social a[href*="floss.social"] {
+	background: url('../images/social-white.png') no-repeat 100%;
+}
+
 footer .social {
 	margin-top: 0px;
 }
