@@ -29,7 +29,7 @@ Steps:
 Download and install Freenet:
 
 * [For Windows](#windows)
-* [For Mac OSX](#os-x)
+* [For macOS](#macos)
 * [For GNU/Linux & POSIX](#gnulinux-posix)
 
 *Freenet is free and open source software available under GPLv2+. The source code is on [GitHub](https://github.com/freenet/fred).*
@@ -48,20 +48,20 @@ web-based user interface.
 
 Freenet requires Windows 7 SP1 or later.
 
-## OS X
+## macOS
 
 Download and run [the installer][url_mac_installer] ([gpg signature][url_mac_installer_sig]; [keyring][url_keyring]).
 
 **The installer currently has some problems. If it fails, use the GNU/Linux installer below.**
 
-[Download Freenet for OSX][url_mac_installer]{: .download-button}
+[Download Freenet for macOS][url_mac_installer]{: .download-button}
 
 It will automatically install Freenet and other required components for you.
 When done, your default browser will automatically open up to Freenet's web-based user interface.
 
 ![]({filename}/assets/img/mactray/osx_installer_step2_transparent.png)
 
-Freenet requires OS X 10.8 or later.
+Freenet requires macOS 10.8 or later.
 
 ## GNU/Linux & POSIX
 
@@ -131,7 +131,7 @@ this!
 ## Using Freenet
 
 Please try the [step by step guide][url_freesocial] to setting up Freenet and various Freenet apps,
-especially if installing on OS X.
+especially if installing on macOS.
 We are not responsible for unofficial third party apps it recommends (including FMS),
 but many Freenet users and developers use them.
 
@@ -213,7 +213,7 @@ broken, you can upgrade your node manually from our servers:
 
 * Windows users can upgrade to the latest-stable Freenet release
   by running `update.cmd` in the Freenet directory.
-* OS X, GNU/Linux, or other POSIX users may upgrade by running the `update.sh`
+* macOS, GNU/Linux, or other POSIX users may upgrade by running the `update.sh`
   shell script in the Freenet directory.
 
 [url_freesocial]: http://freesocial.draketo.de/
