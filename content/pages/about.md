@@ -231,18 +231,6 @@ Storage and Retrieval System". Ian started the Freenet Project around July of
 1999, and continues to coordinate the project.
 Learn more about Ian on his [personal website](http://blog.locut.us/).
 
-Matthew Toseland
-
-: Matthew has been working on Freenet since before the 0.5 release. His work
-and that of others has resulted in dramatic improvements to the performance
-and stability of the network.
-
-Oskar Sandberg
-
-: Oskar was also one of the earliest contributors to the Freenet Project,
-and has made some important theoretical breakthroughs that lead to the
-beginning of Freenet 0.7, see the papers page.
-
 Florent Daignière
 
 : Since 2003, Florent has improved various aspects of the software and
@@ -250,12 +238,6 @@ performed the project's system administration. In his day job, he is the
 Technical Director of [Matta Consulting](https://www.trustmatta.com),
 a boutique security consultancy firm and currently works on
  [safepass.me](https://safepass.me), an Active Directory password filter.
-
-Michael Rogers
-
-: Michael has mostly contributed detailed simulations as part of the Google
-Summer of Code. He has been helpful in designing the [new transport layer](
-https://old-wiki.freenetproject.org/NewTransportLayer).
 
 Steve Dougherty
 
@@ -276,16 +258,6 @@ David (Bombe) Roden
 Network over Freenet.
 
 
-Ximin Luo
-
-: A debian developer who currently works on packaging Freenet.
-
-
-Bert Massop
-
-: Works on the Freenet core and wherever there is need.
-
-
 TheSeeker
 
 : A long term contributor who, among other things, helps keep the
@@ -300,8 +272,8 @@ packaged it cleanly in Gentoo.
 
 Arne Babenhauserheide
 
-: The current maintainer of pyFreenet and infocalypse. He also writes
-articles and tutorials for Freenet.
+: The current release manager of Freenet and maintainer of pyFreenet
+and infocalypse. He also writes articles and tutorials for Freenet.
 
 
 #### The translators
@@ -341,6 +313,33 @@ in Freenet development.
 
 
 ### Previous Contributors
+
+Matthew Toseland
+
+: Matthew has been working on Freenet since before the 0.5 release. His work
+and that of others has resulted in dramatic improvements to the performance
+and stability of the network.
+
+Oskar Sandberg
+
+: Oskar was also one of the earliest contributors to the Freenet Project,
+and has made some important theoretical breakthroughs that lead to the
+beginning of Freenet 0.7, see the papers page.
+
+Michael Rogers
+
+: Michael has mostly contributed detailed simulations as part of the Google
+Summer of Code. He has been helpful in designing the [new transport layer](
+https://old-wiki.freenetproject.org/NewTransportLayer).
+
+Ximin Luo
+
+: A debian developer who currently worked on packaging Freenet.
+
+
+Bert Massop
+
+: Works on the Freenet core and wherever there is need.
 
 Thomas Markus
 

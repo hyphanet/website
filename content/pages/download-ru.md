@@ -5,13 +5,13 @@ lang: ru
 [url_lysator]: http://www.lysator.liu.se/index_en.html
 [url_mirror_lysator]: http://ftp.lysator.liu.se/pub/freenet/
 [url_mirror_lysator_tor]: http://lysator7eknrfl47rlyxvgeamrv7ucefgrrlhk7rouv3sna25asetwid.onion/pub/freenet/
-[url_win_installer]: https://github.com/freenet/fred/releases/download/build01486/FreenetInstaller-1486.exe
-[url_win_installer_sig]: https://github.com/freenet/fred/releases/download/build01486/FreenetInstaller-1486.exe.sig
+[url_win_installer]: https://github.com/freenet/fred/releases/download/build01494/FreenetInstaller-1494.exe
+[url_win_installer_sig]: https://github.com/freenet/fred/releases/download/build01494/FreenetInstaller-1494.exe.sig
 [url_mac_installer]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip
 [url_mac_installer_sig]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip.sig
-[url_nix_installer]: https://github.com/freenet/fred/releases/download/build01486/new_installer_offline_1486.jar
-[url_nix_installer_sig]: https://github.com/freenet/fred/releases/download/build01486/new_installer_offline_1486.jar.sig
-[url_jnlp_installer]: {filename}/assets/jnlp/freenet.jnlp?1486
+[url_nix_installer]: https://github.com/freenet/fred/releases/download/build01494/new_installer_offline_1494.jar
+[url_nix_installer_sig]: https://github.com/freenet/fred/releases/download/build01494/new_installer_offline_1494.jar.sig
+[url_jnlp_installer]: {filename}/assets/jnlp/freenet.jnlp?1494
 [url_keyring]: #keyring
 
 Чтобы получить доступ к Freenet, сначала необходимо установить основное приложение. 
@@ -52,7 +52,7 @@ Steps:
 
 ![]({filename}/assets/img/install/1-langselect-windows.png)
 
-Чтобы использовать Freenet необходима версия Windows XP или более новая.
+Чтобы использовать Freenet необходима версия Windows 7 SP 1 или более новая.
 
 ## OS X
 
@@ -91,7 +91,7 @@ http://www.java.com/](http://www.java.com/).
 
 Откройте терминал и запустите:
 
-    wget 'https://github.com/freenet/fred/releases/download/build01486/new_installer_offline_1486.jar' -O new_installer_offline.jar;
+    wget 'https://github.com/freenet/fred/releases/download/build01494/new_installer_offline_1494.jar' -O new_installer_offline.jar;
     java -jar new_installer_offline.jar;
 
 Для установки в хедлесс системе или в случае возникновения проблем с fontconfig

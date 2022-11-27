@@ -1,21 +1,18 @@
 ---
 title: Download
 lang: en
-[url_lysator]: http://www.lysator.liu.se/index_en.html
-[url_mirror_lysator]: http://ftp.lysator.liu.se/pub/freenet/
+[url_lysator]: https://www.lysator.liu.se/index_en.html
+[url_mirror_lysator]: https://ftp.lysator.liu.se/pub/freenet/
 [url_mirror_lysator_tor]: http://lysator7eknrfl47rlyxvgeamrv7ucefgrrlhk7rouv3sna25asetwid.onion/pub/freenet/
-[url_win_installer]: https://github.com/freenet/fred/releases/download/build01492/FreenetInstaller-1492.exe
-[url_win_installer_sig]: https://github.com/freenet/fred/releases/download/build01492/FreenetInstaller-1492.exe.sig
+[url_win_installer]: https://ftp.lysator.liu.se/pub/freenet/fred-releases/build01494/FreenetInstaller-1494.exe
+[url_win_installer_sig]: https://ftp.lysator.liu.se/pub/freenet/fred-releases/build01494/FreenetInstaller-1494.exe.sig
 [url_mac_installer]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip
 [url_mac_installer_sig]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip.sig
-[url_nix_installer]: https://github.com/freenet/fred/releases/download/build01492/new_installer_offline_1492.jar
-[url_nix_installer_sig]: https://github.com/freenet/fred/releases/download/build01492/new_installer_offline_1492.jar.sig
-[url_jnlp_installer]: {filename}/assets/jnlp/freenet.jnlp?1492
+[url_nix_installer]: https://ftp.lysator.liu.se/pub/freenet/fred-releases/build01494/new_installer_offline_1494.jar
+[url_nix_installer_sig]: https://ftp.lysator.liu.se/pub/freenet/fred-releases/build01494/new_installer_offline_1494.jar.sig
+[url_jnlp_installer]: {filename}/assets/jnlp/freenet.jnlp?1494
 [url_keyring]: #keyring
-
-To access Freenet, you first need to install the main application.
-Freenet will run in the background and you can use your browser to change settings and access content.
-There are other applications that you can install at a later time to add more functionality.
+[github_release_url]: https://github.com/freenet/fred/releases/tag/build01494/
 
 <!--
 Steps:
@@ -68,7 +65,7 @@ Freenet requires macOS 10.8 or later.
 
 ## GNU/Linux & POSIX
 
-Get the installer [Java-based installer][url_nix_installer] ([gpg signature][url_nix_installer_sig]; [keyring][url_keyring]).
+Get the [Java-based installer][url_nix_installer] ([gpg signature][url_nix_installer_sig]; [keyring][url_keyring]).
 
 [Download Freenet for GNU/Linux & POSIX][url_nix_installer]{: .download-button}
 
@@ -81,14 +78,13 @@ example **OpenJDK** which can be obtained via your
 [package manager](https://en.wikipedia.org/wiki/Package_manager) or from
 [https://adoptopenjdk.net](https://adoptopenjdk.net).
 
-Java version 8 or higher is required. You should keep Java up to date
-to avoid problems and for better performance.
+Java version 9 or higher is required.
 
-If there are problems we recommend the following command lines. They
-require wget which can be installed with a package manager, such as
+If there are problems, use the command line. This requires
+wget which can be installed with a package manager, such as
 `sudo apt-get install wget` on Debian or Ubuntu.
 
-    wget 'https://github.com/freenet/fred/releases/download/build01492/new_installer_offline_1492.jar' -O new_installer_offline.jar;
+    wget 'https://ftp.lysator.liu.se/pub/freenet/fred-releases/build01494/new_installer_offline_1494.jar' -O new_installer_offline.jar;
     java -jar new_installer_offline.jar;
 
 To install on a headless system, or if you get fontconfig problems, use the `-console` option and follow the prompts:
@@ -96,21 +92,23 @@ To install on a headless system, or if you get fontconfig problems, use the `-co
     java -jar new_installer_offline.jar -console;
 
 
-There is also a [Java Web Start installer](url_jnlp_installer) which
-used to be more convenient but might not work on your distribution.
+**Note**: We would love to have packages for most distributions.
+There is a [package for Gentoo](https://packages.gentoo.org/packages/net-p2p/freenet), and
+a preliminary but un-maintained [Debian package](https://github.com/freenet/debian).
+If you would like to help, it would be much appreciated!
 
-**Note**: Many GNU/Linux distributions no longer ship with Java Web Start
-enabled. We would like to make distribution packages for easier installation,
-and have an in-development (and not maintained) [Debian package](
-https://github.com/freenet/debian), but haven't gotten it stable or made
-official ones for other distributions. If you are a developer and would like
-to join us and help it would be much appreciated!
+**Note**: On some systems (including OpenBSD) the wrapper does not
+work. You can start Freenet manually there, but you then don’t have
+auto-updates. After installation you find the relevant classpath
+arguments in wrapper.conf. Then call java directly with a command like `java -cp wrapper.jar:bcprov-jdk15on-1.59.jar:freenet-ext.jar:jna-4.2.2.jar:jna-platform-4.2.2.jar:freenet.jar.new -Dnetworkaddress.cache.ttl=0 -Dnetworkaddress.cache.negative.ttl=0 -Djava.net.preferIPv4Stack=true -Djava.io.tmpdir=./tmp/ -Xss512k freenet.node.NodeStarter`
 
 ## Release Mirror
 
-If you cannot access our official releases, you can try the
+Our releases are provided via Lysator. You can try the
 [http mirror][url_mirror_lysator] or the [tor mirror][url_mirror_lysator_tor] 
 provided by [Lysator][url_lysator].
+
+Alternatively you can use the [github release][github_release_url].
 
 ## Mirrored installation
 
@@ -214,8 +212,8 @@ and secure, and we recommend people use it. However, if something is severely
 broken, you can upgrade your node manually from our servers:
 
 * Windows users can upgrade to the latest-stable Freenet release
-  by running "update.cmd" in the Freenet directory.
-* macOS, GNU/Linux, or other POSIX users may upgrade by running the update.sh
+  by running `update.cmd` in the Freenet directory.
+* macOS, GNU/Linux, or other POSIX users may upgrade by running the `update.sh`
   shell script in the Freenet directory.
 
 [url_freesocial]: http://freesocial.draketo.de/

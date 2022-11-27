@@ -84,7 +84,8 @@ ul#markdown-toc li ul li a:hover:before {*/
 }*/
 
 main {
-	margin-left: 240px;
+    margin-left: 240px;
+    max-width: 50em;
 }
 
 footer {
