@@ -46,7 +46,11 @@ web-based user interface.
 
 ![]({filename}/assets/img/install/1-langselect-windows.png)
 
-Freenet requires Windows 7 SP1 or later.
+Freenet requires Windows 8.1 or later.
+**Note**: Please note that once a Windows version reaches end of life, we do not guarantee
+any support, however it is not mandatory that it will not work on an older Windows.
+We always recommend you to take security very seriously, and run up to date software
+that receives security updates, to be on the safe side.
 
 ## macOS
 
@@ -97,10 +101,11 @@ There is a [package for Gentoo](https://packages.gentoo.org/packages/net-p2p/fre
 a preliminary but un-maintained [Debian package](https://github.com/freenet/debian).
 If you would like to help, it would be much appreciated!
 
-**Note**: On some systems (including OpenBSD) the wrapper does not
-work. You can start Freenet manually there, but you then don’t have
+**Note**: On some systems (including FreeBSD and OpenBSD) the wrapper does
+not work, unless you install additional software packages and configure it.
+You can start Freenet manually there, but you then don’t have
 auto-updates. After installation you find the relevant classpath
-arguments in wrapper.conf. Then call java directly with a command like `java -cp wrapper.jar:bcprov-jdk15on-1.59.jar:freenet-ext.jar:jna-4.2.2.jar:jna-platform-4.2.2.jar:freenet.jar.new -Dnetworkaddress.cache.ttl=0 -Dnetworkaddress.cache.negative.ttl=0 -Djava.net.preferIPv4Stack=true -Djava.io.tmpdir=./tmp/ -Xss512k freenet.node.NodeStarter`
+arguments in wrapper.conf. Then call java directly with a command like `java -cp wrapper.jar:bcprov-jdk15on-1.59.jar:freenet-ext.jar:jna-4.2.2.jar:jna-platform-4.2.2.jar:freenet.jar.new -Dnetworkaddress.cache.ttl=0 -Dnetworkaddress.cache.negative.ttl=0 -Djava.io.tmpdir=./tmp/ -Xss512k freenet.node.NodeStarter`
 
 ## Release Mirror
 
