@@ -16,7 +16,7 @@
 		<all-permissions/>
 	</security>
 	<resources>
-		<jar href="http://ftp.lysator.liu.se/pub/freenet/fred-releases/build01494/new_installer_offline_1494.jar" />
+		<jar href="http://ftp.lysator.liu.se/pub/freenet/fred-releases/build01494/new_installer_offline_1495.jar" />
 		<j2se version="1.8.0+" />
 	</resources>
 	<application-desc/>
