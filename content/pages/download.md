@@ -29,8 +29,9 @@ Steps:
 Download and install Freenet:
 
 * [For Windows](#windows)
-* [For macOS](#macos)
-* [For GNU/Linux & POSIX](#gnulinux-posix)
+* [For macOS, GNU/Linux & POSIX](#gnulinux-posix)
+
+<!--* [For macOS](#macos)-->
 
 *Freenet is free and open source software available under GPLv2+. The source code is on [GitHub](https://github.com/freenet/fred).*
 
@@ -55,6 +56,7 @@ on an older Windows OS. We always strongly recommend you to take security
 very seriously, and run up to date software that receives security updates,
 to be on the safe side.
 
+<!--
 ## macOS
 
 Download and run [the installer][url_mac_installer] ([gpg signature][url_mac_installer_sig]; [keyring][url_keyring]).
@@ -69,6 +71,8 @@ When done, your default browser will automatically open up to Freenet's web-base
 ![]({filename}/assets/img/mactray/osx_installer_step2_transparent.png)
 
 Freenet requires macOS 10.8 or later.
+
+-->
 
 ## GNU/Linux & POSIX
 
