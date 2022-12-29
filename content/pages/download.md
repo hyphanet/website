@@ -47,10 +47,13 @@ web-based user interface.
 ![]({filename}/assets/img/install/1-langselect-windows.png)
 
 Freenet requires Windows 8.1 or later.
-**Note**: Please note that once a Windows version reaches end of life, we do not guarantee
-any support, however it is not mandatory that it will not work on an older Windows.
-We always recommend you to take security very seriously, and run up to date software
-that receives security updates, to be on the safe side.
+
+**Note**: Once a Windows version reaches end of life, we do not guarantee
+any longer support, or the fact that Freenet will install and/or work in
+such environments. However, it is not mandatory that Freenet will not work
+on an older Windows OS. We always strongly recommend you to take security
+very seriously, and run up to date software that receives security updates,
+to be on the safe side.
 
 ## macOS
 
