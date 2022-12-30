@@ -11,8 +11,7 @@ Therefore results you get when using their method are false.* Yet this
 approach is still used two years later to get warrants against Freenet users.
 
 The Levine group themselves changed their method in response (they
-posted this to conference proceedings, not peer-reviewed, and unlikely
-to pass peer-review because it contains claims that are obviously
+posted this to conference proceedings, containing claims that are obviously
 false), but they still use the 2017 method for arguments in court.
 
 Therefore we are now providing the arguments that disprove it directly
