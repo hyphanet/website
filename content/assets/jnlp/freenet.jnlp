@@ -16,7 +16,7 @@
 		<all-permissions/>
 	</security>
 	<resources>
-		<jar href="http://www.draketo.de/dateien/freenet/build01495/new_installer_offline_1495.jar" />
+		<jar href="http://www.draketo.de/dateien/freenet/build01496/new_installer_offline_1496.jar" />
 		<j2se version="1.8.0+" />
 	</resources>
 	<application-desc/>
