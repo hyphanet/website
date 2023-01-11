@@ -105,7 +105,7 @@ To install on a headless system, or if you get fontconfig problems, use the `-co
 
 **Note**: We would love to have packages for most distributions.
 There is a [package for Gentoo](https://packages.gentoo.org/packages/net-p2p/freenet), and
-a preliminary but un-maintained [Debian package](https://github.com/freenet/debian).
+a preliminary but un-maintained [Debian package](https://github.com/freenet/fred/pull/774).
 If you would like to help, it would be much appreciated!
 
 **Note**: On some systems (including FreeBSD and OpenBSD) the wrapper does

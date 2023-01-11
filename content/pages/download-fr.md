@@ -105,7 +105,7 @@ on Debian or Ubuntu.
 **Note**: Many GNU/Linux distributions no longer ship with Java Web Start
 enabled. We would like to make distribution packages for easier installation,
 and have an in-development (and not maintained) [Debian package](
-https://github.com/freenet/debian), but haven't gotten it stable or made
+https://github.com/freenet/fred/pull/774), but haven't gotten it stable or made
 official ones for other distributions. If you are a developer and would like
 to join us and help it would be much appreciated!
 
