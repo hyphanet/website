@@ -8,6 +8,7 @@ OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
+GITHUB_PAGES_BRANCH=gh-pages
 ifndef TRAVIS
 export SITEURL?=$(OUTPUTDIR)
 else
@@ -52,6 +53,7 @@ help:
 	@echo '   make devserver [PORT=8000]          serve and regenerate together      '
 	@echo '   make devserver-global               regenerate and serve on 0.0.0.0    '
 	@echo '   make s3_upload                      upload the web site via S3         '
+	@echo '   make github                         upload the web site via gh-pages   '
 	@echo '                                                                          '
 	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html   '
 	@echo 'Set the RELATIVE variable to 1 to enable relative urls                    '
@@ -88,8 +90,12 @@ devserver-global:
 publish:
 	"$(PELICAN)" "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(PUBLISHCONF)" $(PELICANOPTS)
 
+github: publish
+	ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) "$(OUTPUTDIR)"
+	git push origin $(GITHUB_PAGES_BRANCH)
+
 s3_upload: publish
 	aws s3 sync "$(OUTPUTDIR)"/ s3://$(S3_BUCKET) --acl public-read --delete
 
 
-.PHONY: html help clean regenerate serve serve-global devserver publish s3_upload
+.PHONY: html help clean regenerate serve serve-global devserver publish github upload
