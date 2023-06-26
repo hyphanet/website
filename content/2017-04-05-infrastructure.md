@@ -1,4 +1,5 @@
 ---
+author: Freenet Contributors
 layout: content
 title:  Freenet infrastructure changes
 date:   2017-04-05

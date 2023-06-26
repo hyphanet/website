@@ -1,4 +1,5 @@
 ---
+author: Freenet Contributors
 layout: content
 title:  DuckDuckGo donated $25,000
 date:   2016-05-03

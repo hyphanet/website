@@ -1,4 +1,5 @@
 ---
+author: Freenet Contributors
 layout: content
 slug: statistical-results-without-false-positives-check-are-most-likely-wrong
 title: Статистические результаты без проверки ложных срабатываний, скорее всего, неверны

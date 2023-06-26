@@ -1,6 +1,7 @@
 ---
 title: "Weekend of Code" hackathon results
 date: 2015-12-20
+author: Freenet Contributors
 layout: content
 ---
 

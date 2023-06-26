@@ -1,4 +1,5 @@
 ---
+author: Freenet Contributors
 layout: content
 title:  Statistical results without false positives check are most likely wrong
 date:   2019-09-09

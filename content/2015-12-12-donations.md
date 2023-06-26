@@ -1,6 +1,7 @@
 ---
 title: Appeal for donations
 date: 2015-12-12
+author: Freenet Contributors
 layout: content
 ---
 

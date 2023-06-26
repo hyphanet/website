@@ -1,6 +1,7 @@
 ---
 title: Website redesign is live
 date: 2015-10-21
+author: Freenet Contributors
 layout: content
 ---
 
