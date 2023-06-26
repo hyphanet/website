@@ -15,11 +15,11 @@ If you already have a contribution in mind you can find the project repositories
 The Wiki contains a list of 
 [freenet-related projects](https://wiki.freenetproject.org/Projects) 
 and documentation of the 
-[Freenet Client Protocol](https://wiki.freenetproject.org/FCPv2)
-for using Freenet from external programs.
+[Hyphanet Client Protocol](https://wiki.freenetproject.org/FCPv2)
+for using Hyphanet from external programs.
 
 We're happy to accept pull requests on GitHub as well as patches sent under a
-pseudonym through Freenet forums such as [FMS](http://freesocial.draketo.de/fms_en.html).
+pseudonym through Hyphanet forums such as [FMS](http://freesocial.draketo.de/fms_en.html).
 
 ## [Translation](https://wiki.freenetproject.org/Translation)
 

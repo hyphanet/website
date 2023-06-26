@@ -3,7 +3,7 @@ title: About
 lang: en
 ---
 
-## What is Freenet?
+## What is Hyphanet?
 
 > I worry about my child and the Internet all the time, even though she's too
 > young to have logged on yet. Here's what I worry about. I worry that 10 or
@@ -17,13 +17,13 @@ lang: en
 	frameborder="0" allowfullscreen></iframe>
 </div>
 
-Freenet is free software which lets you anonymously share files, browse and
-publish "freesites" (web sites accessible only through Freenet) and chat on
-forums, without fear of censorship. Freenet is decentralised to make it less
+Hyphanet is free software which lets you anonymously share files, browse and
+publish "freesites" (web sites accessible only through Hyphanet) and chat on
+forums, without fear of censorship. Hyphanet is decentralised to make it less
 vulnerable to attack, and if used in "darknet" mode, where users only connect to
 their friends, is very difficult to detect.
 
-Communications by Freenet nodes are encrypted and are routed through other
+Communications by Hyphanet nodes are encrypted and are routed through other
 nodes to make it extremely difficult to determine who is requesting the
 information and what its content is.
 
@@ -36,22 +36,22 @@ his datastore, and hopefully can't be held accountable for it. Chat forums,
 websites, and search functionality, are all built on top of this distributed
 data store.
 
-Freenet has been downloaded over 2 million times since the project started,
+Hyphanet has been downloaded over 2 million times since the project started,
 and used for the distribution of censored information all over the world
 including countries such as China and in the Middle East. Ideas and concepts
-pioneered in Freenet have had a significant impact in the academic world. Our
-2000 paper "Freenet: A Distributed Anonymous Information Storage and
+pioneered in Hyphanet have had a significant impact in the academic world. Our
+2000 paper "Hyphanet: A Distributed Anonymous Information Storage and
 Retrieval System" was the most cited computer science paper of 2000 according
-to Citeseer, and Freenet has also inspired papers in the worlds of law and
-philosophy. Ian Clarke, Freenet's creator and project coordinator,
+to Citeseer, and Hyphanet has also inspired papers in the worlds of law and
+philosophy. Ian Clarke, Hyphanet's creator and project coordinator,
 was selected as one of the top 100 innovators of 2003 by MIT's Technology
 Review magazine.
 
 An important recent development, which very few other networks have, is the
 "darknet": By only connecting to people they trust, users can greatly reduce
 their vulnerability, and yet still connect to a global network through their
-friends' friends' friends and so on. This enables people to use Freenet even
-in places where Freenet may be illegal, makes it very difficult for
+friends' friends' friends and so on. This enables people to use Hyphanet even
+in places where Hyphanet may be illegal, makes it very difficult for
 governments to block it, and does not rely on tunneling to the "free world".
 
 *Written by Ian Clarke*
@@ -67,21 +67,21 @@ governments to block it, and does not rely on tunneling to the "free world".
 9.  [But how will artists be rewarded for their work without copyright?](#but-how-will-artists-be-rewarded-for-their-work-without-copyright)
 10.  [Alternatives to Copyright](#alternatives-to-copyright)
 
-## The Philosophy Behind Freenet
+## The Philosophy Behind Hyphanet
 
 1. ### A Disclaimer
 
-    There are many reasons why people get involved in the Freenet Project. Some
+    There are many reasons why people get involved in the Hyphanet Project. Some
     share the views outlined in this document; some share variations of these views,
     which are also served by what we are trying to achieve; and some just enjoy the
     technical challenge. These are the ideas which motivated me to architect the
     system in the first place, but not necessarily the views that everyone involved
-    in the Freenet Project holds.
+    in the Hyphanet Project holds.
 
 2. ### Suggested prior reading
 
-    For this document to make sense, you should probably know what Freenet is. You
-    can get a good overview from [What is Freenet?](about.html#introduction).
+    For this document to make sense, you should probably know what Hyphanet is. You
+    can get a good overview from [What is Hyphanet?](about.html#introduction).
 
 3. ### The importance of the Free flow of information
 
@@ -137,7 +137,7 @@ governments to block it, and does not rely on tunneling to the "free world".
     The only way to ensure that a democracy will remain effective is to ensure
     that the government cannot control its population's ability to share
     information, to communicate. So long as everything we see and hear is
-    filtered, we are not truly free. Freenet's aim is to allow two or more people
+    filtered, we are not truly free. Hyphanet's aim is to allow two or more people
     who wish to share information, to do so.
 
 6. ### Isn't censorship sometimes necessary?
@@ -175,12 +175,12 @@ governments to block it, and does not rely on tunneling to the "free world".
     remain anonymous. It is a common misconception that you cannot trust
     anonymous information. This is not necessarily true, using digital signatures
     people can create a secure anonymous pseudonym which, in time, people can
-    learn to trust. Freenet incorporates a mechanism called "subspaces" to
+    learn to trust. Hyphanet incorporates a mechanism called "subspaces" to
     facilitate this.
 
 8. ### And what of copyright?
 
-    Of course much of Freenet's publicity has centered around the issue of
+    Of course much of Hyphanet's publicity has centered around the issue of
     copyright, and thus I will speak to it briefly. The core problem with
     copyright is that enforcement of it requires monitoring of communications,
     and you cannot be guaranteed free speech if someone is monitoring everything
@@ -189,7 +189,7 @@ governments to block it, and does not rely on tunneling to the "free world".
 
     > *You cannot guarantee freedom of speech and enforce copyright law*
 
-    It is for this reason that Freenet, a system designed to protect Freedom of
+    It is for this reason that Hyphanet, a system designed to protect Freedom of
     Speech, must prevent enforcement of copyright.
 
 9. ### But how will artists be rewarded for their work without copyright?
@@ -218,7 +218,7 @@ governments to block it, and does not rely on tunneling to the "free world".
     thousands, contributing small amounts of money over the Internet.
 
     We actually practice what we preach in this regard too, on the 15th of March
-    2001 the Freenet Project started taking donations, and within a week we had
+    2001 the Hyphanet Project started taking donations, and within a week we had
     collected over $1000.
 
 ### Current Contributors
@@ -226,8 +226,8 @@ governments to block it, and does not rely on tunneling to the "free world".
 
 Ian Clarke
 
-: Freenet is based on Ian's paper "A Distributed Decentralised Information
-Storage and Retrieval System". Ian started the Freenet Project around July of
+: Hyphanet is based on Ian's paper "A Distributed Decentralised Information
+Storage and Retrieval System". Ian started the Hyphanet Project around July of
 1999, and continues to coordinate the project.
 Learn more about Ian on his [personal website](http://blog.locut.us/).
 
@@ -242,7 +242,7 @@ a boutique security consultancy firm and currently works on
 Steve Dougherty
 
 : The current release manager. He joined in GSoC 2013 and has been a
-driving force behind tackling long standing issues in Freenet.
+driving force behind tackling long standing issues in Hyphanet.
 
 
 xor
@@ -255,7 +255,7 @@ again.
 David (Bombe) Roden
 
 : The developer of the site insertion tool jSite and of Sone, the Social
-Network over Freenet.
+Network over Hyphanet.
 
 
 TheSeeker
@@ -266,20 +266,20 @@ contact between the core developers and users in active subgroups.
 
 Tommy[D]
 
-: A Gentoo packager who untangled all the dependencies of Freenet and
+: A Gentoo packager who untangled all the dependencies of Hyphanet and
 packaged it cleanly in Gentoo.
 
 
 Arne Babenhauserheide
 
-: The current release manager of Freenet and maintainer of pyFreenet
-and infocalypse. He also writes articles and tutorials for Freenet.
+: The current release manager of Hyphanet and maintainer of pyHyphanet
+and infocalypse. He also writes articles and tutorials for Hyphanet.
 
 
 #### The translators
 
 A dilligent team of people from various backgrounds who make it
-possible to ship Freenet and this website in many different languages.
+possible to ship Hyphanet and this website in many different languages.
 
 
 #### Many more great hackers
@@ -293,22 +293,22 @@ of other people who contributed in various ways.
 
 Eleriseth
 
-: Works on Freenet core and communicates via FMS.
+: Works on Hyphanet core and communicates via FMS.
 
 
 Somedude
 
-: The developer of the Freenet-based Forum system FMS, of FreenetHG and
-of FLIP, chat over Freenet.
+: The developer of the Hyphanet-based Forum system FMS, of HyphanetHG and
+of FLIP, chat over Hyphanet.
 
 
 The folks from Frost
 
 : A group of users and programmers who use an old spammable
-Freenet-based forum system which has been abandoned by most of the
+Hyphanet-based forum system which has been abandoned by most of the
 core developers. They are active, however, and though it takes time
 for their contributions to reach to core development, they take part
-in Freenet development.
+in Hyphanet development.
 
 
 
@@ -316,15 +316,15 @@ in Freenet development.
 
 Matthew Toseland
 
-: Matthew has been working on Freenet since before the 0.5 release. His work
+: Matthew has been working on Hyphanet since before the 0.5 release. His work
 and that of others has resulted in dramatic improvements to the performance
 and stability of the network.
 
 Oskar Sandberg
 
-: Oskar was also one of the earliest contributors to the Freenet Project,
+: Oskar was also one of the earliest contributors to the Hyphanet Project,
 and has made some important theoretical breakthroughs that lead to the
-beginning of Freenet 0.7, see the papers page.
+beginning of Hyphanet 0.7, see the papers page.
 
 Michael Rogers
 
@@ -334,12 +334,12 @@ https://old-wiki.freenetproject.org/NewTransportLayer).
 
 Ximin Luo
 
-: A debian developer who currently worked on packaging Freenet.
+: A debian developer who currently worked on packaging Hyphanet.
 
 
 Bert Massop
 
-: Works on the Freenet core and wherever there is need.
+: Works on the Hyphanet core and wherever there is need.
 
 Thomas Markus
 
@@ -348,27 +348,27 @@ Thomas Markus
 Scott Miller
 
 : Scott is responsible for the implementation of much of the cryptography
-elements within Freenet.
+elements within Hyphanet.
 
 Steven Starr
 
-: Steven helps with administration of Freenet Project Inc, and is an advisor to
+: Steven helps with administration of Hyphanet Project Inc, and is an advisor to
 the project on business and publicity matters.
 
 Dave Baker
 
 : Dave's main contribution has been [Freemail](documentation.html#freemail),
-his Summer of Code project to build a working email-over-Freenet system,
+his Summer of Code project to build a working email-over-Hyphanet system,
 as well as some debugging and core work in various places.
 
 Robert Hailey
 
-: Robert has helped improve the speed and security of Freenet by finding two
+: Robert has helped improve the speed and security of Hyphanet by finding two
 **major** bugs, and has recently contributed some code.
 
 David Sowder
 
-: David (Zothar) has helped the Freenet Project as time permits and interest
+: David (Zothar) has helped the Hyphanet Project as time permits and interest
 directs, including configuration, statistics and peer management via FCP,
 the FProxy stats page and Node 2 Node Messages (N2NM/N2NTMs).
 
@@ -378,45 +378,45 @@ mention thousands of users, testers, and [donors](donate.html#sponsors)!
 
 ### Papers
 
-![][icon_pdf] [Measuring Freenet in the Wild: Censorship-resilience under Observation]({static}/assets/papers/roos-pets2014.pdf) (PDF)
-Observations and measurements on the live Freenet network. Includes suggestions
+![][icon_pdf] [Measuring Hyphanet in the Wild: Censorship-resilience under Observation]({static}/assets/papers/roos-pets2014.pdf) (PDF)
+Observations and measurements on the live Hyphanet network. Includes suggestions
 for improvement. This was submitted to PETS 2014.
 
-![][icon_pdf] [The Dark Freenet]({static}/assets/papers/freenet-0.7.5-paper.pdf) (PDF)
-Detailed paper about the Freenet 0.7.5 network, as opposed to its routing
+![][icon_pdf] [The Dark Hyphanet]({static}/assets/papers/freenet-0.7.5-paper.pdf) (PDF)
+Detailed paper about the Hyphanet 0.7.5 network, as opposed to its routing
 algorithm, which is detailed in the below papers. Includes some new
 simulations. This has been submitted to PET 2010.
 
 ![][icon_video] [Video of Small World talk, Berlin, December 2005](http://player.vimeo.com/video/22488244?title=0&byline=0&portrait=0)  
 This is a video of a talk given by Ian Clarke and Oskar Sandberg at the Chaos
 Computer Congress in Berlin, December 2005, describing the (then) new
-architecture for Freenet 0.7\. You can also download the [slideshow](
+architecture for Hyphanet 0.7\. You can also download the [slideshow](
 /assets/papers/ccc-slideshow.pdf.bz2), and the source for the Java [demo](
 /assets/papers/ccc-freenet-demo.tar.bz2) (requires Java 1.5).
 
 ![][icon_pdf] [Searching in a Small World]({static}/assets/papers/lic.pdf) (PDF)
 Oskar Sandberg's licentiate thesis describing a simple decentralized
-mechanism for constructing small world networks that is inspired by Freenet's
+mechanism for constructing small world networks that is inspired by Hyphanet's
 original design. Part II of the thesis describes the basis for the new
 Darknet architecture.
 
 ![][icon_pdf] [Distributed routing in Small World Networks]({static}/assets/papers/swroute.pdf) (PDF)
 A paper by Oskar Sandberg describing the theoretical basis for the new
-"Darknet" routing mechanism employed by Freenet 0.7.
+"Darknet" routing mechanism employed by Hyphanet 0.7.
 
 ![][icon_pdf] Chaos Computer Congress Talk (slideshow)  
 This is a [slideshow]({static}/assets/papers/ccc-slideshow.pdf.bz2) for a talk given
 at the Chaos Computer Congress on 30th Dec 2005 in Berlin, Germany by Ian
 Clarke and Oskar Sandberg. It described the new "darknet" approach to be
-employed in Freenet 0.7\. A Java demonstration to accompany the talk is [
+employed in Hyphanet 0.7\. A Java demonstration to accompany the talk is [
 also]({static}/assets/papers/ccc-freenet-demo.tar.bz2) available.
 
 ![][icon_pdf] [Switching for a small world]({static}/assets/papers/vilhelm_thesis.pdf) (PDF)
 A thesis by Vilhelm Verendel exploring ways to optimise the swapping algorithm.
 
-![][icon_pdf] [Protecting Freedom of Information Online with Freenet]({static}/assets/papers/freenet-ieee.pdf) (PDF)
-An IEEE Internet Computing article describing the Freenet architecture circa
-2002 - probably the best introduction to the theory behind Freenet.
+![][icon_pdf] [Protecting Freedom of Information Online with Hyphanet]({static}/assets/papers/freenet-ieee.pdf) (PDF)
+An IEEE Internet Computing article describing the Hyphanet architecture circa
+2002 - probably the best introduction to the theory behind Hyphanet.
 
 ![][icon_pdf] [FreeNet White Paper]({static}/assets/papers/ddisrs.pdf) (PDF)
 Original white paper by Ian Clarke, Division of Informatics, University of
@@ -440,7 +440,7 @@ An interesting presentation by the group responsible for the two above papers.
 An algorithm for setting up onion-like tunnels on darknets. 
 
 ![][icon_pdf] [Routing in the Dark: Pitch Black](http://grothoff.org/christian/pitchblack.pdf) ([citeseer](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.117.1543)) (PDF)  
-A paper describing some attacks on Freenet 0.7's location swapping algorithm.
+A paper describing some attacks on Hyphanet 0.7's location swapping algorithm.
 We have solutions for this but they are still being tested.
 
 * * *
@@ -449,7 +449,7 @@ The most up to date reference is of course [the source code](
 https://github.com/freenet/fred), but there is also some useful documentation on
 [the wiki](https://wiki.freenetproject.org/) (you may have to search a bit),
 and most implemented ideas have been discussed in detail on [the mailing
-lists](help.html#mailing-lists) at some point, more recently often in-Freenet
+lists](help.html#mailing-lists) at some point, more recently often in-Hyphanet
 forums such as FMS, or [the bug tracker](https://freenet.mantishub.io/) hosted by MantisHub.
 
 [icon_pdf]: /assets/img/small-n-flat/file-pdf.png

@@ -14,13 +14,13 @@ lang: ru
 - Сообщайте о проблемах в [трекере ошибок](https://freenet.mantishub.io/), размещенном на [MantisHub](https://www.mantishub.com)
 
 Вики содержит
-[список связанных с Freenet проектов](https://wiki.freenetproject.org/Projects) 
+[список связанных с Hyphanet проектов](https://wiki.freenetproject.org/Projects) 
 и документацию
-[клиентского протокола Freenet](https://wiki.freenetproject.org/FCPv2)
-для использования Freenet из внешних программ.
+[клиентского протокола Hyphanet](https://wiki.freenetproject.org/FCPv2)
+для использования Hyphanet из внешних программ.
 
 Мы с радостью принимаем пул-запросы на GitHub, а также патчи,
-отправляемые под псевдонимом через форумы Freenet,
+отправляемые под псевдонимом через форумы Hyphanet,
 такие как [FMS](http://freesocial.draketo.de/fms_en.html).
 
 ## [Перевод](https://wiki.freenetproject.org/Translation)

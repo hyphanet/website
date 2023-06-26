@@ -3,40 +3,40 @@ title: Documentation
 lang: fr
 ---
 
-The documentation on Freenet is forever changing, since this is a project in
+The documentation on Hyphanet is forever changing, since this is a project in
 development. However, here under the Documentation menu, you may find usage
-documents on how to setup Freenet and use the most popular Freenet tools as
+documents on how to setup Hyphanet and use the most popular Hyphanet tools as
 well as a user driven Wiki and an extensive Frequently Asked Questions
 department.
 
 *   [**Install**](#install)
-     Contains detailed instructions on how to install Freenet using the new
+     Contains detailed instructions on how to install Hyphanet using the new
      installer.
 *   [**Connect**](#connect)
-     How to connect to Freenet.
+     How to connect to Hyphanet.
 *   [**Content**](#content)
-     Freenet as a Content Distribution System.
+     Hyphanet as a Content Distribution System.
 *   [**Understand**](#understand)
-     Explains the workings of Freenet, and a glossary with the most frequently
+     Explains the workings of Hyphanet, and a glossary with the most frequently
      used terms.
 *   [**Social**](#social)
-     How to setup email, forums and microblogging over Freenet.
+     How to setup email, forums and microblogging over Hyphanet.
 *   [**jSite**](#jsite)
-     jSite is a Freenet website (a.k.a. Freesite) insertion tool.
+     jSite is a Hyphanet website (a.k.a. Freesite) insertion tool.
 *   [**Wiki**](https://wiki.freenetproject.org/)
-     The Freenet Wiki is a user driven space where new features may be described
+     The Hyphanet Wiki is a user driven space where new features may be described
      before finding their way into the website. It is a good source of information
-     about all sorts of Freenet related issues.
+     about all sorts of Hyphanet related issues.
 
 ## Install
 
-To install Freenet might not be as difficult as you might have heard. There are
-three ways to install Freenet:
+To install Hyphanet might not be as difficult as you might have heard. There are
+three ways to install Hyphanet:
 
 *   Graphical install
 *   Headless install
 
-If you want to install the Freenet software on a computer which lacks a GUI,
+If you want to install the Hyphanet software on a computer which lacks a GUI,
 see the [Headless install](download.html#gnulinux-posix) instructions.
 
 #### Graphical install
@@ -68,19 +68,19 @@ your preferred language for the installation program.
 
 ![Language Selection Screenshot]({static}/assets/img/install/1-langselect.png)
 
-Next is shown an about-box, some information about the version of Freenet and
+Next is shown an about-box, some information about the version of Hyphanet and
 authors. Just click **Next** to proceed.
 
-![About Freenet Dialog Screenshot]({static}/assets/img/install/2-about.png)
+![About Hyphanet Dialog Screenshot]({static}/assets/img/install/2-about.png)
 
-The next step is to choose the directory in which to install Freenet. The
+The next step is to choose the directory in which to install Hyphanet. The
 default location on GNU/Linux & POSIX operating systems is
-**/home/username/Freenet** as shown below. Change it to something appropriate or
+**/home/username/Hyphanet** as shown below. Change it to something appropriate or
 leave "as is". Click **Next** when you are finished.
 
 ![Select Installation Directory Screenshot]({static}/assets/img/install/4-Install_directory.png)
 
-Select the packages that you want to install with your Freenet software.
+Select the packages that you want to install with your Hyphanet software.
 Since it takes up virtually no extra disk-space, it is recommended that you
 leave all packages selected and press **Next**.
 
@@ -92,14 +92,14 @@ next step.
 
 ![Package Installation Progress Screenshot]({static}/assets/img/install/6-Install_packages.png)
 
-After that, the Freenet software is installed and/or upgraded, plugins are
+After that, the Hyphanet software is installed and/or upgraded, plugins are
 enabled and the environment is started. When completed, press **Next** to
 proceed.
 
-![Freenet Installation Progress Screenshot]({static}/assets/img/install/7-install_progress.png)
+![Hyphanet Installation Progress Screenshot]({static}/assets/img/install/7-install_progress.png)
 
 For some graphical environments, shortcuts in the menu-structure can be
-created. This is not the case for all of the platforms that Freenet run on.
+created. This is not the case for all of the platforms that Hyphanet run on.
 However, there should be created shortcuts on the desktop in all supported
 environments. Change the application group according to your needs and press
 **Next** when finished.
@@ -111,22 +111,22 @@ After that, the installation is finished. Click **Done** to close the window.
 ![Install finished Screenshot]({static}/assets/img/install/9-Install_finished.png)
 
 If all has gone well, a browser window should have opened in the background.
-This will ask you a bunch of questions to configure Freenet, and then you
+This will ask you a bunch of questions to configure Hyphanet, and then you
 should be able to use it.
 
 It will ask about network security level - "protection from strangers
-attacking you over the internet". If you choose LOW or NORMAL, Freenet should
+attacking you over the internet". If you choose LOW or NORMAL, Hyphanet should
 "just work", connecting in a few minutes. If you choose HIGH or MAXIMUM,
-Freenet will need you to add friends before you can use it. These must be
+Hyphanet will need you to add friends before you can use it. These must be
 people you personally know. Adding people you don't know will not improve
 security.
 
 ## Connect
 
-There are two ways to connect to Freenet:
+There are two ways to connect to Hyphanet:
 
 * You can enable insecure mode (the installation wizard will ask you) and
-  Freenet will automatically find nodes to connect to - Strangers.
+  Hyphanet will automatically find nodes to connect to - Strangers.
 * You can connect to nodes run by people you know - Friends. Note that these
   should be people you actually know on some level, in order to maintain good
   network topology and maximum security.
@@ -144,22 +144,22 @@ is, you need to add his/hers, and he/she needs to add yours.
 datastore, and very few connections even if insecure mode is enabled.
 Requests are sent out in a random fashion. **This makes some (or all)
 requests time out before retrieving anything.** It takes a couple of days for
-your Freenet node to get up to speed, so please don't get discouraged by this.*
+your Hyphanet node to get up to speed, so please don't get discouraged by this.*
 
 You should have at least three nodes that are connected to you at all times,
 ideally at least five to seven. Since some nodes may be unreachable at times,
 you need to connect to some more nodes to get the expected number. The nodes
-that are connected directly to you are the only nodes on Freenet that might
-see what kind of traffic passes through to your Freenet node. But if
+that are connected directly to you are the only nodes on Hyphanet that might
+see what kind of traffic passes through to your Hyphanet node. But if
 insecure mode is enabled, any node can find yours; this is the big advantage
 of **not** enabling insecure mode: you are effectively invisible except to
 your friends. In practice most people start off with insecure mode and
 gradually add friends, and hopefully turn off insecure mode once they have at
 least 10 friends.
 
-![Freenet network architecture]({static}/assets/img/Freenet-architecture-small.png)
+![Hyphanet network architecture]({static}/assets/img/Hyphanet-architecture-small.png)
 
-*Figure 1: Visible Freenet connections*
+*Figure 1: Visible Hyphanet connections*
 
 **Node A** in the figure also has a number of nodes connected to it, but they
 are all (except from your own node) invisible to you. The traffic routing
@@ -167,7 +167,7 @@ algorithm is therefore only able to direct traffic to one of the few nodes
 that you know of that it thinks is most able to find what you are looking for.
 
 The traffic is encrypted, so it is quite difficult for the nodes that you
-connect to to see what your Freenet traffic consists of, but it is far from
+connect to to see what your Hyphanet traffic consists of, but it is far from
 impossible. It is therefore important that you connect only to people you
 know. If that is not possible, then at least people you've talked to.
 
@@ -198,7 +198,7 @@ http://dark-code.bulix.org/yuf01h-34676?raw), which can be shared with
 others. Make sure that you add **?raw** to the link. This makes the link
 point only to the actual pasted data, with no extra design elements.
 
-Your own Freenet reference can be found on the [
+Your own Hyphanet reference can be found on the [
 http://127.0.0.1:8888/friends/](http://127.0.0.1:8888/friends/) page,
 under the caption **My Node Reference**. It might look something like this (cut
 to fit on the screen):
@@ -206,7 +206,7 @@ to fit on the screen):
     lastGoodVersion=Fred,0.7,1.0,1010
     sig=7c7edc8c5250e42ac4cb161b216b70de7019221f1b331f0f92bd67439[...]609660f0d4
     identity=5tBtS3R59nfOTvc1be~V0sSfkWir8EW38YeocP0gsYM
-    myName=FreenetTestInstall
+    myName=HyphanetTestInstall
     location=0.02970997399122577
     testnet=false
     version=Fred,0.7,1.0,1016
@@ -229,7 +229,7 @@ his/her side, the connection **does not work**.
 When you have a number of connections, you can visit the Darknet page. It
 should look something like this:
 
-![Darknet peers Screenshot]({static}/assets/img/Freenet-darknet_peers.png)
+![Darknet peers Screenshot]({static}/assets/img/Hyphanet-darknet_peers.png)
 
 There are a number of status messages that can be seen here:
 
@@ -248,77 +248,77 @@ message.
 ## Content
 
 In addition to its anonymity features, as a content distribution network
-Freenet has the following strengths:
+Hyphanet has the following strengths:
 
 *   **Totally decentralized**  
-     Information can be inserted into Freenet for download without any reliance
+     Information can be inserted into Hyphanet for download without any reliance
      on a centralized server. All the inserter needs to do is give the content's
      "key" to someone else and they will be able to download it.
 *   **Adaptive caching**  
      Many CDN architectures only allow peers which have already downloaded a
-     file to share it with other peers. Freenet will adaptively cache
+     file to share it with other peers. Hyphanet will adaptively cache
      information on peers as necessary to meet demand regardless of what that
-     peer has downloaded. This allows Freenet to "scale-up" much more quickly
+     peer has downloaded. This allows Hyphanet to "scale-up" much more quickly
      than most solutions for popular files, and improves load-balancing.
 *   **Strong Security**  
-     Freenet has long-supported the concept of "Content Hash Keys" which
+     Hyphanet has long-supported the concept of "Content Hash Keys" which
      guarantee the integrity of retrieved data. This approach has since been
-     adopted by other architectures. Freenet also supports
+     adopted by other architectures. Hyphanet also supports
      "Signed Subspace Keys" which allow content to be digitally signed. This
      also allows content integrity to be guaranteed, but is more flexible than
      CHKs.
 *   **Forward Error Correction**  
-     In common with some other CDN architectures, Freenet employs "Forward Error
+     In common with some other CDN architectures, Hyphanet employs "Forward Error
      Correction", which allows a file to be reconstructed even if some of the
-     parts of that file can't be retrieved. Uniquely, Freenet also supports
+     parts of that file can't be retrieved. Uniquely, Hyphanet also supports
      "healing", which involves the reconstruction and reinsertion of missing
      file components.
 
-This page contains links to freely available content on Freenet. If you would
+This page contains links to freely available content on Hyphanet. If you would
 like to add a new link please get in touch! remember that we will only link
  to content that can be legally distributed in the United States of America.
 
 ## Understand
 
-Freenet can be thought of as a large storage device. When you store a file in
+Hyphanet can be thought of as a large storage device. When you store a file in
 it, you receive a key which can be used to retrieve the file. When you supply
-Freenet with a key, it returns the appropriate file (if it is located). The
-storage space is distributed among all connected nodes on Freenet.
+Hyphanet with a key, it returns the appropriate file (if it is located). The
+storage space is distributed among all connected nodes on Hyphanet.
 
-Freenet is a peer-to-peer network which is both decentralized and
+Hyphanet is a peer-to-peer network which is both decentralized and
 anonymized. The nodes that you connect to only know their nearest neighbours
 and have no idea about how the network as a whole is structured.
 
 ### Small world network
 
-Freenet is built on the principle of small world networks. By connecting to
+Hyphanet is built on the principle of small world networks. By connecting to
 nodes of people you already know, and the people you know in turn connect to
-people they know, one should be able to reach all nodes in a Freenet network.
+people they know, one should be able to reach all nodes in a Hyphanet network.
 
 ### The datastore
 
-All Freenet nodes contribute a part of their hard drive space to store encrypted pieces of files.
-They are stored in the **datastore** directory in the Freenet installation directory.
+All Hyphanet nodes contribute a part of their hard drive space to store encrypted pieces of files.
+They are stored in the **datastore** directory in the Hyphanet installation directory.
 
 Unlike other peer-to-peer networks, you as a user have little or no control
 over what is stored in your datastore. Instead, files are kept or deleted
-depending on how popular they are. This allows Freenet to be censorship-resistant.
+depending on how popular they are. This allows Hyphanet to be censorship-resistant.
 There is no "delete file" operation.
 
 It is hard, but not impossible, to determine what the encrypted file pieces
-stored in your local Freenet datastore are part of. This allows plausible deniability.
+stored in your local Hyphanet datastore are part of. This allows plausible deniability.
 
-Freenet suggests an initial size based on how much space is available, and
+Hyphanet suggests an initial size based on how much space is available, and
 you can change the store size at any time. A larger store uses more RAM,
-but makes for better browsing for you and helps Freenet as a whole.
+but makes for better browsing for you and helps Hyphanet as a whole.
 
-### Freenet Routing
+### Hyphanet Routing
 
 Initially, each node has no information about the performance of the other
 nodes it knows about. This means that routing of requests is essentially
 random. But since different nodes have different randomness, they will
 disagree about where to send a request, given a key. So the data in a
-newly-started Freenet will be distributed somewhat randomly.
+newly-started Hyphanet will be distributed somewhat randomly.
 
 As more documents are inserted by the same node, they will begin to cluster
 with data items whose keys (see below) are similar, because the same routing
@@ -332,10 +332,10 @@ together in key space. There will probably be multiple such clusters
 throughout the network, any given document being replicated numerous times,
 depending on how much it is used.
 
-### Freenet keys
+### Hyphanet keys
 
-Each file that exists on Freenet has a key associated with it. Freenet 0.7
-has various types of keys. Keys are used for everything on Freenet, and are a
+Each file that exists on Hyphanet has a key associated with it. Hyphanet 0.7
+has various types of keys. Keys are used for everything on Hyphanet, and are a
 kind of [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) (
 e.g. freenet:=KSK@sample.txt).
 
@@ -347,13 +347,13 @@ subjects.
 
 ### Accessing data
 
-To access a particular piece of data on Freenet, you can use FProxy. You need
+To access a particular piece of data on Hyphanet, you can use FProxy. You need
 to know the key to the data, and enter it like this (or click a link
 containing the key):
 
-<pre>http://localhost:8888/[Freenet Key]</pre>
+<pre>http://localhost:8888/[Hyphanet Key]</pre>
 
-There are four types of keys in Freenet:
+There are four types of keys in Hyphanet:
 
 *   **CHK** - Content Hash Keys
 *   **SSK** - Signed Subspace Keys
@@ -372,12 +372,12 @@ USKs are a form of updatable keys especially useful for freesites and
 An Address Resolution Key (ARK) is an Updatable Subspace Key (USK) inserted
 by the node whenever its IP address changes. It contains the reference for
 the node - its cryptographic details, and in particular its IP address(es).
-ARKs are a way to help people connect to Freenet if they have problems caused
+ARKs are a way to help people connect to Hyphanet if they have problems caused
 by firewalls, routers or changing IP addresses. If someone cannot accept
 incoming traffic it can make it difficult to connect.
 
 ARKs are an implementation detail and you don't need to know anything about
-them to use Freenet.
+them to use Hyphanet.
 
 ### Content Hash Keys
 
@@ -419,7 +419,7 @@ to be corrected, added or deleted. They work in such a way that someone else
 can't put up a newer version of your site and pretend it was you who did it.
 
 It works by using public-key cryptography so you can sign your site. Only the
-person with the secret key can add updated versions of your site to Freenet.
+person with the secret key can add updated versions of your site to Hyphanet.
 
 Also the SSK consists of five parts:
 
@@ -434,8 +434,8 @@ Also the SSK consists of five parts:
 * **version** - the current version of the site.
 
 The version number is increased each time a new version of the site is
-created and inserted into Freenet. This approach is used since it is not
-currently possible to update already inserted data in Freenet. Updateable
+created and inserted into Hyphanet. This approach is used since it is not
+currently possible to update already inserted data in Hyphanet. Updateable
 Subspace Keys makes this more transparent to the user, see below.
 
 A typical SSK key looks like this:
@@ -452,7 +452,7 @@ For example (cut for screen purposes):
   files and a **public key** for verifying the signature.
 * The author also generates a single **symmetric key** (one that is used for
   both encrypting and decrypting).
-* When a file is inserted into Freenet, it is encrypted with the **symmetric
+* When a file is inserted into Hyphanet, it is encrypted with the **symmetric
   key** and signed with the **private key**. The signature is stored with the
   file. Nodes don't store the **symmetric key**, only the **public key** part of
   the SSK, as an index to the data. This is so they can plausibly deny knowledge
@@ -460,7 +460,7 @@ For example (cut for screen purposes):
 
 The SSK is made up of a hash of the public key, and the symmetric key. The
 hash of the public key acts as the index to the data for searching purposes.
-Also, the actual public key is stored with the data. This is so that Freenet
+Also, the actual public key is stored with the data. This is so that Hyphanet
 nodes can verify the signature when the SSK file comes into their node,
 and also so that clients can verify the signature when retrieving the file.
 The symmetric key is so that clients can decrypt the file.
@@ -486,7 +486,7 @@ version-number. There are two types of USK addresses:
 *   an USK with a positive number at the end, or
 *   an USK with a negative number at the end.
 
-The USK with a **positive** number at the end works like this: the Freenet
+The USK with a **positive** number at the end works like this: the Hyphanet
 node on your computer keeps a list of versions of USKs that it knows about,
 without necessarily storing the data as well. This list is built up from
 previous visits, and also background requests from previous visits to these
@@ -500,7 +500,7 @@ Example (cut for screen purposes):
 
     USK@GB3wuHmt[..]o-eHK35w,c63EzO7u[..]3YDduXDs,AQABAAE/mysite/5/
 
-When you visit a link with a **negative** number at the end, Freenet searches
+When you visit a link with a **negative** number at the end, Hyphanet searches
 for the version you requested (e.g. **-7**) plus four more (i.e. 7,8,9,10,
 11) at the node on your computer and on other nodes. If it finds only version
 7, it will return that. If it finds one of the others, it searches for
@@ -512,14 +512,14 @@ Example (cut for screen purposes):
 
     USK@GB3wuHmt[..]o-eHK35w,c63EzO7u[..]3YDduXDs,AQABAAE/mysite/-7/
 
-The real treat with USKs comes when data is to be inserted into Freenet. But
+The real treat with USKs comes when data is to be inserted into Hyphanet. But
 more on that elsewhere.
 
 ### Keyword Signed Keys
 
-Keyword-Signed Keys (KSKs) allow you to save named pages in Freenet. They are
+Keyword-Signed Keys (KSKs) allow you to save named pages in Hyphanet. They are
 not secure against spamming or name hijacking. Several people could each
-insert a different file to Freenet, all with the same address. However,
+insert a different file to Hyphanet, all with the same address. However,
 there is a collision detection, which tries to prevent overwriting of a
 once-inserted page. A KSK address looks like this:
 
@@ -537,8 +537,8 @@ the file itself.
 
 ### Containers
 
-A container, in general Freenet terms, is a file that contains several other
-files. In Freenet 0.7, a freesite, or other collection of files, may be
+A container, in general Hyphanet terms, is a file that contains several other
+files. In Hyphanet 0.7, a freesite, or other collection of files, may be
 bundled together in a ZIP file, which is limited in size to 2MB. Containers
 have the advantage that when you load one page you load all the files on the
 freesite, so either it loads in its entirety or it doesn't load at all,
@@ -552,22 +552,22 @@ A manifest contains metadata over the list of blocks a CHK is divided into
 and some information about the content-type(MIME), the filenames and other
 useful information. The main information is whether the CHK-key is a
 splitfile or not, and whether the manifest is chained or not. You don't need
-to know much about manifests in order to use Freenet, since it is a part that
+to know much about manifests in order to use Hyphanet, since it is a part that
 is handled internally.
 
 ## Social
 
-Freenet provides the foundation for anonymous email, forums and chat,
+Hyphanet provides the foundation for anonymous email, forums and chat,
 as well as a replacement for Facebook/Twitter. Setup of these is
 described in the
-[Freenet Social Networking Guide](http://freesocial.draketo.de/)
+[Hyphanet Social Networking Guide](http://freesocial.draketo.de/)
 which can also be accessed
-[over Freenet](http://127.0.0.1:8888/USK@t5zaONbYd5DvGNNSokVnDCdrIEytn9U5SSD~pYF0RTE,guWyS9aCMcywU5PFBrKsMiXs7LzwKfQlGSRi17fpffc,AQACAAE/fsng/58/).
+[over Hyphanet](http://127.0.0.1:8888/USK@t5zaONbYd5DvGNNSokVnDCdrIEytn9U5SSD~pYF0RTE,guWyS9aCMcywU5PFBrKsMiXs7LzwKfQlGSRi17fpffc,AQACAAE/fsng/58/).
 
 ## jSite
 
 jSite is a graphical application that you can use to create, insert and
-manage your own Freenet sites. It was written in Java by Bombe.
+manage your own Hyphanet sites. It was written in Java by Bombe.
 
 You can [download jSite here](https://downloads.freenetproject.org/alpha/jSite/jSite.jar)
 
@@ -615,7 +615,7 @@ Below is an example of how it might look:
 
 When everything is filled in correctly, you may press **Next**.
 
-The next step is to add files to your Freenet site (or Freesite). This is
+The next step is to add files to your Hyphanet site (or Freesite). This is
 done in the dialog called **Project Files**. Since we have no files in the
 current directory, yet, the dialog is pretty much empty.
 
