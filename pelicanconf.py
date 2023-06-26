@@ -40,13 +40,7 @@ I18N_SUBSITES = {}
 def subsite(language):
     I18N_SUBSITES[language] = {
         'MARKDOWN' : {
-            'extensions': ["markdown.extensions.def_list", "markdown.extensions.toc", "markdown_i18n", "markdown.extensions.extra", ],
-            'extension_configs': {
-                'markdown_i18n': {
-                    'i18n_dir': 'locales',
-                    'i18n_lang': language,
-                },
-            },
+            'extensions': ["markdown.extensions.def_list", "markdown.extensions.toc", "markdown.extensions.extra", ],
         },
     }
 
@@ -60,12 +54,7 @@ I18N_TEMPLATES_LANG = 'en'
 
 
 MARKDOWN = {
-    'extensions': ["markdown.extensions.def_list", "markdown.extensions.toc", "markdown_i18n", "markdown.extensions.extra", ],
-    'extension_configs': {
-        'markdown_i18n': {
-            'i18n_dir': 'locales',
-        },
-    },
+    'extensions': ["markdown.extensions.def_list", "markdown.extensions.toc", "markdown.extensions.extra", ],
 }
 
 STATIC_PATHS = [
