@@ -11,7 +11,7 @@ lang: ru
 [url_mac_installer_sig]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip.sig
 [url_nix_installer]: https://github.com/freenet/fred/releases/download/build01496/new_installer_offline_1496.jar
 [url_nix_installer_sig]: https://github.com/freenet/fred/releases/download/build01496/new_installer_offline_1496.jar.sig
-[url_jnlp_installer]: {filename}/assets/jnlp/freenet.jnlp?1496
+[url_jnlp_installer]: {static}/assets/jnlp/freenet.jnlp?1496
 [url_keyring]: #keyring
 
 Чтобы получить доступ к Freenet, сначала необходимо установить основное приложение. 
@@ -50,7 +50,7 @@ Steps:
 Установка Freenet и других необходимых компонентов произойдет автоматически. 
 Когда будет готово, в браузере по умолчанию автоматически откроется окно веб-интерфейса Freenet.
 
-![]({filename}/assets/img/install/1-langselect-windows.png)
+![]({static}/assets/img/install/1-langselect-windows.png)
 
 Чтобы использовать Freenet необходима версия Windows 7 SP 1 или более новая.
 
@@ -64,7 +64,7 @@ Steps:
 Установка Freenet и других необходимых компонентов произойдет автоматически. 
 Когда будет готово, в браузере по умолчанию автоматически откроется окно веб-интерфейса Freenet.
 
-![]({filename}/assets/img/mactray/osx_installer_step2_transparent.png)
+![]({static}/assets/img/mactray/osx_installer_step2_transparent.png)
 
 Для использования Freenet необходима OSX 10.8 или более новая версия.
 
@@ -76,7 +76,7 @@ Steps:
 
 Теперь следуйте указаниям установщика:
 
-![]({filename}/assets/img/install/1-langselect.png)
+![]({static}/assets/img/install/1-langselect.png)
 
 Если так не работает:
 
@@ -272,4 +272,4 @@ Freenet автоматически подключится к незнакомы�
         uid                  Arne Babenhauserheide (freenet releases) <arne_bab@web.de>
         uid                  Arne Babenhauserheide (ArneBab) <arne_bab@web.de>
 
-[url_keyring]: {filename}/assets/keyring.gpg
+[url_keyring]: {static}/assets/keyring.gpg

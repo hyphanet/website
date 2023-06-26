@@ -10,7 +10,7 @@ lang: fr
 [url_mac_installer_sig]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip.sig
 [url_nix_installer]: https://github.com/freenet/fred/releases/download/build01496/new_installer_offline_1496.jar
 [url_nix_installer_sig]: https://github.com/freenet/fred/releases/download/build01496/new_installer_offline_1496.jar.sig
-[url_jnlp_installer]: {filename}/assets/jnlp/freenet.jnlp?1496
+[url_jnlp_installer]: {static}/assets/jnlp/freenet.jnlp?1496
 [url_keyring]: #keyring
 
 To access Freenet, you first need to install the main application.
@@ -47,7 +47,7 @@ It will automatically install Freenet and other required components for you.
 When done, your default browser will automatically open up to Freenet's
 web-based user interface.
 
-![]({filename}/assets/img/install/1-langselect-windows.png)
+![]({static}/assets/img/install/1-langselect-windows.png)
 
 Freenet requires Windows 7 SP1 or later.
 
@@ -60,7 +60,7 @@ Download and run [the installer][url_mac_installer] ([gpg signature][url_mac_ins
 It will automatically install Freenet and other required components for you.
 When done, your default browser will automatically open up to Freenet's web-based user interface.
 
-![]({filename}/assets/img/mactray/osx_installer_step2_transparent.png)
+![]({static}/assets/img/mactray/osx_installer_step2_transparent.png)
 
 Freenet requires OS X 10.8 or later.
 
@@ -72,7 +72,7 @@ Try the [Java Web Start installer][url_jnlp_installer].
 
 Now follow the installer:
 
-![]({filename}/assets/img/install/1-langselect.png)
+![]({static}/assets/img/install/1-langselect.png)
 
 If it doesn't work:
 
@@ -271,4 +271,4 @@ Download the [Freenet Project signing keys][url_keyring] and import them into yo
         uid                  Arne Babenhauserheide (freenet releases) <arne_bab@web.de>
         uid                  Arne Babenhauserheide (ArneBab) <arne_bab@web.de>
 
-[url_keyring]: {filename}/assets/keyring.gpg
+[url_keyring]: {static}/assets/keyring.gpg

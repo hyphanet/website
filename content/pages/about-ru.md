@@ -365,12 +365,12 @@ Freenet, от которого отказались большинство ос�
 
 ### Документы
 
-![][icon_pdf] [Measuring Freenet in the Wild: Censorship-resilience under Observation]({filename}/assets/papers/roos-pets2014.pdf) (PDF)
+![][icon_pdf] [Measuring Freenet in the Wild: Censorship-resilience under Observation]({static}/assets/papers/roos-pets2014.pdf) (PDF)
 Оценка Freenet: Устойчивость к цензуре под Наблюдением.
 Наблюдения и измерения сети Freenet в реальном времени.
 Включает предложения по улучшению. Было отправлено на PETS 2014.
 
-![][icon_pdf] [The Dark Freenet]({filename}/assets/papers/freenet-0.7.5-paper.pdf) (PDF)
+![][icon_pdf] [The Dark Freenet]({static}/assets/papers/freenet-0.7.5-paper.pdf) (PDF)
 Подробный документ о сети Freenet 0.7.5 в отличие от алгоритма маршрутизации, который подробно
 описан в следующих статьях. Включает несколько новых симуляций. Был отправлено на PET 2010.
 
@@ -381,35 +381,35 @@ Congress в Берлине в декабре 2005 года. В нем описы
 Freenet 0.7. Вы также можете загрузить [слайдшоу](/assets/papers/ccc-slideshow.pdf.bz2) и исходный код
 на Java [demo](/assets/papers/ccc-freenet-demo.tar.bz2) (требуется Java 1.5).
 
-![][icon_pdf] [Searching in a Small World]({filename}/assets/papers/lic.pdf) (PDF)
+![][icon_pdf] [Searching in a Small World]({static}/assets/papers/lic.pdf) (PDF)
 Поиск в Маленьком Мире.
 Лицензионная диссертация Оскара Сандберга, описывающая простой децентрализованный механизм для
 построения сетей малых миров, вдохновленная оригинальным дизайном Freenet. Часть II диссертации
 описывает основу новой архитектуры даркнета.
 
-![][icon_pdf] [Distributed routing in Small World Networks]({filename}/assets/papers/swroute.pdf) (PDF)
+![][icon_pdf] [Distributed routing in Small World Networks]({static}/assets/papers/swroute.pdf) (PDF)
 Распределенная маршрутизация в Сетях Маленького Мира.
 Статья Оскара Сандберга, описывающая теоретические основы нового механизма маршрутизации режима
 даркнет, который используется Freenet 0.7.
 
 ![][icon_pdf] Chaos Computer Congress Talk (слайд-шоу)
 Разговор на компьютерном конгрессе Chaos Computer Congress.
-Это [слайд-шоу]({filename}/assets/papers/ccc-slideshow.pdf.bz2) для выступления
+Это [слайд-шоу]({static}/assets/papers/ccc-slideshow.pdf.bz2) для выступления
 Яна Кларка и Оскара Сандберга на компьютерном конгрессе Chaos Computer Congress,
 который состоялся 30 декабря 2005 г. в Берлине, Германия.
 Он описывает новый "даркнет" подход, который будет использоваться в Freenet 0.7.
-Также доступно [Java демо]({filename}/assets/papers/ccc-freenet-demo.tar.bz2) сопровождения выступления.
+Также доступно [Java демо]({static}/assets/papers/ccc-freenet-demo.tar.bz2) сопровождения выступления.
 
-![][icon_pdf] [Switching for a small world]({filename}/assets/papers/vilhelm_thesis.pdf) (PDF)
+![][icon_pdf] [Switching for a small world]({static}/assets/papers/vilhelm_thesis.pdf) (PDF)
 Обмен для маленького мира.
 Работа Вильгельма Веренделя о способах оптимизации алгоритма обмена (позициями).
 
-![][icon_pdf] [Protecting Freedom of Information Online with Freenet]({filename}/assets/papers/freenet-ieee.pdf) (PDF)
+![][icon_pdf] [Protecting Freedom of Information Online with Freenet]({static}/assets/papers/freenet-ieee.pdf) (PDF)
 Защита свободы Информации Онлайн с помощью Freenet.
 Статья IEEE Internet Computing, описывающая архитектуру Freenet примерно в 2002 году - вероятно,
 лучшее введение в теорию, лежащую в основе Freenet.
 
-![][icon_pdf] [FreeNet White Paper]({filename}/assets/papers/ddisrs.pdf) (PDF)
+![][icon_pdf] [FreeNet White Paper]({static}/assets/papers/ddisrs.pdf) (PDF)
 Оригинальный технический документ Яна Кларка,
 факультет информатики, Эдинбургский университет, 1999 год.
 

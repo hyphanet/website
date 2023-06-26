@@ -10,7 +10,7 @@ lang: en
 [url_mac_installer_sig]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip.sig
 [url_nix_installer]: https://www.draketo.de/dateien/freenet/build01496/new_installer_offline_1496.jar
 [url_nix_installer_sig]: https://www.draketo.de/dateien/freenet/build01496/new_installer_offline_1496.jar.sig
-[url_jnlp_installer]: {filename}/assets/jnlp/freenet.jnlp?1496
+[url_jnlp_installer]: {static}/assets/jnlp/freenet.jnlp?1496
 [url_keyring]: #keyring
 [github_release_url]: https://github.com/freenet/fred/releases/tag/build01496/
 
@@ -45,7 +45,7 @@ It will automatically install Freenet and other required components for you.
 When done, your default browser will automatically open up to Freenet's
 web-based user interface.
 
-![]({filename}/assets/img/install/1-langselect-windows.png)
+![]({static}/assets/img/install/1-langselect-windows.png)
 
 Freenet requires Windows 8.1 or later.
 
@@ -68,7 +68,7 @@ Download and run [the installer][url_mac_installer] ([gpg signature][url_mac_ins
 It will automatically install Freenet and other required components for you.
 When done, your default browser will automatically open up to Freenet's web-based user interface.
 
-![]({filename}/assets/img/mactray/osx_installer_step2_transparent.png)
+![]({static}/assets/img/mactray/osx_installer_step2_transparent.png)
 
 Freenet requires macOS 10.8 or later.
 
@@ -82,7 +82,7 @@ Get the [Java-based installer][url_nix_installer] ([gpg signature][url_nix_insta
 
 Run the file with Java, then follow the installer:
 
-![]({filename}/assets/img/install/1-langselect.png)
+![]({static}/assets/img/install/1-langselect.png)
 
 You need to have a recent **Java Runtime Environment** (JRE), for
 example **OpenJDK** which can be obtained via your
@@ -278,4 +278,4 @@ Download the [Freenet Project signing keys][url_keyring] and import them into yo
         uid                  Arne Babenhauserheide (freenet releases) <arne_bab@web.de>
         uid                  Arne Babenhauserheide (ArneBab) <arne_bab@web.de>
 
-[url_keyring]: {filename}/assets/keyring.gpg
+[url_keyring]: {static}/assets/keyring.gpg
