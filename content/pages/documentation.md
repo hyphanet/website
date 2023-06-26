@@ -157,7 +157,7 @@ your friends. In practice most people start off with insecure mode and
 gradually add friends, and hopefully turn off insecure mode once they have at
 least 10 friends.
 
-![Hyphanet network architecture]({static}/assets/img/Hyphanet-architecture-small.png)
+![Hyphanet network architecture]({static}/assets/img/Freenet-architecture-small.png)
 
 *Figure 1: Visible Hyphanet connections*
 
@@ -229,7 +229,7 @@ his/her side, the connection **does not work**.
 When you have a number of connections, you can visit the Darknet page. It
 should look something like this:
 
-![Darknet peers Screenshot]({static}/assets/img/Hyphanet-darknet_peers.png)
+![Darknet peers Screenshot]({static}/assets/img/Freenet-darknet_peers.png)
 
 There are a number of status messages that can be seen here:
 
