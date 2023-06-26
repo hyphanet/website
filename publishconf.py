@@ -19,3 +19,7 @@ DELETE_OUTPUT_DIRECTORY = True
 
 #DISQUS_SITENAME = ""
 #GOOGLE_ANALYTICS = ""
+
+# Image optimization is very intensive and slow, so only perform it when
+# publishing.
+PLUGINS.append('optimize_images')
