@@ -35,18 +35,10 @@ JINJA_ENVIRONMENT = {
 
 ASSET_SOURCE_PATHS = ['static']
 
-I18N_SUBSITES = {}
-
-def subsite(language):
-    I18N_SUBSITES[language] = {
-        'MARKDOWN' : {
-            'extensions': ["markdown.extensions.def_list", "markdown.extensions.toc", "markdown.extensions.extra", ],
-        },
-    }
-
-for language in os.listdir("locales"):
-    if os.path.exists(os.path.join("locales", language, "LC_MESSAGES", "messages.mo")):
-        subsite(language)
+I18N_SUBSITES = {
+        'fr': {},
+        'ru': {},
+}
 
 I18N_GETTEXT_LOCALEDIR = 'locales'
 I18N_GETTEXT_DOMAIN = 'messages'
