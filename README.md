@@ -3,31 +3,22 @@ Environment
 
 Install the required packages
 
-    sudo apt-get install python-pip python-virtualenv gettext optipng libjpeg-turbo-progs
+    sudo apt-get install python3-pip
 
-Using a python virtualenv is recommended.
+Open a pipenv
 
-Create a virtualenv
-
-    virtualenv pelican_env
-
-Use virtualenv
-
-    source pelican_env/bin/activate
-
-Install Python modules
-
-    pip install -r requirements.txt
+    python3 -m pip install pipenv
+    pipenv shell
 
 Enable Pelican plugins
 
     git submodule init
     git submodule update
 
-Building
-========
+Deploying
+=========
 
-    make html
+    make github
 
 
 Build for upload in Freenet
@@ -42,4 +33,4 @@ Build for upload in Freenet
 Testing 
 =======
 
-    firefox output/index.html
+    make devserver
