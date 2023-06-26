@@ -172,10 +172,6 @@ section > cite {
 }
 #actions a:nth-of-type(3) h2:before {
 	display: block;
-	content: url('../images/donate-white.png');
-}
-#actions a:nth-of-type(4) h2:before {
-	display: block;
 	content: url('../images/contribute-white.png');
 }
 
