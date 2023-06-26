@@ -5,10 +5,10 @@ lang: ru
 [url_lysator]: http://www.lysator.liu.se/index_en.html
 [url_mirror_lysator]: http://ftp.lysator.liu.se/pub/freenet/
 [url_mirror_lysator_tor]: http://lysator7eknrfl47rlyxvgeamrv7ucefgrrlhk7rouv3sna25asetwid.onion/pub/freenet/
-[url_win_installer]: https://github.com/freenet/fred/releases/download/build01496/HyphanetInstaller-1496.exe
-[url_win_installer_sig]: https://github.com/freenet/fred/releases/download/build01496/HyphanetInstaller-1496.exe.sig
-[url_mac_installer]: https://github.com/freenet/mactray/releases/download/v2.1.0/HyphanetTray_2.1.0.zip
-[url_mac_installer_sig]: https://github.com/freenet/mactray/releases/download/v2.1.0/HyphanetTray_2.1.0.zip.sig
+[url_win_installer]: https://github.com/freenet/fred/releases/download/build01496/FreenetInstaller-1496.exe
+[url_win_installer_sig]: https://github.com/freenet/fred/releases/download/build01496/FreenetInstaller-1496.exe.sig
+[url_mac_installer]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip
+[url_mac_installer_sig]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip.sig
 [url_nix_installer]: https://github.com/freenet/fred/releases/download/build01496/new_installer_offline_1496.jar
 [url_nix_installer_sig]: https://github.com/freenet/fred/releases/download/build01496/new_installer_offline_1496.jar.sig
 [url_jnlp_installer]: {static}/assets/jnlp/freenet.jnlp?1496
