@@ -1,21 +1,16 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*- #
-from __future__ import unicode_literals
-
 import os
 import os.path
 
-AUTHOR = u'Freenet Project Inc.'
-SITENAME = u'Freenet Project'
-SITEURL = os.environ['SITEURL']
-BASE_URL = os.environ['SITEURL']
+AUTHOR = 'Freenet Project Inc.'
+SITENAME = 'Freenet Project'
+SITEURL = ''
 THEME = 'theme'
 
 PATH = 'content'
 
-TIMEZONE = 'US/Pacific'
+TIMEZONE = 'Europe/Rome'
 
-DEFAULT_LANG = u'en'
+DEFAULT_LANG = 'en'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
