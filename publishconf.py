@@ -20,6 +20,7 @@ DELETE_OUTPUT_DIRECTORY = True
 #DISQUS_SITENAME = ""
 #GOOGLE_ANALYTICS = ""
 
-# Image optimization is very intensive and slow, so only perform it when
-# publishing.
+# Only run these plugins when publishing:
+
+# Image optimization is very intensive and slow.
 PLUGINS.append('optimize_images')

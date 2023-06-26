@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 ghp-import = "*"
 pelican = {extras = ["markdown"], version = "*"}
+pelican-webassets = "*"
 
 [dev-packages]
 

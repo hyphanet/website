@@ -28,26 +28,25 @@ SOCIAL = set()
 DEFAULT_PAGINATION = 10
 
 PLUGIN_PATHS = ['pelican-plugins']
-PLUGINS = ["assets", "i18n_subsites"]
+PLUGINS = ['i18n_subsites', 'webassets']
 JINJA_ENVIRONMENT = {
     'extensions' : ["jinja2.ext.i18n"],
 }
 
-ASSET_SOURCE_PATHS = ['static']
-
-I18N_SUBSITES = {
-        'fr': {},
-        'ru': {},
-}
-
-I18N_GETTEXT_LOCALEDIR = 'locales'
-I18N_GETTEXT_DOMAIN = 'messages'
-I18N_TEMPLATES_LANG = 'en'
-
+WEBASSETS_SOURCE_PATHS = ['static']
 
 MARKDOWN = {
     'extensions': ["markdown.extensions.def_list", "markdown.extensions.toc", "markdown.extensions.extra", ],
 }
+
+I18N_SUBSITES = {}
+I18N_GETTEXT_LOCALEDIR = 'locales'
+I18N_GETTEXT_DOMAIN = 'messages'
+I18N_TEMPLATES_LANG = 'en'
+
+for language in os.listdir(I18N_GETTEXT_LOCALEDIR):
+    if os.path.exists(os.path.join(I18N_GETTEXT_LOCALEDIR, language, "LC_MESSAGES", I18N_GETTEXT_DOMAIN + ".mo")):
+        I18N_SUBSITES[language] = {'MARKDOWN': MARKDOWN}
 
 STATIC_PATHS = [
     'assets',
