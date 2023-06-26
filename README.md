@@ -18,13 +18,14 @@ Enable Pelican plugins
 Deploying
 =========
 
+    pipenv shell
     make github
 
 
 Build for upload in Freenet
 ---------------------------
 
-    source pelican_env/bin/activate
+    pipenv shell
     PYTHONPATH=$PYTHONPATH:pelican-plugins{$(ls pelican-plugins/| sed 's/ /,/g')}
     SITEURL=/USK@0iU87PXyodL2nm6kCpmYntsteViIbMwlJE~wlqIVvZ0,nenxGvjXDElX5RIZxMvwSnOtRzUKJYjoXEDgkhY6Ljw,AQACAAE/freenetproject-mirror/490
     DEBUG=1
@@ -33,4 +34,5 @@ Build for upload in Freenet
 Testing 
 =======
 
+    pipenv shell
     make devserver
