@@ -1,8 +1,8 @@
 import os
 import os.path
 
-AUTHOR = 'Freenet Project Inc.'
-SITENAME = 'Freenet Project'
+AUTHOR = 'Hyphanet Contributors'
+SITENAME = 'Hyphanet'
 SITEURL = ''
 THEME = 'theme'
 
