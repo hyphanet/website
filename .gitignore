@@ -6,3 +6,4 @@
 /output
 /locales/messages.pot
 /locales/*/LC_MESSAGES/messages.mo
+/theme/static/style/output/
