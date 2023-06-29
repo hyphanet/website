@@ -2,7 +2,7 @@
 <html lang="{{ DEFAULT_LANG }}">
 <head>
 {% assets filters="cssmin", output="style/base.min.css", "style/bebas.css", "style/ptsans.css", "style/social.css", "style/toc.css", "style/content.css", "style/donate.css", "style/menu.css" %}
-        <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
+        <link rel="stylesheet" href="/{{ ASSET_URL }}">
 {% endassets %}
         {% block head %}
         <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
