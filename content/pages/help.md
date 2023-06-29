@@ -872,8 +872,8 @@ that causes timeouts ...)
 
 ### What about attack Y?
 
-Hyphanet is still in testing and there are bound to be attacks found that we
-have not dealt with yet. So if you do manage to figure out a truly new kind
+Complex software free from security vulnerabilities is essentially impossible, and there are bound to be attacks that we
+are unaware of or have not yet been able to prevent. If you believe you have discovered a new kind
 of attack, we are interested in hearing about it. Please keep in mind what
 Hyphanet is and what it is not, however. No single network can offer everybody
 everything, and there are security issues that Hyphanet, by its nature,
