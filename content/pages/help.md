@@ -953,10 +953,10 @@ We believe our installer is not infected with malicious software, and if you are
 
 ### Has anyone ever faced legal trouble for their anonymous activities conducted on Hyphanet?
 
-Yes.
-There is one such instance that we know of.
+Yes. We do know of some such instances.
+
 United States law enforcement can identify anonymous users of [Hyphanet][f] and [Tor][t].
-Without further information we do not know how they did this, but we suspect it affects people using the network security level "normal" or lower.
+We have [some information about the techniques used][le_technique], and we suspect it primarily affects people using the network security level "normal" or lower.
 It is reasonable to assume that other governments have access to the same technology, which is provided by private contractors.
 If you are concerned about governments, you should use Hyphanet's capacity to connect only to users you trust, ("high" network security level or higher) and bear in mind that no anonymity technology provides perfect protection.
 
@@ -966,6 +966,7 @@ Therefore we hope to discover and fix these flaws to protect those who fight for
 
 [f]: http://www.thedickinsonpress.com/news/north-dakota/3885239-predators-police-online-struggle
 [t]: http://motherboard.vice.com/read/court-docs-show-a-university-helped-fbi-bust-silk-road-2-child-porn-suspects
+[le_technique]: the-discredited-levine-2017-approach-is-still-used.html
 
 ### Additional information sources
 
