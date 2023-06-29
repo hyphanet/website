@@ -657,10 +657,10 @@ be able to perform the attack while the data is being inserted; after that,
 it is distributed across the network and is much harder to trace, and the
 originator may have left the network. However, if by chance or by
 overwhelming force the attacker is connected to the whistleblower (or e.g.
-seizes the computers of everyone on the network), he may be able to identify
+seizes the computers of everyone on the network), they may be able to identify
 this much more quickly. All of this is vastly more difficult on a darknet,
 where everyone connects only to their friends, where it is very hard for an
-attacker to find nodes, and where to connect to a given node he must social
+attacker to find nodes, and where to connect to a given node they must social
 engineer its operator! Hyphanet does support opennet mode (plug and play),
 but darknet is far more secure, and far more difficult to block on a national
 firewall.
@@ -722,7 +722,7 @@ here are the major classes of attack on Hyphanet we are presently aware of:
   but see the below section on "correlation attacks", which generally are
   feasible with only a single connection to the target. So this is a question of
   resources - if the attacker has the resources to surveil all new Hyphanet
-  nodes, he has a good chance of pulling it off. In future we may have more
+  nodes, they have a good chance of pulling it off. In future we may have more
   seednodes, and only reveal a small proportion of them to each node, as Tor
   does with its hidden bridges, but that will not prevent attackers from
   creating lots of malicious seednodes and getting them into the official lists,
@@ -769,7 +769,7 @@ here are the major classes of attack on Hyphanet we are presently aware of:
   one. Using a dedicated identity for posting sensitive content, which doesn't
   chat too much, again will help. Another thing which makes a huge difference is
   connecting only to your friends (i.e. using darknet): This makes it extremely
-  difficult for an attacker to get new connections closer to where he thinks you
+  difficult for an attacker to get new connections closer to where they think you
   must be, just as it helps with correlation attacks. So the biggest problems
   with this attack are 1) Files which are not very popular fall off Hyphanet
   relatively quickly, so need to be reinserted, but it is not safe to reinsert
@@ -779,7 +779,7 @@ here are the major classes of attack on Hyphanet we are presently aware of:
   for predictable keys so can be relatively slow without this causing problems
   in practice. Also there is work going on on various techniques to allow users
   to do reinserts safely via for example preventing the attacker from seeing
-  requests started before he connected. Another important point is this only
+  requests started before they connected. Another important point is this only
   works if the source is uploading new content, or chatting, regularly; creating
   and bootstrapping a new pseudonymous identity over a short period, doing a
   single insert (of any size) with the safe random key option, and announcing
@@ -836,7 +836,7 @@ multiplier (the total number of nodes visited, around 20 on average), and you
 are severely limited by the number of nodes you can connect to, which will be
 low on a darknet.
 
-### Why hash keys and encrypt data when a node operator could identify them (the data) anyway if he tried?
+### Why hash keys and encrypt data when a node operator could identify them (the data) anyway if they tried?
 
 Hashing the key and encrypting the data is not meant a method to keep Hyphanet
 Node operators from being able to figure out what type of information is in
