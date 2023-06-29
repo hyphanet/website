@@ -15,6 +15,12 @@ Enable Pelican plugins
     git submodule init
     git submodule update
 
+Testing 
+=======
+
+    pipenv shell
+    make devserver
+
 Deploying
 =========
 
@@ -30,9 +36,3 @@ Build for upload in Freenet
     SITEURL=/USK@0iU87PXyodL2nm6kCpmYntsteViIbMwlJE~wlqIVvZ0,nenxGvjXDElX5RIZxMvwSnOtRzUKJYjoXEDgkhY6Ljw,AQACAAE/freenetproject-mirror/490
     DEBUG=1
     make html && freesitemgr update freenetproject-mirror
-
-Testing 
-=======
-
-    pipenv shell
-    make devserver
