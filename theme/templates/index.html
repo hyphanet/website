@@ -4,7 +4,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
 		<title>Hyphanet</title>
-{% assets filters="cssmin", output="style/index.min.css", "style/bebas.css", "style/ptsans.css", "style/social.css", "style/content.css", "style/landing.css", "style/menu.css" %}
+{% assets filters="cssmin", output="style/index.min.css", "style/bebas.css", "style/ptsans.css", "style/social.css", "style/content.css", "style/landing.css", "style/menu.css", "style/dark-styles.css" %}
 		<link rel="stylesheet" href="/{{ ASSET_URL }}">
 {% endassets %}
 		{% if extra_siteurls %}
@@ -36,6 +36,10 @@
 				  {% trans title=p.title %}{{ title }}{% endtrans %}
 			  </a>
 			{% endfor %}
+			<label class="toggle-switch">
+				<input type="checkbox" id="darkModeToggle">
+				<span class="toggle-slider"></span>
+			</label>
 		</nav>
 		<nav id="language">
 		{% if extra_siteurls %}
