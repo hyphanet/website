@@ -337,7 +337,7 @@ depending on how much it is used.
 Each file that exists on Hyphanet has a key associated with it. Hyphanet 0.7
 has various types of keys. Keys are used for everything on Hyphanet, and are a
 kind of [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) (
-e.g. freenet:=KSK@sample.txt).
+e.g. freenet:KSK@sample.txt).
 
 Most keys are hashes: there is no notion of semantic closeness when speaking
 of key closeness. Therefore there will be no correlation between key
