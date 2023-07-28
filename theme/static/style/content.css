@@ -17,10 +17,6 @@ blockquote {
 	font-style: italic;
 }
 
-body a {
-	text-decoration: none;
-}
-
 html {
 	min-height: 100%;
 	height: 100%;
@@ -68,14 +64,6 @@ main h1, h2, h3, h4, h5, h6 {
 
 h1, h2 {
 	font-weight: 700;
-}
-
-h1 a:after,
-h2 a:after,
-h3 a:after {
-	display: inline-block;
-	content: url('../images/link-h2-blue.png');
-	margin-left: 4px;
 }
 
 nav {
@@ -221,6 +209,7 @@ section h2 {
 	text-align: center;
 	margin-top: 0px;
 	margin-bottom: 0.25em;
+	text-decoration: none;
 }
 
 #actions a {
@@ -258,6 +247,10 @@ line-height: 39.901px;/* Approximation due to font substitution */
 	justify-content: space-around;
 }
 
+#features a {
+	text-decoration: none;
+}
+
 #features ul li {
 	width: 240px;
 }
@@ -277,10 +270,6 @@ line-height: 39.901px;/* Approximation due to font substitution */
     padding-left: 0.5em;
     padding-right: 0.5em;
     background-color: white;
-}
-
-#features p a {
-    color:  #416ab3;
 }
 
 #features h3 {
