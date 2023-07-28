@@ -21,6 +21,11 @@ html {
 	min-height: 100%;
 	height: 100%;
 }
+
+:root {
+  color-scheme: dark;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -39,7 +44,6 @@ body > div {
 }
 
 body > div:nth-of-type(1) {
-	color:  #fafbfc;
 	box-sizing: border-box;
 	padding-bottom: 1em;
 	overflow-y: hidden;
@@ -58,17 +62,12 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: BebasNeueBold, "bebas-neue", sans-serif;
 }
 
-main h1, h2, h3, h4, h5, h6 {
-	color: #416ab3;
-}
-
 h1, h2 {
 	font-weight: 700;
 }
 
 nav {
 	font-family: BebasNeueBold, "bebas-neue", sans-serif;
-	color:  #fafbfc;
 	font-size: 17.69px;/* Approximation due to font substitution */
 	padding: 1em 1em 1em 6em;
 	display: inline-block;
@@ -97,7 +96,6 @@ nav a {
 	height: 29px;
 	line-height: 29px;
 	vertical-align: middle;
-	color:  #fafbfc;
 	margin-left: 0.75em;
 	font-size: 104%;
 	font-weight: 700;
@@ -113,7 +111,6 @@ nav a.current {
 }
 
 body > div > header {
-	color:  #fafbfc;
 	margin-top: -40px; /* get the text closer to the top. */
 }
 
@@ -139,7 +136,6 @@ body > div > .social {
 
 body > div > header p {
 	margin-top: 0px;
-	color:  #f3f6f6;
 	font-size: larger;
 	text-align: center;
 }
@@ -168,14 +164,12 @@ section > cite {
 }
 
 .download .title {
-	color:  #fcfafa;
 	font-size: 24.51px;/* Approximation due to font substitution */
 	text-align: center;
 	font-family: 'PT Sans', 'Lucida Sans', 'Segoe UI', 'Calibri',  sans-serif;
 }
 
 .download .description {
-color:  rgba(249, 250, 251, 0.5);
 font-size: 14.71px;
 font-weight: 400;
 line-height: 15px;
@@ -183,7 +177,6 @@ text-align: center;
 }
 
 section h2 {
-	color:  #416ab3;
 	font-size: 40px;/* Approximation due to font substitution */
 	text-align: center;
 	line-height: 39.901px;/* Approximation due to font substitution */
@@ -196,14 +189,12 @@ section h2 {
 }
 
 #actions h2 {
-	color:  #fcfafa;
 	font-size: 32px;
 	margin-bottom: 0px;
 }
 
 #actions p,
 #actions a {
-	color:  rgba(249, 250, 251, 0.5);
 	font-size: larger;
 	/*font-weight: 400;*/
 	text-align: center;
@@ -222,14 +213,12 @@ section h2 {
 }
 
 #whatsfreenet h2 {
-color:  #416ab3;
 font-size: 40px;/* Approximation due to font substitution */
 line-height: 39.901px;/* Approximation due to font substitution */
 }
 
 #whatsfreenet a {
 	display: block;
-	color:  #416ab3;
 	font-size: 17px;
 	font-weight: 600;
 	text-align: center;
@@ -261,7 +250,6 @@ line-height: 39.901px;/* Approximation due to font substitution */
 }
 
 #features h3 {
-	color:  #1b3e7d;
 	font-size: 40px;/* Approximation due to font substitution */
 	line-height: 39.901px;/* Approximation due to font substitution */
 }
@@ -274,11 +262,9 @@ line-height: 39.901px;/* Approximation due to font substitution */
     max-width: 42em;
     padding-left: 0.5em;
     padding-right: 0.5em;
-    background-color: white;
 }
 
 #features h3 {
-	color:  #416ab3;
 	font-size: 32px;
 	font-weight: 600;
 	text-align: center;
@@ -306,14 +292,11 @@ line-height: 39.901px;/* Approximation due to font substitution */
 }
 
 #features li p {
-	color:  #515862;
 	text-align: center;
 }
 
 #news {
 	min-height: 430px;
-	background-color: rgb(242, 242, 243); /* matches eyedropper */
-
 	margin-top: 5em;
 	padding-top: 4em;
 	padding-bottom: 4em;
@@ -331,7 +314,6 @@ line-height: 39.901px;/* Approximation due to font substitution */
 }
 
 #news ol li h3 {
-	color:  #416ab3;
 	font-size: large;
 	font-weight: 700;
 	margin-top: 0;
@@ -340,14 +322,12 @@ line-height: 39.901px;/* Approximation due to font substitution */
 }
 
 #news ol li p {
-	color:  #515862;
 	font-size: medium;
 	width: auto;
 	margin-top: 1em;
 }
 
 #news ol li .time {
-	color:  #416ab3;
 	font-size: medium;
 	font-weight: 600;
 	font-style: italic;
@@ -360,10 +340,10 @@ line-height: 39.901px;/* Approximation due to font substitution */
 #news a {
 	display: inline-block;
 	margin-top: 2em;
-	background: rgb(65, 106, 179);
 	border-radius: 2px 2px 2px 2px;
 	padding: 0px 1ex 0px 1ex;
-	color: white;
+	// Matches icons
+	color: #416AB3;
 	font-size: large;
 	line-height: 20px;
 }
@@ -404,12 +384,6 @@ line-height: 39.901px;/* Approximation due to font substitution */
 #testimonials cite {
 	display: block;
 	font-weight: 600;
-	color: #416ab3; /* eyedropper */
-}
-
-#testimonials cite a {
-	color: rgb(33, 144, 193);
-	color: #416ab3; /* eyedropper */
 }
 
 #testimonials cite:after {
@@ -422,10 +396,6 @@ line-height: 39.901px;/* Approximation due to font substitution */
 main {
 	padding: 1em;
 	overflow: hidden;
-}
-
-body main a {
-	color:  #416ab3;
 }
 
 ol li p:only-of-type {
@@ -487,6 +457,10 @@ footer h2:before {
 	content: url('../images/logo-small.png');
 }
 
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
+
 footer h2 {
 	text-align: left;
 	font-size: 40px;
@@ -535,10 +509,6 @@ footer form button {
 	background-position: 0px center;
 	background-repeat: no-repeat; /* TODO: shorthand background */
 	text-indent: -99999px;
-}
-
-footer a {
-	color: white;
 }
 
 footer .stats li:first-of-type:before {
