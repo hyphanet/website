@@ -236,7 +236,7 @@ line-height: 39.901px;/* Approximation due to font substitution */
 	justify-content: space-around;
 }
 
-#features a {
+#features ul li a {
 	text-decoration: none;
 }
 
