@@ -40,7 +40,7 @@ Hyphanet в режиме "darknet", когда пользователи подк
 для распространения цензурированной информации по всему миру, включая такие страны, как
 Китай и страны Ближнего Востока. Идеи и концепции, которые впервые появились именно во
 Hyphanet, оказали значительное влияние на академический мир. Наша статья 2000 года
-"Hyphanet: распределенная система анонимного хранения и поиска информации" ("Hyphanet:
+"Hyphanet: распределенная система анонимного хранения и поиска информации" ("Freenet:
 A Distributed Anonymous Information Storage and Retrieval System") была самой цитируемой
 статьей по информатике 2000 года по версии Citeseer. Также, Hyphanet вдохновил написание
 серии статей в области права и философии. Ян Кларк, создатель и координатор проекта Hyphanet,
@@ -315,7 +315,7 @@ Eleriseth
 
 Somedude
 
-: Разработчик форумной системы на базе Hyphanet, FMS, HyphanetHG и FLIP, общается через Hyphanet.
+: Разработчик форумной системы на базе Hyphanet, FMS, FreenetHG и FLIP, общается через Hyphanet.
 
 
 Ребята из форума Frost
@@ -365,12 +365,12 @@ Hyphanet, от которого отказались большинство ос
 
 ### Документы
 
-![][icon_pdf] [Measuring Hyphanet in the Wild: Censorship-resilience under Observation]({static}/assets/papers/roos-pets2014.pdf) (PDF)
+![][icon_pdf] [Measuring Freenet in the Wild: Censorship-resilience under Observation]({static}/assets/papers/roos-pets2014.pdf) (PDF)
 Оценка Hyphanet: Устойчивость к цензуре под Наблюдением.
 Наблюдения и измерения сети Hyphanet в реальном времени.
 Включает предложения по улучшению. Было отправлено на PETS 2014.
 
-![][icon_pdf] [The Dark Hyphanet]({static}/assets/papers/freenet-0.7.5-paper.pdf) (PDF)
+![][icon_pdf] [The Dark Freenet]({static}/assets/papers/freenet-0.7.5-paper.pdf) (PDF)
 Подробный документ о сети Hyphanet 0.7.5 в отличие от алгоритма маршрутизации, который подробно
 описан в следующих статьях. Включает несколько новых симуляций. Был отправлено на PET 2010.
 
@@ -404,7 +404,7 @@ Hyphanet 0.7. Вы также можете загрузить [слайдшоу]
 Обмен для маленького мира.
 Работа Вильгельма Веренделя о способах оптимизации алгоритма обмена (позициями).
 
-![][icon_pdf] [Protecting Freedom of Information Online with Hyphanet]({static}/assets/papers/freenet-ieee.pdf) (PDF)
+![][icon_pdf] [Protecting Freedom of Information Online with Freenet]({static}/assets/papers/freenet-ieee.pdf) (PDF)
 Защита свободы Информации Онлайн с помощью Hyphanet.
 Статья IEEE Internet Computing, описывающая архитектуру Hyphanet примерно в 2002 году - вероятно,
 лучшее введение в теорию, лежащую в основе Hyphanet.

@@ -40,10 +40,10 @@ Hyphanet has been downloaded over 2 million times since the project started,
 and used for the distribution of censored information all over the world
 including countries such as China and in the Middle East. Ideas and concepts
 pioneered in Hyphanet have had a significant impact in the academic world. Our
-2000 paper "Hyphanet: A Distributed Anonymous Information Storage and
+2000 paper "Freenet: A Distributed Anonymous Information Storage and
 Retrieval System" was the most cited computer science paper of 2000 according
 to Citeseer, and Hyphanet has also inspired papers in the worlds of law and
-philosophy. Ian Clarke, Hyphanet's creator and project coordinator,
+philosophy. Ian Clarke, Hyphanet's creator
 was selected as one of the top 100 innovators of 2003 by MIT's Technology
 Review magazine.
 
@@ -378,11 +378,11 @@ mention thousands of users, testers, and [donors](donate.html#sponsors)!
 
 ### Papers
 
-![][icon_pdf] [Measuring Hyphanet in the Wild: Censorship-resilience under Observation]({static}/assets/papers/roos-pets2014.pdf) (PDF)
+![][icon_pdf] [Measuring Freenet in the Wild: Censorship-resilience under Observation]({static}/assets/papers/roos-pets2014.pdf) (PDF)
 Observations and measurements on the live Hyphanet network. Includes suggestions
 for improvement. This was submitted to PETS 2014.
 
-![][icon_pdf] [The Dark Hyphanet]({static}/assets/papers/freenet-0.7.5-paper.pdf) (PDF)
+![][icon_pdf] [The Dark Freenet]({static}/assets/papers/freenet-0.7.5-paper.pdf) (PDF)
 Detailed paper about the Hyphanet 0.7.5 network, as opposed to its routing
 algorithm, which is detailed in the below papers. Includes some new
 simulations. This has been submitted to PET 2010.
@@ -414,7 +414,7 @@ also]({static}/assets/papers/ccc-freenet-demo.tar.bz2) available.
 ![][icon_pdf] [Switching for a small world]({static}/assets/papers/vilhelm_thesis.pdf) (PDF)
 A thesis by Vilhelm Verendel exploring ways to optimise the swapping algorithm.
 
-![][icon_pdf] [Protecting Freedom of Information Online with Hyphanet]({static}/assets/papers/freenet-ieee.pdf) (PDF)
+![][icon_pdf] [Protecting Freedom of Information Online with Freenet]({static}/assets/papers/freenet-ieee.pdf) (PDF)
 An IEEE Internet Computing article describing the Hyphanet architecture circa
 2002 - probably the best introduction to the theory behind Hyphanet.
 
