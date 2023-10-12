@@ -56,7 +56,7 @@ varies between 5 and 65, depending on the bandwidth available at the
 nodes. A snapshot of the connection-count distribution can be seen on
 the [Freenet statistics site][freenet-stats]. Between 10% and 80% of
 the connections are inactive due to overload (backoff). This increased
-when grouds of users started to patch their nodes to request data at a
+when groups of users started to patch their nodes to request data at a
 higher rate than the rest.
 
 [freenet-stats]: https://d6.gnutella2.info/freenet/USK@WMa1Z40iYdZZ51yctQ3toFl9zuuFEnNdsm3NejJU5KE,jCBcaNBeKD5~sSQeSkyKz737Bh5ibBGqdzfD8mgfdMY,AQACAAE/statistics/560/
