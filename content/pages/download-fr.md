@@ -49,7 +49,12 @@ web-based user interface.
 
 ![]({static}/assets/img/install/1-langselect-windows.png)
 
-Hyphanet requires Windows 7 SP1 or later.
+Hyphanet requires Windows 8.1 or later.
+
+Free code signing provided by
+[SignPath.io](https://about.signpath.io/), certificate by SignPath
+Foundation.
+
 
 ## OS X
 

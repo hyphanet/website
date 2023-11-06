@@ -49,6 +49,10 @@ web-based user interface.
 
 Hyphanet requires Windows 8.1 or later.
 
+Free code signing provided by
+[SignPath.io](https://about.signpath.io/), certificate by SignPath
+Foundation.
+
 **Note**: Once a Windows version reaches end of life, we do not guarantee
 any longer support, or the fact that Hyphanet will install and/or work in
 such environments. However, it is not mandatory that Hyphanet will not work

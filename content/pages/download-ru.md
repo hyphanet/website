@@ -52,7 +52,11 @@ Steps:
 
 ![]({static}/assets/img/install/1-langselect-windows.png)
 
-Чтобы использовать Hyphanet необходима версия Windows 7 SP 1 или более новая.
+Чтобы использовать Hyphanet необходима версия Windows 8.1 или более новая.
+
+Free code signing provided by
+[SignPath.io](https://about.signpath.io/), certificate by SignPath
+Foundation.
 
 ## OS X
 
