@@ -107,10 +107,11 @@ To install on a headless system, or if you get fontconfig problems, use the `-co
     java -jar new_installer_offline.jar -console;
 
 
-**Note**: We would love to have packages for most distributions.
-There is a [package for Gentoo](https://packages.gentoo.org/packages/net-p2p/freenet), and
-a preliminary but un-maintained [Debian package](https://github.com/freenet/fred/pull/774).
-If you would like to help, it would be much appreciated!
+**Note**: We would love to have packages for most distributions. There
+is a [package for Gentoo](https://packages.gentoo.org/packages/net-p2p/freenet), and a
+[Debian package](https://github.com/freenet/fred/pull/774). The debian
+Package also works on WSL2 (but not WSL1). If you would like to help,
+it would be much appreciated!
 
 **Note**: On some systems (including FreeBSD and OpenBSD) the wrapper does
 not work, unless you install additional software packages and configure it.
