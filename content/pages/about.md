@@ -441,7 +441,7 @@ An algorithm for setting up onion-like tunnels on darknets.
 
 ![][icon_pdf] [Routing in the Dark: Pitch Black](http://grothoff.org/christian/pitchblack.pdf) ([citeseer](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.117.1543)) (PDF)  
 A paper describing some attacks on Hyphanet 0.7's location swapping algorithm.
-We have solutions for this but they are still being tested.
+A clean mitigation was deployed in build 1492.
 
 * * *
 
