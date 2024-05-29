@@ -289,11 +289,12 @@ Download the [Hyphanet Project signing keys][url_keyring] and import them into y
 
 Free code signing provided by [SignPath.io](https://about.signpath.io/?), certificate by [SignPath Foundation](https://signpath.org/).
 
-## Privacy polic
+## Privacy policy
 
-This program will not transfer any information to other networked
-systems unless specifically requested by the user or the person
-installing or operating it.
+This program will not transfer any information to other networked systems
+unless specifically requested by the user or the person installing or operating
+it.
 
-Choosing the insecure mode (Opennet) will cause the IP address to be sent
-to seednodes to connect into the network.
+Choosing a normal or low network security level (opennet) will cause Hyphanet
+to connect to seed nodes in order to join the network. Doing this will provide
+its IP address to the seed nodes.
