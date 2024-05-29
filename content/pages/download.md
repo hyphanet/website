@@ -284,3 +284,16 @@ Download the [Hyphanet Project signing keys][url_keyring] and import them into y
         uid                  Arne Babenhauserheide (ArneBab) <arne_bab@web.de>
 
 [url_keyring]: {static}/assets/keyring.gpg
+
+### Code signing policy
+
+Free code signing provided by [SignPath.io](https://about.signpath.io/?), certificate by [SignPath Foundation](https://signpath.org/).
+
+## Privacy polic
+
+This program will not transfer any information to other networked
+systems unless specifically requested by the user or the person
+installing or operating it.
+
+Choosing the insecure mode (Opennet) will cause the IP address to be sent
+to seednodes to connect into the network.
