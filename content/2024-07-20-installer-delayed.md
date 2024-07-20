@@ -1,4 +1,5 @@
 ---
+lang: en
 author: Arne Babenhauserheide
 layout: content
 title:  Freenet/Hyphanet 1498 installer delayed
@@ -94,6 +95,6 @@ Thank you for your contributions, and thank you for using Freenet / Hyphanet!
 [windows-installer]: https://www.draketo.de/dateien/freenet/build01497/FreenetInstaller-1497.exe
 [linux-installer]: https://www.draketo.de/dateien/freenet/build01497/new_installer_offline_1497.jar
 [android-package]: https://freenet-mobile.github.io/app/
-[forced renaming]: (/freenet-renamed-to-hyphanet.html)
+[forced renaming]: /freenet-renamed-to-hyphanet.html
 [verify-build]: https://github.com/hyphanet/scripts/blob/master/verify-build
 [new signing workflow]: https://github.com/hyphanet/sign-windows-installer/blob/main/.github/workflows/ci.yml
