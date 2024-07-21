@@ -3,7 +3,7 @@ lang: en
 author: Arne Babenhauserheide
 layout: content
 title:  Freenet/Hyphanet 1498 installer delayed
-date:   2023-07-20
+date:   2024-07-20
 categories: release
 ---
 Freenet / Hyphanet 0.7.5 build 1498 has been **released via auto-update**
