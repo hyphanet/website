@@ -119,6 +119,10 @@ You can start Hyphanet manually there, but you then don’t have
 auto-updates. After installation you find the relevant classpath
 arguments in wrapper.conf. Then call java directly with a command like `java -Xmx1500m -Xss512k -Dnetworkaddress.cache.ttl=0 -Dnetworkaddress.cache.negative.ttl=0 --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED  -cp bcprov-jdk15on-1.59.jar:freenet-ext.jar:freenet.jar:jna-4.5.2.jar:jna-platform-4.5.2.jar:pebble-3.1.5.jar:unbescape-1.1.6.RELEASE.jar:slf4j-api-1.7.25.jar freenet.node.NodeStarter`
 
+**Note**: _Apple Silicon_ needs library updates to work, so you’ll have to download and use a new version of jna….jar and jna-platform….jar in the command above.
+
+
+
 ## Release Mirror
 
 Our releases are provided via Lysator. You can try the
