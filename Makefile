@@ -14,9 +14,9 @@ export SITEURL?=$(OUTPUTDIR)
 else
 
 ifndef TRAVIS_TAG
-export SITEURL=https://staging.freenetproject.org
+export SITEURL=https://hyphanet.org
 else
-export SITEURL=https://freenetproject.org
+export SITEURL=https://hyphanet.org
 endif
 
 endif
