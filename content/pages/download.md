@@ -4,15 +4,15 @@ lang: en
 [url_lysator]: https://www.lysator.liu.se/index_en.html
 [url_mirror_lysator]: https://ftp.lysator.liu.se/pub/freenet/
 [url_mirror_lysator_tor]: http://lysator7eknrfl47rlyxvgeamrv7ucefgrrlhk7rouv3sna25asetwid.onion/pub/freenet/
-[url_win_installer]: https://www.draketo.de/dateien/freenet/build01498/FreenetInstaller-1498.exe
-[url_win_installer_sig]: https://www.draketo.de/dateien/freenet/build01498/FreenetInstaller-1498.exe.sig
+[url_win_installer]: https://www.draketo.de/dateien/freenet/build01499/FreenetInstaller-1499.exe
+[url_win_installer_sig]: https://www.draketo.de/dateien/freenet/build01499/FreenetInstaller-1499.exe.sig
 [url_mac_installer]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip
 [url_mac_installer_sig]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip.sig
-[url_nix_installer]: https://www.draketo.de/dateien/freenet/build01498/new_installer_offline_1498.jar
-[url_nix_installer_sig]: https://www.draketo.de/dateien/freenet/build01498/new_installer_offline_1498.jar.sig
-[url_jnlp_installer]: {static}/assets/jnlp/freenet.jnlp?1498
+[url_nix_installer]: https://www.draketo.de/dateien/freenet/build01499/new_installer_offline_1499.jar
+[url_nix_installer_sig]: https://www.draketo.de/dateien/freenet/build01499/new_installer_offline_1499.jar.sig
+[url_jnlp_installer]: {static}/assets/jnlp/freenet.jnlp?1499
 [url_keyring]: #keyring
-[github_release_url]: https://github.com/freenet/fred/releases/tag/build01498/
+[github_release_url]: https://github.com/freenet/fred/releases/tag/build01499/
 
 <!--
 Steps:
@@ -99,7 +99,7 @@ If there are problems, use the command line. This requires
 wget which can be installed with a package manager, such as
 `sudo apt-get install wget` on Debian or Ubuntu.
 
-    wget 'https://www.draketo.de/dateien/freenet/build01498/new_installer_offline_1498.jar' -O new_installer_offline.jar;
+    wget 'https://www.draketo.de/dateien/freenet/build01499/new_installer_offline_1499.jar' -O new_installer_offline.jar;
     java -jar new_installer_offline.jar;
 
 To install on a headless system, or if you get fontconfig problems, use the `-console` option and follow the prompts:
