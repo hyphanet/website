@@ -4,13 +4,13 @@ lang: fr
 [url_lysator]: http://www.lysator.liu.se/index_en.html
 [url_mirror_lysator]: http://ftp.lysator.liu.se/pub/freenet/
 [url_mirror_lysator_tor]: http://lysator7eknrfl47rlyxvgeamrv7ucefgrrlhk7rouv3sna25asetwid.onion/pub/freenet/
-[url_win_installer]: https://github.com/freenet/fred/releases/download/build01499/FreenetInstaller-1499.exe
-[url_win_installer_sig]: https://github.com/freenet/fred/releases/download/build01499/FreenetInstaller-1499.exe.sig
+[url_win_installer]: https://github.com/freenet/fred/releases/download/build01500/FreenetInstaller-1500.exe
+[url_win_installer_sig]: https://github.com/freenet/fred/releases/download/build01500/FreenetInstaller-1500.exe.sig
 [url_mac_installer]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip
 [url_mac_installer_sig]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip.sig
-[url_nix_installer]: https://github.com/freenet/fred/releases/download/build01499/new_installer_offline_1499.jar
-[url_nix_installer_sig]: https://github.com/freenet/fred/releases/download/build01499/new_installer_offline_1499.jar.sig
-[url_jnlp_installer]: {static}/assets/jnlp/freenet.jnlp?1499
+[url_nix_installer]: https://github.com/freenet/fred/releases/download/build01500/new_installer_offline_1500.jar
+[url_nix_installer_sig]: https://github.com/freenet/fred/releases/download/build01500/new_installer_offline_1500.jar.sig
+[url_jnlp_installer]: {static}/assets/jnlp/freenet.jnlp?1500
 [url_keyring]: #keyring
 
 To access Hyphanet, you first need to install the main application.
@@ -93,7 +93,7 @@ performance.
 
 Open a terminal and run:
 
-    wget 'https://github.com/freenet/fred/releases/download/build01499/new_installer_offline_1499.jar' -O new_installer_offline.jar;
+    wget 'https://github.com/freenet/fred/releases/download/build01500/new_installer_offline_1500.jar' -O new_installer_offline.jar;
     java -jar new_installer_offline.jar;
 
 To install on a headless system, or if you get fontconfig problems, use the `-console` option and follow the prompts:
