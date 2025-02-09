@@ -447,7 +447,7 @@ We have solutions for this but they are still being tested.
 * * *
 
 The most up to date reference is of course [the source code](
-https://github.com/freenet/fred), but there is also some useful documentation on
+https://github.com/hyphanet/fred), but there is also some useful documentation on
 [the wiki](https://wiki.freenetproject.org/) (you may have to search a bit),
 and most implemented ideas have been discussed in detail on [the mailing
 lists](help.html#mailing-lists) at some point, more recently often in-Hyphanet

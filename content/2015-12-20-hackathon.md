@@ -22,16 +22,16 @@ During the hackathon we got some changes done:
 
 If we're able to get final changes ready build 1471-pre3 will be released the weekend of January 2nd.
 
-[1]: https://github.com/freenet/fred/pull/438
-[2]: https://github.com/freenet/fred/pull/435
-[3]: https://github.com/freenet/fred/pull/426
-[4]: https://github.com/freenet/fred/pull/437
-[5]: https://github.com/freenet/fred/pull/421
-[6]: https://github.com/freenet/fred/pull/433
-[7]: https://github.com/freenet/fred/pull/439
-[8]: https://github.com/freenet/fred/pull/418
+[1]: https://github.com/hyphanet/fred/pull/438
+[2]: https://github.com/hyphanet/fred/pull/435
+[3]: https://github.com/hyphanet/fred/pull/426
+[4]: https://github.com/hyphanet/fred/pull/437
+[5]: https://github.com/hyphanet/fred/pull/421
+[6]: https://github.com/hyphanet/fred/pull/433
+[7]: https://github.com/hyphanet/fred/pull/439
+[8]: https://github.com/hyphanet/fred/pull/418
 [9]: https://github.com/Dr-Tensor/plugin-Freemail/tree/master
-[10]: https://github.com/freenet/fred/tree/gradle
+[10]: https://github.com/hyphanet/fred/tree/gradle
 [11]: https://github.com/ademan/winterface/tree/gradle-witness-1
 [12]: https://gradle.org/
 [13]: https://github.com/WhisperSystems/gradle-witness

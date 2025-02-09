@@ -6,7 +6,7 @@ lang: fr
 ## Developers
 
 If you already have a contribution in mind you can find the project repositories
-[on GitHub](https://github.com/freenet/).
+[on GitHub](https://github.com/hyphanet/).
 
 - Get in contact in the [mailing lists](help.html#mailing-lists)
 - Join us on IRC: [#freenet on irc.libera.chat](help.html#chat-with-us)

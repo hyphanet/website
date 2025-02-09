@@ -5,12 +5,12 @@ lang: ru
 [url_lysator]: http://www.lysator.liu.se/index_en.html
 [url_mirror_lysator]: http://ftp.lysator.liu.se/pub/freenet/
 [url_mirror_lysator_tor]: http://lysator7eknrfl47rlyxvgeamrv7ucefgrrlhk7rouv3sna25asetwid.onion/pub/freenet/
-[url_win_installer]: https://github.com/freenet/fred/releases/download/build01500/FreenetInstaller-1500.exe
-[url_win_installer_sig]: https://github.com/freenet/fred/releases/download/build01500/FreenetInstaller-1500.exe.sig
-[url_mac_installer]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip
-[url_mac_installer_sig]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip.sig
-[url_nix_installer]: https://github.com/freenet/fred/releases/download/build01500/new_installer_offline_1500.jar
-[url_nix_installer_sig]: https://github.com/freenet/fred/releases/download/build01500/new_installer_offline_1500.jar.sig
+[url_win_installer]: https://github.com/hyphanet/fred/releases/download/build01500/FreenetInstaller-1500.exe
+[url_win_installer_sig]: https://github.com/hyphanet/fred/releases/download/build01500/FreenetInstaller-1500.exe.sig
+[url_mac_installer]: https://github.com/hyphanet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip
+[url_mac_installer_sig]: https://github.com/hyphanet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip.sig
+[url_nix_installer]: https://github.com/hyphanet/fred/releases/download/build01500/new_installer_offline_1500.jar
+[url_nix_installer_sig]: https://github.com/hyphanet/fred/releases/download/build01500/new_installer_offline_1500.jar.sig
 [url_jnlp_installer]: {static}/assets/jnlp/freenet.jnlp?1500
 [url_keyring]: #keyring
 
@@ -38,7 +38,7 @@ Steps:
 * [Для GNU/Linux & POSIX](#gnulinux-posix)
 
 *Hyphanet - это бесплатное программное обеспечение с открытым исходным кодом, доступное под GPLv2+.
-Исходный код находится на [GitHub](https://github.com/freenet/fred).*
+Исходный код находится на [GitHub](https://github.com/hyphanet/fred).*
 
 ## Windows
 
@@ -95,7 +95,7 @@ http://www.java.com/](http://www.java.com/).
 
 Откройте терминал и запустите:
 
-    wget 'https://github.com/freenet/fred/releases/download/build01500/new_installer_offline_1500.jar' -O new_installer_offline.jar;
+    wget 'https://github.com/hyphanet/fred/releases/download/build01500/new_installer_offline_1500.jar' -O new_installer_offline.jar;
     java -jar new_installer_offline.jar;
 
 Для установки в хедлесс системе или в случае возникновения проблем с fontconfig
@@ -112,7 +112,7 @@ http://www.java.com/](http://www.java.com/).
 
 **Примечание**: многие дистрибутивы GNU/Linux больше не поставляются с включенным Java Web Start. 
 Мы хотели бы сделать пакеты дистрибутивов для более легкой установки.
-У нас есть в разработке (дальнейшая работа не идет) [пакет Debian](https://github.com/freenet/fred/pull/774),
+У нас есть в разработке (дальнейшая работа не идет) [пакет Debian](https://github.com/hyphanet/fred/pull/774),
 но мы не получили его стабильную или официальную версию для других дистрибутивов.
 Если вы разработчик и хотели бы присоединиться к нам и помочь, мы будем очень признательны!
 

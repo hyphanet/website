@@ -7,7 +7,7 @@ lang: ru
 ## Разработчики
 
 Если вы хотели бы внести свой вклад в развитие проекта, вы можете найти репозитории
-[на GitHub](https://github.com/freenet/).
+[на GitHub](https://github.com/hyphanet/).
 
 - Связаться с другими можно с помощью [списков рассылки](help.html#mailing-lists)
 - Присоединяйтесь к нам в IRC: [#freenet on irc.libera.chat](help.html#chat-with-us)

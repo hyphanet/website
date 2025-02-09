@@ -6,13 +6,13 @@ lang: en
 [url_mirror_lysator_tor]: http://lysator7eknrfl47rlyxvgeamrv7ucefgrrlhk7rouv3sna25asetwid.onion/pub/freenet/
 [url_win_installer]: https://www.draketo.de/dateien/freenet/build01500/FreenetInstaller-1500.exe
 [url_win_installer_sig]: https://www.draketo.de/dateien/freenet/build01500/FreenetInstaller-1500.exe.sig
-[url_mac_installer]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip
-[url_mac_installer_sig]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip.sig
+[url_mac_installer]: https://github.com/hyphanet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip
+[url_mac_installer_sig]: https://github.com/hyphanet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip.sig
 [url_nix_installer]: https://www.draketo.de/dateien/freenet/build01500/new_installer_offline_1500.jar
 [url_nix_installer_sig]: https://www.draketo.de/dateien/freenet/build01500/new_installer_offline_1500.jar.sig
 [url_jnlp_installer]: {static}/assets/jnlp/freenet.jnlp?1500
 [url_keyring]: #keyring
-[github_release_url]: https://github.com/freenet/fred/releases/tag/build01500/
+[github_release_url]: https://github.com/hyphanet/fred/releases/tag/build01500/
 
 <!--
 Steps:
@@ -33,7 +33,7 @@ Download and install Hyphanet:
 
 <!--* [For macOS](#macos)-->
 
-*Hyphanet is free and open source software available under GPLv2+. The source code is on [GitHub](https://github.com/freenet/fred).*
+*Hyphanet is free and open source software available under GPLv2+. The source code is on [GitHub](https://github.com/hyphanet/fred).*
 
 ## Windows
 
@@ -109,7 +109,7 @@ To install on a headless system, or if you get fontconfig problems, use the `-co
 
 **Note**: We would love to have packages for most distributions. There
 is a [package for Gentoo](https://packages.gentoo.org/packages/net-p2p/freenet), and a
-[Debian package](https://github.com/freenet/fred/pull/774). The debian
+[Debian package](https://github.com/hyphanet/fred/pull/774). The debian
 Package also works on WSL2 (but not WSL1). If you would like to help,
 it would be much appreciated!
 

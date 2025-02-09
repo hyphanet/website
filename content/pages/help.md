@@ -456,7 +456,7 @@ to!):
 On every new build, a brief summary of all the main changes is posted to the
 support and devl lists and the eng.freenet board on Freetalk. This is usually
 relayed to FMS and Frost too. Alternatively, for a much more detailed view,
-check out the [git repositories](https://github.com/freenet/). Also,
+check out the [git repositories](https://github.com/hyphanet/). Also,
 you should check the developer blogs (from the default bookmarks, or over the
 web, e.g. [toad](http://amphibian.dyndns.org/flogmirror/)), but be warned
 they are often not regularly updated and frequently go off on rants on
@@ -573,7 +573,7 @@ freesite.
 
 If you want to work on Hyphanet itself, see:
 
-* [Source code](https://github.com/freenet/fred)
+* [Source code](https://github.com/hyphanet/fred)
 * [Roadmap](https://wiki.freenetproject.org/Roadmap)
 * [Development page](https://wiki.freenetproject.org/Development)
 
@@ -594,7 +594,7 @@ developer(s) and cover server costs.
 
 ### How can I access the code and website?
 
-See our [GitHub repository](https://github.com/freenet/).
+See our [GitHub repository](https://github.com/hyphanet/).
 
 ### What tools do I need to help develop?
 
@@ -949,7 +949,7 @@ files.
 We believe our installer is not infected with malicious software, and if you are a developer you can check the installer source code [here][url_installer].
 
 [url_smartscreen]: http://windows.microsoft.com/en-us/windows7/smartscreen-filter-frequently-asked-questions-ie9
-[url_installer]: https://github.com/freenet/wininstaller-innosetup
+[url_installer]: https://github.com/hyphanet/wininstaller-innosetup
 
 ### Has anyone ever faced legal trouble for their anonymous activities conducted on Hyphanet?
 

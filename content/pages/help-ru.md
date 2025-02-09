@@ -421,7 +421,7 @@ KeepAlive, который сделает это за вас - даже если 
 
 После каждого нового билда публикуется краткая сводка всех основных изменений в списках поддержки
 и devl, а также на доске eng.freenet в Freetalk. Обычно это также публикуется в FMS и Frost.
-В качестве альтернативы для более детального просмотра, проверьте [репозитории git](https://github.com/freenet/).
+В качестве альтернативы для более детального просмотра, проверьте [репозитории git](https://github.com/hyphanet/).
 Кроме того, вы должны проверить блоги разработчиков (из закладок по умолчанию или через Интернет,
 например, [toad](http://amphibian.dyndns.org/flogmirror/)), но имейте в виду, что часто они могут
 быть не в курсе самой актуальной информации и могут отреагировать резко на вопросы не по теме!
@@ -527,7 +527,7 @@ FMS и Sone можно, например, на фрисайте the Hyphanet Soc
 
 Если вы хотите поработать над самим Hyphanet:
 
-* [Исходный код](https://github.com/freenet/fred)
+* [Исходный код](https://github.com/hyphanet/fred)
 * [Дорожная карта](https://wiki.freenetproject.org/Roadmap)
 * [Страница по разработке](https://wiki.freenetproject.org/Development)
 
@@ -551,7 +551,7 @@ FMS и Sone можно, например, на фрисайте the Hyphanet Soc
 
 ### Как я могу получить доступ к коду и веб-сайту?
 
-Посмотрите наш [GitHub репозиторий](https://github.com/freenet/).
+Посмотрите наш [GitHub репозиторий](https://github.com/hyphanet/).
 
 ### Какие инструменты мне нужны, чтобы помочь в разработке?
 
@@ -847,7 +847,7 @@ master.keys. Hyphanet также создает временные файлы д
 можете проверить исходный код установщика [здесь][url_installer].
 
 [url_smartscreen]: http://windows.microsoft.com/en-us/windows7/smartscreen-filter-frequently-asked-questions-ie9
-[url_installer]: https://github.com/freenet/wininstaller-innosetup
+[url_installer]: https://github.com/hyphanet/wininstaller-innosetup
 
 ### Кто-нибудь когда-либо сталкивался с юридическими проблемами из-за анонимных действий на Hyphanet?
 

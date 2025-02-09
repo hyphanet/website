@@ -4,12 +4,12 @@ lang: fr
 [url_lysator]: http://www.lysator.liu.se/index_en.html
 [url_mirror_lysator]: http://ftp.lysator.liu.se/pub/freenet/
 [url_mirror_lysator_tor]: http://lysator7eknrfl47rlyxvgeamrv7ucefgrrlhk7rouv3sna25asetwid.onion/pub/freenet/
-[url_win_installer]: https://github.com/freenet/fred/releases/download/build01500/FreenetInstaller-1500.exe
-[url_win_installer_sig]: https://github.com/freenet/fred/releases/download/build01500/FreenetInstaller-1500.exe.sig
-[url_mac_installer]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip
-[url_mac_installer_sig]: https://github.com/freenet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip.sig
-[url_nix_installer]: https://github.com/freenet/fred/releases/download/build01500/new_installer_offline_1500.jar
-[url_nix_installer_sig]: https://github.com/freenet/fred/releases/download/build01500/new_installer_offline_1500.jar.sig
+[url_win_installer]: https://github.com/hyphanet/fred/releases/download/build01500/FreenetInstaller-1500.exe
+[url_win_installer_sig]: https://github.com/hyphanet/fred/releases/download/build01500/FreenetInstaller-1500.exe.sig
+[url_mac_installer]: https://github.com/hyphanet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip
+[url_mac_installer_sig]: https://github.com/hyphanet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip.sig
+[url_nix_installer]: https://github.com/hyphanet/fred/releases/download/build01500/new_installer_offline_1500.jar
+[url_nix_installer_sig]: https://github.com/hyphanet/fred/releases/download/build01500/new_installer_offline_1500.jar.sig
 [url_jnlp_installer]: {static}/assets/jnlp/freenet.jnlp?1500
 [url_keyring]: #keyring
 
@@ -35,7 +35,7 @@ Download and install Hyphanet:
 * [For Mac OSX](#os-x)
 * [For GNU/Linux & POSIX](#gnulinux-posix)
 
-*Hyphanet is free and open source software available under GPLv2+. The source code is on [GitHub](https://github.com/freenet/fred).*
+*Hyphanet is free and open source software available under GPLv2+. The source code is on [GitHub](https://github.com/hyphanet/fred).*
 
 ## Windows
 
@@ -93,7 +93,7 @@ performance.
 
 Open a terminal and run:
 
-    wget 'https://github.com/freenet/fred/releases/download/build01500/new_installer_offline_1500.jar' -O new_installer_offline.jar;
+    wget 'https://github.com/hyphanet/fred/releases/download/build01500/new_installer_offline_1500.jar' -O new_installer_offline.jar;
     java -jar new_installer_offline.jar;
 
 To install on a headless system, or if you get fontconfig problems, use the `-console` option and follow the prompts:
@@ -110,7 +110,7 @@ on Debian or Ubuntu.
 **Note**: Many GNU/Linux distributions no longer ship with Java Web Start
 enabled. We would like to make distribution packages for easier installation,
 and have an in-development (and not maintained) [Debian package](
-https://github.com/freenet/fred/pull/774), but haven't gotten it stable or made
+https://github.com/hyphanet/fred/pull/774), but haven't gotten it stable or made
 official ones for other distributions. If you are a developer and would like
 to join us and help it would be much appreciated!
 

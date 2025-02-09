@@ -24,5 +24,5 @@ Thank you,
 
 Freenet Project volunteers
 
-[build18]: https://github.com/freenet/plugin-WebOfTrust/releases/tag/build0018
+[build18]: https://github.com/hyphanet/plugin-WebOfTrust/releases/tag/build0018
 [projects]: https://wiki.freenetproject.org/Projects
