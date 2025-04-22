@@ -10,6 +10,7 @@ lang: en
 [url_mac_installer_sig]: https://github.com/hyphanet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip.sig
 [url_nix_installer]: https://www.draketo.de/dateien/freenet/build01501/new_installer_offline_1501.jar
 [url_nix_installer_sig]: https://www.draketo.de/dateien/freenet/build01501/new_installer_offline_1501.jar.sig
+[debian-package]: https://www.draketo.de/dateien/freenet/build01501/hyphanet-fred-build01501.deb
 [url_jnlp_installer]: {static}/assets/jnlp/freenet.jnlp?1501
 [url_keyring]: #keyring
 [github_release_url]: https://github.com/hyphanet/fred/releases/tag/build01501/
@@ -109,7 +110,7 @@ To install on a headless system, or if you get fontconfig problems, use the `-co
 
 **Note**: We would love to have packages for most distributions. There
 is a [package for Gentoo](https://packages.gentoo.org/packages/net-p2p/freenet), and a
-[Debian package](https://github.com/hyphanet/fred/pull/774). The debian
+[Debian package][debian-package]. The debian
 Package also works on WSL2 (but not WSL1). If you would like to help,
 it would be much appreciated!
 
