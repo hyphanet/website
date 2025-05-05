@@ -992,8 +992,6 @@ information about Hyphanet.
   This list is for active developers to discuss bugs, and the implementation
   of near-term new features.
 
-## [Suggestions](https://freenet.uservoice.com/)
-
 ## Get Support
 You can find information about installing Hyphanet in the [Wiki][wiki_link]
 especially in the [Installing Hyphanet][install_link] and [FAQ][faq_link].
