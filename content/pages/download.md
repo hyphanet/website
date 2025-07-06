@@ -10,7 +10,7 @@ lang: en
 [url_mac_installer_sig]: https://github.com/hyphanet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip.sig
 [url_nix_installer]: https://www.draketo.de/dateien/freenet/build01503/new_installer_offline_1503.jar
 [url_nix_installer_sig]: https://www.draketo.de/dateien/freenet/build01503/new_installer_offline_1503.jar.sig
-[debian-package]: https://www.draketo.de/dateien/freenet/build01503/hyphanet-fred-build01503.deb
+[debian-package]: https://www.draketo.de/dateien/freenet/build01503/freenet_0.7.5+1503-1_amd64.deb
 [url_jnlp_installer]: {static}/assets/jnlp/freenet.jnlp?1503
 [url_keyring]: #keyring
 [github_release_url]: https://github.com/hyphanet/fred/releases/tag/build01503/
