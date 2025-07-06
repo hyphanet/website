@@ -4,16 +4,16 @@ lang: en
 [url_lysator]: https://www.lysator.liu.se/index_en.html
 [url_mirror_lysator]: https://ftp.lysator.liu.se/pub/freenet/
 [url_mirror_lysator_tor]: http://lysator7eknrfl47rlyxvgeamrv7ucefgrrlhk7rouv3sna25asetwid.onion/pub/freenet/
-[url_win_installer]: https://www.draketo.de/dateien/freenet/build01501/FreenetInstaller-1501.exe
-[url_win_installer_sig]: https://www.draketo.de/dateien/freenet/build01501/FreenetInstaller-1501.exe.sig
+[url_win_installer]: https://www.draketo.de/dateien/freenet/build01503/FreenetInstaller-1503.exe
+[url_win_installer_sig]: https://www.draketo.de/dateien/freenet/build01503/FreenetInstaller-1503.exe.sig
 [url_mac_installer]: https://github.com/hyphanet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip
 [url_mac_installer_sig]: https://github.com/hyphanet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip.sig
-[url_nix_installer]: https://www.draketo.de/dateien/freenet/build01501/new_installer_offline_1501.jar
-[url_nix_installer_sig]: https://www.draketo.de/dateien/freenet/build01501/new_installer_offline_1501.jar.sig
-[debian-package]: https://www.draketo.de/dateien/freenet/build01501/hyphanet-fred-build01501.deb
-[url_jnlp_installer]: {static}/assets/jnlp/freenet.jnlp?1501
+[url_nix_installer]: https://www.draketo.de/dateien/freenet/build01503/new_installer_offline_1503.jar
+[url_nix_installer_sig]: https://www.draketo.de/dateien/freenet/build01503/new_installer_offline_1503.jar.sig
+[debian-package]: https://www.draketo.de/dateien/freenet/build01503/hyphanet-fred-build01503.deb
+[url_jnlp_installer]: {static}/assets/jnlp/freenet.jnlp?1503
 [url_keyring]: #keyring
-[github_release_url]: https://github.com/hyphanet/fred/releases/tag/build01501/
+[github_release_url]: https://github.com/hyphanet/fred/releases/tag/build01503/
 
 <!--
 Steps:
@@ -100,7 +100,7 @@ If there are problems, use the command line. This requires
 wget which can be installed with a package manager, such as
 `sudo apt-get install wget` on Debian or Ubuntu.
 
-    wget 'https://www.draketo.de/dateien/freenet/build01501/new_installer_offline_1501.jar' -O new_installer_offline.jar;
+    wget 'https://www.draketo.de/dateien/freenet/build01503/new_installer_offline_1503.jar' -O new_installer_offline.jar;
     java -jar new_installer_offline.jar;
 
 To install on a headless system, or if you get fontconfig problems, use the `-console` option and follow the prompts:

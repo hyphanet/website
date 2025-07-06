@@ -4,13 +4,13 @@ lang: fr
 [url_lysator]: http://www.lysator.liu.se/index_en.html
 [url_mirror_lysator]: http://ftp.lysator.liu.se/pub/freenet/
 [url_mirror_lysator_tor]: http://lysator7eknrfl47rlyxvgeamrv7ucefgrrlhk7rouv3sna25asetwid.onion/pub/freenet/
-[url_win_installer]: https://github.com/hyphanet/fred/releases/download/build01501/FreenetInstaller-1501.exe
-[url_win_installer_sig]: https://github.com/hyphanet/fred/releases/download/build01501/FreenetInstaller-1501.exe.sig
+[url_win_installer]: https://github.com/hyphanet/fred/releases/download/build01503/FreenetInstaller-1503.exe
+[url_win_installer_sig]: https://github.com/hyphanet/fred/releases/download/build01503/FreenetInstaller-1503.exe.sig
 [url_mac_installer]: https://github.com/hyphanet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip
 [url_mac_installer_sig]: https://github.com/hyphanet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip.sig
-[url_nix_installer]: https://github.com/hyphanet/fred/releases/download/build01501/new_installer_offline_1501.jar
-[url_nix_installer_sig]: https://github.com/hyphanet/fred/releases/download/build01501/new_installer_offline_1501.jar.sig
-[url_jnlp_installer]: {static}/assets/jnlp/freenet.jnlp?1501
+[url_nix_installer]: https://github.com/hyphanet/fred/releases/download/build01503/new_installer_offline_1503.jar
+[url_nix_installer_sig]: https://github.com/hyphanet/fred/releases/download/build01503/new_installer_offline_1503.jar.sig
+[url_jnlp_installer]: {static}/assets/jnlp/freenet.jnlp?1503
 [url_keyring]: #keyring
 
 To access Hyphanet, you first need to install the main application.
@@ -93,7 +93,7 @@ performance.
 
 Open a terminal and run:
 
-    wget 'https://github.com/hyphanet/fred/releases/download/build01501/new_installer_offline_1501.jar' -O new_installer_offline.jar;
+    wget 'https://github.com/hyphanet/fred/releases/download/build01503/new_installer_offline_1503.jar' -O new_installer_offline.jar;
     java -jar new_installer_offline.jar;
 
 To install on a headless system, or if you get fontconfig problems, use the `-console` option and follow the prompts:
