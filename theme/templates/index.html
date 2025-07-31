@@ -131,7 +131,7 @@
 		<h2>{% trans %}What's New{% endtrans %}</h2>
 
 		<ol>
-                    {% for post in articles_page.object_list %}
+                    {% for post in articles %}
 		    	{%- if loop.index <= 3 %}
 			<li>
 				<a style="display:inline" href="{{ post.url }}"><h3>{{ post.title | escape }}</h3></a>
