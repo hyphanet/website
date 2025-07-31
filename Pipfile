@@ -5,8 +5,14 @@ name = "pypi"
 
 [packages]
 ghp-import = "*"
-pelican = {extras = ["markdown"], version = "*"}
 pelican-webassets = "*"
+awscli = "==1.11.56"
+markdown = "<3"
+markdown-i18n = "==2.1.2"
+webassets = "==0.12.1"
+cssmin = "==0.2.0"
+pip = "*"
+pelican = {extras = ["markdown"], version = "*"}
 
 [dev-packages]
 
