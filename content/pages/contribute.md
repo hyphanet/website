@@ -8,8 +8,7 @@ lang: en
 If you already have a contribution in mind you can find the project repositories
 [on GitHub](https://github.com/hyphanet/).
 
-- Get in contact in the [mailing lists](help.html#mailing-lists)
-- Chat with us on IRC: <a href="https://web.libera.chat/?nick=FollowRabbit|?#freenet" id="chatlink" class="btn button-custom btn-custom-two">#freenet @ irc.libera.chat</a>
+- Get in contact via IRC-Chat <a href="https://web.libera.chat/?nick=FollowRabbit|?#freenet" id="chatlink" class="btn button-custom btn-custom-two">#freenet @ irc.libera.chat</a>, via [FMS Forums](https://github.com/hyphanet/wiki/wiki/FMS), or via [Sone](https://github.com/hyphanet/wiki/wiki/Sone)
 - Report issues in the [bug tracker](https://freenet.mantishub.io/) hosted by [MantisHub](https://www.mantishub.com)
 
 To get into development right-away, have a look at one of the [Hyphanet-Projects](https://github.com/hyphanet/wiki/wiki/Projects),
