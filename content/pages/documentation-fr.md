@@ -314,23 +314,9 @@ but makes for better browsing for you and helps Hyphanet as a whole.
 
 ### Hyphanet Routing
 
-Initially, each node has no information about the performance of the other
-nodes it knows about. This means that routing of requests is essentially
-random. But since different nodes have different randomness, they will
-disagree about where to send a request, given a key. So the data in a
-newly-started Hyphanet will be distributed somewhat randomly.
-
-As more documents are inserted by the same node, they will begin to cluster
-with data items whose keys (see below) are similar, because the same routing
-rules are used for all of them. More importantly, as data items and requests
-from different nodes "cross paths", they will begin to share clustering
-information as well.
-
-The result is that the network will self-organize into a distributed,
+To enable efficient routing, the network self-organizes into a distributed,
 clustered structure where nodes tend to hold data items that are close
-together in key space. There will probably be multiple such clusters
-throughout the network, any given document being replicated numerous times,
-depending on how much it is used.
+together in key space.
 
 ### Hyphanet keys
 
@@ -651,4 +637,4 @@ in the browser address bar, like this (cut for screen purposes):
 
 If it works, congratulations, you have just created your first Freesite!
 
-## [Wiki](https://wiki.freenetproject.org/)
+## [Wiki](https://github.com/hyphanet/wiki/wiki/)
