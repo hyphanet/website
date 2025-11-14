@@ -518,7 +518,7 @@ present may actually serve to propagate the existing document. there is also
 currently no means of deleting a document from freenet. documents that are
 never requested are eventually removed through disuse.
 
-however, you can use an [updatable subspace key (usk)](
+However, you can use an [updatable subspace key (usk)](
 https://wiki.freenetproject.org/usk) to provide a form of updatable freesite:
 your node will automatically look for later editions of the site (after you
 visit it, or always if you bookmark it), and show you the latest version. you
@@ -585,7 +585,7 @@ developer(s) and cover server costs.
 
 ### How can I access the code and website?
 
-See our [GitHub repository](https://github.com/hyphanet/).
+See our [GitHub repositories](https://github.com/hyphanet/).
 
 ### What tools do I need to help develop?
 
@@ -624,7 +624,7 @@ managed from the web interface. However, because of weaknesses in current
 browsers, we **strongly** recommend that you use a separate browser for
 Hyphanet. Specifically, browser history stealing, in all its forms, is a major
 threat if you share a browser between Hyphanet and the WWW at large: malicious
-web pages will be able to probe which freesites you have visited, and report
+web pages may be able to probe which freesites you have visited, and report
 this information to their owners.
 
 Privacy/incognito mode may be sufficient, and Windows tray app will start a
@@ -687,113 +687,8 @@ and to network robustness/undetectability.
 
 In the interests of giving would-be users as much information as possible,
 and on the assumption that any serious attacker would do their homework,
-here are the major classes of attack on Hyphanet we are presently aware of:
-
-* **Harvesting**: Simply by running some powerful Hyphanet nodes, an attacker can
-  identify most of the opennet (Strangers network) relatively easily. These
-  nodes can then be attacked one by one (subject to resources), their traffic
-  analysed, or simply be blocked on a national firewall. Connecting only to
-  friends (darknet) largely solves this problem. ISPs may be able to identify
-  Hyphanet nodes with some effort, although we make this fairly difficult:
-  Hyphanet's current protocol is designed to be hard to detect, and steganography
-  will be introduced at some point. However, traffic flow analysis, or
-  brute-force blocking of all peer to peer traffic (e.g. traffic between IP
-  addresses marked as "consumer" rather than "business"), both of which would
-  hit a lot of things other than Hyphanet, would likely be effective for quite
-  some time.
-
-* **Bootstrapping attacks**: Unless a node only connects to friends, it will
-  have to connect to the opennet "seednodes" to announce itself and get
-  initial peers to connect to. At the moment there are relatively few
-  seednodes and the list is maintained manually. The seednodes could be blocked
-  easily by a national firewall etc, but also, there is little to prevent
-  attackers from setting up their own seednodes and submitting them, and then
-  "capturing" any new Hyphanet users who connect to their nodes, in order to
-  observe their traffic etc. Hyphanet will try to announce to multiple seednodes,
-  but see the below section on "correlation attacks", which generally are
-  feasible with only a single connection to the target. So this is a question of
-  resources - if the attacker has the resources to surveil all new Hyphanet
-  nodes, they have a good chance of pulling it off. In future we may have more
-  seednodes, and only reveal a small proportion of them to each node, as Tor
-  does with its hidden bridges, but that will not prevent attackers from
-  creating lots of malicious seednodes and getting them into the official lists,
-  and it will likely still be possible to block all the seednodes with some
-  effort (something similar has already happened to Tor hidden bridges in
-  China). Combined with harvesting and adaptive search attacks, this attack
-  explains why opennet is regarded by many core developers as hopelessly
-  insecure. If you want good security you need to connect only to friends. Hit
-  and run inserts are possible, and can be relatively safe in terms of many of
-  the other attacks, but you are taking the risk that the opennet seednode you
-  connect to may be malicious.
-
-* **Correlation attacks**: If you are connected to a node, and can recognise the
-  keys being requested (probably because it was posted publicly), you can show
-  statistically that the node in question probably requested it, based on the
-  proportion of the keys requested from that node, the locations of nearby
-  nodes, the HTL on the requests and so on. This will be largely eliminated
-  by tunnels (but these will be quite expensive so may need to be turned off
-  by default except for predictable blocks), but in any case it requires a
-  rather powerful attacker compared to the next attack... Note also that if you
-  only connect to your friends, a remote attacker will have to either co-opt
-  your friends or social engineer you into giving them a connection; either way,
-  connecting to the entire network this way is rather expensive: If they already
-  suspect you personally they'll probably bug your keyboard rather than trying
-  to connect to your Hyphanet node!
-
-* **Adaptive search**: If you want to find the author of some content, and you
-  can predict the exact keys which will be inserted, and you are able to
-  connect to new nodes at will, you may be able to listen out for the keys,
-  guess where they must have come from, connect to nodes near there, and if your
-  guess is correct, get more keys which gives you a more accurate fix on the
-  originator, so the attack gets faster and faster and eventually converges on
-  the originator. This attack is most powerful with inserts of big, predictable
-  files, but the "Insert a random, safe key" option will make the keys
-  unpredictable even if the content is guessable, by using random encryption
-  keys. The downside is it produces a different key each time for the same file,
-  and you can never safely reinsert the same file to the same key. Given that
-  Hyphanet's data persistence is currently relatively poor, this is a problem.
-  Anyway, if you _can_ use the random keys option, the attacker is unable to
-  move towards you until after you announce the file: Most of his samples will
-  come not from the actual content inserts but from chat posts. There are far
-  fewer of these, and changing your pseudonymous identity periodically will
-  help, provided the attacker cannot easily connect the new identity to the old
-  one. Using a dedicated identity for posting sensitive content, which doesn't
-  chat too much, again will help. Another thing which makes a huge difference is
-  connecting only to your friends (i.e. using darknet): This makes it extremely
-  difficult for an attacker to get new connections closer to where they think you
-  must be, just as it helps with correlation attacks. So the biggest problems
-  with this attack are 1) Files which are not very popular fall off Hyphanet
-  relatively quickly, so need to be reinserted, but it is not safe to reinsert
-  to the same key (this is why we have the "Insert a canonical key" option, for
-  those who don't care about attacks), and 2) Chat can still be attacked.
-  Tunnels will help to deal with both problems, and by default will only be used
-  for predictable keys so can be relatively slow without this causing problems
-  in practice. Also there is work going on on various techniques to allow users
-  to do reinserts safely via for example preventing the attacker from seeing
-  requests started before they connected. Another important point is this only
-  works if the source is uploading new content, or chatting, regularly; creating
-  and bootstrapping a new pseudonymous identity over a short period, doing a
-  single insert (of any size) with the safe random key option, and announcing
-  it, should be relatively safe from this attack, even on opennet - but see the
-  section above on bootstrapping attacks.
-
-* **Traffic analysis**: Hyphanet provides minimal protection against global
-  traffic analysis (basic message padding etc); if the attacker also has
-  nodes on the network, the extra data will likely be helpful. We certainly do
-  not guarantee that it is impossible to trace data transfers from one node to
-  the next with detailed traffic data, however it is hoped that this will fall
-  down on the busier nodes. One day we will implement steganographic transports
-  and/or constant bitrate links as an option for more paranoid users. Note that
-  on Tor-style networks, global traffic analysis will defeat the network
-  completely: all that is needed is to observe both the entry and exit points.
-
-* **Swapping attacks**: It is possible to attack the location swapping
-  algorithm, and thereby disrupt routing on friend-to-friend networks. This has
-  been demonstrated by the authors of the Pitch Black paper. We are working on a
-  solution, but sadly at the moment most users use opennet.
-
-More information on the current practical state of Hyphanet security is available
-[here](https://wiki.freenetproject.org/Security_summary).
+the major classes of attack on Hyphanet we are presently aware of are described
+in the [Security summary](https://wiki.freenetproject.org/Security_summary).
 
 ### Is Hyphanet vulnerable to flooding attacks?
 
@@ -818,14 +713,6 @@ capacity greater than the total of the entire network, it is possible to
 cripple any public network (including the Internet itself) with floods,
 but it is our intention to always keep Hyphanet as resistant to this as
 theoretically possible.
-
-Curiously enough, the above analysis only applies to [Opennet](
-https://wiki.freenetproject.org/Opennet). On Darknet, you might have a little
-more success, although it would be much harder to change your entry point in
-any significant way. Nonetheless, you have a reasonably low bandwidth
-multiplier (the total number of nodes visited, around 20 on average), and you
-are severely limited by the number of nodes you can connect to, which will be
-low on a darknet.
 
 ### Why hash keys and encrypt data when a node operator could identify them (the data) anyway if they tried?
 
@@ -868,9 +755,7 @@ are unaware of or have not yet been able to prevent. If you believe you have dis
 of attack, we are interested in hearing about it. Please keep in mind what
 Hyphanet is and what it is not, however. No single network can offer everybody
 everything, and there are security issues that Hyphanet, by its nature,
-may not deal with to extent you might wish. If this upsets you, all of our
-code is freely available, so you are free to take as much of it as you like
-and write your own distributed network that suits your desires.
+may not deal with to extent you might wish.
 
 ### What private data does Hyphanet store? How do I get rid of it? How can I secure my computer so I am safe when running Hyphanet?
 
