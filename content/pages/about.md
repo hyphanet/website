@@ -105,6 +105,10 @@ Preventing people from being aware of some arguments
 makes them vulnerable to those arguments when they do eventually
 encounter them. Therefore those who seek those arguments must be able to find them.
 
+To prevent censorship by drowning out information with noise, Hyphanet
+enables people to choose by themselves what they want to be exposed
+to.
+
 ### But why is anonymity necessary?
 
 You cannot have freedom of speech without the option to remain anonymous.
