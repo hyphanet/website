@@ -41,7 +41,7 @@ connecting only to their friends). This is much less secure than using
 Hyphanet in "darknet" mode, and is relatively easy to block, as it does have
 some central servers ("seed nodes").
 
-Hyphanet has many unsolved problems, and is still experimental. Our objective
+Our objective
 for Hyphanet is to build a global friend-to-friend darknet, which would be
 extremely difficult to block, and would provide very strong anonymity and
 censorship resistance. This will require further work on Hyphanet,

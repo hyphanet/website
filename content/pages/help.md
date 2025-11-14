@@ -41,7 +41,7 @@ connecting only to their friends). This is much less secure than using
 Hyphanet in "darknet" mode, and is relatively easy to block, as it does have
 some central servers ("seed nodes").
 
-Hyphanet has many unsolved problems, and is still experimental. Our objective
+Our objective
 for Hyphanet is to build a global friend-to-friend darknet, which would be
 extremely difficult to block, and would provide very strong anonymity and
 censorship resistance. This will require further work on Hyphanet,
@@ -173,7 +173,9 @@ more than diskspace.
 
 ### Is Hyphanet legal?
 
-We don't currently know of any prosecutions for merely using Hyphanet.
+We don't currently know of any prosecutions for merely using Hyphanet,
+though there have been cases where [false statistics](/the-discredited-levine-2017-approach-is-still-used.html) were used in the US
+to claim that people used it for accessing illegal material.
 Some people claim that the [DADVSI](https://en.wikipedia.org/wiki/DADVSI)
 makes Hyphanet illegal in France; the German data retention law might have
 required logging, but [was struck down](http://en.wikipedia.org/wiki/Telecommunications_data_retention#Germany).
@@ -204,7 +206,7 @@ Some other countries (e.g. France) are known to be hostile to peer to peer,
 and may eventually force ISPs to block peer to peer networks (but right now
 Hyphanet works fine in France and we have many French users!).
 
-Technically, Hyphanet 0.7 has some minimal defences against blocking; the
+Technically, Hyphanet 0.7 has some defences against blocking; the
 protocol is relatively hard to identify (we are working on ["transport
 plugins"](https://wiki.freenetproject.org/Transport_plugins), which would
 [make it much harder to detect Hyphanet](http://en.wikipedia.org/wiki/Steganography).
@@ -223,11 +225,9 @@ government came to us and demanded a back door, we would be legally unable to
 secretly distribute a trojan'ed build, because Hyphanet is open source,
 numerous people have contributed code to it, so legally we have to give you
 the source code, including that for any government mandated back doors -
-which wouldn't be secret for long! If this happened it is likely that [
-Hyphanet Project Incorporated](donate.html), the non-profit organisation that
-runs this website and handles donations, would shut down, but the Hyphanet
-network itself would live on just fine, the only difference being not being
-able to pay full time developers as easily.
+which wouldn't be secret for long! If this happened, core developers may 
+have to leave the project, but the Hyphanet
+network itself would live on just fine.
 
 See [net neutrality](http://en.wikipedia.org/wiki/Network_neutrality) and
 [the EFF](https://www.eff.org/) or equivalent organisations in your country for
@@ -250,13 +250,6 @@ Hyphanet can use rather a lot of bandwidth, at least 20GB/month, and this may
 be a problem on a cheap or shared connection. And of course running it at
 work could get you into trouble too, unless it's for work purposes!
 
-### What about copyright?
-
-There are some excellent thoughts on this subject on the [Philosophy](
-about.html#philosophy) page. Specific copyright-related laws may be a
-problem, please read [Is Hyphanet legal?](#is-freenet-legal) and [Is Hyphanet blocked by
-national firewalls?](#is-freenet-blocked-by-national-firewalls).
-
 ### What about child porn, offensive content or terrorism?
 
 While most people wish that child pornography and terrorism did not exist,
@@ -266,11 +259,11 @@ of how a very small number of people might use that freedom.
 ### I don't want my node to be used to harbor child porn, offensive content, or terrorism. What can I do?
 
 This is a problem that sadly any censorship-resistance tool faces.
-If the capacity to remove content existed, it might only be used to remove things one finds offensive, but it could be used to remove anything.
+If the capacity existed to remove content people access, it might not only be used to remove things one finds offensive, but it could be used to remove anything.
+
 From a technological point of view one cannot have censorship-resistance with exceptions.
 Hyphanet is merely a tool that by itself doesn't do anything to promote offensive content.
 How people choose to use the tool is their sole responsibility.
-As a communication medium, Hyphanet cannot be considered responsible for what people use it for — just like Internet Service Providers, telecoms, or postal services cannot be held responsible for their users either.
 
 Note that files are encrypted and split into pieces.
 They are not stored on your machine in their entirety.
@@ -278,9 +271,11 @@ Your instance of Hyphanet will likely have very few encrypted pieces of a given 
 These pieces cannot be used as parts of the file they were made from without additional information.
 Reassembling a file requires knowing both what pieces to use and the key to decrypt them, neither of which is included with each piece.
 
+Since content that does not get accessed disappears from the network, the best way to fight content you don’t want to see on Hyphanet is never to access such content.
+
 ### How about encryption export restrictions?
 
-The Hyphanet Project has notified the US authorities that it will be exporting
+The Freenet Project has notified the US authorities that it will be exporting
 crypto. As long as your country doesn't prohibit the use of encryption you
 are fine. Further, there is now an exception in the export laws for software
 doing exactly what Hyphanet does! However, Oracle limits the encryption strength
@@ -304,7 +299,7 @@ don't expect very low latency.
 
 ### How do I use this software? I downloaded it, but when I run it there's no GUI.
 
-Fred (the Hyphanet REference Daemon) runs as a daemon, or service, in the
+Fred (the Freenet REference Daemon) runs as a daemon, or service, in the
 background. You normally talk to it through a Hyphanet client. One built-in
 client is fproxy, which lets you talk to Hyphanet with a web browser. Hyphanet
 should have installed a Browse Hyphanet shortcut on the desktop and/or the
@@ -333,13 +328,11 @@ under Configuration.
 
 ### Is Hyphanet searchable?
 
-Yes, there are a few different search mechanisms. To search the Hyphanet web
-(freesites), you should be able to just use the search box on the homepage,
-or go to Search Hyphanet on the Browse submenu. If it's not there, go to the
-Plugins page under Configuration, and load the Library plugin. Alternatively,
-Frost and Thaw also provide searching for messages and files. Note that
-searching on Hyphanet is a good deal more difficult than on other networks
-because of Hyphanet's different architecture and design goals.
+Yes, there are a few different search mechanisms. The easiest is to
+open one of the index pages and use the search function from your
+browser. searching on Hyphanet is a good deal more difficult than on
+other networks because of Hyphanet's different architecture and design
+goals.
 
 ### How do I get Hyphanet working with a Firewall/NAT?
 
@@ -365,8 +358,7 @@ that box, and apply the settings.
 No, but it is preferred. You can run the software and test it from a
 "transient" connection (e.g. dial up/mobile modem), but for the network as a
 whole to be most useful, we will need as many permanent nodes as possible (
-most cable modem or DSL setups are sufficiently "permanent" for this). A
-later version of Hyphanet may take better advantage of transient nodes.
+most cable modem or DSL setups are sufficiently "permanent" for this).
 
 ### Why does Hyphanet only download 1 or 2 files at a time?
 
@@ -409,9 +401,8 @@ available from a random point on the network.
 ### Why is Hyphanet implemented in Java?
 
 Opinions differ about the choice of Java for the reference implementation of
-Hyphanet (even among the core developers). [Ian Clarke](https://wiki.freenetproject.org/People#ian-clarke) and
-several other developers are Java proponents and the choice for Java was
-made. Even if everybody could be convinced to switch to a different language
+Hyphanet (even among the core developers). The choice for Java was
+made early on. Even if everybody could be convinced to switch to a different language
 reimplementing the current Hyphanet protocol would be quite a big task,
 and take up a significant amount of time, while there is only a limited
 amount of developer-time available. Flame wars on the development list about
