@@ -15,6 +15,8 @@ lang: en
 <div class="video-container">
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/zu9gM3_gIfM"
 	frameborder="0" allowfullscreen></iframe>
+<br />
+<a href="https://www.youtube.com/watch?v=zu9gM3_gIfM">Aaron Jones: Introduction To Freenet</a>
 </div>
 
 Hyphanet is free software which lets you anonymously share files, browse and
