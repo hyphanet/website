@@ -35,7 +35,7 @@ This forms a privacy-preserving encrypted caching proxy. Chat, blogs, forums,
 websites, radio streaming, are all built on top of this distributed
 data store.
 
-Hyphanet has been downloaded many millionss of times since the project started,
+Hyphanet has been downloaded many millions of times since the project started,
 and used for the distribution of censored information all over the world
 including countries such as China and in the Middle East. Ideas and concepts
 pioneered in Hyphanet have had a significant impact in the academic world. 
