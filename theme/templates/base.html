@@ -6,6 +6,8 @@
 {% endassets %}
         {% block head %}
         <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+        <!--RTA: restricted to adults. See https://www.rtalabel.org/?content=howtofaq and https://developers.google.com/search/docs/crawling-indexing/special-tags#rating  (alternative: content="adult" but that implies that the content is adult content) -->
+        <meta name="rating" content="RTA-5042-1996-1400-1577-RTA">
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         {% if FEED_ALL_ATOM %}
