@@ -5,13 +5,13 @@ lang: ru
 [url_lysator]: http://www.lysator.liu.se/index_en.html
 [url_mirror_lysator]: http://ftp.lysator.liu.se/pub/freenet/
 [url_mirror_lysator_tor]: http://lysator7eknrfl47rlyxvgeamrv7ucefgrrlhk7rouv3sna25asetwid.onion/pub/freenet/
-[url_win_installer]: https://github.com/hyphanet/fred/releases/download/build01503/FreenetInstaller-1503.exe
-[url_win_installer_sig]: https://github.com/hyphanet/fred/releases/download/build01503/FreenetInstaller-1503.exe.sig
+[url_win_installer]: https://github.com/hyphanet/fred/releases/download/build01506/FreenetInstaller-1506.exe
+[url_win_installer_sig]: https://github.com/hyphanet/fred/releases/download/build01506/FreenetInstaller-1506.exe.sig
 [url_mac_installer]: https://github.com/hyphanet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip
 [url_mac_installer_sig]: https://github.com/hyphanet/mactray/releases/download/v2.1.0/FreenetTray_2.1.0.zip.sig
-[url_nix_installer]: https://github.com/hyphanet/fred/releases/download/build01503/new_installer_offline_1503.jar
-[url_nix_installer_sig]: https://github.com/hyphanet/fred/releases/download/build01503/new_installer_offline_1503.jar.sig
-[url_jnlp_installer]: {static}/assets/jnlp/freenet.jnlp?1503
+[url_nix_installer]: https://github.com/hyphanet/fred/releases/download/build01506/new_installer_offline_1506.jar
+[url_nix_installer_sig]: https://github.com/hyphanet/fred/releases/download/build01506/new_installer_offline_1506.jar.sig
+[url_jnlp_installer]: {static}/assets/jnlp/freenet.jnlp?1506
 [url_keyring]: #keyring
 
 Чтобы получить доступ к Hyphanet, сначала необходимо установить основное приложение. 
@@ -95,7 +95,7 @@ http://www.java.com/](http://www.java.com/).
 
 Откройте терминал и запустите:
 
-    wget 'https://github.com/hyphanet/fred/releases/download/build01503/new_installer_offline_1503.jar' -O new_installer_offline.jar;
+    wget 'https://github.com/hyphanet/fred/releases/download/build01506/new_installer_offline_1506.jar' -O new_installer_offline.jar;
     java -jar new_installer_offline.jar;
 
 Для установки в хедлесс системе или в случае возникновения проблем с fontconfig
