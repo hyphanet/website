@@ -242,8 +242,7 @@ broken, you can upgrade your node manually from our servers:
 ## Add friends (or connect to strangers)
 
 If you know other people who also use Hyphanet, you can [add them as Friends][url_addfriend].
-This will make you safer against attacks on Hyphanet Project infrastructure
-(the [seednodes][url_seednode_info]).
+This will make you safer against attacks on Hyphanet Project infrastructure.
 
 Once you are connected to 5 or more friends, you can enable **high security mode**.
 In high security mode Hyphanet will only connect to your friends.
@@ -255,7 +254,6 @@ If you use a "low" or "normal" security level Hyphanet will automatically connec
 However, your (or someone else's) government may be able to find out who you are with enough effort. Be careful!
 
 [url_addfriend]: http://127.0.0.1:8888/addfriend/
-[url_seednode_info]: https://wiki.freenetproject.org/Seed_nodes#Seed_node
 
 ## Verifying Signatures
 
