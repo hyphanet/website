@@ -575,13 +575,9 @@ https://wiki.freenetproject.org/Main_Page) helpful.
 
 If you have any questions about contributing, please contact us, via [the developers mailing list][url_devlist], [the chat channel][url_chat], [the support mailing list][url_supportlist] or anonymously via the freenet board on FMS.
 
-Last but not least you can [donate][url_donate] to support our paid
-developer(s) and cover server costs.
-
 [url_devlist]: #mailing-lists
 [url_supportlist]: #mailing-lists
 [url_chat]: #irc
-[url_donate]: donate.html
 
 ### How can I access the code and website?
 

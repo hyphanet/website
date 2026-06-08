@@ -223,11 +223,7 @@ government came to us and demanded a back door, we would be legally unable to
 secretly distribute a trojan'ed build, because Hyphanet is open source,
 numerous people have contributed code to it, so legally we have to give you
 the source code, including that for any government mandated back doors -
-which wouldn't be secret for long! If this happened it is likely that [
-Hyphanet Project Incorporated](donate.html), the non-profit organisation that
-runs this website and handles donations, would shut down, but the Hyphanet
-network itself would live on just fine, the only difference being not being
-able to pay full time developers as easily.
+which wouldn't be secret for long!
 
 See [net neutrality](http://en.wikipedia.org/wiki/Network_neutrality) and
 [the EFF](https://www.eff.org/) or equivalent organisations in your country for
@@ -584,13 +580,9 @@ https://wiki.freenetproject.org/Main_Page) helpful.
 
 If you have any questions about contributing, please contact us, via [the developers mailing list][url_devlist], [the chat channel][url_chat], [the support mailing list][url_supportlist] or anonymously via the freenet board on FMS.
 
-Last but not least you can [donate][url_donate] to support our paid
-developer(s) and cover server costs.
-
 [url_devlist]: #mailing-lists
 [url_supportlist]: #mailing-lists
 [url_chat]: #irc
-[url_donate]: donate.html
 
 ### How can I access the code and website?
 
