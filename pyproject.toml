@@ -1,0 +1,13 @@
+[project]
+name = "freenet-website"
+version = "0.1.0"
+description = "Hyphanet/Freenet project website (Pelican static site)"
+requires-python = ">=3.10"
+dependencies = [
+    "ghp-import",
+    "pelican-webassets",
+    "awscli==1.11.56",
+    "webassets==0.12.1",
+    "cssmin==0.2.0",
+    "pelican[markdown]",
+]
