@@ -1,14 +1,9 @@
 Environment
 ===========
 
-Install the required packages
+Install uv (see https://docs.astral.sh/uv/getting-started/installation/)
 
-    sudo apt-get install python3-pip
-
-Open a pipenv
-
-    python3 -m pip install pipenv
-    pipenv shell
+    curl -LsSf https://astral.sh/uv/install.sh | sh
 
 Enable Pelican plugins
 
@@ -18,21 +13,18 @@ Enable Pelican plugins
 Testing 
 =======
 
-    pipenv shell
-    make devserver
+    uv run make devserver
 
 Deploying
 =========
 
-    pipenv shell
-    make github
+    uv run make github
 
 
 Build for upload in Freenet
 ---------------------------
 
-    pipenv shell
     PYTHONPATH=$PYTHONPATH:pelican-plugins{$(ls pelican-plugins/| sed 's/ /,/g')}
     SITEURL=/USK@0iU87PXyodL2nm6kCpmYntsteViIbMwlJE~wlqIVvZ0,nenxGvjXDElX5RIZxMvwSnOtRzUKJYjoXEDgkhY6Ljw,AQACAAE/freenetproject-mirror/490
     DEBUG=1
-    make html && freesitemgr update freenetproject-mirror
+    uv run make html && freesitemgr update freenetproject-mirror
